@@ -1,0 +1,7 @@
+title: Actions Sub-Actions
+icon: mdi:lightning-bolt
+aside.level: 4
+category.title: Actions Sub-Actions
+category.icon: mdi:lightning-bolt
+navigation.title: Actions
+navigation.description: Modify Streamer.bot action state

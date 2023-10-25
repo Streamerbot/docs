@@ -1,0 +1,7 @@
+title: Commands Sub-Actions
+icon: mdi:message-alert
+aside.level: 4
+category.title: Commands Sub-Actions
+category.icon: mdi:message-alert
+navigation.title: Commands
+navigation.description: Manage chat command state

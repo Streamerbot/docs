@@ -1,0 +1,7 @@
+title: Discord Sub-Actions
+icon: mdi:discord
+aside.level: 4
+category.title: Discord Sub-Actions
+category.icon: mdi:discord
+navigation.title: Discord
+navigation.description: Send messages to Discord via webhook

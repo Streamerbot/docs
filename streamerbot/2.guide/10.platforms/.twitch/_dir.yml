@@ -1,0 +1,7 @@
+---
+navigation.title: Twitch
+icon: mdi:twitch
+category: Twitch Configuration
+category.icon: mdi:twitch
+aside.collapsed: false
+---

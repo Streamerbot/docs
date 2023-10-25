@@ -1,0 +1,8 @@
+title: MIDI Sub-Actions
+icon: mdi:midi
+aside.level: 4
+category.title: MIDI Sub-Actions
+category.icon: mdi:midi
+navigation.title: MIDI
+navigation.description: Send MIDI events with Streamer.bot
+version: 0.1.15
