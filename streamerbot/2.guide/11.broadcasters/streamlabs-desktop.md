@@ -4,51 +4,64 @@ description: Configure Streamlabs Desktop as a broadcaster in Streamer.bot
 logo: https://streamer.bot/img/integrations/streamlabs.png
 ---
 
-:wip
+::callout{icon=i-mdi-navigation}
+Navigate to **Stream Apps > Streamlabs Desktop** in Streamer.bot
+::
 
-## Overview
-Control your Streamlabs Desktop instance(s) with Streamer.bot
+![Streamlabs Desktop Configuration](assets/streamlabs-desktop.png)
 
-Adding at least one connection will allow you to control your Streamlabs Desktop either through the various [sub-actions](/Sub-Actions) that have been included, or via the [Execute C# Code](/Sub-Actions/Code/CSharp) sub-action
 
 ## Configuration
-`Right-Click` `->` `Add` to define a new connection
-Give it a name and set the IP address and Port number of your SLOBS / Streamlabs Desktop installation
+To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
 
-The Default values of `127.0.0.1` and `59650` will look for the out-of-box configuration for SLOBS / Streamlabs Desktop installed on the same computer as Streamer.bot is running
+::field-group
+  ::field{name=Name type=Text required}
+  Enter any name or label to describe this Streamlabs Desktop instance
+  ::
 
-`Token` is required and can be obtained through the settings page for SLOBS / Streamlabs Desktop
+  ::field{name=Host type=Text required default="127.0.0.1"}
+  Enter the host address of your Streamlabs Desktop instance
 
-![SLOBS settings](/122339880-810b0280-cf39-11eb-9453-f6e4e6473f1e.png)
+  If Streamlabs is running on the same machine as Streamer.bot, keep `127.0.0.1`
 
-### Token
-In SLOBS / Streamlabs Desktop settings go to **Remote Control**
+  For multi-pc setups you can configure this with another LAN IP address, e.g. `192.168.1.10`
+  ::
 
-Click to reveal the QR code and then click **Show Details**
+  ::field{name=Port type=Number required default=59650}
+  Enter the port from your Streamlabs Desktop `Remote Control` settings
+  - Default: `59650`
+  ::
 
-You can now copy the `API Token` into the Streamer.Bot connection window
+  ::field{name=Token type=Text required}
+  Enter the token from your Streamlabs Desktop `Remote Control` settings
+  ::
 
-***
+  ::field{name="Auto Connect on Startup" type=Toggle}
+  Automatically connect to this Streamlabs Desktop instance when Streamer.bot starts up
+  ::
 
-Connections can be configured to `Auto Connect on Startup`, and to `Reconnect on Disconnect` with a retry interval you specify in seconds
+  ::field{name="Reconnect on Disconnect" type=Toggle}
+  Automatically reconnect to this Streamlabs Desktop instance when the connection is disrupted
+  ::
 
-***
+  ::field{name="Retry Interval" type=Number default=30}
+  Change the interval of reconnection attempts when `Reconnect on Disconnect` is enabled
+  ::
+::
 
-Once configured, connected SLOBS / Streamlabs Desktop sessions will report their status on this screen
+## Status Panel
+Selecting a connected Streamlabs instance in the left panel will reveal additional realtime information about that instance on the right panel:
 
-![SLOBS connection](/122341198-1fe42e80-cf3b-11eb-9c5e-42217878766d.png)
-
-### Current Scene
+#### `Current Scene`
 Shows the name of the currently broadcasting scene on that connection
 
-### Stream Status
+#### `Stream Status`
 Shows the status of current streaming and recording activity
 
-### Sources
+#### `Sources`
 Lists all sources present on the currently selected scene
 
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Broadcasters *Go Back***](/Broadcasters)
-- [<img src="https://streamer.bot/img/integrations/streamlabs.png"> **Set Active Scene *Up Next***](/Sub-Actions/Streamlabs-Desktop/Set-Active-Scene)
-{.btn-grid .my-5}
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/broadcasters/streamlabs-desktop/flip-source}
+Explore all **Streamlabs Desktop sub-actions** at [API References > Sub-Actions > Streamlabs Desktop](/api/sub-actions/broadcasters/streamlabs-desktop/flip-source)
+::

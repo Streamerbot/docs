@@ -4,10 +4,14 @@ description: Configure Streamer.bot to interact with your OBS Studio instances
 logo: https://streamer.bot/img/integrations/obs.svg
 ---
 
-Adding at least one OBS connection will allow Streamer.bot to control your OBS.
+::callout{icon=i-mdi-warning color=amber to=/get-started/setup#obs-studio}
+You must enable the **OBS WebSocket** connection. Check out the [Get Started Guide](/get-started/setup#obs-studio) for details.
+::
+
+---
 
 ::callout{icon=i-mdi-navigation}
-Navigate to **Stream Apps > OBS**
+Navigate to **Stream Apps > OBS** in Streamer.bot
 ::
 
 ![OBS Studio Configuration](assets/obs-studio.png)
@@ -32,6 +36,7 @@ Configuration options are outlined below:
     - To continue using `OBS WebSocket v4.9+`, you must install the `obs-websocket-4.9.1-compat` plugin
     - **It is recommended to update to if you are currently using an older version.**
     ::
+  ::
 
   ::field{name=Host type=Text required default="127.0.0.1"}
   Enter the host address of your OBS WebSocket Server
