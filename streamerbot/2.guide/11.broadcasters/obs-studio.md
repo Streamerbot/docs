@@ -4,106 +4,125 @@ description: Configure Streamer.bot to interact with your OBS Studio instances
 logo: https://streamer.bot/img/integrations/obs.svg
 ---
 
-:wip
-
-## Overview
-> **Streamer.bot supports both OBS WebSocket versions, *v4.9+*{.obs-version-badge} and *v5+*{.obs-version-badge}**
-This documentation refers to OBS WebSocket version *v5+*{.obs-version-badge}
-{.is-info}
-
 Adding at least one OBS connection will allow Streamer.bot to control your OBS.
 
-![overview](/broadcasters/obs/overview.png =1000x)
+::callout{icon=i-mdi-navigation}
+Navigate to **Stream Apps > OBS**
+::
 
-Once configured, connected OBS sessions will report their status on this screen.
+![OBS Studio Configuration](assets/obs-studio.png)
 
 ## Configuration
-With v28+ OBS Websocket is pre-installed, so you don't need to install it. If you can't see it under tools you might need to do a `Help` --> `Check File Integrity` in OBS. After that it should show up.
+To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
 
-- [<img src="/logos/obs-websocket.png"/>**Download OBS WebSocket (OBS v27 and earlier)*<i class="mdi mdi-github"></i> obs-websocket v5+***](https://github.com/obsproject/obs-websocket/releases/tag/5.0.1)
-{.btn-grid .my-5}
+![OBS Studio Add Connection](assets/obs-studio-add-connection.png)
 
-<kbd>Right-Click</kbd> <kbd>-></kbd> <kbd>Add</kbd> to define a new OBS connection
+Configuration options are outlined below:
 
-![connection](/broadcasters/obs/obs-connection.png =250x)
+::field-group
+  ::field{name=Name type=Text required}
+  Enter any name or label to describe this OBS instance, e.g. `Local OBS`
+  ::
 
-### Name
-Enter any name or label to describe this OBS instance, e.g. `Local`
+  ::field{name=Version type=Select required}
+    Select the version of `OBS WebSocket` to use for this connection.
 
-### Version
-Select the version of OBS WebSocket to use for this connection.
+    ::callout{icon=i-mdi-alert color=amber}
+    As of `OBS Studio v28.0.0`, `OBS WebSocket v5` is included by default.
+    - To continue using `OBS WebSocket v4.9+`, you must install the `obs-websocket-4.9.1-compat` plugin
+    - **It is recommended to update to if you are currently using an older version.**
+    ::
 
-> **Warning**
-> As of OBS Studio v28.0, OBS WebSocket v5+ is included by default.
-> To continue using OBS WebSocket v4.9+, you must install the *obs-websocket-4.9.1-compat*{.obs-version-badge} plugin
-{.is-warning}
+  ::field{name=Host type=Text required default="127.0.0.1"}
+  Enter the host address of your OBS WebSocket Server
 
-It is recommended to update to *v5+*{.obs-version-badge} if you are currently using an older version.
+  If OBS Studio is running on the same machine as Streamer.bot, keep `127.0.0.1`
 
-### Host
-Default is localhost, `127.0.0.1`
-To connect to another OBS instance on your local network, you can enter the local IP address, e.g. `192.168.1.10`
+  For multi-pc setups you can configure this with another LAN IP address, e.g. `192.168.1.10`
+  ::
 
-### Port
-Default is: *v4.9+*{.obs-version-badge} = `4444` or *v5+*{.obs-version-badge} = `4455`
-It's recommended to keep this the same unless you are using multiple OBS portable installs on your same desktop.
+  ::field{name=Port type=Number required default=4455}
+  Enter the port of your OBS WebSocket Server
+  - Default: `4455` (v5+) or `4444` (v4.9+)
 
-### Password
-Not required, devices can only connect to your OBS if they're on the same network as you.
+    It is recommended to keep the defaults unless you are using multiple OBS portable installs on the same desktop.
+  ::
 
-### Auto Connect on Startup
-When toggled this auto connects your OBS connection when you launch streamer.bot.
+  ::field{name=Password type=Text}
+  If you configured authentication in OBS, enter the password for your OBS WebSocket Server
+  ::
 
-### Reconnect on Disconnect
-When toggled this tries to reconnect (by default every 30s) when streamer.bot loses connection with your OBS.
+  ::field{name="Auto Connect on Startup" type=Toggle}
+  Automatically connect to this OBS Studio instance when Streamer.bot starts up
+  ::
 
-### Retry Interval
-When Streamer.bot loses connection with your OBS this by default will try to reconnect every 30s, but you can change it to what you want.
+  ::field{name="Reconnect on Disconnect" type=Toggle}
+  Automatically reconnect to this OBS Studio instance when the connection is disrupted
+  ::
+
+  ::field{name="Retry Interval" type=Number default=30}
+  Change the interval of reconnection attempts when `Reconnect on Disconnect` is enabled
+  ::
+::
+
+## Context Menu
+<kbd>Right-Click</kbd> on a configured connection to reveal the context menu:
+
+#### `Add`
+Add a new OBS Studio connection
+
+#### `Edit`
+Edit the selected OBS Studio connection
+
+#### `Delete`
+Delete the selected OBS Studio connection
+
+#### `Auto Connect`
+Quickly toggle the `Auto Connect on Startup` configuration option for the selected connection
+
+#### `Reconnect`
+Quickly toggle the `Reconnect on Disconnect` configuration option for the selected connection
+
+#### `Default`
+Set this connection as the default when importing actions
+
+::callout{icon=i-mdi-lightbulb color=amber}
+If no default is set, imported actions will default to the first connection in the list
+::
+
+#### `Force`
+Temporarily override **all** OBS Studio connections to use the selected connection.
+
+::callout{icon=i-mdi-alert color=amber}
+This setting does **not** persist when you restart Streamer.bot
+::
+
+#### `Update All Actions To...`
+Reconfigure all actions utilizing an OBS Studio connection to use the selected connection
+
+#### `Connect`
+Manually attempt to connect to the selected connection
 
 ## Status Panel
-Overview of connection information available on the right-hand panel{.subtitle}
+Selecting a connected OBS instance in the left panel will reveal additional realtime information about that instance on the right panel.
 
-### OBS Information
-Shows the version number of OBS and the installed WebSocket plugin
+#### `OBS Information`
+Shows the version numbers of OBS Studio and WebSocket plugin
 
-### Current Scene
-Shows the name of the currently broadcasting scene on that connection
+#### `Current Scene`
+Shows the name of the currently broadcasting scene on the selected connection
 
-### Stream Status
-Shows the status of current streaming and recording activity
+#### `Stream Status`
+Shows the status of the current streaming and recording activity
 
-### Sources
+#### `Sources`
 Lists all sources present on the currently selected scene
 
-## Events
-Select an OBS connection in the top panel, then <kbd>Right-Click</kbd> <kbd>-></kbd> <kbd>Add</kbd> in the bottom events panel to register an OBS event.
+## Usage
+::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/broadcasters/obs-studio/flip-source}
+Explore all **OBS Studio sub-actions** and their variables at [API References > Sub-Actions > OBS Studio](/api/sub-actions/broadcasters/obs-studio/flip-source)
+::
 
-![add obs event currentprogramscenechanged](/broadcasters/obs/add-obs-event-currentprogramscenechanged.png =300x)
-
-### Event
-Select the event type from OBS
-
-A reference of all OBS Studio events is available [here](/Broadcasters/OBS/Events)
-
-### Group
-Optional group name to keep your events organized
-
-### Action
-Select the action to be executed any time the selected event is fired off from OBS
-
-## Connect/Disconnect Actions
-Events emitted when the OBS websocket server has connected/disconnected{.subtitle}
-* [**Connected *OBS Websocket has connected*** *v0.1.15*{.version-badge}](/Broadcasters/OBS/Actions/Connected)
-* [**Disconnected *OBS Websocket has disconnected*** *v0.1.15*{.version-badge}](/Broadcasters/OBS/Actions/Disconnected)
-{.btn-grid .list .dense .my-5}
-
-***
-
-### OBS Raw
-- [<i class="mdi mdi-code-json text--obs"></i>**OBS Raw *Sub-Action for executing raw OBS requests***](/Sub-Actions/OBS/Raw)
-{.btn-grid .my-5}
-
-### OBS Raw Requests
-- [<i class="mdi mdi-frequently-asked-questions
- text--obs"></i>**OBS Raw Requests *Reference of all requests supported with OBS Raw***](/Broadcasters/OBS/Requests)
-{.btn-grid .my-5}
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/broadcasters/obs-studio/obs-event}
+Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/broadcasters/obs-studio/obs-event)
+::

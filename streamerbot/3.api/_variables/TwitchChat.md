@@ -13,7 +13,7 @@ variables.summaryIcon: mdi:message-text
 `messageStripped` | The chat message with emotes stripped. | `Hello!`
 `messageCheermotesStripped` | The chat message with cheer emotes stripped. | `Hello!`
 `emoteCount` | Number of emotes in the chat message | `0`
-`emotes` | Comma Separated list of Twitch emotes found.
+`emotes` | `List<Emote>` |
 `isHighlight` | Is this message a Twitch Highlight? | `True` / `False`
 `isAction` | Is this message a `/me` action? | `True` / `False`
 `isReply`| Is this message a reply? | `True` / `False`

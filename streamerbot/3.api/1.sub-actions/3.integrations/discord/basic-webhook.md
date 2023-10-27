@@ -1,9 +1,9 @@
 ---
+title: Basic Webhook
+description: Post messages to a Discord channel with webhooks
 version: 0.1.14
 ---
 
-# Basic Webhook
-Post messages to a [Discord](https://discord.gg) channel via Webhooks
 :image-preview{width=400}
 
 ::list
