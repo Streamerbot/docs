@@ -1,19 +1,12 @@
----
-title: Follow Created
-description: Patreon Triggers Reference
-published: true
-date: 2023-03-17T21:18:08.665Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-15T20:41:57.456Z
----
+# Follow Created
+Patreon follow created.
 
-## Overview
-This triggers when a follow is created on Patreon.
-
-For a detailed guide about Patreon see [this page](/Integrations/Patreon).
+## Details
+This event triggers when you get a follow in Patreon.
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `id` | The ID of this event.
@@ -76,10 +69,3 @@ Name | Description
 `entitledTiers[#].Attributes.user_limit` | The user limit of this tier.
 `entitledTiers[#].id` | The ID of this tier.
 `entitledTiers[#].type` | The type of this tier.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Patreon Triggers Reference *Go Back***](/Triggers/Patreon)
-- [<i class="mdi mdi-account-minus" style="color: #ff424e;"></i> **Follow Deleted *Next Up***](/Triggers/Patreon/Follow-Deleted)
-{.btn-grid .my-5}

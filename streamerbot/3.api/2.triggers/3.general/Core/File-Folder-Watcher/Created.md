@@ -1,23 +1,19 @@
----
-title: Created
-description: File/Folder Watcher Triggers Reference
-published: true
-date: 2023-03-16T11:04:18.163Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-14T21:40:07.475Z
----
+# Created
+File/Folder Watcher created trigger.
 
-## Overview
-This triggers when a file gets created in the folder you're watching.
+## Details
+This event triggers when a selected file/folder is created.
 
-For a detailed guide on how the File/Folder Watcher works in Streamer.bot see [this page](/Settings/File-Folder-Watcher).
+- `Using a file`: this triggers when the file is created.
+- `Using a folder`: this triggers when a file from this folder gets created.
 
-## Configuration
-### Watcher
-Select any or a specific watcher from the Settings --> File/Folder Watcher tab
+## Parameters
+### `Watcher`
+Select any or a specific watcher from the `Settings -> File/Folder Watcher` tab
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `watcherFolder` | The folder you're watching for changes e.g. `C:\Desktop\Example-Folder`
@@ -25,10 +21,3 @@ Name | Description
 `fullPath` | The full path of the file e.g. `C:\Desktop\Example-Folder\Example.txt`
 `fileName` | The full file name including the file extension e.g. `Example.txt`
 `changeType` | The change type e.g. `Created`
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**File/Folder Watcher Triggers Reference *Go Back***](/Triggers/Core/File-Folder-Watcher)
-- [<i class="mdi mdi-delete primary--text"></i> **Deleted *Next Up***](/Triggers/Core/File-Folder-Watcher/Deleted)
-{.btn-grid .my-5}

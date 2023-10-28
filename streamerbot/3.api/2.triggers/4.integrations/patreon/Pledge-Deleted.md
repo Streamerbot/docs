@@ -1,19 +1,11 @@
----
-title: Pledge Deleted
-description: Patreon Triggers Reference
-published: true
-date: 2023-03-17T21:19:35.997Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-15T20:46:44.819Z
----
+# Pledge Deleted
+Patreon pledge deleted.
 
-## Overview
-This triggers when a pledge is deleted on Patreon.
-
-For a detailed guide about Patreon see [this page](/Integrations/Patreon).
+## Details
+This event triggers when a pledge is deleted in Patreon.
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `id` | The ID of this event.
@@ -77,10 +69,3 @@ Name | Description
 `entitledTiers[#].Attributes.user_limit` | The user limit of this tier.
 `entitledTiers[#].id` | The ID of this tier.
 `entitledTiers[#].type` | The type of this tier.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Patreon Triggers Reference *Go Back***](/Triggers/Patreon)
-- [<i class="mdi mdi-account-plus" style="color: #ff424e;"></i> **Follow Created *Next Up***](/Triggers/Patreon/Follow-Created)
-{.btn-grid .my-5}
