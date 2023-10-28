@@ -1,23 +1,13 @@
----
-title: Command Triggered
-description: Commands Triggers Reference
-published: true
-date: 2023-03-16T10:31:13.687Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-14T16:25:18.117Z
----
+# Command Triggered
+This event triggers when a command is triggered.
 
-## Overview
-This triggers when someone uses your command.
-
-For a detailed guide on how Commands work in Streamer.bot see [this page](/Commands).
-
-## Configuration
-### Commands
+## Parameters
+### `Commands`
 Select a command from the Commands tab.
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `command` | The command that was used
@@ -32,14 +22,7 @@ Name | Description
 `inputEscaped#` | The indexed word escaped
 `inputUrlEncoded#` | The indexed word URL encoded
 `role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
-`counter` | A running total of how many times a command has been run since application launch (if `Persisted` is checked, the total will be saved and reloaded at launch)
-{.vars-table}
+`counter` | A running total of how many times a command has been run since application launch (if 
 
-> These variable include the [User Variables](/Variables/User-Variables) and the [Broadcaster Variables](/Variables/Broadcaster)
-{.is-success}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Commands Triggers Reference *Go Back***](/Triggers/Core/Commands)
-- [<i class="mdi mdi-clock-alert primary--text"></i> **Command Cooldown *Up Next***](/Triggers/Core/Commands/Command-Cooldown)
-{.btn-grid .my-5}
+:variables{name=TwitchUser disclosure}
+:variables{name=TwitchBroadcaster disclosure}
