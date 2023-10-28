@@ -1,23 +1,16 @@
----
-title: HotKey Press
-description: Hot Keys Triggers Reference
-published: true
-date: 2023-03-16T21:05:44.015Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-14T11:35:38.445Z
----
+# HotKey Press
+HotKey Press trigger.
 
-## Overview
-The HotKey Press trigger is used for when you press a key on one of your keyboards.
+## Details
+This event triggers when a hotkey is pressed
 
-For a detailed guide on how Hot Keys work in Streamer.bot see [this page](/hotkeys).
-
-## Configuration
-### HotKey
-Select a hot key that is defined in the Hot Keys tab.
+## Parameters
+### `HotKey`
+Select a hot key from the `Hot Keys` tab
 
 ## Variables
+:variables-description
+
 Name | Description
 ----:|:------------
 `modifier` | The modifiers count
@@ -25,8 +18,3 @@ Name | Description
 `hasAlt` | If the hotkey press uses <kbd>ALT</kbd> `True`/`False`
 `hasShift` | If the hotkey press uses <kbd>SHIFT</kbd> `True`/`False`
 `key` | The numeric key value e.g. `48`
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Hot Keys Triggers Reference *Go Back***](/Triggers/Core/Hot-Keys)
-{.btn-grid .my-5}
