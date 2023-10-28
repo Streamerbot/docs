@@ -1,19 +1,11 @@
----
-title: Pledge Updated
-description: Patreon Triggers Reference
-published: true
-date: 2023-03-17T21:19:13.050Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-15T20:45:47.934Z
----
+# Pledge Updated
+Patreon pledge updated.
 
-## Overview
-This triggers when a pledge is updated on Patreon.
-
-For a detailed guide about Patreon see [this page](/Integrations/Patreon).
+## Details
+This event triggers when a pledge is updated in Patreon.
 
 ## Variables
+:variables-description
 Name | Description
 ----:|:------------
 `id` | The ID of this event.
@@ -76,10 +68,3 @@ Name | Description
 `entitledTiers[#].id` | The ID of this tier.
 `entitledTiers[#].type` | The type of this tier.
 `updatedToTier` | The tier the user has updated to.
-{.vars-table}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Patreon Triggers Reference *Go Back***](/Triggers/Patreon)
-- [<i class="mdi mdi-cash-minus" style="color: #ff424e;"></i> **Pledge Deleted *Next Up***](/Triggers/Patreon/Pledge-Deleted)
-{.btn-grid .my-5}
