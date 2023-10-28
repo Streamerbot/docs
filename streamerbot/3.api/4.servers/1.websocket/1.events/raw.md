@@ -1,5 +1,5 @@
 # Raw
-### Tabs {.tabset}
+
 #### Action
 ```json
 {
