@@ -14,17 +14,15 @@ You can enable `Command` events with this [Subscribe](/api/servers/websocket/req
   "id": "my-subscribe-id",
   "events": {
     "Command": [
-      "Message",
-      "Whisper",
-      "BotWhisper",
-      "MessageCooldown",
+      "Triggered",
+      "Cooldown",
     ]
   },
 }
 ```
 
 ## Events
-### `Message`
+### `Triggered`
 ```json
 {
   "command": "!bots",
@@ -41,41 +39,7 @@ You can enable `Command` events with this [Subscribe](/api/servers/websocket/req
 }
 ```
 
-### `Whisper`
-```json
-{
-  "command": "!bots",
-  "counter": 1,
-  "userCounter": 1,
-  "message": "",
-  "user": {
-    "id": 00000000,
-    "login": "<username>",
-    "display_name": "<user's display name>",
-    "subscribed": true,
-    "role": 4
-  }
-}
-```
-
-### `BotWhisper`
-```json
-{
-  "command": "!bots",
-  "counter": 1,
-  "userCounter": 1,
-  "message": "",
-  "user": {
-    "id": 00000000,
-    "login": "<username>",
-    "display_name": "<user's display name>",
-    "subscribed": true,
-    "role": 4
-  }
-}
-```
-
-### `MessageCooldown`
+### `Cooldown`
 ```json
 {
   "command": "!bots",
