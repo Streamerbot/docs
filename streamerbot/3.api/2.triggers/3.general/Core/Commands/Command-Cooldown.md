@@ -1,4 +1,5 @@
 # Command Cooldown
+
 Command Cooldown trigger.
 
 ## Details
