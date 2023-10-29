@@ -1,7 +1,5 @@
 # Streamlabs
-These are the events that are broadcast from Streamlabs events.
 
-### Tab {.tabset}
 #### Donation
 ```json
 {

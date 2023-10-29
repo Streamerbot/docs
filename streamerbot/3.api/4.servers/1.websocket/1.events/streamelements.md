@@ -1,5 +1,5 @@
 # StreamElements
-### Tabs {.tabset}
+
 #### Tip
 ```json
 {
