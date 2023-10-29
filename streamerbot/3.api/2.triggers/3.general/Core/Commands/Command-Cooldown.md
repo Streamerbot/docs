@@ -1,4 +1,8 @@
 # Command Cooldown
+
+Command Cooldown trigger.
+
+## Details
 This event triggers when a command is used whilst it is in cooldown.
 
 ## Parameters
