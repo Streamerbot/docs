@@ -95,6 +95,23 @@ Reference of all Twitch events emitted by the WebSocket Server.
 }
 ```
 
+### BotWhisper
+```json [BotWhisper]
+{
+  "command": "!bots",
+  "counter": 1,
+  "userCounter": 1,
+  "message": "",
+  "user": {
+    "id": 00000000,
+    "login": "<username>",
+    "display_name": "<user's display name>",
+    "subscribed": true,
+    "role": 4
+  }
+}
+```
+
 ## First Words
 ```json [FirstWord]
 {
