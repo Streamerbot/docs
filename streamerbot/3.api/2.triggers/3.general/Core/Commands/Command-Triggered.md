@@ -1,4 +1,7 @@
 # Command Triggered
+Command Triggered trigger.
+
+## Details
 This event triggers when a command is triggered.
 
 ## Parameters
