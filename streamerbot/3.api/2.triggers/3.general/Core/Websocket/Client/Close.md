@@ -1,23 +1,19 @@
----
-title: Close
-description: WebSocket Client Triggers Reference
-published: true
-date: 2023-03-16T22:04:01.082Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-16T21:46:47.174Z
----
+# Websocket Client Close
 
-## Overview
+Websocket Client Close trigger.
+
+## Details
+
 The Websocket Client Close Trigger is used for when any or a selected client closes.
 
-For a detailed guide about the Websocket Client see [this page](/Servers-Clients/WebSocket-Clients).
+## Parameters
 
-## Configuration
 ### Client
-Select any or a specific websocket client
+
+Select any or a specific websocket client.
 
 ## Variables
+
 Name | Description
 ----:|:------------
 `wsIdx` | The 0-based id of this websocket e.g. `0`, `1`, `2`, etc.
@@ -29,9 +25,3 @@ Name | Description
 `wsPort` | The port of this websocket client e.g. `8080`
 `wsPath` | The path of this websocket client e.g.`/`
 `wsQuery` | The query of this websocket client e.g.`?key=value`
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Websocket Client Triggers Reference *Go Back***](/Triggers/Core/Websocket/Client)
-- [<i class="mdi mdi-message-text primary--text"></i> **Message *Next Up***](/Triggers/Core/Websocket/Client/Message)
-{.btn-grid .my-5}

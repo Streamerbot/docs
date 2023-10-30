@@ -1,23 +1,19 @@
----
-title: Message
-description: WebSocket Client Triggers Reference
-published: true
-date: 2023-03-16T22:04:07.074Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-16T22:03:09.481Z
----
+# Websocket Client Message
 
-## Overview
-The Websocket Client Open Trigger is used for when any or a selected client opens.
+Websocket Client Message trigger.
 
-For a detailed guide about the Websocket Client see [this page](/Servers-Clients/WebSocket-Clients).
+## Details
 
-## Configuration
+The Websocket Client Message Trigger is used for when any or a selected client data is detected.
+
+## Parameters
+
 ### Client
+
 Select any or a specific websocket client
 
 ## Variables
+
 Name | Description
 ----:|:------------
 `wsIdx` | The 0-based id of this websocket e.g. `0`, `1`, `2`, etc.
@@ -30,9 +26,3 @@ Name | Description
 `wsPath` | The path of this websocket client e.g.`/`
 `wsQuery` | The query of this websocket client e.g.`?key=value`
 `message` | {"timeStamp":"2023-03-16T22:58:28.3298+01:00","event":{"source":"HotKey","type":"Press"},"data":{"_85lbxopeOGvkNXq7iRgrjS6tpjj":1,"_hdhxue62iGbvG5rnMWU0dxGe29p":96}}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Websocket Client Triggers Reference *Go Back***](/Triggers/Core/Websocket/Client)
-- [<i class="mdi mdi-server-network primary--text"></i> **Open *Next Up***](/Triggers/Core/Websocket/Client/Open)
-{.btn-grid .my-5}
