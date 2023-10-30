@@ -1,4 +1,8 @@
-# WebSocket Custom Sever Message
+---
+navigation.title: Message
+---
+
+# WebSocket Custom Server Message
 Triggered when a client sends a message to a custom WebSocket server
 
 ## Parameters

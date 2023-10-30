@@ -1,4 +1,8 @@
-# WebSocket Custom Sever Connection Closed
+---
+navigation.title: Connection Closed
+---
+
+# WebSocket Custom Server Connection Closed
 Triggered when a client disconnects from a custom WebSocket server
 
 ## Parameters

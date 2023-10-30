@@ -1,3 +1,7 @@
+---
+navigation.title: Connection Opened
+---
+
 # Websocket Client Open
 Triggered when a configured WebSocket client connection is opened
 

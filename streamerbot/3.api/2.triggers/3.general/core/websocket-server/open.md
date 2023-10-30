@@ -1,4 +1,8 @@
-# WebSocket Custom Sever Connection Opened
+---
+navigation.title: Connection Opened
+---
+
+# WebSocket Custom Server Connection Opened
 Triggered when a client connects to a custom WebSocket server
 
 ## Parameters

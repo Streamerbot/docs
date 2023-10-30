@@ -1,3 +1,7 @@
+---
+navigation.title: Message
+---
+
 # Websocket Client Message
 Triggered when data is received by a configured WebSocket client
 

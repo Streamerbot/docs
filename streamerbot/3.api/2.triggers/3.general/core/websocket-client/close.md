@@ -1,3 +1,7 @@
+---
+navigation.title: Connection Closed
+---
+
 # WebSocket Client Closed
 Triggered when a configured WebSocket client connection is closed
 
