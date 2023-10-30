@@ -1,18 +1,13 @@
-# Websocket Custom Sever Message
-
-Websocket Custom Sever Message.
-
-## Details
-
-This triggers when a client sends a message the custom websocket server.
+# WebSocket Custom Sever Message
+Triggered when a client sends a message to a custom WebSocket server
 
 ## Parameters
 
-### Server
-
+### `Server`
 Select any or a specific websocket server
 
 ## Variables
+:variables-description
 
 Name | Description
 ----:|:------------

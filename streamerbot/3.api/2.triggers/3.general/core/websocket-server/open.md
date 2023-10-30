@@ -1,18 +1,13 @@
-# Websocket Custom Sever Connection Opened
-
-Websocket Custom Sever Connection Opened trigger.
-
-## Details
-
-This triggers when a client connects to the custom websocket server.
+# WebSocket Custom Sever Connection Opened
+Triggered when a client connects to a custom WebSocket server
 
 ## Parameters
 
-### Server
-
+### `Server`
 Select any or a specific websocket server.
 
 ## Variables
+:variables-description
 
 Name | Description
 ----:|:------------

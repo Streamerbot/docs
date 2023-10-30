@@ -1,0 +1,14 @@
+# WebSocket Custom Sever Connection Closed
+Triggered when a client disconnects from a custom WebSocket server
+
+## Parameters
+
+### `Server`
+Select any or a specific websocket server.
+
+## Variables
+:variables-description
+
+Name | Description
+----:|:------------
+`sessionId` | The session id of the client.

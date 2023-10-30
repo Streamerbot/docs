@@ -1,18 +1,14 @@
-# Websocket Client Close
-
-Websocket Client Close trigger.
-
-## Details
-
-The Websocket Client Close Trigger is used for when any or a selected client closes.
+# Websocket Client Open
+Triggered when a configured WebSocket client connection is opened
 
 ## Parameters
 
 ### Client
 
-Select any or a specific websocket client.
+Select any or a specific websocket client
 
 ## Variables
+:variables-description
 
 Name | Description
 ----:|:------------

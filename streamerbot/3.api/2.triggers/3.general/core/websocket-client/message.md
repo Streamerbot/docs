@@ -1,18 +1,13 @@
-# Websocket Client Open
-
-Websocket Client Open trigger.
-
-## Details
-
-The Websocket Client Open Trigger is used for when any or a selected client opens.
+# Websocket Client Message
+Triggered when data is received by a configured WebSocket client
 
 ## Parameters
 
-### Client
-
+### `Client`
 Select any or a specific websocket client
 
 ## Variables
+:variables-description
 
 Name | Description
 ----:|:------------
@@ -25,3 +20,4 @@ Name | Description
 `wsPort` | The port of this websocket client e.g. `8080`
 `wsPath` | The path of this websocket client e.g.`/`
 `wsQuery` | The query of this websocket client e.g.`?key=value`
+`message` | `{"timeStamp":"2023-03-16T22:58:28.3298+01:00","event":{"source":"HotKey","type":"Press"},"data":{"_85lbxopeOGvkNXq7iRgrjS6tpjj":1,"_hdhxue62iGbvG5rnMWU0dxGe29p":96}}`{lang=json}
