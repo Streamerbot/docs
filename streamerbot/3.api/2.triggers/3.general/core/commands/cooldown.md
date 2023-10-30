@@ -1,9 +1,5 @@
 # Command Cooldown
-
-Command Cooldown trigger.
-
-## Details
-This event triggers when a command is used whilst it is in cooldown.
+Triggered when a command has been triggered with an active cooldown
 
 ## Parameters
 ### `Commands`
