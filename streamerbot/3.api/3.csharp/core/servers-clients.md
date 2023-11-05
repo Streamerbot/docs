@@ -4,10 +4,14 @@ description: C# methods for Streamer.bot servers and clients
 ---
 
 ## Websocket Server
-```csharp
-void WebsocketBroadcastString(string data); // send a custom event over the websocket server
-void WebsocketBroadcastJson(string data); // send a custom event over the websocket server, used for browser widgets
-```
+
+### `WebsocketBroadcastString`
+Send a custom event over the Streamer.bot WebSocket server
+:csharp-method{name=WebsocketBroadcastString}
+
+### `WebsocketBroadcastJson`
+Send a custom JSON event over the Streamer.bot WebSocket server
+:csharp-method{name=WebsocketBroadcastJson}
 
 ## Websocket Clients
 ```csharp
