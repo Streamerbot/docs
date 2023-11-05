@@ -43,6 +43,6 @@ Navigate to **Stream Apps > PolyPop**
 
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/broadcasters/polypop/trigger-alert}
-Explore all **PolyPop sub-actions** and their variables at [API References > Sub-Actions > PolyPop](/api/sub-actions/broadcasters/polypop/trigger-alert)
+::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/polypop/trigger-alert}
+Explore all **PolyPop sub-actions** and their variables at [API References > Sub-Actions > PolyPop](/api/sub-actions/polypop/trigger-alert)
 ::

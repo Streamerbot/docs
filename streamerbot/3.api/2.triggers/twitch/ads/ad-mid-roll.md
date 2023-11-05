@@ -12,7 +12,7 @@ Twitch mid-roll ad trigger.
 
 This event triggers 5 seconds prior to the start of an ad.
 
-See the [Ad Run](/api/triggers/platforms/twitch/ads/ad-run) trigger if you are looking for the ad start event.
+See the [Ad Run](/api/triggers/twitch/ads/ad-run) trigger if you are looking for the ad start event.
 
 ## Variables
 :variables-description
