@@ -26,7 +26,7 @@ Navigate to **Integrations > Streamer.bot Website**
   ::card{icon=i-mdi-bookmark title="IFTTT" to=/guide/integrations/ifttt}
   Integration with IFTTT
   ::
-  ::card{icon=i-mdi-bookmark title="Ko-Fi" to=/guide/integrations/kofi}
+  ::card{icon=i-mdi-bookmark title="Ko-Fi" to=/guide/integrations/ko-fi}
   Integration with Ko-Fi
   ::
   ::card{icon=i-mdi-bookmark title="Patreon" to=/guide/integrations/patreon}
