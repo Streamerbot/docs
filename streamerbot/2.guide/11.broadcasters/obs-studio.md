@@ -124,10 +124,10 @@ Shows the status of the current streaming and recording activity
 Lists all sources present on the currently selected scene
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/broadcasters/obs-studio/flip-source}
-Explore all **OBS Studio sub-actions** and their variables at [API References > Sub-Actions > OBS Studio](/api/sub-actions/broadcasters/obs-studio/flip-source)
+::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/obs/flip-source}
+Explore all **OBS Studio sub-actions** and their variables at [API References > Sub-Actions > OBS Studio](/api/sub-actions/obs/flip-source)
 ::
 
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/broadcasters/obs-studio/obs-event}
-Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/broadcasters/obs-studio/obs-event)
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/obs/obs-event}
+Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/obs/obs-event)
 ::

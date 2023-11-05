@@ -32,4 +32,4 @@ After execution, the `%currentWeather%` variable will be populated with the resp
 
 You can then use your variable in any subsequent sub-actions.
 
-For example, you could then use the [Twitch Send Message to Channel](/api/sub-actions/platforms/twitch/chat/send-message-to-channel) sub-action to send the output back to chat!
+For example, you could then use the [Twitch Send Message to Channel](/api/sub-actions/twitch/chat/send-message-to-channel) sub-action to send the output back to chat!

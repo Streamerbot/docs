@@ -62,6 +62,6 @@ Shows the status of current streaming and recording activity
 Lists all sources present on the currently selected scene
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/broadcasters/streamlabs-desktop/flip-source}
-Explore all **Streamlabs Desktop sub-actions** at [API References > Sub-Actions > Streamlabs Desktop](/api/sub-actions/broadcasters/streamlabs-desktop/flip-source)
+::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/streamlabs-desktop/flip-source}
+Explore all **Streamlabs Desktop sub-actions** at [API References > Sub-Actions > Streamlabs Desktop](/api/sub-actions/streamlabs-desktop/flip-source)
 ::
