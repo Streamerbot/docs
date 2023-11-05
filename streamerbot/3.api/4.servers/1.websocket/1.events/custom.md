@@ -51,9 +51,9 @@ Send a custom JSON event over the Streamer.bot WebSocket server
     "event": {
       "source": "General",
       "type": "Custom",
-      "data": {
-        "key": "value"
-      }
+    },
+    "data": {
+      "key": "value"
     }
   }
   ```
