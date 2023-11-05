@@ -1,5 +1,6 @@
 ---
-title: Custom
+title: Custom Events
+navigation.title: Custom
 description: Emit custom events from the Streamer.bot WebSocket server
 ---
 

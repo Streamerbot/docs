@@ -1,4 +1,5 @@
 layout: api
-title: 'Servers'
+title: Servers
+category.title: Servers
 icon: mdi:api
 aside.level: 3
