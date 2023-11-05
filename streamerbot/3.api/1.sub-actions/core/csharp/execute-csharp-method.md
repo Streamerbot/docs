@@ -1,5 +1,5 @@
 # Execute C# Method
-Directly call into C# methods defined in your [Execute Code](csharp-execute-code) sub-actions
+Directly call into C# methods defined in your [Execute Code](/api/sub-actions/core/csharp/execute-csharp-code) sub-actions
 
 Using this sub-action, you can call into an existing execute code, and call another method, or it's main entry point.
 
