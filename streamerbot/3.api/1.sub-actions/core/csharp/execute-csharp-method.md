@@ -1,18 +1,60 @@
-# Execute C# Method
-Directly call into C# methods defined in your [Execute Code](/api/sub-actions/core/csharp/execute-csharp-code) sub-actions
+---
+title: Execute C# Method
+description: Sub-action for directly calling a method defined in another C# code sub-action
+---
 
-Using this sub-action, you can call into an existing execute code, and call another method, or it's main entry point.
+::callout{icon=i-mdi-bookmark color=green to=/guide/csharp}
+Learn more about custom code actions at [Guide > C# Code Actions](/api/csharp)
+::
 
-If you have the Execute C# Code setup for `Keep Alive` and `Precompile on Startup` you can use `private` variables within the class to preserve data between calls.
+Using this sub-action you can directly call into methods defined in your existing [Execute C# Code](/api/sub-actions/core/csharp/execute-csharp-code) sub-actions.
 
-The methods must be in the form of a return type of `bool` with no parameters:
+Custom methods must be in the form of a return type of `bool` with no parameters:
 
-```csharp
+```csharp [Example]
 public bool MethodName()
 {
-    // your code here
-    return true;
+  // your code here
+  return true;
 }
 ```
 
-> The capabilities of this sub-action may be extended later.
+::callout{icon=i-mdi-lightbulb color=amber}
+  If you have the selected `Execute C# Code` sub-action setup for `Keep Alive` and `Precompile on Startup` you can use `private` variables within the class to **preserve data between calls**.
+::
+
+## Configuration
+
+::field-group
+  ::field{name="Execute C# Code" type=Select}
+    Select the `Execute C# Code` sub-action you would like to reference.
+
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    You must configure the `Name` field in your `Execute C# Code` sub-actions to display here. [Read more](/api/sub-actions/core/csharp/execute-csharp-code#configuration)
+    ::
+  ::
+
+  ::field{name=Method type=Select}
+    Select the method to execute
+
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    This can be any custom defined method, or even the main `Execute()` method.
+    ::
+  ::
+
+  ::field{name="Run on UI Thread" type=Toggle}
+
+  ::
+
+  ::field{name="Save Result to Variable" type=Toggle}
+    Save the `bool` result of the selected method
+
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    Returning `false` without this option enabled will simply stop execution of the entire action. Enabling this option allows you to collect the result and also continue execution regardless of the return value.
+    ::
+  ::
+
+  ::field{name="Variable Name" type=Text}
+  When `Save Result to Variable` is enabled, enter the name for the resulting variable here.
+  ::
+::
