@@ -27,7 +27,7 @@ Name | Description
 `poll.votes` | Total number of regular votes
 `poll.rewardVotes` | Total number of reward based votes
 `poll.totalVotes` | Overall total number of votes
-`poll.EndedAt` | The timestamp that the poll ended
+`poll.endedAt` | The timestamp that the poll ended
 `poll.winningIndex` | The index of the winning choice
 `poll.winningChoice.id` | The id of the winning choice
 `poll.winningChoice.title` | The title of the winning choice
