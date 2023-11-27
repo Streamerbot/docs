@@ -87,10 +87,10 @@ icon: simple-icons:obsstudio
 ### `ObsHideFilter`
 :csharp-method{name=ObsHideFilter}
 
-### `ObsHideScenesFilter`
+### `ObsHideScenesFilters`
 :csharp-method{name=ObsHideScenesFilter}
 
-### `ObsHideSourcesFilter`
+### `ObsHideSourcesFilters`
 :csharp-method{name=ObsHideSourcesFilter}
 
 ### `ObsIsFilterEnabled`
@@ -125,13 +125,6 @@ icon: simple-icons:obsstudio
 ### `ObsSendRaw`
 :csharp-method{name=ObsSendRaw}
 
-## Hide All Scene/Source Filters
-### `ObsHideScenesFilters`
-:csharp-method{name=ObsHideScenesFilters}
-
-### `ObsHideSourcesFilters`
-:csharp-method{name=ObsHideSourcesFilters}
-
 ## Media
 ### `ObsSetMediaState`
 :csharp-method{name=ObsSetMediaState}
@@ -155,17 +148,14 @@ icon: simple-icons:obsstudio
 :csharp-method{name=ObsMediaPrevious}
 
 ## Colors
-### `ObsConvertArgb`
-:csharp-method{name=ObsConvertArgb}
+### `ObsConvertRgb`
+:csharp-method{name=ObsConvertRgb}
 
 ### `ObsConvertColorHex`
 :csharp-method{name=ObsConvertColorHex}
 
-### `ObsSetColorSourceArgbColor`
-:csharp-method{name=ObsSetColorSourceArgbColor}
-
-### `ObsSetColorSourceHexColor`
-:csharp-method{name=ObsSetColorSourceHexColor}
+### `ObsSetColorSourceColor`
+:csharp-method{name=ObsSetColorSourceColor}
 
 ### `ObsSetColorSourceRandomColor`
 :csharp-method{name=ObsSetColorSourceRandomColor}
