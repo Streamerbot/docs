@@ -84,41 +84,29 @@ icon: simple-icons:obsstudio
 :csharp-method{name=ObsSetGdiText}
 
 ## Filters
-### `ObsIsSceneFilterEnabled`
-:csharp-method{name=ObsIsSceneFilterEnabled}
+### `ObsHideFilter`
+:csharp-method{name=ObsHideFilter}
 
-### `ObsIsSourceFilterEnabled`
-:csharp-method{name=ObsIsSourceFilterEnabled}
+### `ObsHideScenesFilter`
+:csharp-method{name=ObsHideScenesFilter}
 
-### `ObsSetSceneFilterState`
-:csharp-method{name=ObsSetSceneFilterState}
+### `ObsHideSourcesFilter`
+:csharp-method{name=ObsHideSourcesFilter}
 
-### `ObsSetSourceFilterState`
-:csharp-method{name=ObsSetSourceFilterState}
+### `ObsIsFilterEnabled`
+:csharp-method{name=ObsIsFilterEnabled}
 
-### `ObsShowSceneFilter`
-:csharp-method{name=ObsShowSceneFilter}
+### `ObsSetFilterState`
+:csharp-method{name=ObsSetFilterState}
 
-### `ObsShowSourceFilter`
-:csharp-method{name=ObsShowSourceFilter}
+### `ObsSetRandomFilterState`
+:csharp-method{name=ObsSetRandomFilterState}
 
-### `ObsHideSceneFilter`
-:csharp-method{name=ObsHideSceneFilter}
+### `ObsShowFilter`
+:csharp-method{name=ObsShowFilter}
 
-### `ObsHideSourceFilter`
-:csharp-method{name=ObsHideSourceFilter}
-
-### `ObsToggleSceneFilter`
-:csharp-method{name=ObsToggleSceneFilter}
-
-### `ObsToggleSceneFilter`
-:csharp-method{name=ObsToggleSceneFilter}
-
-### `ObsSetRandomSceneFilter`
-:csharp-method{name=ObsSetRandomSceneFilter}
-
-### `ObsSetRandomSourceFilter`
-:csharp-method{name=ObsSetRandomSourceFilter}
+### `ObsToggleFilter`
+:csharp-method{name=ObsToggleFilter}
 
 ## Mute
 ### `ObsSetSourceMuteState`
