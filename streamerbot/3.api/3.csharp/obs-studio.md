@@ -88,10 +88,10 @@ icon: simple-icons:obsstudio
 :csharp-method{name=ObsHideFilter}
 
 ### `ObsHideScenesFilters`
-:csharp-method{name=ObsHideScenesFilter}
+:csharp-method{name=ObsHideScenesFilters}
 
 ### `ObsHideSourcesFilters`
-:csharp-method{name=ObsHideSourcesFilter}
+:csharp-method{name=ObsHideSourcesFilters}
 
 ### `ObsIsFilterEnabled`
 :csharp-method{name=ObsIsFilterEnabled}
