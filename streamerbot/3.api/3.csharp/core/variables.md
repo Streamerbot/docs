@@ -12,6 +12,15 @@ Arguments are local variables only available to the currently running action and
 Set an argument to be used in subsequent sub-actions
 :csharp-method{name=SetArgument}
 
+::callout{icon=i-mdi-alert color=amber}
+The following Methods require the `0.2.3-alpha`.
+::
+
+### `TryGetArg`
+:csharp-method{name=TryGetArg}
+
+
+
 ## Globals
 ### `GetGlobalVar`
 Fetch the current value of a global variable
@@ -24,6 +33,30 @@ Set a global variable value
 ### `UnsetGlobalVar`
 Unset a global variable value
 :csharp-method{name=UnsetGlobalVar}
+
+::callout{icon=i-mdi-alert color=amber}
+The following Methods require the `0.2.3-alpha`.
+::
+
+### `ClearNonPersistedGlobals`
+:csharp-method{name=ClearNonPersistedGlobals}
+
+### `ClearNonPersistedUserGlobals`
+:csharp-method{name=ClearNonPersistedUserGlobals}
+
+### `GetGlobalVarValues`
+Get a list of all Global Variables.
+:csharp-method{name=GetGlobalVarValues}
+
+### The `GlobalVariableValue` class
+```cs
+public class GlobalVariableValue
+{
+  public string VariableName { get; set; }
+  public object Value { get; set; }
+  public DateTime LastWrite { get; set; }
+}
+```
 
 ## User Variables (Twitch)
 ### `GetTwitchUserVar`
