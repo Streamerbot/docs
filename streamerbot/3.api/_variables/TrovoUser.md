@@ -5,9 +5,9 @@ variables.summaryIcon: mdi:account
 
 | Name | Description | Example |
 |-----:|:------------|:--------|
-`user` | The display name of the user | `TwitchUser123`
-`userName` | The login name of the user | `twitchuser123`
-`userId` | Unique user identifier | `a126e8a8-43f7-4a14-8990-e8c3feea76d8`
+`user` | The display name of the user | `TrovoUser123`
+`userName` | The login name of the user | `trovouser123`
+`userId` | Unique user identifier | `trovo_678296378`
 `userType` | Streaming service of this user | `trovo`
 `isSubscribed` | Is this user subscribed? | `True` / `False`
 `isModerator` | Is this user a moderator? | `True` / `False`

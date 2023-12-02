@@ -36,4 +36,4 @@ Name | Description
 `userName` | The user name of the user
 `display` | The display name of this user
 `role` | The role of the user <br> 1=`Viewer`, 2=`VIP`, 3=`Moderator`, 4=`Broadcaster`
-`isSubscribed` | Boolean value indicating user's subscription status <br> `True`/`False` 
+`isSubscribed` | Boolean value indicating user's subscription status <br> `True`/`False`
