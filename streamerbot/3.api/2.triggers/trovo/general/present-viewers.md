@@ -12,7 +12,7 @@ The present viewers trigger runs every 1-10 minutes, by default every 5 minutes.
 :variables-description
 Name | Description
 ----:|:------------
-`title` | ik1497's channel
+`title` | The stream title
 `audienceType` | The current audience type
 `categoryId` | The current category ID
 `categoryName` | The current category name
