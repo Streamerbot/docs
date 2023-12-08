@@ -1,0 +1,51 @@
+title: Speaker.bot
+description: Supercharged Text to Speech (TTS) for your live stream!
+navigation: false
+layout: page
+extra:
+  - Use your favorite text to speech engine
+  - Manage voice aliases on a per-user basis
+  - Integrate with Twitch, Streamlabs, and StreamElements events
+  - Create custom commands and channel point rewards with TTS
+  - Brought to you by the [Streamer.bot](https://streamer.bot) team!
+engines:
+  - title: Google Cloud
+    icon: i-logos-google-cloud
+    description: Convert text into natural-sounding speech using an API powered by the best of Google’s AI technologies.
+    link: https://cloud.google.com/text-to-speech
+  - title: Azure
+    icon: i-logos-azure-icon
+    description: Engage global audiences by using 400 neural voices across 140 languages and variants available with Azure TTS
+    link: https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/
+  - title: Amazon Polly
+    icon: i-skill-icons-aws-light
+    description: Deploy high-quality, natural-sounding human voices in dozens of languages
+    link: https://aws.amazon.com/polly/
+  - title: Watson
+    icon: i-carbon-watson
+    description: IBM Watson Text to Speech API
+    link: https://www.ibm.com/cloud/watson-text-to-speech
+  - title: SAPI5
+    icon: i-logos-microsoft-windows
+    description: Microsoft Speech API (SAPI), the native speech API for Windows.
+    link: https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms723627(v=vs.85)
+  - title: UberDuck
+    icon: i-mdi-duck
+    description: The Open Source Voice AI Community
+    link: https://uberduck.ai/
+  - title: TTS Monster
+    icon: i-mdi-microphone
+    description: Custom AI Text to Speech for Streamers
+    link: https://ttsmonster.com/
+  - title: Acapela
+    icon: i-mdi-microphone
+    description: Text to Speech solutions by Acapela Group
+    link: https://www.acapela-group.com/
+  - title: CereProc
+    icon: i-mdi-microphone
+    description: Text to Speech by CereProc
+    link: https://www.cereproc.com/en/products/cloud
+  - title: Eleven Labs
+    icon: i-mdi-microphone
+    description: Text to Speech by ElevenLabs.io
+    link: https://elevenlabs.io/
