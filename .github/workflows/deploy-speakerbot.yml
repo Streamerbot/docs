@@ -1,0 +1,23 @@
+name: Deploy Speaker.bot Docs
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - deploy
+  push:
+    branches:
+      - main
+    paths:
+      - 'speakerbot/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Create repository dispatch event
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_GH_TOKEN }}
+        run: |
+          gh api repos/Whipstickgostop/speaker-docs/dispatches \
+              --raw-field event_type=deploy
