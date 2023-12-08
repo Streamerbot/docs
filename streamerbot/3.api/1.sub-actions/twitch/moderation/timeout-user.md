@@ -2,6 +2,9 @@
 Timeout a user.
 :image-preview
 
+# Notes
+When you timeout a moderator it will re-mod the moderator when the timeout has passed.
+
 ## Parameters
 ### `Type`
 Select who you want to timeout.
