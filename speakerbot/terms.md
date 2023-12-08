@@ -25,4 +25,4 @@ Violation of any of the above stated terms can, and most likely will, result in 
 
 At any time you wish to revoke this app's access, please follow the steps listed under Google Settings, detailed here.
 
-Questions about the above Terms of Service or the privacy policy below should be sent to youtube@streamer.bot.
+Questions about the above Terms of Service or the privacy policy below should be sent to youtube@speaker.bot.
