@@ -4,13 +4,15 @@ description: Integrate Streamer.bot with PolyPop
 logo: /img/icons/polypop.png
 ---
 
-PolyPop integration is made possible via the community-made Websocket plugin available here:
+PolyPop integration is made possible via the community-made Websocket plugin available from `Plugins` in PolyPop:
 
-::card-group
-  ::card{title="PolyPop WebSocket Plugin" icon=i-mdi-github to=https://github.com/Jabbey92/PolyPopWebsocketPlugin/releases/tag/1.0 target=_blank rel=noopener}
-  Enable control of PolyPop via WebSockets
-  ::
-::
+Click on the `Plugins` button in the top-left corner in PolyPop
+
+![PolyPop Plugins Button](assets/polypop-plugins.png)
+
+In this menu nevagate to the `Web Services` tab, and install the Websockets plugin
+
+![PolyPop Websocket Plugin](assets/polypop-websockets-plugin.png)
 
 ---
 
