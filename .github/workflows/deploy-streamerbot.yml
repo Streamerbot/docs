@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy Streamer.bot Docs
 
 on:
   workflow_dispatch:
@@ -8,6 +8,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'streamerbot/**'
 
 jobs:
   deploy:
