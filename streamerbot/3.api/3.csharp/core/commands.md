@@ -11,8 +11,10 @@ Enable an existing command
   void EnableCommand(string id);
   ```
   ```csharp [Example]
-  // Enable the "shoutout" command
-  CPH.EnableCommand("shoutout");
+  // To retrieve the Id of the command, right click on the command on the Commands tab and select 'Copy Command Id'
+  // Id remains the same on import/export
+  // This would enable the command with Id '17b06f6a-2f25-4fd0-a0e6-48aacf5cc782' replace this with your own command Id
+  CPH.EnableCommand("17b06f6a-2f25-4fd0-a0e6-48aacf5cc782");
   ```
 ::
 
@@ -23,8 +25,10 @@ Disable an existing command
   void DisableCommand(string id);
   ```
   ```csharp [Example]
-  // Disable the "shoutout" command
-  CPH.DisableCommand("shoutout");
+  // To retrieve the Id of the command, right click on the command on the Commands tab and select 'Copy Command Id'
+  // Id remains the same on import/export
+  // This would disable the command with Id '17b06f6a-2f25-4fd0-a0e6-48aacf5cc782' replace this with your own command Id
+  CPH.DisableCommand("17b06f6a-2f25-4fd0-a0e6-48aacf5cc782");
   ```
 ::
 
