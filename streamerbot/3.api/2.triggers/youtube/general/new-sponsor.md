@@ -8,3 +8,5 @@ Name | Description
 `publishedAt` | The time the sponsor event was published at
 `isUpgrade` | Indicates whether the viewer just upgraded from a lower level
 `levelName` | The name of the Level at which the viewer is a member
+
+:variables{name=YouTubeBroadcaster disclosure}

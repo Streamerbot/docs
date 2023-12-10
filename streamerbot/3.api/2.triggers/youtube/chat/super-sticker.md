@@ -13,3 +13,6 @@ Name | Description
 `stickerId` | A unique ID that identifies the sticker image.
 `stickerAltText` | A text string that describes the sticker.
 `stickerLanguage` | The language of the `stickerAltText`
+
+:variables{name=YouTubeUser disclosure}
+:variables{name=YouTubeBroadcaster disclosure}

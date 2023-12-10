@@ -9,3 +9,5 @@ Name | Description
 `months` | The total amount of months (rounded up) the viewer has been a member
 `levelName` | The name of the Level at which the viewer is a member.
 `message` | The message associated with the member milestone event
+
+:variables{name=YouTubeBroadcaster disclosure}

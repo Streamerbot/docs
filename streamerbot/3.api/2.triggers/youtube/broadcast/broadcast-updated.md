@@ -8,3 +8,5 @@ Name | Description
 `title` | The title of the broadcast
 `description` |The description of the broadcast
 `privacy` | The privacy setting of the broadcast
+
+:variables{name=YouTubeBroadcaster disclosure}

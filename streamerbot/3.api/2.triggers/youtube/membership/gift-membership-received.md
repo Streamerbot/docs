@@ -10,3 +10,5 @@ Name | Description
 `gifterUserName` | The user name of the user who received the gifted membership
 `gifterUserId` | The id of the user who received the gifted membership
 `gifterUserType` | The type of user who received the gifted membership
+
+:variables{name=YouTubeBroadcaster disclosure}

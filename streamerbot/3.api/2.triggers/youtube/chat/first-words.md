@@ -11,3 +11,6 @@ Name | Description
 `rawInputEscaped` | The raw message sent to the chat escaped
 `input#` | A word from the `rawInput`. Change the `#` to the word number `0`, `1`, `2`, etc.
 `input#Escaped` | A word from the `rawInput` escaped. Change the `#` to the word number `0`, `1`, `2`, etc.
+
+:variables{name=YouTubeUser disclosure}
+:variables{name=YouTubeBroadcaster disclosure}

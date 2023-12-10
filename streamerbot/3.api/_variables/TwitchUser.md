@@ -8,7 +8,7 @@ variables.summaryIcon: mdi:account
 `user` | The display name of the user | `TwitchUser123`
 `userName` | The login name of the user | `twitchuser123`
 `userId` | Unique user identifier | `a126e8a8-43f7-4a14-8990-e8c3feea76d8`
-`userType` | Streaming service of this user | `twitch` / `youtube`
+`userType` | Streaming service of this user | `twitch`
 `isSubscribed` | Is this user subscribed? | `True` / `False`
 `isModerator` | Is this user a moderator? | `True` / `False`
 `isVip` | Is this user a VIP? | `True` / `False`
