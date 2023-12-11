@@ -19,5 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_GH_TOKEN }}
         run: |
-          gh api repos/Whipstickgostop/speaker-docs/dispatches \
+          gh api repos/Whipstickgostop/speakerbot-docs/dispatches \
               --raw-field event_type=deploy

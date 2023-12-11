@@ -1,4 +1,0 @@
----
-title: Changelogs
-navigation: false
----

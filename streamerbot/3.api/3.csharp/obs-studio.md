@@ -84,41 +84,29 @@ icon: simple-icons:obsstudio
 :csharp-method{name=ObsSetGdiText}
 
 ## Filters
-### `ObsIsSceneFilterEnabled`
-:csharp-method{name=ObsIsSceneFilterEnabled}
+### `ObsHideFilter`
+:csharp-method{name=ObsHideFilter}
 
-### `ObsIsSourceFilterEnabled`
-:csharp-method{name=ObsIsSourceFilterEnabled}
+### `ObsHideScenesFilters`
+:csharp-method{name=ObsHideScenesFilters}
 
-### `ObsSetSceneFilterState`
-:csharp-method{name=ObsSetSceneFilterState}
+### `ObsHideSourcesFilters`
+:csharp-method{name=ObsHideSourcesFilters}
 
-### `ObsSetSourceFilterState`
-:csharp-method{name=ObsSetSourceFilterState}
+### `ObsIsFilterEnabled`
+:csharp-method{name=ObsIsFilterEnabled}
 
-### `ObsShowSceneFilter`
-:csharp-method{name=ObsShowSceneFilter}
+### `ObsSetFilterState`
+:csharp-method{name=ObsSetFilterState}
 
-### `ObsShowSourceFilter`
-:csharp-method{name=ObsShowSourceFilter}
+### `ObsSetRandomFilterState`
+:csharp-method{name=ObsSetRandomFilterState}
 
-### `ObsHideSceneFilter`
-:csharp-method{name=ObsHideSceneFilter}
+### `ObsShowFilter`
+:csharp-method{name=ObsShowFilter}
 
-### `ObsHideSourceFilter`
-:csharp-method{name=ObsHideSourceFilter}
-
-### `ObsToggleSceneFilter`
-:csharp-method{name=ObsToggleSceneFilter}
-
-### `ObsToggleSceneFilter`
-:csharp-method{name=ObsToggleSceneFilter}
-
-### `ObsSetRandomSceneFilter`
-:csharp-method{name=ObsSetRandomSceneFilter}
-
-### `ObsSetRandomSourceFilter`
-:csharp-method{name=ObsSetRandomSourceFilter}
+### `ObsToggleFilter`
+:csharp-method{name=ObsToggleFilter}
 
 ## Mute
 ### `ObsSetSourceMuteState`
@@ -136,13 +124,6 @@ icon: simple-icons:obsstudio
 ## Raw
 ### `ObsSendRaw`
 :csharp-method{name=ObsSendRaw}
-
-## Hide All Scene/Source Filters
-### `ObsHideScenesFilters`
-:csharp-method{name=ObsHideScenesFilters}
-
-### `ObsHideSourcesFilters`
-:csharp-method{name=ObsHideSourcesFilters}
 
 ## Media
 ### `ObsSetMediaState`
@@ -167,17 +148,14 @@ icon: simple-icons:obsstudio
 :csharp-method{name=ObsMediaPrevious}
 
 ## Colors
-### `ObsConvertArgb`
-:csharp-method{name=ObsConvertArgb}
+### `ObsConvertRgb`
+:csharp-method{name=ObsConvertRgb}
 
 ### `ObsConvertColorHex`
 :csharp-method{name=ObsConvertColorHex}
 
-### `ObsSetColorSourceArgbColor`
-:csharp-method{name=ObsSetColorSourceArgbColor}
-
-### `ObsSetColorSourceHexColor`
-:csharp-method{name=ObsSetColorSourceHexColor}
+### `ObsSetColorSourceColor`
+:csharp-method{name=ObsSetColorSourceColor}
 
 ### `ObsSetColorSourceRandomColor`
 :csharp-method{name=ObsSetColorSourceRandomColor}
