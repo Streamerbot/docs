@@ -22,12 +22,14 @@ Next field we have is a variable name field here you will need to input a name f
 
 ![dialog_-group_options_.png](/commands/dialog_-group_options_.png =350x) ![example_catergory_.png](/commands/example_catergory_.png =350x)
 
-Next we have 2 check boxes `Include All` and `Only Has Permission`
+Next we have 3 check boxes `Include All`, `Ignore Aliases` and `Only Has Permission`
 
 `Include all` option will display all the commands in the specified group regardless of the permissions that have been set but, when paired with the `Only Has Permission` option checked it will only store the commands the user is permitted to use in that variable you have named.
 
 > **Please Note:** The `Include All` checkbox on the sub action overrides the `Include` behaviour on the command itself and will list everything from the group you have selected. There may be commands you don't want to list to the user such as test commands. So be mindful of this.
 {.is-info}
+
+`Ignore Aliases` option will give you the chance to hide any of your commands other formats for example if you have `!shoutout` and `!so` in the commands box it will only show the 1st one having this option unticked would show both when populating the list.
 
 If you do enable the option `Only has permission` make sure at the beginning of the sub action you perform the 'Get User Info for Target' sub action and place it at the top of the sub action list. This is so the Streamer.bot can see if the user that redeemed it is a VIP/Moderator/Subscriber/Viewer and match it to the permissions that has been set on that command.
 
@@ -40,7 +42,7 @@ This is one example you can import to get started.
 
 ## Import Code
 ```
-TlM0RR+LCAAAAAAABACVVE1vnDAQvVfqf7CQclu3BoOB3FY59FZVVW5VDsYeZ5EMbGy8ySrKfy+GRXztSskJe974ed4bD+/fvyEUnMDYsqmDexTu+kDNK+h2QTBsuWg72HaRf36P0Pvw6aBS+jxGIQ15nuJMhhzHMs+7VUFxqiCLwkTlBciBqz/04sB5/tppPUWh5oUGz9caB1N8LOahqSpeSzsjejaNO97AuH7lZ/vXeVmKaztjNF1qU+17VVtUNLVwxkDdbrGNEws3ljXttZ7K6aETN6XX+PuiSGyqHjythXYS/PmVFz184PYPmKq0l55tM4amCMZJQaTEjNMEx6liOCcxxUwIBYUUWSb46uZXKJ8PXjb5QZZIez76kkMS0nWxEt48MkU/dre8aeHNswc/K0CPB7CAuAHUHgCNViB+4qX2JqG2QefG3SN0N4J3q3KPBhR0nZJ7IRrX94tcc4LmcUyAAWZURjiOshDnImM4kkokImE0idnXndhdbfviTS8cij7jkG2cEfA43EGuP59pMlc6VRbTUGQUR5GSOA6THPOoG0ipICIUFEvJl3UmN3RuKrioJDOV4/JpPUC/PEk/RU/zudOaHy3IGTqAPdGQOfw7RvDjP2NyCCfABAAA
+U0JBRR+LCAAAAAAABACtVclu2zAQvQfIPxACcgtdSZRkKTej66VFUQS5FD1Q5MgmIIkuSSU2gvx7SS3eJBdG4Jv43miWNzPk6+0NQt4zKC1k7T0gct8ColpLZZ52cNjBlahF1VR73PNn4Sz0ehYMtdirO9hjTStwJt+36PPGuevMLEMbs5LKcY+glAD1iSqjd/Q+Gy+Y+TN/R3DQTIm16UnPwW9dbE6PYlPmjLRFfncIGqiWFtz9nxCYBzSb45QHFEc8y+xXTvC8gDQM4iLLgQ+x29/+NtC4kuqmLA9xqGlegvNpVANHzIaVDYcvSlbfhDZSba1RQUt9ZDUo9VFWFa25Pgq6VLJZn2Vp+UK3+ldTT/lV1lxWC9YLNuKZrFmjFNRmijVKLJe2FU7EP0cxx+KeCLxP/EdX2oliXZupEk633sRmM66v61bdirgoy7HCncGylsrygmrQE6W0Riuqf4KqhO5na9JROxcsoX7uc44TSmIczYsEZ35EcMJYATlnacroKMkXEMuV09EO7ClntmtXYeAH5JTadddVd0qenateFg4b5/YQf7v/X0sMbFyK3ocK0OMKNCCqAJkVoEF8RJ+pKF1YZCTayuYBobuBvBtluFZQ2BUGvmBMNu0cjarvRCVZFPmQAE4ID3EUpgHOWJrgkBcsZnFC4ih5n6jnJJ2aucsUDS9XVMtGMXjsczk34u1tNa1LkUYkYCnBYVhwHAVxhmloryNeQOgTKJK5/y5d4rO6jDO5TBX/clUOV39yst+3+5N7feXlj3mUxzwLMIXcd8uf4izOEkwyzgid+zHE5OrLf5XN3x8mbuuvLtT4KmeyLOlaAz/gB7p3ONh3r9+Ri33bDkEjquHVaB/o25u3f/fC+E1mCAAA
 ```
 
 ## Variables
@@ -49,7 +51,39 @@ This sub-action populates 2 variables with the custom name you specify, one as a
 Name | Description
 ----:|:------------
 `<variableName>` | Comma separated string containing all commands matching criteria specified in the sub-action
-`<variableName>.List` | List object for C# containing all commands matching criteria specified in the sub-action
+`<variableName>List` | List object for C# containing all commands matching criteria specified in the sub-action
+
+## CSharp Example
+
+Since Twitch has a message charater limit of 500 and on YouTube it's 200 you may find your commands overtake this amount therefore the code below can help with splitting the list into batches of commands that fit inside the messages.
+
+```cs
+using System;
+using System.Collections.Generic;
+
+public class CPHInline
+{
+    public bool Execute()
+    {
+        List<string> commands = (List<string>)args["commandsList"];//This is when the Variable Name in the Get Commands Sub-Action is `commands`
+        string message = "Commands Avaliable to you: ";
+        bool bot = false;
+        int messageMax = 495; //Limit is 500 on Twitch, 200 on YouTube.. I took a few off as a safety measure.
+        for (int i = 0; i < commands.Count; i++)
+        {
+            if ((commands[i].Length + message.Length) > messageMax)
+            {
+                CPH.SendMessage(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
+                message = "Addional Commands for you: ";
+            }
+
+            message += commands[i] + ", ";
+        }
+        CPH.SendMessage(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
+        return true;
+    }
+}
+```  
 
 ---
 
