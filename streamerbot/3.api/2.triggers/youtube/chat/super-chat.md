@@ -11,3 +11,6 @@ Name | Description
 `amount` | A string, like $1.00, that contains the purchase amount and currency. The string is intended to be displayed to the user.
 `microAmount` | The purchase amount, in micros of the purchase currency. For example, if the purchase amount is one dollar, the value is `1000000`.
 `currencyCode` | The currency in which the purchase was made. The value is an ISO 4217 currency code.
+
+:variables{name=YouTubeUser disclosure}
+:variables{name=YouTubeBroadcaster disclosure}

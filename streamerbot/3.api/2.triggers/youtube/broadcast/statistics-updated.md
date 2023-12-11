@@ -9,3 +9,5 @@ Name | Description
 `viewCount` | The total number of views from the broadcast
 `commentCount` | The total number of comments from the broadcast
 `favoriteCount` | How many times the broadcast has been favorited
+
+:variables{name=YouTubeBroadcaster disclosure}

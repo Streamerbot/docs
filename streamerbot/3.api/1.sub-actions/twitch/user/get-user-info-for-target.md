@@ -1,20 +1,11 @@
----
-title: Get User Info for Target
-description: Twitch Sub-Action Reference
-published: true
-date: 2023-04-08T21:49:13.772Z
-tags: twitch, subactions
-editor: markdown
-dateCreated: 2021-08-25T21:33:30.189Z
----
+# Get User Info for Target
+Get various data from a Twitch user and populate a set of variables.
 
-## Overview
-Collects various data for a Twitch user and populates a set of variables.
+:image-preview
 
-![overview.png](/Sub-Actions/Twitch/get-user-info-for-target/overview.png =400x)
-
+## Parameters
 ## Configuration
-### Source Type
+### `Source Type`
 Name | Description
 ----:|:------------
 `Broadcaster` | The currently logged in broadcaster account
@@ -22,10 +13,12 @@ Name | Description
 `From Input` | This will take the next word proceeding the trigger as the username to lookup. This user does not have to be present in the channel
 `Variable` | Use the content of an existing variable as the target
 
-### Variable
+### `Variable`
 If you selected `Variable` as your `Source Type`, enter the name of the variable you would like to read in.
 
 ## Variables
+:variables-description{empty}
+
 Name | Description
 ----:|:------------
 `targetUser` | Display name of the target user
@@ -53,12 +46,8 @@ Name | Description
 `tag#` | Consecutive arguments populated with one tag value each
 `tags` | All tags in a `list` format 
 `tagsDelimited` | A comma separated list of all tags
-{.vars-table}
 
-> This includes the user's tags as variables
-{.is-success}
+:variables{name=TwitchUser disclosure}
 
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}
+## C# Usage
+:csharp-method
