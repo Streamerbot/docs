@@ -9,10 +9,10 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ## Follow
 ```json [Follow]
 {
-  "userId": 0000000,
-  "userName": "<username>",
-  "displayName": "<display name>",
-  "isTest": true|false
+  "user_id": "00000000",
+  "user_login": "<username>",
+  "user_name": "<display name>",
+  "followed_at": "2023-12-11T18:36:21.616161Z" /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
 }
 ```
 
@@ -20,21 +20,23 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ```json [Cheer]
 {
   "message": {
-    "msgId": "21605e47-16d2-4496-8001-509438e1b41c",
-    "userId": 00000000
-    "username": "<username>",
-    "role": 1, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
-    "subscriber": true,
-    "displayName": "<display name of cheerer>",
-    "channel": "<channel>",
-    "message": "<message that contained the cheer>",
-    "isHighlighted": false,
-    "isMe": false,
-    "isCustomReward": false,
-    "isAnonymous": false,
-    "isReply": false,
-    "bits": 42,
-    "hasBits": true,
+    "internal":false,
+    "msgId":"21605e47-16d2-4496-8001-509438e1b41c",
+    "userId":"00000000",
+    "username":<username>",
+    "role":1, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+    "subscriber":true,
+    "displayName":"<display name of cheerer>",
+    "channel":"<channel>",
+    "message":"<message that contained the cheer>",
+    "isHighlighted":false,
+    "isMe":false,
+    "isCustomReward":false,
+    "isAnonymous":false,
+    "isReply":false,
+    "bits":42,
+    "firstMessage":false,
+    "hasBits":true,
     "emotes": [],
     "cheerEmotes": [
       {
@@ -46,20 +48,30 @@ Reference of all Twitch events emitted by the WebSocket Server.
         "endIndex": 6,
         "imageUrl": "<url to cheer emote>"
       }
-    ]
-  }
+    ],
+    "badges":[
+      {
+        "name":"<type of badge>", /* e.g. : subscriber, bits-leader etc... */
+        "version":"0",
+        "imageUrl":"<url to cheerer badge>"
+    ],
+    "monthsSubscribed":6,
+    "isTest":true
+   }
 }
+
 ```
 
 ## Raid
 ```json [Raid]
 {
-  "viewerCount": 42,
-  "profileImage": "test.png",
-  "userId": 0000000,
-  "userName": "<username>",
-  "displayName": "<display name>",
-  "role": 1 /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "from_broadcaster_user_id":"00000000", /* the streamer raiding */
+  "from_broadcaster_user_login":"<username>",
+  "from_broadcaster_user_name":"<display name>",
+  "to_broadcaster_user_id":"00000000", /* the streamer being raided */
+  "to_broadcaster_user_login":"<username>",
+  "to_broadcaster_user_name":"<display name>",
+  "viewers":10
 }
 ```
 
@@ -161,69 +173,78 @@ Reference of all Twitch events emitted by the WebSocket Server.
 }
 ```
 
-## Ad Run
-```json
+
+```json [AdRun]
 {
   "length": 90,
   "scheduled": false
 }
 ```
+```json [AdMidRoll]
+{
+  "jitterTime":5000,
+  "warmupTime":5000,
+  "commercialId":"9b2af8e9-7266-4ea8-bf94-fd615ad40aae"
+}
+```
 
 ## Subscriptions
 
-### Sub
-```json
+```json [Sub]
 {
-  "subTier": 0, /* 0 - Prime, 1 - Tier 1, 2 - Tier 2, 3 - Tier 3 */
-  "color": "#008D99",
-  "emotes": [],
-  "message": "",
-  "userId": 00000000,
-  "userName": "<username>",
-  "displayName": "<display name>",
-  "role": 1 /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "subTier":1,
+      "emotes":[],
+      "badges":[],
+      "message":"Test Subscription",
+      "userId":"00000000",
+      "userName":"<subscriber's username>",
+      "displayName":"<subscriber's display name>",
+      "role":0, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+      "isTest":true
 }
 ```
 
-### Resub
-```json
+
+```json [Resub]
 {
-  "cumulativeMonths": 25,
-  "shareStreak": true,
-  "streakMonths": 1,
-  "subTier": 0, /* 0 - Prime, 1 - Tier 1, 2 - Tier 2, 3 - Tier 3 */
-  "color": "#FF4500",
-  "emotes": [],
-  "message": "",
-  "userId": 162909743,
-  "userName": "admiralai",
-  "displayName": "AdmiralAI",
-  "role": 1 /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "cumulativeMonths":0,
+  "shareStreak":false,
+  "streakMonths":0,
+  "subTier":3,
+  "emotes":[],
+  "badges":[],
+  "message":"test message",
+  "userId":"00000000",
+  "userName":"<subscriber's username>",
+  "displayName":"<subscriber's display name>",
+  "role":0, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "isTest":true
 }
 ```
 
-### Gift Sub
-```json
+```json [GiftSub]
 {
-  "isAnonymous": false,
-  "totalSubsGifted": 1,
-  "cumulativeMonths": 4,
-  "monthsGifted": 1,
-  "fromSubBomb": false,
-  "subBombCount": 1,
-  "recipientUserId": 00000000,
-  "recipientUsername": "<username of recipient>",
-  "recipientDisplayName": "<display name of recipient>",
-  "subTier": 0, /* 0 - Prime, 1 - Tier 1, 2 - Tier 2, 3 - Tier 3 */
-  "userId": 0000000000,
-  "userName": "<username of gifter>",
-  "displayName": "<displayname of gifter>",
-  "role": 1 /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "isAnonymous":false,
+  "totalSubsGifted":0,
+  "cumulativeMonths":0,
+  "monthsGifted":12,
+  "fromSubBomb":false,
+  "subBombCount":0,
+  "recipientUserId":"00000000",
+  "recipientUsername":"<username>",
+  "recipientDisplayName":"<display name>",
+  "subTier":2,
+  "emotes":[],
+  "badges":[],
+  "userId":"00000000",
+  "userName":"<gifter's username>",
+  "displayName":"<gifter's display name>",
+  "role":0, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "isTest":true
 }
 ```
 
-### Gift Bomb
-```json
+```json [GiftBomb]
 {
   "isAnonymous": false,
   "gifts": 10,
@@ -237,65 +258,113 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ```
 
 ## Hype Train
-### Hype Train Start
-```json
+
+```json [HypeTrainStart]
 {
-  "level": 1,
-  "levelGoal": 3500,
-  "levelTotal": 3900,
-  "totalGoal": 11500,
-  "total": 11100,
-  "percent": 1.1142857142857143
+    "level":1,
+    "progress":10,
+    "last_contribution":{
+    "user_id":"00000000",
+    "user_login":"<username>",
+    "user_name":"<displayname>",
+    "total":0
+    },
+    "expires_at":"2023-12-11T21:38:20.0529012Z", /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+    "isTest":true,
+    "id":"1c5a382d-20c0-4071-96be-925e0e0b63da",
+    "total":0,
+    "goal":1000,
+    "top_contributions":[
+        {
+          "user_id":"00000000",
+          "user_login":"<username>",
+          "user_name":"<displayname>",
+          "type":"bits",
+          "total":100
+        }
+    ],
+    "started_at":"2023-12-11T21:36:20.0529012Z" /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
 }
 ```
 
-### Hype Train Update
-```json
+
+```json [HypeTrainUpdate]
 {
-  "userId": 00000000,
-  "level": 1,
-  "contributors": 1,
-  "levelGoal": 3500,
-  "levelTotal": 3900,
-  "totalGoal": 11500,
-  "total": 11100,
-  "percent": 1.1142857142857143
+  "level":1,
+  "progress":10,
+  "last_contribution":{
+    "user_id":"00000000",
+    "user_login":"<username>",
+    "user_name":"<displayname>",
+    "total":0
+  },
+  "expires_at":"2023-12-11T21:40:32.2640462Z", /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+  "isTest":true,
+  "id":"7067ae5d-4d79-4a56-bfce-8478a9654a11",
+  "total":0,
+  "goal":1000,
+  "top_contributions":[
+    {
+      "user_id":"00000000",
+      "user_login":"<username>",
+      "user_name":"<displayname>",
+      "type":"bits",
+      "total":100
+    }
+  ],
+  "started_at":"2023-12-11T21:38:32.2640462Z" /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
 }
 ```
 
-### Hype Train Level Up
-```json
+
+```json [HypeTrainLevelUp]
 {
-  "prevLevel": 0,
-  "level": 1,
-  "contributors": 0,
-  "levelGoal": 3500,
-  "levelTotal": 3900,
-  "totalGoal": 11500,
-  "total": 11100,
-  "percent": 1.1142857142857143
+  "level":1,
+  "progress":10,
+  "last_contribution":{
+    "user_id":"00000000",
+    "user_login":"<username>",
+    "user_name":"<displayname>",
+    "total":0
+  },
+  "expires_at":"2023-12-11T21:49:17.4764711Z", /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+  "isTest":true,
+  "id":"4eee4a40-03d0-4862-bb45-7300f6c01fc3",
+  "total":0,
+  "goal":1000,
+  "top_contributions":[
+    {
+      "user_id":"00000000",
+      "user_login":"<username>",
+      "user_name":"<displayname>",
+      "type":"bits",
+      "total":100
+    }
+  ],
+  "started_at":"2023-12-11T21:47:17.4764711Z" /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
 }
 ```
 
-### Hype Train End
-```json
- {
-   "conductor": {
-     "id": 0 /* the twitch user id of the conductor */
-   },
-   "level": 1,
-   "contributorCount": 1,
-   "contributors": [
-     {
-       "id": 00000000
-     }
-   ],
-   "levelGoal": 3500,
-   "levelTotal": 3900,
-   "totalGoal": 11500,
-   "total": 11100,
-   "percent": 1.1142857142857143
- }
+```json [HypeTrainEnd]
+{
+  "level":1,
+  "ended_at":"2023-12-11T21:49:51.483657Z", /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+  "cooldown_ends_at":"2023-12-11T21:59:51.483657Z", /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+  "isTest":true,
+  "id":"8e2a4863-62a0-4716-a9fa-9a21c79c101f",
+  "total":1000,
+  "goal":0,
+  "top_contributions":[
+    {
+      "user_id":"646848961",
+      "user_login":"<username>",
+      "user_name":"<displayname>",
+      "type":"bits",
+      "total":100
+    }
+  ],
+  "started_at":"2023-12-11T21:44:51.483657Z" /*ISO 8601 formatted "YYYY-MM-DDTHH:MM:SS.SSSSSSZ" */
+}
 ```
 
 ## Channel Point Rewards
@@ -927,3 +996,129 @@ Reference of all Twitch events emitted by the WebSocket Server.
   "predictionWindow": 60
 }
 ```
+## Charity
+```json [CharityStarted]
+{
+  "id":"23f362ba-4a53-40dc-895e-612619d494d2",
+  "current_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "target_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "started_at":"2023-12-11T23:17:52.0356617Z",
+  "charity_name":"Test Charity",
+  "charity_description":"Test Charity",
+  "charity_logo":"Test Charity",
+  "charity_website":"Test Charity"
+}
+```
+```json [CharityDonation]
+{
+  "id":"08d5b644-e12d-4d8b-9ffc-4fc14761b000",
+  "campaign_id":"99d206b7-68ed-48bc-a7ce-c020cde2fa63",
+  "user_id":"60186332",
+  "user_login":"madcapthulhu",
+  "user_name":"MadCapthulhu",
+  "amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "charity_name":"Charity Test"
+}
+```
+```json [CharityProgress]
+{
+  "id":"e309aa6e-6d56-48e0-b8b6-0155c4b7d8d8",
+  "current_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "target_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "charity_name":"Charity Test",
+  "charity_description":"Charity Test",
+  "charity_logo":"Charity Test",
+  "charity_website":"Charity Test"
+}
+```
+```json [CharityCompleted]
+{
+  "id":"d1b9283d-605a-4bb9-87a8-075b1c9d66ea",
+  "current_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "target_amount":{
+    "value":0,
+    "decimal_places":2,
+    "currency":"USD"
+  },
+  "stopped_at":"2023-12-11T23:35:57.9694767Z",
+  "charity_name":"Charity Test",
+  "charity_description":"Charity Test",
+  "charity_logo":"Charity Test",
+  "charity_website":"Charity Test"
+}
+```
+```json [UserBanned]
+{
+   "target_user_display":"<banned user's display name>",
+   "target_user_id":"00000000",
+   "target_user_login":"<banned username>",
+   "created_at":"2023-12-12T00:59:55.9987566+01:00",
+   "created_by_user_id":"00000000",
+   "created_by":"<moderator's username>",
+   "duration":0,
+   "reason":"Test",
+   "isTest":true
+}
+```
+```json [UserTimedOut]
+{
+  "target_user_display":"<timed out display name>",
+  "target_user_id":"00000000",
+  "target_user_login":"<timed out username>",
+  "created_at":"2023-12-12T01:09:59.4742762+01:00",
+  "created_by_user_id":"00000000",
+  "created_by":"<moderator's username>",
+  "duration":10,
+  "reason":"test",
+  "isTest":true
+}
+```
+```json [ShoutoutReceived]
+{
+  "from_broadcaster_user_id":"00000000",
+  "from_broadcaster_user_login":"<username>",
+  "from_broadcaster_user_name":"<display name>",
+  "viewer_count":1,
+  "started_at":"2023-12-12T00:40:13.156235Z"
+}
+```
+```json [Announcement]
+{
+  "subscriber":false,
+  "message":"test",
+  "emotes":[],
+  "badges":[],
+  "monthsSubscribed":0,
+  "announcementColor":"green", /* Blue - Green - Orange - Purple */
+  "userId":"140918389",
+  "userName":"<username>",
+  "displayName":"<display name>",
+  "role":0, /* 1 - Viewer, 2 - VIP, 3 - Moderator, 4 - Broadcaster  */
+  "isTest":true
+}
+```
+
