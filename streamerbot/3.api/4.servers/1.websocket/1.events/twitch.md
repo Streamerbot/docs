@@ -128,30 +128,30 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ## First Words
 ```json [FirstWord]
 {
-   "message":{
-      "internal":false,
-      "msgId":"fa827baf-27b3-470d-be87-3ecda0ecf5b3",
-      "userId":"00000000",
-      "username":"<username>",
-      "role":1,
-      "subscriber":false,
-      "displayName":"<display name>",
-      "color":"#9ACD32",
-      "channel":"<broadcaster username>",
-      "message":"First Words Test Message",
-      "isHighlighted":false,
-      "isMe":false,
-      "isCustomReward":false,
-      "isAnonymous":false,
-      "isReply":false,
-      "bits":0,
-      "firstMessage":false,
-      "hasBits":false,
-      "emotes":[],
-      "cheerEmotes":[],
-      "badges":[],
-      "monthsSubscribed":0,
-      "isTest":false
+   "message": {
+      "internal" : false,
+      "msgId" : "fa827baf-27b3-470d-be87-3ecda0ecf5b3",
+      "userId" : "00000000",
+      "username" : "<username>",
+      "role" : 1,
+      "subscriber" : false,
+      "displayName" : "<display name>",
+      "color" : "#9ACD32",
+      "channel" : "<broadcaster username>",
+      "message" : "First Words Test Message",
+      "isHighlighted" : false,
+      "isMe" : false,
+      "isCustomReward" : false,
+      "isAnonymous" : false,
+      "isReply" : false,
+      "bits" : 0,
+      "firstMessage" : false,
+      "hasBits" : false,
+      "emotes" : [],
+      "cheerEmotes" : [],
+      "badges" : [],
+      "monthsSubscribed" : 0,
+      "isTest" : false
    }
 }
 ```
@@ -159,30 +159,30 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ## Chat Message
 ```json [ChatMessage]
 {
-   "message":{
-      "internal":false,
-      "msgId":"e7690013-be86-43e6-8056-00e7e95c9351",
-      "userId":"00000000",
-      "username":"<username>",
-      "role":1,
-      "subscriber":false,
-      "displayName":"<display name>",
-      "color":"#9ACD32",
-      "channel":"<broadcaster username>",
-      "message":"random message test",
-      "isHighlighted":false,
-      "isMe":false,
-      "isCustomReward":false,
-      "isAnonymous":false,
-      "isReply":false,
-      "bits":0,
-      "firstMessage":false,
-      "hasBits":false,
-      "emotes":[],
-      "cheerEmotes":[],
-      "badges":[],
-      "monthsSubscribed":0,
-      "isTest":false
+   "message": {
+      "internal": false,
+      "msgId": "e7690013-be86-43e6-8056-00e7e95c9351",
+      "userId": "00000000",
+      "username": "<username>",
+      "role": 1,
+      "subscriber": false,
+      "displayName": "<display name>",
+      "color": "#9ACD32",
+      "channel": "<broadcaster username>",
+      "message": "random message test",
+      "isHighlighted": false,
+      "isMe": false,
+      "isCustomReward": false,
+      "isAnonymous": false,
+      "isReply": false,
+      "bits": 0,
+      "firstMessage": false,
+      "hasBits": false,
+      "emotes": [],
+      "cheerEmotes": [],
+      "badges": [],
+      "monthsSubscribed": 0,
+      "isTest": false
    }
 }
 ```
@@ -385,115 +385,100 @@ Reference of all Twitch events emitted by the WebSocket Server.
 
 ```json [RewardRedemption]
 {
-   "id":"cbe54e38-0716-43cc-b5cb-c6639968a479",
-   "user_id":"00000000",
-   "user_login":"<user name of redeemer>",
-   "user_name":"<display name of redeemer>",
-   "user_input":"",
-   "status":"unfulfilled",
-   "reward":{
-      "id":"c125c87b-2da0-46f4-8575-8433580cccbf",
-      "title":"updated title test",
-      "cost":11,
-      "prompt":"updated Prompt test"
+   "id": "cbe54e38-0716-43cc-b5cb-c6639968a479",
+   "user_id": "00000000",
+   "user_login": "<user name of redeemer>",
+   "user_name": "<display name of redeemer>",
+   "user_input": "",
+   "status": "unfulfilled",
+   "reward": {
+      "id": "c125c87b-2da0-46f4-8575-8433580cccbf",
+      "title": "updated title test",
+      "cost": 11,
+      "prompt": "updated Prompt test"
    },
-   "redeemed_at":"2023-12-12T07:50:13.8014246Z"
+   "redeemed_at": "2023-12-12T07:50:13.8014246Z"
 }
- {
-   "id": "9d0911db-7884-4e0f-8cf4-c95c5765c2e5",
-   "dateTime": "2022-01-31T03:10:23.3611616Z",
-   "userId": 0000000000,
-   "userName": "<user name of redeemer>",
-   "displayName": "<display name of redeemer>",
-   "channelId": 0000000, /* broadcaster channel id */
-   "cost": 42,
-   "rewardId": "41f257e9-9688-4944-9bf6-28cda1c3fa1f",
-   "title": "Test Reward",
-   "prompt": "",
-   "inputRequired": false,
-   "backgroundColor": "#63D0A9",
-   "enabled": true,
-   "paused": false,
-   "subOnly": false
- }
 ```
 
 ```json [RewardCreated]
 {
-   "id":"c125c87b-2da0-46f4-8575-8433580cccbf",
-   "name":"Test Title",
-   "prompt":"Test Prompt",
-   "group":"Test Group",
-   "cost":1,
-   "userInput":false,
-   "persistCounter":false,
-   "persistUserCounter":false,
-   "backgroundColor":"#C26E73"
+   "id": "c125c87b-2da0-46f4-8575-8433580cccbf",
+   "name": "Test Title",
+   "prompt": "Test Prompt",
+   "group": "Test Group",
+   "cost": 1,
+   "userInput": false,
+   "persistCounter": false,
+   "persistUserCounter": false,
+   "backgroundColor": "#C26E73"
 }
+
 ```
 
 ```json [RewardUpdated]
 {
-   "id":"c125c87b-2da0-46f4-8575-8433580cccbf",
-   "is_enabled":true,
-   "is_paused":false,
-   "is_in_stock":true,
-   "title":"updated title test",
-   "cost":11,
-   "prompt":"updated Prompt test",
-   "is_user_input_required":false,
-   "should_redemptions_skip_request_queue":false,
-   "max_per_stream":{
-      "is_enabled":false,
-      "value":0
+   "id": "c125c87b-2da0-46f4-8575-8433580cccbf",
+   "is_enabled": true,
+   "is_paused": false,
+   "is_in_stock": true,
+   "title": "updated title test",
+   "cost": 11,
+   "prompt": "updated Prompt test",
+   "is_user_input_required": false,
+   "should_redemptions_skip_request_queue": false,
+   "max_per_stream": {
+      "is_enabled": false,
+      "value": 0
    },
-   "max_per_user_per_stream":{
-      "is_enabled":false,
-      "value":0
+   "max_per_user_per_stream": {
+      "is_enabled": false,
+      "value": 0
    },
-   "global_cooldown":{
-      "is_enabled":false,
-      "seconds":0
+   "global_cooldown": {
+      "is_enabled": false,
+      "seconds": 0
    },
-   "background_color":"#C26E73",
-   "default_image":{
-      "url_1x":"https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
-      "url_2x":"https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
-      "url_4x":"https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
+   "background_color": "#C26E73",
+   "default_image": {
+      "url_1x": "https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
+      "url_2x": "https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
+      "url_4x": "https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
    }
 }
 ```
 
 ```json [RewardDeleted]
 {
-   "id":"c125c87b-2da0-46f4-8575-8433580cccbf",
-   "is_enabled":true,
-   "is_paused":false,
-   "is_in_stock":true,
-   "title":"updated title test",
-   "cost":11,
-   "prompt":"updated Prompt test",
-   "is_user_input_required":false,
-   "should_redemptions_skip_request_queue":false,
-   "max_per_stream":{
-      "is_enabled":false,
-      "value":0
+   "id": "c125c87b-2da0-46f4-8575-8433580cccbf",
+   "is_enabled": true,
+   "is_paused": false,
+   "is_in_stock": true,
+   "title": "updated title test",
+   "cost": 11,
+   "prompt": "updated Prompt test",
+   "is_user_input_required": false,
+   "should_redemptions_skip_request_queue": false,
+   "max_per_stream": {
+      "is_enabled": false,
+      "value": 0
    },
-   "max_per_user_per_stream":{
-      "is_enabled":false,
-      "value":0
+   "max_per_user_per_stream": {
+      "is_enabled": false,
+      "value": 0
    },
-   "global_cooldown":{
-      "is_enabled":false,
-      "seconds":0
+   "global_cooldown": {
+      "is_enabled": false,
+      "seconds": 0
    },
-   "background_color":"#C26E73",
-   "default_image":{
-      "url_1x":"https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
-      "url_2x":"https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
-      "url_4x":"https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
+   "background_color": "#C26E73",
+   "default_image": {
+      "url_1x": "https://static-cdn.jtvnw.net/custom-reward-images/default-1.png",
+      "url_2x": "https://static-cdn.jtvnw.net/custom-reward-images/default-2.png",
+      "url_4x": "https://static-cdn.jtvnw.net/custom-reward-images/default-4.png"
    }
 }
+
 ```
 
 ## Community Goals
@@ -539,89 +524,91 @@ Reference of all Twitch events emitted by the WebSocket Server.
 ## Polls
 ```json [PollCreated]
 {
-   "ends_at":"2023-12-12T07:22:33.9991669Z",
-   "id":"ce4a2a0d-409f-49d1-b569-5e2087dd95db",
-   "title":"Test Question",
-   "choices":[ /* up to 5 choices */
+   "ends_at": "2023-12-12T07:22:33.9991669Z",
+   "id": "ce4a2a0d-409f-49d1-b569-5e2087dd95db",
+   "title": "Test Question",
+   "choices": [ /* up to 5 choices */
       {
-         "id":"31bdb9f2-1449-4d51-969e-b04a34585a32",
-         "title":"Test Response 1",
-         "channel_points_votes":0,
-         "votes":0
+         "id": "31bdb9f2-1449-4d51-969e-b04a34585a32",
+         "title": "Test Response 1",
+         "channel_points_votes": 0,
+         "votes": 0
       },
       {
-         "id":"73a421a4-0f6e-4892-96d3-a00bf44d55f1",
-         "title":"Test Response 2",
-         "channel_points_votes":0,
-         "votes":0
+         "id": "73a421a4-0f6e-4892-96d3-a00bf44d55f1",
+         "title": "Test Response 2",
+         "channel_points_votes": 0,
+         "votes": 0
       }
    ],
-   "channel_points_voting":{
-      "is_enabled":true,
-      "amount_per_vote":200
+   "channel_points_voting": {
+      "is_enabled": true,
+      "amount_per_vote": 200
    },
-   "started_at":"2023-12-12T07:21:33.9991669Z"
+   "started_at": "2023-12-12T07:21:33.9991669Z"
 }
+
 ```
 
 ```json [PollUpdated]
 {
-   "ends_at":"2023-12-12T07:25:18.7915934Z",
-   "id":"301066b9-f1ca-4755-a03e-0ac8b1664855",
-   "title":"test question",
-   "choices":[
+   "ends_at": "2023-12-12T07:25:18.7915934Z",
+   "id": "301066b9-f1ca-4755-a03e-0ac8b1664855",
+   "title": "test question",
+   "choices": [
       {
-         "id":"40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
-         "title":"test response 1",
-         "channel_points_votes":1,
-         "votes":2
+         "id": "40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
+         "title": "test response 1",
+         "channel_points_votes": 1,
+         "votes": 2
       },
       {
-         "id":"40ee04f5-224c-44ce-8697-2c6758ad509f",
-         "title":"test response 2",
-         "channel_points_votes":0,
-         "votes":0
+         "id": "40ee04f5-224c-44ce-8697-2c6758ad509f",
+         "title": "test response 2",
+         "channel_points_votes": 0,
+         "votes": 0
       }
    ],
-   "channel_points_voting":{
-      "is_enabled":true,
-      "amount_per_vote":200
+   "channel_points_voting": {
+      "is_enabled": true,
+      "amount_per_vote": 200
    },
-   "started_at":"2023-12-12T07:24:18.7915934Z"
+   "started_at": "2023-12-12T07:24:18.7915934Z"
 }
+
 ```
 
 ```json [PollCompleted]
 {
-   "status":"completed",
-   "ended_at":"2023-12-12T07:25:18.7915934Z",
-   "winningChoice":{
-      "id":"40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
-      "title":"test response 1",
-      "channel_points_votes":1,
-      "votes":2
+   "status": "completed",
+   "ended_at": "2023-12-12T07:25:18.7915934Z",
+   "winningChoice": {
+      "id": "40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
+      "title": "test response 1",
+      "channel_points_votes": 1,
+      "votes": 2
    },
-   "id":"301066b9-f1ca-4755-a03e-0ac8b1664855",
-   "title":"test question",
-   "choices":[
+   "id": "301066b9-f1ca-4755-a03e-0ac8b1664855",
+   "title": "test question",
+   "choices": [
       {
-         "id":"40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
-         "title":"test response 1",
-         "channel_points_votes":1,
-         "votes":2
+         "id": "40fb5b0a-55b3-4bdd-8447-7d8561d89cb2",
+         "title": "test response 1",
+         "channel_points_votes": 1,
+         "votes": 2
       },
       {
-         "id":"40ee04f5-224c-44ce-8697-2c6758ad509f",
-         "title":"test response 2",
-         "channel_points_votes":0,
-         "votes":0
+         "id": "40ee04f5-224c-44ce-8697-2c6758ad509f",
+         "title": "test response 2",
+         "channel_points_votes": 0,
+         "votes": 0
       }
    ],
-   "channel_points_voting":{
-      "is_enabled":true,
-      "amount_per_vote":200
+   "channel_points_voting": {
+      "is_enabled": true,
+      "amount_per_vote": 200
    },
-   "started_at":"2023-12-12T07:24:18.7915934Z"
+   "started_at": "2023-12-12T07:24:18.7915934Z"
 }
 ```
 
@@ -629,187 +616,188 @@ Reference of all Twitch events emitted by the WebSocket Server.
 
 ```json [PredictionCreated]
 {
-   "locks_at":"2023-12-12T06:26:40.6062778Z",
-   "id":"52e6b1e1-4e4d-4eef-8b4a-249be8fc1e3c",
-   "title":"Prediction -> Question 2 Choices Template",
-   "outcomes":[
+   "locks_at": "2023-12-12T06:26:40.6062778Z",
+   "id": "52e6b1e1-4e4d-4eef-8b4a-249be8fc1e3c",
+   "title": "Prediction -> Question 2 Choices Template",
+   "outcomes": [
       {
-         "id":"cc967dbc-9dcc-4ce4-bae5-8cb2d754915c",
-         "title":"choice 1",
-         "color":"blue",
-         "users":0,
-         "channel_points":0
+         "id": "cc967dbc-9dcc-4ce4-bae5-8cb2d754915c",
+         "title": "choice 1",
+         "color": "blue",
+         "users": 0,
+         "channel_points": 0
       },
       {
-         "id":"3d5faef0-cccb-4ce2-809c-c76ddbd3df43",
-         "title":"choice 2",
-         "color":"pink", /* if more than 2 choices all colors are "blue" */
-         "users":0,
-         "channel_points":0
+         "id": "3d5faef0-cccb-4ce2-809c-c76ddbd3df43",
+         "title": "choice 2",
+         "color": "pink", /* if more than 2 choices all colors are "blue" */
+         "users": 0,
+         "channel_points": 0
       }
    ],
-   "started_at":"2023-12-12T06:25:40.6062778Z"
+   "started_at": "2023-12-12T06:25:40.6062778Z"
 }
 ```
 
 ```json [PredictionUpdated]
 {
-   "locks_at":"2023-12-12T06:50:42.2681038Z",
-   "id":"5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
-   "title":"Prediction -> Question 2 Choices Template",
-   "outcomes":[
+   "locks_at": "2023-12-12T06:50:42.2681038Z",
+   "id": "5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
+   "title": "Prediction -> Question 2 Choices Template",
+   "outcomes": [
       {
-         "id":"2e4fbe22-72ad-4dda-9335-b0caee2ca649",
-         "title":"choice 1",
-         "color":"blue",
-         "users":1,
-         "channel_points":10,
-         "top_predictors":[ /* up to 3 */
+         "id": "2e4fbe22-72ad-4dda-9335-b0caee2ca649",
+         "title": "choice 1",
+         "color": "blue",
+         "users": 1,
+         "channel_points": 10,
+         "top_predictors": [ /* up to 3 */
             {
-               "user_id":"00000000",
-               "user_login":"<username>",
-               "user_name":"<displayname>",
-               "channel_points_used":10
+               "user_id": "00000000",
+               "user_login": "<username>",
+               "user_name": "<displayname>",
+               "channel_points_used": 10
             }
          ]
       },
       {
-         "id":"f022cb9a-440b-4532-9e68-1cafce75cd5b",
-         "title":"choice 2",
-         "color":"pink",
-         "users":0,
-         "channel_points":0,
-         "top_predictors":[] /* up to 3 */
+         "id": "f022cb9a-440b-4532-9e68-1cafce75cd5b",
+         "title": "choice 2",
+         "color": "pink",
+         "users": 0,
+         "channel_points": 0,
+         "top_predictors": [] /* up to 3 */
       }
    ],
-   "started_at":"2023-12-12T06:49:42.2681038Z"
+   "started_at": "2023-12-12T06:49:42.2681038Z"
 }
 ```
 
 ```json [PredictionCompleted]
 {
-   "winning_outcome_id":"2e4fbe22-72ad-4dda-9335-b0caee2ca649",
-   "status":"resolved",
-   "ended_at":"2023-12-12T06:54:57.6794341Z",
-   "winning_outcome":{
-      "id":"2e4fbe22-72ad-4dda-9335-b0caee2ca649",
-      "title":"choice 1",
-      "color":"blue",
-      "users":1,
-      "channel_points":10,
-      "top_predictors":[ /* up to 3 */
+   "winning_outcome_id": "2e4fbe22-72ad-4dda-9335-b0caee2ca649",
+   "status": "resolved",
+   "ended_at": "2023-12-12T06:54:57.6794341Z",
+   "winning_outcome": {
+      "id": "2e4fbe22-72ad-4dda-9335-b0caee2ca649",
+      "title": "choice 1",
+      "color": "blue",
+      "users": 1,
+      "channel_points": 10,
+      "top_predictors": [ /* up to 3 */
          {
-            "user_id":"00000000",
-            "user_login":"<username>",
-            "user_name":"<displayname>",
-            "channel_points_won":10,
-            "channel_points_used":10
+            "user_id": "00000000",
+            "user_login": "<username>",
+            "user_name": "<displayname>",
+            "channel_points_won": 10,
+            "channel_points_used": 10
          }
       ]
    },
-   "id":"5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
-   "title":"Prediction -> Question 2 Choices Template",
-   "outcomes":[
+   "id": "5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
+   "title": "Prediction -> Question 2 Choices Template",
+   "outcomes": [
       {
-         "id":"2e4fbe22-72ad-4dda-9335-b0caee2ca649",
-         "title":"choice 1",
-         "color":"blue",
-         "users":1,
-         "channel_points":10,
-         "top_predictors":[ /* up to 3 */
+         "id": "2e4fbe22-72ad-4dda-9335-b0caee2ca649",
+         "title": "choice 1",
+         "color": "blue",
+         "users": 1,
+         "channel_points": 10,
+         "top_predictors": [ /* up to 3 */
             {
-               "user_id":"00000000",
-               "user_login":"<username>",
-               "user_name":"<displayname>",
-               "channel_points_won":10,
-               "channel_points_used":10
+               "user_id": "00000000",
+               "user_login": "<username>",
+               "user_name": "<displayname>",
+               "channel_points_won": 10,
+               "channel_points_used": 10
             }
          ]
       },
       {
-         "id":"f022cb9a-440b-4532-9e68-1cafce75cd5b",
-         "title":"choice 2",
-         "color":"pink",
-         "users":0,
-         "channel_points":0,
-         "top_predictors":[]
+         "id": "f022cb9a-440b-4532-9e68-1cafce75cd5b",
+         "title": "choice 2",
+         "color": "pink",
+         "users": 0,
+         "channel_points": 0,
+         "top_predictors": []
       }
    ],
-   "started_at":"2023-12-12T06:49:42.2681038Z"
+   "started_at": "2023-12-12T06:49:42.2681038Z"
 }
 ```
 
 ```json [PredictionCanceled]
 {
-   "winning_outcome_id":"",
-   "status":"canceled",
-   "ended_at":"2023-12-12T07:05:25.3009388Z",
-   "id":"f3e18d41-98e9-41c2-bce1-86d3e74bdd2a",
-   "title":"Prediction -> Question 2 Choices Template",
-   "outcomes":[
+   "winning_outcome_id": "",
+   "status": "canceled",
+   "ended_at": "2023-12-12T07:05:25.3009388Z",
+   "id": "f3e18d41-98e9-41c2-bce1-86d3e74bdd2a",
+   "title": "Prediction -> Question 2 Choices Template",
+   "outcomes": [
       {
-         "id":"b8a62255-8821-40e3-b598-a38466d5317d",
-         "title":"choice 1",
-         "color":"blue",
-         "users":1,
-         "channel_points":10,
-         "top_predictors":[ /* up to 3 */
+         "id": "b8a62255-8821-40e3-b598-a38466d5317d",
+         "title": "choice 1",
+         "color": "blue",
+         "users": 1,
+         "channel_points": 10,
+         "top_predictors": [ /* up to 3 */
             {
-               "user_id":"00000000",
-               "user_login":"<username>",
-               "user_name":"<displayname>",
-               "channel_points_won":0,
-               "channel_points_used":10
+               "user_id": "00000000",
+               "user_login": "<username>",
+               "user_name": "<displayname>",
+               "channel_points_won": 0,
+               "channel_points_used": 10
             }
          ]
       },
       {
-         "id":"6c7c4143-7a99-46bc-8df3-4106b61ec87f",
-         "title":"choice 2",
-         "color":"pink",
-         "users":0,
-         "channel_points":0,
-         "top_predictors":[]
+         "id": "6c7c4143-7a99-46bc-8df3-4106b61ec87f",
+         "title": "choice 2",
+         "color": "pink",
+         "users": 0,
+         "channel_points": 0,
+         "top_predictors": []
       }
    ],
-   "started_at":"2023-12-12T07:05:08.2264206Z"
+   "started_at": "2023-12-12T07:05:08.2264206Z"
 }
 ```
 
 ```json [PredictionLocked]
 {
-   "locked_at":"2023-12-12T06:50:41.4081242Z",
-   "id":"5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
-   "title":"Prediction -> Question 2 Choices Template",
-   "outcomes":[
+   "locked_at": "2023-12-12T06:50:41.4081242Z",
+   "id": "5a93f9d8-5c1a-40d1-bbeb-d75a98f4396b",
+   "title": "Prediction -> Question 2 Choices Template",
+   "outcomes": [
       {
-         "id":"2e4fbe22-72ad-4dda-9335-b0caee2ca649",
-         "title":"choice 1",
-         "color":"blue",
-         "users":1,
-         "channel_points":10,
-         "top_predictors":[ /* up to 3 */
+         "id": "2e4fbe22-72ad-4dda-9335-b0caee2ca649",
+         "title": "choice 1",
+         "color": "blue",
+         "users": 1,
+         "channel_points": 10,
+         "top_predictors": [ /* up to 3 */
             {
-               "user_id":"00000000",
-               "user_login":"<username>",
-               "user_name":"<displayname>",
-               "channel_points_used":10
+               "user_id": "00000000",
+               "user_login": "<username>",
+               "user_name": "<displayname>",
+               "channel_points_used": 10
             }
          ]
       },
       {
-         "id":"f022cb9a-440b-4532-9e68-1cafce75cd5b",
-         "title":"choice 2",
-         "color":"pink",
-         "users":0,
-         "channel_points":0,
-         "top_predictors":[
+         "id": "f022cb9a-440b-4532-9e68-1cafce75cd5b",
+         "title": "choice 2",
+         "color": "pink",
+         "users": 0,
+         "channel_points": 0,
+         "top_predictors": [
             
          ]
       }
    ],
-   "started_at":"2023-12-12T06:49:42.2681038Z"
+   "started_at": "2023-12-12T06:49:42.2681038Z"
 }
+
 ```
 ## Charity
 ```json [CharityStarted]
