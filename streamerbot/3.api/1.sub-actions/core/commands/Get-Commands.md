@@ -66,7 +66,7 @@ public class CPHInline
     public bool Execute()
     {
         List<string> commands = (List<string>)args["commandsList"];//This is when the Variable Name in the Get Commands Sub-Action is `commands`
-        string message = "Commands Avaliable to you: ";
+        string message = "/me Commands Avaliable to you: ";
         bool bot = false;
         int messageMax = 495; //Limit is 500 on Twitch, 200 on YouTube.. I took a few off as a safety measure.
         for (int i = 0; i < commands.Count; i++)
@@ -74,7 +74,7 @@ public class CPHInline
             if ((commands[i].Length + message.Length) > messageMax)
             {
                 CPH.SendMessage(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
-                message = "Addional Commands for you: ";
+                message = "/me Addional Commands for you: ";
             }
 
             message += commands[i] + ", ";
