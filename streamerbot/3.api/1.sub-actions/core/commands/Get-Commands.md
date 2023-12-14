@@ -55,13 +55,13 @@ public class CPHInline
         {
             if ((commands[i].Length + message.Length) > messageMax)
             {
-                CPH.SendMessage(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
+                CPH.SendAction(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
                 message = "Addional Commands for you: ";
             }
 
             message += commands[i] + ", ";
         }
-        CPH.SendMessage(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
+        CPH.SendAction(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
         return true;
     }
 }
