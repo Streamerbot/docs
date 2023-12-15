@@ -1,4 +1,4 @@
-# Chat message
+# Chat Message
 Trovo chat message trigger.
 
 ## Details
