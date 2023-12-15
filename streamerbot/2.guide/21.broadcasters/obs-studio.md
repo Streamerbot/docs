@@ -129,5 +129,5 @@ Explore all **OBS Studio sub-actions** and their variables at [API References > 
 ::
 
 ::callout{icon=i-mdi-bookmark color=green to=/api/triggers/obs/obs-event}
-Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/obs/obs-event)
+Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/obs/event)
 ::
