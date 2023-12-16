@@ -1,8 +1,9 @@
 ---
-title: PolyPop
-description: Integrate Streamer.bot with PolyPop
 logo: /img/icons/polypop.png
 ---
+
+# PolyPop
+Integrate Streamer.bot with PolyPop
 
 PolyPop integration is made possible via the community-made Websocket plugin available from `Plugins` in PolyPop:
 
