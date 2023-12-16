@@ -1,5 +1,5 @@
 ---
-variables.summaryText: Twitch Broadcaster
+variables.summaryText: YouTube Broadcaster
 variables.summaryIcon: mdi:account
 ---
 
