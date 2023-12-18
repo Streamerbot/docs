@@ -1,9 +1,8 @@
 ---
+title: OBS Studio
+description: Configure Streamer.bot to interact with your OBS Studio instances
 logo: https://streamer.bot/img/integrations/obs.svg
 ---
-
-# OBS Studio
-Configure Streamer.bot to interact with your OBS Studio instances
 
 ::callout{icon=i-mdi-warning color=amber to=/get-started/setup#obs-studio}
 You must enable the **OBS WebSocket** connection. Check out the [Get Started Guide](/get-started/setup#obs-studio) for details.
