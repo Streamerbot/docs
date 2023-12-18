@@ -1,0 +1,51 @@
+title: Streamer.bot for Elgato Stream Deck
+description: Official plugin to control Streamer.bot from your Elgato Stream Deck
+navigation: false
+features:
+  - name: Execute Streamer.bot Actions
+    description: Run your Streamer.bot actions at the press of a button or turn of a dial! Add your own custom arguments to make your actions dynamic.
+    icon: i-mdi-lightning-bolt-outline
+  - name: Modify your Stream Deck
+    description: Change the appearance of your Stream Deck keys by taking control from Streamer.bot.
+    icon: i-heroicons-wrench-screwdriver
+  - name: Stream Deck + Dial Support
+    description: Support for the latest Stream Deck hardware allows for a new level of control. Check out the Ad Control and Viewer Control dial examples!
+    icon: i-mdi-axis-z-rotate-clockwise
+buttons:
+  - title: Action Button
+    description: Execute actions on key press and/or release, with customizable arguments.
+    icon: i-mdi-gesture-tap-button
+    to: /guide/keys#action
+  - title: Action Switch
+    description: Execute actions on key press and/or release, with customizable arguments.
+    icon: i-mdi-toggle-switch
+    to: /guide/keys#action-switch
+  - title: Status Indicator
+    description: Send realtime data from Streamer.bot to your Stream Deck display, with customizable charts!
+    icon: i-mdi-chart-areaspline
+    to: /guide/keys#status-indicator
+  - title: Action Dial
+    description: Execute up to 6 separate actions with a Stream Deck + dial control
+    icon: i-mdi-axis-z-rotate-clockwise
+    to: /guide/dials#action
+  - title: Control Dial
+    description: Control a Streamer.bot action with a Stream Deck + dial indicator
+    icon: i-mdi-rotate-right
+    to: /guide/dials#control
+examples:
+  - title: Dynamic Icon Example
+    description: Dynamically update your button appearance with custom icons!
+    to: /examples/streamdeck/dynamic-icons
+    img: /img/dynamic-icon.png
+  - title: Live Bitrate Status
+    description: Display your OBS bitrate in realtime!
+    to: /examples/streamdeck/obs-bitrate-status
+    img: /img/obs-status-bitrate.png
+  - title: Ad Control Dial
+    description: Take complete control of your Twitch ad-breaks with this dial example!
+    to: /examples/streamdeck-plus/ad-control
+    img: /img/control-dial.gif
+  - title: Viewer Control Dial
+    description: Configure a *Stream Deck +* dial to browse current viewers and dial-press to ban!
+    to: /examples/streamdeck-plus/viewer-control
+    img: /img/user-dial.png
