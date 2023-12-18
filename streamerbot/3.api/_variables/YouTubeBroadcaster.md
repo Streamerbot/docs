@@ -1,5 +1,5 @@
 ---
-variables.summaryText: Twitch Broadcaster
+variables.summaryText: YouTube Broadcaster
 variables.summaryIcon: mdi:account
 ---
 
@@ -8,4 +8,4 @@ variables.summaryIcon: mdi:account
 `broadcastUserName` | The YouTube user name of the broadcaster account | `youtubeuser123`
 `broadcastUserId` | The YouTube user ID of the broadcaster account | `UCI9-KG2xoyh5z-g41IL2jqf`
 `broadcastUserProfileImage` | The profile image of the broadcaster account | `https://yt3.ggpht.com/ytc/profile-image-id`
-`broadcastId` | The broadcast ID of the broadcaster account | `UCI9-KG2xoyh5z-g41IL2jqf`
+`broadcastId` | The broadcast ID from the livestream | `UCI9-KG2xoyh5z-g41IL2jqf`
