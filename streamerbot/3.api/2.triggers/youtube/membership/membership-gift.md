@@ -1,11 +1,16 @@
-# Membership Gift
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`id` | The id of the memberships gift
-`count` | The count of memberships gifted
-`tier` | The tier these memberships where gifted
-
-:variables{name=YouTubeBroadcaster disclosure}
+---
+title: Membership Gift
+description: Trigger for Youtube gift memberships
+variables:
+  - name: id
+    type: string
+    description: The ID of the memberships gift event
+  - name: count
+    type: int
+    description: The number of memberships gifted
+    value: 12
+  - name: tier
+    description: The tier of memberships gifted
+commonVariables:
+  - YouTubeBroadcaster
+---

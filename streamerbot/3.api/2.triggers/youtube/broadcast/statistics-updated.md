@@ -1,13 +1,23 @@
-# Statistics Updated
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`likeCount` | The total number of likes from the broadcast
-`dislikeCount` | The total number of dislikes from the broadcast
-`viewCount` | The total number of views from the broadcast
-`commentCount` | The total number of comments from the broadcast
-`favoriteCount` | How many times the broadcast has been favorited
-
-:variables{name=YouTubeBroadcaster disclosure}
+---
+title: Statistics Updated
+description: Trigger for changes to YouTube broadcast stats
+variables:
+  - name: likeCount
+    type: int
+    description: The total number of likes for this broadcast
+    value: 99
+  - name: dislikeCount
+    type: int
+    description: The total number of dislikes for this broadcast
+    value: 0
+  - name: viewCount
+    type: int
+    description: The total number of views for this broadcast
+    value: 9001
+  - name: favoriteCount
+    type: int
+    description: Number of times this broadcast has been favorited
+    value: 25
+commonVariables:
+  - YouTubeBroadcaster
+---
