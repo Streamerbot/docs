@@ -64,8 +64,8 @@ By default, the HTML Overlay will attempt to connect to your Streamer.bot WebSoc
 
 If you have changed the `host`, `port`, or `endpoint` values of your WebSocket server, you can configure this by modifying the `Content/index.html` file within the HTML Overlay directory.
 
-## Modules
-The HTML Overlay `zip` above is preloaded with 3 modules:
+## Included Overlays
+The HTML Overlay `zip` above is preloaded with 3 overloay modules:
 
 - Splat!
 - Show Image
@@ -108,3 +108,52 @@ Generate raining emotes from incoming Twitch chat messages.
   maxEmotes: 20, // Set to the max amount of emotes to accept from a single message
   emoteSize: "100px", // Set the size for the emote images on your screen
 }
+```
+
+## Custom Overlays
+::callout{icon=i-mdi-alert color=amber}
+Custom overlays are an **advanced** use case and require **JavaScript** expertise
+::
+
+To get started, create a new `js` file inside the `Content` directory.
+
+::callout{icon=i-mdi-lightbulb color=amber}
+The configured [Streamer.bot Client](https://streamerbot.github.io/client) instance is available at `window.client` for interacting with Streamer.bot via WebSocket and subscribing to events
+::
+
+Here we are using the source of the included `show-image.js` as an example:
+
+```js [Content/my-module.js]
+// Here we are defining default configuration options
+// and then using window.getScriptConfig to fetch any user-modified values
+const config = Object.assign({
+  rewardTitle: 'Show Image',
+  imageUrl: 'https://streamer.bot/logo.png',
+  seconds: 5,
+  width: 'auto',
+  height: 'auto',
+}, window.getScriptConfig(import.meta.url));
+
+// Here we are subscribing to Twitch Channel Point Rewards
+// and triggering our overlay when the configured title matches a redemption
+window.client.on('Twitch.RewardRedemption', (message) => {
+  if ((message.data.reward.title || message.data.title) === config.rewardTitle) {
+    showImage();
+  }
+});
+```
+
+Import your new module at the bottom of `Content/index.html`, after any existing `<script>` tags
+
+```html [Content/index.html]
+<!-- Add this at the end, after any existing <script> tags! -->
+<script type="module" src="my-module.js">
+{
+  rewardTitle: "Show Image" // Add your user config overrides here
+}
+</script>
+```
+
+::callout{icon=i-mdi-lightbulb color=amber}
+Take a look at the existing modules in the `Content` directory for examples
+::
