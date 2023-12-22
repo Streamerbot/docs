@@ -12,5 +12,6 @@ variables:
   - name: tier
     description: The tier of memberships gifted
 commonVariables:
+  - YouTubeUser
   - YouTubeBroadcaster
 ---
