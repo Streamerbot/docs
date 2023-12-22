@@ -7,13 +7,14 @@ variables:
   - name: tier
     description: The tier the gifted user received
   - name: gifterUser
-    description: The display name of the user who received the gifted membership
+    description: The display name of the user who gave the gifted membership
   - name: gifterUserName
-    description: The user name of the user who received the gifted membership
+    description: The user name of the user who gave the gifted membership
   - name: gifterUserId
-    description: The id of the user who received the gifted membership
+    description: The id of the user who gave the gifted membership
   - name: gifterUserType
-    description: The type of user who received the gifted membership
+    description: The type of user who gave the gifted membership
 commonVariables:
+  - YouTubeUser
   - YouTubeBroadcaster
 ---
