@@ -13,5 +13,6 @@ variables:
   - name: message
     description: The message associated with the member milestone event
 commonVariables:
+  - YouTubeUser
   - YouTubeBroadcaster
 ---
