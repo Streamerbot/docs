@@ -1,20 +1,15 @@
-# Run Commercial
-Start an ad break on your Twitch channel
-:image-preview
+---
+title: Run Commercial
+description: Start an ad break on your Twitch channel
+variables: []
+csharpMethods:
+  - TwitchRunCommercial
+---
 
 ## Parameters
-### `Duration`
-Duration of ad break, in seconds.
-
-- Type: `Integer`
-- Values: `30`, `60`, `90`, `120`, `150`, `180`
-
-::list{type=warning}
-- Only the specified values are allowed
+::field-group
+  ::field{name=Duration type=Select required}
+  Duration of ad break, in seconds
+  - Accepted Values: `30`, `60`, `90`, `120`, `150`, `180`
+  ::
 ::
-
-## Variables
-:variables-description{empty}
-
-## C# Usage
-:csharp-method{name=TwitchRunCommercial}

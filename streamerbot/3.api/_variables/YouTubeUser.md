@@ -1,14 +1,35 @@
 ---
-variables.summaryText: YouTube User
-variables.summaryIcon: mdi:account
+title: YouTube User Variables
+navigation.title: YouTube User
+variables:
+  - name: user
+    type: string
+    description: The display name of the user
+    example: YouTubeUser123
+  - name: userName
+    type: string
+    description: The login name of the user
+    example: youtubeuser123
+  - name: userId
+    type: string
+    description: Unique user identifier
+    example: UCI9-KG2xoyh5z-g41IL2jqf
+  - name: userType
+    type: string
+    description: Streaming service of this user
+    example: youtube
+  - name: isSubscribed
+    type: bool
+    description: Has the user been a member at any time, including the present?
+    example: True / False
+  - name: isModerator
+    type: bool
+    description: Is this user a moderator?
+    example: True / False
+  - name: userPreviousActive
+    type: DateTime
+    description: When was this user last active?
+    example: 8/4/2023 10:56:06 AM
 ---
 
-| Name | Description | Example |
-|-----:|:------------|:--------|
-`user` | The display name of the user | `YouTubeUser123`
-`userName` | The login name of the user | `youtubeuser123`
-`userId` | Unique user identifier | `UCI9-KG2xoyh5z-g41IL2jqf`
-`userType` | Streaming service of this user | `youtube`
-`isSubscribed` | Is this user subscribed? | `True` / `False`
-`isModerator` | Is this user a moderator? | `True` / `False`
-`userPreviousActive` | When was this user last active? | `8/4/2023 10:56:06 AM`
+

@@ -1,10 +1,11 @@
-# Broadcast Ended
+---
+title: Broadcast Ended
+description: Trigger for YouTube broadcast ending
+variables: []
+commonVariables:
+  - YouTubeBroadcaster
+---
 
-## Variables
-:variables-description{empty}
-
-::callout{icon=i-mdi-lightbulb color=primary}
-The `broadcastId` variable is not available here.
+::callout{icon=i-mdi-lightbulb color=amber}
+The `broadcastId` variable is **not available** from this trigger
 ::
-
-:variables{name=YouTubeBroadcaster disclosure}

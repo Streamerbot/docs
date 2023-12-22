@@ -1,12 +1,19 @@
-# Message
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`messageId` | The id of the message
-`message` | The message sent to the chat
-`publishedAt` | The time the message was published at
-
-:variables{name=YouTubeUser disclosure}
-:variables{name=YouTubeBroadcaster disclosure}
+---
+title: Message
+description: Trigger for incoming YouTube chat messages
+variables:
+  - name: messageId
+    type: string
+    description: The ID of the message
+  - name: message
+    type: string
+    description: The message contents
+    value: Hello, world!
+  - name: publishedAt
+    type: DateTime
+    description: The time the message was sent at
+    value: 8/4/2023 10:56:06 AM
+commonVariables:
+  - YouTubeUser
+  - YouTubeBroadcaster
+---

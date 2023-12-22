@@ -1,14 +1,10 @@
-# Add Viewer Count
-Populate a variable with your current Twitch viewer count
-:image-preview
-
-## Variables
-:variables-description
-
-| Name | Description | Example |
-|-----:|:------------|:--------|
-`viewerCount` | Your current Twitch viewer count. | `12`
-
-
-## C# Usage
-:csharp-method
+---
+title: Add Viewer Count
+description: Populate a variable with your current Twitch viewer count
+variables:
+  - name: viewerCount
+    type: int
+    description: Your current Twitch viewer count
+    value: 12
+csharpMethods: []
+---

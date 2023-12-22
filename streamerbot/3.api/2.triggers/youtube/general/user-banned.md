@@ -1,10 +1,11 @@
-# User Banned
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`banType` | The type of ban
-`banDuration` | The duration of the ban
-
-:variables{name=YouTubeBroadcaster disclosure}
+---
+title: User Banned
+description: Trigger for YouTube user banned events
+variables:
+  - name: banType
+    description: The type of the ban
+  - name: banDuration
+    description: The duration of the ban
+commonVariables:
+  - YouTubeBroadcaster
+---

@@ -1,14 +1,20 @@
-# Gift Membership Received
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`id` | The id of the membership gifting event
-`tier` | The tier the gifted user received
-`gifterUser` | The display name of the user who received the gifted membership
-`gifterUserName` | The user name of the user who received the gifted membership
-`gifterUserId` | The id of the user who received the gifted membership
-`gifterUserType` | The type of user who received the gifted membership
-
-:variables{name=YouTubeBroadcaster disclosure}
+---
+title: Gift Membership Received
+description: Trigger for new YouTube gift memberships
+variables:
+  - name: id
+    description: The id of the membership gifting event
+  - name: tier
+    description: The tier the gifted user received
+  - name: gifterUser
+    description: The display name of the user who gave the gifted membership
+  - name: gifterUserName
+    description: The user name of the user who gave the gifted membership
+  - name: gifterUserId
+    description: The id of the user who gave the gifted membership
+  - name: gifterUserType
+    description: The type of user who gave the gifted membership
+commonVariables:
+  - YouTubeUser
+  - YouTubeBroadcaster
+---

@@ -1,12 +1,9 @@
-# New Subscriber
-YouTube new subscriber trigger.
-
-## Details
-New subscription event from YouTube
-
-## Variables
-:variables-description
+---
+title: New Subscriber
+description: Trigger for new YouTube subscriptions
+variables: []
+commonVariables:
+  - YouTubeBroadcaster
+---
 
 :wip
-
-:variables{name=YouTubeBroadcaster disclosure}
