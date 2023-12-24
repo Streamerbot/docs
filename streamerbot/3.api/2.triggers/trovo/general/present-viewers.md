@@ -34,7 +34,7 @@ variables:
     description: A C# Dictionary list of usernames present in chat <br> Each user present will get [the following data](#users-dictionary)
 commonVariables:
   - TrovoUser
-  - TroveDictionaryUsers
+  - TrovoDictionaryUsers
 ---
 
 ## Details
