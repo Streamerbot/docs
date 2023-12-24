@@ -1,11 +1,8 @@
-# Chat Message
-Trovo chat message trigger.
-
-## Details
-The trovo chat message trigger runs when someone places a chat message on your stream.
-
-## Variables
-:variables-description
-
-:variables{name=TrovoChat disclosure}
-:variables{name=TrovoUser disclosure}
+---
+title: Chat Message
+description: Trigger for incoming Trovo chat messages
+variables: []
+commonVariables:
+  - TrovoChat
+  - TrovoUser
+---

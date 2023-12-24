@@ -1,10 +1,9 @@
-# Mass Gift Subscription
-Trovo mass gift subscription trigger.
+---
+title: Mass Gift Subscription
+description: Trigger for a Trovo mass gift subscription
+variables: []
+---
 
-## Details
-The trovo mass gift subscription trigger runs when you get a mass gift subscription.
-
-## Variables
-:variables-description
-
-:wip
+::wip
+Add variables
+::

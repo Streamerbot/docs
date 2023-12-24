@@ -1,10 +1,9 @@
-# Subscription
-Trovo subscription trigger.
+---
+title: Subscription
+description: Trigger for a Trovo subscription
+variables: []
+---
 
-## Details
-The trovo subscription trigger runs when you get a subscription.
-
-## Variables
-:variables-description
-
-:wip
+::wip
+Add variables
+::

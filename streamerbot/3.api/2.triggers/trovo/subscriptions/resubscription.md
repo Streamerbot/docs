@@ -1,10 +1,9 @@
-# Resubscription
-Trovo resubscription trigger.
+---
+title: Resubscription
+description: Trigger for a Trovo resubscription
+variables: []
+---
 
-## Details
-The trovo resubscription trigger runs when you get a resubscription.
-
-## Variables
-:variables-description
-
-:wip
+::wip
+Add variables
+::

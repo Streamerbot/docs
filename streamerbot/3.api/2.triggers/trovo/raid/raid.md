@@ -1,19 +1,15 @@
-# Raid
-Trovo raid trigger.
-
-## Details
-The trovo raid trigger runs when you get a raid.
+---
+title: Raid
+description: Trigger for a Trovo raid
+variables:
+  - name: raid.sentAt
+    description: The timestamp the raid was sent
+  - name: raid.raiderCount
+    description: The amount of users that participated in the raid
+commonVariables:
+  - TrovoUser
+---
 
 ## Parameters
 ### `Range`
 :range-description
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`raid.sentAt` | The timestamp the raid was sent
-`raid.raiderCount` | The amount of users that participated in the raid
-
-:variables{name=TrovoUser disclosure}

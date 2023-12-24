@@ -1,10 +1,9 @@
-# Gift Subscription
-Trovo gift subscription trigger.
+---
+title: Gift Subscription
+description: Trigger for a Trovo gift subscription
+variables: []
+---
 
-## Details
-The trovo gift subscription trigger runs when you get a gift subscription.
-
-## Variables
-:variables-description
-
-:wip
+::wip
+Add variables
+::
