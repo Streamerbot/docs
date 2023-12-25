@@ -1,28 +1,45 @@
 ---
+title: Reward Redemption
+description: Trigger for a Twitch Reward Redemption
 version: 0.0.30
+twitchService: PubSub
+variables:
+  - name: redemptionId
+    type: string
+    description: The unique identifier for the reward redemption
+    value: 4d9f236b-7486-481a-89af-1d03676d5275
+  - name: rewardId
+    type: string
+    description: The unique identifier for the reward
+    value: 44e86f71-8ace-4739-a123-3ff095489343
+  - name: rewardName
+    type: string
+    description: The name of the reward
+    value: My Reward
+  - name: rewardPrompt
+    type: string
+    description: The description of the reward
+    value: My Reward description
+  - name: rewardCost
+    type: number
+    description: The cost of the reward
+    value: 200
+  - name: counter
+    type: number
+    description: The amount of times the reward has been used
+    value: 53
+  - name: userCounter
+    type: number
+    description: The amount of times the reward has been used by this user
+    value: 8
+  - name: rawInput
+    type: string
+    description: The text entered by the user (if enabled)
+    value: https://streamer.bot/Test Unescaped Text $$$
+  - name: rawInputEscaped
+    type: string
+    description: The text entered by the user (if enabled)
+    value: https://streamer\.bot/Test Escaped Text \$\$\$
+commonVariables:
+  - TwitchUser
 ---
-
-# Reward Redemption
-When someone redeems a reward redemption
-
-## Details
-::list
-- Twitch Service: `PubSub`
-::
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`redemptionId` | String identifier for this redemption (used to refund reward) <br> `4d9f236b-7486-481a-89af-1d03676d5275`
-`rewardId` | String identifier for this reward <br> `44e86f71-8ace-4739-a123-3ff095489343`
-`rewardName` | Name of the reward <br> `My Reward`
-`rewardPrompt` | The verbiage shown on the channel point description <br> `My cool Reward Prompt`
-`rewardCost` | The channel point cost of the redeemed reward  <br> `100`
-`counter` | Number of times this reward has been redeemed <br> `1`
-`userCounter` | Number of times the same user has redeemed this reward <br> `1`
-`rawInput` | String text entered by the user (if required) <br> `https://streamer.bot/Test Unescaped Text $$$`
-`rawInputEscaped` | String text entered by the user (escaped) <br> `https://streamer\.bot/Test Escaped Text \$\$\$`
-
-:variables{name=TwitchUser disclosure}
