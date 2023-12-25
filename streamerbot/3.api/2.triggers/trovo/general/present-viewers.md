@@ -27,14 +27,39 @@ variables:
     type: DateTime
     description: The epoch time the stream has stated
   - name: isLive
-    type: boolean
-    description: Boolean for current streaming status `True`/`False`
+    type: bool
+    description: Boolean for current streaming status
+    value: true
   - name: users
-    type: dictionary
-    description: A C# Dictionary list of usernames present in chat <br> Each user present will get [the following data](#users-dictionary)
+    type: Dictionary<TrovoUser>
+    description: A C# accessible list of users present in chat
+    variables:
+      - name: id
+        type: string
+        description: The user id of the user
+        value: trovo_678296378
+      - name: userName
+        type: string
+        description: The user name of the user
+        value: trovouser123
+      - name: display
+        type: string
+        description: The display name of the user
+        value: TrovoUser123
+      - name: role
+        type: number
+        description: The role of the user<br>1=`Viewer`, 2=`VIP`, 3=`Moderator`, 4=`Broadcaster`
+        value: 1
+      - name: isSubscribed
+        type: bool
+        description: Is the user subscribed?
+        value: true
+      - name: isModerator
+        type: bool
+        description: Is the user a moderator?
+        value: true
 commonVariables:
   - TrovoUser
-  - TrovoDictionaryUsers
 ---
 
 ## Details
