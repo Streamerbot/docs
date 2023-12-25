@@ -12,8 +12,6 @@ variables:
     type: boolean
     description: Is the ad scheduled?
     value: True
-commonVariables:
-  - TrovoUser
 ---
 
 ## Details

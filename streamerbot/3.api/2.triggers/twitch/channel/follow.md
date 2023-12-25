@@ -1,12 +1,8 @@
-# Follow
-This triggers when someone follows you on Twitch.
-
-## Details
-::list
-- Twitch Service: `EventSub`
-::
-
-## Variables
-:variables-description
-
-:variables{name=TwitchUser disclosure}
+---
+title: Follow
+description: Trigger for a Twitch Follow
+twitchService: EventSub
+variables: []
+commonVariables:
+  - TwitchUser
+---

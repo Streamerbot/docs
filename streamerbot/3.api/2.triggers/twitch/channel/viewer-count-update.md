@@ -1,17 +1,11 @@
 ---
+title: Viewer Count Update
+description: Trigger for when your Twitch viewer count updates
 version: 0.2.0
+twitchService: EventSub
+variables:
+  - name: viewerCount
+    type: number
+    description: The new Twitch viewer count
+    value: 187
 ---
-
-# Viewer Count Update
-This triggers when your Twitch viewer count updates.
-
-## Details
-::list
-- Twitch Service: `EventSub`
-::
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`viewerCount` | Your current Twitch viewer count
