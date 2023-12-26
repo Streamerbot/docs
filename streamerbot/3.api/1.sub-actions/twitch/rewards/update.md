@@ -29,13 +29,13 @@ Enter the text to apply to your reward prompt.
 Enter the amount you would like to set or modify
 
 ### Operator
-Name | Description
-----:|:------------
-`None` | Set the cost to the amount entered
-`Add` | Add the amount entered to the current cost
-`Subtract` | Subtract the amount entered from the current cost
-`Multiply` | Multiplay the amount entered with the current cost
-`Divide` | Divice the current cost by the amount entered
+|       Name | Description                                       |
+|-----------:|:--------------------------------------------------|
+|     `None` | Set the cost to the amount entered                |
+|      `Add` | Add the amount entered to the current cost        |
+| `Subtract` | Subtract the amount entered from the current cost |
+| `Multiply` | Multiply the amount entered with the current cost |
+|   `Divide` | Device the current cost by the amount entered     |
 
 ### Reset to Original
 Revert all reward settings to their original values.

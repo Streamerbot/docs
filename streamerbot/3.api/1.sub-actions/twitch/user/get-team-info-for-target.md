@@ -15,25 +15,25 @@ Collects follow data from a Twitch user.
 
 ## Configuration
 ### Source Type
-Name | Description
-----:|:------------
-`Broadcaster` | The broadcast user.
-`User` | User that invoked the action e.g. a raid leader, subscriber, point redeemer etc.
-`From Input` | This will take the next word proceeding the trigger as the username to lookup. This user does not have to be present in the channel
-`Variable` | Use the content of an existing variable as the target
+|          Name | Description                                                                                                                         |
+|--------------:|:------------------------------------------------------------------------------------------------------------------------------------|
+| `Broadcaster` | The broadcast user.                                                                                                                 |
+|        `User` | User that invoked the action e.g. a raid leader, subscriber, point redeemer etc.                                                    |
+|  `From Input` | This will take the next word proceeding the trigger as the username to lookup. This user does not have to be present in the channel |
+|    `Variable` | Use the content of an existing variable as the target                                                                               |
 
 ### Variable
 If you selected `Variable` as your `Source Type`, enter the name of the variable you would like to read in.
 
 ## Variables
-Name | Description
-----:|:------------
-`teamId#` | The id of the target's team.
-`teamName#` | The name of the target's team.
-`teamDisplayName#` | The display name of the target's team.
-`teamBackgroundUrl#` | The background url of the target's team.
-`teamBannerUrl#` | The banner url of the target's team.
-`_jsonTeamData` | The json, used for coding in C#.
+|                 Name | Description                              |
+|---------------------:|:-----------------------------------------|
+|            `teamId#` | The id of the target's team.             |
+|          `teamName#` | The name of the target's team.           |
+|   `teamDisplayName#` | The display name of the target's team.   |
+| `teamBackgroundUrl#` | The background url of the target's team. |
+|     `teamBannerUrl#` | The banner url of the target's team.     |
+|      `_jsonTeamData` | The json, used for coding in C#.         |
 
 ---
 

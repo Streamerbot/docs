@@ -23,10 +23,10 @@ For example, you have a file of welcome messages, that consist of `Welcome %user
 While reading the contents of the file, an attempt will be made on each line to auto-type it.  So if it's a number, it will make sure the variable contains a number type.
 
 ## Variables
-Name | Description
-----:|:------------
-`line` | The contents of that line
-`fileFound` |  This can be used to see if the file is present. Returns true or false.
+|        Name | Description                                                            |
+|------------:|:-----------------------------------------------------------------------|
+|      `line` | The contents of that line                                              |
+| `fileFound` | This can be used to see if the file is present. Returns true or false. |
 
 ---
 

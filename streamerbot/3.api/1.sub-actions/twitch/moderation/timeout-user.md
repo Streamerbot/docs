@@ -3,7 +3,7 @@ Timeout a user.
 :image-preview
 
 # Notes
-When you timeout a moderator it will re-mod the moderator when the timeout has passed.
+When you time out a moderator it will re-mod the moderator when the timeout has passed.
 
 ## Parameters
 ### `Type`
@@ -37,14 +37,14 @@ Select this is you want to exclude moderators from the timeout.
 ## Variables
 :variables-description
 
-Name | Description
-----:|:------------
-`createdAt` | The timestamp the timeout was created.
-`createdById` | User id from the timeout creator.
-`createdByUsername` | User's login name from the timeout creator.
-`createdByDisplayName` | Display name from the timeout creator.
-`duration` | The duration of the timeout.
-`reason` | The reason of the timeout
+|                   Name | Description                                 |
+|-----------------------:|:--------------------------------------------|
+|            `createdAt` | The timestamp the timeout was created.      |
+|          `createdById` | User id from the timeout creator.           |
+|    `createdByUsername` | User's login name from the timeout creator. |
+| `createdByDisplayName` | Display name from the timeout creator.      |
+|             `duration` | The duration of the timeout.                |
+|               `reason` | The reason of the timeout                   |
 
 ## C# Usage
 :csharp-method{name=TwitchTimeoutUser}

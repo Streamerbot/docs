@@ -16,10 +16,10 @@ Select a MIDI channel
 ::
 
 ### `Controller`
-Enter a custom value for the `Control Function` (MIDI Byte 2), or use the `Learn From` option to auto-fill values from your device
+Enter a custom value for the `Control Function` (MIDI Byte 2), or use the `Learn From` option to autofill values from your device
 
 ### `Value`
-Enter a custom `Value` (MIDI Byte 3), or use the `Learn From` option to auto-fill values from your device
+Enter a custom `Value` (MIDI Byte 3), or use the `Learn From` option to autofill values from your device
 
 ## C# Usage
 :csharp-method

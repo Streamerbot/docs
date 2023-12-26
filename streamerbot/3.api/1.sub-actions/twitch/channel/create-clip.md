@@ -1,5 +1,5 @@
 # Create Clip
-Create a 30 second Twitch Clip
+Create a 30-second Twitch Clip
 :image-preview
 
 ::callout{color=amber icon=i-mdi-lightbulb}
@@ -10,12 +10,12 @@ To make your own changes to the clip duration or title, you must manually edit t
 ## Variables
 :variables-description
 
-| Name | Description | Example |
-|-----:|:------------|:--------|
-`createClipSuccess` | Boolean result of the reques | `True/False`
-`createClipId` | String identifier of the created clip
-`createClipCreatedAt` | Timestamp of clip creation | `7/11/2022 3:01:53 AM`
-`createClipUrl` | Full URL to the created clip
+|                  Name | Description                           | Example                |
+|----------------------:|:--------------------------------------|:-----------------------|
+|   `createClipSuccess` | Boolean result of the request         | `True/False`           |
+|        `createClipId` | String identifier of the created clip |                        |
+| `createClipCreatedAt` | Timestamp of clip creation            | `7/11/2022 3:01:53 AM` |
+|       `createClipUrl` | Full URL to the created clip          |                        |
 
 ## C# Usage
 :csharp-method{name=CreateClip}

@@ -23,7 +23,7 @@ Select the reward.
 How long the new cooldown should be.
 
 ### Additive
-Sets the cooldown relative to the prvious cooldown.
+Sets the cooldown relative to the previous cooldown.
 
 ### Set From Reward
 Gets the current cooldown from the selected reward and fills in the Cooldown field.

@@ -25,7 +25,7 @@ Enter a name for your webhook
 Set a custom username for the author of the resulting Discord message
 ::list
 - *Optional*
-- By default Discord will use the name configured in the webhook settings
+- By default, Discord will use the name configured in the webhook settings
 ::
 
 ### `Webhook URL`
@@ -52,14 +52,14 @@ Users can be pinged in the following format:
 
 `<@DISCORD_USER_ID>` e.g. `<@0123456789>`
 
-With developer mode enabled, you can right click on any user in discord, and click `Copy ID` to obtain their user ID.
+With developer mode enabled, you can right-click on any user in discord, and click `Copy ID` to obtain their user ID.
 
 #### Role Pings
 Roles can be pinged in the following format:
 
 `<@&DISCORD_ROLE_ID>` e.g. `<@&0123456789>`
 
-With developer mode enabled, you can right click on a role in the server settings area, and click `Copy ID` to obtain its ID.
+With developer mode enabled, you can right-click on a role in the server settings area, and click `Copy ID` to obtain its ID.
 ::
 
 
@@ -67,9 +67,9 @@ With developer mode enabled, you can right click on a role in the server setting
 Set a custom avatar for the author of the resulting Discord message
 ::list
 - *Optional*
-- By default Discord will use the avatar configured in the webhook settings
+- By default, Discord will use the avatar configured in the webhook settings
 ::
-Here you can optionally fill out an URL to temporarily change the avatar of the webhook to something to your choose, an example use case for this is adding a Chat Message event and using the user's profile image in this field with the [Get User Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) Sub-Action and then using the `%targetUserProfileImageUrl%` variable.
+Here you can optionally fill out a URL to temporarily change the avatar of the webhook to something to your choose, an example use case for this is adding a Chat Message event and using the user's profile image in this field with the [Get User Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) Sub-Action and then using the `%targetUserProfileImageUrl%` variable.
 
 ### `Image`
 Add an image embed to the Webhook message

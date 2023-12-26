@@ -23,7 +23,7 @@ Select the reward.
 Enter the new title for your channel point reward.
 
 ### Reset to Original
-Reset the reward title to it's original value.
+Reset the reward title to its original value.
 
 ---
 

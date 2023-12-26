@@ -8,8 +8,8 @@ Get the current voice in use from VoiceMod
 :variables-description
 
 |             Name | Description                 | Example |
-| ---------------: | :-------------------------- | :------ |
-| `currentVoiceId` | The ID of the current voice |
+|-----------------:|:----------------------------|:--------|
+| `currentVoiceId` | The ID of the current voice |         |
 
 ## C# Usage
 

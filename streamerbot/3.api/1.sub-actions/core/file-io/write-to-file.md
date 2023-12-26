@@ -19,7 +19,7 @@ Appending to a file will add the incoming data to the end of the file. So, the d
 
 If the Append to File option is unchecked it will overwrite everytime each time new data is written.
 
-You can capture more that one variable at anytime.
+You can capture more than one variable at anytime.
 
 ---
 

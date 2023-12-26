@@ -22,9 +22,9 @@ If the browser source audio should be enabled
 Select the group layout
 
 - `TILED_LAYOUT`: A layout where all the guests are tiled
-- `SCREENSHARE_LAYOUT`: A layout where your screen is shared along side the guests
+- `SCREENSHARE_LAYOUT`: A layout where your screen is shared alongside the guests
 - `HORIZONTAL_LAYOUT`: A horizontal layout
-- `VERICAL_LAYOUT`: A vertial layout
+- `VERICAL_LAYOUT`: A vertical layout
 
 ### `Regenerate Browser Sources`
 If browser sources should regenerate

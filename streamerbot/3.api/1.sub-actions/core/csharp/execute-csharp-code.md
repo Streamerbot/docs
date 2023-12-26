@@ -23,7 +23,7 @@ You can :shortcut{value=Right-Click} within the pane if you need to add specific
 ::
 
 ## Configuration
-Configuration options availble under the `Settings` tab are outlined below:
+Configuration options available under the `Settings` tab are outlined below:
 
 ::field-group
   ::field{name=Name type=Text}
@@ -88,7 +88,7 @@ Configuration options availble under the `Settings` tab are outlined below:
   ::
 
   ::field{name="Save and Compile" type=Button}
-  This will save your changes, and pre-compile the code so its ready to go the first time the action is hit
+  This will save your changes, and pre-compile the code so it's ready to go the first time the action is hit
   ::
 
   ::field{name="Ok" type=Button}

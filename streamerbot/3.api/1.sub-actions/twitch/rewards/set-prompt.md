@@ -25,7 +25,7 @@ Enter the text to apply to your reward prompt.
 This input field can span multiple lines and will also accept [variables](/Variables)
 
 ### Reset to Original
-Reset the reward prompt to it's original value.
+Reset the reward prompt to its original value.
 
 ---
 

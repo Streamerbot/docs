@@ -20,7 +20,7 @@ The If sub-action performs a logical test on the contents of an `Argument` and i
 ### Variable
 This is the `Argument` name to test
 
-> If you are still using v0.14 or belowm do not use % symbols in the variable name, for v0.15 and up it % symbols will be ignored in the Variable name
+> If you are still using v0.14 or below do not use % symbols in the variable name, for v0.15 and up it % symbols will be ignored in the Variable name
 {.is-info}
 
 ### Operator
@@ -32,7 +32,7 @@ The value for comparison
 ### Do Action
 The `Action` to perform if the logic test is true
 
-If the `Run Action Immediately` checkbox is ticked, this will run the action outside of its normal queue as if it were a subroutine of the current action, Streamerbot will return to this point in the action after it has completed
+If the `Run Action Immediately` checkbox is ticked, this will run the action outside its normal queue as if it were a subroutine of the current action, Streamerbot will return to this point in the action after it has completed
 
 If the box is unchecked then Streamerbot will queue it as normal as a completely separate action and then move on immediately to the next sub-action
 
@@ -44,7 +44,7 @@ This specifies if the Action should `Continue` or `Break` after performing its n
 The RexEx operator is used to perform a regular expression match on the contents of an `Argument` defined in `Value`.
 
 ### Defining a RegEx
-Using tools like [RegExr](https://regexr.com) you can more easily see a breakdown of the RegEx syntax and how it will work to make sure that it functions how you intend it. You can also see the [C# RegEx Docs](https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.2) for C# specific syntax but you can also use JavaScript based RegEx syntax and most RegEx Engines support it.
+Using tools like [RegExr](https://regexr.com) you can more easily see a breakdown of the RegEx syntax and how it will work to make sure that it functions how you intend it. You can also see the [C# RegEx Docs](https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.2) for C# specific syntax, but you can also use JavaScript based RegEx syntax and most RegEx Engines support it.
 
 ---
 

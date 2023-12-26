@@ -9,7 +9,7 @@ Fill in the group of channel points.
 ### `State`
 - `Paused`: Pause the selected group
 - `Unpaused`: Unpause the selected group
-- `Toggle`: Toggle the the paused state of the selected group
+- `Toggle`: Toggle the paused state of the selected group
 
 ## Variables
 :variables-description{empty}

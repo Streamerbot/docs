@@ -14,7 +14,7 @@ With the Streamer.bot *v0.1.8*{.version-badge} you can set a Random Voice in Voi
 
 
 First make sure Streamer.bot is connected to VoiceMod (if you haven't done this and /or don't know how please check out the how to connect to VoiceMod [here](/Integrations/VoiceMod))
-Once you have done this you can now proceed to the set up this Sub-Action.
+Once you have done this you can now proceed to set up the Sub-Action.
 
 ![random-voices.png](/voicemod/random-voices.png)
 

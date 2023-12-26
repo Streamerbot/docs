@@ -1,5 +1,5 @@
 # Hide Group's Sources
-Hide all of the sources from a group
+Hide all the sources from a group
 :image-preview
 
 ## Parameters

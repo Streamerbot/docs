@@ -20,9 +20,10 @@ You could use this to check if a command is enabled or disabled. This value is s
 Select a command from the command list.
 
 ## Variables
-Name | Description
-----:|:------------
-`commandState` | `True / False` depending on the command's enabled state
+|           Name | Description                                             |
+|---------------:|:--------------------------------------------------------|
+| `commandState` | `True / False` depending on the command's enabled state |
+
 {.vars-table}
 
 ---

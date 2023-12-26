@@ -8,9 +8,9 @@ Get the current scene
 ## Variables
 :variables-description
 
-Name | Description
-----:|:------------
-`currentScene` | Name of the active scene at the time of execution
+|           Name | Description                                       |
+|---------------:|:--------------------------------------------------|
+| `currentScene` | Name of the active scene at the time of execution |
 
 ## C# Usage
 :csharp-method{name=ObsGetCurrentScene}
