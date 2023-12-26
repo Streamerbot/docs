@@ -1,17 +1,14 @@
 ---
+title: First Words
+description: Trigger for a Twitch First Words
 version: 0.0.32
+twitchService: Chat Client
+variables: []
+commonVariables:
+  - TwitchUser
+  - TwitchChat
 ---
 
-# First Words
-This triggers when someone sends their first message of the stream.
 
 ## Details
-::list
-- Twitch Service: `Chat Client`
-::
-
-## Variables
-:variables-description
-
-:variables{name=TwitchUser disclosure}
-:variables{name=TwitchChat disclosure}
+This triggers when someone sends their first message of the stream.
