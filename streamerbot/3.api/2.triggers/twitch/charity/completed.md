@@ -1,28 +1,53 @@
 ---
+title: Charity Completed
+description: Trigger for the Twitch charity completed event
 version: 0.1.14
+twitchService: EventSub
+variables:
+  - name: charity.stoppedAt
+    type: DateTime
+    description: The time and date the charity event completed
+    value: 8/4/2023 10:56:06 AM
+  - name: charity.currentAmount.value
+    type: number
+    description: The current amount of money raised
+    value: 5.25
+  - name: charity.currentAmount.valueMinor
+    type: number
+    description: The current amount of money raised in the minor format
+    value: 525
+  - name: charity.currentAmount.currency
+    type: string
+    description: The currency formatted in the 3 letter ISO currency code of the amount raised
+    value: USD
+  - name: charity.targetAmount.value
+    type: number
+    description: The target amount of money raised
+    value: 20
+  - name: charity.targetAmount.valueMinor
+    type: number
+    description: The target amount of money raised in the minor format
+    value: 2000
+  - name: charity.targetAmount.currency
+    type: string
+    description: The currency formatted in the 3 letter ISO currency code of the target amount raised
+    value: USD
+  - name: charity.id
+    type: string
+    description: The unique identifier for the charity campaign
+  - name: charity.name
+    type: string
+    description: The name of the charity campaign
+    value: My charity campaign
+  - name: charity.description
+    type: string
+    description: The description of the charity campaign
+    value: My charity campaign description
+  - name: charity.logo
+    type: string
+    description: The image url of the logo from the charity campaign
+  - name: charity.website
+    type: string
+    description: The website of the charity campaign
+    value: mycharitycampaign.com
 ---
-
-# Charity Completed
-When a charity event is completed.
-
-## Details
-::list
-- Twitch Service: `EventSub`
-::
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`charity.stoppedAt` | The time and date the charity event completed, format: `MM/dd/yyyy h:m:ss tt`.
-`charity.currentAmount.value` | The current amount of the money raised in decimal form e.g. `5.25` ($5.25).
-`charity.currentAmount.valueMinor` | The current amount of the money raised in non-decimal form e.g. `525` ($5.25).
-`charity.currentAmount.currency` | The 3 letter ISO currency code for the current amount of money raised.
-`charity.targetAmount.value` | The target amount of the money to be raised in decimal form e.g. `20` ($20.00).
-`charity.targetAmount.valueMinor` | The target amount of the money to be raised in non-decimal form e.g. `2000` ($20.00).
-`charity.targetAmount.currency` | The 3 letter ISO currency code for the target amount of money to be raised.
-`charity.id` | Twitch's internal ID for your campaign.
-`charity.name` | The name of the charity you're supporting.
-`charity.description` | The description of the charity you're supporting.
-`charity.logo` | The URL to the logo of the charity you're supporting.
-`charity.website` | The URL to the website of the charity you're supporting.

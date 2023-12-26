@@ -1,21 +1,18 @@
-# Cheer
-This triggers when you get a cheer donation.
-
-## Details
-::list
-- Twitch Service: `Chat Client`
-::
+---
+title: Cheer
+description: Trigger for a Twitch Cheer
+version: 0.1.14
+twitchService: Chat Client
+variables:
+  - name: bits
+    type: number
+    description: The amount of bits donated
+    value: 200
+commonVariables:
+  - TwitchChat
+  - TwitchUser
+---
 
 ## Parameters
 ### `Range`
 :range-description
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`bits` | The number of bits that the message has.
-
-:variables{name=TwitchChat disclosure}
-:variables{name=TwitchUser disclosure}
