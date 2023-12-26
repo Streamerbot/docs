@@ -1,16 +1,9 @@
 ---
+title: Chat Cleared
+description: Trigger for when the Twitch Chat is Cleared
 version: 0.1.18
+twitchService: PubSub
+variables: []
+commonVariables:
+  - TwitchUser
 ---
-
-# Chat Cleared
-When someone clears your Twitch chat.
-
-## Details
-::list
-- Twitch Service: `PubSub`
-::
-
-## Variables
-:variables-description
-
-:variables{name=TwitchUser disclosure}
