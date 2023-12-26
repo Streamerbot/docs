@@ -1,16 +1,10 @@
 ---
+title: Chat Message
+description: Trigger for a Twitch Chat Message
 version: 0.0.50
+twitchService: Chat Client
+variables: []
+commonVariables:
+  - TwitchChat
+  - TwitchUser
 ---
-
-# Chat Message
-When someone sends a message in chat.
-
-## Details
-::list
-- Twitch Service: `Chat Client`
-::
-
-## Variables
-:variables-description
-:variables{name=TwitchChat}
-:variables{name=TwitchUser}

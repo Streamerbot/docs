@@ -1,9 +1,13 @@
 ---
+title: Whispers
+description: Trigger for a Twitch Whisper
 version: 0.0.39
+twitchService: Chat Client
+variables: []
+commonVariables:
+  - TwitchChat
+  - TwitchUser
 ---
-
-# Whispers
-When someone sends the broadcaster account a whisper.
 
 ## Notes
 The user sending the whisper must have a **verified phone number** (see the **Phone Number setting** in your **Security and Privacy settings**).
@@ -17,14 +21,3 @@ The maximum message lengths are:
 * 10,000 characters if the user you're sending the message to has whispered you before.
 
 Messages that exceed the maximum length are truncated.
-
-## Details
-::list
-- Twitch Service: `Chat Client`
-::
-
-## Variables
-:variables-description
-
-:variables{name=TwitchUser disclosure}
-:variables{name=TwitchChat disclosure}
