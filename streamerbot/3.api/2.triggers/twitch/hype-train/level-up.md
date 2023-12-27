@@ -1,41 +1,91 @@
-# Hype Train Level Up
-When a hype train levels up on your channel.
-
-## Details
-::list
-- Twitch Service: `EventSub`
-::
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`prevLevel`	| The previous Hype Train level e.g. `2`
-`level` | The current Hype Train level e.g. `3`
-`startedAt` | The time the hype train started e.g. `8/25/2020 8:30:27 PM`
-`expiresAt` | The time the hype train expires e.g. `8/25/2020 8:32:27 PM`
-`duration` | The duration of the hype train e.g. `120`
-`percent` | The amount of percentage for the current level e.g. `80%`
-`percentDecimal` | The amount of decimal percentage for the current level e.g. `0.8`
-`contributors` | The amount of contributors of the hype train e.g. `10`
-`user` | The user that progresses the hype train display name
-`userName` | The user that progresses the hype train login name
-`userId` | The user that progresses the hype train user id
-`userType` | twitch
-`isSubscribed` | If the user that progresses the hype train is a subscriber `True`/`False`
-`isModerator` | If the user that progresses the hype train is a moderator `True`/`False`
-`isVip` | If the user that progresses the hype train is a vip `True`/`False`
-`userPreviousActive` | The time that the user was previously active e.g. `8/25/2020 8:10:27 PM`
-`top.bits.user` | The best cheerer of this hype train display name
-`top.bits.userName` | The best cheerer of this hype train login name
-`top.bits.userId` | The best cheerer of this hype train user id
-`top.bits.total` | The amount of bits from the best cheerer of this hype train
-`top.subscription.user` | The most amount of giftsubs given by user in this hype train display name
-`top.subscription.userName` | The most amount of giftsubs given by user in this hype train login name
-`top.subscription.userId` | The most amount of giftsubs given by user in this hype train user id
-`top.subscription.total` | The most amount of giftsubs given by user in this hype train giftsub count
-`top.other.user` | The user display name of the user that have given the most amount of things that aren't bits/giftsubs this hype train
-`top.other.userName` | The user login name of the user that have given the most amount of things that aren't bits/giftsubs this hype train
-`top.other.userId` | The user id of the user that have given the most amount of things that aren't bits/giftsubs this hype train
-`top.other.total` | The toal amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train
-`id` | The unique hype train id
+---
+title: Hype Train Level Up
+description: Trigger for a Twitch Hype Train Level Up
+twitchService: EventSub
+variables:
+  - name: prevLevel
+    type: number
+    description: The previous Hype Train level
+    value: 2
+  - name: level
+    type: number
+    description: The current Hype Train level
+    value: 3
+  - name: startedAt
+    type: DateTime
+    description: The time the hype train started
+    value: 8/4/2023 10:56:06 AM
+  - name: expiresAt
+    type: DateTime
+    description: The time that the hype train expires
+    value: 8/4/2023 10:56:06 AM
+  - name: duration
+    type: DateTime
+    description: The duration of the hype train
+    value: 120
+  - name: percent
+    type: number
+    description: The percentage of the current level
+    value: 80%
+  - name: percentDecimal
+    type: number
+    description: The percentage of the current level as a decimal
+    value: 0.8
+  - name: contributors
+    type: number
+    description: The amount of contributors of the hype train
+    value: 10
+  - name: top.bits.user
+    type: string
+    description: The top cheerer of this hype train display name
+    value: TwitchUser123
+  - name: top.bits.userName
+    type: string
+    description: The top cheerer of this hype train login name
+    value: twitchuser123
+  - name: top.bits.userId
+    type: number
+    description: The top cheerer of this hype train user id
+    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: top.bits.total
+    type: number
+    description: The amount of bits donated from the the top cheerer this hype train
+    value: 1500
+  - name: top.subscription.user
+    type: string
+    description: The top sub gifter of this hype train display name
+    value: TwitchUser123
+  - name: top.subscription.userName
+    type: string
+    description: The top sub gifter of this hype train login name
+    value: twitchuser123
+  - name: top.subscription.userId
+    type: number
+    description: The top sub gifter of this hype train user id
+    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: top.subscription.total
+    type: number
+    description: The amount of giftsubs donated from the the top gift subber this hype train
+    value: 10
+  - name: top.other.user
+    type: string
+    description: The user display name of the user that have given the most amount of things that aren't bits/giftsubs this hype train
+    value: TwitchUser123
+  - name: top.other.userName
+    type: string
+    description: The user login name of the user that have given the most amount of things that aren't bits/giftsubs this hype train
+    value: twitchuser123
+  - name: top.other.userId
+    type: number
+    description: The user id of the user that have given the most amount of things that aren't bits/giftsubs this hype train
+    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: top.other.total
+    type: number
+    description: The toal amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train
+    value: 10
+  - name: id
+    type: string
+    description:  The unique identifier of the hype train
+commonVariables:
+  - TwitchUser
+---
