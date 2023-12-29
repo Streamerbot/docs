@@ -29,7 +29,7 @@ Data can be stored in a `Temporary` store or a `Persisted` store. Persisted data
 ### Variable Name
 
 This is the name of the `Global` / `User` variable to write to
-> This should always be in `camelCase` ie. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
+> This should always be in `camelCase` i.e. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
 {.is-warning}
 
 ### Content

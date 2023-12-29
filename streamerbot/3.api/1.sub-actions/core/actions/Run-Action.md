@@ -9,7 +9,7 @@ dateCreated: 2021-08-25T21:33:14.555Z
 ---
 
 ## Overview
-Run another action you have setup
+Run another action you have set up
 
 ---
 

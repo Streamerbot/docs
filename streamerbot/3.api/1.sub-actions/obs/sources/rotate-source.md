@@ -19,7 +19,7 @@ Select the source from this dropdown list, you can also manually enter a source 
 This shows the current alignment.
 
 ### `Rotation`
-By default this is an `Absolute` angle with 0 being normal rotation, valid range -360 -> +360, however as tranform is instant values outside -180 -> +180 will be visually the same. Negative values rotate the source counter-clockwise.
+By default, this is an `Absolute` angle with 0 being normal rotation, valid range -360 -> +360, however as transform is instant values outside -180 -> +180 will be visually the same. Negative values rotate the source counter-clockwise.
 
 - Type: `Number`
 

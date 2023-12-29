@@ -26,7 +26,7 @@ Name | Description | Example
 `gameSuccess` | The status of the sub-action request | `True/False`
 `gameName` | The name of the game | `Beat Saber`
 `gameId` | The id of the game | `503116`
-`gameBoxArt` | The url of the game boxart, can be used with browser sources in your broadcaster.
+`gameBoxArt` | The url of the game box art, can be used with browser sources in your broadcaster.
 
 ## C# Usage
 :csharp-method{name=SetChannelGame}

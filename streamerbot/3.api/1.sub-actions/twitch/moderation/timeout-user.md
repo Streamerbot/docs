@@ -3,7 +3,7 @@ Timeout a user.
 :image-preview
 
 # Notes
-When you timeout a moderator it will re-mod the moderator when the timeout has passed.
+When you time out a moderator it will re-mod the moderator when the timeout has passed.
 
 ## Parameters
 ### `Type`

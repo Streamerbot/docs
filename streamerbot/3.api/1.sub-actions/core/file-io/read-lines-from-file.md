@@ -29,7 +29,7 @@ Name | Description
 `line#` | Change the `#` to the line number e.g. if you have 3 lines it wil output: `line0`, `line1`, `line2` 
 `fileFound` |  This can be used to see if the file is present. Returns true or false.
 
-> The line count number starts at 0. E.g. if your linecount is 20, your `line#` will go from 0-19.
+> The line count number starts at 0. E.g. if your line count is 20, your `line#` will go from 0-19.
 {.is-info}
 
 ---

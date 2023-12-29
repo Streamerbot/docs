@@ -34,12 +34,12 @@ When fetching data you can select to use the persisted data store or the tempora
 
 ### Variable Name
 This is the name of the `Global` / `User` variable to fetch
-> This should always be in `camelCase` ie. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
+> This should always be in `camelCase` i.e. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
 {.is-warning}
 
 ### Destination Variable
 This is the name of the custom `Argument` the data will be stored in.
-> It is best practice to always name this something different than the `Global` you are reading from. Not only does this make your workflow easier to read and debug, it can also prevent strange issues with logic and inline functions
+> It is best practice to always name this something different from the `Global` you are reading from. Not only does this make your workflow easier to read and debug, it can also prevent strange issues with logic and inline functions
 {.is-success}
 
 ### Default Value

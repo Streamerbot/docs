@@ -28,9 +28,9 @@ When the channels of the file is 2F2R it might not work, because those are surro
 Enabling this will wait for the duration of the sound file before continuing onto the next action.  If this is disabled, the sound will start being played and immediately carry onto the next sub-action.
 
 ### Recursive
-With this enabled, the bot will select from audio files not only in the selected directory, but in all sub-directories within that selected original one.  
+With this enabled, the bot will select from audio files not only in the selected directory, but in all subdirectories within that selected original one.  
 
-Example: In the image below you can see the `<sub directory>\filename.mp3` of where the bot found the audio file within the original directory and sub directories.
+Example: In the image below you can see the `<sub directory>\filename.mp3` of where the bot found the audio file within the original directory and subdirectories.
 
 ![recursive.png](/recursive.png =400x)
 

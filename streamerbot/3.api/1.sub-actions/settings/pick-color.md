@@ -7,7 +7,7 @@ Convert a selected color into a bank of variables that can then be passed to C# 
 
 ## Parameters
 ### `Color / OBS Color`
-The Color picker will give the standard pallet picker so you can chose by a slider or by entering raw RGB / HSL values
+The Color picker will give the standard pallet picker, so you can choose by a slider or by entering raw RGB / HSL values
 
 Once a color is chosen the `Color` box will be populated with the RGB Hex value and `OBS Color` will populate with the raw integer value OBS expects for ABGR it uses for its natively supported sources.
 

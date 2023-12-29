@@ -5,7 +5,7 @@ Get your current follower count.
 ## Variables
 Name | Description
 ----:|:------------
-`followerCount` | The currrent amount of followers
+`followerCount` | The current amount of followers
 
 
 ## C# Usage

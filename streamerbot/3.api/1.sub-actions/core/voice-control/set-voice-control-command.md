@@ -38,7 +38,7 @@ In this dialog you can see the following option and input fields we need to conf
 **Action** - click the `<No Action Selected>` button to select the action you want to run when you say the command you entered in the command field.
 **Override Global** -  only check this is you want the bot to trigger a command with specific certainty that you said the trigger words. this threshold is defined in the `Confidence Threshold` input field.
 
-When you happy with this click the `Ok` button. Save then you have created your first of many voice control commands 
+When you happy with this click the `Ok` button. Save, and you have created your first of many voice control commands
 
 ---
 

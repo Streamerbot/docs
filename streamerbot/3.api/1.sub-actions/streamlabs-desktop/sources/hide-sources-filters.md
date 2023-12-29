@@ -1,5 +1,5 @@
 # Hide Source's Filters
-Hide all of the filters from a source
+Hide all the filters from a source
 :image-preview
 
 ## Parameters

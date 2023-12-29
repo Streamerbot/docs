@@ -34,8 +34,8 @@ Name | Description
 `None` | Set the cost to the amount entered
 `Add` | Add the amount entered to the current cost
 `Subtract` | Subtract the amount entered from the current cost
-`Multiply` | Multiplay the amount entered with the current cost
-`Divide` | Divice the current cost by the amount entered
+`Multiply` | Multiply the amount entered with the current cost
+`Divide` | Divide the current cost by the amount entered
 
 ### Reset to Original
 Revert all reward settings to their original values.

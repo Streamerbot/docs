@@ -5,7 +5,7 @@ Trigger creation of a Stream Marker on Twitch
 You can use this to signify an important event, or as a reminder for a point in the stream you'd like to review in your VOD at a later time.
 
 ::list{type=warning}
-- Stream Markers are only available if you have VOD's enabled on your channel!
+- Stream Markers are only available if you have VODs enabled on your channel!
 ::
 
 ## Parameters

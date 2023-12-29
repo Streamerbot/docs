@@ -17,7 +17,7 @@ This option will display all the commands in the specified group regardless of t
 This option will give you the chance to hide any of your commands other formats for example if you have `!shoutout` and `!so` in the commands box it will only show the 1st one having this option unticked would show both when populating the list.
 
 ### `Only Has Permission`
-This option will filter out all the commands that the user doesn't has permission to use.
+This option will filter out all the commands that the user doesn't have permission to use.
 
 ## Variables
 :variables-description
@@ -37,7 +37,7 @@ U0JBRR+LCAAAAAAABADdV1lvm1gUfq/U/xDlubZYjG0q9cEmMSGJSbxiM+7D3YyJL8uweKv63+eAV7yM
 ```
 
 ### C# Code
-Since Twitch has a message charater limit of 500 and on YouTube it's 200 you may find your commands overtake this amount therefore the code below can help with splitting the list into batches of commands that fit inside the messages.
+Since Twitch has a message character limit of 500 and on YouTube it's 200 you may find your commands overtake this amount therefore the code below can help with splitting the list into batches of commands that fit inside the messages.
 
 ```cs
 using System;
