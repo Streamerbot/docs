@@ -2,7 +2,7 @@
 Shopify order paid trigger.
 
 ## Details
-This event triggers when a order is paid in Shopify.
+This event triggers when an order is paid in Shopify.
 
 ## Variables
 :variables-description
@@ -16,7 +16,7 @@ Name | Description
 `shopify.closed_at` | When the store is closed
 `shopify.updated_at` | When the sore is updated
 `shopify.number` | The order number
-`shopify.note` | The note that the cutomer left
+`shopify.note` | The note that the customer left
 `shopify.total_price` | The total price of the order e.g. `254.98`
 `shopify.subtotal_price` | The subtotal price of the order e.g. `244.98`
 `shopify.currency` | The 3 letter currency e.g. `EUR`
@@ -26,7 +26,7 @@ Name | Description
 `shopify.total_line_items_price` | The total price e.g. `249.98`
 `shopify.buyer_accepts_marketing` | If the customer accepts marketing `True`/`False`
 `shopify.name` | The name of the customer
-`shopify.referring_site` | The reffering site
+`shopify.referring_site` | The referring site
 `shopify.landing_site` | The landing site
 `shopify.total_price_usd` | The total price in USD
 `shopify.order_number` | The order number

@@ -19,5 +19,5 @@ Name | Description
 `avatar` | Avatar of the user
 `amount` | The amount of the tip (decimal value)
 `fees` | The fees that will be taken from the tip
-`currency` | The 3 letter curency code
+`currency` | The 3 letter currency code
 `message` | Any donation message the user may have included

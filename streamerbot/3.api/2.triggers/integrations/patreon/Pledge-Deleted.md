@@ -21,21 +21,21 @@ Name | Description
 `attributes.note` | The note that the user has given.
 `attributes.patron_status` | If the user is subscribed to your patreon.
 `attributes.pledge_cadence` | Number of months between charges.
-`attributes.pledge_relationship_start` | The date that the user subsribed to your patron.
+`attributes.pledge_relationship_start` | The date that the user subscribed to your patron.
 `attributes.will_pay_amount_cents` | The amount of cents the user has given (in U.S. cents).
 `user.Attributes.about` | The about text of the user.
 `user.Attributes.created` | When the account of the user was created.
 `user.Attributes.full_name` | The full name of the user. <br> `John Doe`
 `user.Attributes.first_name` | The first name of the user. <br> `John`
 `user.Attributes.last_name` | The last name of the user. <br> `Doe`
-`user.Attributes.hide_pledges` | If the user has it's pledges hidden.
+`user.Attributes.hide_pledges` | If the user has their pledges hidden.
 `user.Attributes.image_url` | The profile image of the patron.
 `user.Attributes.is_creator` | If the user is a creator. <br> `True`/`False`
 `user.Attributes.like_count` | The like count of the user.
 `user.Attributes.social_connections.deviantart` | The link to the user's DeviantArt, returns null if not filled out.
 `user.Attributes.social_connections.discord` | The link to the user's Discord, returns null if not filled out.
 `user.Attributes.social_connections.facebook` | The link to the user's Facebook, returns null if not filled out.
-`user.Attributes.social_connections.google` | The link to the user's Googke, returns null if not filled out.
+`user.Attributes.social_connections.google` | The link to the user's Google, returns null if not filled out.
 `user.Attributes.social_connections.instagram.url` | The link to the user's Instagram, returns null if not filled out.
 `user.Attributes.social_connections.instagram.user_id` | The user's Instagram ID, returns null if not filled out.
 `user.Attributes.social_connections.reddit` | The link to the user's Reddit, returns null if not filled out.

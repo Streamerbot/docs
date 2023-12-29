@@ -44,7 +44,7 @@ This triggers every 1-10 minutes, default every 5 minutes.
 ## Notes
 The present viewer tick will always happen, but you have the ability to have it "live update" from twitch, or artificially mark someone as present.
 
-Under the Present Viewer action selector, there are 2 setttings, a `Live Update` check box, and a slider bar.
+Under the Present Viewer action selector, there are 2 settings, a `Live Update` check box, and a slider bar.
 
 When Live Update is checked, the slider next to it is how often this update will occur, between 1 and 10 minutes, this will also still execute the action at this interval.
 

@@ -19,5 +19,5 @@ Name | Description
 `goal` | The total goal
 `donations` | An array of the donations
 `raised` | The total amount of money that has been raised
-`isTeam` | A `True`/`False` respone if this is a team
-`isParticipant` | A `True`/`False` respone if the user is a participant
+`isTeam` | A `True`/`False` response if this is a team
+`isParticipant` | A `True`/`False` response if the user is a participant

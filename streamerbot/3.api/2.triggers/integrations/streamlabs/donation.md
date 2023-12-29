@@ -17,5 +17,5 @@ Name | Description
 `donationAmount` | The amount of the donation
 `donationCurrency` | The 3 letter payment currency code
 `donationFormattedAmount` | The donation amount with the currency symbol
-`donationMessage` | The dontaion message that the user may has included
+`donationMessage` | The donation message that the user may has included
 `isTest` | Boolean value indicating if the tip was a test `True`/`False`

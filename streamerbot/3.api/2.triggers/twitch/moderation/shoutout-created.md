@@ -36,5 +36,5 @@ TODO: Add shared twitch target vars here
 
 ::callout{icon=i-mdi-lightbulb color=primary}
 User Variables: Who created the shoutout
-Target Variables: Who reveived the shoutout
+Target Variables: Who received the shoutout
 ::

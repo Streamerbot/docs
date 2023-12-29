@@ -1,5 +1,5 @@
 # Heart Rate Pulse
-Pusloid heart rate pulse trigger.
+Pulsoid heart rate pulse trigger.
 
 ## Details
 This event triggers every second while using a heart rate monitor.
