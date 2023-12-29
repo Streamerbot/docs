@@ -21,12 +21,12 @@ Enter the title of the new game category
 ## Variables
 :variables-description
 
-|          Name | Description                                                                        | Example      |
-|--------------:|:-----------------------------------------------------------------------------------|--------------|
-| `gameSuccess` | The status of the sub-action request                                               | `True/False` |
-|    `gameName` | The name of the game                                                               | `Beat Saber` |
-|      `gameId` | The id of the game                                                                 | `503116`     |
-|  `gameBoxArt` | The url of the game box art, can be used with browser sources in your broadcaster. |              |
+Name | Description | Example
+----:|:------------|---------|
+`gameSuccess` | The status of the sub-action request | `True/False`
+`gameName` | The name of the game | `Beat Saber`
+`gameId` | The id of the game | `503116`
+`gameBoxArt` | The url of the game box art, can be used with browser sources in your broadcaster.
 
 ## C# Usage
 :csharp-method{name=SetChannelGame}

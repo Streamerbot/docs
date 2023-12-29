@@ -13,8 +13,8 @@ Configure your preferred min/max values
 ## Variables
 :variables-description
 
-|            Name | Description                                                                      | Example |
-|----------------:|:---------------------------------------------------------------------------------|---------|
-|  `randomNumber` | If `Between` is selected, an integer value between your configured min/max       | `23`    |
-|   `randomFloat` | If `Next Float` is selected, a floating point value between 0 and 1              | `0.23`  |
-| `randomPercent` | If `Next Float` is selected, the `randomFloat` value represented as a percentage | `23`    |
+Name | Description | Example
+----:|:------------|---------|
+`randomNumber` | If `Between` is selected, an integer value between your configured min/max | `23`
+`randomFloat` | If `Next Float` is selected, a floating point value between 0 and 1 | `0.23`
+`randomPercent` | If `Next Float` is selected, the `randomFloat` value represented as a percentage | `23`

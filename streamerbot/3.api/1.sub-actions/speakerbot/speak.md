@@ -26,11 +26,11 @@ Enter the message content to send to Speaker.bot.
 ## Variables
 :variables-description
 
-|         Name | Description                                              |
-|-------------:|:---------------------------------------------------------|
-|    `success` | If the speak sub-action was successful `True`/`False`    |
-| `speechFile` | The speech file or when it doesn't exist `null`          |
-|   `duration` | The duration of the speech when the delay option is used |
+Name | Description
+----:|:------------
+`success` | If the speak sub-action was successful `True`/`False`
+`speechFile` | The speech file or when it doesn't exist `null`
+`duration` | The duration of the speech when the delay option is used
 
 ## C# Usage
 :csharp-method

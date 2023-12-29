@@ -20,10 +20,11 @@ Global variables can be stored with or without an associated `userID`
 
 `User` source stores a copy of that variable name against each unique user so when data is retrieved it will pull based on the selected context:
 
-| User Context | Description                                                                                                                                                     |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Redeemer`   | Pull the information for the user activating the action                                                                                                         |
-| `Target`     | Pull the information for the current `targetUser` - Used in conjunction with the [Get Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) sub-action |
+User Context | Description
+-----|-----
+`Redeemer`|Pull the information for the user activating the action
+`Target`|Pull the information for the current `targetUser` - Used in conjunction with the [Get Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) sub-action
+
 
 ### Persisted
 Any Global / User variable can be set as `Persisted`. If this flag is set Streamer.bot will save the data into the `Globals.dat` file in the `Data` folder. Data saved in this way will survive application restarts. 

@@ -16,13 +16,13 @@ The description of the stream marker.
 ## Variables
 :variables-description
 
-|                   Name | Description                                                             | Example             |
-|-----------------------:|:------------------------------------------------------------------------|:--------------------|
-|        `broadcastUser` | The Twitch display name of the broadcaster account                      | `StreamerBotUser12` |
-|    `broadcastUserName` | The Twitch user name of the broadcaster account                         | `streamerbotuser12` |
-|      `broadcastUserId` | The Twitch user ID of the broadcaster account                           | `123456789`         |
-| `broadcastIsAffiliate` | Boolean value indicating if the broadcast account is a Twitch affiliate | `True/False`        |
-|   `broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner   | `True/False`        |
+| Name | Description | Example |
+|-----:|:------------|:--------|
+`broadcastUser` | The Twitch display name of the broadcaster account | `StreamerBotUser12`
+`broadcastUserName` | The Twitch user name of the broadcaster account | `streamerbotuser12`
+`broadcastUserId` | The Twitch user ID of the broadcaster account | `123456789`
+`broadcastIsAffiliate` | Boolean value indicating if the broadcast account is a Twitch affiliate | `True/False`
+`broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner | `True/False`
 
 ## C# Usage
 :csharp-method{name=CreateStreamMarker}

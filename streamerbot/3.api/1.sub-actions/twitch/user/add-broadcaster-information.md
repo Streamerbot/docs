@@ -14,14 +14,13 @@ Makes variables with the information from your broadcaster account.
 ![overview.png](/Sub-Actions/Twitch/add-broadcaster-information/overview.png =400x)
 
 ## Variables
-|                   Name | Description                                                                                   |
-|-----------------------:|:----------------------------------------------------------------------------------------------|
-|        `broadcastUser` | The Twitch display name of the broadcaster account                                            |
-|    `broadcastUserName` | The Twitch user name of the broadcaster account                                               |
-|      `broadcastUserId` | The Twitch user ID of the broadcaster account                                                 |
-| `broadcastIsAffiliate` | Boolean value indicating if the broadcast account is a Twitch affiliate <br> `True` / `False` |
-|   `broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner <br> `True` / `False`   |
-
+Name | Description
+----:|:------------
+`broadcastUser` | The Twitch display name of the broadcaster account
+`broadcastUserName` | The Twitch user name of the broadcaster account
+`broadcastUserId` | The Twitch user ID of the broadcaster account
+`broadcastIsAffiliate` | Boolean value indicating if the broadcast account is a Twitch affiliate <br> `True` / `False`
+`broadcastIsPartner` | Boolean value indicating if the broadcast account is a Twitch partner <br> `True` / `False`
 {.vars-table}
 
 ---

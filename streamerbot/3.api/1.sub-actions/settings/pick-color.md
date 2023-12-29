@@ -18,15 +18,15 @@ Enter an alias for the resulting variables, outlined below. Don't use %'s in thi
 :variables-description
 
 
-|                     Name | Description                          |
-|-------------------------:|:-------------------------------------|
-|   `variableName.color.a` | The alpha value                      |
-|   `variableName.color.r` | The red value                        |
-|   `variableName.color.g` | The green value                      |
-|   `variableName.color.b` | The blue value                       |
-|      `variableName.html` | The html color code                  |
-| `variableName.htmlalpha` | The html color code with alpha value |
-|       `variableName.obs` | The color as an OBS ABGR value       |
+Name | Description
+----:|:------------
+`variableName.color.a` | The alpha value
+`variableName.color.r` | The red value
+`variableName.color.g` | The green value
+`variableName.color.b` | The blue value
+`variableName.html` | The html color code
+`variableName.htmlalpha` | The html color code with alpha value
+`variableName.obs` | The color as an OBS ABGR value
 
 ::callout{icon=i-mdi-alert color=amber}
 Replace `variableName` with the variable name you configured.

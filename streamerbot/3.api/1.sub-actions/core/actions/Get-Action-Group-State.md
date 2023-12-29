@@ -12,12 +12,11 @@ dateCreated: 2023-04-06T16:57:57.768Z
 
 The following variables will be available after execution of this action:
 
-|               Name | Description                                                |
-|-------------------:|:-----------------------------------------------------------|
-| `actionGroupState` | Boolean for action group enabled state <br> `True / False` |
-|   `actionsEnabled` | A list of action IDs, of actions that are enabled          |
-|  `actionsDisabled` | A list of action IDs, of commands that are disabled        |
-
+Name | Description
+----:|:------------
+`actionGroupState` | Boolean for action group enabled state <br> `True / False`
+`actionsEnabled` | A list of action IDs, of actions that are enabled
+`actionsDisabled` | A list of action IDs, of commands that are disabled
 {.vars-table}
 
 ---

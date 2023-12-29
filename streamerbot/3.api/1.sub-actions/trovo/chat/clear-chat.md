@@ -4,9 +4,9 @@ Clear your trovo chat.
 ## Variables
 :variables-description
 
-|      Name | Description                                        |
-|----------:|:---------------------------------------------------|
-| `success` | If clearing the chat was successful `True`/`False` |
+Name | Description
+----:|:------------
+`success` | If clearing the chat was successful `True`/`False`
 
 ## C# Usage
 :csharp-method

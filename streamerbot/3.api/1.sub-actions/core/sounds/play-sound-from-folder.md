@@ -38,9 +38,8 @@ Example: In the image below you can see the `<sub directory>\filename.mp3` of wh
 Adjust the volume of the sound file.  This is a very basic volume adjustment, and is usually better to adjust the volume with a tool like Audacity.
 
 ## Variables
-|                  Name | Description                                                      |
-|----------------------:|:-----------------------------------------------------------------|
-|     `randomSoundFile` | The full path, including file name of the sound that was played. |
-| `randomSoundFileName` | The file name of the sound that was played.                      |
-
+Name | Description
+----:|:------------
+`randomSoundFile` | The full path, including file name of the sound that was played.
+`randomSoundFileName` | The file name of the sound that was played.
 {.vars-table}

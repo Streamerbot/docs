@@ -22,10 +22,10 @@ This option will filter out all the commands that the user doesn't have permissi
 ## Variables
 :variables-description
 
-|                 Name | Description                                                                                  |
-|---------------------:|:---------------------------------------------------------------------------------------------|
-|     `<variableName>` | Comma separated string containing all commands matching criteria specified in the sub-action |
-| `<variableName>List` | List object for C# containing all commands matching criteria specified in the sub-action     |
+Name | Description
+----:|:------------
+`<variableName>` | Comma separated string containing all commands matching criteria specified in the sub-action
+`<variableName>List` | List object for C# containing all commands matching criteria specified in the sub-action
 
 ## C# Usage
 :csharp-method

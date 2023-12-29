@@ -12,10 +12,10 @@ Choose the streaming state
 - `Stop`: Stop your streaming
 
 ### State
-|    Name | Description            |
-|--------:|:-----------------------|
-|  `Stop` | Stops your OBS Stream  |
-| `Start` | Starts your OBS Stream |
+Name | Description
+----:|:------------
+`Stop` | Stops your OBS Stream
+`Start` | Starts your OBS Stream
 
 ## C# Usage
 :csharp-method{name=SlobsStartStreaming}

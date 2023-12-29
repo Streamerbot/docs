@@ -23,12 +23,11 @@ Only selects random users that are present.
 ## Variables
 `#` starts at `0`, e.g. if the Count is set to `50` the `#` will be `0`, `1`, `2` ...... `47`, `48`, `49`.
 
-|              Name | Description                     |
-|------------------:|:--------------------------------|
-|     `randomUser#` | The random user's display name. |
-| `randomUserName#` | The random user's login name.   |
-|   `randomUserId#` | The random user's id.           |
-
+Name | Description
+----:|:------------
+`randomUser#` | The random user's display name.
+`randomUserName#` | The random user's login name.
+`randomUserId#` | The random user's id.
 {.vars-table}
 
 ---
