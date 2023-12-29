@@ -17,4 +17,4 @@ variables:
 ## Details
 This event triggers at the start of an ad.
 
-See the [Ad Mid Roll](/api/triggers/twitch/ads/ad-mid-roll) trigger if you are looking for an 5 seconds prior to the ad event.
+See the [Ad Mid-Roll](/api/triggers/twitch/ads/ad-mid-roll) trigger if you are looking for an 5 seconds prior to the ad event.

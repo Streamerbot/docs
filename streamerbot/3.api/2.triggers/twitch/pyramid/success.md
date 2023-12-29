@@ -1,5 +1,5 @@
 # Pyramid Success
-This triggers when a pyramid succesfully gets created in Twitch chat.
+This triggers when a pyramid successfully gets created in Twitch chat.
 
 ## Details
 ::list

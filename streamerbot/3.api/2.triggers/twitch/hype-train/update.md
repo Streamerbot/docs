@@ -77,7 +77,7 @@ variables:
     value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
   - name: top.other.total
     type: number
-    description: The toal amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train
+    description: The total amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train
     value: 10
   - name: id
     type: string

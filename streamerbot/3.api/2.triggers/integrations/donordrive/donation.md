@@ -15,12 +15,12 @@ Name | Description
 ----:|:------------
 `donorName` | The name of the donor
 `donorAvatarUrl` | The URL of the donor's avatar
-`donorIsAnonymous` | A `true`/`false` respone if the donor is anonymous
+`donorIsAnonymous` | A `true`/`false` response if the donor is anonymous
 `recipientName` | The broadcaster's name used in the DonorDrive
 `donorMessage` | The message of the donor
 `donorAmount` | The amount that the donor has given
-`isTeam` | A `true`/`false` respone if this is a team
-`isParticipant` | A `true`/`false` respone if the user is a participant
+`isTeam` | A `true`/`false` response if this is a team
+`isParticipant` | A `true`/`false` response if the user is a participant
 `profileName` | The name of the profile
 `profileTeamName` | The name of the profile's team
 `eventName` | The name of the event

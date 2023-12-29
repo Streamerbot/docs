@@ -14,21 +14,21 @@ Select any or a DonorDrive provider as the source for this incentive.
 Name | Description
 ----:|:------------
 `donorAvatarUrl` | The avatar url of the donor.
-`donorIsAnonymous` | Wheter the donor is anonymous. Returns `True` or `False`.
+`donorIsAnonymous` | Whether the donor is anonymous. Returns `True` or `False`.
 `created` | The timestamp this incentive was created.
 `recipientName` | The recipient of this incentive.
 `donorMessage` | The message from the donor.
 `donorAmount` | The donor amount.
-`isTeam` | Wheter the recipient is a team. Returns `True` or `False`.
-`isParticipant` | Wheter the recipient is a participant. Returns `True` or `False`.
+`isTeam` | Whether the recipient is a team. Returns `True` or `False`.
+`isParticipant` | Whether the recipient is a participant. Returns `True` or `False`.
 `profileName` | The user name from the recipient.
 `profileTeamName` | The team name from the recipient. Can be null.
 `eventName` | The DonorDrive event name.
 `goal` | The goal amount.
 `raised` | The raised money for this goal.
-`isIncentive` | Wheter the event is an incentive. Returns `True` or `False`.
+`isIncentive` | Whether the event is an incentive. Returns `True` or `False`.
 `incentive.id` | The id of this incentive.
-`incentive.isActive` | Wheter the incentive is active. Returns `True` or `False`. 
+`incentive.isActive` | Whether the incentive is active. Returns `True` or `False`. 
 `incentive.amount` | The amount of the incentive.
 `incentive.description` | The description of the incentive.
 `incentive.image` | The image for the incentive. Can be an empty string.

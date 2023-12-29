@@ -8,7 +8,7 @@ Clip data is sorted by view count (descending) due to Twitch API limitations
 ::
 
 ::callout{color=amber icon=i-mdi-warning}
-A maixmum of `1,000` clips can be returned
+A maximum of `1,000` clips can be returned
 ::
 
 ## `CreateClip`
