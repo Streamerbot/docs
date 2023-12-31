@@ -1,20 +1,20 @@
 ---
+title: Raid
+description: Trigger for when you get raided on Twitch
 version: 0.0.33
+twitchService: Chat Client
+variables:
+  - name: viewers
+    type: number
+    description: The amount of viewers this raid received
+    value: 183
+commonVariables:
+  - TwitchUser
 ---
 
-# Raid
-When someone raids your Twitch stream.
-
-## Details
-::list
-- Twitch Service: `Chat Client`
+## Parameters
+::field-group
+  ::field{name=Range type=Range}
+    :range-description
+  ::
 ::
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`viewers` | The amount of viewers this raid received.
-
-:variables{name=TwitchUser disclosure}

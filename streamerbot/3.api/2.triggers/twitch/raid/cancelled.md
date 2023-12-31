@@ -1,21 +1,24 @@
 ---
+title: Raid Cancelled
+description: Trigger for when a Twitch Raid from your channel to another channel is Cancelled
 version: 0.0.36
+twitchService: PubSub
+variables:
+  - name: raidUser
+    type: string
+    description: The raider's username
+    value: TwitchUser123
+  - name: raidUserName
+    type: string
+    description: The raider's login name
+    value: twitchuser123
+  - name: raidUserId
+    type: string
+    description: The raider's user id
+  - name: raidUserProfileImageURL
+    type: string
+    description: The raider's profile image URL
+  - name: raidUserProfileImageEscaped
+    type: string
+    description: The raider's profile image URL escaped
 ---
-
-# Raid Cancelled
-When a raid that your channel started is cancelled.
-
-## Details
-::list
-- Twitch Service: `PubSub`
-::
-
-## Variables
-:variables-description
-Name | Description
-----:|:------------
-`raidUser` | The raider's username
-`raidUserName` | The raider's login name
-`raidUserId` | The raider's user id
-`raidUserProfileImageURL` | The raider's profile image URL
-`raidUserProfileImageEscaped` | The raider's profile image URL escaped
