@@ -1,20 +1,44 @@
-# Gift Bomb
-This triggers when someone does a gift bomb.
+---
+title: Gift Bomb
+description: Trigger for a Twitch Gift Bomb
+twitchService: Chat Client
+variables:
+  - name: gifts
+    type: number
+    description: The number of subscriptions in this gift bomb
+    value: 10
+  - name: fromGiftBomb
+    type: boolean
+    description: Are the subscriptions from a gift bomb?
+    value: True
+  - name: anonymous
+    type: boolean
+    description: Is the gift bomb anonymous?
+    value: False
+  - name: tier
+    type: string
+    description: The subscriptions tier<br>`tier 1`, `tier 2`, `tier 3
+    value: tier 1
+commonVariables:
+  - TwitchUser
+---
 
-## Details
-::list
-- Twitch Service: `Chat Client`
+## Parameters
+::field-group
+  ::field{name=Tier type=Checkbox required}
+    Choose on which tier to trigger the gift bomb
+    - Options:
+      - Tier 1
+      - Tier 2
+      - Tier 3
+  ::
+  ::field{name="Sub Type" type=Checkbox required}
+    Choose on which sub types to trigger the gift bomb
+    - Options:
+      - Public
+      - Anonymous
+  ::
+  ::field{name=Range type=Range}
+    :range-description
+  ::
 ::
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`gifts` | Number of subscriptions in this gift bomb
-`totalGifts` | Total number of subscriptions this user has gifted
-`fromGiftBomb` | Boolean value if sub came from a gift bomb <br>  `True`/`False` 
-`anonymous` | Boolean value indicating the gift was anonymous <br> `True`/`False` 
-`tier` | The subscriptions tier <br> `tier 1`. `tier 2`, `tier 3`
-
-:variables{name=TwitchUser disclosure}

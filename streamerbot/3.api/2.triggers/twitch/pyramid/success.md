@@ -1,18 +1,20 @@
-# Pyramid Success
-This triggers when a pyramid successfully gets created in Twitch chat.
-
-## Details
-::list
-- Twitch Service: `Chat Client`
-::
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`totalPyramids` | The total amount of pyramids the user has made.
-`pyramidWidth` | The total amount of pyramid layers.
-`pyramidEmote` | The name of the emote that was used in the pyramid.
-
-:variables{name=TwitchUser disclosure}
+---
+title: Pyramid Success
+description: Trigger for when a Twitch Pyramid is Succesfully created
+twitchService: Chat Client
+variables:
+  - name: totalPyramids
+    type: number
+    description: The total amount of pyramids the user has made
+    value: 8
+  - name: pyramidWidth
+    type: number
+    description: The total amount of pyramid layers
+    value: 3
+  - name: pyramidEmote
+    type: string
+    description: The emote that was used in the pyramid
+    value: Kappa
+commonVariables:
+  - TwitchUser
+---
