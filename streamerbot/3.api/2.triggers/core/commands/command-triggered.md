@@ -5,7 +5,7 @@ variables:
   - name: command
     type: string
     description: The command that was used
-    value: !shoutout
+    value: '!shoutout'
   - name: commandId
     type: string
     description: The ID of the command
