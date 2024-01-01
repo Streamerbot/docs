@@ -1,19 +1,33 @@
-# OBS Streaming Started
-OBS Studio streaming started trigger.
-
-This event triggers when you start a stream in OBS.
+---
+title: OBS Streaming Started
+description: Trigger for when an OBS Streaming is Started
+version: 0.2.0
+variables:
+  - name: obs.id
+    type: string
+    description: The connection id
+  - name: obs.name
+    type: string
+    description: The name of the connection
+    value: Main OBS
+  - name: obs.host
+    type: string
+    description: The IP Address of the OBS connection
+    value: 127.0.0.1
+  - name: obs.studioVersion
+    type: string
+    description: The current OBS Studio version
+    value: 30.0.0
+  - name: obs.websocketVersion
+    type: string
+    description: The current OBS websocket version
+    value: 5.1.0
+---
 
 ## Parameters
-### `OBS`
-Select the configured [OBS Studio Connection](/guide/broadcasters/obs-studio) to connect to.
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`obs.id` | The connection id
-`obs.name` | The name of the connection
-`obs.host` | The IP Address of the OBS connection `default: 127.0.0.1`
-`obs.studioVersion` | The current OBS Studio version
-`obs.websocketVersion` | The current OBS websocket version
+::field-group
+  ::field{name=OBS type=Select}
+    Choose a configured OBS Connection
+    - Select `Any` to trigger on any connection
+  ::
+::

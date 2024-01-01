@@ -89,3 +89,10 @@ variables:
 commonVariables:
   - TwitchUser
 ---
+
+## Parameters
+::field-group
+  ::field{name=Range type=Range}
+    :range-description
+  ::
+::

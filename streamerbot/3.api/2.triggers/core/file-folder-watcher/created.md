@@ -1,23 +1,42 @@
-# Created
-File/Folder Watcher created trigger.
-
-## Details
-This event triggers when a selected file/folder is created.
-
-- `Using a file`: this triggers when the file is created.
-- `Using a folder`: this triggers when a file from this folder gets created.
+---
+title: Created
+description: Trigger for when a File/Folder Watcher is Created
+variables:
+  - name: watcherFolder
+    type: string
+    description: The folder you're watching for changes
+    value: C:\Desktop\Example-Folder
+  - name: watcherFilter
+    type: string
+    description: The filter of this watcher
+    value: \*.*
+  - name: fullPath
+    type: string
+    description: The full path of the file
+    value: C:\Desktop\Example-Folder\Example.txt
+  - name: fileName
+    type: string
+    description: The full file name including the file extension
+    value: Example.txt
+  - name: changeType
+    type: string
+    description: The change type
+    value: Created
+---
 
 ## Parameters
-### `Watcher`
-Select any or a specific watcher from the `Settings -> File/Folder Watcher` tab
+::field-group
+  ::field{name=Watcher type=Select}
+    Select a watcher from the Settings -> File/Folder Watcher tab.
 
-## Variables
-:variables-description
+    - Select `Any` to trigger on **any watcher**
 
-Name | Description
-----:|:------------
-`watcherFolder` | The folder you're watching for changes e.g. `C:\Desktop\Example-Folder`
-`watcherFilter` | The filter of this watcher e.g. `*.*`
-`fullPath` | The full path of the file e.g. `C:\Desktop\Example-Folder\Example.txt`
-`fileName` | The full file name including the file extension e.g. `Example.txt`
-`changeType` | The change type e.g. `Created`
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    You can quickly register a new watcher by clicking the `Create File Watcher` button!
+    ::
+  ::
+::
+
+## Details
+- `Using a file`: this triggers when the content of a selected file changes.
+- `Using a folder`: this triggers when a file from the selected folder changes.

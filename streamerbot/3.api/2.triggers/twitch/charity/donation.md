@@ -35,3 +35,10 @@ variables:
     description: The website of the charity campaign
     value: mycharitycampaign.com
 ---
+
+## Parameters
+::field-group
+  ::field{name=Range type=Range}
+    :range-description
+  ::
+::

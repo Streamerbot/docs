@@ -1,28 +1,62 @@
-# Changed
-File/Folder Watcher changed trigger.
-
-## Details
-This event triggers when a selected file/folder changes.
-
-- `Using a file`: this triggers when the content of the file changes.
-- `Using a folder`: this triggers when a file from this folder changes.
+---
+title: Changed
+description: Trigger for when a File/Folder Watcher is Changed
+variables:
+  - name: watcherFolder
+    type: string
+    description: The folder you're watching for changes
+    value: C:\Desktop\Example-Folder
+  - name: watcherFilter
+    type: string
+    description: The filter of this watcher
+    value: \*.*
+  - name: fullPath
+    type: string
+    description: The full path of the file
+    value: C:\Desktop\Example-Folder\Example.txt
+  - name: fileName
+    type: string
+    description: The full file name including the file extension
+    value: Example.txt
+  - name: fileSize
+    type: number
+    description: The file size in bytes
+    value: 1 MB > 1000000 bytes
+  - name: changeType
+    type: string
+    description: The change type
+    value: Changed
+  - name: empty
+    type: boolean
+    description: Is the file empty?
+    value: True
+  - name: lineCount
+    type: number
+    description: The total number of lines
+    value: 1
+  - name: line#
+    type: string
+    description: Each line of the file
+    value: Hello World!
+  - name: lineEscaped#
+    type: string
+    description: Each line of the file escaped for URL's
+    value: Hello%20World%21
+---
 
 ## Parameters
-### `Watcher`
-Select any or a specific watcher from the `Settings -> File/Folder Watcher` tab
+::field-group
+  ::field{name=Watcher type=Select}
+    Select a watcher from the Settings -> File/Folder Watcher tab.
 
-## Variables
-:variables-description
+    - Select `Any` to trigger on **any watcher**
 
-Name | Description
-----:|:------------
-`watcherFolder` | The folder you're watching for changes e.g. `C:\Desktop\Example-Folder`
-`watcherFilter` | The filter of this watcher e.g. `*.*`
-`fullPath` | The full path of the file e.g. `C:\Desktop\Example-Folder\Example.txt`
-`fileName` | The full file name including the file extension e.g. `Example.txt`
-`fileSize` | The file size in bytes e.g. with 100 bytes the value is: `100`
-`changeType` | The change type e.g. `Changed`
-`empty` | If the file is empty or not e.g. `True`/`False`
-`lineCount` | The total number of lines e.g. `1`
-`line#` | Each line of the file
-`lineEscaped#` | Each line of the file escaped for URL's
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    You can quickly register a new watcher by clicking the `Create File Watcher` button!
+    ::
+  ::
+::
+
+## Details
+- `Using a file`: this triggers when the content of a selected file changes.
+- `Using a folder`: this triggers when a file from the selected folder changes.

@@ -1,13 +1,17 @@
-# OBS Disconnected
-OBS Studio disconnected trigger.
-
-This event triggers when your OBS Studio instance is disconnected.
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`obs.id` | The connection id
-`obs.name` | The name of the connection
-`obs.host` | The IP Address of the OBS connection `default: 127.0.0.1`
+---
+title: OBS Disconnected
+description: Trigger for when OBS is Disconnected
+version: 0.2.0
+variables:
+  - name: obs.id
+    type: string
+    description: The connection id
+  - name: obs.name
+    type: string
+    description: The name of the connection
+    value: Main OBS
+  - name: obs.host
+    type: string
+    description: The IP Address of the OBS connection
+    value: 127.0.0.1
+---

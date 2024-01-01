@@ -1,20 +1,25 @@
-# Subscription
-This triggers when you get a subscription.
+---
+title: Subscription
+description: Trigger for a Twitch Subscription
+twitchService: Chat Client
+variables:
+  - name: tier
+    type: string
+    description: The subscription tier<br>`prime`, `tier 1`, `tier 2`, `tier 3
+    value: tier 1
+commonVariables:
+  - TwitchUser
+  - TwitchChat
+---
 
-## Details
-::list
-- Twitch Service: `Chat Client`
+## Parameters
+::field-group
+  ::field{name=Tier type=Checkbox}
+    Choose on which tier to trigger the subscription
+    - Options:
+      - Prime
+      - Tier 1
+      - Tier 2
+      - Tier 3
+  ::
 ::
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`tier` | Subscription tier <br> `prime`, `tier 1`. `tier 2`, `tier 3`
-`rawInput` | The message entered
-`rawInputEscaped` | The message escaped
-`role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
-`color` | User's color (if they have chosen one or a random one if not)
-
-:variables{name=TwitchUser disclosure}

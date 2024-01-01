@@ -25,14 +25,14 @@ commonVariables:
 
 ## Parameters
 ::field-group
-  ::field{name=Tier type=Checkbox required}
+  ::field{name=Tier type=Checkbox}
     Choose on which tier to trigger the gift bomb
     - Options:
       - Tier 1
       - Tier 2
       - Tier 3
   ::
-  ::field{name="Sub Type" type=Checkbox required}
+  ::field{name="Sub Type" type=Checkbox}
     Choose on which sub types to trigger the gift bomb
     - Options:
       - Public
