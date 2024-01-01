@@ -48,20 +48,20 @@ commonVariables:
 
 ## Parameters
 ::field-group
-  ::field{name=Tier type=Checkbox required}
+  ::field{name=Tier type=Checkbox}
     Choose on which tier to trigger the gift sub
     - Options:
       - Tier 1
       - Tier 2
       - Tier 3
   ::
-  ::field{name="Sub Type" type=Checkbox required}
+  ::field{name="Sub Type" type=Checkbox}
     Choose on which sub types to trigger the gift sub
     - Options:
       - Public
       - Anonymous
   ::
-  ::field{name="Months Gifted" type=Checkbox required}
+  ::field{name="Months Gifted" type=Checkbox}
     Choose on how much months gifted to trigger the gift sub
     - Options:
       - 1

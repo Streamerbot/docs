@@ -1,30 +1,32 @@
-# Process Stopped
-
-Process Stopped trigger.
-
-## Details
-
-This event triggers when a process is stopped.
+---
+title: Process Stopped
+description: Trigger for when a Process is Stopped
+variables:
+  - name: name
+    type: string
+    description: Name of the process watched for.
+  - name: executable
+    type: string
+    description: Name of the process executable.
+  - name: path
+    type: string
+    description: Path to the directory of the process.
+  - name: fullPath
+    type: string
+    description: Exact path of the process executable.
+  - name: processId
+    type: string
+    description: ID used in Windows for the process.
+  - name: parentProcessId
+    type: string
+    description: ID of the program that launched the process.
+---
 
 ## Parameters
+::field-group
+  ::field{name=Name type=Text}
+    Input the name of the process
 
-### `Name`
-
-Input the name of the process to watch for.
-
-::callout{icon=i-mdi-lightbulb color=amber}
-Leaving this blank is considered a catch-all and will trigger on ANY process stopped.
+    - Leaving this blank is considered a catch-all and will trigger on **any** process started
+  ::
 ::
-
-## Variables
-
-:variables-description
-
-Name | Description
-----:|:------------
-`name` | Name of the process watched for.
-`executable` | Name of the process executable.
-`path` | Path to the directory of the process.
-`fullPath` | Exact path of the process executable.
-`processId` | ID used in Windows for the process.
-`parentProcessId` | ID of the program that launched the process.

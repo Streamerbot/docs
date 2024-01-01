@@ -9,3 +9,10 @@ variables:
     description: The new Twitch viewer count
     value: 187
 ---
+
+## Parameters
+::field-group
+  ::field{name=Range type=Range}
+    :range-description
+  ::
+::

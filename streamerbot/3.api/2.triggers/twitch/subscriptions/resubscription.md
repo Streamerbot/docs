@@ -1,22 +1,36 @@
-# Resubscription
-This triggers when you get a resubscription.
+---
+title: Resubscription
+description: Trigger for a Twitch Resubscription
+twitchService: Chat Client
+variables:
+  - name: tier
+    type: string
+    description: The subscription tier<br>`prime`, `tier 1`, `tier 2`, `tier 3
+    value: tier 1
+  - name: monthStreak
+    type: number
+    description: The current subscription streak of the user
+    value: 5
+  - name: cumulative
+    type: number
+    description: The amount of cumulative months that the user is subscribed for
+    value: 2
+commonVariables:
+  - TwitchUser
+  - TwitchChat
+---
 
-## Details
-::list
-- Twitch Service: `Chat Client`
+## Parameters
+::field-group
+  ::field{name=Tier type=Checkbox}
+    Choose on which tier to trigger the resubscription
+    - Options:
+      - Prime
+      - Tier 1
+      - Tier 2
+      - Tier 3
+  ::
+  ::field{name=Range type=Range}
+    :range-description
+  ::
 ::
-
-## Variables
-:variables-description
-
-Name | Descriptions
-----:|:------------
-`tier` | Subscription tier <br> `prime`, `tier 1`. `tier 2`, `tier 3`
-`monthStreak` | Current subscription streak in months.
-`cumulative` | Total number of months a user has been subscribed for
-`rawInput` | The message entered.
-`rawInputEscaped` | The message escaped
-`role` | What role the user has `(1-4)` <br> 4=`Broadcaster` 3=`Mod` 2=`VIP` 1=`Viewer`
-`color` | User's color (if they have chosen one or a random one if not)
-
-:variables{name=TwitchUser disclosure}

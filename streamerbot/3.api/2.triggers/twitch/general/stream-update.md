@@ -47,4 +47,14 @@ commonVariables:
 ---
 
 ## Details
-This triggers when the title or the description changes on your stream. 
+This triggers when the title or the description changes on your stream.
+
+## Parameters
+::field-group
+  ::field{name="Game Only" type=Checkbox}
+    Check this field if you only want this to trigger when the game changes
+  ::
+  ::field{name=Game type=Select}
+    Select a game if you only want this to trigger when the stream changes to this game
+  ::
+::
