@@ -9,11 +9,11 @@ variables:
   - name: watcherFilter
     type: string
     description: The filter of this watcher
-    value: \*.*
+    value: '*.*'
   - name: oldFullPath
     type: string
     description: The old full path of the file
-    value: C:\Desktop\Example-Folder\Old-Example.txt
+    value: 'C:\Desktop\Example-Folder\Old-Example.txt'
   - name: oldFilename
     type: string
     description: The old full file name including the file extension
@@ -21,7 +21,7 @@ variables:
   - name: fullPath
     type: string
     description: The full path of the file
-    value: C:\Desktop\Example-Folder\Example.txt
+    value: 'C:\Desktop\Example-Folder\Example.txt'
   - name: fileName
     type: string
     description: The full file name including the file extension

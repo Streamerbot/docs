@@ -5,15 +5,15 @@ variables:
   - name: watcherFolder
     type: string
     description: The folder you're watching for changes
-    value: C:\Desktop\Example-Folder
+    value: 'C:\Desktop\Example-Folder'
   - name: watcherFilter
     type: string
     description: The filter of this watcher
-    value: \*.*
+    value: '*.*'
   - name: fullPath
     type: string
     description: The full path of the file
-    value: C:\Desktop\Example-Folder\Example.txt
+    value: 'C:\Desktop\Example-Folder\Example.txt'
   - name: fileName
     type: string
     description: The full file name including the file extension
