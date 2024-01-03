@@ -15,4 +15,4 @@ jobs:
         uses: reviewdog/action-remark-lint@v5
         with:
           reporter: github-pr-check
-          remark_args: --use remark-mdc --use remark-frontmatter --use remark-frontmatter-schema
+          remark_args: --use remark-mdc --use remark-frontmatter --use remark-lint-frontmatter-schema
