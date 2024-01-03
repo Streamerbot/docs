@@ -1,0 +1,18 @@
+name: reviewdog
+on: [push, pull_request]
+jobs:
+  remark-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: install remark deps
+        shell: bash
+        run: |
+          npm install -g remark remark-cli remark-frontmatter remark-mdc remark-lint-frontmatter-schema
+
+      - name: remark-lint
+        uses: reviewdog/action-remark-lint@v5
+        with:
+          reporter: github-pr-check
+          remark_args: --use remark-mdc --use remark-frontmatter --use remark-frontmatter-schema
