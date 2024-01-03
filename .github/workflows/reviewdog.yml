@@ -11,8 +11,7 @@ jobs:
         run: |
           npm install -g remark remark-cli remark-frontmatter remark-lint-frontmatter-schema
 
-      - name: remark-lint
+      - name: reviewdog/action-remark-lint
         uses: reviewdog/action-remark-lint@v5
         with:
           reporter: github-pr-check
-          remark_args: --silent --frail --rc-path .remarkrc.yaml --use remark-frontmatter --use remark-lint-frontmatter-schema
