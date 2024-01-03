@@ -16,5 +16,4 @@ jobs:
         with:
           reporter: github-pr-review
           level: warning
-          filter_mode: nofilter
           fail_on_error: true
