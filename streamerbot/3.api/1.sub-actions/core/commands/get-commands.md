@@ -1,34 +1,20 @@
-# Get Commands
-This sub action allows you to populate the commands and output them to your twitch chat.
+---
+title: Get Commands
+description: Fetch a list of all configured commands
+variables:
+  - name: '<variableName>'
+    type: string
+    description: Comma-separated string containing all commands matching your specified criteria
+    value: '!shoutout,!followage,!ban'
+  - name: '<variableName>List'
+    type: List
+    description: C# List object containing all commands matching your specified criteria
+csharpMethods: []
+---
+
+This sub-action is useful if you want to output a list of commands to your chat.
 
 :image-preview
-
-## Parameters
-### `Group`
-The name of the command group.
-
-### `Variable Name`
-The name of the variable that will be used when running the action. For example, if you use the variable name: "chatCommands". The following variables will be populated: `chatCommands`, `chatCommandsList`
-
-### `Include all`
-This option will display all the commands in the specified group regardless of the permissions that have been set for these commands.
-
-### `Ignore Aliases`
-This option will give you the chance to hide any of your commands other formats for example if you have `!shoutout` and `!so` in the commands box it will only show the 1st one having this option unticked would show both when populating the list.
-
-### `Only Has Permission`
-This option will filter out all the commands that the user doesn't have permission to use.
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`<variableName>` | Comma separated string containing all commands matching criteria specified in the sub-action
-`<variableName>List` | List object for C# containing all commands matching criteria specified in the sub-action
-
-## C# Usage
-:csharp-method
 
 ## Example Usage
 ### Import Code

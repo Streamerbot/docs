@@ -17,7 +17,7 @@ variables:
   - name: color
     type: string
     description: Hex value of the user's chat color
-    value: #e5e5e5
+    value: '#e5e5e5'
   - name: colorR
     type: string
     description: The red in RGB of the user's chat color

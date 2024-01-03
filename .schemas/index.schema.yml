@@ -49,3 +49,9 @@ properties:
     type: array
     items:
       type: string
+
+  # C# Code
+  csharpMethods:
+    type: array
+    items:
+      type: string
