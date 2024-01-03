@@ -1,0 +1,12 @@
+allOf:
+  - $ref: ./variables.schema.yml
+  - $ref: ./twitch.schema.yml
+  - properties:
+      title:
+        type: string
+      description:
+        type: string
+      icon:
+        type: string
+      version:
+        type: [string, number]

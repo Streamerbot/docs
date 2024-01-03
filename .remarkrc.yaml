@@ -1,0 +1,7 @@
+plugins:
+  - remark-mdc
+  - remark-frontmatter
+  - - remark-lint-frontmatter-schema
+    - schemas:
+        ".schemas/index.schema.yml":
+          - ./**/*.md
