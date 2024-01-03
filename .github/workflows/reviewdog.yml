@@ -14,5 +14,6 @@ jobs:
       - name: remark-lint
         uses: reviewdog/action-remark-lint@v5
         with:
-          reporter: github-pr-check
+          reporter: github-check
           level: warning
+          fail_on_error: true
