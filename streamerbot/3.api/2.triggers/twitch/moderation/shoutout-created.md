@@ -22,7 +22,7 @@ variables:
   - name: targetUserPrimaryColorHex
     type: string
     description: The target user's primary chat color
-    value: #e5e5e5
+    value: '#e5e5e5'
   - name: targetUserProfileImageURL
     type: string
     description: The user's profile image URL

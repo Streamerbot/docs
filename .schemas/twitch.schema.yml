@@ -1,0 +1,8 @@
+properties:
+  twitchService:
+    type: string
+    enum:
+      - Chat Client
+      - PubSub
+      - EventSub
+      - All
