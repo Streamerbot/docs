@@ -9,10 +9,10 @@ jobs:
       - name: install remark deps
         shell: bash
         run: |
-          npm install -g remark remark-cli remark-frontmatter remark-mdc remark-lint-frontmatter-schema
+          npm install -g remark remark-cli remark-frontmatter remark-lint-frontmatter-schema
 
       - name: remark-lint
         uses: reviewdog/action-remark-lint@v5
         with:
           reporter: github-pr-check
-          remark_args: --use remark-mdc --use remark-frontmatter --use remark-lint-frontmatter-schema
+          remark_args: --use --use remark-frontmatter --use remark-lint-frontmatter-schema

@@ -1,5 +1,4 @@
 plugins:
-  - remark-mdc
   - remark-frontmatter
   - - remark-lint-frontmatter-schema
     - schemas:
