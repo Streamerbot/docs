@@ -1,12 +1,51 @@
-allOf:
-  - $ref: ./variables.schema.yml
-  - $ref: ./twitch.schema.yml
-  - properties:
-      title:
-        type: string
-      description:
-        type: string
-      icon:
-        type: string
-      version:
-        type: [string, number]
+properties:
+  # Core Fields
+  title:
+    type: string
+  description:
+    type: string
+  icon:
+    type: string
+  version:
+    type: [string, number]
+
+  # Twitch
+  twitchService:
+    type: string
+    enum:
+      - Chat Client
+      - PubSub
+      - EventSub
+      - All
+
+  # Variables
+  variables:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+        description:
+          type: string
+        value:
+          type: [string, number, boolean]
+        variables:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              type:
+                type: string
+              description:
+                type: string
+              value:
+                type: [string, number, boolean]
+  commonVariables:
+    type: array
+    items:
+      type: string
