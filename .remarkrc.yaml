@@ -1,6 +1,7 @@
 plugins:
   - remark-frontmatter
   - - remark-lint-frontmatter-schema
+    - error
     - schemas:
         ".schemas/index.schema.yml":
           - ./**/*.md
