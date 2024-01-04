@@ -1,6 +1,7 @@
 ---
 title: Process Stopped
 description: Trigger for when a Process is Stopped
+version: 0.2.0
 variables:
   - name: name
     type: string
