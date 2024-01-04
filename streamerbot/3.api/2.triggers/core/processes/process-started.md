@@ -1,6 +1,7 @@
 ---
 title: Process Started
 description: Trigger for when a Process is Started
+version: 0.2.0
 variables:
   - name: name
     type: string

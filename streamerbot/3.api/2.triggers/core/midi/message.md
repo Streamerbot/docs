@@ -1,6 +1,7 @@
 ---
 title: MIDI Message
 description: Trigger for incoming MIDI events
+version: 0.1.15
 variables:
   - name: name
     type: string
