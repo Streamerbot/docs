@@ -26,7 +26,7 @@ variables:
 
 ## Parameters
 ::field-group
-  ::field{name=OBS type=Select}
+  ::field{name=OBS type=Select required}
     Choose a configured OBS Connection
     - Select `Any` to trigger on any connection
   ::

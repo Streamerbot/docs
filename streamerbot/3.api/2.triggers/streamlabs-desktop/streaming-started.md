@@ -19,7 +19,7 @@ variables:
 
 ## Parameters
 ::field-group
-  ::field{name=Instance type=Select}
+  ::field{name=Instance type=Select required}
     Choose a configured Streamlabs Desktop Connection
     - Select `Any` to trigger on any connection
   ::

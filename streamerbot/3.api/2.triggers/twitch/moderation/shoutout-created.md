@@ -19,13 +19,18 @@ variables:
     type: string
     description: The target user's display name
     value: TwitchUser123
-  - name: targetUserPrimaryColorHex
+  - name: viewerCount
     type: string
-    description: The target user's primary chat color
-    value: '#e5e5e5'
-  - name: targetUserProfileImageURL
-    type: string
-    description: The user's profile image URL
+    description: The amount of viewers of the broadcaster's livestream
+    value: 60
+  - name: cooldownEndsAt
+    type: DateTime
+    description: The timestamp the cooldown to send another shoutout ends at
+    value: 8/4/2023 10:56:06 AM
+  - name: targetCooldownEndsAt
+    type: DateTime
+    description: The timestamp the cooldown to send a shoutout to the same user ends at
+    value: 8/4/2023 10:56:06 AM
 commonVariables:
   - TwitchUser
 ---
