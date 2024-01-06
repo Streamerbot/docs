@@ -22,7 +22,7 @@ Explore all supported [OBS Studio Events](https://github.com/obsproject/obs-webs
 
 ## Parameters
 ::field-group
-  ::field{name=OBS type=Select}
+  ::field{name=OBS type=Select required}
     Choose a configured OBS Connection
     - Select `Any` to trigger on any connection
   ::

@@ -47,22 +47,6 @@ variables:
     type: float
     description: The normalized velocity value for this message
     value: 0.62992125984252
-  - name: controllerName
-    type: string
-    description: The MIDI Control Function for this message
-    value: Pan
-  - name: controllerNumber
-    type: int
-    description: The MIDI Control Number for this message
-    value: 10
-  - name: value
-    type: int
-    description: The value for this message
-    value: 80
-  - name: valueNormal
-    type: float
-    description: The normalized value for this message
-    value: 0.6299215984252
 ---
 
 ::callout{icon=i-mdi-bookmark to=/guide/midi}
