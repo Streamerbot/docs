@@ -7,7 +7,7 @@ csharpMethods:
 ---
 
 ## Details
-This event can **only* be triggered with the [`CPH.TriggerEvent`](#csharp-usage) C# Method.
+This event can **only** be triggered with the [`CPH.TriggerEvent`](#csharp-usage) C# Method.
 
 ## Parameters
 ::field-group

@@ -1,39 +1,101 @@
-# Incentive
-DonorDrive incentive trigger.
+---
+title: Incentive
+description: Trigger for a DonorDrive Incentive
+version: 0.1.5
+variables:
+  - name: donorName
+    type: string
+    description: The name of the donor
+  - name: donorAvatarUrl
+    type: string
+    description: The URL of the donor's avatar
+  - name: donorIsAnonymous
+    type: boolean
+    description: Is the donor anonymous?
+    value: True
+  - name: recipientName
+    type: string
+    description: The broadcaster's name used in the DonorDrive
+  - name: donorMessage
+    type: string
+    description: The message of the donor
+  - name: donorAmount
+    type: number
+    description: The amount that the donor has given
+    value: 10
+  - name: isTeam
+    type: boolean
+    description: Is this a team?
+    value: True
+  - name: isParticipant
+    type: boolean
+    description: Is the user a participant?
+    value: True
+  - name: profileName
+    type: string
+    description: The name of the profile
+  - name: profileTeamName
+    type: string
+    description: The name of the profile's team
+  - name: eventName
+    type: string
+    description: The name of the event
+  - name: goal
+    type: number
+    description: The total goal
+    value: 200
+  - name: raised
+    type: number
+    description: The total amount of money that has been raised
+    value: 100
+  - name: isIncentive
+    type: boolean
+    description: Is the event an incentive?
+    value: True
+  - name: incentive.id
+    type: string
+    description: The id of this incentive.
+  - name: incentive.isActive
+    type: boolean
+    description: Is the incentive active? 
+    value: True
+  - name: incentive.amount
+    type: number
+    description: The amount of the incentive.
+    value: 10
+  - name: incentive.description
+    type: string
+    description: The description of the incentive.
+  - name: incentive.image
+    type: string
+    description: The image for the incentive. Can be an empty string.
+  - name: incentive.quantity
+    type: number
+    description: The quantity of the incentive. Can be -1.
+    value: 5
+  - name: incentive.quantityClaimed
+    type: number
+    description: The amount of claimed quantity.
+    value: 2
+  - name: incentive.links.donate
+    type: string
+    description: The url of the donate link.
+  - name: incentive.startDate
+    type: DateTime
+    description: The timestamp this incentive starts.
+    value: 8/4/2023 10:56:06 AM
+  - name: incentive.endDate
+    type: DateTime
+    description: The timestamp this incentive ends.
+    value: 8/4/2023 10:56:06 AM
+---
 
-## Details
-This event triggers when you get an incentive with DonorDrive.
+:wip
 
 ## Parameters
-### `DonorDrive`
-Select any or a DonorDrive provider as the source for this incentive.
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`donorAvatarUrl` | The avatar url of the donor.
-`donorIsAnonymous` | Whether the donor is anonymous. Returns `True` or `False`.
-`created` | The timestamp this incentive was created.
-`recipientName` | The recipient of this incentive.
-`donorMessage` | The message from the donor.
-`donorAmount` | The donor amount.
-`isTeam` | Whether the recipient is a team. Returns `True` or `False`.
-`isParticipant` | Whether the recipient is a participant. Returns `True` or `False`.
-`profileName` | The user name from the recipient.
-`profileTeamName` | The team name from the recipient. Can be null.
-`eventName` | The DonorDrive event name.
-`goal` | The goal amount.
-`raised` | The raised money for this goal.
-`isIncentive` | Whether the event is an incentive. Returns `True` or `False`.
-`incentive.id` | The id of this incentive.
-`incentive.isActive` | Whether the incentive is active. Returns `True` or `False`. 
-`incentive.amount` | The amount of the incentive.
-`incentive.description` | The description of the incentive.
-`incentive.image` | The image for the incentive. Can be an empty string.
-`incentive.quantity` | The quantity of the incentive. Can be -1.
-`incentive.quantityClaimed` | The amount of claimed quantity.
-`incentive.links.donate` | The url of the donate link.
-`incentive.startDate` | The timestamp this incentive starts.
-`incentive.endDate` | The timestamp this incentive ends.
+::field-group
+  ::field{name=DonorDrive type=Select required}
+    Choose a configured DonorDrive Provider
+    - Select `Any` to trigger on any provider
+  ::
+::

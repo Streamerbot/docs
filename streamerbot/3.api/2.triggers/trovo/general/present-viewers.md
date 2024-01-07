@@ -24,8 +24,9 @@ variables:
     type: number
     description: The amount of followers
   - name: startedAt
-    type: DateTime
+    type: number
     description: The epoch time the stream has stated
+    value: 1704063600
   - name: isLive
     type: bool
     description: Boolean for current streaming status
