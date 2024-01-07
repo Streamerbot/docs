@@ -5,8 +5,9 @@ navigation.title: Connection Opened
 # WebSocket Custom Server Connection Opened
 Triggered when a client connects to a custom WebSocket server
 
-## Parameters
+:image-preview
 
+## Parameters
 ### `Server`
 Select any or a specific websocket server.
 

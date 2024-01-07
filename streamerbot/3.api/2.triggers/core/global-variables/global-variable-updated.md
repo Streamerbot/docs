@@ -25,6 +25,8 @@ variables:
     value: 8/4/2023 10:56:06 AM
 ---
 
+:image-preview
+
 ## Parameters
 ::field-group
   ::field{name="Variable Name" type=Text}

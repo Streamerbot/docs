@@ -5,8 +5,9 @@ navigation.title: Connection Closed
 # WebSocket Client Closed
 Triggered when a configured WebSocket client connection is closed
 
-## Parameters
+:image-preview
 
+## Parameters
 ### `Client`
 Select any or a specific websocket client.
 

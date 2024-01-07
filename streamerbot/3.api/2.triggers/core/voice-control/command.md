@@ -2,6 +2,8 @@
 Voice Control Command trigger.
 
 ## Details
+:image-preview
+
 This event triggers when a voice control command is used.
 
 ## Parameters

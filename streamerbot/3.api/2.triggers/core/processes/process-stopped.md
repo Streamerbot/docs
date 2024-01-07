@@ -23,6 +23,8 @@ variables:
     description: ID of the program that launched the process.
 ---
 
+:image-preview
+
 ## Parameters
 ::field-group
   ::field{name=Name type=Text}

@@ -57,6 +57,8 @@ commonVariables:
 Check out the [Commands Guide](#) for details on configuring your Commands
 ::
 
+:image-preview
+
 ## Parameters
 ::field-group
   ::field{name=Commands type=Select}

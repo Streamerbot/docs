@@ -5,8 +5,9 @@ navigation.title: Message
 # WebSocket Custom Server Message
 Triggered when a client sends a message to a custom WebSocket server
 
-## Parameters
+:image-preview
 
+## Parameters
 ### `Server`
 Select any or a specific websocket server
 

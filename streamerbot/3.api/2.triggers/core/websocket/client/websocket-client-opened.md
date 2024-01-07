@@ -5,8 +5,9 @@ navigation.title: Connection Opened
 # Websocket Client Open
 Triggered when a configured WebSocket client connection is opened
 
-## Parameters
+:image-preview
 
+## Parameters
 ### Client
 
 Select any or a specific websocket client
