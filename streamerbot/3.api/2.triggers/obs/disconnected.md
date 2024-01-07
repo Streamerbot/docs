@@ -15,3 +15,11 @@ variables:
     description: The IP Address of the OBS connection
     value: 127.0.0.1
 ---
+
+## Parameters
+::field-group
+  ::field{name=OBS type=Select required}
+    Choose a configured OBS Connection
+    - Select `Any` to trigger on any connection
+  ::
+::

@@ -23,3 +23,11 @@ variables:
     description: The current OBS websocket version
     value: 5.1.0
 ---
+
+## Parameters
+::field-group
+  ::field{name=OBS type=Select required}
+    Choose a configured OBS Connection
+    - Select `Any` to trigger on any connection
+  ::
+::

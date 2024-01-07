@@ -5,7 +5,7 @@ version: 0.1.14
 variables:
   - name: shopify.created_at
     type: DateTime
-    description: The timestamp the order was paid
+    description: The timestamp the order was created
     value: 8/4/2023 10:56:06 AM
   - name: shopify.event
     type: string
