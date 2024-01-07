@@ -13,6 +13,8 @@ The timed actions trigger runs when any or a selected timer reaches its interval
 
 Go to the [Timed Actions](/Settings/Timed-Actions) page for a detailed explanation on how Timed Actions work.
 
+:image-preview
+
 ## Configuration
 ### Timers
 Select a timer from the Settings --> Timed Actions tab

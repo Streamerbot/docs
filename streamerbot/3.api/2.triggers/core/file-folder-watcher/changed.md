@@ -44,6 +44,8 @@ variables:
     value: Hello%20World%21
 ---
 
+:image-preview
+
 ## Parameters
 ::field-group
   ::field{name=Watcher type=Select}

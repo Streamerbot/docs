@@ -5,8 +5,9 @@ navigation.title: Connection Closed
 # WebSocket Custom Server Connection Closed
 Triggered when a client disconnects from a custom WebSocket server
 
-## Parameters
+:image-preview
 
+## Parameters
 ### `Server`
 Select any or a specific websocket server.
 

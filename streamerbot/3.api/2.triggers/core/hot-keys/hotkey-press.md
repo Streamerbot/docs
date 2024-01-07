@@ -24,6 +24,8 @@ variables:
     value: 48
 ---
 
+:image-preview
+
 ## Parameters
 ::field-group
   ::field{name=HotKey type=Select}

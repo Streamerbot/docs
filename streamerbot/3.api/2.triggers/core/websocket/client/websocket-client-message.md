@@ -5,8 +5,9 @@ navigation.title: Message
 # Websocket Client Message
 Triggered when data is received by a configured WebSocket client
 
-## Parameters
+:image-preview
 
+## Parameters
 ### `Client`
 Select any or a specific websocket client
 
