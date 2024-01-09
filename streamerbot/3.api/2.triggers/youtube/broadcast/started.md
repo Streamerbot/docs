@@ -13,6 +13,7 @@ variables:
   - name: publishedAt
     type: DateTime
     description: The time the broadcast was started at
+    value: 8/4/2023 10:56:06 AM
   - name: broadcastId
     type: string
     description: The unique ID of the broadcast

@@ -13,7 +13,7 @@ variables:
   - name: userId
     type: string
     description: Unique user identifier
-    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+    value: 718933593
   - name: userType
     type: string
     description: Streaming service of this user
@@ -22,6 +22,10 @@ variables:
     type: boolean
     description: Is this user subscribed?
     value: True
+  - name: monthsSubscribed
+    type: number
+    description: The amount of months the user is subscribed
+    value: 3
   - name: isModerator
     type: boolean
     description: Is this user a moderator?

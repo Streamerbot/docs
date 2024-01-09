@@ -46,7 +46,7 @@ variables:
   - name: top.bits.userId
     type: number
     description: The top cheerer of this hype train user id
-    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+    value: 718933593
   - name: top.bits.total
     type: number
     description: The amount of bits donated from the the top cheerer this hype train
@@ -62,7 +62,7 @@ variables:
   - name: top.subscription.userId
     type: number
     description: The top sub gifter of this hype train user id
-    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+    value: 718933593
   - name: top.subscription.total
     type: number
     description: The amount of points donated from the the top gift giver this hype train. Tier 1 = 500 points | Tier 2 = 1000 points | Tier 3 = 2500 points
@@ -78,7 +78,7 @@ variables:
   - name: top.other.userId
     type: number
     description: The user id of the user that have given the most amount of things that aren't bits/giftsubs this hype train
-    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+    value: 718933593
   - name: top.other.total
     type: number
     description: The total amount of the user that have given the most amount of things that aren't bits/giftsubs this hype train

@@ -6,14 +6,14 @@ variables:
     type: string
     description: Twitch's message identifier
     value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: bits
+    type: number
+    description: The amount of bits donated
+    value: 200
   - name: role
     type: number
     description: The role of the user<br>1=`Viewer`, 2=`VIP`, 3=`Moderator`, 4=`Broadcaster`
     value: 1
-  - name: isSubscribed
-    type: boolean
-    description: Is the user subscribed?
-    value: True
   - name: color
     type: string
     description: Hex value of the user's chat color
@@ -82,9 +82,33 @@ variables:
     type: boolean
     description: Is this message a reply?
     value: True
-  - name: isReply
+  - name: reply.msgId
     type: string
-    description: The username the message is replying to
+    description: The message id of the reply
+    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: reply.userId
+    type: string
+    description: The user id from the user who sent the reply
+    value: 718933593
+  - name: reply.userLogin
+    type: string
+    description: The user login from the user who sent the reply
+    value: twitchuser123
+  - name: reply.userName
+    type: string
+    description: The user name from the user who sent the reply
+    value: TwitchUser123
+  - name: reply.msgBody
+    type: string
+    description: The text content of the reply, **Spaces are replaced by `\s`**
+    value: 'My\schat\smessage'
+  - name: reply.threadMsgId
+    type: string
+    description: The message id of the thread
+    value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+  - name: reply.threadUserLogin
+    type: string
+    description: The user login name of the thread
     value: twitchuser123
   - name: firstMessage
     type: boolean

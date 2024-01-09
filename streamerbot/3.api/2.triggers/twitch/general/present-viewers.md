@@ -33,7 +33,7 @@ variables:
         description: The role of the user<br>1=`Viewer`, 2=`VIP`, 3=`Moderator`, 4=`Broadcaster`
         value: 1
       - name: isSubscribed
-        type: bool
+        type: boolean
         description: Is the user subscribed?
         value: True
 ---
