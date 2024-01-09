@@ -15,6 +15,7 @@ variables:
   - name: raidUserId
     type: string
     description: The raider's user id
+    value: 718933593
   - name: raidUserProfileImageURL
     type: string
     description: The raider's profile image URL
