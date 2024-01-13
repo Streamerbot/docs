@@ -12,7 +12,7 @@ Integrate Streamer.bot with [Crowd Control](https://crowdcontrol.live){target=_b
 ## Configuration
 
 ::callout{icon=i-mdi-navigation}
-Navigate to ** Overlay > Assets** in the Crowd Control application
+Navigate to **Overlay > Assets** in the Crowd Control application
 ::
 
 1. Click the :shortcut{value=Copy} button next to your `Overlay URL`
