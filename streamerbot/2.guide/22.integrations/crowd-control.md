@@ -12,10 +12,12 @@ Integrate Streamer.bot with [Crowd Control](https://crowdcontrol.live){target=_b
 ## Configuration
 
 ::callout{icon=i-mdi-navigation}
-Navigate to **Config > Overlay > Assets** in the Crowd Control application
+Navigate to ** Overlay > Assets** in the Crowd Control application
 ::
 
 1. Click the :shortcut{value=Copy} button next to your `Overlay URL`
+
+![image](https://github.com/Streamerbot/docs/assets/8848167/d7b2db23-313a-40fa-b883-180d204ee7ce)
 
 ::callout{icon=i-mdi-navigation}
 Navigate to **Integrations > Crowd Control** in Streamer.bot
@@ -44,5 +46,5 @@ Crowd Control is now connected!
 ## Usage
 
 ::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/crowdcontrol/effect-falure}
-Explore the [Crowd Control Triggers](/api/triggers/integrations/crowdcontrol/effect-falure) API references
+Explore the [Crowd Control Triggers](/api/triggers/integrations/crowdcontrol/effect-failure) API references 
 ::
