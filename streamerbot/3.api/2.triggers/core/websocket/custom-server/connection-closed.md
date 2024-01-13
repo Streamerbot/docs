@@ -1,19 +1,21 @@
 ---
+title: WebSocket Custom Server Connection Closed
 navigation.title: Connection Closed
+description: Trigger for when a Websocket Custom Server Connection is Closed
+version: 0.0.41
+variables:
+  - name: sessionId
+    type: string
+    description: The session id of the client
 ---
-
-# WebSocket Custom Server Connection Closed
-Triggered when a client disconnects from a custom WebSocket server
 
 :image-preview
 
 ## Parameters
-### `Server`
-Select any or a specific websocket server.
+::field-group
+  ::field{name=Server type=Select required}
+    Select a server from the Server/Clients -> Websocket Servers tab
 
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`sessionId` | The session id of the client.
+    - Select `Any` to trigger on **any server**
+  ::
+::
