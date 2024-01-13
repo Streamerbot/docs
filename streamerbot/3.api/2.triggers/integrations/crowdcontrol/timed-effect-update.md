@@ -56,7 +56,7 @@ variables:
   - name: game.name
     type: string
     description: The name of the game
-    value: Paper Mario: The Thousand-Year Door
+    value: 'Paper Mario: The Thousand-Year Door'
   - name: gamePack.gamePackID
     type: string
     description: The game pack id
@@ -64,7 +64,7 @@ variables:
   - name: gamePack.name
     type: string
     description: The name of the game pack
-    value: Paper Mario: The Thousand-Year Door
+    value: 'Paper Mario: The Thousand-Year Door'
   - name: gamePack.platform
     type: string
     description: The game pack platform
