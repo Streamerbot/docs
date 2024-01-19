@@ -1,16 +1,24 @@
-# Delay
-Add a delay between sub-actions
+---
+title: Delay
+description: Add a delay between sub-actions
+variables: []
+csharpMethods:
+  - Wait
+---
+
 :image-preview
 
 ## Parameters
-### `Delay`
-Delay time, in milliseconds
+::field-group
+  ::field{name=Delay type=Number required}
+    The duration of the delay
+  ::
 
-### `Random`
-Generate a random delay between min/max values
+  ::field{name=Random type=Checkbox}
+    Generate a random delay between min/max values
+  ::
 
-### `To`
-If `Random` is selected, a random delay will be selected between the `Delay` and `To` values
-
-## C# Usage
-:csharp-method{name=Wait}
+  ::field{name=To type=Checkbox}
+    If `Random` is selected, a random delay will be selected between the `Delay` and `To` values
+  ::
+::

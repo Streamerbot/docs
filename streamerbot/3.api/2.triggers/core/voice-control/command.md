@@ -1,25 +1,45 @@
-# Command
-Voice Control Command trigger.
+---
+title: Command
+description: Trigger for a Voice Control Command
+version: 0.2.0
+variables:
+  - name: spokenText
+    type: string
+    description: The full spoken phrase detected, *including the trigger phrase*
+  - name: spokenTextConfidence
+    type: number
+    description: Voice Recognition confidence raw value
+  - name: spokenTextConfidencePercent
+    type: number
+    description: Confidence value as a percentage
+  - name: altPhraseText#
+    type: string
+    description: The text of an alternative phrase
+  - name: altPhraseConfidence#
+    type: number
+    description: The confidence of an alternative phrase
+  - name: altPhraseConfidencePercent#
+    type: number
+    description: The percentage of the confidence from an alternative phrase
+  - name: spokenTextInput
+    type: string
+    description: Detected spoken phrase with trigger command stripped <br> (Only works with `Start` based commands)
+  - name: spokenCommand
+    type: string
+    description: Detected Trigger command
+---
 
-## Details
 :image-preview
 
-This event triggers when a voice control command is used.
-
 ## Parameters
-### `Voice Control`
-Select any or a specific command from the Voice Control tab.
+::field-group
+  ::field{name="Voice Control" type=Select}
+    Select a command from the Voice Control tab.
 
-## Variables
-:variables-description
+    - Select `Any` to trigger on **any command**
 
-Name | Description
-----:|:------------
-`spokenText` | The full spoken phrase detected, *including the trigger phrase*
-`spokenTextConfidence` | Voice Recognition confidence raw value
-`spokenTextConfidencePercent` | Confidence value as a percentage
-`altPhraseText#` | The text of an alternative phrase
-`altPhraseConfidence#` | The confidence of an alternative phrase
-`altPhraseConfidencePercent#` | The percentage of the confidence from an alternative phrase
-`spokenTextInput` | Detected spoken phrase with trigger command stripped <br> (Only works with `Start` based commands)
-`spokenCommand` | Detected Trigger command
+    ::callout{icon=i-mdi-lightbulb color=amber}
+    You can quickly register a voice command by clicking the `Create Voice Command` button!
+    ::
+  ::
+::
