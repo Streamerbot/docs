@@ -1,16 +1,18 @@
-# Get Current Scene
-Get the current scene
+---
+title: Get Current Scene
+description: Get the current scene
+variables:
+  - name: currentScene
+    type: string
+    description: Name of the active scene at the time of execution
+    value: Gaming Scene
+csharpMethods:
+  - ObsGetCurrentScene
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`currentScene` | Name of the active scene at the time of execution
-
-## C# Usage
-:csharp-method{name=ObsGetCurrentScene}
+::field-group
+  :parameter{name=ObsConnection}
+::

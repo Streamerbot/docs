@@ -1,25 +1,23 @@
-# Set Scene Filter State
-Sets the visibility state of a scene filter.
+---
+title: Set Scene Filter State
+description: Sets the visibility state of a scene filter
+variables: []
+csharpMethods:
+  - ObsSetSceneFilterState
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsFilter}
+  ::field{name=State type=Select required}
+    Select which state you want to set
 
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Filter`
-Select the filter from this dropdown list, you can also manually enter a filter name.
-
-- Type: `String`
-
-### `State`
-Select which state you want to set
-- `Visible`: Sets the filter state on your scene to Visible
-- `Hidden`: Sets the filter state on your scene to Hidden
-- `Toggle`: Toggles the filter state on your scene between Visible and Hidden
-
-## C# Usage
-:csharp-method{name=ObsSetSceneFilterState}
+    - `Visible`: Sets the filter state on your scene to Visible
+    - `Hidden`: Sets the filter state on your scene to Hidden
+    - `Toggle`: Toggles the filter state on your scene between Visible and Hidden
+  ::
+::

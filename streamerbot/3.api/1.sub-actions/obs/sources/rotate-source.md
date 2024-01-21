@@ -1,30 +1,26 @@
-# Rotate Source
-Rotate a source
+---
+title: Rotate Source
+description: Rotate a source
+variables: []
+csharpMethods: []
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+  ::field{name=Alignment type=Select}
+    This shows the current alignment of the source
 
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-### `Alignment`
-This shows the current alignment.
-
-### `Rotation`
-By default, this is an `Absolute` angle with 0 being normal rotation, valid range -360 -> +360, however as transform is instant values outside -180 -> +180 will be visually the same. Negative values rotate the source counter-clockwise.
-
-- Type: `Number`
-
-### `Additive`
-This option will make the rotation relative to its current transform rather than overwriting
-
-## C# Usage
-:csharp-method
+    - This field is not editable
+  ::
+  ::field{name=Rotation type=Number required}
+    By default, this is an `Absolute` angle with 0 being normal rotation, valid range -360 -> +360, however as transform is instant values outside -180 -> +180 will be visually the same. Negative values rotate the source counter-clockwise.
+  ::
+  ::field{name=Additive type=Number required}
+    This option will make the rotation relative to its current transform rather than overwriting
+  ::
+::

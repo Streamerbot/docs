@@ -1,18 +1,23 @@
-# Set Replay Buffer State
-Change your replay buffer status
+---
+title: Set Replay Buffer State
+description: Change your replay buffer status
+variables: []
+csharpMethods:
+  - ObsReplayBufferStart
+  - ObsReplayBufferStop
+  - ObsReplayBufferSave
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  ::field{name=State type=Select required}
+    Choose the recording state
 
-### `State`
-Choose the recording state
-
-- `Start`: Start your replay buffer
-- `Stop`: Stop your replay buffer
-- `Save`: Save your replay buffer
-
-## C# Usage
-:csharp-method{name=ObsReplayBufferStart}
-:csharp-method{name=ObsReplayBufferStop}
-:csharp-method{name=ObsReplayBufferSave}
+    - `Start`: Start your replay buffer
+    - `Stop`: Stop your replay buffer
+    - `Save`: Save your replay buffer
+  ::
+::

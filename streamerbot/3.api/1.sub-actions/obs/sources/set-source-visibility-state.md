@@ -1,25 +1,23 @@
-# Set Source Visibility State
-Show or hide a source
+---
+title: Set Source Visibility State
+description: Show or hide a source
+variables: []
+csharpMethods:
+  - ObsSetSourceVisibility
+---
 
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+  ::field{name=State type=Select required}
+    Select the state for the source visibility state
 
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-### `State`
-- `Visible`: Set the visibility state to visible
-- `Hidden`: Set the visibility state to hidden
-- `Toggle`: Toggle the visibility state between visible and hidden
-
-## C# Usage
-:csharp-method{name=ObsSetSourceVisibility}
+    - `Visible`: Set the visibility state to visible
+    - `Hidden`: Set the visibility state to hidden
+    - `Toggle`: Toggle the visibility state between visible and hidden
+  ::
+::

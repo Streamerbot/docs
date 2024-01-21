@@ -1,18 +1,28 @@
-# Get Status
-Get your OBS Studio output status
+---
+title: Get Status
+description: Get your OBS Studio output status
+variables:
+  - name: obs.isConnected
+    type: boolean
+    description: If the selected OBS connection is connected
+    value: True
+  - name: obs.isStreaming
+    type: boolean
+    description: If the selected OBS connection is streaming
+    value: True
+  - name: obs.isRecording
+    type: boolean
+    description: If the selected OBS connection is recording
+    value: True
+csharpMethods:
+  - ObsIsConnected
+  - ObsIsStreaming
+  - ObsIsRecording
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
-
-## Variables
-| Name | Description | Example |
-|-----:|:------------|:--------|
-`obs.isConnected` | If the selected OBS connection is connected | `True`/`False`
-`obs.isStreaming` | If the selected OBS connection is streaming | `True`/`False`
-`obs.isRecording` | If the selected OBS connection is recording | `True`/`False`
-
-## C# Usage
-:csharp-method{name=ObsIsConnected}
-:csharp-method{name=ObsIsStreaming}
-:csharp-method{name=ObsIsRecording}
+::field-group
+  :parameter{name=ObsConnection}
+::
