@@ -70,6 +70,17 @@ Fetch a variable for a given Twitch user
   ```
 ::
 
+### `GetTwitchUsersVar`
+Fetch a list of all Twitch user variables for a given variable name
+::code-group
+  ```csharp [Method]
+  List<UserVariableValue<T>> GetTwitchUsersVar<T>(string varName, bool persisted = true);
+  ```
+  ```csharp [Example]
+  List<UserVariableValue<long>> userVarList = CPH.GetTwitchUsersVar<long>("points", true);
+  ```
+::
+
 ### `SetTwitchUserVar`
 Set a variable for a given Twitch user
 ::code-group
@@ -114,6 +125,16 @@ Fetch a variable for a given YouTube user
   string myYouTubeUserVar = CPH.GetYouTubeUserVar<string>("streamerbot", "myYouTubeUserVar");
   ```
 ::
+### `GetYouTubeUsersVar`
+Fetch a list of all YouTube user variables for a given variable name
+::code-group
+  ```csharp [Method]
+  List<UserVariableValue<T>> GetYouTubeUsersVar<T>(string varName, bool persisted = true);
+  ```
+  ```csharp [Example]
+  List<UserVariableValue<long>> userVarList = CPH.GetYouTubeUsersVar<long>("points", true);
+  ```
+::
 
 ### `SetYouTubeUserVar`
 Set a variable for a given YouTube user
@@ -148,6 +169,22 @@ Unset all variables for a given YouTube user
   ```
 ::
 
+## Classes
+### The `UserVariableValue<T>` Class
+```cs
+public class UserVariableValue<T>
+{
+    public string UserId { get; set; }
+    public string UserLogin { get; set; }
+    public string UserName { get; set; }
+
+    public string VariableName { get; set; }
+    public T Value { get; set; }
+
+    public DateTime LastWrite { get; set; }
+}
+```
+::
 
 ## User Variables (Deprecated)
 ::callout{color=amber icon=i-mdi-alert}
