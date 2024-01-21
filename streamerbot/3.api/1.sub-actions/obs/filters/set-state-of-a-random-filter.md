@@ -3,7 +3,7 @@ title: Set State of a Random Filter
 description: Set the state of a random filter
 variables: []
 csharpMethods:
-  - ObsSetRandomSourceFilter
+  - ObsSetRandomFilterState
 ---
 
 :image-preview
