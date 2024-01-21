@@ -1,14 +1,15 @@
-# Set Active Scene
-Change the current scene
+---
+title: Set Active Scene
+description: Change the current scene
+variables: []
+csharpMethods:
+  - ObsSetScene
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
-
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=ObsSetScene}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+::

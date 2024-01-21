@@ -1,26 +1,23 @@
-# Set Source Mute State
-Mute or unmute a source
+---
+title: Set Source Mute State
+description: Mute or unmute a source
+variables: []
+csharpMethods:
+  - ObsSetSourceMuteState
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+  ::field{name=State type=Select required}
+    Select the mute status for the source
 
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-### `State`
-Select the mute status for the source
-
-- `Muted`: Set the mute state to muted
-- `Not Muted`: Set the mute state to not muted
-- `Toggle`: Toggle the mute state between muted and not muted
-
-## C# Usage
-:csharp-method{name=ObsSetSourceMuteState}
+    - `Muted`: Set the mute state to muted
+    - `Not Muted`: Set the mute state to not muted
+    - `Toggle`: Toggle the mute state between muted and not muted
+  ::
+::

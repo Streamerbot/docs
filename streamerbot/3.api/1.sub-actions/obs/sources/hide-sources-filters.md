@@ -1,17 +1,16 @@
-# Hide Source's Filters
-Hide all the filters from a source
+---
+title: Hide Source's Filters
+description: Hide all the filters from a source
+variables: []
+csharpMethods:
+  - ObsHideSourcesFilters
+---
+
 :image-preview
 
 ## Parameters
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=ObsHideSourcesFilters}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+::

@@ -1,24 +1,19 @@
-# Set Browser Source Url
-Change the URL of a browser source
+---
+title: Set Browser Source Url
+description: Change the URL of a browser source
+variables: []
+csharpMethods:
+  - ObsSetBrowserSource
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
-
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-### `Url`
-Enter a new URL for the browser source
-
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=ObsSetBrowserSource}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+  ::field{name=Url type=String required}
+    Enter a new URL for the browser source
+  ::
+::

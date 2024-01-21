@@ -1,20 +1,25 @@
-# Recording
-Change your recording status
+---
+title: Recording
+description: Change your recording status
+variables: []
+csharpMethods:
+  - ObsStartRecording
+  - ObsStopRecording
+  - ObsPauseRecording
+  - ObsResumeRecording
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  ::field{name=State type=Select required}
+    Choose the recording state
 
-### `State`
-Choose the recording state
-
-- `Start`: Start your recording
-- `Stop`: Stop your recording
-- `Pause`: Pause your recording
-- `Resume`: Resume your recording
-
-## C# Usage
-:csharp-method{name=ObsStartRecording}
-:csharp-method{name=ObsStopRecording}
-:csharp-method{name=ObsPauseRecording}
-:csharp-method{name=ObsResumeRecording}
+    - `Start`: Start your recording
+    - `Stop`: Stop your recording
+    - `Pause`: Pause your recording
+    - `Resume`: Resume your recording
+  ::
+::

@@ -1,24 +1,19 @@
-# Set GDI Text
-Change the text value of GDI Text Source
+---
+title: Set GDI Text
+description: Change the text value of GDI Text Source
+variables: []
+csharpMethods:
+  - ObsSetGdiText
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
-
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-### `Text`
-Enter a text string.
-
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=ObsSetGdiText}
+::field-group
+  :parameter{name=ObsConnection}
+  :parameter{name=ObsScene}
+  :parameter{name=ObsSource}
+  ::field{name=Text type=String required}
+    Enter the text for text source
+  ::
+::

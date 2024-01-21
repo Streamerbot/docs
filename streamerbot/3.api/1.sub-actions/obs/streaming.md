@@ -1,16 +1,21 @@
-# Streaming
-Change your streaming status
+---
+title: Streaming
+description: Change your streaming status
+variables: []
+csharpMethods:
+  - ObsStopStreaming
+  - ObsStartStreaming
+---
+
 :image-preview
 
 ## Parameters
-:parameter{name=ObsConnection}
+::field-group
+  :parameter{name=ObsConnection}
+  ::field{name=State type=Select required}
+    Choose the streaming state
 
-### `State`
-Choose the streaming state
-
-- `Start`: Start your streaming
-- `Stop`: Stop your streaming
-
-## C# Usage
-:csharp-method{name=ObsStopStreaming}
-:csharp-method{name=ObsStartStreaming}
+    - `Start`: Start your streaming
+    - `Stop`: Stop your streaming
+  ::
+::
