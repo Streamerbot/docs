@@ -17,5 +17,5 @@ variables:
   - name: broadcastId
     type: string
     description: The broadcast ID from the livestream
-    value: UCI9-KG2xoyh5z-g41IL2jqf
+    value: UCI9-KG2xoy
 ---
