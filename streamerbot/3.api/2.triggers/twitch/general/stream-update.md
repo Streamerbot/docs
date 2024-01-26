@@ -1,5 +1,5 @@
 ---
-title: Shoutout Received
+title: Stream Update
 description: Trigger for a Twitch Stream Update
 version: 0.0.30
 twitchService: PubSub
