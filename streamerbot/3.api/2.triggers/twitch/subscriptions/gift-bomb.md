@@ -7,6 +7,10 @@ variables:
     type: number
     description: The number of subscriptions in this gift bomb
     value: 10
+  - name: totalGifts
+    type: number
+    description: The total number of subscriptions gifted by the user.
+    value: 42
   - name: fromGiftBomb
     type: boolean
     description: Are the subscriptions from a gift bomb?
