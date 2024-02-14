@@ -45,6 +45,6 @@ Crowd Control is now connected!
 
 ## Usage
 
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/crowdcontrol/effect-falure}
-Explore the [Crowd Control Triggers](/api/triggers/integrations/crowdcontrol/effect-failure) API references 
+::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/crowdcontrol/effect-failure}
+Explore the [Crowd Control Triggers](/api/triggers/integrations/crowdcontrol/effect-failure) API references
 ::
