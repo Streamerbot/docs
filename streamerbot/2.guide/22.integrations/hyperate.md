@@ -31,4 +31,4 @@ Enable to automatically connect to HypeRate.io when Streamer.bot starts up
 Enable to automatically reconnect to HypeRate.io when the connection is disrupted
 
 ## Usage
-:api-reference-cards{path=integrations/hyperateio manifest-path=hyperate}
+:api-reference-cards{path=integrations/hyperateio manifest-path=hyperate.io}
