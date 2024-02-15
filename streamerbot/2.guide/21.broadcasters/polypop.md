@@ -4,6 +4,7 @@ description: Integrate Streamer.bot with PolyPop
 logo: /img/icons/polypop.png
 ---
 
+## Introduction
 PolyPop integration is made possible via the community-made Websocket plugin available from `Plugins` in PolyPop:
 
 Click on the `Plugins` button in the top-left corner in PolyPop
@@ -45,6 +46,4 @@ Navigate to **Stream Apps > PolyPop**
 
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/polypop/trigger-alert}
-Explore all **PolyPop sub-actions** and their variables at [API References > Sub-Actions > PolyPop](/api/sub-actions/polypop/trigger-alert)
-::
+:api-reference-cards{path=polypop}

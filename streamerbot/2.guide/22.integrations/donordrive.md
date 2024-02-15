@@ -28,7 +28,4 @@ Remaining setup documentation needed
 ::
 
 ## Usage
-
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/donordrive/donation}
-Explore the [DonorDrive Triggers](/api/triggers/integrations/donordrive/donation) API references
-::
+:api-reference-cards{path=integrations/donordrive}

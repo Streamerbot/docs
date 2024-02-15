@@ -31,6 +31,4 @@ Enable to automatically connect to HypeRate.io when Streamer.bot starts up
 Enable to automatically reconnect to HypeRate.io when the connection is disrupted
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/hyperate/heart-rate-pulse}
-Explore the [HypeRate Triggers](/api/triggers/integrations/hyperate/heart-rate-pulse) API references
-::
+:api-reference-cards{path=integrations/hyperateio manifest-path=hyperate}

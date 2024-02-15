@@ -27,6 +27,4 @@ Navigate to **Integrations > Lumia Stream** in Streamer.bot
 3. Enable `Auto Reconnect` to automatically reconnect to Lumia Stream if the connection is disrupted
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/integrations/lumia-stream/send-command}
-Explore the [Lumia Stream Sub-Actions](/api/sub-actions/integrations/lumia-stream/send-command) API references
-::
+:api-reference-cards{path=integrations/lumia-stream}

@@ -11,6 +11,4 @@ logo: /img/icons/vtube-studio.png
 :wip
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/vtube-studio/background-changed}
-Explore the [VTube Studio Triggers](/api/triggers/integrations/vtube-studio/background-changed) API references
-::
+:api-reference-cards{path=integrations/vtube-studio}

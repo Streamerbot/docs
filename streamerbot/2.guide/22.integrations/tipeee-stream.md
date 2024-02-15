@@ -13,6 +13,4 @@ Integrate with [TipeeeStream](https://www.tipeeestream.com){target=_blank} to re
 :wip
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/tipeeestream/donation}
-Explore the [TipeeeStream Triggers](/api/triggers/integrations/tipeeestream/donation) API references
-::
+:api-reference-cards{path=integrations/tipeeestream}

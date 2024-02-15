@@ -22,6 +22,4 @@ Navigate to **Integrations > Pulsoid**
 
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/pulsoid/heart-rate-pulse}
-Explore the [Pulsoid Triggers](/api/triggers/integrations/pulsoid/heart-rate-pulse) API references
-::
+:api-reference-cards{path=integrations/pulsoid}

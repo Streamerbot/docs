@@ -11,3 +11,6 @@ Integrate Streamer.bot with [Elgato Wave Link](https://elgato.com){target=_blank
 
 ## Configuration
 :wip
+
+## Usage
+:api-reference-cards{path=elgato/wave-link}

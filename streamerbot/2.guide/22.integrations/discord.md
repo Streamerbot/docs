@@ -26,7 +26,4 @@ You must have the proper permissions to create webhooks on a given server/channe
 ::
 
 ## Usage
-
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/integrations/discord/basic-webhook}
-You can now use the [Discord Basic Webhook](/api/sub-actions/integrations/discord/basic-webhook) sub-action
-::
+:api-reference-cards{path=integrations/discord}

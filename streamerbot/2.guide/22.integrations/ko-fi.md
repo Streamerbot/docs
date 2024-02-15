@@ -40,6 +40,4 @@ You can send test webhooks from the Ko-Fi API page
 ::
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/ko-fi/donation}
-Explore the [Ko-Fi Triggers](/api/triggers/integrations/ko-fi/donation) API references
-::
+:api-reference-cards{path=integrations/ko-fi manifest-path=kofi}
