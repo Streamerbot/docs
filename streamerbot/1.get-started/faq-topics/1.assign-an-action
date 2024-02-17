@@ -1,0 +1,3 @@
+### 1. Why can I no longer assign an action to an event?
+Since update v0.2.0, the actions are no longer assigned in the event, but the other way round. In the *Actions* tab, you will now find a *Triggers* area in which you can select an event/trigger like commands or a subscription for the respective action. 
+![](https://i.imgur.com/r4orRtM.gif)
