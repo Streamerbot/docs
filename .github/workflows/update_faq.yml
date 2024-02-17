@@ -19,8 +19,8 @@ jobs:
       - name: Determine changed Markdown files
         id: determine_changes
         run: |
-          # Get the list of files changed in the last commit
-          changed_files=$(git log -n 1 --pretty=format:'' --name-only)
+          # Get the list of files changed in the last commit (modified and added)
+          changed_files=$(git log -n 1 --pretty=format:'' --diff-filter=MA --name-only)
           affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
           echo "::set-output name=files::$affected_files"
 
