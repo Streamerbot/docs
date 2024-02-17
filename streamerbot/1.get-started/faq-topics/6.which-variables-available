@@ -1,0 +1,3 @@
+### 6. How do I know which variables are available?
+The easiest way would be to check out <https://docs.streamer.bot/> and look for the trigger or subaction you are using. A full list of variables will be given there, e.g. ![*Twitch Follow* trigger](https://docs.streamer.bot/api/triggers/twitch/channel/follow). 
+A second method would be to run the action, then go into the *Action Queues* tab, into the *Action History* and then Double-Click the action that has completed. This will give you all variables that have been populated for that action, with their values.
