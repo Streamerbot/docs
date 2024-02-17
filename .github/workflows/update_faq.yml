@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '10 18 * * *'  # Run at 13:05 EST (18:05 UTC)
+    - cron: '5 18 * * *'  # Run at 13:05 EST (18:05 UTC)
 
 jobs:
   update_faq:
@@ -13,24 +13,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Use Node.js 20
-        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          fetch-depth: 0  # Fetch all history
 
       - name: Determine changed Markdown files
         id: determine_changes
         run: |
-            commit_count=$(git rev-list --count HEAD)
-            if [ "$commit_count" -eq 0 ]; then
-            # If no commits, set affected files to empty string
-            affected_files=""
-            else
-            changed_files=$(git diff --name-only HEAD~1 HEAD)
-            affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
-            fi
-            echo "::set-output name=files::$affected_files"
+          changed_files=$(git diff --name-only HEAD~1 HEAD)
+          affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
+          echo "::set-output name=files::$affected_files"
+
+      # Rest of your workflow steps...
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: Read and append content of changed Markdown files
         if: steps.determine_changes.outputs.files != ''
