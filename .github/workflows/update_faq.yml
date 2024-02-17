@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '10 18 * * *'  # Run every day at 1305 UTC
+    - cron: '10 18 * * *'  # Run at 13:05 EST (18:05 UTC)
 
 jobs:
   update_faq:
@@ -13,6 +13,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: Determine changed Markdown files
         id: determine_changes
