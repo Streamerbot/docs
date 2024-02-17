@@ -1,0 +1,66 @@
+name: Update FAQ
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '5 18 * * *'  # Run every day at 1305 UTC
+
+jobs:
+  update_faq:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Determine changed Markdown files
+        id: determine_changes
+        run: |
+          changed_files=$(git diff --name-only HEAD^ HEAD)
+          affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
+          echo "::set-output name=files::$affected_files"
+
+      - name: Read and append content of changed Markdown files
+        if: steps.determine_changes.outputs.files != ''
+        run: |
+          for file in ${{ steps.determine_changes.outputs.files }}; do
+            cat "$file" >> new_content.md
+          done
+
+      - name: Append new content to FAQ
+        if: steps.determine_changes.outputs.files != ''
+        run: |
+          cat new_content.md >> 4.faq.md
+          rm new_content.md
+
+      - name: Commit changes
+        if: steps.determine_changes.outputs.files != ''
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add 4.faq.md
+          git commit -m "Update FAQ with changes"
+          git push
+
+      - name: Read and append content of existing Markdown files
+        if: steps.determine_changes.outputs.files == ''
+        run: |
+          for file in streamerbot/1.get-started/faq-topics/*.md; do
+            cat "$file" >> new_content.md
+          done
+
+      - name: Append existing content to FAQ
+        if: steps.determine_changes.outputs.files == ''
+        run: |
+          cat new_content.md >> 4.faq.md
+          rm new_content.md
+
+      - name: Commit changes for existing files
+        if: steps.determine_changes.outputs.files == ''
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add 4.faq.md
+          git commit -m "Update FAQ with existing content"
+          git push
