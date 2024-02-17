@@ -2,8 +2,8 @@ name: Update FAQ
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'streamerbot/1.get-started/faq-topics/**'
   schedule:
     - cron: '5 18 * * *'  # Run at 13:05 EST (18:05 UTC)
 
@@ -22,12 +22,6 @@ jobs:
           changed_files=$(git diff --name-only HEAD~1 HEAD)
           affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
           echo "::set-output name=files::$affected_files"
-
-      # Rest of your workflow steps...
-      - name: Use Node.js 20
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
 
       - name: Read and append content of changed Markdown files
         if: steps.determine_changes.outputs.files != ''
