@@ -1,0 +1,2 @@
+### 10. Can I run multiple subactions at once instead of one by one?
+By Right-Clicking an action, you can check *Concurrent*. This will cause subactions to all run at the same time instead of going from top to bottom as usual.
