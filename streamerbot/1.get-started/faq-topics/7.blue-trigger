@@ -1,0 +1,2 @@
+### 7. Why is my trigger blue?
+A blue trigger means it *always runs*. This usually goes for triggers that have their criteria set to *Any* (like the *Twitch Subscription* trigger that has everything checked and will fire for all sub tiers). If you have a second *Twitch Subscription* trigger that only has *tier 3* checked, this one obviously won't always run but only does for tier 3 subs. In this case, both the triggers will fire on a tier 3 sub, but only the first one does on a tier 1 sub.
