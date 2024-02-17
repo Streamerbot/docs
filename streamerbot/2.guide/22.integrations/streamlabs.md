@@ -26,6 +26,4 @@ Navigate to **Integrations > Streamlabs** in Streamer.bot
 3. Enable `Auto Reconnect` to automatically reconnect to Streamlabs if the connection is disrupted
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/streamlabs/donation}
-Explore the [Streamlabs Triggers](/api/triggers/integrations/streamlabs/donation) API references
-::
+:api-reference-cards{path=integrations/streamlabs}

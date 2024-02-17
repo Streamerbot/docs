@@ -8,8 +8,6 @@ logo: https://streamer.bot/img/integrations/obs.svg
 You must enable the **OBS WebSocket** connection. Check out the [Get Started Guide](/get-started/setup#obs-studio) for details.
 ::
 
----
-
 ::callout{icon=i-mdi-navigation}
 Navigate to **Stream Apps > OBS** in Streamer.bot
 ::
@@ -124,10 +122,4 @@ Shows the status of the current streaming and recording activity
 Lists all sources present on the currently selected scene
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/obs/get-current-scene}
-Explore all **OBS Studio sub-actions** and their variables at [API References > Sub-Actions > OBS Studio](/api/sub-actions/obs/get-current-scene)
-::
-
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/obs/obs-event}
-Explore all **OBS Studio triggers** and their variables at [API References > Triggers > OBS Studio](/api/triggers/obs/event)
-::
+:api-reference-cards{path=obs}

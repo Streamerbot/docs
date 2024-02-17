@@ -28,6 +28,4 @@ To connect Streamer.bot with your StreamElements account:
 2. Click `Connect` and authorize **Streamer.bot** to connect to your account
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/streamelements/merch}
-Explore the [StreamElements Triggers](/api/triggers/integrations/streamelements/merch) API references
-::
+:api-reference-cards{path=integrations/streamelements}

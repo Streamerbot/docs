@@ -43,6 +43,4 @@ Return to **Streamer.bot User Settings > Webhook Integrations > Shopify** on the
 1. Paste the `Verification Token` into the `Shopify Verification Token` input
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/shopify/order-created}
-Explore the [Shopify Triggers](/api/triggers/integrations/shopify/order-created) API references
-::
+:api-reference-cards{path=integrations/shopify}

@@ -13,6 +13,4 @@ Integrate with [TreatStream](https://treatstream.com){target=_blank} to receive 
 :wip
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/treatstream/donation}
-Explore the [TreatStream Triggers](/api/triggers/integrations/treatstream/donation) API references
-::
+:api-reference-cards{path=integrations/treatstream}

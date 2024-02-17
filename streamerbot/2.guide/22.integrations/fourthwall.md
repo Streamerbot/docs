@@ -3,7 +3,7 @@ title: Fourthwall
 description: Integrate Streamer.bot with your Fourthwall account
 navigation.icon: null
 version: 0.2.2
-badge: Alpha
+badge: New
 logo: /img/icons/fourthwall.png
 ---
 
@@ -14,5 +14,7 @@ This integration requires the [Streamer.bot Website Integration](/guide/integrat
 ::
 
 ## Configuration
-
 :wip
+
+## Usage
+:api-reference-cards{path=integrations/fourthwall}

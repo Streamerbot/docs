@@ -13,6 +13,4 @@ Let your bot take control of [VoiceMod](https://voicemod.com){target=_blank}
 :wip
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/integrations/voicemod/get-current-voice}
-Explore the [VoiceMod Sub-Actions](/api/sub-actions/integrations/voicemod/get-current-voice) API references
-::
+:api-reference-cards{path=integrations/voicemod}

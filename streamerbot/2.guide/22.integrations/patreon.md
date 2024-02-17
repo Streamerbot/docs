@@ -39,6 +39,4 @@ Return to **Streamer.bot User Settings > Webhook Integrations > Patreon** on the
 1. Paste your patreon secret into the `Patreon Webhook Secret` input
 
 ## Usage
-::callout{icon=i-mdi-bookmark color=green to=/api/triggers/integrations/patreon/follow-created}
-Explore the [Patreon Triggers](/api/triggers/integrations/patreon/donation) API references
-::
+:api-reference-cards{path=integrations/patreon}

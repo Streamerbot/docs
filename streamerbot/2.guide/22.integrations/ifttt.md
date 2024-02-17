@@ -22,18 +22,11 @@ This integration requires the [Streamer.bot Website Integration](/guide/integrat
 5. Enter a matching event name in both your IFTTT applet and your Streamer.bot sub-action to trigger on specific events
 
 ## Usage
-
-### Sub-Actions
-
-Send outgoing triggers from Streamer.bot to IFTTT
-
-::callout{icon=i-mdi-bookmark color=green to=/api/sub-actions/integrations/ifttt/notification}
-Explore the [IFTTT Sub-Actions](/api/sub-actions/integrations/ifttt/notification) API references
-::
+:api-reference-cards{path=integrations/ifttt}
 
 ---
 
-### IFTTT Actions
+## IFTTT Actions
 
 ::callout{icon=i-mdi-bookmark color=green to=https://ifttt.com/streamerbot target=_blank rel=noopener}
 Explore the [Streamer.bot Service](https://ifttt.com/streamerbot) on IFTTT
