@@ -22,10 +22,15 @@ jobs:
       - name: Determine changed Markdown files
         id: determine_changes
         run: |
-          changed_files=$(git diff --name-only HEAD~1 HEAD)
-          affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
-          echo "::set-output name=files::$affected_files"
-
+            commit_count=$(git rev-list --count HEAD)
+            if [ "$commit_count" -eq 0 ]; then
+            # If no commits, set affected files to empty string
+            affected_files=""
+            else
+            changed_files=$(git diff --name-only HEAD~1 HEAD)
+            affected_files=$(echo "$changed_files" | grep '^streamerbot/1.get-started/faq-topics/.*\.md$' || true)
+            fi
+            echo "::set-output name=files::$affected_files"
 
       - name: Read and append content of changed Markdown files
         if: steps.determine_changes.outputs.files != ''
