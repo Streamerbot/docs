@@ -1,0 +1,2 @@
+### 9. How do I prevent my actions from overlapping/running multiple times at once?
+Go into the *Action Queues* tab, then into *Queues* and create a new queue (`Right-Click -> Add`). Give it any name you like and check *Blocking*. Now go back into your *Actions* tab and assign the queue to all the actions you want in there by editing the action (Doube-Click the action or Right-Click -> Edit). Now the upcoming actions will only start running once the previous one has finished.
