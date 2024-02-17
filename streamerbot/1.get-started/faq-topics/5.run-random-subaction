@@ -1,0 +1,2 @@
+### 5. How do I run a random subaction?
+Option 1- Right-Click an action and check *Random*, so a single subaction within the action is being picked randomly. Option 2- you can create a group within the subactions, then Right-Click that group and check *Random*. This will then only run a random subaction **within** the group. All the other subactions in the action outside the group will run from top to bottom as usual.
