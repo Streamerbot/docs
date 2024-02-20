@@ -7,7 +7,7 @@ csharpMethods:
 ---
 
 ::list
-  - Check out the full [OBS Raw Guide](/guide/broadcasters/obs-studio/raw) to learn how to set up and configure OBS Raw requests
+  - Check out the full [OBS Raw Guide](/guide/broadcasters/obs-studio) to learn how to set up and configure OBS Raw requests
   - You can use the [OBS Raw Generator](https://obs-raw.streamer.bot) to generate raw requests in JSON or CPH format
 ::
 
