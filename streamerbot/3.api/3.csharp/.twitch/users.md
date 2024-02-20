@@ -85,4 +85,3 @@ public class TwitchUserInfoEx
     public List<string> Tags { get; set; }
 }
 ```
-

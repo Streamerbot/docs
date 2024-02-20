@@ -11,4 +11,47 @@ Official home of all documentation content for [Streamer.bot](https://streamer.b
 ## Contributing
 Contributions are welcome and encouraged!
 
+Feel free to open an issue to discuss missing information, or just fork and PR 💜
+
 Guidelines: TBA
+
+## Frontmatter
+Some docs will be automatically built out from YAML frontmatter
+
+### All
+All pages should have a `title` and `description`.
+
+Optionally, if the release version of a feature is known, the `version` key should contain the Streamer.bot version.
+
+```yml
+title: Page Title
+description: Some description of this page
+version: 0.2.3
+```
+
+### Sub-Actions & Triggers
+The `variables` key will automatically build out the Variables section for these pages
+
+```yml
+twitchService: Chat Client
+commonVariables:
+  - TwitchUser
+variables:
+  - name: viewers
+    type: number
+    description: The amount of viewers this raid received
+    value: 183
+```
+
+### C# Methods
+Supplemental information can be added to C# methods:
+
+```yml
+parameters:
+  - name: data
+    description: |
+      Data to be sent to connected clients
+
+      JSON must be stringified.
+    value: '"Hello, world!"'
+```
