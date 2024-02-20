@@ -38,7 +38,7 @@ commonVariables:
 ---
 
 ::callout{icon=i-mdi-bookmark to=/guide/commands}
-Check out the [Commands Guide](#) for details on configuring your Commands
+Check out the [Commands Guide](/guide/commands) for details on configuring your Commands
 ::
 
 :image-preview
