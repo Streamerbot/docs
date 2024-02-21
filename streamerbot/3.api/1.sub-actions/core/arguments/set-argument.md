@@ -14,7 +14,7 @@ Enter the name of the variable in which to store your argument.
 Enter the value to store in your argument / variable.
 
 ::list
-- You can use other [Variables](/guide/variables) or [Inline Functions](/guide/variables/functions) to manipulate existing arguments
+- You can use other [Variables](/guide/variables) or [Inline Functions](/guide/variables#inline-functions) to manipulate existing arguments
 ::
 
 ### `Auto Type`

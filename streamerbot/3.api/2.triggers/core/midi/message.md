@@ -66,7 +66,7 @@ variables:
 ---
 
 ::callout{icon=i-mdi-bookmark to=/guide/midi}
-Check out the [MIDI Configuration Guide](#) for details on configuring your MIDI devices
+Check out the [MIDI Configuration Guide](/guide/midi) for details on configuring your MIDI devices
 ::
 
 :image-preview
