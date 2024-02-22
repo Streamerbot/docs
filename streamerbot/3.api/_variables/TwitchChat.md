@@ -50,23 +50,19 @@ variables:
     type: List<Twitch.Common.Models.Emote>
     description: A C# accessible list of emotes used in the chat message
     variables:
-      - name: id
-        type: number
-        description: The id of the emote
-        value: 25
-      - name: type
+      - name: Type
         type: string
         description: From which source the emote came from
         value: Twitch
-      - name: startIndex
+      - name: StartIndex
         type: number
         description: On which letter the emote started
         value: 0
-      - name: endIndex
+      - name: EndIndex
         type: number
         description: On which letter the emote ended
         value: 4
-      - name: imageUrl
+      - name: ImageUrl
         type: string
         description: The URL of an image from the emote
         value: https://static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0

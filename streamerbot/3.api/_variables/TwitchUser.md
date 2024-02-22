@@ -42,15 +42,15 @@ variables:
     type: List<Twitch.Common.Models.Badge>
     description: A C# accessible list of emotes used in the chat message
     variables:
-      - name: name
+      - name: Name
         type: string
         description: The name of the badge
         value: moderator
-      - name: version
+      - name: Version
         type: number
         description: The version of the badge
         value: 1
-      - name: imageUrl
+      - name: ImageUrl
         type: string
         description: The image URL of the badge
         value: https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/3
