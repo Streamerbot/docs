@@ -81,7 +81,7 @@ Check out the [MIDI Configuration Guide](/guide/midi) for details on configuring
     Select a configured MIDI input event
     - Select `Any` to trigger on **any event**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register new [MIDI event listeners](/guide/midi#configuration-1) by clicking the `Add New Event` button!
     ::
   ::

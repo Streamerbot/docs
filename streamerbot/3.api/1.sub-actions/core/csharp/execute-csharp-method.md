@@ -19,7 +19,7 @@ public bool MethodName()
 }
 ```
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
   If you have the selected `Execute C# Code` sub-action setup for `Keep Alive` and `Precompile on Startup` you can use `private` variables within the class to **preserve data between calls**.
 ::
 
@@ -29,7 +29,7 @@ public bool MethodName()
   ::field{name="Execute C# Code" type=Select}
     Select the `Execute C# Code` sub-action you would like to reference.
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You must configure the `Name` field in your `Execute C# Code` sub-actions to display here. [Read more](/api/sub-actions/core/csharp/execute-csharp-code#configuration)
     ::
   ::
@@ -37,7 +37,7 @@ public bool MethodName()
   ::field{name=Method type=Select}
     Select the method to execute
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     This can be any custom defined method, or even the main `Execute()` method.
     ::
   ::
@@ -49,7 +49,7 @@ public bool MethodName()
   ::field{name="Save Result to Variable" type=Toggle}
     Save the `bool` result of the selected method
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     Returning `false` without this option enabled will simply stop execution of the entire action. Enabling this option allows you to collect the result and also continue execution regardless of the return value.
     ::
   ::

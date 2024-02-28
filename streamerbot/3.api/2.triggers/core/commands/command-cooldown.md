@@ -48,7 +48,7 @@ Check out the [Commands Guide](/guide/commands) for details on configuring your 
   ::field{name=Commands type=Select}
     Select a command from the Commands tab.
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a new command by clicking the `Create Command` button!
     ::
   ::

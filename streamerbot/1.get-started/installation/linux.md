@@ -144,7 +144,7 @@ The :shortcut{value="Right-Click"} context menu on users within the viewers tab 
 This issue has been resolved in Wine 7 and later
 ::
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
   The speed with which the context menu appears can be improved by redirecting `stdout` to `/dev/null`
 
   ```bash

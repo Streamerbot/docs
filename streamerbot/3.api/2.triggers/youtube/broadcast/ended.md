@@ -6,6 +6,6 @@ commonVariables:
   - YouTubeBroadcaster
 ---
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 The `broadcastId` variable is **not available** from this trigger
 ::

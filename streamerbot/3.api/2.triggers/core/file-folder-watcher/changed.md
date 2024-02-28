@@ -53,7 +53,7 @@ variables:
 
     - Select `Any` to trigger on **any watcher**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a new watcher by clicking the `Create File Watcher` button!
     ::
   ::

@@ -23,7 +23,7 @@ variables:
 
     - Select `Any` to trigger on **any file tail**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a new file tail by clicking the `Create File Tail` button!
     ::
   ::

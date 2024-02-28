@@ -38,7 +38,7 @@ variables:
 
     - Select `Any` to trigger on **any command**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a voice command by clicking the `Create Voice Command` button!
     ::
   ::

@@ -20,7 +20,7 @@ Navigate to **Integrations > HypeRate.io**
 ### `ID`
 Enter your HypeRate.io ID
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 You can enter `internal-testing` in this field to have fake testing data sent to Streamer.bot
 ::
 

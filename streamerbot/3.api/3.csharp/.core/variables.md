@@ -4,7 +4,7 @@ description: C# methods for manipulating arguments and variables
 ---
 
 ## Arguments
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 Arguments are local variables only available to the currently running action and any subsequent sub-actions
 ::
 

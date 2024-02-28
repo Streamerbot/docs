@@ -49,7 +49,7 @@ The HTML Overlay application is now running!
 
 You should also now see an accompanying icon your system tray.
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 You can close HTML Overlay by :shortcut{value=Double-Clicking} the tray icon at any time.
 ::
 
@@ -71,7 +71,7 @@ The HTML Overlay `zip` above is preloaded with 3 overloay modules:
 - Show Image
 - Emote Rain
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 You can customize the options for each module by modifying the `Content/index.html` file
 ::
 
@@ -117,7 +117,7 @@ Custom overlays are an **advanced** use case and require **JavaScript** expertis
 
 To get started, create a new `js` file inside the `Content` directory.
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 The configured [Streamer.bot Client](https://streamerbot.github.io/client) instance is available at `window.client` for interacting with Streamer.bot via WebSocket and subscribing to events
 ::
 
@@ -154,6 +154,6 @@ Import your new module at the bottom of `Content/index.html`, after any existing
 </script>
 ```
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 Take a look at the existing modules in the `Content` directory for examples
 ::

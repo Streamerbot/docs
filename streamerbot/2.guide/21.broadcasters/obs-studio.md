@@ -89,7 +89,7 @@ Quickly toggle the `Reconnect on Disconnect` configuration option for the select
 #### `Default`
 Set this connection as the default when importing actions
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 If no default is set, imported actions will default to the first connection in the list
 ::
 

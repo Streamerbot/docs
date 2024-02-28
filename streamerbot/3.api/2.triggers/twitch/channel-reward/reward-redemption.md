@@ -50,7 +50,7 @@ commonVariables:
     Select a configured Twitch reward
     - Select `Any` to trigger on **any reward**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a new reward by clicking the `Create Reward` button!
     ::
   ::

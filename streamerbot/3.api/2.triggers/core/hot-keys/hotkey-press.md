@@ -33,7 +33,7 @@ variables:
 
     - Select `Any` to trigger on **any hotkey**
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     You can quickly register a new HotKey by clicking the `Create HotKey` button!
     ::
   ::

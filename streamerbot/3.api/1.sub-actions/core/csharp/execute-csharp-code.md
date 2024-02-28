@@ -18,7 +18,7 @@ Shows some general information based on what buttons you've pressed, this will s
 ### References
 List the references required for compiling your code.
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 You can :shortcut{value=Right-Click} within the pane if you need to add specific references
 ::
 
@@ -29,7 +29,7 @@ Configuration options available under the `Settings` tab are outlined below:
   ::field{name=Name type=Text}
     Optionally set a descriptive name for your C# sub-action.
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     `Name` is required if you would like to execute custom methods with the [Execute C# Method](/api/sub-actions/core/csharp/execute-csharp-method) sub-action.
     ::
   ::
@@ -57,7 +57,7 @@ Configuration options available under the `Settings` tab are outlined below:
   ::field{name="Save Result to Variable" type=Toggle}
     Save the `bool` result of the `Execute()` method
 
-    ::callout{icon=i-mdi-lightbulb color=amber}
+    ::tip{color=amber}
     Returning `false` without this option enabled will simply stop execution of the entire action. Enabling this option allows you to collect the result and also continue execution regardless of the return value.
     ::
   ::

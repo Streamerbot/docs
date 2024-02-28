@@ -35,7 +35,7 @@ Return to **Streamer.bot User Settings > Webhook Integrations > Ko-Fi** on the S
 
 1. Paste the `Verification Token` into the `Ko-Fi Verification Token` input
 
-::callout{icon=i-mdi-lightbulb color=amber}
+::tip{color=amber}
 You can send test webhooks from the Ko-Fi API page
 ::
 
