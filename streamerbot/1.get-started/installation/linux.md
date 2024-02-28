@@ -90,7 +90,9 @@ cd ./sb-linux-installer
 ```
 
 ### Update
-You can update your Streamer.bot installation by executing the script with `UPDATE=1`{lang=bash}
+Streamer.bot [Automatic Updates](/get-started/installation#automatic-updates) should work as usual.
+
+You can manually update your Streamer.bot installation using the installation script with `UPDATE=1`{lang=bash}
 
 ```bash [sb-linux-installer]
 UPDATE=1 ./install.sh
@@ -124,3 +126,6 @@ This issue has been resolved in Wine 7 and later
   wine Streamer.bot.exe >/dev/null 2>&1
   ```
 ::
+
+### Streamer.bot Chat
+The built-in chat window will crash the application due to missing `WebView2` executable
