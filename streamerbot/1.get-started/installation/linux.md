@@ -22,13 +22,25 @@ Streamer.bot can be installed on Linux using `wine` and `winetricks`
   - `sapi` *optional*
     - Needed for Speaker.bot support
 
-## Install Script
+## Installation
+Select an installation method below:
+
+::card-group
+  ::card{title="Install Script" to=#install-script icon=i-mdi-bash}
+  Install Streamer.bot and its Wine dependencies using a `bash` script
+  ::
+  ::card{title="Lutris" to=#lutris icon=i-simple-icons-lutris}
+  Install Streamer.bot with Lutris
+  ::
+::
+
+### Install Script
 
 ::callout{icon=i-mdi-github to="https://github.com/Streamerbot/sb-linux-installer"}
 View [Streamerbot/sb-linux-installer](https://github.com/Streamerbot/sb-linux-installer) on GitHub
 ::
 
-### Prerequisites
+#### Prerequisites
 
 ::tabs
   ::div
@@ -76,7 +88,7 @@ View [Streamerbot/sb-linux-installer](https://github.com/Streamerbot/sb-linux-in
   ::
 ::
 
-### Install
+#### Install
 
 ```bash [sb-linux-installer]
 # Clone the repository
@@ -89,7 +101,7 @@ cd ./sb-linux-installer
 ./install.sh
 ```
 
-### Update
+#### Update
 Streamer.bot [Automatic Updates](/get-started/installation#automatic-updates) should work as usual.
 
 You can manually update your Streamer.bot installation using the installation script with `UPDATE=1`{lang=bash}
@@ -98,12 +110,25 @@ You can manually update your Streamer.bot installation using the installation sc
 UPDATE=1 ./install.sh
 ```
 
-### Uninstall
+#### Uninstall
 You can remove the Streamer.bot installation by executing the script with `UNINSTALL=1`{lang=bash}
 
 ```bash [sb-linux-installer]
 UNINSTALL=1 ./install.sh
 ```
+
+### Lutris
+::callout{icon=i-mdi-github to="https://raw.githubusercontent.com/Streamerbot/sb-linux-installer/main/lutris/streamerbot.yaml"}
+Download `lutris/streamerbot.yaml` from GitHub
+::
+
+1. Click the `+` in Lutris and select `Install from a local install script`
+
+![Lutris Add Game Dialog](../assets/lutris-add-game.png){width=600}
+
+2. Select the `streamerbot.yaml` file (download link above)
+3. Follow the installer steps to install Streamer.bot to your location of choice.
+4. Launch Streamer.bot from Lutris!
 
 ## Known Issues
 
