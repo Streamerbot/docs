@@ -15,6 +15,24 @@ Feel free to open an issue to discuss missing information, or just fork and PR ð
 
 Guidelines: TBA
 
+## MDC Components
+```
+::tip
+This is a cool tip!
+::
+
+::warning
+Some important info goes here
+::
+
+:read-more{to="/path/to/some/other/page"}
+
+::wip
+This content is a work in progress
+::
+```
+
+
 ## Frontmatter
 Some docs will be automatically built out from YAML frontmatter
 
@@ -44,9 +62,13 @@ variables:
 ```
 
 ### C# Methods
-Supplemental information can be added to C# methods:
+Supplemental information can be added to C# methods by adding a markdown file into the api/csharp/_methods directory with the **exact same name** as the C# Method:
 
-```yml
+
+```md [_methods/SomeCsharpMethod.md]
+---
+description: The primary short description for SomeCsharpMethod
+version: 0.2.3
 parameters:
   - name: data
     description: |
@@ -54,4 +76,39 @@ parameters:
 
       JSON must be stringified.
     value: '"Hello, world!"'
+---
+
+Some extended description information
+```
+
+- `description` - Short description rendered **above** the resulting C# code block and included in SEO
+- `version` - Optional value representing the version of Streamer.bot that added this feature
+- `deprecated` - Optional value representing the version of Streamer.bot that deprecated this feature
+- `parameters` - Optional of parameter documentation
+    - `name` - The exact name of this parameter. **Must match the name from Streamer.bot**
+    - `description` - Any additional documentation or info to include with this parameter. **Markdown supported**
+    - `value` - An example C# value for this parameter. Will be used within the `CPH Example` code block and included in the `Copy` function
+    - `import` - Optionally import the parameter fields above from a file in the  _parameters dir (see below)
+
+### C# Parameters
+Additionally, parameters information can be shared by referencing the name of any markdown or yaml file in the api/csharp/_parameters directory:
+
+```md [_methods/SomeCsharpMethod.md]
+---
+parameters:
+  - import: SomeSharedParameter
+---
+```
+
+```md [_paramters/SomeSharedParamter]
+---
+name: my_parameter
+description: |
+  Some long description
+
+  With extra info
+
+  That would be annoying to include in every file that uses this parameter ðŸ˜‰
+value: 0
+---
 ```
