@@ -3,7 +3,6 @@ title: Elgato Wave Link
 description: Integrate Streamer.bot with Elgato Wave Link
 navigation.icon: null
 version: 0.2.0
-badge: New
 logo: /img/icons/elgato.png
 ---
 
