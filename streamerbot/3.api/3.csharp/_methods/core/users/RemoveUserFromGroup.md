@@ -2,7 +2,7 @@
 description: Remove a user, by username, from a group
 version: 0.2.3
 parameters:
-  - import: UserId
+  - import: UserName
   - import: Platform
   - import: UserGroupName
 ---
