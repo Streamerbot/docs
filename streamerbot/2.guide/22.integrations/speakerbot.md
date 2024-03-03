@@ -2,7 +2,6 @@
 title: Speaker.bot
 description: Integrate Streamer.bot with Speaker.bot
 navigation.icon: null
-version: 0.2.2
 icon: IconSpeakerbot
 logo: /img/icons/speakerbot.png
 ---

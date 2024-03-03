@@ -1,12 +1,7 @@
-# Stop Speaking
-Speaker.bot stop speaking sub-action.
+---
+title: Stop Speaking
+description: Stop the current TTS in Speaker.bot
+variables: []
+---
 
-::list{type=warning}
-- Check out the [Speaker.bot Integration Guide](/guide/integrations/speakerbot) for information about configuring Speaker.bot
-::
-
-## Details
-Stop the current playing TTS.
-
-## C# Usage
-:csharp-method
+:read-more{to="/guide/integrations/speakerbot"}

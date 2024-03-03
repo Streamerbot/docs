@@ -1,12 +1,7 @@
-# Clear Pending
-Speaker.bot clear pending sub-action.
+---
+title: Clear Pending
+description: Remove all queued messages from Speaker.bot
+variables: []
+---
 
-::list{type=warning}
-- Check out the [Speaker.bot Integration Guide](/guide/integrations/speakerbot) for information about configuring Speaker.bot
-::
-
-## Details
-Clear the current pending queue.
-
-## C# Usage
-:csharp-method
+:read-more{to=/guide/integrations/speakerbot}

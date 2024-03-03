@@ -11,7 +11,7 @@ variables:
   - name: adScheduled
     type: boolean
     description: Is the ad scheduled?
-    value: True
+    value: true
 ---
 
 ## Details

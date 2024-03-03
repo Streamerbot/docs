@@ -1,36 +1,44 @@
-# Speak
-Send a message with text-to-speech (TTS) using Speaker.bot
+---
+title: Speak
+description: Send a message with text-to-speech (TTS) using Speaker.bot
+variables:
+  - name: success
+    description: Was the request successful?
+    type: bool
+    value: true
+  - name: speechFile
+    description: The file containing the speech audio, or `null` if it doesn't exist
+    type: string
+  - name: duration
+    description: The duration of the speech, when the delay option is used
+    type: number
+---
 
 :image-preview
 
-::list{type=warning}
-- Check out the [Speaker.bot Integration Guide](/guide/integrations/speakerbot) for information about configuring Speaker.bot
-::
+:read-more{to="/guide/integrations/speakerbot"}
 
 ## Parameters
-### `Voice Alias`
-Enter the name of the voice alias to use.
+::field-group
+  ::field{name="Voice Alias" type=Text required}
+  The name of the voice alias to use.
+  ::
 
-### `Pass Through Bad Word Filter`
-Toggle the bad word filter on or off.
+  ::field{name="Pass Through Bad Word Filter" type=Toggle}
+  Toggle the bad word filter on or off.
+  ::
 
-### `Silent`
-Will play the TTS silently. Can be used with the delay option if you want to wait before the TTS is finished, but don't have the audio.
+  ::field{name="Silent" type=Toggle}
+  Play the TTS silently
 
-### `Delay`
-With this option the adjacent sub-action will wait for execution till the TTS has finished playing.
+  Can be used with the delay option if you want to wait before the TTS is finished, but don't have the audio.
+  ::
 
-### `Message`
-Enter the message content to send to Speaker.bot.
+  ::field{name="Delay" type=Toggle}
+  Wait for TTS to complete before continuuing execution of the current action
+  ::
 
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`success` | If the speak sub-action was successful `True`/`False`
-`speechFile` | The speech file or when it doesn't exist `null`
-`duration` | The duration of the speech when the delay option is used
-
-## C# Usage
-:csharp-method
+  ::field{name="Message" type=Text required}
+  The message content to send to Speaker.bot.
+  ::
+::
