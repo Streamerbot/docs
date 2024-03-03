@@ -16,19 +16,29 @@ Navigate to **Integrations > Speaker.bot**
 
 ![Speaker.bot Configuration](assets/speakerbot.png)
 
-### `Auto Connect`
-Enable to automatically connect to Speaker.bot when Streamer.bot starts up
+::field-group
+  ::field{name="Auto Connect" type=Toggle}
+    Automatically connect to Speaker.bot when Streamer.bot starts up
+  ::
 
-### `Auto Reconnect`
-Enable to automatically reconnect to Speaker.bot when the connection is disrupted
+  ::field{name="Auto Reconnect" type=Toggle}
+    Automatically reconnect to Speaker.bot when the connection is disrupted
+  ::
 
-### `Address`
-The IP address where Speaker.bot is hosted.
-* Defaults to `127.0.0.1`
+  ::field{name="Address" type=Text default="127.0.0.1"}
+    Enter the host address of the PC running Speaker.bot
 
-### `Port`
-The port Speaker.bot is listening for connections from Streamer.bot.
-* Defaults to `7580`
+    If Speaker.bot and Streamer.bot are on the same machine, keep `127.0.0.1`
+
+    For multi-pc setups you can configure this with another LAN IP address, e.g. `192.168.1.10`
+  ::
+
+  ::field{name="Port" type=Number default=7580}
+    Enter the port of the Speaker.bot WebSocket server.
+
+    This is should match the configuration at `Settings > WebSocket Server` in Speaker.bot
+  ::
+::
 
 ## Usage
 :api-reference-cards{path=speakerbot manifest-path="speaker.bot"}
