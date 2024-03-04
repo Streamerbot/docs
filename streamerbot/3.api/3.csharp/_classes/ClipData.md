@@ -16,5 +16,6 @@ public class ClipData
   public DateTime CreatedAt;
   public string ThumbnailUrl;
   public float Duration;
+  public bool isFeatured; //Available in 0.2.3+
 }
 ```

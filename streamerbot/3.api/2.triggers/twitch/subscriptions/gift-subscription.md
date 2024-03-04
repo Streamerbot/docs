@@ -40,7 +40,7 @@ variables:
     value: False
   - name: tier
     type: string
-    description: The subscription tier<br>`tier 1`, `tier 2`, `tier 3
+    description: The subscription tier<br>`tier 1`, `tier 2`, `tier 3`
     value: tier 1
 commonVariables:
   - TwitchUser
