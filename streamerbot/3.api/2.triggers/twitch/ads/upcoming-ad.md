@@ -21,3 +21,7 @@ variables:
     description: The length of the upcoming ad run, in seconds
     value: 150
 ---
+
+::tip
+This trigger runs at 1 minute intervals starting at 5 minutes until the upcoming ad
+::
