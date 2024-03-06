@@ -25,7 +25,7 @@ You can quickly access persisted globals without this sub-action by wrapping the
     - `Global` - Fetch any general global variable (non user variables)
     - `User (redeemer)` - Fetch a user global for the current user who **activated** the action
     - `User (target)` - Fetch a user global for the `targetUser`
-        - Used in conjunction with the [Get User Info for Target](/api/sub-actions/twitch/get-user-info-for-target) sub-action
+        - Used in conjunction with the [Get User Info for Target](/api/sub-actions/twitch/user/get-user-info-for-target) sub-action
   ::
 
   ::field{name=Persisted type=Toggle default=true}
