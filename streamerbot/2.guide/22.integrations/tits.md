@@ -13,4 +13,4 @@ Integrate Streamer.bot with [Twitch Integrated Throwing System](https://remasuri
 :wip
 
 ## Usage
-:api-reference-cards{path=tits}
+:api-reference-cards{path=integrations/tits manifestPath="Throwing System"}
