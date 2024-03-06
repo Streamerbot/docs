@@ -1,52 +1,65 @@
 ---
 title: Get Global Variable
-description: Globals Sub-Action Reference
-published: true
-date: 2023-04-10T05:37:44.629Z
-tags: 
-editor: markdown
-dateCreated: 2022-10-19T05:54:26.112Z
+description: Fetch the value of a global variable and populate a local argument
+variables:
+  - name: <variableName>
+    description: The variable name and type will be depend on the parameters you selected
+csharpMethods:
+  - GetGlobalVar
 ---
 
-## Overview
-This sub-action copies data from a stored `Global` type variable into a custom `Argument` so it is available to the rest of the action.
+![Preview](assets/global-get.png)
 
-![logic-global-get.png](/logic-global-get.png =400x)
+::tip
+You can quickly access persisted globals without this sub-action by wrapping the name with `~`<br>
+:icon{name=i-mdi-chevron-right} `~myGlobalVariable~`{lang=cs}
+::
 
-## Configuration
-### Source
-Global variables can be stored with or without an associated `userID`
-`Global` source are single variables that have the same data no matter the user context
+:read-more{to=/guide/variables}
 
-`User` source stores a copy of that variable name against each unique user so when data is retrieved it will pull based on the selected context:
+## Parameters
+::field-group
+  ::field{name=Source type=Select default="Global" required}
+    Select the source type for the global variable
 
-User Context | Description
------|-----
-`Redeemer`|Pull the information for the user activating the action
-`Target`|Pull the information for the current `targetUser` - Used in conjunction with the [Get Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) sub-action
+    - `Global` - Fetch any general global variable (non user variables)
+    - `User (redeemer)` - Fetch a user global for the current user who **activated** the action
+    - `User (target)` - Fetch a user global for the `targetUser`
+        - Used in conjunction with the [Get User Info for Target](/api/sub-actions/twitch/get-user-info-for-target) sub-action
+  ::
 
+  ::field{name=Persisted type=Toggle default=true}
+    Toggle between `Persisted` and `Non-Persisted` variables
 
-### Persisted
-Any Global / User variable can be set as `Persisted`. If this flag is set Streamer.bot will save the data into the `Globals.dat` file in the `Data` folder. Data saved in this way will survive application restarts. 
-When fetching data you can select to use the persisted data store or the temporary one. 
-> These data stores are completely separate so data stored in the `Persisted` memory will not be copied to the `Temporary`. Generally speaking you will always want to match your data store
-{.is-warning}
+    - `Persisted` - These variables persist across Streamer.bot restarts
+    - `Non-Persisted` - These variables should be considered **temporary** and will be wiped at shutdown
 
-### Variable Name
-This is the name of the `Global` / `User` variable to fetch
-> This should always be in `camelCase` i.e. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
-{.is-warning}
+    ::warning
+    Ensure you select the correct datastore (persisted or non-persisted) for the variable you are trying to fetch
+    ::
+  ::
 
-### Destination Variable
-This is the name of the custom `Argument` the data will be stored in.
-> It is best practice to always name this something different from the `Global` you are reading from. Not only does this make your workflow easier to read and debug, it can also prevent strange issues with logic and inline functions
-{.is-success}
+  ::field{name="Variable Name" type=Text required}
+    Enter the name of the variable you would like to fetch
 
-### Default Value
-If the specified `Global` / `User` variable does not exist for that context, the Get subaction will create it for you and populate with this value
+    ::warning
+    `Variable Name` must be entered in `camelCase` (the first letter must be lowercase)
+    ::
+  ::
 
----
+  ::field{name="Destination Variable" type=Text required}
+    Enter the name of the local argument you would like to populate
 
-- [<i class="mdi mdi-chevron-left"></i> **Globals Sub-Actions Reference *Go Back***](/Sub-Actions/Globals)
-- [<i class="mdi mdi-earth primary--text"></i> **Global (Set) *Next Up***](/Sub-Actions/Globals/Set-Global-Variable)
-{.btn-grid .my-5}
+    ::tip
+    It is recommended to use a **differet name** than the global variable name
+    ::
+  ::
+
+  ::field{name="Default Value" type=Text}
+    Optionally set a default value to apply if the global variable does not exist
+
+    ::tip
+    This will also set the value of the global variable
+    ::
+  ::
+::

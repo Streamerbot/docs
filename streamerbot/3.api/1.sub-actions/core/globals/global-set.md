@@ -1,50 +1,60 @@
 ---
 title: Set Global Variable
-description: Logic Sub-Action Reference
-published: true
-date: 2023-04-10T05:37:55.834Z
-tags: 
-editor: markdown
-dateCreated: 2022-10-19T05:56:41.484Z
+description: Create or update a global variable
+variables: []
+csharpMethods:
+  - SetGlobalVar
 ---
 
-## Overview
-![logic-global-set.png](/logic-global-set.png =400x)
+![Preview](assets/global-set.png)
 
-## Configuration
-### Destination
+:read-more{to=/guide/variables}
 
-This sub-action stores data in one of the `Global` data stores, valid options are `Global` & `User`
-`User` context is further subdivided into `Redeemer` & `Target`
+## Parameters
+::field-group
+  ::field{name=Destination type=Select default="Global" required}
+    Select the destination type for the global variable
 
-User Context | Description
------|-----
-`Redeemer`| Store data for the user activating the action
-`Target`| Store data for the current `targetUser` - Used in conjunction with the [Get Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) sub-action
+    - `Global` - Set a general global variable (non user variable)
+    - `User (redeemer)` - Set a user global for the current user who **activated** the action
+    - `User (target)` - Set a user global for the `targetUser`
+        - Used in conjunction with the [Get User Info for Target](/api/sub-actions/twitch/get-user-info-for-target) sub-action
+  ::
 
-### Persisted
+  ::field{name=Persisted type=Toggle default=true}
+    Toggle between `Persisted` and `Non-Persisted` variables
 
-Data can be stored in a `Temporary` store or a `Persisted` store. Persisted data will be saved to the `Globals.dat` file in the `Data` folder. Data saved in this way will survive application restarts. 
+    - `Persisted` - These variables persist across Streamer.bot restarts
+    - `Non-Persisted` - These variables should be considered **temporary** and will be wiped at shutdown
 
-### Variable Name
+    ::warning
+    Ensure you select the correct datastore (persisted or non-persisted) for the variable you are trying to set
+    ::
+  ::
 
-This is the name of the `Global` / `User` variable to write to
-> This should always be in `camelCase` i.e. with a lower case initial letter, Streamer.bot can not retrieve data from any store if the initial letter is capitalised
-{.is-warning}
+  ::field{name="Variable Name" type=Text required}
+    Enter the name of the variable you would like to create or modify
 
-### Content
+    ::warning
+    `Variable Name` must be entered in `camelCase` (the first letter must be lowercase)
+    ::
+  ::
 
-The final line provides space to define what to store in the named `Global`
-This has 3 modes:
+  ::field{name="Source" type=Select default=Argument required}
+    Select the source for the value to assign to the global variable
 
-Mode | Description
------|-----
-`Value`| Store the entered value, exactly as written 
-`Increment`| Take the current global value and add the specified value to it (only works for integers)
-`Argument` | Store the contents of a named active argument (do not include the % symbols)
+    - `Argument` - Use the value of an argument
+    - `Value` - Assign any arbitrary value
+    - `Increment` - Add to an existing `int`{lang=cs} variable
+    - `Decrement` - Subtract from an existing `int`{lang=cs} variable
+  ::
 
----
+  ::field{name="Value" type=Text required}
+  Enter the value to assign to the global variable, depends on the selected `Source` type, detailed above
 
-- [<i class="mdi mdi-chevron-left"></i> **Globals Sub-Actions Reference *Go Back***](/Sub-Actions/Globals)
-- [<i class="mdi mdi-earth primary--text"></i> **Global (Get) *Next Up***](/Sub-Actions/Globals/Get-Global-Variable)
-{.btn-grid .my-5}
+  - `Argument` - Enter the name of an existing argument to assign its value to the global variable
+  - `Value` - Enter any value
+  - `Increment` - Enter any `int`{lang=cs}
+  - `Decrement` - Enter any `int`{lang=cs}
+  ::
+::
