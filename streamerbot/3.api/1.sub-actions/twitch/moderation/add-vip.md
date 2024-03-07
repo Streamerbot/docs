@@ -1,6 +1,5 @@
 # Add VIP
 Add a VIP to your Twitch channel.
-:image-preview
 
 ## Parameters
 ### `Source Type`

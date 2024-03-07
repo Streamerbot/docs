@@ -1,6 +1,5 @@
 # Get Latest Charity Campaign
 Fetches your latest Twitch Charity campaign and adds the information as variables
-:image-preview
 
 ## Variables
 :variables-description

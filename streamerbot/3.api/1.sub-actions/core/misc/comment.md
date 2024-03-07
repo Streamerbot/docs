@@ -1,6 +1,7 @@
-# Comment
-Add a comment to your sub-actions list
-:image-preview
+---
+title: Comment
+description: Add a comment to your sub-actions list
+---
 
 ## Parameters
 ### `Comment`

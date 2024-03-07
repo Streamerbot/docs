@@ -1,6 +1,5 @@
 # Delete Guest Star Slot
 Delete a user from a guest star slot.
-:image-preview
 
 ## Parameters
 ### `User Login`

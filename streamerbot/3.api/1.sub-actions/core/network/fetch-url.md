@@ -1,8 +1,11 @@
-# Fetch URL
-Fetch a remote URL and retrieve the response body
-:image-preview{width=400}
+---
+title: Fetch URL
+description: Fetch a remote URL and retrieve the response body
+---
 
-> This sub-action behaves much like the URL commands in Nightbot and many other bots.
+::tip
+This sub-action behaves much like the URL commands in Nightbot and many other bots.
+::
 
 ## Parameters
 ### `URL`
@@ -25,7 +28,7 @@ Modify request headers
 After execution, the `%currentWeather%` variable will be populated with the response body.
 
 ::code-group
-  ```bash [Example Response]
+  ```md [Example Response]
   Weather for Boston, US: Broken clouds with a temperature of 29.6 C (85.2 F). Wind is blowing from the East at 12.96 kph (8.05 mph) and the humidity is 59%
   ```
 ::

@@ -1,6 +1,5 @@
 # Get Guest Star Invites
 Get the guest star invites.
-:image-preview
 
 ## Variables
 :variables-description

@@ -1,6 +1,5 @@
 # Emote Only
 Turn emote only on or off
-:image-preview
 
 ## Parameters
 ### `State`

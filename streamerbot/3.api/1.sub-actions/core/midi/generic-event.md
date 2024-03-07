@@ -1,6 +1,11 @@
-# Generic Event
-Send a [Generic MIDI message](https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message) to your MIDI device
-:image-preview
+---
+title: Generic Event
+description: Send a Generic MIDI message to your MIDI device
+---
+
+::read-more{to="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message"}
+Read more about MIDI messages at **midi.org**
+::
 
 ## Parameters
 ### `Name`

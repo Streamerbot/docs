@@ -6,8 +6,6 @@ csharpMethods:
   - ObsHideSourcesFilters
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   :parameter{name=ObsConnection}

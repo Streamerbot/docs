@@ -1,6 +1,5 @@
 # Get Shield Mode Status
 Get your shield mode status
-:image-preview
 
 ## Variables
 :variables-description

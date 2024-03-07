@@ -1,6 +1,5 @@
 # Set Group Paused State
 Pause or unpause all channel point rewards in a group.
-:image-preview
 
 ## Parameters
 ### `Group`

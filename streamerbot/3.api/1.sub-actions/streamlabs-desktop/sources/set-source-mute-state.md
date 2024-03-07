@@ -1,6 +1,5 @@
 # Set Source Mute State
 Mute or unmute a source
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

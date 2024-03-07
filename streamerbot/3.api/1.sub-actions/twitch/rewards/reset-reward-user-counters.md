@@ -1,6 +1,5 @@
 # Reset Reward User Counters
 Reset all user counters for a reward.
-:image-preview
 
 ## Parameters
 ### `Reward`

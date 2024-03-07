@@ -1,6 +1,5 @@
 # Set Paused State
 Toggle the paused state of a channel point reward.
-:image-preview
 
 ## Parameters
 ### `Reward`

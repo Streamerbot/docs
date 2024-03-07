@@ -1,6 +1,5 @@
 # Get Guest Star Session
 Get the guest star session.
-:image-preview
 
 ## Variables
 :variables-description

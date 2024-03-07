@@ -1,6 +1,5 @@
 # Rotate Source
 Rotate a source
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

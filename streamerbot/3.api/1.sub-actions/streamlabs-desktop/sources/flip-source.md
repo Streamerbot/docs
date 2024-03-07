@@ -1,6 +1,5 @@
 # Flip Source
 Flip a source horizontally, vertically or both
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

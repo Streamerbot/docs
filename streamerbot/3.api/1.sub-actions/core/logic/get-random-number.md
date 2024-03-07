@@ -1,6 +1,7 @@
-# Get Random Number
-Generate a random number for usage in subsequent sub-actions
-:image-preview
+---
+title: Get Random Number
+description: Generate a random number for usage in subsequent sub-actions
+---
 
 ## Parameters
 ### `Type`

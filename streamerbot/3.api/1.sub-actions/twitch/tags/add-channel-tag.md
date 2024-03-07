@@ -1,6 +1,5 @@
 # Add Channel Tag
 Add a tag to your channel.
-:image-preview
 
 ## Parameters
 ### `Tag`

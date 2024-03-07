@@ -6,8 +6,6 @@ csharpMethods:
   - TtsSpeak
 ---
 
-:image-preview
-
 :read-more{to="/guide/integrations/speakerbot"}
 
 ## Parameters

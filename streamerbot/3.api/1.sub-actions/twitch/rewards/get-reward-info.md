@@ -1,6 +1,5 @@
 # Get Reward Info
 Get the info from a reward.
-:image-preview
 
 ## Parameters
 ### `Reward`

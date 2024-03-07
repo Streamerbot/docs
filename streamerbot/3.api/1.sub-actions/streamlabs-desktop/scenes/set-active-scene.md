@@ -1,6 +1,5 @@
 # Set Active Scene
 Change the current scene
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

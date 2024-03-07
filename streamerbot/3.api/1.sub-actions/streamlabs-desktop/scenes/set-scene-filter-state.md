@@ -1,6 +1,5 @@
 # Set Scene Filter State
 Sets the visibility state of a scene filter.
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

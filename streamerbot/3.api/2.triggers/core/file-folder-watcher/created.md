@@ -24,8 +24,6 @@ variables:
     value: Created
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Watcher type=Select}

@@ -1,6 +1,5 @@
 # Set Browser Source Url
 Change the URL of a browser source
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

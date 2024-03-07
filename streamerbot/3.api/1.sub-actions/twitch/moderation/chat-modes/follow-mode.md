@@ -1,6 +1,5 @@
 # Follow Mode
-Turn follow mode on or off 
-:image-preview
+Turn follow mode on or off
 
 ## Parameters
 ### `State`

@@ -1,6 +1,5 @@
 # Update Shield Mode Status
 Update the shield mode status on your channel.
-:image-preview
 
 ## Parameters
 ### State

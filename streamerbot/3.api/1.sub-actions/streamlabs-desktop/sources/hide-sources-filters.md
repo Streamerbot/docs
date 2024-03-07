@@ -1,6 +1,5 @@
 # Hide Source's Filters
 Hide all the filters from a source
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

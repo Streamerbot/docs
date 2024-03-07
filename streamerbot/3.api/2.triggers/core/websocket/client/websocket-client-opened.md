@@ -41,8 +41,6 @@ variables:
     value: '?key=value'
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Client type=Select required}

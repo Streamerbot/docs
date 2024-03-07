@@ -1,6 +1,10 @@
-# Set State of a Random Filter
-Set the state of a random filter
-:image-preview
+---
+title: Set State of a Random Filter
+description: Set the state of a filter randomly selected from a given scene or source
+csharpMethods:
+  - SlobsSetRandomSceneFilterState
+  - SlobsSetRandomSourceFilterState
+---
 
 ## Parameters
 :parameter{name=SlobsConnection}
@@ -21,7 +25,3 @@ Set the state for the random filter
 - `Visible`: Set the filter state to visible
 - `Hidden`: Set the filter state to hidden
 - `Toggle`: Toggle the filter state between visible and hidden
-
-## C# Usage
-:csharp-method{name=SlobsSetRandomSceneFilterState}
-:csharp-method{name=SlobsSetRandomSourceFilterState}

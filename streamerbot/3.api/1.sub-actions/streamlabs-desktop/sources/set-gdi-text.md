@@ -1,6 +1,5 @@
 # Set GDI Text
 Change the text value of GDI Text Source
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

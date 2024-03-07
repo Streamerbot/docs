@@ -1,6 +1,5 @@
 # Get Follow Age Info for Target
 Get the follow age from a Twitch user
-:image-preview{width=400}
 
 ## Parameters
 ### `Source Type`

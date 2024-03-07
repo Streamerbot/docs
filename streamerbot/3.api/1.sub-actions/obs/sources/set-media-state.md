@@ -6,8 +6,6 @@ csharpMethods:
   - ObsSetMediaState
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   :parameter{name=ObsConnection}

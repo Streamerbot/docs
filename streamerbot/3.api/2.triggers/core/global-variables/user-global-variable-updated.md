@@ -1,7 +1,7 @@
 ---
-title: Global Variable Updated
-description: Triggered when a global variable has been updated
-version: 0.2.1
+title: User Global Variable Updated
+description: Triggered when a user global variable has been updated
+version: 0.2.3
 variables:
   - name: global.name
     type: string
@@ -28,8 +28,8 @@ variables:
 ## Parameters
 ::field-group
   ::field{name="Variable Name" type=Text}
-    Input the name of the global variable
+    Input the name of the user global variable
 
-    - Leaving the variable name empty is considered a catch-all and this will trigger on **any** global variable
+    - Leaving the variable name empty is considered a catch-all and this will trigger on **any** user global variable
   ::
 ::

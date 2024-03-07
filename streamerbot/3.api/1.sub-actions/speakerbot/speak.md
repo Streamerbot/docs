@@ -14,8 +14,6 @@ variables:
     type: number
 ---
 
-:image-preview
-
 :read-more{to="/guide/integrations/speakerbot"}
 
 ## Parameters

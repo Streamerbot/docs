@@ -14,8 +14,6 @@ csharpMethods: []
 
 This sub-action is useful if you want to output a list of commands to your chat.
 
-:image-preview
-
 ## Example Usage
 ### Import Code
 ``` [sb-import]

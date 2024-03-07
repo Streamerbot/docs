@@ -27,8 +27,6 @@ variables:
     description: The local icon path of the toast
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name="Toast Id" type=Text}

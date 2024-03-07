@@ -1,14 +1,15 @@
 ---
+title: Set to Default
+description: Set Lumia Stream to its default state
 version: 0.1.11
+parameters: []
+csharpMethods:
+  - LumiaSetToDefault
 ---
 
-# Set to Default
-Set Lumia to its default state
-:image-preview{width=250}
-
 ## Configuration
-Configure your default state settings in `Default State -> Default Light State`
-![Lumia Stream Default State](assets/lumia-defaults.png){width=700}
+::navigate
+Navigate to `Default State -> Default Light State` in Lumia to configure your default state settings
+::
 
-## C# Usage
-:csharp-method{name=LumiaSetToDefault}
+![Lumia Stream Default State](assets/lumia-defaults.png){width=700}

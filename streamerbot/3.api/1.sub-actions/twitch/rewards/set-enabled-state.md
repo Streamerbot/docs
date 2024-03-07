@@ -1,6 +1,5 @@
 # Set Enabled State
 Enable or disable a channel point reward.
-:image-preview
 
 ## Parameters
 ### `Reward`

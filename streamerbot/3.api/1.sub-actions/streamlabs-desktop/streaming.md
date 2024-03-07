@@ -1,6 +1,7 @@
-# Streaming
-Change your streaming status
-:image-preview
+---
+title: Streaming
+description: Change your streaming status
+---
 
 ## Parameters
 :parameter{name=SlobsConnection}

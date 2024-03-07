@@ -1,6 +1,11 @@
-# Control Change
-Send a [MIDI Control Change](https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2) message with Streamer.bot
-:image-preview
+---
+title: Control Change
+description: Send a MIDI Control Change message with Streamer.bot
+---
+
+::read-more{to="https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2"}
+Read more about MIDI messages at **midi.org**
+::
 
 ## Parameters
 ### `Name`

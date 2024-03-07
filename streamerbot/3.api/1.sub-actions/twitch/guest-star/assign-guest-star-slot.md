@@ -1,6 +1,5 @@
 # Assign Guest Star Slot
 Assign a user in a guest star slot.
-:image-preview
 
 ## Parameters
 ### `User Login`

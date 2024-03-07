@@ -1,6 +1,5 @@
 # Update Guest Star Slot
 Update a guest star slot.
-:image-preview
 
 ## Parameters
 ### `Source Slot`

@@ -1,6 +1,5 @@
 # Update Guest Star Slot Settings
 Update the guest star slot settings.
-:image-preview
 
 ## Parameters
 ### `Slot`

@@ -1,6 +1,5 @@
 # Update Redemption Status
 Set a reward redemption as fulfilled or canceled.
-:image-preview
 
 ::callout{icon=i-mdi-bookmark color=green}
 A redeem must be originally created by Streamer.bot for this sub-action to work.

@@ -56,8 +56,6 @@ variables:
     description: A comma separated list of all tags
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name="Source Type" type=Select}

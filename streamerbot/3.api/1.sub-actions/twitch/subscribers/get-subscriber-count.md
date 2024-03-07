@@ -1,6 +1,5 @@
 # Get Subscriber Count
 Get your current subscriber count.
-:image-preview{width=400}
 
 ## Variables
 Name | Description
