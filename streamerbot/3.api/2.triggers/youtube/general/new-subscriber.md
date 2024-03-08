@@ -8,6 +8,6 @@ commonVariables:
 ---
 
 ::warning
-  **This trigger relies on event data from StreamElements** 
+  **This trigger relies on event data from StreamElements** <br>
   :icon{name="i-mdi-chevron-right"} For this trigger to work you must configure the StreamElements integration in Streamer.bot
 ::
