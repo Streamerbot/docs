@@ -1,6 +1,5 @@
 # Set Channel Tags
 Set the tags on your channel.
-:image-preview
 
 ## Parameters
 ### `Tags`

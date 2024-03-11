@@ -1,6 +1,5 @@
 # Set Channel Game
 Update the current game category of your Twitch channel
-:image-preview
 
 ## Parameters
 ### `Source`

@@ -6,8 +6,6 @@ csharpMethods:
   - ObsSetSourceMuteState
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   :parameter{name=ObsConnection}

@@ -1,6 +1,7 @@
-# Get Quote
-Fetch stored quotes for usage in subsequent sub-actions
-:image-preview
+---
+title: Get Quote
+description: Fetch stored quotes for usage in subsequent sub-actions
+---
 
 ## Parameters
 ### `Type`

@@ -1,6 +1,5 @@
 # Remove VIP
 Remove a VIP from your Twitch channel.
-:image-preview
 
 ## Parameters
 ### `Source Type`

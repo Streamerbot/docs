@@ -1,6 +1,5 @@
 # Update Channel Guest Star Settings
 Update the channel guest star settings.
-:image-preview
 
 ## Parameters
 ### `Moderator Send Live Enabled`

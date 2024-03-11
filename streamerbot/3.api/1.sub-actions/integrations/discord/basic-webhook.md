@@ -4,8 +4,6 @@ description: Post messages to a Discord channel with webhooks
 version: 0.1.14
 ---
 
-:image-preview{width=400}
-
 ::list
 - If you have not already configured a Webhook for your Discord server, check out the
 [Discord configuration guide](/guide/integrations/discord) to learn how.

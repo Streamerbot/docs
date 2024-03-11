@@ -1,6 +1,5 @@
 # Add Moderator
 Add a moderator to your Twitch channel.
-:image-preview
 
 ## Parameters
 ### `Source Type`

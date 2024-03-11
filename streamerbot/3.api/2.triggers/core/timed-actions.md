@@ -4,8 +4,6 @@ description: Trigger for a Timed Action
 variables: []
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Timers type=Select}

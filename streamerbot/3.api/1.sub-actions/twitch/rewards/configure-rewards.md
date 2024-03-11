@@ -1,6 +1,5 @@
 # Configure Rewards
 Enable, disable and pause multiple rewards.
-:image-preview
 
 ## Parameters
 ### `Disable not configured rewards`

@@ -69,8 +69,6 @@ variables:
 Check out the [MIDI Configuration Guide](/guide/midi) for details on configuring your MIDI devices
 ::
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Device type=Select required}

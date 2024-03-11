@@ -32,8 +32,6 @@ variables:
     value: Renamed
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Watcher type=Select}

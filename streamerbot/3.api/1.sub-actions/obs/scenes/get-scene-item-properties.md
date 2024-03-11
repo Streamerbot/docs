@@ -95,8 +95,6 @@ csharpMethods:
   - ObsGetSceneItemProperties
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   :parameter{name=ObsConnection}

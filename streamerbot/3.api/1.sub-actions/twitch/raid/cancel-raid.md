@@ -1,6 +1,5 @@
 # Cancel Raid
 Cancel the current raid.
-:image-preview
 
 ## Variables
 :variables-description{empty}

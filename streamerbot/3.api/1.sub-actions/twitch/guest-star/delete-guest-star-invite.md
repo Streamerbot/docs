@@ -1,6 +1,5 @@
 # Delete Guest Star Invite
 Delete an invite for a guest star.
-:image-preview
 
 ## Parameters
 ### `User Login`

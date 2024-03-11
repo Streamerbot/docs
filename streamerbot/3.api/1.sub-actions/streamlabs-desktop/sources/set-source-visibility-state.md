@@ -1,8 +1,6 @@
 # Set Source Visibility State
 Show or hide a source
 
-:image-preview
-
 ## Parameters
 :parameter{name=SlobsConnection}
 

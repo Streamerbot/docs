@@ -1,6 +1,5 @@
 # Slow Mode
 Turn slow mode on or off
-:image-preview
 
 ## Parameters
 ### `State`

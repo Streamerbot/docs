@@ -6,8 +6,6 @@ csharpMethods:
   - TriggerEvent
 ---
 
-:image-preview
-
 ## Details
 This event can **only** be triggered with the [`CPH.TriggerEvent`](#csharp-usage) C# Method.
 

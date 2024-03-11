@@ -1,6 +1,5 @@
 # Send Announcement to Channel
 Send an announcement to your Twitch channel
-:image-preview{width=400}
 
 ## Parameters
 ### `Preferred Account`

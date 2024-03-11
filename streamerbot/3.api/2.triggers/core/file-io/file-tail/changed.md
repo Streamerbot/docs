@@ -14,8 +14,6 @@ variables:
     description: The line of the file tail
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Watcher type=Select}

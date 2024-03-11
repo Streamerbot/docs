@@ -1,6 +1,5 @@
 # Set Random Group Source Visible
 Set a random source from a group visible
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

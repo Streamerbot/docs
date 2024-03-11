@@ -20,8 +20,6 @@ variables:
     description: The session id of the client
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Server type=Select required}

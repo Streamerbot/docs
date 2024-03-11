@@ -8,8 +8,6 @@ csharpMethods:
   - ObsReplayBufferSave
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   :parameter{name=ObsConnection}

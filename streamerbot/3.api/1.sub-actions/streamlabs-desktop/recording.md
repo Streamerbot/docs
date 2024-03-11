@@ -1,6 +1,13 @@
-# Recording
-Change your recording status
-:image-preview
+---
+title: Recording
+description: Change your current recording status
+variables: []
+csharpMethods:
+  - SlobsStopRecording
+  - SlobsStartRecording
+  - SlobsPauseRecording
+  - SlobsResumeRecording
+---
 
 ## Parameters
 :parameter{name=SlobsConnection}
@@ -12,9 +19,3 @@ Choose the recording state
 - `Stop`: Stop your recording
 - `Pause`: Pause your recording
 - `Resume`: Resume your recording
-
-## C# Usage
-:csharp-method{name=SlobsStopRecording}
-:csharp-method{name=SlobsStartRecording}
-:csharp-method{name=SlobsPauseRecording}
-:csharp-method{name=SlobsResumeRecording}

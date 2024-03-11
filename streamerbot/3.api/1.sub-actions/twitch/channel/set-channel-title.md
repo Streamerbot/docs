@@ -1,6 +1,5 @@
 # Set Channel Title
 Update the current title of your Twitch channel
-:image-preview
 
 ## Parameters
 ### `Title`

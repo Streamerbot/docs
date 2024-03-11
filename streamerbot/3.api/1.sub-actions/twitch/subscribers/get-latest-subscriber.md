@@ -1,6 +1,5 @@
 # Get Latest Subscriber
 Get the latest subscriber on your channel.
-:image-preview{width=400}
 
 ## Variables
 Name | Description

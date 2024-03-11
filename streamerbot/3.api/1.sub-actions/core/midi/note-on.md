@@ -1,6 +1,11 @@
-# Note On
-Send a [MIDI Note On](https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message) message with Streamer.bot
-:image-preview
+---
+title: Note On
+description: Send a MIDI Note On message with Streamer.bot
+---
+
+::read-more{to="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message"}
+Read more about MIDI messages at **midi.org**
+::
 
 ## Parameters
 ### `Name`

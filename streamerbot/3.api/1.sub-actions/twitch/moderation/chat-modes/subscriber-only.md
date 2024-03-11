@@ -1,6 +1,5 @@
 # Subscriber Only
 Turn subscriber only on or off
-:image-preview
 
 ## Parameters
 ### `State`

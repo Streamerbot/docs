@@ -1,6 +1,7 @@
-# Set Argument
-Define custom arguments for use in subsequent sub-actions
-:image-preview
+---
+title: Set Argument
+description: Define custom arguments for use in subsequent sub-actions
+---
 
 ## Parameters
 ### `Variable Name`

@@ -1,6 +1,5 @@
 # Get Current Scene
 Get the current scene
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

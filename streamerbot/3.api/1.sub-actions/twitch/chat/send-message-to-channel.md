@@ -1,6 +1,5 @@
 # Send Message to Channel
 Send a formatted message to your Twitch chat
-:image-preview{width=400}
 
 ## Parameters
 ### `Preferred Account`

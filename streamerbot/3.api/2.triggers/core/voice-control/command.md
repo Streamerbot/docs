@@ -29,8 +29,6 @@ variables:
     description: Detected Trigger command
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name="Voice Control" type=Select}

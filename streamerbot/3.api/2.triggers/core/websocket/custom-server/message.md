@@ -23,8 +23,6 @@ variables:
     description: The received data from the client
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Server type=Select required}

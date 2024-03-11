@@ -6,8 +6,6 @@ csharpMethods:
   - Wait
 ---
 
-:image-preview
-
 ## Parameters
 ::field-group
   ::field{name=Delay type=Number required}

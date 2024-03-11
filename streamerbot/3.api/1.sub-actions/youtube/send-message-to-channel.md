@@ -1,6 +1,5 @@
 # Send Message to Channel
 Send a chat message to your YouTube channel
-:image-preview
 
 ## Parameters
 ### `Message`

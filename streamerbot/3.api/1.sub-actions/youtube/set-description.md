@@ -1,6 +1,5 @@
 # Set Description
 Update the description of your YouTube stream
-:image-preview
 
 ## Parameters
 ### `Description`

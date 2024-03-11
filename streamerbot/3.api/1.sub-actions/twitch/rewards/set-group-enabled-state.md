@@ -1,6 +1,5 @@
 # Set Group Enabled State
 Enable or disable all channel point rewards from a group.
-:image-preview
 
 ## Parameters
 ### `Group`

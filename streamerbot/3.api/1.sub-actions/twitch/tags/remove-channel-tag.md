@@ -1,6 +1,5 @@
 # Remove Channel Tag
 Remove a tag from your channel.
-:image-preview
 
 ## Parameters
 ### `Tag`

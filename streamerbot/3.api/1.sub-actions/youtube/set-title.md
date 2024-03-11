@@ -1,6 +1,5 @@
 # Set Title
 Update the title of your YouTube stream
-:image-preview
 
 ## Parameters
 ### `Description`

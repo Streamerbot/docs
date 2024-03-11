@@ -1,6 +1,5 @@
 # Set Source Filter State
 Sets the visibility state of a source filter.
-:image-preview
 
 ## Parameters
 :parameter{name=SlobsConnection}

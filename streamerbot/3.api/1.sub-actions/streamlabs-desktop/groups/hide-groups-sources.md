@@ -1,6 +1,9 @@
-# Hide Group's Sources
-Hide all the sources from a group
-:image-preview
+---
+title: Hide Group's Sources
+description: Hide all the sources from a group
+csharpMethods:
+  - SlobsHideGroupsSources
+---
 
 ## Parameters
 :parameter{name=SlobsConnection}
@@ -14,6 +17,3 @@ Select the scene from this dropdown list, you can also manually enter a scene na
 Select the group from this dropdown list, you can also manually enter a group name.
 
 - Type: `String`
-
-## C# Usage
-:csharp-method{name=SlobsHideGroupsSources}

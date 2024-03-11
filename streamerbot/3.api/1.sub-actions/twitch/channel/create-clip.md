@@ -1,6 +1,5 @@
 # Create Clip
 Create a 30-second Twitch Clip
-:image-preview
 
 ::callout{color=amber icon=i-mdi-lightbulb}
 Due to Twitch API restrictions, the generated clip will always be 30 seconds long and will be titled to match your current stream title.

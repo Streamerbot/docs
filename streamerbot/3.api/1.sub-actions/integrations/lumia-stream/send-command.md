@@ -1,17 +1,17 @@
 ---
+title: Send Command
+description: Send a command to Lumia Stream
 version: 0.1.11
+parameters:
+  - name: Command
+    description: |
+      Select the command to execute
+
+      ::tip
+      Navigate to `Control Center -> Shortcuts` in Lumia Stream to view and edit your commands
+      ::
+    type: Select
+    required: true
+csharpMethods:
+  - LumiaSendCommand
 ---
-
-# Send Command
-Send a command to Lumia Stream
-:image-preview
-
-> You can view and edit commands by navigating to `Control Center -> Shortcuts`
-![Lumia Stream Commands View](assets/lumia-commands.png){width=700}
-
-## Parameters
-### `Command`
-Select the command to execute
-
-## C# Usage
-:csharp-method{name=LumiaSendCommand}

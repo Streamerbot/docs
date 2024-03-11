@@ -72,8 +72,6 @@ variables:
   value: "2024-03-02 13:00:47"
 ---
 
-:image-preview
-
 ::warning
   If a user has not configured their pronouns on alejo.io, a single variable will be populated:<br>
   :icon{name=i-mdi-chevron-right} `userFound`{lang=cs}: `false`{lang=cs}

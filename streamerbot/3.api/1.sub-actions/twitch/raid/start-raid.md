@@ -1,6 +1,5 @@
 # Start Raid
 Start a raid.
-:image-preview
 
 ## Parameters
 ### `User Login`
