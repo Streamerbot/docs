@@ -39,9 +39,13 @@ Configuration options available under the `Settings` tab are outlined below:
   ::
 
   ::field{name="Keep Instance Active" type=Toggle}
-  By ticking this option, your code will be kept alive for the lifetime of the Streamer.bot application.
+    By ticking this option, your code will be kept alive for the lifetime of the Streamer.bot application.
 
-  This will allow you to **preserve data between calls** to this sub-action.
+    This will allow you to **preserve data between calls** to this sub-action.
+
+    ::tip
+    As of Streamer.bot v0.2.3, this option has been removed and is enabled by default.
+    ::
   ::
 
   ::field{name="Precompile on Application Start" type=Toggle}
