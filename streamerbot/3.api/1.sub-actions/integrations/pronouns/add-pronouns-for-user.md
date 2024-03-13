@@ -77,6 +77,10 @@ variables:
   :icon{name=i-mdi-chevron-right} `userFound`{lang=cs}: `false`{lang=cs}
 ::
 
+::tip
+Secondary pronouns are **not supported**
+::
+
 ## Parameters
 ::field-group
   ::field{name="User Login" type=Text required}
