@@ -13,7 +13,7 @@ variables:
     description: Is the stream live?
     value: True
   - name: users
-    type: Dictionary<TwitchUser>
+    type: List<Dictionary<string, object>>
     description: A C# accessible list of users present in chat
     variables:
       - name: id
@@ -35,7 +35,27 @@ variables:
       - name: isSubscribed
         type: boolean
         description: Is the user subscribed?
-        value: True
+        value: true
+      - name: title
+        type: string
+        description: Stream title, if the user is currently live
+        value: 'My Stream'
+      - name: gameId
+        description: Stream game ID, if the user is currently live
+        type: string
+        value: '2491012'
+      - name: gameName
+        description: Stream game name, if the user is currently live
+        type: string
+        value: 'Just Chatting'
+      - name: viewerCount
+        description: Stream viewer count, if the user is currently live
+        type: number
+        value: 12
+      - name: startedAt
+        description: Stream start time, if the user is currently live
+        type: DateTime
+        value: 8/4/2023 10:56:06 AM
 ---
 
 ## Details
