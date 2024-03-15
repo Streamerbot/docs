@@ -25,10 +25,10 @@ Special thanks to **Ruirize** for the development.
 Download the HTML Overlay application from and unzip the contents to your desired location.
 
 ::card-group
-  ::card{icon=i-mdi-download title="HTML Overlay" to="https://cdn.streamer.bot/html-overlay/HTML%20Overlay%20v1.0.1.zip" target=_blank}
-  `v1.0.1`
+  ::card{icon=i-mdi-download title="HTML Overlay" to="https://cdn.streamer.bot/html-overlay/HTML%20Overlay%20v1.1.0.zip" target=_blank}
+  `v1.1.0`
   <br>
-  _Updated 2023-12-21_
+  _Updated 2023-03-15_
   ::
 ::
 
