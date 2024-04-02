@@ -6,8 +6,6 @@ csharpMethods:
   - SetGlobalVar
 ---
 
-![Preview](assets/global-set.png)
-
 :read-more{to=/guide/variables}
 
 ## Parameters
