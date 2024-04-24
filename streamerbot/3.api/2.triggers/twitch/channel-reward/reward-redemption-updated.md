@@ -34,16 +34,16 @@ variables:
     value: https://streamer\.bot/Test Escaped Text \$\$\$
 commonVariables:
   - TwitchUser
+parameters:
+  - name: Reward
+    type: Select
+    required: true
+    default: Any
+    description: |
+      Select a configured Twitch reward
+      - Select `Any` to trigger on **any reward**
+  
+      ::tip
+      You can quickly register a new reward by clicking the `Create Reward` button!
+      ::
 ---
-
-## Parameters
-::field-group
-  ::field{name=Reward type=Select required}
-    Select a configured Twitch reward
-    - Select `Any` to trigger on **any reward**
-
-    ::tip{color=amber}
-    You can quickly register a new reward by clicking the `Create Reward` button!
-    ::
-  ::
-::
