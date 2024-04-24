@@ -27,11 +27,11 @@ variables:
   - name: rewardStatus
     type: string
     description: Whether the reward was marked as complete/rejected.
-    value: `fulfilled` or `canceled`
+    value: 'fulfilled | canceled'
   - name: rawInputEscaped
     type: string
     description: The text entered by the user (if enabled)
-    value: https://streamer\.bot/Test Escaped Text \$\$\$
+    value: 'https://streamer\.bot/Test Escaped Text \$\$\$'
 commonVariables:
   - TwitchUser
 parameters:
@@ -41,8 +41,9 @@ parameters:
     default: Any
     description: |
       Select a configured Twitch reward
+
       - Select `Any` to trigger on **any reward**
-  
+
       ::tip
       You can quickly register a new reward by clicking the `Create Reward` button!
       ::
