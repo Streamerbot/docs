@@ -81,39 +81,39 @@ variables:
     type: string
     description: SKU number of product
     value: Z3YD-8CTV00S
-  - name: fw.variants[0].image
+  - name: fw.variants[\#].image
     type: string
     description: Link of the first product image
     value: https://cdn.staging.fourthwall.com/customization/sh_7ad0c438-beda-4779-a885-0dc325a755c1/5a125858-0e0c-4099-996f-db61cbd62f8e.jpeg
-  - name: fw.variants[0].unitPrice
+  - name: fw.variants[\#].unitPrice
     type: number
     description: Price of product
     value: 5
-  - name: fw.variants[0].currencyCode
+  - name: fw.variants[\#].currencyCode
     type: string
     description: Currency code
     value: USD
-  - name: fw.variants[0].quantity
+  - name: fw.variants[\#].quantity
     type: string
     description: Quantity of product in order
     value: 2
-  - name: fw.variants[0].attributes.description
+  - name: fw.variants[\#].attributes.description
     type: string
     description: Product description
     value: White, S
-  - name: fw.variants[0].attributes.color
+  - name: fw.variants[\#].attributes.color
     type: string
     description: Color of product
     value: White
-  - name: fw.variants[0].attributes.colorSwatch
+  - name: fw.variants[\#].attributes.colorSwatch
     type: string
     description: Hex color of product
     value: \#FFFFFF
-  - name: fw.variants[0].attributes.size
+  - name: fw.variants[\#].attributes.size
     type: string
     description: Size of product
     value: S
-  - name: fw.variants[0].stock
+  - name: fw.variants[\#].stock
     type: string
     description: Current stock of product
     value: 0
