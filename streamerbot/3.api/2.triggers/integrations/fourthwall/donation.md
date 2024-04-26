@@ -8,17 +8,17 @@ variables:
     description: The DateTime of the donation in UTC
   - name: fw.donationId
     type: string
-    description: Id of the donation
+    description: Donation id
   - name: fw.shopId
     type: string
-    description: Id of the shop
+    description: Shop id
     value: sh_7ad0c438-beda-4779-a885-0dc325a755c1
   - name: fw.username
     type: string
-    description: Username of the supporter
+    description: Username
   - name: fw.email
     type: string
-    description: E-mail adress of the supporter
+    description: Supporter e-mail adress
     value: support@fourthwall.com
   - name: fw.message
     type: string
@@ -26,15 +26,15 @@ variables:
     value: message from supporter
   - name: fw.amount
     type: number
-    description: Amount of donation
+    description: Amount
     value: 5
   - name: fw.currency
     type: string
-    description: Donation currency
+    description: Currency
     value: USD
   - name: fw.status
     type: string
-    description: Status of the donation
+    description: Status
     value: COMPLETED
 ---
 

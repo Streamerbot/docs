@@ -1,6 +1,6 @@
 ---
-title: Order Placed
-description: Trigger for a FourthWall Order being placed
+title: Order Updated
+description: Trigger for a FourthWall Order being updated (eg. Shipped)
 version: 0.2.3
 variables:
   - name: fw.createdAt
@@ -11,44 +11,44 @@ variables:
     description: The DateTime of the updated status in UTC
   - name: fw.orderId
     type: string
-    description: Id of the donation
+    description: Order id
   - name: fw.shopId
     type: string
-    description: Id of the shop
+    description: Shop id
     value: sh_7ad0c438-beda-4779-a885-0dc325a755c1
   - name: fw.friendly
     type: string
-    description: Friendly Id
+    description: Friendly id
     value: F2LGPYCV
   - name: fw.checkoutId
     type: string
-    description: Id of check out
+    description: Check out id
   - name: fw.status
     type: string
-    description: Status of the order
+    description: Order Status
     value: SHIPPED
   - name: fw.email
     type: string
-    description: E-mail adress of the supporter
+    description: Supporter e-mail adress
     value: support@fourthwall.com
   - name: fw.emailMarketingOptIn
     type: boolean
     description: If user opted in to email marketing
   - name: fw.username
     type: string
-    description: Username of the supporter
+    description: Username
   - name: fw.statmessageus
     type: string
     description: Attached message
     value: message from supporter
   - name: fw.currency
     type: string
-    description: Donation currency
-    value: USD
+    description: Currency
+    value: 'USD'
   - name: fw.subtotal
     type: number
-    description: Subtotal of order
-    value: 10
+    description: Subtotal
+    value: '10'
   - name: fw.shipping
     type: number
     description: Shipping Cost
@@ -69,53 +69,53 @@ variables:
     type: number
     description: Order total amount
     value: 17
-  - name: fw.variants[\#].id
+  - name: fw.variants[#].id
     type: string
-    description: Product Id
+    description: Product id
     value: b2c201d3-8104-4b2a-b2c9-1f6b335b650a
-  - name: fw.variants[\#].name
+  - name: fw.variants[#].name
     type: string
     description: Product name
     value: New T-shirt
-  - name: fw.variants[\#].sku
+  - name: fw.variants[#].sku
     type: string
-    description: SKU number of product
+    description: SKU
     value: Z3YD-8CTV00S
-  - name: fw.variants[\#].image
+  - name: fw.variants[#].image
     type: string
-    description: Link of the first product image
+    description: Url of first product image
     value: https://cdn.staging.fourthwall.com/customization/sh_7ad0c438-beda-4779-a885-0dc325a755c1/5a125858-0e0c-4099-996f-db61cbd62f8e.jpeg
-  - name: fw.variants[\#].unitPrice
+  - name: fw.variants[#].unitPrice
     type: number
-    description: Price of product
+    description: Unit price
     value: 5
-  - name: fw.variants[\#].currencyCode
+  - name: fw.variants[#].currencyCode
     type: string
     description: Currency code
     value: USD
-  - name: fw.variants[\#].quantity
+  - name: fw.variants[#].quantity
     type: string
-    description: Quantity of product in order
+    description: Quantity
     value: 2
-  - name: fw.variants[\#].attributes.description
+  - name: fw.variants[#].attributes.description
     type: string
-    description: Product description
+    description: Description
     value: White, S
-  - name: fw.variants[\#].attributes.color
+  - name: fw.variants[#].attributes.color
     type: string
-    description: Color of product
+    description: Color
     value: White
-  - name: fw.variants[\#].attributes.colorSwatch
+  - name: fw.variants[#].attributes.colorSwatch
     type: string
-    description: Hex color of product
-    value: \#FFFFFF
-  - name: fw.variants[\#].attributes.size
+    description: Hex color
+    value: '#FFFFFF'
+  - name: fw.variants[#].attributes.size
     type: string
-    description: Size of product
+    description: Size
     value: S
-  - name: fw.variants[\#].stock
+  - name: fw.variants[#].stock
     type: string
-    description: Current stock of product
+    description: Current stock
     value: 0
   - name: fw.source
     type: string
