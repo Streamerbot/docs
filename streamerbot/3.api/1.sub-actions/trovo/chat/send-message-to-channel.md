@@ -11,4 +11,4 @@ Select the Twitch account to use when sending the message:
 Enter the text you would like to send
 
 ## C# Usage
-:csharp-method
+:csharp-method{name=SendTrovoMessage}
