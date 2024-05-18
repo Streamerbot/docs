@@ -11,7 +11,7 @@ dateCreated: 2021-11-02T03:47:06.237Z
 ## Overview
 Send keyboard presses to the current active application, or to global hotkeys.
 
-![sub-action-keyboard-press-001.png](/sub-action-keyboard-press-001.png =400x)
+![sub-action-keyboard-press.png](../assets/sub-action-keyboard-press.png)
 
 ## Configuration
 ### Key
