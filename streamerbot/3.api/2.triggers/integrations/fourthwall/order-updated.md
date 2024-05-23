@@ -71,7 +71,7 @@ variables:
     value: 17
   - name: fw.variants[#].id
     type: string
-    description: Product id
+    description: Product id<br># is a number starting at 0 for first product
     value: b2c201d3-8104-4b2a-b2c9-1f6b335b650a
   - name: fw.variants[#].name
     type: string

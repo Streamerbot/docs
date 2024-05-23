@@ -39,7 +39,7 @@ variables:
     value: https://cdn.staging.fourthwall.com/customization/sh_7ad0c438-beda-4779-a885-0dc325a755c1/5a125858-0e0c-4099-996f-db61cbd62f8e.jpeg
   - name: fw.variants[#].id
     type: string
-    description: Id
+    description: Id<br># is a number starting at 0 for first variant of product
     value: e3c12d65-a3aa-417e-a289-dabf71a87194
   - name: fw.variants[#].name
     type: string
