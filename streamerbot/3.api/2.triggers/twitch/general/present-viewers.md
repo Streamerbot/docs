@@ -19,7 +19,7 @@ variables:
       - name: id
         type: string
         description: The user id of the user
-        value: a126e8a8-43f7-4a14-8990-e8c3feea76d8
+        value: 12345678
       - name: userName
         type: string
         description: The user name of the user

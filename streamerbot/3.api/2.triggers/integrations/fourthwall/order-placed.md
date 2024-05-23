@@ -6,7 +6,7 @@ variables:
   - name: fw.createdAt
     type: DateTime
     description: The DateTime of the placed order in UTC
-  - name: fw.UpdatedAt
+  - name: fw.updatedAt
     type: DateTime
     description: The DateTime of the updated status in UTC
   - name: fw.orderId
@@ -71,7 +71,7 @@ variables:
     value: 17
   - name: fw.variants[#].id
     type: string
-    description: Product id
+    description: Product id<br># is a number starting at 0 for first product
     value: b2c201d3-8104-4b2a-b2c9-1f6b335b650a
   - name: fw.variants[#].name
     type: string

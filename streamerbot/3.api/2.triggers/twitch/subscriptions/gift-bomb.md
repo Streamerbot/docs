@@ -11,10 +11,22 @@ variables:
     type: number
     description: The total number of subscriptions gifted by the user.
     value: 42
-  - name: fromGiftBomb
-    type: boolean
-    description: Are the subscriptions from a gift bomb?
-    value: True
+  - name: gift.cumulativeMonths.#
+    type: number
+    description: Cumulative months the user has been subscribed for.<br># is a number starting at 0 til totalGifts - 1
+    value: 1
+  - name: gift.recipientUser.#
+    type: string
+    description: Display name of the gifted user<br># is a number starting at 0 til totalGifts - 1
+    value: User0
+  - name: gift.recipientUserName#
+    type: string
+    description: Login name of the gifted user<br># is a number starting at 0 til totalGifts - 1
+    value: user0
+  - name: gift.recipientId#
+    type: string
+    description: Id of the gifted user<br># is a number starting at 0 til totalGifts - 1
+    value: 123456789
   - name: anonymous
     type: boolean
     description: Is the gift bomb anonymous?
