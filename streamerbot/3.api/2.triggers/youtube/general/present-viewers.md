@@ -37,3 +37,10 @@ variables:
 commonVariables:
   - YouTubeBroadcaster
 ---
+
+## Notes
+The YouTube present viewer acts more like a chat activity tracker. There is no "Live-Update" option for YouTube as the API does not provide the viewer list.
+
+The slider behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present.  The trigger will be executed every minute.
+
+The default setting is the slider set to `5` minutes.
