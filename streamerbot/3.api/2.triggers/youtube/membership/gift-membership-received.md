@@ -6,7 +6,7 @@ variables:
     type: string
     description: The id of the membership gifting event
   - name: tier
-    type: number
+    type: string
     description: The tier the gifted user received
   - name: gifterUser
     type: string
