@@ -10,6 +10,7 @@ variables:
     description: The number of memberships gifted
     value: 12
   - name: tier
+    type: string
     description: The tier of memberships gifted
 commonVariables:
   - YouTubeUser
