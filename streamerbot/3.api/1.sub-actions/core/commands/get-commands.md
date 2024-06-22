@@ -19,6 +19,9 @@ This sub-action is useful if you want to output a list of commands to your chat.
   ::field{name=Group type=Dropdown required}
     Specify the command group or select `All`.
   ::
+  ::field{name="Variable Name" type=Text required}
+    Specify the variable in which the commands are getting saved to.
+  ::
   ::field{name="Include All" type=Checkbox}
     Include all commands regardless of their `Include` option checked or not. When paired with the `Only Has Permission` option it will only get the commands the user is permitted to use.
   ::
