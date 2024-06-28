@@ -6,8 +6,8 @@ variables:
    - name: moderator.userName
     type: string
     description: display name of the moderator who approved the unban request
-    value: Lyfesaver74
-  - name: moderator.login
+    value: Lyfesaver7
+   - name: moderator.login
     type: string
     description: login name of the moderator who approved the unban request
     value: lyfesaver74
