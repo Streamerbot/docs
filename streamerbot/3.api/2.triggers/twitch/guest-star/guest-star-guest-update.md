@@ -38,7 +38,7 @@ variables:
   - name: state
     type: string
     description: guest update state
-    value: invited, backstage
+    value: invited, backstage, ready
   - name: hostVideoEnabled
     type: bool
     description: video enabled status
