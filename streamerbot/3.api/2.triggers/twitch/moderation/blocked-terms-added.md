@@ -5,7 +5,7 @@ version: 0.2.4
 variables:
   - name: createdAt
     type: datetime
-    description: datetime of the unban
+    description: datetime of the addition
     value: 28.06.2024 20:13:20
   - name: moderator.userName
     type: string
