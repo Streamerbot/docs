@@ -1,6 +1,6 @@
 ---
 title: Blocked Termes Added
-description: Trigger for when an AutoMod message is held
+description: Trigger for when an a blocked term has been added
 version: 0.2.4
 variables:
   - name: createdAt
@@ -9,20 +9,16 @@ variables:
     value: 28.06.2024 20:13:20
   - name: moderator.userName
     type: string
-    description: display name of the moderator who did the warning
+    description: display name of the moderator who added the term
     value: Lyfesaver74
   - name: moderator.login
     type: string
-    description: login name of the moderator who did the warning
+    description: login name of the moderator who added the term
     value: lyfesaver74
   - name: moderator.id
     type: string
-    description: display name of the moderator who did the warning
+    description: display name of the moderator who added the term
     value: 161545467
-  - name: reason
-    type: string
-    description: the reason specified in the warning
-    value: spam
   - name: termCount
     type: int
     description: amount of added terms
