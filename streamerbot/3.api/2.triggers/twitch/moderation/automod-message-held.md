@@ -1,5 +1,5 @@
 ---
-title: AutoMod Message Help
+title: AutoMod Message Held
 description: Trigger for when an AutoMod message is held
 version: 0.2.4
 variables:
