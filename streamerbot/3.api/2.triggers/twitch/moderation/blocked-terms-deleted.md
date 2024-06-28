@@ -1,5 +1,5 @@
 ---
-title: Blocked Termes Deleted
+title: Blocked Terms Deleted
 description: Trigger for when an a blocked term has been deleted
 version: 0.2.4
 variables:
