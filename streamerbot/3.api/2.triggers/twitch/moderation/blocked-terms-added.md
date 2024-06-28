@@ -1,5 +1,5 @@
 ---
-title: Blocked Termes Added
+title: Blocked Terms Added
 description: Trigger for when an a blocked term has been added
 version: 0.2.4
 variables:
