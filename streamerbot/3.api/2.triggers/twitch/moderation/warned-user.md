@@ -20,7 +20,6 @@ variables:
     type: string
     description: the reason specified in the warning
     value: spam
-  
 commonVariables:
   - TwitchUser
 ---
