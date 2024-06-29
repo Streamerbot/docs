@@ -8,3 +8,6 @@ variables:
     description: indictator whether the clear has been uccessful or not
     value: True/False
 ---
+
+## C# Usage
+:csharp-method{name=TwitchClearChatMessages}
