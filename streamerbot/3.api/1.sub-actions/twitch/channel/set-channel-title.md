@@ -1,10 +1,10 @@
-# Set Channel Title
-Update the current title of your Twitch channel
-
-## Parameters
-### `Title`
-Enter the new title for your stream
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=SetChannelTitle}
+---
+title: Set Channel Title
+description: Update the current title of your Twitch channel
+parameters:
+  - name: Title
+    type: Text
+    description: Enter the new title for your stream
+csharpMethods:
+  - SetChannelTitle
+---
