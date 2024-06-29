@@ -24,15 +24,15 @@ commonVariables:
 ---
 
 ## Details
-The Automatic Reward Redemption work for both "default rewards" and the newly introduced "Power-ups".
+The Automatic Reward Redemptions work for both "default rewards" as well as the newly introduced "Power-ups".
 
 ### Default Rewards
-The default rewards are those made by Twitch like "Highlight My Message". You can either choose to enable or disable them, but you cannot delete or edit them.
+The default rewards are those made by Twitch like "Highlight My Message". You can either choose to enable or disable them, but you cannot delete and only restrictively edit them.
 
 ![Default Rewards](../assets/default_rewards.png)
 
 ### Power Ups
-Power-ups have been added on June 12, 2024 and are available in your Channel Reward window. It allows viewers to do specific interactions with bits.
+Power-ups have been added to Twitch on June 12, 2024 and are available in your Channel Reward window. It allows viewers to do specific interactions with bits.
 
 ![Default Rewards](../assets/power_ups.png)
 
