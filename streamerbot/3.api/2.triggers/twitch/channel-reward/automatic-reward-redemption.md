@@ -29,12 +29,13 @@ The Automatic Reward Redemption work for both "default rewards" and the newly in
 ### Default Rewards
 The default rewards are those made by Twitch like "Highlight My Message". You can either choose to enable or disable them, but you cannot delete or edit them.
 
-![Default Rewards](assets/default_rewards.png)
+![Default Rewards](/streamerbot/3.api/2.triggers/twitch/assets/default_rewards.png)
 
 ### Power Ups
 Power-ups have been added on June 12, 2024 and are available in your Channel Reward window. It allows viewers to do specific interactions with bits.
 
-![Power-ups](assets/power_ups.png)
+![Default Rewards](/streamerbot/3.api/2.triggers/twitch/assets/power_ups.png)
+
 
 In order to to filter for Power-ups in Streamer.bot, you can create an `if/else` subaction and check for the variable `rewardType`:
 
