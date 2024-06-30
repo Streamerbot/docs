@@ -1,7 +1,14 @@
 ---
 title: Get Twitch Sub Counter Count
-description: Fetch the Twitch sub counter value
-version: 0.2.3
+description: Get the broadcaster's Twitch subscriber counter count
+variables:
+  - name: subscriberCount
+    type: int
+    description: number of subscribers
+    value: 10
+  - name: subscriberPoints
+    type: int
+    description: number of subscribers points
+    value: 15
+csharpMethods: []
 ---
-
-:wip
