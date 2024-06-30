@@ -27,7 +27,5 @@ variables:
     type: string
     description: the user's platform (unpopulated, if not user was found)
     value: twitch
+csharpMethods: []
 ---
-
-## C# Usage
-:csharp-method

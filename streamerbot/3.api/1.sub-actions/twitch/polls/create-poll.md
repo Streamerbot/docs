@@ -27,7 +27,6 @@ variables:
     type: bool
     description: indicator whether the poll has been created successfully or not
     value: True/False
+csharpMethods:
+  - TwitchPollCreate
 ---
-
-## C# Usage
-:csharp-method{name=TwitchPollCreate}

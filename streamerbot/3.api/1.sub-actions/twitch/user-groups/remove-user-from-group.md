@@ -15,7 +15,6 @@ variables:
     type: bool
     description: indicator whether the removal has been successful or not
     value: True/False
+csharpMethods:
+  - RemoveUserFromGroup
 ---
-
-## C# Usage
-:csharp-method{name=RemoveUserFromGroup}

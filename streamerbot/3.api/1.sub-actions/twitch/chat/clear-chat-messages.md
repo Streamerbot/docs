@@ -7,7 +7,6 @@ variables:
     type: bool
     description: indictator whether the clear has been uccessful or not
     value: True/False
+csharpMethods:
+  - TwitchClearChatMessages
 ---
-
-## C# Usage
-:csharp-method{name=TwitchClearChatMessages}

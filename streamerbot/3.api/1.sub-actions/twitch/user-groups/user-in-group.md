@@ -31,7 +31,6 @@ variables:
     type: string
     description: the user's platform
     value: twitch
+csharpMethods:
+  - UserInGroup
 ---
-
-## C# Usage
-:csharp-method{name=UserInGroup}

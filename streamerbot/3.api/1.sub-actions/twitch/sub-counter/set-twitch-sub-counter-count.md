@@ -11,8 +11,6 @@ variables:
     type: bool
     description: indicator whether setting the sub count has been successful or not
     value: True/False
+csharpMethods: []
 ---
-
-## C# Usage
-:csharp-method
 

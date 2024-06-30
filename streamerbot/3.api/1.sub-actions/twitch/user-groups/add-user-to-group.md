@@ -15,7 +15,6 @@ variables:
     type: bool
     description: indicator whether the addition has been successful or not
     value: True/False
+csharpMethods:
+  - AddUserToGroup
 ---
-
-## C# Usage
-:csharp-method{name=AddUserToGroup}

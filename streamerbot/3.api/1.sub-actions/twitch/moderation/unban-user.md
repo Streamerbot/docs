@@ -27,7 +27,6 @@ variables:
     type: bool
     description: indicator whether the unban has been successful or not
     value: True/False
+csharpMethods:
+  - TwitchUnbanUser
 ---
-
-## C# Usage
-:csharp-method{name=TwitchUnbanUser}

@@ -31,7 +31,6 @@ variables:
     type: bool
     description: indicator whether the ban has been successful or not
     value: True/False
+csharpMethods:
+  - TwitchBanUser
 ---
-
-## C# Usage
-:csharp-method{name=TwitchBanUser}

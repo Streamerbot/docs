@@ -10,8 +10,5 @@ variables:
     type: int
     description: number of subscribers points
     value: 15
+csharpMethods: []
 ---
-
-## C# Usage
-:csharp-method
-

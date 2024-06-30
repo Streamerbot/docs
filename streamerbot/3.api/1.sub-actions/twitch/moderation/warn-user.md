@@ -32,7 +32,6 @@ variables:
     type: bool
     description: indicator whether the warning has been successful or not
     value: True/False
+csharpMethods:
+  - TwitchWarnUser
 ---
-
-## C# Usage
-:csharp-method{name=TwitchWarnUser}

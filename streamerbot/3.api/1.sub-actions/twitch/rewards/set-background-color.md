@@ -14,11 +14,10 @@ parameters:
     type: String
     required: true
     description: hex color code
+csharpMethods:
+  - UpdateRewardBackgroundColor
 ---
 
 ::tip
-The reward must have been created in StreamerBot (owned) in order to edit it.
+The reward must have been created through Streamer.bot (owned by your bot) in order to edit it.
 ::
-
-## C# Usage
-:csharp-method{name=UpdateRewardBackgroundColor}
