@@ -34,4 +34,6 @@ csharpMethods:
   - VTubeStudioColorTintByNumber
   - VTubeStudioColorTintByTagContains
   - VTubeStudioColorTintByTags
+  - VTubeStudioRandomColorTint
+  - VTubeStudioResetAllColorTints
 ---
