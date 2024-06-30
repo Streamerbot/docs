@@ -1,6 +1,6 @@
 ---
 title: Remote Instance Connected
-description: Triggers when a remote Streamer.bot instance connets
+description: Triggers when a remote Streamer.bot instance connects
 version: 0.2.4
 variables:
   - name: instanceId
