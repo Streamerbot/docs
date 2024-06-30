@@ -16,6 +16,9 @@ Feel free to open an issue to discuss missing information, or just fork and PR ð
 Guidelines: TBA
 
 ## MDC Components
+
+The following are preconfigured `::callout` components:
+
 ```
 ::tip
 This is a cool tip!
@@ -39,7 +42,7 @@ Some docs will be automatically built out from YAML frontmatter
 ### All
 All pages should have a `title` and `description`.
 
-Optionally, if the release version of a feature is known, the `version` key should contain the Streamer.bot version.
+Optionally, if the release version of a feature is known, the `version` key should contain the Streamer.bot version it was added in.
 
 ```yml
 title: Page Title
@@ -48,17 +51,34 @@ version: 0.2.3
 ```
 
 ### Sub-Actions & Triggers
-The `variables` key will automatically build out the Variables section for these pages
+Variables, Parameters (e.g. Sub-Action dialog options), and C# Method sections can automatically be built from front matter keys:
 
-```yml
+```yml [api/sub-actions/my-sub-action.md]
 twitchService: Chat Client
-commonVariables:
-  - TwitchUser
+parameters:
+  - name: Game Title
+    type: Text
+    required: true
+    description: |
+      Enter the description for this parameter with full markdown support.
+
+      ::tip
+        It even supports mdc!
+      ::
+  - name: Some other parameter
+    type: Select
+    required: false
+    description: This is the description for some other parameter
 variables:
   - name: viewers
     type: number
     description: The amount of viewers this raid received
     value: 183
+commonVariables:
+  - TwitchUser
+csharpMethods:
+  - UnbanUser
+  - BanUser
 ```
 
 ### C# Methods
