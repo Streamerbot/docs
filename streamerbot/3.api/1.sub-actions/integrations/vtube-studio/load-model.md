@@ -1,5 +1,5 @@
 ---
-title: Load model
+title: Load Model
 description: Load a selected model
 parameters:
   - name: Model
