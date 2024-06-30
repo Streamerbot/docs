@@ -1,6 +1,6 @@
 ---
 title: VTube Studio
-description: Integrate StreamerBot with VTube Studio
+description: Integrate Streamer.bot with VTube Studio
 icon: IconVtubeStudio
 navigation.icon: null
 version: 0.2.0
