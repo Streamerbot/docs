@@ -7,10 +7,11 @@ version: 0.1.8
 logo: /img/icons/voicemod.png
 ---
 
-Let your bot take control of [VoiceMod](https://voicemod.com){target=_blank}
 
 ## Configuration
-:wip
+Connecting to VoiceMod is pretty straight forward. Make sure VoiceMod is up and running, then head over to Streamer.bot and into `Integrations -> VoiceMod`. Click "Connect" and you're all done already!
+
+![VTube Studio Start API](assets/voicemod-connecting.png)
 
 ## Usage
 :api-reference-cards{path=integrations/voicemod}
