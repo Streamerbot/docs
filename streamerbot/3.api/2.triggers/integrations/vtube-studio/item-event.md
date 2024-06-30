@@ -1,6 +1,7 @@
 ---
 title: Item Event
 description: Triggers every time certain actions are done with/by an item
+version: 0.2.3
 variables:
   - name: itemEventType
     type: string
