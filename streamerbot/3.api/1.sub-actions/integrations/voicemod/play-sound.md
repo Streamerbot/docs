@@ -1,6 +1,7 @@
 ---
 title: Play Sound
 description: Play a sound of one of your soundboards
+version: 0.1.11
 parameters:
   - name: Soundboard
     type: Selection
