@@ -1,5 +1,5 @@
 ---
-title: Load Model By Name
+title: Load Model by Name
 description: Load a model by name
 parameters:
   - name: Model
