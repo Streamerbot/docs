@@ -4,9 +4,23 @@ navigation: false
 cta:
   title: Special Thanks ❤️
   description: |
+    <small>from</small> **nate1280**
+    <br><br>
     First off, **thank you** to everyone who has been using this bot, providing feedback (i.e. breaking it 😁), and being supportive of my efforts to just provide another option for streamers out there to use.
     <br><br>
     A very big thank you to the amazing folks who have been supporting me through the hectic release:
     (Lyfesaver74, Geocym, VRFlad, Krayn_, Njna_Grimsdottir, & Whipstickgostop)
     <br><br>
     **I appreciate all the support from everyone and to all using this software. Thank you.**
+  links:
+    - label: Support on Patreon
+      to: https://www.patreon.com/nate1280
+      target: _blank
+      color: gray
+      size: xl
+      icon: i-simple-icons-patreon
+    - label: About Streamer.bot
+      to: /about
+      color: gray
+      size: xl
+      trailing-icon: i-mdi-chevron-right
