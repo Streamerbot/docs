@@ -53,5 +53,5 @@ csharpMethods: []
 
 
 ::warning
-If the subactions times out, only the `signalTimeout` will be populated with a value of `True`
+If the subaction times out, only the `signalTimeout` will be populated with a value of `True`
 ::
