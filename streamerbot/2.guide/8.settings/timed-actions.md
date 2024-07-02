@@ -12,7 +12,7 @@ You can now specify the settings of your Timed Action:
 
 ![Timed Actions Settings](assets/timed-actions-1.png)
 
-`Enabled`: If checked, the Timer is enabled. It will not trigger any action or if it's disabled. The countdown and line count only start once it's been enabled.
+`Enabled`: If checked, the Timer is enabled. It will not trigger any action if it's disabled. The countdown and line count only start once it's been enabled.
 
 `Repeat`: If checked, the Timer will run again after it has fired. If unchecked, the Timer will just run once and disable itself afterwards.
 
