@@ -1,12 +1,9 @@
 ---
-title: Settings
-description: Configure additional settings in Streamer.bot
+title: Quotes
+description: Streamer.bot has a built in quote system. It allows to add, display and delete quotes. Adding a quote automatically assigns an ID and saves a timestamp, the quoting user, the platform as well as the current category (like "Just Chatting").
 ---
 
-## Quotes
-Streamer.bot has a built in quote system. It allows to add, display and delete quotes. Adding a quote automatically assigns an ID and saves a timestamp, the quoting user, the platform as well as the current category (like "Just Chatting").
-
-### Setup
+## Setup
 In order to use the built in quote system, navigate to `Settings -> Quotes` and check `Enabled`. 
 
 ![Quote Settings](assets/quotes_6.png)
@@ -21,7 +18,7 @@ Deleting quotes is reserved for the broadcaster and moderators only.
 
 And you're all done already!
 
-### Commands
+## Commands
 The quote commands are also already built in. So you don't need to create any extra commands.
 
 `!quote add [Quote]`
@@ -62,5 +59,5 @@ You can add triggers for adding and showing quotes.
 
 ![Quote Added](assets/quotes_5.png)
 
-### Usage
+## Usage
 :api-reference-cards{path=core/quotes}
