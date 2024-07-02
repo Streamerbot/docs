@@ -59,5 +59,18 @@ You can add triggers for adding and showing quotes.
 
 ![Quote Added](assets/quotes_5.png)
 
+::tip
+Now that C# methods exist to add quotes, you can even further specify the permissions of adding, deleting or getting quotes.
+::
+
+
 ## Usage
 :api-reference-cards{path=core/quotes}
+
+## C# Usage
+:csharp-method{name=AddQuoteForTwitch}
+:csharp-method{name=AddQuoteForYouTube}
+:csharp-method{name=AddQuoteForTrovo}
+:csharp-method{name=DeleteQuote}
+:csharp-method{name=GetQuote}
+:csharp-method{name=GetQuoteCount}
