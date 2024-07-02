@@ -4,7 +4,7 @@ description: Timed Actions can be used a an action trigger that will trigger aft
 ---
 
 ## Setup
-Navigate to `Settings -> Timed Actions`, rightclick the white area and click `Add`. 
+Navigate to `Settings -> Timed Actions`, rightclick the white area and click `Add`.
 
 ![Timed Actions Navigation](assets/timed-actions-2.png)
 
@@ -32,9 +32,3 @@ The Lines requirement does not work if you have multiple streaming platforms con
 ## Usage
 :api-reference-cards{path=core/timers}
 :api-reference-cards{path=core/timed-actions}
-
-## C# Usage
-:csharp-method{name=DisableTimer}
-:csharp-method{name=EnableTimer}
-:csharp-method{name=GetTimerState}
-:csharp-method{name=SetTimerInterval}

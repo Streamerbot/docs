@@ -4,11 +4,11 @@ description: Streamer.bot has a built in quote system. It allows to add, display
 ---
 
 ## Setup
-In order to use the built in quote system, navigate to `Settings -> Quotes` and check `Enabled`. 
+In order to use the built in quote system, navigate to `Settings -> Quotes` and check `Enabled`.
 
 ![Quote Settings](assets/quotes_6.png)
 
-In here you'll see all quotes that have been added to your Streamer.bot already and you'll also be able to change the permissions to add quotes. 
+In here you'll see all quotes that have been added to your Streamer.bot already and you'll also be able to change the permissions to add quotes.
 
 ![Quote Permissions](assets/quotes_2.png)
 
@@ -45,13 +45,13 @@ You'll need a `Show Quote` trigger to display quotes in chat. See below.
 You can add triggers for adding and showing quotes.
 
 1. Quote Added
-   
+
    The "Quote Added" trigger fires whenever you add a quote. It's totally optional, but you can use it to give a chat response that quote X has been successfully added.
 
    ![Quote Added](assets/quotes_3.png)
 
 3. Show Quote
-   
+
    The "Show Quote" fires upon entering the `!quote` or `!quote [Quote ID]` command. To display quotes in chat, that one is required. This trigger already handles specific and random quotes automatically.
 
    ![Quote Added](assets/quotes_4.png)
@@ -66,11 +66,3 @@ Now that C# methods exist to add quotes, you can even further specify the permis
 
 ## Usage
 :api-reference-cards{path=core/quotes}
-
-## C# Usage
-:csharp-method{name=AddQuoteForTwitch}
-:csharp-method{name=AddQuoteForYouTube}
-:csharp-method{name=AddQuoteForTrovo}
-:csharp-method{name=DeleteQuote}
-:csharp-method{name=GetQuote}
-:csharp-method{name=GetQuoteCount}
