@@ -5,7 +5,7 @@ variables:
   - name: commandGroupState
     type: number
     description: Current enabled state for the command group
-    value: '0 = Enabled | 1 = Disabled | 2 = Mixed'
+    value: '0 = Disabled | 1 = Enabled | 2 = Mixed'
   - name: commandsEnabled
     type: Dictionary<Guid, Guid>
     description: List of all commands currently *enabled* within this command group
