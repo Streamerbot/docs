@@ -1,7 +1,7 @@
 ---
 title: Model Clicked
 description: Triggers every time the model is clicked. Depending on the config, it also triggers when you click anywhere in the VTS window even if the click wasn't on the model.
-version: 0.2.3
+version: 0.2.4
 variables:
   - name: modelLoaded
     type: bool
