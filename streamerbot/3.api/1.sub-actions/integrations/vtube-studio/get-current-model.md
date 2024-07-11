@@ -26,9 +26,9 @@ variables:
     type: int
     description: Time in milliseconds it took to load the current model
     value: 1680
-  - name: model.timeSinceLaoded
+  - name: model.timeSinceLoaded
     type: int
-    description: Contains the time in milliseconds since the model has been loaded (yes, the variable name actually has a typo at the current date)
+    description: Contains the time in milliseconds since the model has been loaded
     value: 419903
   - name: model.numberOfLive2DParameters
     type: int
