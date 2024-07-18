@@ -1,1 +1,1 @@
-:csharp-event-types{sourceOnly=true}
+:csharp-event-types{:sourceOnly=true}
