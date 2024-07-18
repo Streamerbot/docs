@@ -1,1 +1,401 @@
+---
+events:
+  Custom:
+    - Custom
+    - CustomCodeEvent
+    - CustomEvent
+  Application:
+    - ApplicationActionAdded
+    - ApplicationActionDeleted
+    - ApplicationActionUpdated
+  Command:
+    - CommandCooldown
+    - CommandTriggered
+  CrowdControl:
+    - CrowdControlEffectFailure
+    - CrowdControlEffectRequest
+    - CrowdControlEffectSuccess
+    - CrowdControlGameSessionEnd
+    - CrowdControlGameSessionStart
+    - CrowdControlTimedEffectEnded
+    - CrowdControlTimedEffectStarted
+    - CrowdControlTimedEffectUpdated
+  Elgato:
+    - ElgatoCameraHubConnected
+    - ElgatoCameraHubDisconnected
+    - ElgatoCameraHubPrompterAutoScrollChapterDisabled
+    - ElgatoCameraHubPrompterAutoScrollChapterEnabled
+    - ElgatoCameraHubPrompterAutoScrollDisabled
+    - ElgatoCameraHubPrompterAutoScrollEnabled
+    - ElgatoCameraHubPrompterBackgroundColorChanged
+    - ElgatoCameraHubPrompterBrightnessChanged
+    - ElgatoCameraHubPrompterChannelsChanged
+    - ElgatoCameraHubPrompterConnected
+    - ElgatoCameraHubPrompterContrastChanged
+    - ElgatoCameraHubPrompterCrosshairColorChanged
+    - ElgatoCameraHubPrompterCrosshairDisabled
+    - ElgatoCameraHubPrompterCrosshairEnabled
+    - ElgatoCameraHubPrompterCrosshairImageChanged
+    - ElgatoCameraHubPrompterDisconnected
+    - ElgatoCameraHubPrompterFontChanged
+    - ElgatoCameraHubPrompterFontColorChanged
+    - ElgatoCameraHubPrompterFontSizeChanged
+    - ElgatoCameraHubPrompterHorizontalMarginChanged
+    - ElgatoCameraHubPrompterLineSpacingChanged
+    - ElgatoCameraHubPrompterModeChanged
+    - ElgatoCameraHubPrompterOpacityChanged
+    - ElgatoCameraHubPrompterScrollSpeedChanged
+    - ElgatoCameraHubPrompterSelectedChannelChanged
+    - ElgatoCameraHubPrompterSelectedChapterChanged
+    - ElgatoCameraHubPrompterSelectedScriptChanged
+    - ElgatoCameraHubPrompterVerticalMarginChanged
+    - ElgatoCameraHubSelectedWebcamChanged
+    - ElgatoCameraHubTiltChanged
+    - ElgatoCameraHubWebcamARLensChanged
+    - ElgatoCameraHubWebcamActivated
+    - ElgatoCameraHubWebcamAntiFlickerChanged
+    - ElgatoCameraHubWebcamAutoExposureDisabled
+    - ElgatoCameraHubWebcamAutoExposureEnabled
+    - ElgatoCameraHubWebcamAutoFocusDisabled
+    - ElgatoCameraHubWebcamAutoFocusEnabled
+    - ElgatoCameraHubWebcamAutoWhiteBalanceDisabled
+    - ElgatoCameraHubWebcamAutoWhiteBalanceEnabled
+    - ElgatoCameraHubWebcamBitrateChanged
+    - ElgatoCameraHubWebcamBrightnessChanged
+    - ElgatoCameraHubWebcamConnected
+    - ElgatoCameraHubWebcamContrastChanged
+    - ElgatoCameraHubWebcamDeactivated
+    - ElgatoCameraHubWebcamDeviceOrientationChanged
+    - ElgatoCameraHubWebcamExposureAutoLockDisabled
+    - ElgatoCameraHubWebcamExposureAutoLockEnabled
+    - ElgatoCameraHubWebcamFlashDisabled
+    - ElgatoCameraHubWebcamFlashEnabled
+    - ElgatoCameraHubWebcamFlipped
+    - ElgatoCameraHubWebcamFocusChanged
+    - ElgatoCameraHubWebcamISOChanged
+    - ElgatoCameraHubWebcamLensChanged
+    - ElgatoCameraHubWebcamLiveISOChanged
+    - ElgatoCameraHubWebcamLiveShutterSpeedChanged
+    - ElgatoCameraHubWebcamLiveWhiteBalanceChanged
+    - ElgatoCameraHubWebcamLiveWhiteBalanceTintChanged
+    - ElgatoCameraHubWebcamMirrored
+    - ElgatoCameraHubWebcamNoiseReductionDisabled
+    - ElgatoCameraHubWebcamNoiseReductionEnabled
+    - ElgatoCameraHubWebcamOverscanChanged
+    - ElgatoCameraHubWebcamPanChanged
+    - ElgatoCameraHubWebcamSaturationChanged
+    - ElgatoCameraHubWebcamSharpnessChanged
+    - ElgatoCameraHubWebcamShutterSpeedChanged
+    - ElgatoCameraHubWebcamSnapshotTaken
+    - ElgatoCameraHubWebcamWhiteBalanceChanged
+    - ElgatoCameraHubWebcamWhiteBalanceTintChanged
+    - ElgatoCameraHubWebcamZoomChanged
+    - ElgatoCameraHubWebcamrDisconnected
+    - ElgatoWaveLinkConnected
+    - ElgatoWaveLinkDisconnected
+    - ElgatoWaveLinkFilterAdded
+    - ElgatoWaveLinkFilterBypassStateChanged
+    - ElgatoWaveLinkFilterChanged
+    - ElgatoWaveLinkFilterDeleted
+    - ElgatoWaveLinkInputLevelMeterChanged
+    - ElgatoWaveLinkInputMuteChanged
+    - ElgatoWaveLinkInputNameChanged
+    - ElgatoWaveLinkInputVolumeChanged
+    - ElgatoWaveLinkMicrophoneBalanceChanged
+    - ElgatoWaveLinkMicrophoneGainChanged
+    - ElgatoWaveLinkMicrophoneMuteChanged
+    - ElgatoWaveLinkMicrophoneOutputVolumeChanged
+    - ElgatoWaveLinkMicrophoneSettingChanged
+    - ElgatoWaveLinkOutputLevelMeterChanged
+    - ElgatoWaveLinkOutputMuteChanged
+    - ElgatoWaveLinkOutputSwitched
+    - ElgatoWaveLinkOutputVolumeChanged
+    - ElgatoWaveLinkSelectedOutputChanged
+  DonorDrive:
+    - DonorDriveDonation
+    - DonorDriveIncentive
+    - DonorDriveProfileUpdated
+  FileTail:
+    - FileTailChanged
+  FileWatcher:
+    - FileWatcherChanged
+    - FileWatcherCreated
+    - FileWatcherDeleted
+    - FileWatcherRenamed
+  Fourthwall:
+    - FourthwallDonation
+    - FourthwallGiftPurchase
+    - FourthwallOrderPlaced
+    - FourthwallOrderUpdated
+    - FourthwallProductCreated
+    - FourthwallProductUpdated
+    - FourthwallSubscriptionChanged
+    - FourthwallSubscriptionExpired
+    - FourthwallSubscriptionPurchased
+  HotKey:
+    - HotKeyPress
+  HypeRate:
+    - HypeRateHeartRatePulse
+  Kofi:
+    - KofiCommission
+    - KofiDonation
+    - KofiResubscription
+    - KofiShopOrder
+    - KofiSubscription
+  Midi:
+    - MidiMessage
+  Misc:
+    - ApplicationImport
+    - ChatWindowAction
+    - GlobalVariableUpdated
+    - ProcessStarted
+    - ProcessStopped
+    - StreamerbotExiting
+    - StreamerbotStarted
+    - Test
+    - TimedAction
+    - ToastActivation
+    - UserGlobalVariableUpdated
+  Obs:
+    - ObsConnected
+    - ObsDisconnected
+    - ObsEvent
+    - ObsRecordingStarted
+    - ObsRecordingStopped
+    - ObsSceneChanged
+    - ObsStreamingStarted
+    - ObsStreamingStopped
+  Patreon:
+    - PatreonFollowCreated
+    - PatreonFollowDeleted
+    - PatreonPledgeCreated
+    - PatreonPledgeDeleted
+    - PatreonPledgeUpdated
+  Pulsoid:
+    - PulsoidHeartRatePulse
+  Quote:
+    - QuoteAdded
+    - QuoteShow
+  Raw:
+    - RawAction
+    - RawActionCompleted
+    - RawSubAction
+  Shopify:
+    - ShopifyOrderCreated
+    - ShopifyOrderPaid
+  SpeakerBot:
+    - SpeakerBotConnected
+    - SpeakerBotDisconnected
+  SpeechToText:
+    - SpeechToTextCommand
+    - SpeechToTextDictation
+  StreamDeck:
+    - StreamDeckAction
+    - StreamDeckConnected
+    - StreamDeckDisconnected
+    - StreamDeckInfo
+  StreamElements:
+    - StreamElementsAuthenticated
+    - StreamElementsConnected
+    - StreamElementsDisconnected
+    - StreamElementsMerch
+    - StreamElementsTip
+  Streamlabs:
+    - StreamlabsCharityDonation
+    - StreamlabsConnected
+    - StreamlabsDisconnected
+    - StreamlabsDonation
+    - StreamlabsMerchandise
+  StreamlabsDesktop:
+    - StreamlabsDesktopConnected
+    - StreamlabsDesktopDisconnected
+    - StreamlabsDesktopRecordingStarted
+    - StreamlabsDesktopRecordingStopped
+    - StreamlabsDesktopSceneChanged
+    - StreamlabsDesktopStreamingStarted
+    - StreamlabsDesktopStreamingStopped
+  ThrowingSystem:
+    - ThrowingSystemConnected
+    - ThrowingSystemEventsConnected
+    - ThrowingSystemEventsDisconnected
+    - ThrowingSystemItemHit
+    - ThrowingSystemTriggerActivated
+    - ThrowingSystemTriggerEnded
+    - ThrowingSystemWebsocketConnected
+    - ThrowingSystemWebsocketDisconnected
+  TipeeeStream:
+    - TipeeeStreamDonation
+  TreatStream:
+    - TreatStreamTreat
+  Trovo:
+    - TrovoBroadcasterAuthenticated
+    - TrovoBroadcasterChatConnected
+    - TrovoBroadcasterChatDisconnected
+    - TrovoChatMessage
+    - TrovoCustomSpellCast
+    - TrovoFirstWords
+    - TrovoFollow
+    - TrovoGiftSubscription
+    - TrovoMassGiftSubscription
+    - TrovoPresentViewers
+    - TrovoRaid
+    - TrovoResubscription
+    - TrovoSpellCast
+    - TrovoStreamOffline
+    - TrovoStreamOnline
+    - TrovoSubscription
+  Twitch:
+    - TwitchAdMidRoll
+    - TwitchAdRun
+    - TwitchAnnouncement
+    - TwitchBetterTTVEmoteAdded
+    - TwitchBetterTTVEmoteRemoved
+    - TwitchBotChatConnected
+    - TwitchBotChatDisconnected
+    - TwitchBotWhisper
+    - TwitchBroadcastUpdate
+    - TwitchBroadcasterAuthenticated
+    - TwitchBroadcasterChatConnected
+    - TwitchBroadcasterChatDisconnected
+    - TwitchBroadcasterEventSubConnected
+    - TwitchBroadcasterEventSubDisconnected
+    - TwitchBroadcasterPubSubConnected
+    - TwitchBroadcasterPubSubDisconnected
+    - TwitchCharityCompleted
+    - TwitchCharityDonation
+    - TwitchCharityProgress
+    - TwitchCharityStarted
+    - TwitchChatCleared
+    - TwitchChatEmoteModeOff
+    - TwitchChatEmoteModeOn
+    - TwitchChatFollowerModeChanged
+    - TwitchChatFollowerModeOff
+    - TwitchChatFollowerModeOn
+    - TwitchChatMessage
+    - TwitchChatMessageDeleted
+    - TwitchChatSlowModeChanged
+    - TwitchChatSlowModeOff
+    - TwitchChatSlowModeOn
+    - TwitchChatSubscriberModeOff
+    - TwitchChatSubscriberModeOn
+    - TwitchChatUniqueModeOff
+    - TwitchChatUniqueModeOn
+    - TwitchCheer
+    - TwitchCoinCheer
+    - TwitchCommunityGoalContribution
+    - TwitchCommunityGoalEnded
+    - TwitchFirstWord
+    - TwitchFollow
+    - TwitchGiftBomb
+    - TwitchGiftSub
+    - TwitchGoalBegin
+    - TwitchGoalEnd
+    - TwitchGoalProgress
+    - TwitchGuestStarGuestUpdate
+    - TwitchGuestStarSessionBegin
+    - TwitchGuestStarSessionEnd
+    - TwitchGuestStarSettingsUpdate
+    - TwitchGuestStarSlotUpdate
+    - TwitchHypeChat
+    - TwitchHypeChatLevel
+    - TwitchHypeTrainEnd
+    - TwitchHypeTrainLevelUp
+    - TwitchHypeTrainStart
+    - TwitchHypeTrainUpdate
+    - TwitchModeratorAdded
+    - TwitchModeratorRemoved
+    - TwitchPollCompleted
+    - TwitchPollCreated
+    - TwitchPollTerminated
+    - TwitchPollUpdated
+    - TwitchPresentViewers
+    - TwitchPyramidBroken
+    - TwitchPyramidSuccess
+    - TwitchRaid
+    - TwitchRaidCancelled
+    - TwitchRaidSend
+    - TwitchRaidStart
+    - TwitchReSub
+    - TwitchRewardCreated
+    - TwitchRewardDeleted
+    - TwitchRewardRedemption
+    - TwitchRewardRedemptionUpdated
+    - TwitchRewardUpdated
+    - TwitchSevenTVEmoteAdded
+    - TwitchSevenTVEmoteRemoved
+    - TwitchShieldModeBegin
+    - TwitchShieldModeEnd
+    - TwitchShoutoutCreated
+    - TwitchShoutoutReceived
+    - TwitchStreamOffline
+    - TwitchStreamOnline
+    - TwitchStreamUpdate
+    - TwitchStreamUpdateGameOnConnect
+    - TwitchSub
+    - TwitchSubCounterRollover
+    - TwitchUpcomingAd
+    - TwitchUserBanned
+    - TwitchUserTimedOut
+    - TwitchUserUntimedOut
+    - TwitchViewerCountUpdate
+    - TwitchVipAdded
+    - TwitchWhisper
+  VStream:
+    - VStreamBroadcasterAuthenticated
+    - VStreamBroadcasterChatConnected
+    - VStreamBroadcasterChatDisconnected
+    - VStreamChatDeleted
+    - VStreamChatMessage
+    - VStreamFirstWords
+    - VStreamMeteorShower
+    - VStreamNewFollower
+    - VStreamPresentViewers
+    - VStreamResubscription
+    - VStreamStreamOffline
+    - VStreamStreamOnline
+    - VStreamSubscription
+    - VStreamSubscriptionGifted
+    - VStreamSubscriptionsGifted
+    - VStreamUpliftingChat
+  VTubeStudio:
+    - VTubeStudioBackgroundChanged
+    - VTubeStudioConnected
+    - VTubeStudioDisconnected
+    - VTubeStudioHotkeyTriggered
+    - VTubeStudioItemEvent
+    - VTubeStudioModelAnimation
+    - VTubeStudioModelClicked
+    - VTubeStudioModelConfigChanged
+    - VTubeStudioModelLoaded
+    - VTubeStudioModelUnloaded
+    - VTubeStudioTrackingStatusChanged
+  WebsocketClient:
+    - WebsocketClientClose
+    - WebsocketClientMessage
+    - WebsocketClientOpen
+  WebsocketCustomServer:
+    - WebsocketCustomServerClose
+    - WebsocketCustomServerMessage
+    - WebsocketCustomServerOpen
+  YouTube:
+    - YouTubeBroadcastEnded
+    - YouTubeBroadcastStarted
+    - YouTubeBroadcastUpdated
+    - YouTubeFirstWords
+    - YouTubeGiftMembershipReceived
+    - YouTubeMemberMileStone
+    - YouTubeMembershipGift
+    - YouTubeMessage
+    - YouTubeMessageDeleted
+    - YouTubeNewSponsor
+    - YouTubeNewSponsorOnlyEnded
+    - YouTubeNewSponsorOnlyStarted
+    - YouTubeNewSubscriber
+    - YouTubePresentViewers
+    - YouTubeStatisticsUpdated
+    - YouTubeSuperChat
+    - YouTubeSuperSticker
+    - YouTubeUserBanned
+---
+
 :csharp-event-types
