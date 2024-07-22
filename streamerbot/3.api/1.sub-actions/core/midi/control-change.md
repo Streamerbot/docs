@@ -3,7 +3,7 @@ title: Control Change
 description: Send a MIDI Control Change message with Streamer.bot
 ---
 
-::read-more{to="https://www.midi.org/specifications-old/item/table-3-control-change-messages-data-bytes-2"}
+::read-more{to="https://midi.org/midi-1-0-control-change-messages"}
 Read more about MIDI messages at **midi.org**
 ::
 

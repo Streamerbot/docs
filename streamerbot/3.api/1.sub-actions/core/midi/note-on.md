@@ -3,7 +3,7 @@ title: Note On
 description: Send a MIDI Note On message with Streamer.bot
 ---
 
-::read-more{to="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message"}
+::read-more{to="https://midi.org/summary-of-midi-1-0-messages"}
 Read more about MIDI messages at **midi.org**
 ::
 

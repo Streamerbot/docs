@@ -3,7 +3,7 @@ title: Generic Event
 description: Send a Generic MIDI message to your MIDI device
 ---
 
-::read-more{to="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message"}
+::read-more{to="https://midi.org/summary-of-midi-1-0-messages"}
 Read more about MIDI messages at **midi.org**
 ::
 
