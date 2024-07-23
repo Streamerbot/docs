@@ -24,6 +24,10 @@ variables:
   - name: input#Escaped
     type: string
     description: "Each word from `rawInput`, escaped. `input0Escaped`, `input1Escaped`, and so on..."
+  - name: userIsSponsor
+    type: boolean
+    description: Indicates whether the viewer is a current channel member or not
+    value: True
 commonVariables:
   - YouTubeUser
   - YouTubeBroadcaster
