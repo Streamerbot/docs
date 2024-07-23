@@ -25,10 +25,10 @@ Special thanks to **Ruirize** for the development.
 Download the HTML Overlay application from and unzip the contents to your desired location.
 
 ::card-group
-  ::card{icon=i-mdi-download title="HTML Overlay" to="https://cdn.streamer.bot/html-overlay/HTML%20Overlay%20v1.1.0.zip" target=_blank}
-  `v1.1.0`
+  ::card{icon=i-mdi-download title="HTML Overlay" to="https://cdn.streamer.bot/html-overlay/HTML%20Overlay%20v1.1.1.zip" target=_blank}
+  `v1.1.1`
   <br>
-  _Updated 2023-03-15_
+  _Updated 2024-07-23_
   ::
 ::
 
@@ -72,7 +72,7 @@ The HTML Overlay `zip` above is preloaded with 3 overloay modules:
 - Emote Rain
 
 ::tip{color=amber}
-You can customize the options for each module by modifying the `Content/index.html` file
+You can customize the options for each module by modifying each respective `.js` file
 ::
 
 ### Splat
@@ -80,9 +80,10 @@ Display a large paint splat on your screen.
 
 #### Options
 ```js
-{
-  rewardTitle: "SPLAT". // Set your Twitch reward title you want to trigger this overlay
-}
+const CONFIG = {
+  // The title of the Channel Point Reward that will trigger the effect
+  rewardTitle: 'SPLAT',
+};
 ```
 
 ### Show Image
@@ -90,13 +91,20 @@ Display any image (from a URL) on your screen.
 
 #### Options
 ```js
-{
-  rewardTitle: "Show Image", // Set your Twitch reward title you want to trigger this overlay
-  imageUrl: "https://streamer.bot/logo.png". // Set to the image URL you want to display
-  seconds: 5, // Number of seconds to display the image
-  width: "auto", // Set a custom image width, accepts CSS values
-  height: "auto", // Set a custom image height, accepts CSS values
-}
+const CONFIG = {
+  // The title of the Channel Point Reward that will trigger the effect
+  rewardTitle: 'Show Image',
+
+  // The URL of the image to show
+  imageUrl: 'https://streamer.bot/logo.png',
+
+  // The number of seconds to show the image for
+  seconds: 5,
+
+  // The width and height of the image (css)
+  width: 'auto',
+  height: 'auto',
+};
 ```
 
 ### Emote Rain
@@ -104,10 +112,13 @@ Generate raining emotes from incoming Twitch chat messages.
 
 #### Options
 ```js
-{
-  maxEmotes: 20, // Set to the max amount of emotes to accept from a single message
-  emoteSize: "100px", // Set the size for the emote images on your screen
-}
+const CONFIG = {
+  // The maximum number of emotes to display at once
+  maxEmotes: 20,
+
+  // The size of the emotes (css)
+  emoteSize: '100px',
+};
 ```
 
 ## Custom Overlays
@@ -124,15 +135,13 @@ The configured [Streamer.bot Client](https://streamerbot.github.io/client) insta
 Here we are using the source of the included `show-image.js` as an example:
 
 ```js [Content/my-module.js]
-// Here we are defining default configuration options
-// and then using window.getScriptConfig to fetch any user-modified values
-const config = Object.assign({
+const CONFIG = {
   rewardTitle: 'Show Image',
   imageUrl: 'https://streamer.bot/logo.png',
   seconds: 5,
   width: 'auto',
   height: 'auto',
-}, window.getScriptConfig(import.meta.url));
+};
 
 // Here we are subscribing to Twitch Channel Point Rewards
 // and triggering our overlay when the configured title matches a redemption
@@ -147,11 +156,7 @@ Import your new module at the bottom of `Content/index.html`, after any existing
 
 ```html [Content/index.html]
 <!-- Add this at the end, after any existing <script> tags! -->
-<script type="module" src="my-module.js">
-{
-  rewardTitle: "Show Image" // Add your user config overrides here
-}
-</script>
+<script type="module" src="my-module.js"></script>
 ```
 
 ::tip{color=amber}
