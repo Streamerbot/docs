@@ -110,4 +110,22 @@ variables:
     type: boolean
     description: Is this user a first time chatter?
     value: True
+   - name: rawInput
+    type: string
+    description: The message entered
+  - name: rawInputEscaped
+    type: string
+    description: The message escaped
+  - name: rawInputUrlEncoded
+    type: string
+    description: The message URL encoded
+  - name: input#
+    type: string
+    description: The `#` word of the message entered, spaces are delimiters and variable names are 0 indexed, so `input0` would give the first word, `input1` would give the second, and so on
+  - name: inputEscaped#
+    type: string
+    description: The indexed word escaped
+  - name: inputUrlEncoded#
+    type: string
+    description: The indexed word URL encoded
 ---
