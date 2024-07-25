@@ -4,6 +4,9 @@ description: Trigger for when a Twitch Poll is Created
 version: 0.0.50
 twitchService: EventSub
 variables:
+  - name: poll.Title
+    type: string
+    description: The poll's title
   - name: poll.Id
     type: string
     description: Twitch's internal id for the poll
