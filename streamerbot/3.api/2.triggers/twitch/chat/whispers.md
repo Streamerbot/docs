@@ -5,7 +5,6 @@ version: 0.0.39
 twitchService: Chat Client
 variables: []
 commonVariables:
-  - TwitchChat
   - TwitchUser
 ---
 
