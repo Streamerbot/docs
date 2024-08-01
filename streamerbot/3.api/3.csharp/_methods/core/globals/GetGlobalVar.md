@@ -5,5 +5,5 @@ parameters:
   - import: GlobalPersisted
 example: |
   int myInt = CPH.GetGlobalVar<int>("myInt");
-  int myString = CPH.GetGlobalVar<string>("myString");
+  string myString = CPH.GetGlobalVar<string>("myString");
 ---
