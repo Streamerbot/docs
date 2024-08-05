@@ -1,6 +1,6 @@
 ---
 title: Raid Start
-description: Trigger for when a Twitch Raid from your channel to another channel is Started
+description: Trigger for when a Twitch Raid from your channel to another channel is started
 version: 0.0.33
 twitchService: PubSub
 variables:
@@ -16,7 +16,7 @@ variables:
     type: string
     description: The raider's user id
     value: 718933593
-  - name: raidUserProfileImageURL
+  - name: raidUserProfileImageUrl
     type: string
     description: The raider's profile image URL
   - name: raidUserProfileImageEscaped
