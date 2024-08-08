@@ -1,4 +1,4 @@
 ---
-description: Returns the total number of command uses by a specified user for the given command ID
+description: Returns the total number of times a user has executed the specified command
 version: 0.2.4
 ---
