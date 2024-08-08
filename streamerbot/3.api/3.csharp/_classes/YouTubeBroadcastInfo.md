@@ -1,3 +1,4 @@
+```cs
 public class YouTubeBroadcastInfo
 {
     public DateTime MonitoredAt { get; set; }
@@ -12,3 +13,4 @@ public class YouTubeBroadcastInfo
     public DateTime PublishedAt { get; set; }
     public string Status { get; set; }
 }
+```
