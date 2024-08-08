@@ -4,7 +4,7 @@ description: Trigger for a Twitch Stream Update
 version: 0.0.30
 twitchService: PubSub
 variables:
-  - name: status
+  - name: targetChannelTitle
     type: string
     description: The current stream title
     value: My stream title
@@ -20,7 +20,7 @@ variables:
     type: number
     description: The game id of the stream
     value: 509658
-  - name: gameName
+  - name: game
     type: string
     description: The game name of the stream
     value: Just Chatting
