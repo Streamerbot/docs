@@ -9,18 +9,35 @@ variables:
     value: send_highlighted_message, random_sub_emote_unlock, chosen_sub_emote_unlock, chosen_modified_sub_emote_unlock, single_message_bypass_sub_mode, message_effect, gigantify_an_emote, celebration
   - name: rewardCost
     type: int
-    description: cost of the reward
-    value: 80
+    description: channel point cost of the reward
+    value: 100
   - name: unlockedEmoteId
     type: string
-    description: ID of the unlocked emote (obviously not available for all reward types)
+    description: ID of the unlocked emote (not available for all reward types)
     value: emotesv2_f5d843cf38bf42208d022e89a9de258e
   - name: unlockedEmoteName
     type: string
-    description: name of the unlocked emote (obviously not available for all reward types)
+    description: name of the unlocked emote (not available for all reward types)
     value: tawmaeKEKW
+  - name: userInput
+    type: string
+    description: the input message of the redeeming user (not available for all reward types)
+    value: This is a test message!
+  - name: gigantifiedEmoteId
+    type: string
+    description: the ID of the gigantified emote (not available for all reward types)
+    value: emotesv2_cfc898bcdd5d447bb3ca5ff8a3d62514
+  - name: gigantifiedEmoteName
+    type: string
+    description: the name of the gigantified emote (not available for all reward types)
+    value: tawmaeHUH
+  - name: gigantifiedEmoteUrl
+    type: string
+    description: the image URL of the gigantified emote (not available for all reward types)
+    value: https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_cfc898bcdd5d447bb3ca5ff8a3d62514/default/dark/3.0
 commonVariables:
   - TwitchUser
+  - TwitchChat
 ---
 
 ## Details
