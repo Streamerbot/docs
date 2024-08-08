@@ -1,4 +1,4 @@
 ---
-description: Increments the value of a YouTube user's global variable with the provided name, by ID
+description: Increments the value of a specific user global variable for specified YouTube user, by ID
 version: 0.2.4
 ---
