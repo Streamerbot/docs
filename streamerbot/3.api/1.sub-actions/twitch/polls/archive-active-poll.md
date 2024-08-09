@@ -1,6 +1,7 @@
 ---
 title: Archive Active Poll
 description: Archives an active poll. The poll ends and gets hidden immediately.
+version: 0.2.4
 variables: []
 csharpMethods:
   - TwitchPollArchive
