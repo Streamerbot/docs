@@ -1,0 +1,14 @@
+---
+title: Prompter Set Horizontal Margin
+description: Sets the desired horizontal margin
+version: 0.2.4
+parameters:
+  - name: Margin
+    type: Int
+    required: true
+    description: Enter valid integer into the input box
+  - name: Adjustment
+    type: Checkbox
+    required: False
+    description: If checked, the amount entered in the 'Margin' box will be added to the current setting
+---
