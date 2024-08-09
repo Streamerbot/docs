@@ -1,6 +1,6 @@
 ---
 title: Throw Items by Name
-description: Allows for throwing a specific item
+description: Allows for throwing multiple items by name
 version: 0.2.4
 parameters:
   - name: Items
