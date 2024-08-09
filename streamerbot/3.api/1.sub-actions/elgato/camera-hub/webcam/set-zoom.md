@@ -6,7 +6,7 @@ parameters:
   - name: Zoom
     type: Int
     required: true
-    description: Enter (100-400%) in the input box
+    description: Enter percentage (100-400) in the input box
   - name: Adjustment
     type: Checkbox
     required: False
