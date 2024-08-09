@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Mode
 description: Sets the desired brightness
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Mode
     type: Drop-down

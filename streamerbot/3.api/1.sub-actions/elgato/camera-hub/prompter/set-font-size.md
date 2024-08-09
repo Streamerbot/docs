@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Font Size
 description: Sets the desired font size (in points)
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Font Size
     type: Int

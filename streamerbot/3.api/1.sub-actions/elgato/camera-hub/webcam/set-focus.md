@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Focus
 description: Sets the desired focus
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Focus
     type: Int

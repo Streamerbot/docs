@@ -1,7 +1,7 @@
 ---
 title: EpocCam Set Camera
 description: Sets the desired camera from the drop-down menu
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Camera
     type: Drop-down

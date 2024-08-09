@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Saturation
 description: Sets the desired saturation
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Saturation
     type: Int

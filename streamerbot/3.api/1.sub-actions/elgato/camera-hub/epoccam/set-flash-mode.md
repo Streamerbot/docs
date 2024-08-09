@@ -1,7 +1,7 @@
 ---
 title: EpocCam Set Flash Mode
 description: Sets the desired flash mode from the drop-down menu
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Mode
     type: Drop-down

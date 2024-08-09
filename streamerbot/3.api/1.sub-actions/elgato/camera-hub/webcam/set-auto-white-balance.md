@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Auto White Balance
 description: Sets the desired auto white balance from the drop-down menu
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Mode
     type: Drop-down

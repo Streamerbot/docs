@@ -1,7 +1,7 @@
 ---
 title: Webcam Set White Balance Tint
 description: Sets the desired white balance tint
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: White Balance Tint
     type: Int

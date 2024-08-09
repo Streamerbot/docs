@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Opacity
 description: Sets the desired opacity
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Opacity
     type: Int

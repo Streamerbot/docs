@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Tilt
 description: Sets the desired tilt
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Tilt
     type: Int

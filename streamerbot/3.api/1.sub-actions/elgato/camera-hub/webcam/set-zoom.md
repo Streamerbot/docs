@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Zoom
 description: Sets the desired zoom
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Zoom
     type: Int

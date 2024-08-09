@@ -1,7 +1,7 @@
 ---
 title: EpocCam Set Bitrate
 description: Sets the bitrate the drop-down menu
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Bitrates
     type: Drop-down

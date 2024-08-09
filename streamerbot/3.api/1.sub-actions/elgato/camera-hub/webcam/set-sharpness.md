@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Sharpness
 description: Sets the desired sharpness
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Sharpness
     type: Int

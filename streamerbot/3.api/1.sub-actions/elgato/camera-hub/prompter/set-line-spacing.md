@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Line Spacing
 description: Sets the desired line spacing
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Line Spacing
     type: Int

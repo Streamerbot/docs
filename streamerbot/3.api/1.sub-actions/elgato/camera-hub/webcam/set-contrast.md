@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Contrast
 description: Sets the desired contrast
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Contrast
     type: Int

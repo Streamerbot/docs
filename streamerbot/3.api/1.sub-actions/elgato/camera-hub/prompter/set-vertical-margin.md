@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Vertical Margin
 description: Sets the desired vertical margin
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Margin
     type: Int

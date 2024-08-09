@@ -1,7 +1,7 @@
 ---
 title: Throw Item by Name
 description: Allows for throwing a specific item by name
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Item
     type: String

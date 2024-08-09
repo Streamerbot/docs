@@ -1,7 +1,7 @@
 ---
 title: Throw Item
 description: Allows for throwing a specific item
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Item
     type: Select

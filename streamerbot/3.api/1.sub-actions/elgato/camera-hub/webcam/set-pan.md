@@ -1,7 +1,7 @@
 ---
 title: Webcam Set Pan
 description: Sets the desired pan
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Pan
     type: Int

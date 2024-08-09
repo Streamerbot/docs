@@ -1,7 +1,7 @@
 ---
 title: Prompter Set Horizontal Margin
 description: Sets the desired horizontal margin
-version: 0.2.4
+version: 0.2.3
 parameters:
   - name: Margin
     type: Int
