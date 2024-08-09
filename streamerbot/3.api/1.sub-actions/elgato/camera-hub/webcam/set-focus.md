@@ -6,7 +6,7 @@ parameters:
   - name: Focus
     type: Int
     required: true
-    description: Enter percentage (0-100%) in the input box
+    description: Enter percentage (0-100) in the input box
   - name: Adjustment
     type: Checkbox
     required: False
