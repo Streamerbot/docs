@@ -15,6 +15,18 @@ variables:
     type: number
     description: The amount of cumulative months that the user is subscribed for
     value: 2
+  - name: isMultiMonth
+    type: bool
+    description: If subscription is for longer then one month
+    value: True
+  - name: multiMonthDuration
+    type: int
+    description: The amount of months subscribed for
+    value: 2
+  - name: multiMonthTenure
+    type: int
+    description: The total amount of months subscribed for
+    value: 3
 commonVariables:
   - TwitchUser
   - TwitchChat
