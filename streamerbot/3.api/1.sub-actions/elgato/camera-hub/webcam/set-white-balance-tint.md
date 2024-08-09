@@ -6,7 +6,7 @@ parameters:
   - name: White Balance Tint
     type: Int
     required: true
-    description: Enter (2800k-12500k) in the input box
+    description: Enter k value (2800-12500) in the input box
   - name: Adjustment
     type: Checkbox
     required: False
