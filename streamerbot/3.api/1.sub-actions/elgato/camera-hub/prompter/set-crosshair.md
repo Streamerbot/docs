@@ -1,5 +1,5 @@
 ---
-title: Prompter Set Brightness
+title: Prompter Set Crosshair
 description: Sets the desired brightness
 version: 0.2.4
 parameters:
