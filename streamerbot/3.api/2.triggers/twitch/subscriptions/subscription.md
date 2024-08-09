@@ -7,6 +7,18 @@ variables:
     type: string
     description: The subscription tier<br>`prime`, `tier 1`, `tier 2`, `tier 3`
     value: tier 1
+  - name: isMultiMonth
+    type: bool
+    description: If subscription is for longer then one month
+    value: True
+  - name: multiMonthDuration
+    type: int
+    description: The amount of months subscribed for
+    value: 2
+  - name: multiMonthTenure
+    type: int
+    description: The total amount of months subscribed for
+    value: 3
 commonVariables:
   - TwitchUser
   - TwitchChat
