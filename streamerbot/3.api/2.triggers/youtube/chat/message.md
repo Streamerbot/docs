@@ -30,4 +30,5 @@ commonVariables:
 commonVariables:
   - YouTubeUser
   - YouTubeBroadcaster
+  - YouTubeBroadcast
 ---
