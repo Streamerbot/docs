@@ -3,6 +3,7 @@ title: Simple Counter
 description: Create a simple counter to count up or down
 author: tawmae
 icon: i-mdi-numeric-positive-1
+navigation: false
 ---
 
 Counters can be used in various ways, for example:

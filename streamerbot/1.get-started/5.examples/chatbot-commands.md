@@ -2,6 +2,7 @@
 title: Chatbot Commands
 description: Configure some basic chat commands with Streamer.bot
 icon: i-mdi-message-alert
+navigation: false
 ---
 
 ## Overview

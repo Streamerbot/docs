@@ -3,6 +3,7 @@ title: Chat Message Timer
 description: Send custom messages to chat on a given interval
 author: Whipstickgostop
 icon: i-mdi-message-text-clock
+navigation: false
 ---
 
 You can easily execute any of your actions in Streamer.bot at a given interval with **Timed Actions**.
