@@ -45,7 +45,7 @@ In this example, we are going to create a simple timer to send a chat message ev
     Now we have a timer executing our action every 5 minutes!
     ::
 
-4. Send a message to chat
+4. Make our action do something
 
     The [Send Message to Channel](/api/sub-actions/twitch/chat/send-message-to-channel) sub-action allows us to easily send text to our Twitch chat.
 
@@ -66,8 +66,11 @@ In this example, we are going to create a simple timer to send a chat message ev
     Your custom message will be sent to Twitch chat every 5 minutes!
     ::
 
+    ![Chat message preview](assets/timer-message-preview.png)
+
 
 ## Tips & Tricks
 
-You can create dynamic messages by utilizing `%variables%` in the message box
-::read-more{to=/guide/variables}
+- You can view, edit, and delete all your timers by navigating to `Settings > Timed Actions`
+- You can create dynamic messages by utilizing `%variables%` in the message box
+    ::read-more{to=/guide/variables}
