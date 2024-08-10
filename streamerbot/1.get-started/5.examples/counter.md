@@ -5,8 +5,6 @@ author: tawmae
 icon: i-mdi-numeric-positive-1
 ---
 
-## Creating a counter
-
 Counters can be used in various ways – for death counters in videogames, counting how many times the streamer has yawned or how many times a specific command has been used. While commands and Twitch channel point rewards offer their own inbuilt counters, they're not as versatile as the following method that is using **global variables**. If you want to know more about global variables, you can read about them [here](https://docs.streamer.bot/guide/variables#global-variables).
 
 ![Counter Preview](assets/example_counter_chat.png)
@@ -49,7 +47,18 @@ You can also create a second action and choose `Decrement` on the **Global (Set)
 
 ---
 
-_Note: **Persisted** Global (Non-User) Variables have a special gimmick: they can be called into the action without the need of a **Global (Get)** subaction. For this, we can wrap the name of the global variable into waves instead of percent symbols. So instead of `%yawnCounter%`, we simply write `~yawnCounter~`. This only works for this specific kind of global variables. Non-persisted **and** global user variables will need a preceding **Global (Get)** subaction._
+::note
+**Quickly Access Persisted Global Variables**
+<br>
+Did you know you can access [Persisted Global (Non-User) Variables](/guide/variables#global-variables) immediately, without using a [Global (Get)](/api/sub-actions/core/globals/global-get) sub-action?
+<br><br>
+To do this, we can wrap the name of the global variable with tilde `~` symbols instead of percent `%` symbols.
+<br><br>
+For example, instead of `%yawnCounter%`, we simply write `~yawnCounter~`
+<br><br>
+_This only works for this specific kind of global variables.<br>
+Any non-persisted and/or user variables still require a preceding [Global (Get)](/api/sub-actions/core/globals/global-get) sub-action._
+::
 
 ![Counter Variant 2](assets/example_counter_action_2.png)
 

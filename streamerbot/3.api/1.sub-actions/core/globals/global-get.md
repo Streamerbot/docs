@@ -8,8 +8,6 @@ csharpMethods:
   - GetGlobalVar
 ---
 
-![Preview](assets/global-get.png)
-
 ::tip
 You can quickly access persisted globals without this sub-action by wrapping the name with `~`<br>
 :icon{name=i-mdi-chevron-right} `~myGlobalVariable~`{lang=cs}
