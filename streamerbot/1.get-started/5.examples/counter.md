@@ -1,6 +1,7 @@
 ---
 title: Creating a counter
 description: Create a simple counter to count up or down
+author: tawmae
 icon: i-mdi-numeric-positive-1
 ---
 
@@ -28,9 +29,9 @@ Global variables work a little different than regular variables that we use in o
 
 ![Counter Global Get Subaction](assets/example_counter_global_get.png)
 
-So `Variable Name` is the actual name of our global variable (the name in our **Global (Set)** subaction). In our case, it's `yawnCounter`. 
+So `Variable Name` is the actual name of our global variable (the name in our **Global (Set)** subaction). In our case, it's `yawnCounter`.
 
-The `Destination Variable` is its new name that we can use as a variable in our action. It can have a different name like `yawnCounterVariable`, but for sake of simplicity we can just give it the same name. 
+The `Destination Variable` is its new name that we can use as a variable in our action. It can have a different name like `yawnCounterVariable`, but for sake of simplicity we can just give it the same name.
 
 The `Default Value` assigns a value if the variable doesn't exist at the time we are calling it. But since we created it before with our **Global (Set)** subaction, this is technically redundant.
 
