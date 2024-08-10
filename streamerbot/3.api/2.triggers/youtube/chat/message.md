@@ -27,7 +27,6 @@ variables:
     description: JSON Format that separates each emote, providing name, start/end index, and imageURL
     value: '[{"name":":chillwdog:","startIndex":6,"endIndex":16,"imageUrl":"https://yt3.ggpht.com/Ir9mDxzUi0mbqyYdJ3N9Lq7bN5Xdt0Q7fEYFngN3GYAcJT_tccH1as1PKmInnpt2cbWOam4=w24-h24-c-k-nd"},{"name":":chillwcat:","startIndex":52,"endIndex":62,"imageUrl":"https://yt3.ggpht.com/y03dFcPc1B7CO20zgQYzhcRPka5Bhs6iSg57MaxJdhaLidFvvXBLf_i4_SHG7zJ_2VpBMNs=w24-h24-c-k-nd"}]'
 commonVariables:
-commonVariables:
   - YouTubeUser
   - YouTubeBroadcaster
   - YouTubeBroadcast
