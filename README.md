@@ -20,6 +20,10 @@ Guidelines: TBA
 The following are preconfigured `::callout` components:
 
 ```
+::note
+This is some useful information to callout
+::
+
 ::tip
 This is a cool tip!
 ::
