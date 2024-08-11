@@ -1,7 +1,7 @@
 ---
-title: Poll Created
-description: Trigger for when a Twitch Poll is Created
-version: 0.0.50
+title: Poll Archived
+description: Trigger for when a Twitch Poll has been archived
+version: 0.2.4
 twitchService: EventSub
 variables:
   - name: poll.Title
@@ -10,9 +10,14 @@ variables:
   - name: poll.Id
     type: string
     description: Twitch's internal id for the poll
+    value: f76ddfef-8654-4fd1-9dda-b377a73ed9ef
   - name: poll.StartedAt
     type: DateTime
     description: The timestamp that the poll was created
+    value: 8/4/2023 10:56:06 AM
+  - name: poll.endedAt
+    type: DateTime
+    description: The timestamp that the poll has ended
     value: 8/4/2023 10:56:06 AM
   - name: poll.Duration
     type: int
@@ -61,4 +66,27 @@ variables:
   - name: poll._json
     type: string
     description: All the variables in a JSON Object
+  - name: poll.winningIndex
+    type: int
+    description: The index of the winning choice
+    value: 2
+  - name: poll.winningChoice.id
+    type: string
+    description: The id of the winning choice
+  - name: poll.winningChoice.title
+    type: int
+    description: The title of the winning choice
+    value: Choice 2
+  - name: poll.winningChoice.votes
+    type: int
+    description: The number of regular votes from the winning choice
+    value: 20
+  - name: poll.winningChoice.rewardVotes
+    type: int
+    description: The number of reward based votes from the winning choice
+    value: 10
+  - name: poll.winningChoice.totalVotes
+    type: int
+    description: The total number votes from the winning choice
+    value: 30
 ---
