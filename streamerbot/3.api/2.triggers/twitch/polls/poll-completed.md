@@ -7,6 +7,7 @@ variables:
   - name: poll.Id
     type: string
     description: Twitch's internal id for the poll
+    value: f76ddfef-8654-4fd1-9dda-b377a73ed9ef
   - name: poll.StartedAt
     type: DateTime
     description: The timestamp that the poll was created
@@ -64,7 +65,7 @@ variables:
     description: The index of the winning choice
     value: 2
   - name: poll.winningChoice.id
-    type: int
+    type: string
     description: The id of the winning choice
     value: 4629fc6c-06e0-4f59-8bb6-0f69fd1f552a
   - name: poll.winningChoice.title
@@ -79,9 +80,9 @@ variables:
     type: int
     description: The number of reward based votes from the winning choice
     value: 10
-  - name: poll.winningChoice.votes
+  - name: poll.winningChoice.totalVotes
     type: int
-    description: The number votes from the winning choice
+    description: The total number of votes for the winning choice
     value: 30
   - name: poll._json
     type: string
