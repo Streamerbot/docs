@@ -15,43 +15,47 @@ variables:
     description: The timestamp that the poll was created
     value: 8/4/2023 10:56:06 AM
   - name: poll.Duration
-    type: number
+    type: int
     description: The duration of the poll in seconds
     value: 300
   - name: poll.DurationRemaining
-    type: number
+    type: int
     description: How many seconds the poll has remaining
     value: 300
   - name: poll.choices.count
-    type: number
+    type: int
     description: The number of choices in the poll
     value: 3
   - name: poll.choice#.title
     type: string
     description: The title of this choice
     value: Choice 1
+  - name: poll.choice#.id
+    type: string
+    description: The id of this choice
+    value: Choice 1
   - name: poll.choice#.votes
-    type: number
+    type: int
     description: The number of regular votes of this choice
     value: 10
   - name: poll.choice#.rewardVotes
-    type: number
+    type: int
     description: The total number of reward based votes of this choice
     value: 7
   - name: poll.choice#.totalVotes
-    type: number
+    type: int
     description: The total number of votes for this choice
     value: 17
   - name: poll.votes
-    type: number
+    type: int
     description: The total number of regular votes
     value: 30
   - name: poll.rewardVotes
-    type: number
+    type: int
     description: The total number of reward based votes
     value: 19
   - name: poll.totalVotes
-    type: number
+    type: int
     description: The total number of votes
     value: 49
   - name: poll._json
