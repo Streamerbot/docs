@@ -10,6 +10,7 @@ variables:
   - name: poll.Id
     type: string
     description: Twitch's internal id for the poll
+    value: f76ddfef-8654-4fd1-9dda-b377a73ed9ef
   - name: poll.StartedAt
     type: DateTime
     description: The timestamp that the poll was created
