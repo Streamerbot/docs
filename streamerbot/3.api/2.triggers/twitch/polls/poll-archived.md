@@ -65,14 +65,13 @@ variables:
   - name: poll._json
     type: string
     description: All the variables in a JSON Object
-   - name: poll.winningIndex
+  - name: poll.winningIndex
     type: int
     description: The index of the winning choice
     value: 2
   - name: poll.winningChoice.id
     type: string
     description: The id of the winning choice
-    value: 64bb1179-3dc7-4bcd-8e46-201e3a84e6a6
   - name: poll.winningChoice.title
     type: int
     description: The title of the winning choice
