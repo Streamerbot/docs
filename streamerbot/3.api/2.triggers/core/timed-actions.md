@@ -8,7 +8,7 @@ parameters:
     description: |
       Select a timer from the Settings -> Timed Actions tab.
 
-      ::tip{color=amber}
+      ::tip
       You can quickly register a new timed action by clicking the `Create Timer` button!
       ::
 variables:
