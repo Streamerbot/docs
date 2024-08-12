@@ -13,4 +13,4 @@ Integrate Streamer.bot with [Elgato Camera Hub](https://elgato.com){target=_blan
 :wip
 
 ## Usage
-:api-reference-cards{path=elgato/wave-link}
+:api-reference-cards{path="elgato/camera-hub" manifestPath="Camera Hub"}
