@@ -1,25 +1,20 @@
 ---
 title: Keyboard Press
-description: General Sub-Actions Reference
-published: true
-date: 2023-04-10T05:36:54.009Z
-tags: 
-editor: markdown
-dateCreated: 2021-11-02T03:47:06.237Z
+description: Simulate key press events to the active application or trigger global hotkeys
+parameters:
+  - name: Key
+    type: Select
+    required: true
+    description: |
+      Choose the key to be pressed.
+
+      _Not all possible keys are listed, as some just do not make sense at the moment. This list may be expanded in the future._
+
+      ::warning
+      Using fullscreen applications and/or running applications in administrator mode can prevent simulated key presses from working in that application.<br>
+      We **do not** advocate running Streamer.bot in administrator mode as a fix.
+      ::
+  - name: Modifiers
+    type: Toggle
+    description: Choose any additional modifier keys to include with the key press
 ---
-
-## Overview
-Send keyboard presses to the current active application, or to global hotkeys.
-
-![sub-action-keyboard-press.png](../assets/sub-action-keyboard-press.png)
-
-## Configuration
-### Key
-Pick the key you wish to be pressed, not all possible keys are listed here, as some just do not make sense at the moment, this list may be expanded out in the future.
-
-::callout{icon=i-mdi-alert color=amber}
-Using fullscreen applications and/or applications in administrator mode can stop the `Keyboard Press` sub-action from working in that application, however we do not advocate running Streamer.bot in administrator mode as a fix.
-::
-
-### Modifiers
-The modifier to press along with the key.

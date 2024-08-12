@@ -1,27 +1,47 @@
 ---
 title: Run a Program
 description: Execute an external program or script
+parameters:
+  - name: Command
+    type: Text
+    required: true
+    description: |
+      The command or executable to run
+
+      This can contain anything you can normally execute via the :shortcut{value=Win+R} Windows Run dialog or `cmd`
+
+      Examples:
+      - Executables
+        - `*.exe`
+        - `node`
+        - `python`
+      - Batch Files
+        - `*.bat`
+      - PowerShell Scripts
+        - `*.ps1`
+      - URI
+        - `https://google.com`
+        - `streamdeck://plugins/message/<PLUGIN_UUID>/<MESSAGE>`
+        - `liv-app://camera/set/<CAMERA#>`
+
+  - name: Working Directory
+    type: Text
+    default: Command Directory
+    description: The working directory for the executed command
+  - name: Arguments
+    type: Text
+    description: |
+      Optional arguments or flags to pass to the executable
+
+      _Powerful with variables!_
+  - name: Wait
+    type: Number
+    description: Optional delay, in seconds
+  - name: Environment Variables
+    type: Table
+    description: |
+      Define any optional environment variables you would like to pass to the executable
+
+      _Powerful with variables!_
 ---
 
-With this sub-action, you can run an exe, batch file, cmdlet, Powershell script, URI, or anything you can normally run via the <kbd>Win+R</kbd>, Windows Run dialog, or command prompt.
-
-A common usage for this action, is using the LIV URI for switching camera profiles `liv-app://camera/set/#`
-
-![perform-command-dialog.png](/Sub-Actions/perform-command-dialog.png =400x)
-
-## Configuration
-
-### Command
-The command or executable to run
-
-### Working Directory
-The working directory for the command - defaults to the directory of the executable
-
-### Arguments
-Optional arguments or flags to pass to the executable
-
-### Wait
-Optional delay in seconds
-
-### Environment Variables
-Define any optional environment variables you would like to pass to the executable
