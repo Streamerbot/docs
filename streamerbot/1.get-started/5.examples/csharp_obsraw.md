@@ -17,7 +17,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    ![C# Raw Copy CPH](assets/csharp_obsraw_copycph.png)
 
-   In our example, we want to make a `GetInputSettings` request to get the text of a Text (GDI+) source called **Bitrate Text**. Copying the CPH method leaves us with this in our clipboard:
+   In our example, we want to send a `GetInputSettings` request to get the text of a Text (GDI+) source called **Bitrate Text**. Copying the CPH method leaves us with this in our clipboard:
 
    ```cs
    CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
@@ -32,16 +32,16 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    public class CPHInline
    {
-   	public bool Execute()
-   	{
-   		CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-
-         return true;
-   	}
+       public bool Execute()
+       {
+           CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
+           
+           return true;
+       }
    }
    ```
 
-   Running that code will send the request, but we still don't have a way to fetch the response information. But taking a look into the docs for C# methods, we can see that the request also returns a **string**. So we simply declare a string and have the request as its value.
+   Running that code will send the request, but we still don't have a way to fetch the response information. By taking a look into the docs for the C# methods, we can see that the request also returns a **string**. So we simply declare a string and have the request as its value.
 
    :read-more{to="/api/csharp/obs/raw#ObsSendRaw"}
 
@@ -50,12 +50,12 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    public class CPHInline
    {
-   	public bool Execute()
-   	{
-   		string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-
-         return true;
-   	}
+       public bool Execute()
+       {
+           string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
+           
+           return true;
+       }
    }
    ```
 
@@ -79,7 +79,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    }
    ```
 
-   Now we specifically want the **text** and **fontsize** from that entire request. To do that, we need to parse the **string** into a **JObject** first. So we add the namespace `using Newtonsoft.Json.Linq;` and use the `JObject.Parse()` method.
+   Now we specifically want the `text` and `fontsize` properties from that entire request. To do that, we need to parse the **string** into a **JObject** first. So we add the namespace `using Newtonsoft.Json.Linq;` and use the `JObject.Parse()` method.
 
    ```cs
    using System;
@@ -87,18 +87,18 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    
    public class CPHInline
    {
-   	public bool Execute()
-   	{
-   		string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-
-         JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
-
-         return true;
-   	}
+       public bool Execute()
+       {
+           string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
+           
+           JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
+           
+           return true;
+       }
    }
    ```
 
-4. Get specific properties
+4. Getting specific properties
 
    This now allows us to directly pick the info we want. As seen in the response, the object is called `inputSettings` and the properties `text` and `font` -> `size`.
 
@@ -122,18 +122,18 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    
    public class CPHInline
    {
-   	public bool Execute()
-   	{
-   		string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-
-         JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
-
-         string gdiText = (string)inputSettingsJObject["inputSettings"]["text"];
-
-         int fontSize = (int)inputSettingsJObject["inputSettings"]["font"]["size"];
-   
-   		return true;
-   	}
+       public bool Execute()
+       {
+           string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
+           
+           JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
+           
+           string gdiText = (string)inputSettingsJObject["inputSettings"]["text"];
+           
+           int fontSize = (int)inputSettingsJObject["inputSettings"]["font"]["size"];
+           
+           return true;
+       }
    }
    ```
 
@@ -173,7 +173,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    ::note
    **Variables within CPH.ObsSendRaw Requests**
    <br>
-   To use variables in the request, we format them like this:
+   To use variables within the request, we format them like this:
    <br><br>
    `" + variableName + "`
    ::
