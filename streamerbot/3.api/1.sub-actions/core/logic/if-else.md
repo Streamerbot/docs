@@ -8,7 +8,7 @@ parameters:
     description: |
       Enter the variable / argument name to test
       ::warning
-      If the variable does not exist, the entire sub-action will be skipped unless you are using the `Is Null or Empty` operator.
+      If the variable does not exist, the entire sub-action will be skipped unless you are using the `Does Not Exist` operator.
       ::
   - name: Operator
     type: Select
