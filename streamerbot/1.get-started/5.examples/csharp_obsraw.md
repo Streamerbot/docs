@@ -75,7 +75,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
          "size": 144,
          "style": "ExtraLight"
        },
-       "text": "7500"
+       "text": "Current bitrate: 7500"
      }
    }
    ```
@@ -102,7 +102,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 4. Getting specific properties
 
    This now allows us to directly pick the info we want. As seen in the response, the object is called `inputSettings` and the properties `text` and `font` -> `size`.
-
+   
    To get the `text` property, we can just declare a string and parse that property:
 
    ```cs
@@ -112,7 +112,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    The `size` property is a number and also nested within the `font` property, so we need to adjust that:
 
    ```cs
-   int fontSize = (string)inputSettingsJObject["inputSettings"]["font"]["size"];
+   int fontSize = (int)inputSettingsJObject["inputSettings"]["font"]["size"];
    ```
 
    So the entire code looks like this:
