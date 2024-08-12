@@ -5,7 +5,11 @@ parameters:
   - name: Variable
     type: Text
     required: true
-    description: Enter the variable / argument name to test
+    description: |
+      Enter the variable / argument name to test
+      ::warning
+      If the variable does not exist, the entire sub-action will be skipped unless you are using the `Is Null or Empty` operator.
+      ::
   - name: Operator
     type: Select
     required: true
@@ -25,8 +29,8 @@ parameters:
       - `Is Null or Empty`: Check if a variable is `Null`{lang=cs} or empty
 
       ::tip
-      **Regular Expressions (RegEx) are extremely powerful!**<br>
-      :icon{name=i-mdi-chevron-right} You can use tools like [regex101](https://regex101.com) and [RegExr](https://regexr.com) to view and test your expressions.
+        **Regular Expressions (RegEx) are extremely powerful!**<br>
+        :icon{name=i-mdi-chevron-right} You can use tools like [regex101](https://regex101.com) and [RegExr](https://regexr.com) to view and test your expressions.
       ::
   - name: Auto Type
     type: Toggle
@@ -45,7 +49,11 @@ parameters:
     description: |
       Enter the value you would like to use for comparison.
 
-      This can contain other `%variables%`{lang=cs} or `~globalVariables~`{lang=cs}
+      This can contain other `%variables%`{lang=cs}
+
+      ::warning
+      You cannot use `~globalVariables~`{lang=cs} directly. Use the [Global Get](/api/sub-actions/core/global/global-get) sub-action to first load it into a local argument.
+      ::
   - name: Do Action
     type: Select
     default: None
