@@ -1,52 +1,97 @@
 ---
-title: If/Else
-description: Logic Sub-Actions Reference
-published: true
-date: 2023-04-08T00:27:06.138Z
-tags: logic, if, else
-editor: markdown
-dateCreated: 2022-01-09T11:33:31.443Z
+title: If / Else
+description: Perform conditional logic based on variable contents
+parameters:
+  - name: Variable
+    type: Text
+    required: true
+    description: Enter the variable / argument name to test
+  - name: Operator
+    type: Select
+    required: true
+    default: Equals
+    description: |
+      Choose the type of test to perform on the selected variable
+
+      - `Equals`: Check if the variable equals a given value
+      - `Not Equals`: Check if the variable does not equal a given value
+      - `Contains`: Check if the variable contains the given value
+      - `Regex Match`: Use a Regular Expression to match variable contents
+      - `Less Than`: Check if a numeric variable is less than a given value
+      - `Greater Than`: Check if a numeric variable is greater than a given value
+      - `Does Not Exist`: Check if the variable name is defined at all
+      - `Equals (Ignore Case)`: Check if a string variable equals a given value, case insensitive
+      - `Not Equals (Ignore Case)`: Check if a string variable does not equal a given value, case insensitive
+      - `Is Null or Empty`: Check if a variable is `Null`{lang=cs} or empty
+
+      ::tip
+      **Regular Expressions (RegEx) are extremely powerful!**<br>
+      :icon{name=i-mdi-chevron-right} You can use tools like [regex101](https://regex101.com) and [RegExr](https://regexr.com) to view and test your expressions.
+      ::
+  - name: Auto Type
+    type: Toggle
+    default: false
+    description: |
+      By default, values which have not already been typed are treated as text, or `string`{lang=cs} variables.
+
+      Enable `Auto Type` to automatically determine the type for the variable value.
+
+      For example:
+      - `0`{lang=cs} can be auto-typed to a numeric type such as `int`{lang=cs} or `long`{lang=cs}
+      - `true`{lang=cs} or `false`{lang=cs} can be auto-typed to a `bool`{lang=cs}
+  - name: Value
+    type: Text
+    required: true
+    description: |
+      Enter the value you would like to use for comparison.
+
+      This can contain other `%variables%`{lang=cs} or `~globalVariables~`{lang=cs}
+  - name: Do Action
+    type: Select
+    default: None
+    description: Select an action to execute if the comparison is `true`{lang=cs}
+  - name: Run Action Immediately
+    type: Toggle
+    default: true
+    description: |
+      By default, the selected action will be executed outside of its normal queue and treated as a subroutine of the current action, waiting for completion before moving on to the next sub-action.
+
+      Disable this option to queue the action as normal and immediately move on to the next sub-action
+  - name: Then
+    type: Select
+    default: Continue
+    description: |
+      Choose whether or not the current action should continue if the comparison was `true`{lang=cs}
+
+      - `Continue`: Continue execution as normal, moving on to any subsequent sub-actions
+      - `Break`: Stop the current action, any subsequent sub-actions will not be executed.
+  - name: Else Condition -> Do Action
+    type: Select
+    default: None
+    description: Select an action to execute if the comparison is `false`{lang=cs}
+  - name: Else Condition -> Run Action Immediately
+    type: Toggle
+    default: true
+    description: |
+      By default, the selected action will be executed outside of its normal queue and treated as a subroutine of the current action, waiting for completion before moving on to the next sub-action.
+
+      Disable this option to queue the action as normal and immediately move on to the next sub-action
+  - name: Else Condition -> Then
+    type: Select
+    default: Continue
+    description: |
+      Choose whether or not the current action should continue if the comparison was `false`{lang=cs}
+
+      - `Continue`: Continue execution as normal, moving on to any subsequent sub-actions
+      - `Break`: Stop the current action, any subsequent sub-actions will not be executed.
 ---
 
-## Overview
-The If sub-action performs a logical test on the contents of an `Argument` and if the result is true it will perform a named action and then either break the action or let it continue
+::disclosure
+If/Else Flow Diagram by pwnyy
 
-> If the test comes back `False` the rest of the IF statement will be ignored and the action will always continue to the next sub-action 
-{.is-warning}
-
-![logic-if.png](/logic-if.png =400x)
-
-## Configuration
-### Variable
-This is the `Argument` name to test
-
-> If you are still using v0.14 or below do not use % symbols in the variable name, for v0.15 and up it % symbols will be ignored in the Variable name
-{.is-info}
-
-### Operator
-The Type of logical test to perform. Valid options are `Equals`, `Not Equals`, `Contains`, `Regex Match`, `Less Than`, `Greater Than` & `Does Not Exist`
-
-### Value
-The value for comparison 
-
-### Do Action
-The `Action` to perform if the logic test is true
-
-If the `Run Action Immediately` checkbox is ticked, this will run the action outside its normal queue as if it were a subroutine of the current action, Streamerbot will return to this point in the action after it has completed
-
-If the box is unchecked then Streamerbot will queue it as normal as a completely separate action and then move on immediately to the next sub-action
-
-### Then
-This specifies if the Action should `Continue` or `Break` after performing its named Action. This flag will only trigger if the test was `True`, if not it will always `Continue`
-
-
-## RegEx Match
-The RexEx operator is used to perform a regular expression match on the contents of an `Argument` defined in `Value`.
-
-### Defining a RegEx
-Using tools like [RegExr](https://regexr.com) you can more easily see a breakdown of the RegEx syntax and how it will work to make sure that it functions how you intend it. You can also see the [C# RegEx Docs](https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.2) for C# specific syntax, but you can also use JavaScript based RegEx syntax and most RegEx Engines support it.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **Logic Sub-Actions *Go Back***](/Sub-Actions/Logic)
-{.btn-grid .my-5}
+#content
+  ::small{.text-gray-400}
+  Right-Click -> Open in New Tab to view full size
+  ::
+  ![If-Else flowchart](/1.get-started/assets/if-else-flowchart.png)
+::
