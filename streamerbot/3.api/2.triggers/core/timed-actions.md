@@ -1,6 +1,16 @@
 ---
 title: Timed Actions
 description: Trigger for a Timed Action
+parameters:
+  - name: Timers
+    type: Select
+    required: true
+    description: |
+      Select a timer from the Settings -> Timed Actions tab.
+
+      ::tip{color=amber}
+      You can quickly register a new timed action by clicking the `Create Timer` button!
+      ::
 variables:
   - name: timerId
     type: string
@@ -19,14 +29,3 @@ variables:
 ---
 
 :read-more{to="/guide/settings/timed-actions"}
-
-## Parameters
-::field-group
-  ::field{name=Timers type=Select}
-    Select a timer from the Settings -> Timed Actions tab.
-
-    ::tip{color=amber}
-    You can quickly register a new timed action by clicking the `Create Timer` button!
-    ::
-  ::
-::
