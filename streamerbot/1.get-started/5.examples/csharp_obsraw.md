@@ -138,7 +138,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    }
    ```
 
-6. Checking the response
+5. Checking the response
 
    To make sure we got that info correctly, we can output both of them into our logs aswell:
 
@@ -152,7 +152,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    [2024-08-11 19:13:48.297 INF] GDI Text: Current bitrate: 7500 // Font Size: 144
    ```
 
-7. Using those variables to send another Raw request
+6. Using those variables to send another Raw request
 
    With our newly obtained information, we can use that variables to send another response. Let's say, we have another text source and want to give it the same text and font size as our **Bitrate Text** source. So we paste the setting parameters into the OBS Raw Generator and copy the CPH method:
 
@@ -169,7 +169,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    CPH.ObsSendRaw("SetInputSettings", "{\"inputName\":\"Other Textsource\",\"inputSettings\":{\"font\":{\"size\":144},\"text\":\"7500\"},\"overlay\":true}", 0);
    ```
 
-8. Replace variables
+7. Replace variables
 
    ::note
    **Variables within CPH.ObsSendRaw Requests**
@@ -204,4 +204,4 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    ![C# Raw Result](assets/csharp_obsraw_result.gif)
 
-9. Done! You are now able to send an OBS Raw request as well as fetch info from an OBS Raw request in C#!
+8. Done! You are now able to send an OBS Raw request as well as fetch info from an OBS Raw request in C#!
