@@ -4,6 +4,7 @@ description: An example how to send OBS Raw requests and work with the responses
 author: tawmae
 icon: i-mdi-raw
 navigation: false
+difficulty: 3
 ---
 
 You are probably already familiar with sending OBS Raw requests with Streamer.bot's [OBS Raw Generator](https://obs-raw.streamer.bot/) or the Raw subaction that you find under `OBS -> Raw`. Sending it vía the subaction then populates variables that you can further use in your action. Sending Raw requests in C# however works a little different.
@@ -35,7 +36,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
        public bool Execute()
        {
            CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-           
+
            return true;
        }
    }
@@ -53,7 +54,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
        public bool Execute()
        {
            string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-           
+
            return true;
        }
    }
@@ -84,15 +85,15 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    ```cs
    using System;
    using Newtonsoft.Json.Linq;
-   
+
    public class CPHInline
    {
        public bool Execute()
        {
            string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-           
+
            JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
-           
+
            return true;
        }
    }
@@ -119,19 +120,19 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    ```cs
    using System;
    using Newtonsoft.Json.Linq;
-   
+
    public class CPHInline
    {
        public bool Execute()
        {
            string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-           
+
            JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
-           
+
            string gdiText = (string)inputSettingsJObject["inputSettings"]["text"];
-           
+
            int fontSize = (int)inputSettingsJObject["inputSettings"]["font"]["size"];
-           
+
            return true;
        }
    }
@@ -181,21 +182,21 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
    ```cs
    using System;
    using Newtonsoft.Json.Linq;
-   
+
    public class CPHInline
    {
        public bool Execute()
        {
            string getInputSettingsResponse = CPH.ObsSendRaw("GetInputSettings", "{\"inputName\":\"Bitrate Text\"}", 0);
-           
+
            JObject inputSettingsJObject = JObject.Parse(getInputSettingsResponse);
-           
+
            string gdiText = (string)inputSettingsJObject["inputSettings"]["text"];
-           
+
            int fontSize = (int)inputSettingsJObject["inputSettings"]["font"]["size"];
-           
+
            CPH.ObsSendRaw("SetInputSettings", "{\"inputName\":\"Other Textsource\",\"inputSettings\":{\"font\":{\"size\": " + fontSize + "},\"text\":\" " + gdiText + "\"},\"overlay\":true}", 0);
-           
+
            return true;
        }
    }
