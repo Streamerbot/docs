@@ -10,20 +10,27 @@ The [Streamlabs](https://streamlabs.com){target=_blank} integration allows you t
 
 ## Configuration
 
-::callout{icon=i-mdi-navigation to="https://streamlabs.com/dashboard#/settings/api-settings" target=_blank rel=noopener}
-Navigate to **Dashboard > Settings > API Settings > API Tokens** on the [Streamlabs](https://streamlabs.com/dashboard#/settings/api-settings) website
-::
+1. Obtain your Streamlabs API Token
+    ::callout{icon=i-mdi-navigation to="https://streamlabs.com/dashboard#/settings/api-settings" target=_blank rel=noopener}
+    Navigate to **Dashboard > Settings > API Settings > API Tokens** on the [Streamlabs](https://streamlabs.com/dashboard#/settings/api-settings) website
+    ::
 
-1. Next to `Your Socket API Token`, click `Copy` to obtain your API token
+    1. Next to `Your Socket API Token`, click `Copy` to obtain your API token
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > Streamlabs** in Streamer.bot
-::
+2. Configure Streamer.bot
+    ::callout{icon=i-mdi-navigation}
+    Navigate to **Integrations > Streamlabs** in Streamer.bot
+    ::
 
-1. Paste your `Socket API Token` into the `Token` field
-2. Click `Connect to Streamlabs`
-2. Enable `Auto Connect` to automatically connect to Streamlabs when Streamer.bot starts up
-3. Enable `Auto Reconnect` to automatically reconnect to Streamlabs if the connection is disrupted
+    1. Paste your `Socket API Token` into the `Token` field
+    2. Click `Connect to Streamlabs`
+    2. Enable `Auto Connect` to automatically connect to Streamlabs when Streamer.bot starts up
+    3. Enable `Auto Reconnect` to automatically reconnect to Streamlabs if the connection is disrupted
+
+3. Done!
+    ::success
+    Streamlabs is now connected with Streamer.bot!
+    ::
 
 ## Usage
 :api-reference-cards{path=integrations/streamlabs}

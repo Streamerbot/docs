@@ -11,21 +11,20 @@ The [StreamElements](https://streamelements.com/){target=_blank} integration all
 
 ## Configuration
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > StreamElements**
-::
+1. Connect to StreamElements
+    ::callout{icon=i-mdi-navigation}
+    Navigate to **Integrations > StreamElements** in Streamer.bot
+    ::
 
-1. Click `Connect to StreamElements` to launch the OAuth consent screen
-2. Login with StreamElements to connect your account to Streamer.bot
-2. Enable `Auto Connect` to automatically connect to StreamElements when Streamer.bot starts up
-3. Enable `Auto Reconnect` to automatically reconnect to StreamElements if the connection is disrupted
+    1. Click `Connect to StreamElements` to launch the OAuth consent screen
+    2. Login with StreamElements to connect your account to Streamer.bot
+    2. Enable `Auto Connect` to automatically connect to StreamElements when Streamer.bot starts up
+    3. Enable `Auto Reconnect` to automatically reconnect to StreamElements if the connection is disrupted
 
-### Authentication
-**The StreamElements integration now uses OAuth for authorizing against your account**
-
-To connect Streamer.bot with your StreamElements account:
-1. Navigate to the settings tab within the StreamElements integration
-2. Click `Connect` and authorize **Streamer.bot** to connect to your account
+2. Done!
+    ::success
+    StreamElements is now connected to Streamer.bot!
+    ::
 
 ## Usage
 :api-reference-cards{path=integrations/streamelements}

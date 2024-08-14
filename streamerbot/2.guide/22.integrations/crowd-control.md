@@ -10,23 +10,29 @@ Integrate Streamer.bot with [Crowd Control](https://crowdcontrol.live){target=_b
 
 ## Configuration
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Overlay > Assets** in the Crowd Control application
-::
+1. Obtain your Crowd Control Overlay URL
 
-1. Click the :shortcut{value=Copy} button next to your `Overlay URL`
+    ::navigate
+    Navigate to **Overlay > Assets** in the Crowd Control application
+    ::
 
-![image](https://github.com/Streamerbot/docs/assets/8848167/d7b2db23-313a-40fa-b883-180d204ee7ce)
+    - Click the :shortcut{value=Copy} button next to your `Overlay URL`
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > Crowd Control** in Streamer.bot
-::
+    ![image](https://github.com/Streamerbot/docs/assets/8848167/d7b2db23-313a-40fa-b883-180d204ee7ce)
 
-1. Paste the copied URL into the `Overlay URL` text field
+2. Configure Streamer.bot
 
-::callout{icon=i-mdi-check color=green}
-Crowd Control is now connected!
-::
+    ::navigate
+    Navigate to **Integrations > Crowd Control** in Streamer.bot
+    ::
+
+    - Paste the copied URL into the `Overlay URL` text field
+
+3. Done!
+
+    ::success
+    Crowd Control is now connected to Streamer.bot!
+    ::
 
 ## Options
 ::field-group

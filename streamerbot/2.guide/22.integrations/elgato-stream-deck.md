@@ -8,4 +8,6 @@ logo: /img/icons/elgato.png
 
 ::card{icon=i-mdi-bookmark to="https://streamdeck.streamer.bot" target=_blank rel=noopener title="Stream Deck Plugin Documentation"}
 Official Elgato Stream Deck Plugin for Streamer.bot
+<br>
+<small>[streamdeck.streamer.bot](https://streamdeck.streamer.bot)</small>
 ::

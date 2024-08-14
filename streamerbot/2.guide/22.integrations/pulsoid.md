@@ -11,14 +11,20 @@ Receive heart rate events from [Pulsoid](https://pulsoid.com){target=_blank}
 
 ## Configuration
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > Pulsoid**
-::
+1. Connect to Pulsoid
+    ::navigate
+    Navigate to **Integrations > Pulsoid** in Streamer.bot
+    ::
 
-1. Click `Connect to Pulsoid` to launch the OAuth consent screen
-2. Login with Pulsoid to connect your account to Streamer.bot
-2. Enable `Auto Connect` to automatically connect to Pulsoid when Streamer.bot starts up
-3. Enable `Auto Reconnect` to automatically reconnect to Pulsoid if the connection is disrupted
+    1. Click `Connect to Pulsoid` to launch the OAuth consent screen
+    2. Login with Pulsoid to connect your account to Streamer.bot
+    2. Enable `Auto Connect` to automatically connect to Pulsoid when Streamer.bot starts up
+    3. Enable `Auto Reconnect` to automatically reconnect to Pulsoid if the connection is disrupted
+
+2. Done!
+    ::success
+    Pulsoid will now forward events to Streamer.bot!
+    ::
 
 
 ## Usage

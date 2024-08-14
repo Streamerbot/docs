@@ -10,18 +10,21 @@ logo: /img/icons/donordrive.png
 Integrate Streamer.bot with [DonorDrive](https://donordrive.com)
 
 ## Configuration
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > DonorDrive**
-::
 
-![DonorDrive Configuration](assets/donordrive.png)
+1. Add a DonorDrive service to Streamer.bot
 
-1. <kbd>Right-Click</kbd> anywhere in the panel and select `Add`
+    ::navigate
+    Navigate to **Integrations > DonorDrive**
+    ::
 
-![DonorDrive Add Service](assets/donordrive-add-service.png)
+    ![DonorDrive Configuration](assets/donordrive.png)
 
-1. Enter a name for this DonorDrive service
-2. Select a charity provider, or enter a custom API endpoint
+    - <kbd>Right-Click</kbd> anywhere in the panel and select `Add`
+
+    ![DonorDrive Add Service](assets/donordrive-add-service.png)
+
+    - Enter a name for this DonorDrive service
+    - Select a charity provider, or enter a custom API endpoint
 
 ::wip
 Remaining setup documentation needed

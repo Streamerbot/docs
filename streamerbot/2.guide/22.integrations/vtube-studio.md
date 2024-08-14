@@ -8,23 +8,38 @@ logo: /img/icons/vtube-studio.png
 ---
 
 ## Configuration
-1. To connect StreamerBot with VTube Studio, open up VTube Studio and head to its settings.
 
-2. Scroll down a bit and start the API
-   
-   ![VTube Studio Start API](assets/vtube-studio-enable-api.png)
+1. Enable the VTube Studio API
+    ::navigate
+    Navigate to **Settings** in VTube Studio
+    ::
 
-3. Now go into StreamerBot and navigate to `Integrations -> VTube Studio`. The default port is `8001` and should match the one in your VTube Studio settings. You can change that if you need to, just make sure they're the same on both ends.
+    - Enable the `Start API` toggle
+      ![VTube Studio Start API](assets/vtube-studio-enable-api.png){width=400}
 
-   ![VTube Studio SB Menu](assets/vtube-studio-connect.png)
+2. Configure Streamer.bot
+    ::navigate
+    Navigate to **Integrations > VTube Studio** in Streamer.bot
+    ::
 
-4. Check `Auto Connect` and `Auto Reconnect` if you want (optional). Hit `Connect` afterwards.
+    - Match the settings to those configured in VTube Studio
+        - `Host` defaults to `localhost`
+        - `Port` defaults to `8001`
+    - Check `Auto Connect` and `Auto Reconnect` if you want (optional).
+    - Hit `Connect`
 
-5. Now quickly move back into VTube Studio and allow the connection.
+    ![VTube Studio SB Menu](assets/vtube-studio-connect.png)
 
-   ![VTube Studio SB Menu](assets/vtube-studio-allow-connection.png)
+3. Allow the connection
 
-6. All done! StreamerBot and VTube Studio are now connected. You can now make use of all triggers and subactions that you can find under `Integrations -> VTube Studio` in your Actions tab.
+    Quickly return VTube Studio and allow the connection.
+    ![VTube Studio SB Menu](assets/vtube-studio-allow-connection.png){width=400}
+
+4. Done!
+   ::success
+   Streamer.bot and VTube Studio are now connected!
+   ::
 
 ## Usage
+
 :api-reference-cards{path=integrations/vtube-studio}

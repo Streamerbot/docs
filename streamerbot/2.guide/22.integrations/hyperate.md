@@ -11,24 +11,26 @@ Receive heart rate events from [HypeRate.io](https://hyperate.io){target=_blank}
 
 ## Configuration
 
-::callout{icon=i-mdi-navigation}
-Navigate to **Integrations > HypeRate.io**
-::
+1. Add your HypeRate connection details
 
-![HypeRate Configuration](assets/hyperate.png)
+    ::navigate
+    Navigate to **Integrations > HypeRate.io**
+    ::
 
-### `ID`
-Enter your HypeRate.io ID
+    ![HypeRate Configuration](assets/hyperate.png)
 
-::tip{color=amber}
-You can enter `internal-testing` in this field to have fake testing data sent to Streamer.bot
-::
+    1. Enter your HypeRate.io ID
+      ::tip
+      You can enter `internal-testing` in this field to have fake testing data sent to Streamer.bot
+      ::
+    2. Enable `Auto Connect` to automatically connect to HypeRate.io when Streamer.bot starts up
+    3. Enable `Auto Reconnect` to automatically reconnect to HypeRate.io when the connection is disrupted
 
-### `Auto Connect`
-Enable to automatically connect to HypeRate.io when Streamer.bot starts up
+2. Done!
 
-### `Auto Reconnect`
-Enable to automatically reconnect to HypeRate.io when the connection is disrupted
+    ::success
+    You will now receive events from HypeRate!
+    ::
 
 ## Usage
 :api-reference-cards{path=integrations/hyperateio manifest-path=hyperate.io}
