@@ -18,5 +18,6 @@ variables:
     description: The name of the Level at which the viewer is a member
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---

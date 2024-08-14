@@ -30,6 +30,12 @@ variables:
     type: DateTime
     description: When was this user last active?
     value: 8/4/2023 10:56:06 AM
+  - name: userProfileUrl
+    type: string
+    description: The user's YouTube profile image
+  - name: userIsSponsor
+    type: boolean
+    description: Indicates whether the viewer is a current channel member or not
 ---
 
 

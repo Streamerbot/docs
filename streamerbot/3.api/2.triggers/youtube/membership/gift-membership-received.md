@@ -20,7 +20,14 @@ variables:
   - name: gifterUserType
     type: string
     description: The type of user who gave the gifted membership
+  - name: gifterProfileUrl
+    type: string
+    description: The profile image of the user who gave the gifted membership
+  - name: gifterIsSponsor
+    type: string
+    description: Indicates whether the user who gave the gifted membership is a current channel member or not
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---

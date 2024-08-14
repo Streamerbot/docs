@@ -12,5 +12,6 @@ variables:
     value: 60
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---

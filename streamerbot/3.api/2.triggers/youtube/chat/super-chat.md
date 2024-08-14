@@ -30,6 +30,7 @@ variables:
     value: USD
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---
 
