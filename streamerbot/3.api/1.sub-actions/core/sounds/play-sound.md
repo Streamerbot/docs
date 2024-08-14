@@ -33,4 +33,15 @@ parameters:
       Adjust the output volume
 
       _This is a simple volume control. It can often be useful to instead adjust the volume with a tool like Audacity._
+  - name: Sound Name
+    type: string
+    descrpition: The name of the sound, this is used in the Stop Sound Playback sub-action
+    version: 0.2.4
+  - name: Use Filename As Name
+    type: boolean
+    description: Enabling this will use the filename of the sound as the sound name
+    version: 0.2.4
+variables: []
+csharpMethods:
+  - PlaySound
 ---
