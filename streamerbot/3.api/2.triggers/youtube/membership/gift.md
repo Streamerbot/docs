@@ -1,6 +1,6 @@
 ---
 title: Membership Gift
-description: Trigger for Youtube gift memberships
+description: Trigger for YouTube gift memberships
 variables:
   - name: id
     type: string
@@ -14,5 +14,6 @@ variables:
     description: The tier of memberships gifted
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---

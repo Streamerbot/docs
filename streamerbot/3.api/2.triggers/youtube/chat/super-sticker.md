@@ -34,7 +34,12 @@ variables:
     type: string
     description: The language of the `stickerAltText`
     value: EN
+  - name: stickerImageUrl
+    type: string
+    description: The image URL for the sticker
+    version: 0.2.4
 commonVariables:
   - YouTubeUser
+  - YouTubeBroadcast
   - YouTubeBroadcaster
 ---
