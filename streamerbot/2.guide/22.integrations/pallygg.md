@@ -54,4 +54,4 @@ Integrate Streamer.bot with [Pally.gg](https://pally.gg){target=_blank}
 ::
 
 ## Usage
-:api-reference-cards{path=integrations/pallygg}
+:api-reference-cards{path=integrations/pallygg manifestPath="pally.gg"}
