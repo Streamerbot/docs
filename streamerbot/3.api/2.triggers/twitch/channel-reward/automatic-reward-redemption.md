@@ -5,8 +5,10 @@ version: 0.2.4
 variables:
   - name: rewardType
     type: string
-    description: type of the reward
-    value: send_highlighted_message, random_sub_emote_unlock, chosen_sub_emote_unlock, chosen_modified_sub_emote_unlock, single_message_bypass_sub_mode, message_effect, gigantify_an_emote, celebration
+    description: |
+      Type of the reward
+    
+      Possible values: 'send_highlighted_message', 'random_sub_emote_unlock', 'chosen_sub_emote_unlock', 'chosen_modified_sub_emote_unlock', 'single_message_bypass_sub_mode', 'message_effect', 'gigantify_an_emote', 'celebration'
   - name: rewardCost
     type: int
     description: channel point cost of the reward
@@ -41,7 +43,7 @@ commonVariables:
 ---
 
 ## Details
-The Automatic Reward Redemptions work for both "default rewards" as well as the newly introduced "Power-ups".
+The Automatic Reward Redemptions work for both **default rewards** as well as the newly introduced **Power-ups**.
 
 ### Default Rewards
 The default rewards are those made by Twitch like "Highlight My Message". You can either choose to enable or disable them, but you cannot delete and only restrictively edit them.
