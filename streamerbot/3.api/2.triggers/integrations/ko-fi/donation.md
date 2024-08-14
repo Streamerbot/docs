@@ -31,3 +31,10 @@ variables:
     description: The currency of the donation
     value: EUR
 ---
+
+## Parameters
+::field-group
+  ::field{name=Range type=Range}
+    :range-description
+  ::
+::
