@@ -19,5 +19,5 @@ variables:
     description: Number of times this broadcast has been favorited
     value: 25
 commonVariables:
-  - YouTubeBroadcaster
+  - YouTubeBroadcast
 ---
