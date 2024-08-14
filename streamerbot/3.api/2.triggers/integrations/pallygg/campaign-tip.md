@@ -20,7 +20,7 @@ variables:
   - name: tipNetAmountFormatted
     type: string
     description: The amount of the tip that you will receive, formatted as a string with currency symbol
-    value: $1.00
+    value: '$1.00'
   - name: tipMessage
     type: string
     description: If provided, the message that was sent along with the tip
@@ -34,10 +34,8 @@ variables:
     value: 125
   - name: tipGrossAmountFormatted
     description: The total amount of the tip, formatted as a string with currency symbol
-    value: $1.25
+    value: '$1.25'
     type: string
-    description: The amount of the tip that you will receive, formatted as a string with currency symbol
-    value: $1.00
   - name: tipProccessingFee
     type: decimal
     description: The processing fee for the tip
@@ -49,7 +47,7 @@ variables:
   - name: tipProccessingFeeFormatted
     type: string
     description: The processing fee for the tip, formatted as a string with currency symbol
-    value: $0.25
+    value: '$0.25'
   - name: createdAt
     type: DateTime
     description: When the tip was given
