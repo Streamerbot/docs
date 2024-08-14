@@ -8,7 +8,7 @@ variables:
     description: |
       Type of the reward
     
-      Possible values: 'send_highlighted_message', 'random_sub_emote_unlock', 'chosen_sub_emote_unlock', 'chosen_modified_sub_emote_unlock', 'single_message_bypass_sub_mode', 'message_effect', 'gigantify_an_emote', 'celebration'
+      Possible values: `send_highlighted_message`, `random_sub_emote_unlock`, `chosen_sub_emote_unlock`, `chosen_modified_sub_emote_unlock`, `single_message_bypass_sub_mode`, `message_effect`, `gigantify_an_emote`, `celebration`
     value: gigantify_an_emote
   - name: rewardCost
     type: int
