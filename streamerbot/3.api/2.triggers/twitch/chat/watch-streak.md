@@ -2,6 +2,12 @@
 title: Watch Streak
 description: Triggers when a user shares their watch streak.
 version: 0.2.4
+parameters:
+  - name: Range
+    type: Select
+    required: true
+    description: |
+      :range-description
 variables:
   - name: systemMessage
     type: string
@@ -24,6 +30,4 @@ commonVariables:
   - TwitchChat    
 ---
 
-## Parameters
-### `Range`
-:range-description
+
