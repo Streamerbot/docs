@@ -2,6 +2,29 @@
 title: Gift Subscription
 description: Trigger for a Twitch Gift Subscription
 twitchService: Chat Client
+parameters:
+  - name: Tier
+    type: Checkbox
+    description: |
+      Choose on which tier to trigger the gift bomb
+
+      Options: `Tier 1`, `Tier 2`, `Tier 3`
+  - name: Sub Type
+    type: Checkbox
+    description: |
+      Choose on which sub types to trigger the gift bomb
+
+      Options: `Public`, `Anonymous`
+  - name: Months Gifted
+    type: Checkbox
+    description: |
+      Choose on how much months gifted to trigger the gift sub
+
+      Options: `1`, `3`, `6`, `12`
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: recipientUser
     type: string
@@ -45,31 +68,3 @@ variables:
 commonVariables:
   - TwitchUser
 ---
-
-## Parameters
-::field-group
-  ::field{name=Tier type=Checkbox}
-    Choose on which tier to trigger the gift sub
-    - Options:
-      - Tier 1
-      - Tier 2
-      - Tier 3
-  ::
-  ::field{name="Sub Type" type=Checkbox}
-    Choose on which sub types to trigger the gift sub
-    - Options:
-      - Public
-      - Anonymous
-  ::
-  ::field{name="Months Gifted" type=Checkbox}
-    Choose on how much months gifted to trigger the gift sub
-    - Options:
-      - 1
-      - 3
-      - 6
-      - 12
-  ::
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

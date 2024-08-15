@@ -2,6 +2,23 @@
 title: Gift Bomb
 description: Trigger for a Twitch Gift Bomb
 twitchService: Chat Client
+parameters:
+  - name: Tier
+    type: Checkbox
+    description: |
+      Choose on which tier to trigger the gift bomb
+
+      Options: `Tier 1`, `Tier 2`, `Tier 3`
+  - name: Sub Type
+    type: Checkbox
+    description: |
+      Choose on which sub types to trigger the gift bomb
+
+      Options: `Public`, `Anonymous`
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: gifts
     type: number
@@ -38,23 +55,3 @@ variables:
 commonVariables:
   - TwitchUser
 ---
-
-## Parameters
-::field-group
-  ::field{name=Tier type=Checkbox}
-    Choose on which tier to trigger the gift bomb
-    - Options:
-      - Tier 1
-      - Tier 2
-      - Tier 3
-  ::
-  ::field{name="Sub Type" type=Checkbox}
-    Choose on which sub types to trigger the gift bomb
-    - Options:
-      - Public
-      - Anonymous
-  ::
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::
