@@ -2,6 +2,12 @@
 title: Automatic Reward Redemption
 description: Trigger for when default channel point rewards or Power-ups have been used
 version: 0.2.4
+parameters:
+  - name: Reward
+    type: Select
+    required: true
+    description: |
+      Select any or a specific automatic channel reward type.
 variables:
   - name: rewardType
     type: string
@@ -55,12 +61,3 @@ The default rewards are those made by Twitch like "Highlight My Message". You ca
 Power-ups have been added to Twitch on June 12, 2024 and are available in your Channel Reward window. It allows viewers to do specific interactions with bits.
 
 ![Default Rewards](../assets/power_ups.png)
-
-
-In order to to filter for Power-ups in Streamer.bot, you can create an `if/else` subaction and check for the variable `rewardType`:
-
-```
-message_effect
-gigantify_an_emote
-celebration
-```
