@@ -222,7 +222,7 @@ One other thing to note, the `%rawInput%` variable for commands, specificially t
 ![commands-regex-01.png](/commands-regex-01.png)
 
 ### Command C# Methods
-Two new C# methods were added to be able to enable/disable a command.  Unlike other methods that only need a title, this requires the ID of the command, this can be retreived by right clicking on a command and selecting `Copy Command Id`
+Two new C# methods were added to be able to enable/disable a command.  Unlike other methods that only need a title, this requires the ID of the command, this can be retrieved by right clicking on a command and selecting `Copy Command Id`
 
 ```csharp
 void EnableCommand(string id);
