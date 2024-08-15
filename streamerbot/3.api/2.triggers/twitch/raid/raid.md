@@ -3,6 +3,11 @@ title: Raid
 description: Trigger for when you get raided on Twitch
 version: 0.0.33
 twitchService: Chat Client
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: viewers
     type: number
@@ -11,10 +16,3 @@ variables:
 commonVariables:
   - TwitchUser
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

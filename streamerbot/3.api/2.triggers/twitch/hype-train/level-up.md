@@ -2,6 +2,11 @@
 title: Hype Train Level Up
 description: Trigger for a Twitch Hype Train Level Up
 twitchService: EventSub
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: prevLevel
     type: number
@@ -89,10 +94,3 @@ variables:
 commonVariables:
   - TwitchUser
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

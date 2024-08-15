@@ -2,6 +2,11 @@
 title: Heart Rate Pulse
 description: Trigger for a Pulsoid Heart Rate Pulse
 version: 0.1.5
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: measuredAt
     type: number
@@ -9,18 +14,10 @@ variables:
     value: 1704063600
   - name: heartRate
     type: number
-    description: The heart rate BPM
+    description: Last measured heart rate BPM (beats per minute)
     value: 87
 ---
 
-## Details
-::callout{icon=i-mdi-alert color=amber}
+::warning
 When Pulsoid is broadcasting your heart rate, this event can fire once every second, so be sure whatever action you use runs fast enough so it won't cause a backlog in the action queue. It is also recommended that whatever action you are running to be placed in a blocking queue.
-::
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
 ::

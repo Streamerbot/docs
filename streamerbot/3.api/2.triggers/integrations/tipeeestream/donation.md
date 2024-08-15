@@ -2,6 +2,11 @@
 title: Donation
 description: Trigger for a TipeeeStream Donation
 version: 0.1.8
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: tipeeStreamId
     type: string
@@ -34,10 +39,3 @@ variables:
     description: Any donation message the user may have included
     value: My donation message
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

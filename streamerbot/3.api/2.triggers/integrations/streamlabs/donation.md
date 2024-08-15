@@ -1,6 +1,11 @@
 ---
 title: Donation
 description: Trigger for a Streamlabs Donation
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: donationFrom
     type: string
@@ -22,10 +27,3 @@ variables:
     description: The donation message that the user may has included
     value: My donation message
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

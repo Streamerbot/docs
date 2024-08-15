@@ -3,6 +3,11 @@ title: Charity Donation
 description: Trigger for the Twitch charity donation event
 version: 0.1.14
 twitchService: EventSub
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: charity.amount.value
     type: number
@@ -35,10 +40,3 @@ variables:
     description: The website of the charity campaign
     value: mycharitycampaign.com
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

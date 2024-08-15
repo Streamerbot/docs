@@ -2,6 +2,11 @@
 title: Donation
 description: Trigger for a Ko-Fi Donation
 version: 0.1.8
+parameters:
+  - name: Range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: messageId
     type: string
@@ -31,10 +36,3 @@ variables:
     description: The currency of the donation
     value: EUR
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::

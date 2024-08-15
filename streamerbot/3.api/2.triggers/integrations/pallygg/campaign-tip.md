@@ -2,6 +2,11 @@
 title: Campaign Tip
 description: Trigger for when a tip has been received
 version: 0.2.4
+parameters:
+  - name: range
+    type: Select
+    description: |
+      :range-description
 variables:
   - name: tipId
     type: string
@@ -64,10 +69,3 @@ variables:
     type: string
     description: The URL of the campaign
 ---
-
-## Parameters
-::field-group
-  ::field{name=Range type=Range}
-    :range-description
-  ::
-::
