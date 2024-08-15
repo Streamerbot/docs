@@ -7,4 +7,9 @@ parameters:
     type: Drop-down
     required: true
     description: Select Enabled/Disabled/Toggle from drop-down menu
+support:
+  - name: facecam
+    description: Supported values are either `Off` or `On`
+  - name: facecam-mk2
+    description: Supported values are `Off`, `Light`, `Medium` or `High`
 ---
