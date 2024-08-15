@@ -13,7 +13,7 @@ parameters:
       ::
 variables:
   - name: timerId
-    type: string
+    type: Guid
     description: The ID of the timer
     value: 4ed37eec-3b4d-49a5-ac63-57ae62f5231b
     version: 0.2.4

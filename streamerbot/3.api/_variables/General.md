@@ -4,7 +4,7 @@ navigation.title: General
 description: Variables available for all action executions
 variables:
   - name: actionId
-    type: string
+    type: Guid
     description: The unique ID of the action being executed
     value: 2cd1495a-e50c-45d2-8bb5-ffe9c3dff243
   - name: actionName
@@ -12,7 +12,7 @@ variables:
     description: The name of the action being executed
     value: My Action
   - name: runningActionId
-    type: string
+    type: Guid
     description: The unique ID of this running action instance within the queue
     value: c83dd939-9f86-4435-b07c-b6e7e3eef134
   - name: actionQueuedAt
@@ -20,7 +20,7 @@ variables:
     description: The timestamp of when action was queued
     value: 12/21/2023 9:25:21 AM
   - name: triggerId
-    type: string
+    type: Guid
     description: The unique id of the trigger with executed the action
     value: 2cd1495a-e50c-45d2-8bb5-ffe9c3dff243
   - name: triggerName
