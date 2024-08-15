@@ -11,4 +11,7 @@ parameters:
     type: Checkbox
     required: False
     description: If checked, the amount entered in the 'Tilt' box will be added to the current setting
+support:
+  - name: facecam-mk2
+  - name: facecam-pro
 ---
