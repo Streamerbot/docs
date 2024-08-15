@@ -385,7 +385,7 @@ int ObsGetConnectionByName(string name);
 ```
 
 ### Command Cooldown Methods
-> The ID can be retreived by right clicking a command, and clicking the Copy Command ID option
+> The ID can be retrieved by right clicking a command, and clicking the Copy Command ID option
 {.is-info}
 
 ```csharp

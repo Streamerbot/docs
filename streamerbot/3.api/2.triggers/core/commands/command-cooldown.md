@@ -7,7 +7,7 @@ variables:
     description: The command that was used
     value: '!shoutout'
   - name: commandId
-    type: string
+    type: Guid
     description: The id of the command
   - name: commandSource
     type: string
