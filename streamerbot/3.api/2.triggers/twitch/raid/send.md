@@ -1,6 +1,6 @@
 ---
 title: Raid Send
-description: Trigger for when a Twitch Raid from your channel to another channel is Send
+description: Triggers when the viewers successfully leave the broadcasters chat and arrive in raidUser's stream.
 version: 0.0.36
 twitchService: PubSub
 variables:
