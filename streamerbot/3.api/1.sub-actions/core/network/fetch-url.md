@@ -1,38 +1,54 @@
 ---
 title: Fetch URL
 description: Fetch a remote URL and retrieve the response body
+parameters:
+  - name: URL
+    type: Text
+    required: true
+    description: |
+      Enter the URL to fetch
+
+      ::warning
+      Only `GET` requests are supported at this time.<br>
+      If you need support for additional methods such as `POST`, utilize C# sub-actions
+      ::
+  - name: Variable Name
+    type: Text
+    required: true
+    description: Enter the name of the variable to store the response in
+  - name: Parse result as JSON
+    type: Toggle
+    default: 'false'
+    description: |
+      Optionally parse the result as JSON
+
+      Multiple variables will be populated, with the `Variable Name` you provided as the root key
+
+      For example, a request to `https://catfact.ninja/fact`, with variable name `jsonResult`, would populate the variables `jsonResult.fact` and `jsonResult.length`.
+  - name: Headers
+    type: Table
+    description: Optionally add custom headers to modify the HTTP request
+variables:
+  - name: <variableName>
+    type: string
+    description: |
+      If _Parse result as JSON_ is **disabled**:
+
+      The full text of the response body
+    value: |
+      {
+        "fact": "Both humans and cats have identical regions in the brain responsible for emotion.",
+        "length": 81
+      }
+  - name: <variableName>.<jsonKey>
+    description: |
+      If _Parse result as JSON_ is **enabled**:
+
+      All json properties will be dynamically mapped to variables by key
+    value: |
+      <variableName>.fact: "Both humans and cats have identical regions in the brain responsible for emotion."
 ---
 
 ::tip
 This sub-action behaves much like the URL commands in Nightbot and many other bots.
 ::
-
-## Parameters
-### `URL`
-Enter the URL to fetch
-
-### `Variable Name`
-Enter the name of the variable you'd like to store to response in
-
-### `Headers`
-Modify request headers
-::list{type=warning}
-- Only add custom headers if you know what you are doing!
-::
-
-## Examples
-### Current Weather
-- `URL`: `https://api.scorpstuff.com/weather.php?units=metric&city=boston,MA`
-- `Variable Name`: `currentWeather`
-
-After execution, the `%currentWeather%` variable will be populated with the response body.
-
-::code-group
-  ```md [Example Response]
-  Weather for Boston, US: Broken clouds with a temperature of 29.6 C (85.2 F). Wind is blowing from the East at 12.96 kph (8.05 mph) and the humidity is 59%
-  ```
-::
-
-You can then use your variable in any subsequent sub-actions.
-
-For example, you could then use the [Twitch Send Message to Channel](/api/sub-actions/twitch/chat/send-message-to-channel) sub-action to send the output back to chat!
