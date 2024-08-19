@@ -39,7 +39,7 @@ variables:
     description: When was this user last active?
     value: 8/4/2023 10:56:06 AM
   - name: badges
-    type: List<Twitch.Common.Models.Badge>
+    type: List<Badge>
     description: A C# accessible list of emotes used in the chat message
     variables:
       - name: Name
