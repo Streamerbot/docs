@@ -27,10 +27,7 @@ parameters:
     description: |
       Enter the text content for your webhook message. Multiple lines and variables are supported.
 
-      ::disclosure{icon=mdi:discord}
-      If you would like to ping users or roles, click here to learn more!
-
-      #content
+      ::collapsible{name="details for pinging users or roles"}
       1. Enable Developer Mode
 
           Enable developer mode in Discord by opening settings and navigating to `App Settings -> Advanced`. Then, enable the `Developer Mode` toggle.

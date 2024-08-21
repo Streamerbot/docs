@@ -94,10 +94,7 @@ parameters:
       - `Break`: Stop the current action, any subsequent sub-actions will not be executed.
 ---
 
-::disclosure
-If/Else Flow Diagram by pwnyy
-
-#content
+::collapsible{name="If/Else Flow Diagram by pwnyy"}
   ::small{.text-gray-400}
   Right-Click -> Open in New Tab to view full size
   ::
