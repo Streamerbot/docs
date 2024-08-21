@@ -27,7 +27,7 @@ variables:
     type: string
     description: the raw input of the message
     value: this is a test message
-  - name: input[i]
+  - name: input#
     type: string
     description: the rawInput string stripped by spaces, starting with input0 for the first word, input1 for the second etc.
     value: this
