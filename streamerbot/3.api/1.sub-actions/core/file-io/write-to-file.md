@@ -9,7 +9,7 @@ parameters:
   - name: Append to file
     type: Toggle
     default: false
-    descrption: Append to the existing file contents rather than overwriting
+    description: Append to the existing file contents rather than overwriting
   - name: Text to write
     type: Text
     description: |

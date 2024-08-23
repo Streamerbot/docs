@@ -20,7 +20,7 @@ parameters:
     description: |
       While reading the contents of the file, attempt to auto-type on a line-by-line basis.
 
-      For example, if a line consists of only a number, the resulting variable for that line can be properly typed as an `int`{lang=cs}
+      For example, if a line consists of a number, the resulting variable for that line can be properly typed as an `int`{lang=cs}
 variables:
   - name: lineCount
     type: int
