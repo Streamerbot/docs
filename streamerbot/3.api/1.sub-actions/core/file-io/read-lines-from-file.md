@@ -1,38 +1,39 @@
 ---
 title: Read Lines From File
-description: File Sub-Actions Reference
-published: true
-date: 2023-04-23T19:56:29.066Z
-tags: 
-editor: markdown
-dateCreated: 2021-10-24T23:49:24.324Z
+description: Load the contents of a file into variables
+parameters:
+  - name: File to read from
+    type: File
+    required: true
+    description: Select the file to load, or enter a path
+  - name: Variable Name
+    type: Text
+    default: line
+    description: Enter a variable name to override the default `line#` variables with your own naming scheme
+  - name: Parse Variables
+    type: Toggle
+    default: false
+    description: Enable this option to enable parsing and replacement of `%variables%`{lang=cs} found within the file contents
+  - name: Attempt auto-typing
+    type: Toggle
+    default: false
+    description: |
+      While reading the contents of the file, attempt to auto-type on a line-by-line basis.
+
+      For example, if a line consists of only a number, the resulting variable for that line can be properly typed as an `int`{lang=cs}
+variables:
+  - name: lineCount
+    type: int
+    description: Total number of lines in the file
+    value: 12
+  - name: 'line#'
+    description: |
+      Each line of output parsed from the file parsed to its own variable
+
+      e.g. `%line0%`{lang=cs}, `%line1%`{lang=cs}, `%line2%`{lang=cs}, and so on...
+    value: 'Hello, world!'
+  - name: fileFound
+    type: bool
+    description: |
+      `True` or `False` if the file is present on disk
 ---
-
-## Overview
-Using this sub-action, you can load the entire contents of a file into your action, each line will be added as a new variable, `%line#%` where `#` would be from 0 to n-number of lines in the file.
-
-![sub-action-read-lines-from-file-001.png](/sub-action-read-lines-from-file-001.png =400x)
-
-## Configuration
-### Parse Variables
-If this option is selected, when reading in the lines, if there are any `%variables%` present, they will be parsed for you.
-
-For example, you have a file of welcome messages, that consist of `Welcome %user%`, with variations on that, the `%user%` would be replaced when reading the file.
-
-### Attempt Auto-typing
-While reading the contents of the file, an attempt will be made on each line to auto-type it.  So if it's a number, it will make sure the variable contains a number type.
-
-## Variables
-Name | Description
-----:|:------------
-`lineCount` | The amount of lines the file has.
-`line#` | Change the `#` to the line number e.g. if you have 3 lines it wil output: `line0`, `line1`, `line2` 
-`fileFound` |  This can be used to see if the file is present. Returns true or false.
-
-> The line count number starts at 0. E.g. if your line count is 20, your `line#` will go from 0-19.
-{.is-info}
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **File Sub-Actions *Go Back***](/Sub-Actions/File)
-{.btn-grid .my-5}

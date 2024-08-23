@@ -1,34 +1,37 @@
 ---
 title: Read Specific Line From File
-description: File Sub-Actions Reference
-published: true
-date: 2023-03-21T13:54:27.441Z
-tags: 
-editor: markdown
-dateCreated: 2023-03-21T13:54:00.555Z
+description: Populate a variable with the contents of a specific line from a file
+parameters:
+  - name: File to read from
+    type: File
+    required: true
+    description: Select the file to load, or enter a path
+  - name: Variable Name
+    type: Text
+    default: line
+    description: Enter a variable name to override the default `line` variable
+  - name: Parse Variables
+    type: Toggle
+    default: false
+    description: Enable this option to enable parsing and replacement of `%variables%`{lang=cs} found within the file contents
+  - name: Attempt auto-typing
+    type: Toggle
+    default: false
+    description: |
+      While reading the contents of the file, attempt to auto-type on a line-by-line basis.
+
+      For example, if a line consists a number, the resulting variable for that line can be properly typed as an `int`{lang=cs}
+  - name: Line Number
+    type: Number
+    default: 1
+    description: The line to extract from the file
+variables:
+  - name: 'line'
+    description: |
+      Contents of the selected line from the file
+    value: 'Hello, world!'
+  - name: fileFound
+    type: bool
+    description: |
+      `True` or `False` if the file is present on disk
 ---
-
-## Overview
-With this Sub-Action you can read a specific line of a file.
-
-![read-specific-line-from-file.png](/read-specific-line-from-file.png =400x)
-
-## Configuration
-### Parse Variables
-If this option is selected, when reading in the lines, if there are any `%variables%` present, they will be parsed for you.
-
-For example, you have a file of welcome messages, that consist of `Welcome %user%`, with variations on that, the `%user%` would be replaced when reading the file.
-
-### Attempt Auto-typing
-While reading the contents of the file, an attempt will be made on each line to auto-type it.  So if it's a number, it will make sure the variable contains a number type.
-
-## Variables
-Name | Description
-----:|:------------
-`line` | The contents of that line
-`fileFound` |  This can be used to see if the file is present. Returns true or false.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **File Sub-Actions *Go Back***](/Sub-Actions/File)
-{.btn-grid .my-5}
