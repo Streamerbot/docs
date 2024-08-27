@@ -21,7 +21,7 @@ variables:
   - name: poll.DurationRemaining
     type: int
     description: The remaining time in milliseconds
-    value: 300
+    value: 300000
   - name: poll.choices.count
     type: int
     description: The number of choices in the poll
