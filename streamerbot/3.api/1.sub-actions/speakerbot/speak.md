@@ -27,13 +27,13 @@ variables:
   ::
 
   ::field{name="Silent" type=Toggle}
-  Play the TTS silently
+  Processes the TTS only
 
-  Can be used with the delay option if you want to wait before the TTS is finished, but don't have the audio.
+  Enabling this will cause Speaker.bot to only process the TTS, and not play it.  The `speechFile` argument will contain the full path to the processed audio file that can be played either in OBS, or using the Play Sound sub-action.
   ::
 
   ::field{name="Delay" type=Toggle}
-  Wait for TTS to complete before continuuing execution of the current action
+  Wait for TTS to be processed and finish playing before continuing execution of the current action.  There is a hard limit of 30s on a timeout to prevent stuck queues.
   ::
 
   ::field{name="Message" type=Text required}
