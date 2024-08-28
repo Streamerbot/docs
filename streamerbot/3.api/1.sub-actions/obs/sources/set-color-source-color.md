@@ -3,8 +3,7 @@ title: Set Color Source Color
 description: Set a random or a HEX color for a color source
 variables: []
 csharpMethods:
-  - ObsSetColorSourceArgbColor
-  - ObsSetColorSourceHexColor
+  - ObsSetColorSourceColor
   - ObsSetColorSourceRandomColor
 ---
 
