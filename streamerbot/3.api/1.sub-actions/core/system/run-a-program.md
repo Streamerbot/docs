@@ -41,7 +41,7 @@ parameters:
       Time to wait, in seconds, for the executable to complete.
 
       ::tip
-      Set a wait time to enable the ability to populate [variables](#variables) with command output!
+      You can use this option to populate [variables](#variables) with command output from scripts, such as `python` or `nodejs`!
       ::
   - name: Environment Variables
     type: Table
