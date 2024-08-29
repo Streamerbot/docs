@@ -22,7 +22,7 @@ variables:
     type: string
     description: Name of the user the message was sent to
     value: John Doe
- - name: fw.email
+  - name: fw.email
     type: string
     description: E-mail adress of user. Please be careful how this is used.
     value: john.doe@gmail.com
