@@ -5,8 +5,16 @@ twitchService: PubSub
 variables:
   - name: user
     type: string
-    description: The user who was banned<br>*This will only be populated if the user has been present in chat*
+    description: Display name of user who was banned<br>*This will only be populated if the user has been present in chat*
     value: TwitchUser123
+  - name: userName
+    type: string
+    description: Login name of user who was banned
+    value: twitchuser123
+  - name: userId
+    type: string
+    description: Twitch id of user who was banned
+    value: 12345
   - name: createdAt
     type: DateTime
     description: The timestamp when the ban was created

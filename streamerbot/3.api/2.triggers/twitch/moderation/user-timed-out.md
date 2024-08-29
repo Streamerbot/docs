@@ -7,6 +7,14 @@ variables:
     type: string
     description: The user who was timed out<br>*This will only be populated if the user has been present in chat*
     value: TwitchUser123
+  - name: userName
+    type: string
+    description: Login name of user who was timed out
+    value: twitchuser123
+  - name: userId
+    type: string
+    description: Twitch id of user who was timed out
+    value: 12345
   - name: createdAt
     type: DateTime
     description: The timestamp when the timeout was created
