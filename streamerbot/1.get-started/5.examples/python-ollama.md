@@ -11,6 +11,12 @@ You can utilize the [Run a Program](/api/sub-actions/core/system/run-a-program) 
 
 :read-more{to="/api/sub-actions/core/system/run-a-program"}
 
+::warning
+**Requires Streamer.bot v0.2.5-beta.2 or later**
+<br>
+A bug in previous versions of Streamer.bot prevented capturing of `stdout` from scripts
+::
+
 ## Prerequisites
 
 1. Install Python
