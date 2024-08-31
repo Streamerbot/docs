@@ -57,8 +57,9 @@ A bug in previous versions of Streamer.bot prevented capturing of `stdout` from 
     # Generate text using llama3.1 model
     response = ollama.generate(model="llama3.1", prompt=prompt)
 
-    # Print the response in a single line
-    print(response["response"].replace("\n", " "))
+    # Print the response as a single line, truncated at 500 characters
+    output = response["response"].replace("\n", " ")
+    print(output[0:499])
     ```
 
 3. Install the ollama python package
@@ -129,3 +130,14 @@ A bug in previous versions of Streamer.bot prevented capturing of `stdout` from 
     ::
 
     ![Ollama Command Chat Preview](assets/ollama-command-preview.png){caption-alt}
+
+
+## Tips & Tricks
+
+This is just a basic example, but it can be improved in many ways.
+
+- Twitch chat messages are limited to **500 characters** or less.
+
+    If your prompt generates more than 500 characaters worth of output, it will currently be truncated.
+
+    The script could be modified to split output into multiple lines, for Streamer.bot to read in separately. Alternatively, Streamer.bot could be used to split the output into separate messages.
