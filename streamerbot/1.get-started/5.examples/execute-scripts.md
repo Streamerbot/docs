@@ -5,7 +5,6 @@ author: Whipstickgostop
 icon: i-heroicons-command-line-20-solid
 navigation: false
 difficulty: 3
-subActions:
 ---
 
 You can utilize the [Run a Program](/api/sub-actions/core/system/run-a-program) sub-action to execute scripts on the fly.
