@@ -99,6 +99,8 @@ You can utilize the [Run a Program](/api/sub-actions/core/system/run-a-program) 
             - Note that we are adding the `%rawInput%`{lang=cs} variable as a python argument.
 
                 This contains the command input from the user, and will allow our python script to read it!
+        - `Wait`: `1`
+            - **This must be set to a value greater than 0!**
 
         ![Run a Program Sub-Action](assets/ollama-run-a-program.png){caption-alt}
 
