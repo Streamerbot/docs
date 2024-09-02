@@ -151,3 +151,9 @@ This is just a basic example, but it can be improved in many ways.
     If your prompt generates more than 500 characaters worth of output, it will currently be truncated.
 
     The script could be modified to split output into multiple lines, for Streamer.bot to read in separately. Alternatively, Streamer.bot could be used to split the output into separate messages.
+
+## Extended Examples
+
+::card{title="OnlyRipper/AIExtensionOverlay" icon=i-mdi-github to="https://github.com/OnlyRipper/AIExtensionOverlay-Streamer.bot" target=_blank rel=noopener}
+Take this example a step further with this overlay extension by OnlyRipper!
+::
