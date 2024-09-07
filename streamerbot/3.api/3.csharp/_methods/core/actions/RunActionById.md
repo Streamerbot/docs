@@ -1,5 +1,8 @@
 ---
-description: Run an action, by id<br>Returns a boolean indicating whether the operation was successful.
+description: |
+    Run an action, by id
+
+    Returns a boolean indicating whether the operation was successful.
 example: |
     using System;
     public class CPHInline
