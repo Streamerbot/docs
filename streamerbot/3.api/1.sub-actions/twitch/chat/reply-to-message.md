@@ -5,7 +5,6 @@ parameters:
   - name: Reply Id
     type: Text
     default: '%msgId%'
-    required: true
     description: |
       Enter the unique ID of the message to reply to
 
@@ -20,19 +19,18 @@ parameters:
   - name: Send using bot account
     version: 0.2.5
     type: Toggle
-    default: Unchecked
+    default: false
     required: true
     description: |
-      - `Checked` - Send the reply using your **Twitch Bot** account
-      - `Unchecked` - Send the reply using your **Twitch Broadcaster** account
+      - [x] Send the reply using your **Twitch Bot** account
+      - [ ] Send the reply using your **Twitch Broadcaster** account
   - name: Fallback to Broadcaster
     version: 0.2.5
     type: Toggle
-    default: Unchecked
-    required: true
+    default: false
     description: |
-      - `Checked` - (If `Send using Bot account` is **checked**), it will attempt to send reply as Twitch Bot account and if unable, then send as Twitch Broadcaster.
-      - `Unchecked` - (If `Send using Bot account` is **unchecked**), it will attempt to send reply as Twitch Bot account and if unable, then do **nothing** (i.e. the Twitch Bot account is not logged in.
+      - [x] If `Send using Bot account` is **checked**, it will attempt to send reply as Twitch Bot account and, if unable, then send as Twitch Broadcaster.
+      - [ ] If `Send using Bot account` is **unchecked**, it will attempt to send reply as Twitch Bot account and, if unable, then do **nothing** (i.e. the Twitch Bot account is not logged in.
 variables: []
 csharpMethods:
   - TwitchReplyToMessage
