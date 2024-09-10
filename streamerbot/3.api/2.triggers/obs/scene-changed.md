@@ -26,6 +26,11 @@ variables:
     type: string
     description: The new scene name
     value: Main scene
+  - name: obs.oldSceneName
+    version: 0.2.5
+    type: string
+    description: The previous scene name
+    value: Previous Scene
 ---
 
 ## Parameters
