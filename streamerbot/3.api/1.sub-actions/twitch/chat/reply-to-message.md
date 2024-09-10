@@ -1,7 +1,6 @@
 ---
 title: Reply to Message
 description: Send a reply to a specific Twitch chat message
-version: 0.2.5
 parameters:
   - name: Reply Id
     type: Text
@@ -19,6 +18,7 @@ parameters:
     description: |
       Enter the message contents
   - name: Send using bot account
+    version: 0.2.5
     type: Toggle
     default: Unchecked
     required: true
@@ -26,6 +26,7 @@ parameters:
       - `Checked` - Send the reply using your **Twitch Bot** account
       - `Unchecked` - Send the reply using your **Twitch Broadcaster** account
   - name: Fallback to Broadcaster
+    version: 0.2.5
     type: Toggle
     default: Unchecked
     required: true
