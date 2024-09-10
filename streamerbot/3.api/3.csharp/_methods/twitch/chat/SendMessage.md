@@ -1,12 +1,9 @@
 ---
-description: Send a reply to a specific Twitch chat message
+description: Sends a Twitch chat message using either Twitch Broadcaster or Twitch Bot account
 parameters:
   - name: message
     value: '"Hello, world!"'
     description: Enter the message contents
-  - name: replyId
-    value: 'args["msgId"]'
-    description: Enter the unique ID of the message to reply to
   - name: bot
     value: true
     description: |
@@ -24,14 +21,11 @@ example: |
     {
         public bool Execute()
         {
-            //Get message id to reply to
-            CPH.TryGetArg("messageId",out string messageId);
-
-            //Set message for reply
-            string message = "This is a test reply.";
+            //Set message for chat
+            string message = "This is a test message.";
 
             //Send reply with bot account
-            CPH.TwitchReplyToMessage(message, messageId, true, true);
+            CPH.SendMessage(message, true, true);
 
             return true;
         }

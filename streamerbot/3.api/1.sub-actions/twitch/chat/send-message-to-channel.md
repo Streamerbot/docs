@@ -1,14 +1,27 @@
-# Send Message to Channel
-Send a formatted message to your Twitch chat
-
-## Parameters
-### `Preferred Account`
-Select the Twitch account to use when sending the message:
-- `Bot`: Send the message from your [bot account](/guide/platforms/twitch#accounts)
-- `Broadcaster`: Send the message from your [broadcaster account](/guide/platforms/twitch#accounts)
-
-### `Message`
-Enter the text you would like to send
-
-## C# Usage
-:csharp-method{name=SendMessage}
+---
+title: Send Message
+description: Send a Twitch chat message
+parameters:
+  - name: Message
+    type: Text
+    required: true
+    description: |
+      Enter the message contents
+  - name: Send using bot account
+    version: 0.2.5
+    type: Toggle
+    default: Unchecked
+    description: |
+      - [x] Send the reply using your **Twitch Bot** account
+      - [ ] Send the reply using your **Twitch Broadcaster** account
+  - name: Fallback to Broadcaster
+    version: 0.2.5
+    type: Toggle
+    default: Unchecked
+    description: |
+      - [x] If `Send using Bot account` is **checked**, it will attempt to send reply as Twitch Bot account and, if unable, then send as Twitch Broadcaster.
+      - [ ] If `Send using Bot account` is **unchecked**, it will attempt to send reply as Twitch Bot account and, if unable, then do **nothing** (i.e. the Twitch Bot account is not logged in.
+variables: []
+csharpMethods:
+  - SendMessage
+---
