@@ -5,6 +5,7 @@ parameters:
   - name: Reply Id
     type: Text
     default: '%msgId%'
+    required: true
     description: |
       Enter the unique ID of the message to reply to
 
@@ -20,7 +21,6 @@ parameters:
     version: 0.2.5
     type: Toggle
     default: false
-    required: true
     description: |
       - [x] Send the reply using your **Twitch Bot** account
       - [ ] Send the reply using your **Twitch Broadcaster** account
