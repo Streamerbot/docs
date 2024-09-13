@@ -28,7 +28,7 @@ variables:
     description: The name of the layer in Meld Studio
     value: Text 3
   - name: meldStudioEvent.visible
-    type: bool
+    type: boolean
     description: Whether or not the layer is visible in Meld Studio
     value: True
   - name: meldStudioEvent._json
