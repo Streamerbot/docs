@@ -24,6 +24,6 @@ variables:
     value: €5
   - name: donationMessage
     type: string
-    description: The donation message that the user may has included
+    description: The donation message that the user may have included
     value: My donation message
 ---
