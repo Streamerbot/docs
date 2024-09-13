@@ -1,6 +1,6 @@
 ---
 title: TrackMutedStateChanged
-description: Trigger for when the visibility of a layer changes in Meld Studio
+description: Trigger for when the muted state of a Track changes in Meld Studio
 version: 0.2.5
 variables:
   - name: meldStudio.id
@@ -18,7 +18,7 @@ variables:
   - name: meldStudioEvent.event
     type: string
     description: The name of the event that occurred in Meld Studio
-    value: LayerVisibilityChanged
+    value: TrackMutedStateChanged
   - name: meldStudioEvent.trackId
     type: string
     description: The unique ID of the Track in Meld Studio
