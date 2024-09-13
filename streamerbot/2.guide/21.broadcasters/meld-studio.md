@@ -1,5 +1,5 @@
 ---
-title: Meld studio Studio
+title: Meld Studio
 description: Configure Streamer.bot to interact with your Meld Studio instances
 logo: /img/icons/meld-studio.png
 ---
