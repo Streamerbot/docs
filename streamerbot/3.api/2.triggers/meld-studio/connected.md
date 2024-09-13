@@ -6,6 +6,7 @@ variables:
   - name: meldStudio.id
     type: string
     description: The connection id
+    value: 0a92da3b-be05-4780-a960-26eac5788f79
   - name: meldStudio.name
     type: string
     description: The name of the connection
