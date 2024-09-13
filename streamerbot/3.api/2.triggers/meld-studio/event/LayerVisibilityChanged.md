@@ -1,6 +1,6 @@
 ---
 title: LayerVisibilityChanged
-description: Trigger for when the Enabled State of an Effect occurs in Meld Studio
+description: Trigger for when the visibility of a layer changes in Meld Studio
 version: 0.2.5
 variables:
   - name: meldStudio.id
