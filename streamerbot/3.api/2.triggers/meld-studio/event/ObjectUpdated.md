@@ -32,7 +32,7 @@ variables:
     description: The type of the object in Meld Studio
     value: layer
   - name: meldStudioEvent.object.index
-    type: int
+    type: number
     description: The index number of the object in Meld Studio
     value: Image 2
   - name: meldStudioEvent.object.parent
@@ -40,7 +40,7 @@ variables:
     description: The ID of the parent of the object in Meld Studio
     value: B628E10FA3EBEE0BC0F1C785CA1C808E
   - name: meldStudioEvent.object.visible
-    type: bool
+    type: boolean
     description: Whether the object is visible in Meld Studio
     value: True
   - name: meldStudioEvent.object.id
