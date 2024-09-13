@@ -2,6 +2,8 @@
 title: Get Status
 description: Get your Meld Studio output status
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
 variables:
   - name: meldStudio.isConnected
     type: boolean
@@ -17,7 +19,3 @@ variables:
     value: True
 ---
 
-## Parameters
-::field-group
-  :parameter{name=MeldStudioConnection}
-::
