@@ -52,7 +52,7 @@ variables:
     description: The name of the object in Meld Studio
     value: Image 20
   - name: meldStudioEvent._json
-    type: json
+    type: string
     description: The full JSON payload of the effect in Meld Studio
     value: {"id":"EC495E605169EF94FE380E10A57EBF82","name":"Image 20","objectType":"layer","object":{"index":2,"parent":"B628E10FA3EBEE0BC0F1C785CA1C808E","visible":true,"id":"EC495E605169EF94FE380E10A57EBF82","name":"Image 20"}}
 ---
