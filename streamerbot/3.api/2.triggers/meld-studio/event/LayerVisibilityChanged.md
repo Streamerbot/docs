@@ -32,7 +32,7 @@ variables:
     description: Whether or not the layer is visible in Meld Studio
     value: True
   - name: meldStudioEvent._json
-    type: json
+    type: string
     description: Full JSON Payload of the event in Meld Studio
     value: {"layerId":"D51F56E984CE10AD7E90C09F68E60710","layerName":"Text 3","visible":true} 
 ---
