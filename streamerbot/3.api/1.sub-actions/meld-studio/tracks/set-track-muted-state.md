@@ -8,7 +8,7 @@ variables: []
 ## Parameters
 ::field-group
   :parameter{name=Connection}
-  :parameter{name=Scene}
+  :parameter{name=Layer}
   ::field{name=State type=Select required}
     Select the mute status for the source
 
