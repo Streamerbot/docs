@@ -15,6 +15,14 @@ variables:
     type: string
     description: The IP Address of the Meld Studio connection
     value: 127.0.0.1
+  - name: meldStudio.sceneName
+    type: string
+    description: The current scene in Meld Studio
+    value: Scene 4
+  - name: meldStudio.oldSceneName
+    type: string
+    description: The previous scene in Meld Studio
+    value: Scene 2
 ---
 
 ## Parameters
