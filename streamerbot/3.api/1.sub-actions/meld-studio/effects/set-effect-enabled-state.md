@@ -11,10 +11,10 @@ parameters:
     type: Select
     required: true
     description: |
-    Select which state you want to set
+      Select which state you want to set
 
-    - `Visible`: Sets the effect state on your scene to Visible
-    - `Hidden`: Sets the effect state on your scene to Hidden
-    - `Toggle`: Toggles the effect state on your scene between Visible and Hidden
+      - `Visible`: Sets the effect state on your scene to Visible
+      - `Hidden`: Sets the effect state on your scene to Hidden
+      - `Toggle`: Toggles the effect state on your scene between Visible and Hidden
 variables: []
 ---
