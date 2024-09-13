@@ -19,6 +19,22 @@ variables:
     type: string
     description: The name of the event that occurred in Meld Studio
     value: LayerVisibilityChanged
+  - name: meldStudioEvent.layerId
+    type: string
+    description: The unique ID of the layer in Meld Studio
+    value: D51F56E984CE10AD7E90C09F68E60710
+  - name: meldStudioEvent.layerName
+    type: string
+    description: The name of the layer in Meld Studio
+    value: Text 3
+  - name: meldStudioEvent.visible
+    type: bool
+    description: Whether or not the layer is visible in Meld Studio
+    value: True
+  - name: meldStudioEvent._json
+    type: json
+    description: Full JSON Payload of the event in Meld Studio
+    value: {"layerId":"D51F56E984CE10AD7E90C09F68E60710","layerName":"Text 3","visible":true} 
 ---
 
 ## Parameters
