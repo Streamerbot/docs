@@ -28,7 +28,7 @@ variables:
     description: The name of the effect in Meld Studio
     value: Black and White
   - name: meldStudioEvent.enabled
-    type: bool
+    type: boolean
     description: Whether the effect in Meld Studio is enabled or not
     value: True
   - name: meldStudioEvent._json
