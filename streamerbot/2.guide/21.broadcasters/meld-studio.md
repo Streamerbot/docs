@@ -2,13 +2,17 @@
 title: Meld Studio
 description: Configure Streamer.bot to interact with your Meld Studio instances
 logo: /img/icons/meld-studio.png
+navigation.icon: null
+icon: IconMeldStudio
+version: 0.2.5
+badge: New
 ---
 
-::callout{icon=i-mdi-warning color=amber to=/get-started/setup#meld-studio}
+::warning{to=/get-started/setup#meld-studio}
 You must enable **Allow remote connections** under Advanced. Check out the [Get Started Guide](/get-started/setup#meld-studio) for details.
 ::
 
-::callout{icon=i-mdi-navigation}
+::navigate
 Navigate to **Stream Apps > Meld Studio** in Streamer.bot
 ::
 
@@ -68,14 +72,14 @@ Quickly toggle the `Reconnect on Disconnect` configuration option for the select
 #### `Default`
 Set this connection as the default when importing actions
 
-::tip{color=amber}
+::tip
 If no default is set, imported actions will default to the first connection in the list
 ::
 
 #### `Force`
 Temporarily override **all** Meld Studio connections to use the selected connection.
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 This setting does **not** persist when you restart Streamer.bot
 ::
 
