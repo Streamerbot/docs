@@ -6,10 +6,10 @@ variables: []
 
 ## Parameters
 ::field-group
-  :parameter{name=Connection}
-  :parameter{name=Scene}
-  :parameter{name=Layer}
-  :parameter{name=Track}
+  :parameter{name=MeldStudioConnection}
+  :parameter{name=MeldStudioScene}
+  :parameter{name=MeldStudioLayer}
+  :parameter{name=MeldStudioTrack}
   ::field{name=State type=Select required}
     Select the mute status for the source
 

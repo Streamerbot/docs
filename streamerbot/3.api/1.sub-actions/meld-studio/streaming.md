@@ -7,7 +7,7 @@ variables: []
 
 ## Parameters
 ::field-group
-  :parameter{name=Connection}
+  :parameter{name=MeldStudioConnection}
   ::field{name=State type=Select required}
     Choose the recording state
 

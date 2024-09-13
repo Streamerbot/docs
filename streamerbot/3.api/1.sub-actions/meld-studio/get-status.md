@@ -19,5 +19,5 @@ variables:
 
 ## Parameters
 ::field-group
-  :parameter{name=Connection}
+  :parameter{name=MeldStudioConnection}
 ::

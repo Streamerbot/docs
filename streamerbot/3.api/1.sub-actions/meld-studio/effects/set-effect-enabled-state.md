@@ -7,10 +7,10 @@ variables: []
 
 ## Parameters
 ::field-group
-  :parameter{name=Connection}
-  :parameter{name=Scene}
-  :parameter{name=Layer}
-  :parameter{name=Filter}
+  :parameter{name=MeldStudioConnection}
+  :parameter{name=MeldStudioScene}
+  :parameter{name=MeldStudioLayer}
+  :parameter{name=MeldStudioEffect}
   ::field{name=State type=Select required}
     Select which state you want to set
 

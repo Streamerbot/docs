@@ -8,6 +8,6 @@ variables: []
 
 ## Parameters
 ::field-group
-  :parameter{name=Connection}
-  :parameter{name=Scene}
+  :parameter{name=MeldStudioConnection}
+  :parameter{name=MeldStudioScene}
 ::
