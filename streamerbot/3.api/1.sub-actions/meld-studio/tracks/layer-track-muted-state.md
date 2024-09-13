@@ -8,7 +8,7 @@ variables: []
 ::field-group
   :parameter{name=Connection}
   :parameter{name=Scene}
-  :parameter{name=Source}
+  :parameter{name=Layer}
   :parameter{name=Track}
   ::field{name=State type=Select required}
     Select the mute status for the source
