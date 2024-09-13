@@ -32,7 +32,7 @@ variables:
     description: Whether the effect in Meld Studio is enabled or not
     value: True
   - name: meldStudioEvent._json
-    type: json
+    type: string
     description: The full JSON payload of the effect in Meld Studio
     value: {"effectId":"155890E6AA46DF9B2A56D8BF0F891322","effectName":"Black and White","enabled":true}
 ---
