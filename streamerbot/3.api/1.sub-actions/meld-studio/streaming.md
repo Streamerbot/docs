@@ -1,6 +1,7 @@
 ---
 title: Meld Studio Streaming
 description: Change your Meld Studio streaming status
+version: 0.2.5
 variables: []
 ---
 
