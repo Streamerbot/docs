@@ -32,7 +32,7 @@ variables:
     description: Whether or not the Track is muted in Meld Studio
     value: False
   - name: meldStudioEvent._json
-    type: json
+    type: string
     description: The full JSON payload from the event in Meld Studio
     value: {"trackId":"46DF14C0C929886EFDD7AC399EA754AF","trackName":"Game Track","muted":false}
 ---
