@@ -9,7 +9,7 @@ variables: []
 ::field-group
   :parameter{name=Connection}
   :parameter{name=Scene}
-  :parameter{name=Source}
+  :parameter{name=Layer}
   ::field{name=State type=Select required}
     Select the state for the source visibility state
 
