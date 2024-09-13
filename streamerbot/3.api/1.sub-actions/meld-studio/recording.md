@@ -1,6 +1,7 @@
 ---
 title: Recording
 description: Change your Meld Studio recording status
+version: 0.2.5
 parameters:
   - name: MeldStudioConnection
   - name: State
