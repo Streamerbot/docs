@@ -1,5 +1,5 @@
 ---
-title: CameraHub Connected
+title: Connected
 description: When the CameraHub integration has connected
 ---
 
