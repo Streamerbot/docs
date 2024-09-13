@@ -31,8 +31,7 @@ variables:
     Choose a configured Meld Connection
     - Select `Any` to trigger on any connection
   ::
-  ::field{name=Scene Name type=Input required}
-    Type the name of the scene to trigger an event
-    - Leave `Blank` to trigger on any Scene Change
+  ::field{name=Scene Name type=Text required}
+    Here you can specify a scene name if you only want it to trigger this event when you switch to a specific scene. If you leave this field empty it will trigger on every scene.
   ::
 ::
