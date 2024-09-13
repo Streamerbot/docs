@@ -28,7 +28,7 @@ variables:
     description: The name of the Track in Meld Studio
     value: Game Track
   - name: meldStudioEvent.monitoring
-    type: bool
+    type: boolean
     description: Whether or not the Track is monitored in Meld Studio
     value: False
   - name: meldStudioEvent._json
