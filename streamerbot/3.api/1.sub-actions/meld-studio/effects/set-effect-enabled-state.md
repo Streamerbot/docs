@@ -9,7 +9,7 @@ variables: []
 ::field-group
   :parameter{name=Connection}
   :parameter{name=Scene}
-  :parameter{name=Source}
+  :parameter{name=Layer}
   :parameter{name=Filter}
   ::field{name=State type=Select required}
     Select which state you want to set
