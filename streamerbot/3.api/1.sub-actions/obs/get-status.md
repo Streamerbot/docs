@@ -1,6 +1,13 @@
 ---
 title: Get Status
 description: Get your OBS Studio output status
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
 variables:
   - name: obs.isConnected
     type: boolean
@@ -19,8 +26,3 @@ csharpMethods:
   - ObsIsStreaming
   - ObsIsRecording
 ---
-
-## Parameters
-::field-group
-  :parameter{name=ObsConnection}
-::

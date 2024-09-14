@@ -1,6 +1,35 @@
 ---
 title: Take Screenshot
 description: Makes a screenshot from a scene or source
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
+  - name: ObsScene
+    type: Select
+    required: true
+    description: |
+      Select a Scene from the drop-down
+      - Can also manually type the Scene name into the box
+  - name: ObsSource
+    type: Select
+    required: true
+    description: |
+      Select a Source from the drop-down
+      - Can also manually type the Source name into the box
+  - name: File Path
+    type: String
+    required: true
+    description: |
+      Select the file path for the screenshot
+  - name: Quality
+    type: Slider
+    required: true
+    description: |
+      Select the image quality or leave as `Auto`  
 variables:
   - name: screenshotFile
     type: string
@@ -12,16 +41,3 @@ variables:
 csharpMethods:
   - ObsTakeScreenshot
 ---
-
-## Parameters
-::field-group
-  :parameter{name=ObsConnection}
-  :parameter{name=ObsScene}
-  :parameter{name=ObsSource}
-  ::field{name="File Path" type=File required}
-    Select the file path for the screenshot
-  ::
-  ::field{name="Quality" type=Slider required}
-    Select the image quality or leave as `Auto`
-  ::
-::

@@ -1,6 +1,13 @@
 ---
 title: Raw
 description: Make custom calls to the OBS websocket server for even more control over your OBS Studio instance
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
 csharpMethods:
   - ObsSendRaw
 ---
@@ -9,11 +16,6 @@ csharpMethods:
 
 ::tip{to="https://obs-raw.streamer.bot"}
 You can use the [OBS Raw Generator](https://obs-raw.streamer.bot) to generate raw requests in JSON or CPH format
-::
-
-## Parameters
-::field-group
-  :parameter{name=ObsConnection}
 ::
 
 ## Variables
