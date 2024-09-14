@@ -20,7 +20,7 @@ parameters:
     description: |
       Select a Source from the drop-down
       - Can also manually type the Source name into the box   
-  - name: ObsSource
+  - name: State
     type: Select
     required: true
     description: |
