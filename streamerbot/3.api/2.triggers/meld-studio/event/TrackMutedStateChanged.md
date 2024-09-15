@@ -2,6 +2,14 @@
 title: TrackMutedStateChanged
 description: Trigger for when the muted state of a Track changes in Meld Studio
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
+  - name: Event
+    type: Select
+    required: true
+    description: |
+      Choose the name of the event to set the Trigger
+      - Select `TrackMutedStateChanged` for this event
 variables:
   - name: meldStudio.id
     type: string
@@ -36,15 +44,3 @@ variables:
     description: The full JSON payload from the event in Meld Studio
     value: {"trackId":"46DF14C0C929886EFDD7AC399EA754AF","trackName":"Game Track","muted":false}
 ---
-
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select required}
-    Choose the name of the event to set the Trigger
-    - Select `TrackMutedStateChanged` for this event
-  ::
-::

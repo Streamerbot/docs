@@ -2,6 +2,14 @@
 title: TrackMonitoringStateChanged
 description: Trigger for when the monitoring status of a Track changes in Meld Studio
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
+  - name: Event
+    type: Select
+    required: true
+    description: |
+      Choose the name of the event to set the Trigger
+      - Select `TrackMonitoringStateChanged` for this event
 variables:
   - name: meldStudio.id
     type: string
@@ -37,14 +45,3 @@ variables:
     value: {"trackId":"46DF14C0C929886EFDD7AC399EA754AF","trackName":"Game Track","monitoring":false}
 ---
 
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select required}
-    Choose the name of the event to set the Trigger
-    - Select `TrackMonitoringStateChanged` for this event
-  ::
-::

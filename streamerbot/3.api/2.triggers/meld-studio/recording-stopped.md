@@ -1,7 +1,9 @@
 ---
-title: Meld Studio Recording Stopped
+title: Recording Stopped
 description: Trigger for when Meld stops recording
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
 variables:
   - name: meldStudio.id
     type: string
@@ -16,11 +18,3 @@ variables:
     description: The IP Address of the Meld Studio connection
     value: 127.0.0.1
 ---
-
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-::

@@ -2,6 +2,14 @@
 title: EffectEnabledStateChange
 description: Trigger for when the Enabled State of an Effect occurs in Meld Studio
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
+  - name: Event
+    type: Select
+    required: true
+    description: |
+      Choose the name of the event to set the Trigger
+      - Select `EffectEnabledStateChanged` for this event
 variables:
   - name: meldStudio.id
     type: string
@@ -36,15 +44,3 @@ variables:
     description: The full JSON payload of the effect in Meld Studio
     value: {"effectId":"155890E6AA46DF9B2A56D8BF0F891322","effectName":"Black and White","enabled":true}
 ---
-
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select required}
-    Choose the name of the event to set the Trigger
-    - Select `EffectEnabledStateChanged` for this event
-  ::
-::

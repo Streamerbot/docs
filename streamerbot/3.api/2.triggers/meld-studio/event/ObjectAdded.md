@@ -2,6 +2,14 @@
 title: ObjectAdded
 description: Trigger for when an Object is added in Meld Studio
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
+  - name: Event
+    type: Select
+    required: true
+    description: |
+      Choose the name of the event to set the Trigger
+      - Select `ObjectAdded` for this event
 variables:
   - name: meldStudio.id
     type: string
@@ -56,15 +64,3 @@ variables:
     description: The full JSON payload of the effect in Meld Studio
     value: {"id":"EC495E605169EF94FE380E10A57EBF82","name":"Image 1","objectType":"layer","object":{"index":1,"parent":"B628E10FA3EBEE0BC0F1C785CA1C808E","visible":true,"id":"EC495E605169EF94FE380E10A57EBF82","name":"Image 1"}}
 ---
-
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select required}
-    Choose the name of the event to set the Trigger
-    - Select `ObjectAdded` for this event
-  ::
-::

@@ -2,6 +2,14 @@
 title: LayerVisibilityChanged
 description: Trigger for when the visibility of a layer changes in Meld Studio
 version: 0.2.5
+parameters:
+  - name: MeldStudioConnection
+  - name: Event
+    type: Select
+    required: true
+    description: |
+      Choose the name of the event to set the Trigger
+      - Select `LayerVisibilityChanged` for this event
 variables:
   - name: meldStudio.id
     type: string
@@ -34,17 +42,5 @@ variables:
   - name: meldStudioEvent._json
     type: string
     description: Full JSON Payload of the event in Meld Studio
-    value: {"layerId":"D51F56E984CE10AD7E90C09F68E60710","layerName":"Text 3","visible":true} 
+    value: {"layerId":"D51F56E984CE10AD7E90C09F68E60710","layerName":"Text 3","visible":true}
 ---
-
-## Parameters
-::field-group
-  ::field{name=Connection type=Select required}
-    Choose a configured Meld Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select required}
-    Choose the name of the event to set the Trigger
-    - Select `LayerVisibilityChanged` for this event
-  ::
-::
