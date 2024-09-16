@@ -11,6 +11,6 @@ csharpMethods:
   - StreamDeckSetTitle
 ---
 
-::callout{icon=i-mdi-bookmark to=https://streamdeck.streamer.bot target=_blank}
+::read-more{to=https://streamdeck.streamer.bot}
 Explore the full [Stream Deck Plugin Documentation](https://streamdeck.streamer.bot)
 ::
