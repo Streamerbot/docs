@@ -7,4 +7,5 @@ parameters:
     type: Drop-down
     required: true
     description: Select Enabled/Disabled/Toggle from drop-down menu
+variables: []
 ---
