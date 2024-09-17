@@ -19,7 +19,9 @@ You can use [AutoHotKey](https://www.autohotkey.com){target=_blank rel=noopener}
 
 2. Download Example Scripts
 
-    `Whipstickgostop/streamerbot-ahk` is available on [GitHub](https://github.com/Whipstickgostop/streamerbot-ahk) or [direct download](https://github.com/Whipstickgostop/streamerbot-ahk/archive/refs/heads/main.zip)
+    ::card{title="Whipstickgostop/streamerbot-ahk" icon=mdi-github}
+      View source on [GitHub](https://github.com/Whipstickgostop/streamerbot-ahk) or direct [.zip download](https://github.com/Whipstickgostop/streamerbot-ahk/archive/refs/heads/main.zip)
+    ::
 
 ## Instructions
 
@@ -40,18 +42,36 @@ You can use [AutoHotKey](https://www.autohotkey.com){target=_blank rel=noopener}
 
     - If you changed UDP Server settings in Streamer.bot, update the `StreamerbotUDP` connection details to match your configuration.
 
+    ``` [example-do-action.ahk]
+    ; Update Streamer.bot Host IP and port as needed
+    sb := StreamerbotUDP("127.0.0.1", 4242)
+    ```
+
 4. Configure HotKeys
-    - By default, the script is configured with hotkeys on <kbd>F12</kbd> and <kbd>F11</kbd>.
-    - You can add or modify any hotkeys as needed.
 
-    ::read-more{to=https://www.autohotkey.com/docs/v2/Hotkeys.htm}
-    Refer to the **AutoHotKey** documentation for setting various hotkeys
-    ::
+    - Setup Key Combinations
+        1. By default, the script is configured with hotkeys on <kbd>F12</kbd> and <kbd>F11</kbd>.
+        2. You can add or modify any hotkeys as needed.
 
-5. Update Action IDs
+        ::read-more{to=https://www.autohotkey.com/docs/v2/Hotkeys.htm}
+        Refer to the **AutoHotKey** documentation for setting various hotkeys
+        ::
 
-    1. In Streamer.bot, <kbd>Right-Click</kbd> on the action you want to execute from AHK, and select `Copy Action ID`
-    2. Update the `sb.DoAction("<action-id>")`{lang=cs} lines to use your selected action ID
+    <br><br>
+
+    - Update Action IDs
+      1. In Streamer.bot, <kbd>Right-Click</kbd> on the action you want to execute from AHK, and select `Copy Action ID`
+      2. Update the `sb.DoAction("<action-id>")`{lang=cs} lines to use your selected action ID
+
+
+    ``` [example-do-action.ahk]
+    ; Set to your desired keybind or key combination
+    F11::
+    {
+      ; Set to your desired Action ID
+      sb.DoAction("94754342-3397-4dbc-8b16-123906b34015")
+    }
+    ```
 
 6. Start Script
 
