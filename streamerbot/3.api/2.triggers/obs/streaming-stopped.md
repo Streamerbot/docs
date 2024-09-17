@@ -2,6 +2,13 @@
 title: OBS Streaming Stopped
 description: Trigger for when an OBS Streaming is Stopped
 version: 0.2.0
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
 variables:
   - name: obs.id
     type: string
@@ -23,11 +30,3 @@ variables:
     description: The current OBS websocket version
     value: 5.1.0
 ---
-
-## Parameters
-::field-group
-  ::field{name=OBS type=Select required}
-    Choose a configured OBS Connection
-    - Select `Any` to trigger on any connection
-  ::
-::

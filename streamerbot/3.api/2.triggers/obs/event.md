@@ -2,6 +2,17 @@
 title: OBS Event
 description: Trigger for an OBS Event
 version: 0.2.0
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
+  - name: Event
+    type: Select
+    required: trie
+    description: Select an event to Trigger on
 variables:
   - name: obs.id
     type: string
@@ -18,17 +29,6 @@ variables:
 
 ::callout{icon=i-mdi-bookmark to="https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events" target=_blank rel=noopener}
 Explore all supported [OBS Studio Events](https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events) on their WebSocket protocol documentation
-::
-
-## Parameters
-::field-group
-  ::field{name=OBS type=Select required}
-    Choose a configured OBS Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name=Event type=Select}
-    Select an event to react on.
-  ::
 ::
 
 ## Variables

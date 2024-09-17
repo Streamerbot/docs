@@ -2,6 +2,13 @@
 title: OBS Disconnected
 description: Trigger for when OBS is Disconnected
 version: 0.2.0
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
 variables:
   - name: obs.id
     type: string
@@ -15,11 +22,3 @@ variables:
     description: The IP Address of the OBS connection
     value: 127.0.0.1
 ---
-
-## Parameters
-::field-group
-  ::field{name=OBS type=Select required}
-    Choose a configured OBS Connection
-    - Select `Any` to trigger on any connection
-  ::
-::
