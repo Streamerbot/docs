@@ -20,7 +20,7 @@ parameters:
     description: |
       Name of the event to send.
 
-      The event names have to match for the trigger and the "Send" sub-action on the other instance
+      - On the receiving instance, enter the same name in the [Remote Instance Trigger](/api/triggers/integrations/streamerbot-remote/remote-instance-trigger) configuration
   - name: Include Action's Arguments
     type: Toggle
     default: 'false'
