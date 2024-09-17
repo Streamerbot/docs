@@ -3,11 +3,6 @@ title: Set Image Source File
 description: Set the file path for an image source (will accept image links as well)
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: ObsScene
     type: Select
     required: true

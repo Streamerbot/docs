@@ -3,11 +3,6 @@ title: Raw
 description: Make custom calls to the OBS websocket server for even more control over your OBS Studio instance
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
 csharpMethods:
   - ObsSendRaw
 ---

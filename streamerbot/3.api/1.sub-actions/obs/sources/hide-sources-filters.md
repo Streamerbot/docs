@@ -3,11 +3,6 @@ title: Hide Source's Filters
 description: Hide all the filters from a source
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: ObsScene
     type: Select
     required: true

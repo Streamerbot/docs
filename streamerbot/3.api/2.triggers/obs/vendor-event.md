@@ -4,11 +4,6 @@ description: Trigger for a when a vendor event is sent by a 3rd party plugin in 
 version: 0.2.4
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: Vendor
     type: String
     required: false
