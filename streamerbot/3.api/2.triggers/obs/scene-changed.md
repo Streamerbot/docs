@@ -2,6 +2,18 @@
 title: OBS Scene Changed
 description: Trigger for when an OBS Scene is Changed
 version: 0.2.0
+parameters:
+  - name: ObsConnection
+    type: Select
+    required: true
+    description: |
+      Select the Connection from the drop-down
+      - Any, Default, or named connections will appear here
+  - name: Scene Name
+    type: Select
+    required: false
+    description: |
+      Here you can specify a scene name if you only want it to trigger this event when you switch to a specific scene. If you leave this field empty it will trigger on every scene.
 variables:
   - name: obs.id
     type: string
@@ -32,14 +44,3 @@ variables:
     description: The previous scene name
     value: Previous Scene
 ---
-
-## Parameters
-::field-group
-  ::field{name=OBS type=Select required}
-    Choose a configured OBS Connection
-    - Select `Any` to trigger on any connection
-  ::
-  ::field{name="Scene Name" type=Text}
-    Here you can specify a scene name if you only want it to trigger this event when you switch to a specific scene. If you leave this field empty it will trigger on every scene.
-  ::
-::
