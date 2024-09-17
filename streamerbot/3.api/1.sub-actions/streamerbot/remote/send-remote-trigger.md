@@ -4,7 +4,7 @@ description: Send a trigger to another Streamer.bot instance
 version: 0.2.4
 parameters:
   - name: Instance
-    type: Selection
+    type: Select
     required: true
     description: |
       Select the instance to send this trigger to
@@ -22,7 +22,7 @@ parameters:
 
       The event names have to match for the trigger and the "Send" sub-action on the other instance
   - name: Include Action's Arguments
-    type: Checkbox
+    type: Toggle
     default: 'false'
     description: |
       Send all current action arguments with the trigger to the second instance

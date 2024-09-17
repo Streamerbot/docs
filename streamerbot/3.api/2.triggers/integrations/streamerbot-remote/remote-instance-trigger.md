@@ -2,6 +2,25 @@
 title: Remote Instance Trigger
 description: Triggers when a remote Streamer.bot instance trigger gets sent
 version: 0.2.4
+parameters:
+  - name: Instance
+    required: true
+    description: |
+      Select the instance to send this trigger to
+
+      - `Any` will trigger *all* connected instances
+
+      ::tip{to=/guide/integrations/streamerbot}
+      All instances must have the [Streamer.bot Website Integration](/guide/integrations/streamerbot) configured and enabled
+      ::
+  - name: Event Name
+    type: String
+    required: true
+    description: |
+      Name of the event to trigger on
+
+      - Leave blank to trigger on **any** incoming events
+      - To trigger on a specific event, enter the same name configured in the [Send Remote Trigger](/api/triggers/integrations/streamerbot-remote/remote-instance-trigger) sub-action on another instance
 variables:
   - name: instanceId
     type: string
