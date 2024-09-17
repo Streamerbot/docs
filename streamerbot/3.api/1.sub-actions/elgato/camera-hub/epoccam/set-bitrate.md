@@ -7,4 +7,5 @@ parameters:
     type: Drop-down
     required: true
     description: Select Lowest/Medium/Highest from drop-down menu
+variables: []
 ---
