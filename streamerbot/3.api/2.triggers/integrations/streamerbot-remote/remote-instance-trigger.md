@@ -21,6 +21,10 @@ variables:
     value: windows
 ---
 
+::read-more{to=/api/sub-actions/streamerbot/remote/send-remote-trigger}
+This trigger is executed by the [Send Remote Trigger](/api/triggers/integrations/streamerbot-remote/remote-instance-trigger) sub-action, sent from another instance.
+::
+
 ::tip
-Arguments are getting passed over, so all variables in the action from the sending instance will be available in the receiving instance (if checked)
+Additional variables will be populated for all arguments configured in the sending sub-action
 ::
