@@ -52,6 +52,16 @@ variables:
     type: string
     description: The subscriptions tier<br>`tier 1`, `tier 2`, `tier 3`
     value: tier 1
+  - name: systemMessage
+    type: string
+    version: 0.2.5
+    description: The system message that was put into Twitch Chat.
+    value: Here's another gifted sub for your channel!
+  - name: totalSubsGiftedShared
+    type: boolean
+    version: 0.2.5
+    description:  A boolean value if the user gifting the sub(s) shares there total gift count.
+    value: true
 commonVariables:
   - TwitchUser
 ---
