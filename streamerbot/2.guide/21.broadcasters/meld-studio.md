@@ -16,12 +16,12 @@ You must enable **Allow remote connections** under Advanced. Check out the [Get 
 Navigate to **Stream Apps > Meld Studio** in Streamer.bot
 ::
 
-![Meld Studio Configuration](assets/meld-studio.png)
+![Meld Studio Configuration](assets/meld-studio.png){caption-alt}
 
 ## Configuration
 To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
 
-![Meld Studio Add Connection](assets/meld-studio-add-connection.png)
+![Meld Studio Connection Dialog](assets/meld-studio-add-connection.png){caption-alt}
 
 Configuration options are outlined below:
 
@@ -54,52 +54,68 @@ Configuration options are outlined below:
 ## Context Menu
 <kbd>Right-Click</kbd> on a configured connection to reveal the context menu:
 
-#### `Add`
-Add a new Meld Studio connection
+::field-group
+  ::field{name="Add" type=Action}
+  Add a new Meld Studio connection
+  ::
 
-#### `Edit`
-Edit the selected Meld Studio connection
+  ::field{name="Edit" type=Action}
+  Edit the selected Meld Studio connection
+  ::
 
-#### `Delete`
-Delete the selected Meld Studio connection
+  ::field{name="Delete" type=Action}
+  Delete the selected Meld Studio connection
+  ::
 
-#### `Auto Connect`
-Quickly toggle the `Auto Connect on Startup` configuration option for the selected connection
+  ::field{name="Auto Connect" type=Toggle}
+  Quickly toggle the `Auto Connect on Startup` configuration option for the selected connection
+  ::
 
-#### `Reconnect`
-Quickly toggle the `Reconnect on Disconnect` configuration option for the selected connection
+  ::field{name="Reconnect" type=Toggle}
+  Quickly toggle the `Reconnect on Disconnect` configuration option for the selected connection
+  ::
 
-#### `Default`
-Set this connection as the default when importing actions
+  ::field{name="Default" type=Toggle}
+    Set this connection as the default when importing actions
 
-::tip
-If no default is set, imported actions will default to the first connection in the list
+    ::tip
+    If no default is set, imported actions will default to the first connection in the list
+    ::
+  ::
+
+  ::field{name="Force" type=Toggle}
+    Temporarily override **all** Meld Studio connections to use the selected connection.
+
+    ::warning
+    This setting does **not** persist when you restart Streamer.bot
+    ::
+  ::
+
+  ::field{name="Update All Actions To..." type=Action}
+  Reconfigure all actions utilizing an Meld Studio connection to use the selected connection
+  ::
+
+  ::field{name="Connect" type=Action}
+  Manually attempt to connect to the selected connection
+  ::
 ::
-
-#### `Force`
-Temporarily override **all** Meld Studio connections to use the selected connection.
-
-::warning
-This setting does **not** persist when you restart Streamer.bot
-::
-
-#### `Update All Actions To...`
-Reconfigure all actions utilizing an Meld Studio connection to use the selected connection
-
-#### `Connect`
-Manually attempt to connect to the selected connection
 
 ## Status Panel
 Selecting a connected Meld instance in the left panel will reveal additional realtime information about that instance on the right panel.
 
-#### `Current Scene`
-Shows the name of the currently broadcasting scene on the selected connection
+::field-group
+  ::field{name="Current Scene" type=Text}
+  Shows the name of the currently broadcasting scene on the selected connection
+  ::
 
-#### `Stream Status`
-Shows the status of the current streaming and recording activity
+  ::field{name="Stream Status" type=Text}
+  Shows the status of the current streaming and recording activity
+  ::
 
-#### `Scenes/Layers`
-Lists all layers present on the currently selected scene
+  ::field{name="Scenes/Layers" type=List}
+  Lists all layers present on the currently selected scene
+  ::
+::
 
 ## Usage
 :api-reference-cards{path=meld-studio}
