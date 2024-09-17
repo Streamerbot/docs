@@ -50,5 +50,5 @@ This will show top viewers in the respective categories
 By default, the credits will reset after 12 hours since it has been last closed.  You can change the `12` to a shorter or longer number based on the needs of your stream.
 
 ::tip
-You can manually reset the Credits at any point in time by pressing the `Reset` button.
+You can either manually reset the Credits at any point in time by pressing the `Reset` button, or even reset the credits on a Stream Online trigger by using the [Reset Credits](/api/sub-actions/settings/reset-credits) sub-action.
 ::
