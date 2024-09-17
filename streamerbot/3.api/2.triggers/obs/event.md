@@ -6,7 +6,7 @@ parameters:
   - name: ObsConnection
   - name: Event
     type: Select
-    required: trie
+    required: true
     description: Select an event to Trigger on
 variables:
   - name: obs.id
