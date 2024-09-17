@@ -4,11 +4,6 @@ description: Trigger for an OBS Event
 version: 0.2.0
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: Event
     type: Select
     required: trie

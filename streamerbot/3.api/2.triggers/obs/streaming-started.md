@@ -4,11 +4,6 @@ description: Trigger for when an OBS Streaming is Started
 version: 0.2.0
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
 variables:
   - name: obs.id
     type: string

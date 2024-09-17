@@ -3,11 +3,6 @@ title: Take Screenshot
 description: Makes a screenshot from a scene or source
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: ObsScene
     type: Select
     required: true
@@ -29,7 +24,7 @@ parameters:
     type: Slider
     required: true
     description: |
-      Select the image quality or leave as `Auto`  
+      Select the image quality or leave as `Auto`
 variables:
   - name: screenshotFile
     type: string

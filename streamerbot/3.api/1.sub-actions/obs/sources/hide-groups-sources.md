@@ -3,11 +3,6 @@ title: Hide Group's Sources
 description: Hide all the sources from a group
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: ObsScene
     type: Select
     required: true

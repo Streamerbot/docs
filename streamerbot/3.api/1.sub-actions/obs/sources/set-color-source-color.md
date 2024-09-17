@@ -3,11 +3,6 @@ title: Set Color Source Color
 description: Set a random or a HEX color for a color source
 parameters:
   - name: ObsConnection
-    type: Select
-    required: true
-    description: |
-      Select the Connection from the drop-down
-      - Any, Default, or named connections will appear here
   - name: ObsScene
     type: Select
     required: true
