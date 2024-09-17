@@ -33,7 +33,7 @@ csharpMethods:
 All request types can be found at the official VTubeStudio API documentation on Github: [VTube Studio API Development Page](https://github.com/DenchiSoft/VTubeStudio?tab=readme-ov-file#contents)
 ::
 
-1. First we are looking for the request we want to make. You can find your exact request type in the VTS API documentation. In our example, we'll do a `ExpressionStateRequest`.
+1. First we are looking for the request we want to make. You can find your exact request type in the VTS API documentation. In our example, we'll do a [**ExpressionStateRequest**](https://github.com/DenchiSoft/VTubeStudio?tab=readme-ov-file#requesting-current-expression-state-list).
 
 2. We create the subaction `Integrations -> VStudio -> Send Raw Request`. The `Request` field of the subaction gets the `messageType` key shown in the documentation. That's the area marked in orange. 
 
