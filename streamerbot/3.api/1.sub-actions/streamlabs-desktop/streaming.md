@@ -1,23 +1,17 @@
 ---
 title: Streaming
 description: Change your streaming status
+parameters:
+  - name: SlobsConnection
+  - name: State
+    type: Select
+    required: true
+    description: |
+      Select the desired streaming state
+
+      - `Start`: Start streaming
+      - `Stop`: Stop streaming
+csharpMethods:
+  - SlobsStartStreaming
+  - SlobsStopStreaming
 ---
-
-## Parameters
-:parameter{name=SlobsConnection}
-
-### `State`
-Choose the streaming state
-
-- `Start`: Start your streaming
-- `Stop`: Stop your streaming
-
-### State
-Name | Description
-----:|:------------
-`Stop` | Stops your OBS Stream
-`Start` | Starts your OBS Stream
-
-## C# Usage
-:csharp-method{name=SlobsStartStreaming}
-:csharp-method{name=SlobsStopStreaming}
