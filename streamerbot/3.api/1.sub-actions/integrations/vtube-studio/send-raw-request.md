@@ -39,20 +39,20 @@ All request types can be found at the official VTubeStudio API documentation on 
 
 2. Create the subaction
 
-    We create the subaction `Integrations -> VStudio -> Send Raw Request`. The `Request` field of the subaction gets the `messageType` key shown in the documentation. That's the area marked in orange. 
+    We create the subaction `Integrations -> VStudio -> Send Raw Request`. The `Request` field of the subaction gets the `messageType` key shown in the documentation. That's the area marked in orange.
 
-    ![VTS Raw Example Request](assets/vts-raw-example-3-docs.png) 
+    ![VTS Raw Example Request](assets/vts-raw-example-3-docs.png)
     ![VTS Raw Example Request](assets/vts-raw-example-3.png)
 
 3. Data key
 
     The actual big input area is the `data` key, marked in yellow. But here we only copy everything within (and including) the curly brackets.
 
-::tip
-If the request shown in the documentation doesn't have a `data` key (like the [**CurrentModelRequest**](https://github.com/DenchiSoft/VTubeStudio?tab=readme-ov-file#getting-the-currently-loaded-model)), then you just do empty curly brackets as the input: `{}`
-::
+    ::tip
+    If the request shown in the documentation doesn't have a `data` key (like the [**CurrentModelRequest**](https://github.com/DenchiSoft/VTubeStudio?tab=readme-ov-file#getting-the-currently-loaded-model)), then you just do empty curly brackets as the input: `{}`
+    ::
 
-4. Replace eventual placeholders 
+4. Replace eventual placeholders
 
     For the `ExpressionStateRequest`, we are looking for a specific expression of ours which is just called `test`, so we replace `myExpression_optional_1.exp3.json` with `test.exp3.json`. So in case you have to specify certain values, make sure to replace the placeholders.
 
