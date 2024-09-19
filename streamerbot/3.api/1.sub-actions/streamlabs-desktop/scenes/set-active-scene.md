@@ -1,13 +1,10 @@
-# Set Active Scene
-Change the current scene
-
-## Parameters
-:parameter{name=SlobsConnection}
-
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-## C# Usage
-:csharp-method{name=SlobsSetScene}
+---
+title: Set Active Scene
+description: Change the current scene in Streamlabs Desktop
+parameters:
+  - name: SlobsConnection
+  - name: SlobsScene
+variables: []
+csharpMethods:
+  - SlobsSetScene
+---

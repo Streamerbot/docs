@@ -1,15 +1,13 @@
-# Get Current Scene
-Get the current scene
-
-## Parameters
-:parameter{name=SlobsConnection}
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`currentScene` | Name of the active scene at the time of execution
-
-## C# Usage
-:csharp-method{name=SlobsGetCurrentScene}
+---
+title: Get Current Scene
+description: Get the current scene from Streamlabs Desktop
+parameters:
+  - name: SlobsConnection
+variables:
+  - name: currentScene
+    description: Name of the active scene
+    type: string
+    value: My Scene
+csharpMethods:
+  - SlobsGetCurrentScene
+---

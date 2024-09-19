@@ -1,18 +1,10 @@
-# Hide Source's Filters
-Hide all the filters from a source
-
-## Parameters
-:parameter{name=SlobsConnection}
-
-### `Scene`
-Select the scene from this dropdown list, you can also manually enter a scene name.
-
-- Type: `String`
-
-### `Source`
-Select the source from this dropdown list, you can also manually enter a source name.
-
-- Type: `String`
-
-## C# Usage
-:csharp-method
+---
+title: Hide Source's Filters
+description: Hide all filters from a given source
+parameters:
+  - name: SlobsConnection
+  - name: SlobsScene
+  - name: SlobsSource
+variables: []
+csharpMethods: []
+---
