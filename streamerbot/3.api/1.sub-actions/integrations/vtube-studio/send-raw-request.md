@@ -63,7 +63,7 @@ All request types can be found at the official VTubeStudio API documentation on 
     ![VTS Raw Example Request](assets/vts-raw-example-4.png)
     ![VTS Raw Example Request](assets/vts-raw-example-5.png)
 
-6. Check respones variables
+6. Check response variables
 
     We can check the populated variables in the response of the subaction or in the Action History after running the action.
 
