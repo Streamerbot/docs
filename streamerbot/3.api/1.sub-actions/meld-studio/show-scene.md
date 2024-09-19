@@ -6,4 +6,6 @@ parameters:
   - name: MeldStudioConnection
   - name: MeldStudioScene
 variables: []
+csharpMethods:
+  - MeldStudioShowScene
 ---

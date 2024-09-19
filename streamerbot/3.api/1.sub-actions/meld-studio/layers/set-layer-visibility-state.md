@@ -16,4 +16,7 @@ parameters:
       - `Hidden`: Set the visibility state to hidden
       - `Toggle`: Toggle the visibility state between visible and hidden
 variables: []
+csharpmethods:
+  - MeldStudioShowLayerByName
+  - MeldStudioHideLayerByName
 ---
