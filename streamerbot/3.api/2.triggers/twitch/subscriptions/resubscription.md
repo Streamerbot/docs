@@ -1,7 +1,7 @@
 ---
 title: Resubscription
 description: Trigger for a Twitch Resubscription
-twitchService: Chat Client
+twitchService: EventSub
 parameters:
   - name: Tier
     type: Checkbox

@@ -1,6 +1,7 @@
 ---
 title: Watch Streak
-description: Triggers when a user shares their watch streak.
+description: Triggers when a user shares their watch streak
+twitchService: Chat Client
 version: 0.2.4
 parameters:
   - name: Range
