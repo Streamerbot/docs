@@ -1,7 +1,7 @@
 ---
 title: Gift Subscription
 description: Trigger for a Twitch Gift Subscription
-twitchService: Chat Client
+twitchService: EventSub
 parameters:
   - name: Tier
     type: Checkbox

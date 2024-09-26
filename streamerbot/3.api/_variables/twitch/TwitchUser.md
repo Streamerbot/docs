@@ -18,6 +18,11 @@ variables:
     type: string
     description: Streaming service of this user
     value: twitch
+  - name: userGroups
+    version: 0.2.5
+    type: string
+    description: Comma-delimited list of groups the user is in
+    value: Awesome Streamers,Discord Peeps,Top Contributors 
   - name: isSubscribed
     type: boolean
     description: Is this user subscribed?
