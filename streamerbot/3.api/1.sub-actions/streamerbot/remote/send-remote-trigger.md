@@ -1,24 +1,39 @@
 ---
-title: Wait For Remote Signal
-description: Wait for a remote signal from another Streamer.bot instance
+title: Send Remote Trigger
+description: Send a trigger to another Streamer.bot instance
 version: 0.2.4
 parameters:
   - name: Instance
-    type: Selection
+    type: Select
     required: true
-    description: Select a specific instance or send it to any
+    description: |
+      Select the instance to send this trigger to
+
+      - `Any` will trigger *all* connected instances
+
+      ::tip{to=/guide/integrations/streamerbot}
+      All instances must have the [Streamer.bot Website Integration](/guide/integrations/streamerbot) configured and enabled
+      ::
   - name: Event Name
     type: String
     required: true
-    description: Name of the event. The event names have to match for the trigger and the "Send" subaction on the other instance
+    description: |
+      Name of the event to send.
+
+      - On the receiving instance, enter the same name in the [Remote Instance Trigger](/api/triggers/integrations/streamerbot-remote/remote-instance-trigger) configuration
   - name: Include Action's Arguments
-    type: Checkbox
-    required: false
-    description: Sends all the action's available arguments to the other instance
+    type: Toggle
+    default: 'false'
+    description: |
+      Send all current action arguments with the trigger to the second instance
   - name: Arguments
     type: List
-    required: false
-    description: Sends the specified arguments over to the second instance. It's not affected by "Include Action's Arguments" and those arguments are always included.
+    description: |
+      Define any additional arguments to be sent to the second instance
 variables: []
 csharpMethods: []
 ---
+
+::read-more{to=/api/triggers/integrations/streamerbot-remote/remote-instance-trigger}
+React to the trigger on your other Streamer.bot instance with the [Remote Instance Trigger](/api/triggers/integrations/streamerbot-remote/remote-instance-trigger)
+::

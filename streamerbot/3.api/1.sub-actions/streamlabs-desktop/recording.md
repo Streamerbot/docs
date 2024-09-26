@@ -1,6 +1,17 @@
 ---
 title: Recording
 description: Change your current recording status
+parameters:
+  - name: SlobsConnection
+  - name: State
+    type: Select
+    description: |
+      Select the desired recording state
+
+      - `Start`: Start recording
+      - `Stop`: Stop recording
+      - `Pause`: Pause recording
+      - `Resume`: Resume recording
 variables: []
 csharpMethods:
   - SlobsStopRecording
@@ -8,14 +19,3 @@ csharpMethods:
   - SlobsPauseRecording
   - SlobsResumeRecording
 ---
-
-## Parameters
-:parameter{name=SlobsConnection}
-
-### `State`
-Choose the recording state
-
-- `Start`: Start your recording
-- `Stop`: Stop your recording
-- `Pause`: Pause your recording
-- `Resume`: Resume your recording

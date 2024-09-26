@@ -6,7 +6,7 @@ parameters:
   - name: ObsConnection
   - name: Event
     type: Select
-    required: trie
+    required: true
     description: Select an event to Trigger on
 variables:
   - name: obs.id
@@ -22,9 +22,10 @@ variables:
     value: 127.0.0.1
 ---
 
-::callout{icon=i-mdi-bookmark to="https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events" target=_blank rel=noopener}
-Explore all supported [OBS Studio Events](https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events) on their WebSocket protocol documentation
+::tip
+The variables populated by this trigger are different depending on the `Event` parameter
 ::
 
-## Variables
-The variables of this trigger are different depending on the `Event` parameter.
+::bookmark{to="https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events"}
+Explore all supported [OBS Studio Events](https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#events) on their WebSocket protocol documentation
+::
