@@ -1,7 +1,3 @@
----
-title: UserVariableValue<T>
----
-
 ```cs
 public class UserVariableValue<T>
 {
