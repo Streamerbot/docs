@@ -15,6 +15,11 @@ version: 0.2.5
     type: number
     description: The amount of cumulative months that the user is subscribed for
     value: 2
+  - name: streakShared
+    type: boolean
+    version: 0.2.5
+    description:  Returns whether or not the user shares their resub streak.
+    value: true
 commonVariables:
   - TwitchUser
   - TwitchChat
