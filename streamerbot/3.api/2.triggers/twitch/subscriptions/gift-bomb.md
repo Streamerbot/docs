@@ -62,6 +62,11 @@ variables:
     version: 0.2.5
     description:  A boolean value if the user gifting the sub(s) shares there total gift count.
     value: true
+  - name: bonusGifts
+    type: boolean
+    version: 0.2.5
+    description:  A boolean value if Twitch adds additional subs to the Gift Bomb.
+    value: true
 commonVariables:
   - TwitchUser
 ---
