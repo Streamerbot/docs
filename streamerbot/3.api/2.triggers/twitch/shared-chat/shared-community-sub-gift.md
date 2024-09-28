@@ -19,6 +19,11 @@ version: 0.2.5
     type: number
     description: The total amount of subscriptions that the user has gifted
     value: 24
+  - name: bonusGifts
+    type: boolean
+    version: 0.2.5
+    description:  A boolean value if Twitch adds additional subs to the Gift Bomb.
+    value: true
 commonVariables:
   - TwitchUser
   - TwitchChat
