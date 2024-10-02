@@ -10,6 +10,11 @@ parameters:
     type: Selection
     required: true
     description: Choose between Toggle, Enabled or Disabled
+  - name: Fade Time
+    type: number
+    required: true
+    version: 0.2.5
+    description: Enter the fade time (in ms)
 variables:
   - name: success
     type: Bool
