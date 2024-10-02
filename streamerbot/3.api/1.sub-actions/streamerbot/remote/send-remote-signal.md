@@ -22,7 +22,3 @@ parameters:
 variables: []
 csharpMethods: []
 ---
-
-::warning
-This integration requires the [Streamer.bot Website Integration](/guide/integrations/streamerbot)
-::

@@ -2,7 +2,7 @@
 title: Whispers
 description: Trigger for a Twitch Whisper
 version: 0.0.39
-twitchService: EventSub
+twitchService: Chat Client
 variables: []
 commonVariables:
   - TwitchUser

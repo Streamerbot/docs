@@ -1,7 +1,7 @@
 ---
 title: Gift Bomb
 description: Trigger for a Twitch Gift Bomb
-twitchService: EventSub
+twitchService: Chat Client
 parameters:
   - name: Tier
     type: Checkbox

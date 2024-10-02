@@ -1,15 +1,23 @@
----
-title: Set GDI Text
-description: Modify the text value of a GDI Text Source
-parameters:
-  - name: SlobsConnection
-  - name: SlobsScene
-  - name: SlobsSource
-  - name: Text
-    type: Text
-    required: true
-    description: Enter the new text value
-variables: []
-csharpMethods:
-  - SlobsSetGdiText
----
+# Set GDI Text
+Change the text value of GDI Text Source
+
+## Parameters
+:parameter{name=SlobsConnection}
+
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
+
+- Type: `String`
+
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
+
+- Type: `String`
+
+### `Text`
+Enter a text string.
+
+- Type: `String`
+
+## C# Usage
+:csharp-method{name=SlobsSetGdiText}

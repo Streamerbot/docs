@@ -51,9 +51,6 @@ variables:
 csharpMethods: []
 ---
 
-::warning
-This integration requires the [Streamer.bot Website Integration](/guide/integrations/streamerbot)
-::
 
 ::warning
 If the subaction times out, only the `signalTimeout` will be populated with a value of `True`

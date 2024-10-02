@@ -1,15 +1,23 @@
----
-title: Set Browser Source URL
-description: Modify the URL of a browser source
-parameters:
-  - name: SlobsConnection
-  - name: SlobsScene
-  - name: SlobsSource
-  - name: URL
-    type: Text
-    required: true
-    description: Enter the new URL for the selected browser source
-variables: []
-csharpMethods:
-  - SlobsSetBrowserSource
----
+# Set Browser Source Url
+Change the URL of a browser source
+
+## Parameters
+:parameter{name=SlobsConnection}
+
+### `Scene`
+Select the scene from this dropdown list, you can also manually enter a scene name.
+
+- Type: `String`
+
+### `Source`
+Select the source from this dropdown list, you can also manually enter a source name.
+
+- Type: `String`
+
+### `Url`
+Enter a new URL for the browser source
+
+- Type: `String`
+
+## C# Usage
+:csharp-method{name=SlobsSetBrowserSource}
