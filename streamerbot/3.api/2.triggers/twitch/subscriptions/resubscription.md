@@ -41,6 +41,11 @@ variables:
     description: How nany months of the multi-month subscription have passed so far
     value: 3
     version: 0.2.4
+  - name: streakShared
+    type: boolean
+    version: 0.2.5
+    description:  Returns whether or not the user shares their resub streak.
+    value: true
 commonVariables:
   - TwitchUser
   - TwitchChat
