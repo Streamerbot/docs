@@ -1,13 +1,13 @@
 ---
-title: Resolve Active Prediction by Title
-description: Resolves the currently active prediction by Title
+title: Resolve Last Prediction
+description: Resolves the last active prediction
 version: 0.2.5
 parameters:
-  - name: Outcome Title
-    type: string
+  - name: Winning Index
+    type: number
     description: Specify the zero-based index of the outcome to use as the winning outcome (`%variables%` **ARE** supported)
     required: true
-    value: 'Outcome 1'
+    value: 1
 variables:
   - name: active
     type: bool
