@@ -2,6 +2,13 @@
 title: Guest Star Guest Update
 description: Trigger for when a Guest Star guest receives an update
 version: 0.2.3
+parameters:
+  - name: Scene Name
+    type: Select
+    version: 0.2.5
+    required: false
+    description: |
+      Defaults to 'Any', but can select 'Selected', 'Backstage', 'Invited', 'Live', 'Ready', or 'Removed'
 variables:
   - name: sessionId
     type: string
