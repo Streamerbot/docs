@@ -15,7 +15,11 @@ parameters:
     description: |
       Select a Group from the drop-down
       - Can also manually type the Group name into the box
-variables: []
+variables:
+  - name: randomSource
+    type: string
+    description: name of the chosen random source
+    value: Game Capture
 csharpMethods:
   - ObsSetRandomGroupSourceVisible
 ---
