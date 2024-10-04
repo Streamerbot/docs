@@ -10,6 +10,11 @@ parameters:
     description: |
       Type the name for the Chapter (does accept `%variables%`)
     value: '%game% - Victory!'
+variables:
+  - name: success
+    type: boolean
+    description: Returns whether or not a chapter was successfully created
+    value: true
 csharpMethods:
   - ObsCreateRecordChapter
 ---
