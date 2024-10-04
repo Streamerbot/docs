@@ -9,7 +9,11 @@ parameters:
     description: |
       Select a Scene from the drop-down
       - Can also manually type the Scene name into the box
-variables: []
+variables:
+  - name: randomSource
+    type: string
+    description: name of the chosen random source
+    value: Game Capture
 csharpMethods:
   - ObsSetRandomSceneSourceVisible
 ---
