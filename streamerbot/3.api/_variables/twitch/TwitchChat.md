@@ -47,7 +47,7 @@ variables:
     description: Number of emotes in the chat message
     value: 0
   - name: emotes
-    type: List<Emote>
+    type: List<Twitch.Common.Models.Emote>
     description: A C# accessible list of emotes used in the chat message
     variables:
       - name: Type
