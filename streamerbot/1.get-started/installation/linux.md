@@ -138,7 +138,7 @@ Download `lutris/streamerbot.yaml` from GitHub
 All actions and commands are listed in the order they have been added.
 
 ### Viewer Context Menu
-The :shortcut{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully ppear.
+The :shortcut{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
 
 ::callout{icon=i-mdi-check color=green}
 This issue has been resolved in Wine 7 and later
@@ -153,4 +153,4 @@ This issue has been resolved in Wine 7 and later
 ::
 
 ### Streamer.bot Chat
-The built-in chat window will crash the application due to missing `WebView2` executable
+The built-in chat and event feed windows will not work due to missing `WebView2`.
