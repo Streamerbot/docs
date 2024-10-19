@@ -36,26 +36,8 @@ variables:
         type: boolean
         description: Is the user subscribed?
         value: true
-      - name: title
-        type: string
-        description: Stream title, if the user is currently live
-        value: 'My Stream'
-      - name: gameId
-        description: Stream game ID, if the user is currently live
-        type: string
-        value: '2491012'
-      - name: gameName
-        description: Stream game name, if the user is currently live
-        type: string
-        value: 'Just Chatting'
-      - name: viewerCount
-        description: Stream viewer count, if the user is currently live
-        type: number
-        value: 12
-      - name: startedAt
-        description: Stream start time, if the user is currently live
-        type: DateTime
-        value: 8/4/2023 10:56:06 AM
+commonVariables:
+  - TwitchBroadcaster
 ---
 
 ## Details
@@ -64,9 +46,9 @@ This triggers every 1-10 minutes, default every 5 minutes.
 ## Notes
 The present viewer tick will always happen, but you have the ability to have it "live update" from Twitch, or artificially mark someone as present.
 
-Under the Present Viewer action selector, there are 2 settings, a `Live Update` check box, and a slider bar.
+Under the `Platforms > Twitch > Settings`, in the Present Viewers section, there are 2 settings, a `Live Update` check box, and a slider bar.
 
-When Live Update is checked, the slider next to it is how often this update will occur, between 1 and 10 minutes, this will also execute the action at this interval.
+When `Live Update` is checked, the slider beneath it is how often this update will occur, between 1 and 10 minutes, this will also execute the action at this interval.
 
 When Live Update is not checked, the slider next to it behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present.  The action will still be executed, but, it will occur every minute.
 
