@@ -21,7 +21,7 @@ The amount of random users that you want to use.
 Only selects random users that are present.
 
 ## Variables
-`#` starts at `0`, e.g. if the Count is set to `50` the `#` will be `0`, `1`, `2` ...... `47`, `48`, `49`.
+`#` starts at `0`, e.g. if the Count is set to `50` the `#` will be `0`, `1`, `2` ...... `47`, `48`, `49`.  If invoked again, numbering will continue from the end previous results, e.g. `50`, `51`... 
 
 Name | Description
 ----:|:------------
