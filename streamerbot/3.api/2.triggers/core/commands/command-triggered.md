@@ -9,6 +9,9 @@ variables:
   - name: commandId
     type: Guid
     description: The ID of the command
+  - name: commandName
+    type: string
+    description : The name of the command
   - name: commandSource
     type: string
     description: The command source
@@ -44,6 +47,10 @@ variables:
   - name: counter
     type: number
     description: A running total of how many times a command has been run since application launch
+    value: 17
+  - name: userCounter
+    type: number
+    description: A running total of how many times the command has been run by current user since application launch
     value: 17
 commonVariables:
   - TwitchUser
