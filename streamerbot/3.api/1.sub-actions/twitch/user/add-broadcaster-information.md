@@ -5,7 +5,7 @@ variables:
   - name: broadcastUser
     description: Display name of the broadcaster account
     type: string
-  - name: broadcastUsername
+  - name: broadcastUserName
     description: Username of the broadcaster account
     type: string
   - name: broadcastUserId
