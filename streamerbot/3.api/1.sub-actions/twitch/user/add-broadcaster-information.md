@@ -17,4 +17,7 @@ variables:
   - name: broadcastIsPartner
     description: Boolean value indicating if the broadcaster account is a Twitch partner
     type: string
+  - name: game
+    description: The user's current game category
+    type: string
 ---
