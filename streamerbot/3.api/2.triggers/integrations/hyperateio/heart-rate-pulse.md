@@ -4,9 +4,6 @@ description: Trigger for a HypeRate Heart Rate Pulse
 version: 0.1.5
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: heartRate
     type: number

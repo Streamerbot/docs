@@ -5,9 +5,6 @@ version: 0.1.14
 twitchService: EventSub
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: charity.amount.value
     type: number

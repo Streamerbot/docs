@@ -16,9 +16,6 @@ parameters:
 
       Options: `Public`, `Anonymous`
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: gifts
     type: number

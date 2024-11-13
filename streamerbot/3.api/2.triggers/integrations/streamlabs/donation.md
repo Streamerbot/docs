@@ -3,9 +3,6 @@ title: Donation
 description: Trigger for a Streamlabs Donation
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: donationFrom
     type: string

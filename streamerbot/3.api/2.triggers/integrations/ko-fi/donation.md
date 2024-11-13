@@ -4,9 +4,6 @@ description: Trigger for a Ko-Fi Donation
 version: 0.1.8
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: messageId
     type: string

@@ -5,9 +5,6 @@ version: 0.2.0
 twitchService: EventSub
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: viewerCount
     type: number
