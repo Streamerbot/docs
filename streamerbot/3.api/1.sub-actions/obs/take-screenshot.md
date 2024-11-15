@@ -1,6 +1,10 @@
 ---
 title: Take Screenshot
 description: Makes a screenshot from a scene or source
+      ::tip
+        :icon{name=i-mdi-chevron-right} When using the `Test` Button in the pop-up window, arguments will **NOT** populate. <br>
+        The button only tests the literal string entered into the input box.
+      ::
 parameters:
   - name: ObsConnection
   - name: ObsScene
