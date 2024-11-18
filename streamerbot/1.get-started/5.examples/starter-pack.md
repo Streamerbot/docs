@@ -21,17 +21,7 @@ Each person who took part was able to contribute something to the package and we
 
 ## Setup
 
-1. Download
-
-    ::card{title="Streamer.bot Starter Pack" icon=i-mdi-cloud-download to="https://r2.streamer.bot/community/2024-streamerbot-raid-train.zip"}
-      Download .zip archive <small>- 50MB</small>
-    ::
-
-2. Done!
-
-    ::success
-      You're ready to launch `Streamer.bot.exe` from the `Streamer.bot` directory!
-    ::
+:wip
 
 
 ## Contributions
