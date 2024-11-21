@@ -5,6 +5,7 @@ author: VRFlad
 icon: i-mdi-lightning-bolt
 navigation: false
 difficulty: 0
+url: https://vrflad.com/fasttrack/
 ---
 
 ::card{title="VRFlad's Fast Track" icon=i-mdi-lightning-bolt to=https://vrflad.com/fasttrack/}
