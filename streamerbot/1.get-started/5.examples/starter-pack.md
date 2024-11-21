@@ -23,7 +23,7 @@ Each person who took part was able to contribute something to the package and we
 
 1. Download Import File
 
-    ::callout{icon="i-mdi-cloud-download" to="https://r2.streamer.bot/public/imports/2024-starter-pack.sb"}
+    ::callout{icon="i-mdi-cloud-download" to="https://r2.streamer.bot/imports/2024-starter-pack.sb"}
       **Click here to download** `2024-starter-pack.sb`
     ::
 
