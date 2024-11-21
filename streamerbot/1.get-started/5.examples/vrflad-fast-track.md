@@ -1,0 +1,12 @@
+---
+title: VRFlad's Fast Track
+description: The quickest way to get a fully functioning bot that's customized to your channel!
+author: VRFlad
+icon: i-mdi-lightning-bolt
+navigation: false
+difficulty: 0
+---
+
+::card{title="VRFlad's Fast Track" icon=i-mdi-lightning-bolt to=https://vrflad.com/fasttrack/}
+  Read more at vrflad.com!
+::

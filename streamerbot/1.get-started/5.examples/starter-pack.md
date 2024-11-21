@@ -1,10 +1,10 @@
 ---
 title: Streamer.bot Starter Pack
-description: Get started with a pre-configured Streamer.bot installation provided by the community!
+description: Get started with a collection of starter extensions provided by the community!
 author: Streamer.bot Community
 icon: IconStreamerbot
 navigation: false
-difficulty: 1
+difficulty: 0
 ---
 
 ## Introduction
