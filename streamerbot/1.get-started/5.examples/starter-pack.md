@@ -21,7 +21,38 @@ Each person who took part was able to contribute something to the package and we
 
 ## Setup
 
-:wip
+1. Download Import File
+
+    ::callout{icon="i-mdi-cloud-download" to="https://r2.streamer.bot/public/imports/2024-starter-pack.sb"}
+      **Click here to download** `2024-starter-pack.sb`
+    ::
+
+2. Import into Streamer.bot
+
+    1. Click `Import` in Streamer.bot
+    2. Drag the `2024-starter-pack.sb` file onto the `Import String` input box
+
+        Alternatively, you can copy and paste the contents of the file directly into the input
+
+        ![Import Dialog](assets/starter-pack-import.png)
+
+    3. Click `Import` to complete the import process
+
+    ::warning
+    All imported [Commands](/guide/commands) will be **disabled** by default
+    ::
+
+3. StreamUP Library Updater (Optional)
+
+    ::tip
+    This step is **optional** for those who wish to use the included **Points System** extension
+    ::
+
+    The StreamUP Library Updater is essential for the Points System, however this step is completely optional if you don't wish to use this Points System.
+
+    ::read-more{to="https://streamup.notion.site/How-to-Install-StreamUP-Products-b1425ba0c90d4390b7ebb6904fb88df4#b4155e9dda61431ab55322f04795231d"}
+    You can find detailed installation instructions from **StreamUP** here
+    ::
 
 
 ## Contributions
@@ -61,11 +92,26 @@ The following basic chat [commands](/guide/commands) were added:
 ---
 
 ### MarkusOoOo
-:social-links{twitch="MarkusOoOo"}
+:social-links{twitch="MarkusOoOo" website="https://hellp.markuso.ooo"}
 
 ::changelog-list{type=new}
 - Added **Wheel of Fortune**
 ::
+
+> During the Raid Train 2024 dedicated to Streamer.bot's (SB) birthday, I added the extension called 'Wheel of Fortune' into the SB instance.
+It is fully customizable and allows users to modify everything from size, colours, and number of items on the wheel itself to functionality/reward/response of each item.
+It uses Vue.js for the wheel functionality and WebSockets protocol for the communication between SB and the wheel.
+
+#### Setup
+The whole setup was shown during the raid train on my Twitch live-stream.
+It consists of the retrieving HTML, CSS and JS files for the wheel and allowing WebSockets within the SB on the correct port.
+Also, here is the link to my own documentation page, where I will post updated version*s of this extension.
+
+::read-more{to="https://hellp.markuso.ooo/books/extensions-made-during-raid-trains/chapter/wheel-of-fortune-raid-train-2024"}
+Read more about the **Wheel of Fortune** extension
+::
+
+> If you need more help, feel free to reach out to me on the SB discord server or comment your issue on the documentation page linked above.
 
 ---
 
