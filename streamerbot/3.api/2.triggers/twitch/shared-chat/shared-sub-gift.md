@@ -24,7 +24,7 @@ variables:
     type: number
     description: The amount of months the recipient has been subscribed to the channel
     value: 2
- - name: recipientUser
+  - name: recipientUser
     type: string
     description: The recipient user's display name
     value: TwitchUser123
