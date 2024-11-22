@@ -124,13 +124,71 @@ Message and event highlights can be customized for a variety of events.
 
 ## OBS Browser Dock
 
-You can dock the internal chat in `read-only` mode by enabling the Streamer.bot WebSocket Server and adding the following URLs as Custom Browser Docks in OBS:
-
-| Name | URL |
-| ---- | --- |
-| Streamer.bot Chat | `https://chat.streamer.bot/feed/chat` |
-| Streamer.bot Event Feed | `https://chat.streamer.bot/feed/events` |
+You can dock the Streamer.bot chat in your OBS studio instance.
 
 ::tip
-The ability to **send messages** from the external web chat is coming in Streamer.bot v0.2.5, currently available in public beta
+Streamer.bot v0.2.5 or later is required to be able to **send messages** from docked chat
+<br><span class="ml-6">Earlier versions will be limited to **read-only** mode</span>
 ::
+
+### Setup
+
+1. Enable WebSocket Server
+
+    ::navigate
+    In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
+    ::
+
+    - Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
+    - Enable `Authentication` and set a `Password` to allow **sending** messages
+    - Start the server if it is not already started
+
+2. Configure OBS Studio
+
+    ::navigate
+    In OBS Studio, navigate to **Docks > Custom Browser Docks** from the menu bar
+    ::
+
+    You can add any of the following URLs:
+
+    | Name | URL |
+    | ---- | --- |
+    | Streamer.bot Chat | `https://chat.streamer.bot/feed/chat` |
+    | Streamer.bot Event Feed | `https://chat.streamer.bot/feed/events` |
+
+    ![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png){caption-alt}
+
+3. Configure Connection Details
+
+    - Enter your Streamer.bot WebSocket Server details in the dialog:
+
+    ![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png){caption-alt}
+
+4. Done!
+
+    ::success
+    You've got **Streamer.bot Chat** fully functioning as a browser dock in OBS Studio!
+    ::
+
+### Settings
+
+All settings in OBS Studio docks and browser sources are shared with each other, but they are **separate** from the internal Streamer.bot chat window.
+
+
+#### Sync from Streamer.bot
+
+You can sync settings from the main Streamer.bot chat window in `Settings > General`
+
+This is a one-way sync, from Streamer.bot to the docked chat and will override all existing settings on the docked chat.
+
+### Limitations
+
+Docked chat is limited in some ways due to requiring the WebSocket Server to function independently of Streamer.bot:
+
+- Local Access `127.0.0.1` **might** be required
+  - This depends on the security settings of your web browser or environment
+      - i.e. modern web browsers will **block** connections to other IP Addresses
+  - The recommended solution to work around this is with **secure tunnels**
+      - e.g. Tailscale Serve, Cloudflare Tunnel, ngrok, etc...
+- Built-in moderation actions are removed
+  - Custom quick actions can be used as a workaround for most of these
