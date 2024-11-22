@@ -1,5 +1,5 @@
 ---
-name: Shared Sub
+title: Shared Sub
 description: Triggered when a user subscribes in the shared chat
 twitchService: EventSub
 version: 0.2.5
@@ -11,4 +11,4 @@ variables:
 commonVariables:
   - TwitchUser
   - TwitchChat
- ---
+---
