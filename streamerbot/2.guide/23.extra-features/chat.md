@@ -1,19 +1,33 @@
 ---
 title: Streamer.bot Chat
-description: Built-in chat with deep Streamer.bot integration
+description: Multi-stream chat client with deep Streamer.bot integration
 logo: https://streamer.bot/logo-transparent.svg
 ---
 
-Streamer.bot ships with a built-in chat client to provide you with direct integration between chat and your bot's actions.
+![Streamer.bot Chat](assets/chat.png){caption-alt}
 
 ## Features
+Streamer.bot ships with a built-in chat client to provide you with direct integration between chat and your bot's actions.
 
 ### Multi Stream Support
+
+::tip
+  Chat can connect to all supported streaming platforms in Streamer.bot itself:
+
+  - :icon{name="i-mdi-twitch" class="text-violet-400 h-4 my-0 inline-block"} **Twitch**
+  - :icon{name="i-simple-icons-youtube" class="text-red-400 h-4 my-0 inline-block"} **YouTube**
+  - :icon{name="IconTrovo" class="text-emerald-400 h-4 my-0 inline-block"} **Trovo**
+
+  To suggest a new platform, visit [Streamer.bot Ideas & Suggestions](https://ideas.streamer.bot)
+  <br>
+  Note: Kick and TikTok currently do not provide a public API, which is required for support
+::
+
 By default, the chat window will enable a tabbed view for all broadcaster accounts you have connected.
 
 While on the combined chat view, you can toggle which chat(s) to send to:
 
-![Preview](assets/chat-toggle.png){.rounded-md .shadow-xl}
+![Multi-Chat Toggle](assets/chat-toggle.png){caption-salt}
 
 #### Shortcuts
 Keyboard shortcuts exist to easily direct your chat messages to/from different accounts:
@@ -23,8 +37,6 @@ Keyboard shortcuts exist to easily direct your chat messages to/from different a
 | :shortcut{value="Shift+Enter"} | Send to **all** chats |
 | :shortcut{value="Ctrl+Enter"} | Send to **selected** chat(s) with the **bot account** |
 | :shortcut{value="Ctrl+Shift+Enter"} | Send to **all** chats with the **bot account** |
-
-![Preview](assets/chat-multi-youtube.png){class="rounded-md shadow-xl" width="500"}
 
 ### Command Menus
 Autocomplete menus exist for the following options:
@@ -46,7 +58,7 @@ For example, you can type `/action` to reveal a menu with all actions in your St
 
 Some commands support **Multi-Platform** execution, such as `/title` which can set the title of both Twitch and YouTube broadcasts simultaneously.
 
-![Preview](assets/chat-slash-commands.png){class="rounded-md shadow-xl" width="500"}
+![Slash Commands Menu](assets/chat-slash-commands.png){width="500" caption-alt}
 
 
 #### Streamer.bot Commands
@@ -58,17 +70,11 @@ For commands to appear in the command menu they must be configured with:
 - Set `Location` to `Start`
 - Start with the `!` prefix
 
-::warning
-Commands must have the`Ignore Internal Messages` option **disabled** to work in the chat window.
-<br>
-This setting forces those commands to ignore internal chat input, including from the built-in chat.
-::
-
 When selecting a command, :shortcut{value=Enter} will submit the command immediately to chat.
 
 If you wish to add input for a command, use :shortcut{value=Tab} to select the command and continue typing.
 
-![Preview](assets/chat-commands.png){class="rounded-md shadow-xl" width="500"}
+![Streamer.bot Commands Menu](assets/chat-commands.png){width="500" caption-alt}
 
 #### Emote Autocomplete
 ::note
@@ -85,7 +91,7 @@ Emote autocomplete can be triggered at any time and contains emotes from the fol
 
 To select an emote and continue typing, you can use either :shortcut{value="Enter / Tab"}
 
-![Preview](assets/chat-emotes.png){class="rounded-md shadow-xl" width="500"}
+![Emotes Menu](assets/chat-emotes.png){width="500" caption-alt}
 
 ### Quick Actions
 In settings, you can configure **Quick Actions** for 3 different sources.
@@ -95,32 +101,31 @@ Quick Actions allow you to immediately execute any of your Streamer.bot actions 
 #### Global
 Global Quick Actions are displayed in the bottom-left of the chat window and can be executed at any time.
 
-![Preview](assets/chat-quick-actions-global.png)
+![Global Quick Actions](assets/chat-quick-actions-global.png){caption-alt width="400"}
 
 #### User
 User Quick Actions are displayed in the `View User` popup windows that display when you click on a username in chat.
 
 Additional arguments are populated with the usual user args for the respective platform.
 
-![Preview](assets/chat-quick-actions-user.png)
+![User Quick Actions](assets/chat-quick-actions-user.png){caption-alt width="400"}
 
 #### Message
 Per-message quick actions appear when you hover over a specific chat message.
 
 Additional arguments are populated with the usual message args for the respective platform.
 
-![Preview](assets/chat-quick-actions-message.png)
+![Message Quick Actions](assets/chat-quick-actions-message.png){caption-alt width="400"}
+
+#### Event
+Event quick actions appear when you hover any event message
 
 ### Highlights
 Message and event highlights can be customized for a variety of events.
 
-::collapsible{name="configuration options preview"}
-![Preview](assets/chat-highlights.png)
-::
+![Chat Highlight Settings](assets/chat-highlights.png){caption-alt width="500"}
 
-::collapsible{name="message highlighting preview"}
-![Preview](assets/chat-highlights-preview.png)
-::
+![Chat Highlights](assets/chat-highlights-preview.png){caption-alt width="500"}
 
 ## OBS Browser Dock
 
@@ -192,3 +197,4 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
       - e.g. Tailscale Serve, Cloudflare Tunnel, ngrok, etc...
 - Built-in moderation actions are removed
   - Custom quick actions can be used as a workaround for most of these
+- Most built-in slash commands are removed
