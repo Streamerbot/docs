@@ -25,11 +25,11 @@ variables:
     type: number
     description: The total number of subscriptions gifted by the user.
     value: 42
-  - name: gift.cumulativeMonths.#
+  - name: gift.cumulativeMonths#
     type: number
     description: Cumulative months the user has been subscribed for.<br># is a number starting at 0 til totalGifts - 1
     value: 1
-  - name: gift.recipientUser.#
+  - name: gift.recipientUser#
     type: string
     description: Display name of the gifted user<br># is a number starting at 0 til totalGifts - 1
     value: User0

@@ -2,13 +2,16 @@
 title: Get Twitch Sub Counter Count
 description: Get the broadcaster's Twitch subscriber counter count
 variables:
-  - name: subscriberCount
+  - name: subCounter.count
     type: int
-    description: number of subscribers
+    description: Current sub counter count
     value: 10
-  - name: subscriberPoints
+  - name: subCounter.rollover
     type: int
-    description: number of subscribers points
+    description: Current rollover
+  - name: subCounter.rolloverCount
+    type: int
+    description: Total amount of rollovers.
     value: 15
 csharpMethods: []
 ---
