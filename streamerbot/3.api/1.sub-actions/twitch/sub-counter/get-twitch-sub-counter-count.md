@@ -1,6 +1,6 @@
 ---
 title: Get Twitch Sub Counter Count
-description: Get the broadcaster's Twitch subscriber counter count
+description: Get the broadcaster's Twitch sub counter count
 variables:
   - name: subCounter.count
     type: int
