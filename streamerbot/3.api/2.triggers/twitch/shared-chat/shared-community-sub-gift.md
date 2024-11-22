@@ -28,4 +28,4 @@ variables:
 commonVariables:
   - TwitchUser
   - TwitchChat
- ---
+---
