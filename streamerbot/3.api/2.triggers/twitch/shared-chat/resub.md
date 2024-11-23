@@ -18,7 +18,6 @@ variables:
     value: 2
   - name: streakShared
     type: boolean
-    version: 0.2.5
     description:  Returns whether or not the user shares their resub streak.
     value: true
 commonVariables:

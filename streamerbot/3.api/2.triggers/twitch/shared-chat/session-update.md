@@ -11,7 +11,7 @@ variables:
   - name: host.userLogin
     type: string
     value: reallycoolhost
-    description: Twith login name of the host  
+    description: Twith login name of the host
   - name: host.userName
     type: string
     value: ReallyCoolHost
@@ -19,7 +19,7 @@ variables:
   - name: host.isSubscribed
     type: boolean
     value: False
-    description: Returns `True` if host is subscribed to the Twitch Broadcaster  
+    description: Returns `True` if host is subscribed to the Twitch Broadcaster
   - name: host.isModerator
     type: boolean
     value: False
