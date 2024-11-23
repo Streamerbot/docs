@@ -1,7 +1,7 @@
 ---
 title: Shared Chat User Unbanned
 description: Trigger for When a Twitch User Is Unbanned in a Shared Chat
-version: 0.2.4
+version: 0.2.5
 variables:
   - name: createdAt
     type: datetime

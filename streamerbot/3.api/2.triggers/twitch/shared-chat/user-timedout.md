@@ -1,6 +1,7 @@
 ---
 title: Shared Chat User Timed Out
 description: Trigger for When a Twitch User Is Timed Out in a Shared Chat
+version: 0.2.5
 variables:
   - name: user
     type: string
