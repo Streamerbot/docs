@@ -1,7 +1,7 @@
 ---
 title: Shared Chat User Untimed Out
 description: Trigger for When a Twitch User Is Untimed Out in a Shared Chat
-version: 0.2.4
+version: 0.2.5
 variables:
   - name: createdAt
     type: datetime
