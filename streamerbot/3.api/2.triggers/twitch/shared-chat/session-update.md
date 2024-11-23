@@ -1,6 +1,6 @@
 ---
-title: Twitch Shared Chat Session Begin
-description: Trigger for when Twitch Shared Chat Session begins
+title: Twitch Shared Chat Session Update
+description: Trigger for when Twitch Shared Chat Session updates
 version: 0.2.5
 twitchService: Chat Client
 variables:

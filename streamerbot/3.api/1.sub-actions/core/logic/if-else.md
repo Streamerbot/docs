@@ -21,8 +21,8 @@ parameters:
       - `Not Equals`: Check if the variable does not equal a given value
       - `Contains`: Check if the variable contains the given value
       - `Regex Match`: Use a Regular Expression to match variable contents
-      - `Less Than`: Check if a numeric variable is less than a given value
-      - `Greater Than`: Check if a numeric variable is greater than a given value
+      - `Less Than`: Check if a numeric variable is less than a given value (does NOT include the set value)
+      - `Greater Than`: Check if a numeric variable is greater than a given value (does NOT include the set value)
       - `Does Not Exist`: Check if the variable name is defined at all
       - `Equals (Ignore Case)`: Check if a string variable equals a given value, case insensitive
       - `Not Equals (Ignore Case)`: Check if a string variable does not equal a given value, case insensitive

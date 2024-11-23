@@ -27,6 +27,10 @@ variables:
     type: boolean
     description: Is this user subscribed?
     value: True
+  - name: subscriptionTier
+    type: number
+    description: The subscription tier (T1 = 1000, T2 = 2000, T3 = 3000) (only available if `isSubscribed` is `True`)
+    value: 3000
   - name: monthsSubscribed
     type: number
     description: The amount of months the user is subscribed

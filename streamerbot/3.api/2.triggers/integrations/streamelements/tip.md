@@ -4,9 +4,6 @@ description: Trigger for a StreamElements Tip
 version: 0.2.1
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: tipUsername
     type: string

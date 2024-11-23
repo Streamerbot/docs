@@ -2,16 +2,15 @@
 title: Present Viewers
 description: Trigger for YouTube viewer changes
 variables:
-  - name: title
-    type: string
-    description: The title of the stream
-    value: My stream title
+  - name: isTest
+    type: boolean
+    description: Is this event a test?
   - name: isLive
     type: boolean
     description: Is the stream live?
     value: True
   - name: users
-    type: Dictionary<YouTubeUser>
+    type: List<Dictionary<string,object>>
     description: A C# accessible list of users present in chat
     variables:
       - name: id
@@ -32,7 +31,7 @@ variables:
         value: 1
       - name: isSubscribed
         type: boolean
-        description: Is the user subscribed?
+        description: Is the user a member?
         value: True
 commonVariables:
   - YouTubeBroadcaster
@@ -40,6 +39,8 @@ commonVariables:
 
 ## Notes
 The YouTube present viewer acts more like a chat activity tracker. There is no "Live-Update" option for YouTube as the API does not provide the viewer list.
+
+Under the `Platforms > YouTube > Settings`, you will find the options for the Present Viewers Trigger.
 
 The slider behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present.  The trigger will be executed every minute.
 

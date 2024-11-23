@@ -9,6 +9,9 @@ variables:
   - name: commandId
     type: Guid
     description: The ID of the command
+  - name: commandName
+    type: string
+    description : The name of the command
   - name: commandSource
     type: string
     description: The command source
@@ -38,12 +41,13 @@ variables:
   - name: inputUrlEncoded#
     type: string
     description: The indexed word URL encoded
-  - name: role
-    type: number
-    description: What role the user has<br>1=`Viewer`, 2=`VIP`, 3=`Mod`, 4=`Broadcaster`
   - name: counter
     type: number
     description: A running total of how many times a command has been run since application launch
+    value: 17
+  - name: userCounter
+    type: number
+    description: A running total of how many times the command has been run by current user since application launch
     value: 17
 commonVariables:
   - TwitchUser

@@ -3,10 +3,7 @@ title: Campaign Tip
 description: Trigger for when a tip has been received
 version: 0.2.4
 parameters:
-  - name: range
-    type: Select
-    description: |
-      :range-description
+  - name: Range
 variables:
   - name: tipId
     type: string

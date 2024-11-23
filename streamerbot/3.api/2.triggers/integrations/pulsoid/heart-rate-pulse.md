@@ -4,9 +4,6 @@ description: Trigger for a Pulsoid Heart Rate Pulse
 version: 0.1.5
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: measuredAt
     type: number

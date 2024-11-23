@@ -22,9 +22,6 @@ parameters:
 
       Options: `1`, `3`, `6`, `12`
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: recipientUser
     type: string
