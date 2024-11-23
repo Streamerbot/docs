@@ -38,5 +38,6 @@ variables:
     description: The duration of the timeout
     value: 300
 commonVariables:
+  - TwitchUser
   - TwitchSharedChatSource
 ---

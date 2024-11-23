@@ -34,5 +34,6 @@ variables:
     description: The reason for the ban
     value: My ban reason
 commonVariables:
+  - TwitchUser
   - TwitchSharedChatSource
 ---
