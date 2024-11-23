@@ -1,6 +1,6 @@
 ---
 title: Shared Sub Gift
-description: Triggered when a user gifts a subscription in the shared chat
+description: Triggered When a User Gifts a Subscription in a Shared Chat
 twitchService: EventSub
 version: 0.2.5
 variables:
@@ -46,4 +46,5 @@ variables:
 commonVariables:
   - TwitchUser
   - TwitchChat
+  - TwitchSharedChatSource
 ---

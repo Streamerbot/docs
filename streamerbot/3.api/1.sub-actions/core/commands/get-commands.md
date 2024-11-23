@@ -9,10 +9,15 @@ variables:
   - name: '<variableName>List'
     type: List
     description: C# List object containing all commands matching your specified criteria
-csharpMethods: []
+csharpMethods:
+  - GetCommands
 ---
 
 This sub-action is useful if you want to output a list of commands to your chat.
+
+::warning
+The Get-Commands sub-action will not include commands that have their location set to `Anywhere`
+::
 
 ## Configuration
 ::field-group

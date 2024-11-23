@@ -1,6 +1,6 @@
 ---
 title: Shared Resub
-description: Triggered when a user resubscribes in the shared chat
+description: Triggered When a User Resubscribes in the Shared Chat
 twitchService: EventSub
 version: 0.2.5
 variables:
@@ -24,4 +24,5 @@ variables:
 commonVariables:
   - TwitchUser
   - TwitchChat
+  - TwitchSharedChatSource
 ---

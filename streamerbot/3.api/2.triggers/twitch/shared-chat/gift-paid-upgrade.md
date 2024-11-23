@@ -1,9 +1,10 @@
 ---
 title: Shared Gift Paid Upgrade
-description: Triggered when a user upgrades their gifted subscription in the shared chat
+description: Triggered When a User Upgrades Their Gifted Subscription in the Shared Chat
 twitchService: EventSub
 version: 0.2.5
 variables: []
 commonVariables:
   - TwitchUser
+  - TwitchSharedChatSource
 ---
