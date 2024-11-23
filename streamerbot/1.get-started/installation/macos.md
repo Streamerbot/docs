@@ -5,57 +5,81 @@ navigation: false
 icon: i-mdi-apple
 ---
 
+Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
+
 ::callout{icon=i-mdi-alert color=amber}
 Streamer.bot on MacOS is **experimental** and not officially supported.
 ::
 
-## Introduction
-Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
+## Prerequisites
 
-- `winetricks` under `Run Winetricks Command`{lang=bash}
-  - `dotnet48`
-  - `d3dcompiler_47`
-  - `dxvk`
-  - `corefonts` *optional*
-    - May be needed if you have issues launching Streamer.bot
-  - `sapi` *optional*
-    - Needed for Speaker.bot support
+1. Install Whiskey
 
-### Prerequisites
-
-  1. Install `Whiskey`
-
-    ::callout{icon=i-mdi-bookmark to="https://getwhisky.app"}
+    ::read-more{to="https://getwhisky.app"}
     Download and run the latest version of Whisky [here](https://getwhisky.app)
     ::
 
-    2. Click `Winetricks` and run the following `Run Winetricks Command`s
- - Under `Fonts` select `corefonts` and click `Run`
-    ![corefonts](/streamerbot/1.get-started/assets/corefonts.png)
-    - Under `DLLs` select the following and click `Run` after each:
-      - `sapi`
-![sapi](/streamerbot/1.get-started/assets/sapi.png)
-      - `dxvk`
-  ![dxvk](/streamerbot/1.get-started/assets/dxvk.png)
-      - `d3dcompiler_47` (Should auto install with `dxvk` but doesn't hurt to run this run just in case.)
-      - `dotnet48` (This will take a bit to install.)
-    ![dotnet48](/streamerbot/1.get-started/assets/dotnet48.png)
+2. Run Winetricks Commands
 
-### Install
-    1. Download Streamer.bot [here](https://streamer.bot) and MacOS should unpack it automatically.
-    2. Click `Open C: Drive` and drag the Streamer.bot folder into `drive_c`.
-    3. Click `Pin Program` and set `Pin name:` as Streamer.bot and select the Streamer.bot executable under `Program path:` by clicking `Browse`.
-  ![pin-program](/streamerbot/1.get-started/assets/pin-program.png)
+    ::navigate
+    In Whiskey, navigate to **Winetricks > Fonts**
+    ::
 
-You should now see Streamer.bot in Whisky and be able to double click the icon to run it.
-  ![sb-in-whisky](/streamerbot/1.get-started/assets/sb-in-whisky.png)
+    Select `corefonts` and click `Run`
 
-#### Update
+    ![Install corefonts with Winetricks](../assets/corefonts.png){width="500" caption-alt}
+
+    ::navigate
+    In Whiskey, navigate to **Winetricks > DLLs**
+    ::
+
+    Select each of the following, one by one, and `Run` each:
+
+    - `sapi`
+    - `dxvk`
+    - `d3dcompiler_47`
+      - Should auto install with `dxvk` but doesn't hurt to run this run just in case
+    - `dotnet48`
+      - This will take a bit to install...
+
+      ![dotnet48](../assets/dotnet48.png){width="500"}
+
+## Install
+
+1. Download Streamer.bot
+
+    ::callout{icon="i-mdi-cloud-download" to="https://streamer.bot/api/releases/streamer.bot/latest/download"}
+    Download the latest version of Streamer.bot [here](https://streamer.bot/api/releases/streamer.bot/latest/download) and MacOS should unpack it automatically.
+    ::
+
+2. Move files to C: Drive
+
+    Click `Open C: Drive` and drag the Streamer.bot folder into `drive_c`
+
+
+3. Pin Program
+
+    Click `Pin Program` and set `Pin name:` as Streamer.bot and select the Streamer.bot executable under `Program path:` by clicking `Browse`
+
+    ![Pin Streamer.bot in Whiskey](../assets/pin-program.png){width="500" caption-alt}
+
+4. Launch!
+
+    ::success
+    You should now see Streamer.bot in Whisky and be able to double click the icon to run it.
+    ::
+
+    ![Streamer.bot in Whiskey](../assets/sb-in-whisky.png){width="500" caption-alt}
+
+## Updating
+
+::success
 Streamer.bot [Automatic Updates](/get-started/installation#automatic-updates) should work as usual.
+::
 
 You can manually update your Streamer.bot installation by downloading the latest version and copying the files into your existing install overwriting everything but the folders.
 
-#### Uninstall
+## Uninstalling
 You can remove the Streamer.bot installation by right clicking the `Bottle` name and selecting `Remove`.
 
 ## Known Issues
