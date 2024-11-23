@@ -1,6 +1,6 @@
 ---
 title: Shared Announcement
-description: Triggered when an announcement is shared between both chats
+description: Triggered When an Announcement Is Made in a Shared Chat
 twitchService: EventSub
 version: 0.2.5
 variables:
@@ -31,4 +31,5 @@ variables:
 commonVariables:
   - TwitchChat
   - TwitchUser
+  - TwitchSharedChatSource
 ---

@@ -128,4 +128,10 @@ variables:
   - name: inputUrlEncoded#
     type: string
     description: The indexed word URL encoded
+  - name: inSharedChat
+    type: boolean
+    description: Whether or not the broadcaster is currently in a shared chat
+  - name: fromSharedChat
+    type: boolean
+    description: Whether or not the message originated from a different broadcaster in shared chat
 ---
