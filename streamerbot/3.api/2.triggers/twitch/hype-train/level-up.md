@@ -36,6 +36,7 @@ variables:
   - name: isGoldenKappaTrain
     type: boolean
     description: Whether or not this is a Golden Kappa Train
+    value: True
   - name: contributors
     type: number
     description: The amount of contributors of the hype train

@@ -30,6 +30,7 @@ variables:
   - name: isGoldenKappaTrain
     type: boolean
     description: Whether or not this is a Golden Kappa Train
+    value: True
   - name: top.bits.user
     type: string
     description: The top cheerer of this hype train display name
