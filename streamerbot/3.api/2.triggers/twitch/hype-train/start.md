@@ -27,6 +27,9 @@ variables:
     type: number
     description: The percentage of the current level as a decimal
     value: 0.8
+  - name: isGoldenKappaTrain
+    type: boolean
+    description: Whether or not this is a Golden Kappa Train
   - name: top.bits.user
     type: string
     description: The top cheerer of this hype train display name
