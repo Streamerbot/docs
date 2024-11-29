@@ -16,8 +16,19 @@ variables:
     value: 9001
   - name: favoriteCount
     type: number
-    description: Number of times this broadcast has been favorited
+    description: (Deprecated) - Number of times this broadcast has been favorited
     value: 25
+  - name: commentCount
+    type: number
+    description: Number of comments this broadcast has
+    value: 42
+  - name: concurrentViewers
+    type: number
+    description: |
+      The number of viewers currently watching this broadcast
+
+      Broadcaster needs to have the viewcount enabled for this broadcast to represent the correct value.
+    value: 42
 commonVariables:
   - YouTubeBroadcast
 ---
