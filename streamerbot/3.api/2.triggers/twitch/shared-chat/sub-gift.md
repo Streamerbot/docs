@@ -1,8 +1,9 @@
 ---
-name: Shared Sub Gift
-description: Triggered when a user gifts a subscription in the shared chat
+title: Shared Sub Gift
+description: Triggered When a User Gifts a Subscription in a Shared Chat
 twitchService: EventSub
 version: 0.2.5
+variables:
   - name: tier
     type: string
     description: The subscription tier<br>`prime`, `tier 1`, `tier 2`, `tier 3`
@@ -23,7 +24,7 @@ version: 0.2.5
     type: number
     description: The amount of months the recipient has been subscribed to the channel
     value: 2
- - name: recipientUser
+  - name: recipientUser
     type: string
     description: The recipient user's display name
     value: TwitchUser123
@@ -45,4 +46,5 @@ version: 0.2.5
 commonVariables:
   - TwitchUser
   - TwitchChat
- ---
+  - TwitchSharedChatSource
+---

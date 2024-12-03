@@ -5,10 +5,7 @@ twitchService: Chat Client
 version: 0.2.4
 parameters:
   - name: Range
-    type: Select
     required: true
-    description: |
-      :range-description
 variables:
   - name: systemMessage
     type: string
@@ -28,7 +25,7 @@ variables:
     value: c947cc8a-f458-499b-af5e-d439cc857235
 commonVariables:
   - TwitchUser
-  - TwitchChat    
+  - TwitchChat
 ---
 
 

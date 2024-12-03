@@ -1,49 +1,53 @@
-# Timeout User
-Timeout a user.
+---
+title: Timeout User
+description: Timeout a user
+version: 0.2.4
+parameters:
+  - name: User Login
+    type: String
+    required: true
+    description: Can be a user name or a variable like `%userName%`
+  - name: Duration
+    type: Int
+    required: true
+    description: Timeout duration in seconds. `0` is a permanent ban.
+  - name: Reason
+    type: String
+    required: false
+    description: Reason for the timeout
+variables:
+  - name: timedOutUser
+    type: string
+    description: display name of the timed out user
+    value: PewDiePie
+  - name: timedOutUserName
+    type: string
+    description: login name of the timed out user
+    value: pewdiepie
+  - name: timedOutUserId
+    type: string
+    description: ID of the timed out user
+    value: 12345678
+  - name: timedOutUserType
+    type: string
+    description: platform of the timed out user
+    value: twitch
+  - name: timeoutResult
+    type: bool
+    description: indicator whether the timeout has been successful or not
+    value: True/False
+csharpMethods:
+  - TwitchTimeoutUser
+---
 
-# Notes
-When you time out a moderator it will re-mod the moderator when the timeout has passed.
 
-## Parameters
-### `Type`
-Select who you want to timeout.
+::note
+**Moderators**
+<br>
+Timing out a moderator will automatically reassign their moderator status once the timeout period ends.
+<br><br>
+This only applies to the subaction. 
+<br><br>
+The C# method does not reassign their moderator status. You'll need to implement your own logic in C# to handle this.
+::
 
-- `Redeemer`: Timeout the user who redeemed something e.g. a command or a channel point
-- `Random`: Use a random user from your chat
-- `Specific User`: Select a user from the known user list
-- `From Input`: Use a value from an input like a command or a channel point reward
-
-### `Specific User`
-When you have selected the `Type` to `Specific User` you will be able to select a user from this list.
-
-- Type: `Select`
-
-### `Duration`
-The duration the timeout should last.
-
-- Type: `Integer`
-
-### `Reason`
-Enter the reason for the timeout.
-
-- Type: `String`
-
-### `Exclude Moderators`
-Select this is you want to exclude moderators from the timeout.
-
-- Type: `Checkbox`
-
-## Variables
-:variables-description
-
-Name | Description
-----:|:------------
-`createdAt` | The timestamp the timeout was created.
-`createdById` | User id from the timeout creator.
-`createdByUsername` | User's login name from the timeout creator.
-`createdByDisplayName` | Display name from the timeout creator.
-`duration` | The duration of the timeout.
-`reason` | The reason of the timeout
-
-## C# Usage
-:csharp-method{name=TwitchTimeoutUser}

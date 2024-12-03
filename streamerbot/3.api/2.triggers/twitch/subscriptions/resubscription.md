@@ -10,9 +10,6 @@ parameters:
 
       Options: `Tier 1`, `Tier 2`, `Tier 3`
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: tier
     type: string

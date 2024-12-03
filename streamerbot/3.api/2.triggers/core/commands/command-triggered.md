@@ -41,9 +41,6 @@ variables:
   - name: inputUrlEncoded#
     type: string
     description: The indexed word URL encoded
-  - name: role
-    type: number
-    description: What role the user has<br>1=`Viewer`, 2=`VIP`, 3=`Mod`, 4=`Broadcaster`
   - name: counter
     type: number
     description: A running total of how many times a command has been run since application launch

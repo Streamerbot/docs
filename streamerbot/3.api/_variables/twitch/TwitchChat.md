@@ -66,6 +66,14 @@ variables:
         type: string
         description: The URL of an image from the emote
         value: https://static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0
+      - name: Name
+        type: string
+        description: The name of the emote as displayed in chat
+        value: Kappa
+      - name: Id
+        type: number
+        description: A unique identifier for the emote
+        value: 25
   - name: isHighlight
     type: boolean
     description: Is this message a Twitch Highlight?
@@ -128,4 +136,10 @@ variables:
   - name: inputUrlEncoded#
     type: string
     description: The indexed word URL encoded
+  - name: inSharedChat
+    type: boolean
+    description: Whether or not the broadcaster is currently in a shared chat
+  - name: fromSharedChat
+    type: boolean
+    description: Whether or not the message originated from a different broadcaster in shared chat
 ---

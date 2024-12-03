@@ -4,9 +4,6 @@ description: Trigger for a Twitch Hype Train Level Up
 twitchService: EventSub
 parameters:
   - name: Range
-    type: Select
-    description: |
-      :range-description
 variables:
   - name: prevLevel
     type: number
@@ -36,6 +33,10 @@ variables:
     type: number
     description: The percentage of the current level as a decimal
     value: 0.8
+  - name: isGoldenKappaTrain
+    type: boolean
+    description: Whether or not this is a Golden Kappa Train
+    value: True
   - name: contributors
     type: number
     description: The amount of contributors of the hype train
