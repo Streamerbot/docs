@@ -11,7 +11,7 @@ example: |
             string timerId = "4fcc2d13-9bcf-4c18-9d91-821a15f4b6e5";
             
             //Methods return boolean indicating if timer enabled or not
-            bool state = CPH.GetTimerStateById(timerId);
+            bool state = CPH.GetTimerState(timerId);
             return true;
         }
     }

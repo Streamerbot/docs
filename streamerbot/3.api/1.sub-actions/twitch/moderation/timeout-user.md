@@ -44,7 +44,7 @@ csharpMethods:
 ::note
 **Moderators**
 <br>
-Timing out a moderator will automatically reassign their moderator status once the timeout period ends.
+Timing out a moderator will automatically reassign their moderator status once the timeout period ends. Editors will not receive their editior rights back.
 <br><br>
 This only applies to the subaction. 
 <br><br>
