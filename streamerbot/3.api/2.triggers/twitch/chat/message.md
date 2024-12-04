@@ -6,8 +6,11 @@ twitchService: Chat Client
 variables:
   - name: internal
     type: boolean
-    description: Was the message sent from Streamer.bot?
-    value: True
+    description: |
+      If message was sent via Streamer.bot sub-action or C#
+
+      Messages from Streamer.bot Chat are not considered as internal since `0.2.5`
+    value: True / False
 commonVariables:
   - TwitchUser
   - TwitchChat
