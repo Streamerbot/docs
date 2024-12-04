@@ -10,7 +10,7 @@ example: |
             //Define timer id you want to enable
             string timerId = "4fcc2d13-9bcf-4c18-9d91-821a15f4b6e5";
             
-            CPH.EnableTimerById(actionId);
+            CPH.EnableTimerById(timerId);
             return true;
         }
     }
