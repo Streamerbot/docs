@@ -66,6 +66,14 @@ variables:
         type: string
         description: The URL of an image from the emote
         value: https://static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0
+      - name: Name
+        type: string
+        description: The name of the emote as displayed in chat
+        value: Kappa
+      - name: Id
+        type: number
+        description: A unique identifier for the emote
+        value: 25
   - name: isHighlight
     type: boolean
     description: Is this message a Twitch Highlight?
