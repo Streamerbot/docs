@@ -25,7 +25,7 @@ example: |
         public bool Execute()
         {
             //Get message id to reply to
-            CPH.TryGetArg("messageId",out string messageId);
+            CPH.TryGetArg("msgId",out string messageId);
 
             //Set message for reply
             string message = "This is a test reply.";
