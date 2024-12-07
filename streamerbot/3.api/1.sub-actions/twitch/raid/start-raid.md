@@ -13,5 +13,5 @@ variables:
     value: True / False
 csharpMethods:
   - TwitchStartRaidByName
-  - TwitchStartRaidByNameById
+  - TwitchStartRaidById
 ---
