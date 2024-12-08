@@ -198,3 +198,42 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
 - Built-in moderation actions are removed
   - Custom quick actions can be used as a workaround for most of these
 - Most built-in slash commands are removed
+
+## Overlay
+
+![Chat Overlay Preview](./assets/chat-overlay.gif){caption-alt}
+
+::warning
+**Overlay mode is currently experimental and is subject to active changes**
+::
+
+### Setup
+
+1. Enable WebSocket Server
+
+    ::navigate
+    In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
+    ::
+
+    - Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
+    - Start the server if it is not already started
+
+2. Configure Chat Overlay
+
+    ::navigate
+    Navigate to **Settings > Overlay** in the Streamer.bot Chat window
+    ::
+
+    - Modify any overlay settings, which will then be persisted in the URL
+    - Make sure that the `WebSocket Server Configuration` matches your Streamer.bot WebSocket Server settings
+
+3. Add to OBS Studio
+
+    - Click `Save & Copy Overlay URL` to save your settings and copy the URL to your clipboard
+    - Add a new browser source in OBS Studio and paste the copied URL
+
+4. Done!
+
+    ::success
+    You now have a Streamer.bot chat overlay source in OBS Studio!
+    ::
