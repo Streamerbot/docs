@@ -81,7 +81,7 @@ In this example, we will use `node`{lang=bash} to send `POST` requests with vari
         // Default to applicaton/json, override if provided in environment variables
         'Content-Type': process.env.CONTENT_TYPE || 'application/json',
       },
-      body: process.env.BODY,
+      body: process.env.DATA,
     }).then(response => {
       // Send the response status code to %output0%
       console.log(response.status);
