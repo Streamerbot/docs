@@ -69,6 +69,10 @@ Below, you'll find a list of all contributions by each member of the raid train
 - Added a **Discord barker** action
 ::
 
+::read-more{to="https://r2.streamer.bot/assets/2024-starter-pack/Lyfesaver74.zip"}
+Bark-On and SparkleText (HTML/JS Files)
+::
+
 #### Commands
 
 The following basic chat [commands](/guide/commands) were added:
@@ -86,13 +90,19 @@ The following basic chat [commands](/guide/commands) were added:
 
 ::changelog-list{type=new}
 - Added **Discord Logger**
-- Added **Title Changer**
+- Added **Multistream Title Changer**
 ::
 
+::read-more{to="https://malachite-arithmetic-3b1.notion.site/nutty-s-discord-stream-logger-aa7a6874436a4e54901db29550bcc915"}
+Instructions for the **Discord Logger** can be found here
+::
+::read-more{to="https://malachite-arithmetic-3b1.notion.site/nutty-s-multistream-title-updater-e2fb7b24c7514f9cbd943729f54be1d9"}
+Instructions for the **Multistream Title Updater** can be found here
+::
 ---
 
-### MarkusOoOo
-:social-links{twitch="MarkusOoOo" website="https://hellp.markuso.ooo"}
+### MarkusoOoO
+:social-links{twitch="markusoooo" website="https://hellp.markuso.ooo"}
 
 ::changelog-list{type=new}
 - Added **Wheel of Fortune**
@@ -111,6 +121,9 @@ Also, here is the link to my own documentation page, where I will post updated v
 Read more about the **Wheel of Fortune** extension
 ::
 
+::read-more{to="https://r2.streamer.bot/assets/2024-starter-pack/MarkusoOoO.zip"}
+Wheel of Fortune Resources (HTML/JS Files)
+::
 > If you need more help, feel free to reach out to me on the SB discord server or comment your issue on the documentation page linked above.
 
 ---
@@ -275,6 +288,10 @@ In Streamer.bot, enable the triggers you wish to use under each. If you want all
 
 ::callout{icon="i-simple-icons-youtube" color=red to="https://youtu.be/zONhdQdUcZU"}
 **Retro Game Alerts Tutorial**
+::
+
+::read-more{to="https://r2.streamer.bot/assets/2024-starter-pack/OSUPhoenix.zip"}
+Alerts Resources (includes webm and scene files to import via Source Copy)
 ::
 
 #### QR Code Generator

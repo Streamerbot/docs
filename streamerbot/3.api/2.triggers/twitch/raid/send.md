@@ -6,20 +6,23 @@ twitchService: PubSub
 variables:
   - name: raidUser
     type: string
-    description: The raider's username
+    description: Display name of user that is being raided
     value: TwitchUser123
   - name: raidUserName
     type: string
-    description: The raider's login name
+    description: Login name of user that is being raided
     value: twitchuser123
   - name: raidUserId
     type: string
-    description: The raider's user id
+    description: User id of user that is being raided
     value: 718933593
   - name: raidUserProfileImageURL
     type: string
-    description: The raider's profile image URL
+    description: Profile image URL of user that is being raided
   - name: raidUserProfileImageEscaped
     type: string
-    description: The raider's profile image URL escaped
+    description: Profile image URL escaped of user that is being raided
+  - name: viewers
+    type: number
+    description: Amount of viewers that joined in the raid
 ---
