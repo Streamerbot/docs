@@ -1,6 +1,11 @@
 ---
 description: Enables an action, by ID
 version: 0.2.4
+parameters:
+  - name: actionId
+    default: '"1234-abcde-5678"'
+    description: |
+      You can get the action id by right-clicking on an action and `Copy Action Id`
 example: |
     using System;
     public class CPHInline

@@ -2,22 +2,22 @@
 description: Send a reply to a specific Twitch chat message
 parameters:
   - name: message
-    value: '"Hello, world!"'
+    default: '"Hello, world!"'
     description: Enter the message contents
   - name: replyId
-    value: 'args["msgId"]'
+    default: 'args["msgId"]'
     description: Enter the unique ID of the message to reply to
-  - name: bot
-    value: true
+  - name: useBot
+    default: true
     description: |
       - `true`{lang=cs} - Send the reply using your **Twitch Bot** account
       - `false`{lang=cs} - Send the reply using your **Twitch Broadcaster** account
   - name: fallback
     version: 0.2.5
-    value: true
+    default: true
     description: |
-      -`true`{lang=cs} - (If `bot` bool is set to `True`), this is the same behaviour as if you had Bot as your preferred account.
-      -`false`{lang=cs} - (If `bot` bool is set to `True`), it will try to send using **only** the Bot account, and do **nothing** if it can't (i.e, not logged in).
+      - `true`{lang=cs} - (If `bot` bool is set to `True`), this is the same behaviour as if you had Bot as your preferred account.
+      - `false`{lang=cs} - (If `bot` bool is set to `True`), it will try to send using **only** the Bot account, and do **nothing** if it can't (i.e, not logged in).
 example: |
     using System;
     public class CPHInline
