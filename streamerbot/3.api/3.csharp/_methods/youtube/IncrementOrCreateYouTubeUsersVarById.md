@@ -1,4 +1,6 @@
 ---
-description: Increments the value of a specific user global variable for a specified YouTube user, by ID. If the variable doesn't exist, it creates a new one
+description: |
+  Increments the values of YouTube user variables for a list of user IDs.
+  If a variable does not exist for a user, a new one is created.
 version: 0.2.4
 ---

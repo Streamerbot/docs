@@ -1,5 +1,7 @@
 ---
 description: Returns a list of Twitch Reward
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     using System.Collections.Generic; //needed due to List usage

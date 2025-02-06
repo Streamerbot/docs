@@ -1,5 +1,5 @@
 ---
-description: Resets all counters associated with the specified command using its ID
+description: Resets all user counters associated with the specified command, by ID
 version: 0.2.4
 example: |
     using System;

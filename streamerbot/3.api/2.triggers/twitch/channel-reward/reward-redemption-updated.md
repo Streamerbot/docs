@@ -2,7 +2,7 @@
 title: Reward Redemption Updated
 description: Trigger for a Twitch Reward Redemption when it's marked as complete or rejected in Twitch Reward Queue.
 version: 0.2.0
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: redemptionId
     type: string

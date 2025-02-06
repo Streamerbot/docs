@@ -59,7 +59,11 @@ parameters:
     type: Toggle
     default: false
     description: Toggle to send the message with Discord TTS
-
+variables:
+  - name: messageId
+    type: string
+    description: Message Id of the Discord message
+    value: 1337117683476336731
 csharpMethods:
   - DiscordPostTextToWebhook
 ---

@@ -24,8 +24,8 @@ variables:
     value: 2
   - name: multiMonthTenure
     type: int
-    description: The total amount of months subscribed for
-    value: 3
+    description: How many months of the multi-month subscription have passed so far
+    value: 1
 commonVariables:
   - TwitchUser
   - TwitchChat

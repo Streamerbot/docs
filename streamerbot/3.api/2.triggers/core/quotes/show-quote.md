@@ -5,7 +5,7 @@ variables:
   - name: quote
     type: string
     description: The quote content
-  - name: quoteID
+  - name: quoteId
     type: string
     description: The numeric quote id
   - name: quoteUser

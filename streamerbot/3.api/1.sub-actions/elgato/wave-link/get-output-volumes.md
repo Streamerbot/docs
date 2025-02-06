@@ -6,9 +6,9 @@ variables:
   - name: localVolume
     type: int
     description: Volume of your local/monitor mix
-    default: 42
+    value: 42
   - name: streamVolume
     type: int
     description: Volume of your stream mix
-    default: 100
+    value: 100
 ---

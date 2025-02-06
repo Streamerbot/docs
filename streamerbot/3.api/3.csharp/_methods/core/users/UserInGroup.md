@@ -1,5 +1,5 @@
 ---
-description: Check if a user, by username, is a member of a group
+description: Check if a user, by username (login name), is a member of a group
 version: 0.2.3
 parameters:
   - import: UserName
@@ -15,9 +15,13 @@ example: |
             string groupName = "Test Group";
             //Get userName of current user
             CPH.TryGetArg("userName",out string userName);
+            
+            //Get user type and define the Platform Enum
+            CPH.TryGetArg("userType",out string userType);
+            Enum.TryParse(userType, out Platform platform);
 
             //Method returns a bool type which you can check if the user is in group
-            bool userInGroup = CPH.UserInGroup(userName, Platform.Twitch, groupName);
+            bool userInGroup = CPH.UserInGroup(userName, platform, groupName);
             return true;
         }
     }

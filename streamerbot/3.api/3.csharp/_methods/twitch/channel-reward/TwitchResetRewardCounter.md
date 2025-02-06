@@ -1,5 +1,7 @@
 ---
 description: Reset counter for the specified reward, by id
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     public class CPHInline

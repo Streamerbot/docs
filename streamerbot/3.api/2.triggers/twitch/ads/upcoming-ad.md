@@ -2,7 +2,6 @@
 title: Upcoming Ad
 description: Trigger for an upcoming Twitch Ad Run
 version: 0.2.3
-twitchService: PubSub
 variables:
   - name: minutes
     type: number

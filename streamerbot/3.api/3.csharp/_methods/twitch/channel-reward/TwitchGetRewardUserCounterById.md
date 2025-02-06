@@ -1,6 +1,9 @@
 ---
 description: Returns reward count of the given reward for a specified Twitch user, by id
 version: 0.2.4
+parameters:
+  - import: TwitchRewardId
+  - import: UserId
 example: |
     using System;
     public class CPHInline

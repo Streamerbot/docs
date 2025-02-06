@@ -6,7 +6,7 @@ example: |
     {
         public bool Execute()
         {
-            //Get action name
+            //Get current action name
             CPH.TryGetArg("actionName",out string actionName);
             
             //Disable action by name

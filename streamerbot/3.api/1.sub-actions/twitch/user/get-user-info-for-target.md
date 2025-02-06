@@ -1,8 +1,6 @@
 ---
 title: Get User Info for Target
 description: Fetch Twitch user data and populate a set of variables
-commonVariables:
-  - TwitchUser
 variables:
   - name: targetUser
     description: Display name of the target user

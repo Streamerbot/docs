@@ -14,6 +14,8 @@ parameters:
   - name: State
     type: Select
     required: true
-    description: Mute state
-    default: Bypass / Enabled / Toggle
+    description: |
+      Bypass State
+      Options: `Bypass`, `Enabled`, `Toggle`
+    default: Bypass
 ---

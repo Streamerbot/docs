@@ -1,5 +1,5 @@
 ---
-description: Add a user, by username, to a group
+description: Add a user, by username (login name), to a group
 version: 0.2.3
 parameters:
   - import: UserName
@@ -15,9 +15,13 @@ example: |
             string groupName = "Test Group";
             //Get UserName
             CPH.TryGetArg("userName",out string userName);
+            
+            //Get user type and define the Platform Enum
+            CPH.TryGetArg("userType",out string userType);
+            Enum.TryParse(userType, out Platform platform);
 
             //Method returns a bool type which you can check if the user was added
-            bool userGotAdded = CPH.AddUserToGroup(userName, Platform.Twitch, groupName);
+            bool userGotAdded = CPH.AddUserToGroup(userName, platform, groupName);
             return true;
         }
     }

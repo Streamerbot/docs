@@ -2,7 +2,7 @@
 title: Reward Redemption
 description: Trigger for a Twitch Reward Redemption
 version: 0.0.30
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: redemptionId
     type: string

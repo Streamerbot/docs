@@ -2,7 +2,7 @@
 title: Raid Send
 description: Triggers when the viewers successfully leave the broadcasters chat and arrive in raidUser's stream.
 version: 0.0.36
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: raidUser
     type: string

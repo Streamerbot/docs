@@ -1,5 +1,7 @@
 ---
 description: Get the counter of a Twitch reward, by id
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     public class CPHInline

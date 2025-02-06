@@ -15,9 +15,13 @@ example: |
             string groupName = "Test Group";
             //Get UserId
             CPH.TryGetArg("userId",out string userId);
+            
+            //Get user type and define the Platform Enum
+            CPH.TryGetArg("userType",out string userType);
+            Enum.TryParse(userType, out Platform platform);
 
             //Method returns a bool type which you can check if the user was added
-            bool userGotAdded = CPH.AddUserIdToGroup(userId, Platform.Twitch, groupName);
+            bool userGotAdded = CPH.AddUserIdToGroup(userId, platform, groupName);
             return true;
         }
     }

@@ -1,8 +1,7 @@
 ---
 name: isFeatured
 type: Boolean?
-default: null
-value: true
+default: true
 description: |
   Toggle featured clips behavior
 

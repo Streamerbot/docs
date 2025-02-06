@@ -7,6 +7,6 @@ description: |
   ::warning
   A maximum of `1,000` clips can be returned
   ::
-value: 10
+default: 10
 ---
 

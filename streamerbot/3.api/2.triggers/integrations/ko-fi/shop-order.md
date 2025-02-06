@@ -36,5 +36,5 @@ variables:
     value: 5
   - name: item#
     type: string
-    description: The id of the item purchased
+    description: The id of the item purchased. `#` index starting from 0
 ---

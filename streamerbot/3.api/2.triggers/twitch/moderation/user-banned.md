@@ -1,7 +1,7 @@
 ---
 title: User Banned
 description: Trigger for when a Twitch User is Banned
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: user
     type: string

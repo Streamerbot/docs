@@ -2,7 +2,7 @@
 title: User Unbanned
 description: Trigger for when a Twitch user is unbanned
 version: 0.2.4
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: createdAt
     type: datetime
