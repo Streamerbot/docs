@@ -14,6 +14,8 @@ parameters:
   - name: State
     type: Select
     required: true
-    description: Filter State
-    default: Enabled / Disabled / Toggle
+    description: |
+      Filter State
+      Options: `Enabled`, `Disabled`, `Toggle`
+    default: Enabled
 ---

@@ -2,7 +2,7 @@
 title: Raid Cancelled
 description: Trigger for when a Twitch Raid from your channel to another channel is Cancelled
 version: 0.0.36
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: raidUser
     type: string

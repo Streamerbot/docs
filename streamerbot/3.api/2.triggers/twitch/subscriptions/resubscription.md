@@ -35,7 +35,7 @@ variables:
     version: 0.2.4
   - name: multiMonthTenure
     type: int
-    description: How nany months of the multi-month subscription have passed so far
+    description: How many months of the multi-month subscription have passed so far
     value: 3
     version: 0.2.4
   - name: streakShared

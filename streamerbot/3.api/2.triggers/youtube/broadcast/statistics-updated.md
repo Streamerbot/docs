@@ -26,8 +26,6 @@ variables:
     type: number
     description: |
       The number of viewers currently watching this broadcast
-
-      Broadcaster needs to have the viewcount enabled for this broadcast to represent the correct value.
     value: 42
 commonVariables:
   - YouTubeBroadcast

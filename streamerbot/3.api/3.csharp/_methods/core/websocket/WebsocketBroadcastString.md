@@ -3,5 +3,20 @@ description: Send a text string to all clients connected to the Streamer.bot [We
 parameters:
   - name: data
     description: The text to send to connected clients
-    value: '"Hello, world!"'
+    default: '"Hello, world!"'
+example: |
+    using System;
+    public class CPHInline
+    {
+        public bool Execute()
+        {
+            //Define data you want to send
+            string data = "Hello, world!";
+
+            //Broadcast data to clients
+            CPH.WebsocketBroadcastString(data);
+            
+            return true;
+        }
+    }
 ---

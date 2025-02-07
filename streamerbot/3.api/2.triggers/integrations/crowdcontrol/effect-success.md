@@ -2,6 +2,41 @@
 title: Effect Success
 description: Trigger for a Crowd Control Effect Success
 version: 0.2.0
+parameters:
+  - name: Game
+    type: Select
+    required: true
+    default: Any
+    description: Game to which the trigger should react on
+  - name: Pack
+    type: Select
+    required: true
+    default: Any
+    description: Pack of the game the trigger should react on
+  - name: Effect
+    type: Select
+    required: true
+    default: Any
+    description: Effect, is based on the Game and Pack
+  - name: Type
+    type: Select
+    required: true
+    default: Any
+    description:  |
+      - `Any`
+      - `Immediate`
+      - `Timed`
+  - name: Price
+    type: Range
+    description: |
+      Filter events between a specified `Min` and `Max`
+
+      `Min` and `Max` are **inclusive** of the entered values
+
+      - `Any Value` - Leave both min and max empty to accept any value
+      - `Exact Value` - Enter only a `Max` to trigger on a specific value
+      - `Greater Than` - Enter only a `Min` to trigger on any value greater than the specified value
+      - `Range` - Enter a min and a max to trigger within a desired range
 variables:
   - name: requestID
     type: string

@@ -1,5 +1,7 @@
 ---
 description: Mark Twitch reward as resolved, which makes the redeem non refundable and removes it from reward queue
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     public class CPHInline

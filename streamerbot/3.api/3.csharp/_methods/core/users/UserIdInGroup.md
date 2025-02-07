@@ -16,8 +16,12 @@ example: |
             //Get userId of current user
             CPH.TryGetArg("userId",out string userId);
 
+            //Get user type and define the Platform Enum
+            CPH.TryGetArg("userType",out string userType);
+            Enum.TryParse(userType, out Platform platform);
+
             //Method returns a bool type which you can check if the user is in group
-            bool userInGroup = CPH.UserIdInGroup(userId, Platform.Twitch, groupName);
+            bool userInGroup = CPH.UserIdInGroup(userId, platform, groupName);
             return true;
         }
     }

@@ -1,5 +1,7 @@
 ---
 description: Will refund the Twitch reward and removing it from the reward queue
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     public class CPHInline

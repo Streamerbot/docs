@@ -7,6 +7,5 @@ description: |
   - `Platform.Twitch`
   - `Platform.YouTube`
   - `Platform.Trovo`
-  - `Platfrom.VStream`
-value: Platform.Twitch
+default: Platform.Twitch
 ---

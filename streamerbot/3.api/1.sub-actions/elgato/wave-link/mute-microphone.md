@@ -10,6 +10,8 @@ parameters:
   - name: State
     type: Select
     required: true
-    description: Mute state
-    value: Muted / Not Muted / Toggle
+    description: |
+      Mute State
+      Options: `Muted`, `Not Muted`, `Toggle`
+    default: Muted
 ---

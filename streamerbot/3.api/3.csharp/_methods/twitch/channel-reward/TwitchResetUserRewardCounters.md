@@ -1,5 +1,7 @@
 ---
 description: Reset all user reward counters for the specified user, by id
+parameters:
+  - import: TwitchRewardId
 example: |
     using System;
     public class CPHInline

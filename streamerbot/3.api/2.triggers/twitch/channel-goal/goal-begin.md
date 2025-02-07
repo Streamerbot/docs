@@ -10,6 +10,8 @@ variables:
   - name: goal.type
     type: string
     description: The type of this channel goal
+    value: |
+      `follow`/`subscription`/`new_subscription`/`new_subscription_count`/`new_bit`/`new_cheerer`
   - name: goal.description
     type: string
     description: The description of this channel goal

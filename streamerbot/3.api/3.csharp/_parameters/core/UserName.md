@@ -1,5 +1,5 @@
 ---
 name: userName
-description: The username for this user
-value: "'PogUser69'"
+description: The login name for this user
+default: '"StreamerDotBot"'
 ---

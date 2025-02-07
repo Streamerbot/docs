@@ -1,6 +1,8 @@
 ---
 description: Deletes the group matching the provided name
 version: 0.2.4
+parameters:
+  - import: UserGroupName
 example: |
     using System;
     public class CPHInline

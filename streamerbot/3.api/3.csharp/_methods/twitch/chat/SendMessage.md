@@ -24,7 +24,8 @@ example: |
             //Set message for chat
             string message = "This is a test message.";
 
-            //Send reply with bot account
+            //Send message with bot account if bot account disconnect
+            //will use broadcaster account
             CPH.SendMessage(message, true, true);
 
             return true;
