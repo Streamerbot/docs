@@ -25,14 +25,14 @@ example: |
         {
           // Preferably Custom Triggers are registered during initialization of the code instance
           // Often in combination with Pre-Compile on Application start in the Execute-Code settings
-            
+
           //Define the categories in custom trigger menu
           string[] categories = {"Streamer.bot","Documentation"};
-          
-          
+
+
           //Define the event name for later usage in code with CPH.TriggerCodeEvent(eventName)
           //Advise on making it fairly unique names to your code/extension
-			    string eventName = "sbDocsUpdate";
+          string eventName = "sbDocsUpdate";
 
           //Register custom trigger. Will give boolean result if successfull
           bool success = CPH.RegisterCustomTrigger(triggerName, eventName, categories);

@@ -1,7 +1,6 @@
 ---
 description: Returns a list of Twitch Reward Counters
 parameters:
-parameters:
   - import: TwitchRewardId
   - name: persisted
     type: boolean
@@ -18,7 +17,7 @@ example: |
             string rewardId = "your reward id";
             //Whether or not you want to get the persisted or non persisted counters
             bool persisted = true;
-            
+
             List<TwitchRewardCounter> rewardCounters = CPH.TwitchGetRewardUserCounters(rewardId, true);
 
             foreach(TwitchRewardCounter userCounter in rewardCounters)

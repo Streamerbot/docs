@@ -10,15 +10,15 @@ example: |
     {
         public bool Execute()
         {
-        	//Please be extremely careful with this method
-        	//Only possible to restore with back-up
-        	
-        	//Unset all(!) persisted user variable called "myString"
-			CPH.UnsetAllUsersVar("myString");
+            //Please be extremely careful with this method
+            //Only possible to restore with back-up
+
+            //Unset all(!) persisted user variable called "myString"
+            CPH.UnsetAllUsersVar("myString");
             CPH.UnsetAllUsersVar("myString", true);
-            
-			//Unset all(!) non-persisted user variable called "myString"
-			CPH.UnsetAllUsersVar("myString", false);
+
+            //Unset all(!) non-persisted user variable called "myString"
+            CPH.UnsetAllUsersVar("myString", false);
             return true;
         }
     }

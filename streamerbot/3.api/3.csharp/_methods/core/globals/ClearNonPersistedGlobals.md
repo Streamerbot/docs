@@ -6,8 +6,8 @@ example: |
     {
         public bool Execute()
         {
-			CPH.ClearNonPersistedGlobals();
-            
+            CPH.ClearNonPersistedGlobals();
+
             return true;
         }
     }

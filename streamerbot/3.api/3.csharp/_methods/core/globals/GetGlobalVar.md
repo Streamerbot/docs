@@ -10,15 +10,15 @@ example: |
         public bool Execute()
         {
             //Examples on usage
-			//Get integer number from persisted global variable
+            //Get integer number from persisted global variable
             int myInt = CPH.GetGlobalVar<int>("myInt");
-            
-			//Get string/text from persisted global variable
+
+            //Get string/text from persisted global variable
             string myString = CPH.GetGlobalVar<string>("myString",true);
-            
-			//Get string/text from non-persisted global variable
+
+            //Get string/text from non-persisted global variable
             string myString = CPH.GetGlobalVar<string>("myString",false);
-            
+
             return true;
         }
     }

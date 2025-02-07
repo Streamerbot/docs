@@ -17,7 +17,7 @@ variables:
   - name: isFollowing
     type: bool
     description: Whether the user is following the channel
-    value: `True`/`False`
+    value: True/False
   - name: followDate
     type: string
     description: The date the user followed

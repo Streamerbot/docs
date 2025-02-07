@@ -11,14 +11,14 @@ example: |
         {
             //Please be extremely careful with this method
             //Only possible to restore with back-up
-        	
+
             //Unset persisted global variable "myString"
             CPH.UnsetGlobalVar("myString");
             CPH.UnsetGlobalVar("myString", true);
-            
+
             //Unset non-persisted global variable "myString"
             CPH.UnsetGlobalVar("myString", false);
-            
+
             return true;
         }
     }

@@ -19,13 +19,13 @@ example: |
     {
         public bool Execute()
         {
-            //Define the eventName 
+            //Define the eventName
             string eventName = "SB_Docs_Trigger";
 
             //Fire the custom event trigger by eventName and
             //sending the current available arguments to it
             CPH.TriggerEvent(eventName, true)
-            
+
             return true;
         }
     }
