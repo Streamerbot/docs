@@ -9,6 +9,7 @@ Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
 
 ::callout{icon=i-mdi-alert color=amber}
 Streamer.bot on MacOS is **experimental** and not officially supported.
+Whisky requires MacOS 14.0 or later.
 ::
 
 ## Prerequisites
