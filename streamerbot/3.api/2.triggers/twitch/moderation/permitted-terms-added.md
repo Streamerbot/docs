@@ -7,15 +7,15 @@ variables:
     type: datetime
     description: datetime of the addition
     value: 28.06.2024 20:13:20
-  - name: moderator.userName
+  - name: moderatorUsername
     type: string
     description: display name of the moderator who added the term
     value: Lyfesaver74
-  - name: moderator.login
+  - name: moderatorDisplayName
     type: string
     description: login name of the moderator who added the term
     value: lyfesaver74
-  - name: moderator.id
+  - name: moderatorId
     type: string
     description: display name of the moderator who added the term
     value: 161545467
