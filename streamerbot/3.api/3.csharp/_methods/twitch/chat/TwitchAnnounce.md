@@ -13,11 +13,11 @@ parameters:
     default: "Default"
     description: |
       Select the color for the announcement. Valid values are:  
-      - `Default` – Standard color  
-      - `Blue`  
-      - `Green`  
-      - `Orange`  
-      - `Purple`
+      - `default` – Standard color  
+      - `blue`  
+      - `green`  
+      - `orange`  
+      - `purple`
   - name: fallback
     version: 0.2.5
     default: true
