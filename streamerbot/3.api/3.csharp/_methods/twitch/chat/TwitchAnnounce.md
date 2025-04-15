@@ -9,11 +9,15 @@ parameters:
     description: |
       - `true`{lang=cs} - Send the message using your **Twitch Bot** account
       - `false`{lang=cs} - Send the message using your **Twitch Broadcaster** account
-  - name: color
-    default: true
+   - name: color
+    default: "Default"
     description: |
-      - `true`{lang=cs} - Send the message using your **Twitch Bot** account
-      - `false`{lang=cs} - Send the message using your **Twitch Broadcaster** account
+      Select the color for the announcement. Valid values are:  
+      - `Default` – Standard color  
+      - `Blue`  
+      - `Green`  
+      - `Orange`  
+      - `Purple`
   - name: fallback
     version: 0.2.5
     default: true
