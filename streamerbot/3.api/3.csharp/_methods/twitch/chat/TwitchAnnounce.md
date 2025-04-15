@@ -9,7 +9,7 @@ parameters:
     description: |
       - `true`{lang=cs} - Send the message using your **Twitch Bot** account
       - `false`{lang=cs} - Send the message using your **Twitch Broadcaster** account
-   - name: color
+  - name: color
     default: "Default"
     description: |
       Select the color for the announcement. Valid values are:  
