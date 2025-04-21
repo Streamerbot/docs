@@ -24,7 +24,7 @@ parameters:
   - name: Line Number
     type: Number
     default: 1
-    description: The line to extract from the file
+    description: The line to extract from the file, numbered from 1
 variables:
   - name: 'line'
     description: |
