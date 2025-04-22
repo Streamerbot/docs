@@ -28,7 +28,7 @@ variables:
     value: 12
   - name: 'line#'
     description: |
-      Each line of output parsed from the file parsed to its own variable
+      Each line of output parsed from the file parsed to its own variable, numbered from 0
 
       e.g. `%line0%`{lang=cs}, `%line1%`{lang=cs}, `%line2%`{lang=cs}, and so on...
     value: 'Hello, world!'

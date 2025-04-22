@@ -28,10 +28,17 @@ parameters:
 variables:
   - name: 'randomLine#'
     description: |
-      Each random line extracted based on the `Count` you configured
+      Each random line extracted based on the `Count` you configured. The line counter suffix is omitted from the first line read.
 
-      e.g. `%randomLine0%`{lang=cs}, `%randomLine1%`{lang=cs}, `%randomLine2%`{lang=cs}, and so on...
+      e.g. `%randomLine%`{lang=cs}, `%randomLine1%`{lang=cs}, `%randomLine2%`{lang=cs}, and so on...
     value: 'Hello, world!'
+  - name: 'randomLineNumber#'
+    type: int
+    description: |
+      The line number (numbered from 0) of each random line read. The line counter suffix is omitted from the first line number.
+
+      e.g. `%randomLineNumber%`{lang=cs}, `%randomLineNumber1%`{lang=cs}, `%randomLineNumber2%`{lang=cs}, and so on...
+    value: 3
   - name: fileFound
     type: bool
     description: |
