@@ -4,6 +4,9 @@ description: Install Streamer.bot on MacOS
 navigation: false
 icon: i-mdi-apple
 ---
+::callout{icon=i-mdi-alert color=amber}
+Whiskey is now in [maintenance mode](https://docs.getwhisky.app/maintenance-notice.html) and no longer actively maintained. This guide may or may not work with 0.2.8 and below and will more than likely be deprecated with future releases of Streamer.bot.
+::
 
 Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
 
