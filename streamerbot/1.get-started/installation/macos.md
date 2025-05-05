@@ -4,6 +4,9 @@ description: Install Streamer.bot on MacOS
 navigation: false
 icon: i-mdi-apple
 ---
+::callout{icon=i-mdi-alert color=amber}
+Whisky is now in [maintenance mode](https://docs.getwhisky.app/maintenance-notice.html) and no longer actively maintained. This guide may or may not work with 0.2.8 and below and will more than likely be deprecated with future releases of Streamer.bot.
+::
 
 Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
 
@@ -14,7 +17,7 @@ Whisky requires MacOS 14.0 or later.
 
 ## Prerequisites
 
-1. Install Whiskey
+1. Install Whisky
 
     ::read-more{to="https://getwhisky.app"}
     Download and run the latest version of Whisky [here](https://getwhisky.app)
@@ -23,7 +26,7 @@ Whisky requires MacOS 14.0 or later.
 2. Run Winetricks Commands
 
     ::navigate
-    In Whiskey, navigate to **Winetricks > Fonts**
+    In Whisky, navigate to **Winetricks > Fonts**
     ::
 
     Select `corefonts` and click `Run`
@@ -31,7 +34,7 @@ Whisky requires MacOS 14.0 or later.
     ![Install corefonts with Winetricks](../assets/corefonts.png){width="500" caption-alt}
 
     ::navigate
-    In Whiskey, navigate to **Winetricks > DLLs**
+    In Whisky, navigate to **Winetricks > DLLs**
     ::
 
     Select each of the following, one by one, and `Run` each:
