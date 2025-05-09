@@ -21,10 +21,10 @@ variables:
     description: Boolean value indicating if the broadcaster account is a Twitch partner
     type: boolean
   - name: broadcasterProfileUrl
-    description: link to the 300x300px PNG version of a user's twitch profile image
+    description: Link to the 300x300px PNG version of the broadcaster's Twitch profile image
     type: string
   - name: broadcasterOfflineUrl
-    description: link to the 1920x1080px PNG version of a user's twitch
+    description: Link to the 1920×1080 PNG version of the broadcaster's Twitch offline banner
     type: string
   - name: broadcasterCreatedAt
     description: Datetime of when the account was created
