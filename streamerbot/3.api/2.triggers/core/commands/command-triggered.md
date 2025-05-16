@@ -50,6 +50,7 @@ variables:
     description: A running total of how many times the command has been run by current user since application launch
     value: 17
 commonVariables:
+  - TwitchReply
   - TwitchUser
   - TwitchBroadcaster
   - YouTubeUser
