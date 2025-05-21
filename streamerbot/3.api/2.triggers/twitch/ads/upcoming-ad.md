@@ -9,7 +9,7 @@ variables:
     value: 5
   - name: nextAdAt
     type: DateTime
-    description: The exact date and time that the next ad run will start
+    description: The exact UTC date and time that the next ad run will start
     value: '2024-03-03 01:10:20'
   - name: snoozesLeft
     type: number
