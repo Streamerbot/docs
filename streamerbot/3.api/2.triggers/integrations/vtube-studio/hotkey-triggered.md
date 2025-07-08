@@ -22,16 +22,10 @@ variables:
     type: bool
     description: flag whether a hotkey has been triggered by a plugin via the trigger-hotkey-API
     value: True/False
-  - name: modelId
-    type: string
-    description: The ID of the model
-    value: 62c6a71a4d324204afd25f61445f8e4f
-  - name: modelName
-    type: string
-    description: The name of the model
-    value: Hijiki
   - name: isLive2DItem
     type: bool
     description: Indicator whether it's a Live2D item or not
     value: True/False
+commonVariables:
+  - VTubeModel
 ---
