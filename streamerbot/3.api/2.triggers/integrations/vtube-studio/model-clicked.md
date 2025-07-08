@@ -7,14 +7,6 @@ variables:
     type: bool
     description: Flag whether the model has been loaded or not.
     value: True/False
-  - name: modelId
-    type: string
-    description: The model's ID
-    value: 62c6a71a4d324204afd25f61445f8e4f
-  - name: modelName
-    type: string
-    description: The model's name
-    value: Hijiki
   - name: modelWasClicked
     type: bool
     description: Flag whether the model has been clicked or not.
@@ -43,4 +35,6 @@ variables:
     type: int
     description: The number of ArtMeshes at the click position if the model was clicked
     value: 0
+commonVariables:
+  - VTubeModel
 ---
