@@ -1,7 +1,35 @@
 ---
-title: Pledge Updated
-description: This event triggers when a pledge is updated in Patreon.
+title: Patreon Tier Attributes Variables
+navigation.title:  Patreon Tier Attributes
 variables:
+- name: entitledTiers[#].Attributes.title
+	type: string
+	description: The title of this tier.
+  value: 
+- name: entitledTiers[#].Attributes.description
+	type: string
+	description: The description of this tier.
+  value: 
+- name: entitledTiers[#].Attributes.amount_cents
+	type: string
+	description: Monetary amount associated with this tier (in U.S. cents).
+  value: 0
+- name: entitledTiers[#].Attributes.created_at
+	type: string
+	description: When this tier was created.
+  value: 01/01/0001 00:00:00
+- name: entitledTiers[#].Attributes.discord_role_ids
+	type: string
+	description: The discord role IDs granted by this tier. Can be null.
+  value: 
+- name: entitledTiers[#].Attributes.edited_at
+	type: string
+	description: When this tier was last edited.
+  value: 01/01/0001 00:00:00
+- name: entitledTiers[#].Attributes.image_url
+	type: string
+	description: The image URL of this tier.
+  value: 
 - name: entitledTiers[#].Attributes.patron_count
 	type: number
 	description: The amount of patron that have subscribed to this tier.
@@ -46,13 +74,4 @@ variables:
 	type: string
 	description: The type of this tier.
   value: 
-- name: entitledTiers[#].updatedToTier
-	type: string
-	description: The tier the user has updated to.
-  value:
-commonVariables:
-  - PatreonEventId
-	- PatreonUser
-	- PatreonUserAttributes
-  - PatreonMemberAttributes
 ---
