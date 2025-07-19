@@ -1,6 +1,6 @@
 ---
-title: Add Random Kick Users
-description: Get a custom amount of random users
+title: Add Random Users
+description: Get a custom amount of random Kick users
 parameters:
   - name: Count
     type: Int

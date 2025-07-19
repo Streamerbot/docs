@@ -6,7 +6,7 @@ parameters:
     default: '"Hello, world!"'
     description: Enter the message contents
   - name: replyId
-    default: 'args["msgId"]'
+    default: 'args["messageId"]'
     description: Enter the unique ID of the message to reply to
   - name: useBot
     default: true
@@ -25,7 +25,7 @@ example: |
         public bool Execute()
         {
             //Get message id to reply to
-            CPH.TryGetArg("msgId", out string messageId);
+            CPH.TryGetArg("messageId", out string messageId);
 
             //Set message for reply
             string message = "This is a test reply.";

@@ -1,16 +1,16 @@
 ---
-title: Kick Reply to Message
+title: Reply to Message
 description: Send a reply to a specific Kick chat message
 parameters:
   - name: Reply Id
     type: Text
-    default: '%msgId%'
+    default: '%messageId%'
     required: true
     description: |
       Enter the unique ID of the message to reply to
 
       ::tip
-      All triggers that contain the `Kick Chat` variables, will populate the `%msgId%`{lang=cs} variable
+      All triggers that contain the `Kick Chat` variables, will populate the `%messageId%`{lang=cs} variable
       ::
   - name: Message
     type: Text

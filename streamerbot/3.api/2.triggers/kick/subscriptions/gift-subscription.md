@@ -1,5 +1,5 @@
 ---
-title: Kick Gift Subscription
+title: Gift Subscription
 description: Trigger for a Kick Gift Subscription
 ---
 

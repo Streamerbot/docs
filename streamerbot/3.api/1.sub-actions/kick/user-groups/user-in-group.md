@@ -1,5 +1,5 @@
 ---
-title: Kick User in Group
+title: User in Group
 description: Check if a Kick user is a member of a given group
 parameters:
   - name: User Login
@@ -11,7 +11,7 @@ parameters:
     type: String
     required: true
     description: can be a specific group name or a variable
-    value: Simps
+    value: BestFriends
 variables:
   - name: inGroup
     type: bool

@@ -1,5 +1,5 @@
 ---
-title: Kick Stream Offline
+title: Stream Offline
 description: Trigger for when your Kick stream ends
 variables:
   - name: startedAt

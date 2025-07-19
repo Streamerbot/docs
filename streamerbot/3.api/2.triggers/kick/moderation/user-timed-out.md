@@ -1,5 +1,5 @@
 ---
-title: Kick User Timed Out
+title: User Timed Out
 description: Trigger for when a Kick User is Timed Out
 variables:
   - name: createdAt

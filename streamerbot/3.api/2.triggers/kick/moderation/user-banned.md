@@ -1,6 +1,6 @@
 ---
 title: User Banned
-description: Trigger for YouTube user banned events
+description: Trigger for Kick user banned events
 variables:
   - name: createdAt
     type: DateTime

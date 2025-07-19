@@ -1,5 +1,5 @@
 ---
-title: Kick Message
+title: Send Message
 description: Send a Kick chat message
 parameters:
   - name: Message

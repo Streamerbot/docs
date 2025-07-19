@@ -1,5 +1,5 @@
 ---
-title: Kick First Words
+title: First Words
 description: Trigger for a Kick First Words
 variables:
   - name: firstMessage

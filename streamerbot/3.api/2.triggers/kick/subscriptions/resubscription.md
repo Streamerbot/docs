@@ -1,5 +1,5 @@
 ---
-title: Kick Gift Resubscription
+title: Gift Resubscription
 description: Trigger for a Kick Resubscription
 ---
 

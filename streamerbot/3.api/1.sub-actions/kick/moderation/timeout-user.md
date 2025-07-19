@@ -1,5 +1,5 @@
 ---
-title: Kick Timeout
+title: Timeout User
 description: Timeout a Kick user
 parameters:
   - name: User Login

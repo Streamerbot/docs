@@ -1,5 +1,5 @@
 ---
-title: Kick Viewer Count Update
+title: Viewer Count Update
 description: Trigger for when your Kick viewer count updates
 parameters:
   - name: Range

@@ -1,5 +1,5 @@
 ---
-title: Kick Chat Message
+title: Chat Message
 description: Trigger for a Kick Chat Message
 variables:
   - name: isInternal

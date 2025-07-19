@@ -1,5 +1,5 @@
 ---
-title: Kick Unban
+title: Unban User
 description: Unban a Kick user
 parameters:
   - name: User Login

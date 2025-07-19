@@ -1,5 +1,5 @@
 ---
-title: Kick Remove User From Group
+title: Remove User From Group
 description: Remove a Kick user from a group
 parameters:
   - name: User Login
@@ -11,7 +11,7 @@ parameters:
     type: String
     required: true
     description: can be a specific group name or a variable
-    value: Simps
+    value: BestFriends
 variables:
   - name: removeResult
     type: bool

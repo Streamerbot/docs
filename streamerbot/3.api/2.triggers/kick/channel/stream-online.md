@@ -1,6 +1,6 @@
 ---
-title: Kick Stream Online
-description: Trigger for when your Kick Stream starts
+title: Stream Online
+description: Trigger for when your Kick stream starts
 variables:
   - name: startedAt
     type: DateTime

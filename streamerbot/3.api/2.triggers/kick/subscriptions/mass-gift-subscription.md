@@ -1,5 +1,5 @@
 ---
-title: Kick Mass Gift Subscription
+title: Mass Gift Subscription
 description: Trigger for a Kick Mass Gift Subscription
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Kick Channel Update
+title: Channel Update
 description: Trigger for a Kick Channel Update
 variables:
   - name: category.success

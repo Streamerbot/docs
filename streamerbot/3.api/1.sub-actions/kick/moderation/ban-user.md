@@ -1,5 +1,5 @@
 ---
-title: Kick Ban
+title: Ban User
 description: Ban a Kick user
 parameters:
   - name: User Login

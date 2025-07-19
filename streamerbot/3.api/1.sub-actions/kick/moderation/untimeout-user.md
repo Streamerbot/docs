@@ -1,5 +1,5 @@
 ---
-title: Kick UnTimeout
+title: UnTimeout User
 description: Untimeout a Kick user
 
 parameters:

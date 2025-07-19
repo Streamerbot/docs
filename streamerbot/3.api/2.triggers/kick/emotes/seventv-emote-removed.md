@@ -1,5 +1,5 @@
 ---
-title: Kick SevenTV Emote Removed
+title: SevenTV Emote Removed
 description: Trigger for when a SevenTV emote has been removed from the Kick channel
 variables:
   - name: emote

@@ -1,5 +1,5 @@
 ---
-title: Kick Subnscription
+title: Subscription
 description: Trigger for a Kick Subscription
 ---
 

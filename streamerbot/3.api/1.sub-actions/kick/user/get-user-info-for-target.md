@@ -1,5 +1,5 @@
 ---
-title: Kick Add Target Info
+title: Get User Info for Target Info
 description: Fetch Kick user data and populate a set of variables
 variables:
   - name: targetUser

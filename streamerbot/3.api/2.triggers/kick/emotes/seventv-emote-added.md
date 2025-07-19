@@ -1,5 +1,5 @@
 ---
-title: Kick SevenTV Emote Added
+title: SevenTV Emote Added
 description: Trigger for when a SevenTV emote has been added to the Kick channel
 variables:
   - name: emote

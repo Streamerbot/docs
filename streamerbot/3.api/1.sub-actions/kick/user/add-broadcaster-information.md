@@ -1,5 +1,5 @@
 ---
-title: Add Kick Broadcaster Information
+title: Add Broadcaster Information
 description: Fetch user data for the connected Kick broadcaster account
 variables:
   - name: broadcastUser
