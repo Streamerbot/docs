@@ -35,7 +35,7 @@ Read more about the `Execute C# Code` sub-action
 
     ```cs [Basic Setup]
     using System;
-  using System.Text;
+    using System.Text;
     using System.Threading.Tasks;
     using System.Net.Http;
     using System.Net.Http.Headers;
@@ -60,7 +60,6 @@ Read more about the `Execute C# Code` sub-action
       // ...
       return true;
     }
-  }
   ```
 
   ::tip{color=amber}
@@ -71,7 +70,7 @@ Read more about the `Execute C# Code` sub-action
 
     - We are going to send a `%userName%` and `%userId%` pair (from common triggers) as `PUT` request to our fictional logging website.
 
-    ```cs [Send PUT payload in Execute method]
+  ```cs [Send PUT payload in Execute method]
   public bool Execute() {
     // Get the arguments - or abort if it does not exist
     if(!CPH.TryGetArg("userName", out string userName)) return false;
