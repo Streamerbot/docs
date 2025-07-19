@@ -1,4 +1,4 @@
-```csharp
+```cs
 public class ClipData
 {
   public string Id;

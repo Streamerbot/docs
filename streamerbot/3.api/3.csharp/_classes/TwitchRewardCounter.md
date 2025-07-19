@@ -1,4 +1,4 @@
-  ```cs
+```cs
 public class TwitchRewardCounter
 {
     public string UserId { get; set; }
