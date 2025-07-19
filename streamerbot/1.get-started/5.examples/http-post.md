@@ -27,22 +27,22 @@ Read more about the `Execute C# Code` sub-action
 
     Be it a single use `Execute C# Code` block for a single instance of needing to send a request, or a more persistent C# module with different actions triggering different `Execute C# Method` sub-actions - you need to know how use this feature in your normal action flow.
 
-    - The following tutorial will only focus on the magic happening inside of the C# code module.
+    The following tutorial will only focus on the magic happening inside of the C# code module.
 
 ## Instructions
 
 1. Setup the HTTPClient
 
-    ```cs [Basic Setup]
-    using System;
+  ```cs [Basic Setup]
+  using System;
   using System.Text;
-    using System.Threading.Tasks;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
+  using System.Threading.Tasks;
+  using System.Net.Http;
+  using System.Net.Http.Headers;
+  using Newtonsoft.Json;
+  using Newtonsoft.Json.Linq;
 
-    public class CPHInline {
+  public class CPHInline {
     // You can set the timeout to any length you need
     private static readonly HttpClient _httpClient = new HttpClient{Timeout = TimeSpan.FromSeconds(30)};
 
@@ -69,9 +69,9 @@ Read more about the `Execute C# Code` sub-action
 
 2. Setup the sending of your payload
 
-    - We are going to send a `%userName%` and `%userId%` pair (from common triggers) as `PUT` request to our fictional logging website.
+  We are going to send a `%userName%` and `%userId%` pair (from common triggers) as `PUT` request to our fictional logging website.
 
-    ```cs [Send PUT payload in Execute method]
+  ```cs [Send PUT payload in Execute method]
   public bool Execute() {
     // Get the arguments - or abort if it does not exist
     if(!CPH.TryGetArg("userName", out string userName)) return false;
@@ -103,7 +103,7 @@ Read more about the `Execute C# Code` sub-action
 
 3. The PATCH request
 
-    - Specifically the built-in handling for the `PATCH` request type may not be available in the .net versions used by StreamerBot. In this case, you need a workaround.
+  Specifically the built-in handling for the `PATCH` request type may not be available in the .net versions used by StreamerBot. In this case, you need a workaround.
 
   ```cs [PATCH workaround]
     // ...
@@ -119,10 +119,11 @@ Read more about the `Execute C# Code` sub-action
 
 4. Additional Headers
 
-    - If you need to additionally include specific headers - like submitting an authorization token for the Twitch API or Discord API - make sure to clear and set the headers on each call you make.
-    1. You can also send individual headers with each request itself, but that requires you to always use the `SendAsync` method and building your own `HttpRequestMessage`.
+  If you need to additionally include specific headers - like submitting an authorization token for the Twitch API or Discord API - make sure to clear and set the headers on each call you make.
+  
+  You can also send individual headers with each request itself, but that requires you to always use the `SendAsync` method and building your own `HttpRequestMessage`.
 
-  - If your code only does a static request whose headers never change, resetting the headers is **not strictly necessary**. But it's good practice to not forget later when you need it.
+  If your code only does a static request whose headers never change, resetting the headers is **not strictly necessary**. But it's good practice to not forget later when you need it.
 
   ```cs [Header management]
   public bool Execute() {
@@ -149,9 +150,11 @@ Read more about the `Execute C# Code` sub-action
 
 5. Handling the response
 
-    - Since you have to do the entire request handling yourself, that includes handling the response.
-    1. If you don't need to know what the server responded, you can ignore it like in the examples above.
-    2. If you need to know if the request succeeded or are expecting data in return, follow the below example.
+  Since you have to do the entire request handling yourself, that includes handling the response.
+  
+  If you don't need to know what the server responded, you can ignore it like in the examples above.
+  
+  If you need to know if the request succeeded or are expecting data in return, follow the below example.
 
   ```cs [Response handling]
   public bool Execute() {
@@ -187,5 +190,6 @@ Read more about the `Execute C# Code` sub-action
 
 ## Tips & Tricks
 
-- Wrapping sensitive parts of code, especially when using web requests, into `try` `catch` blocks is good practice and prevents potential unexpected bigger issues you do not anticipate.
-  1. Of course, proper error handling is always better, but not always necessary.
+Wrapping sensitive parts of code, especially when using web requests, into `try` `catch` blocks is good practice and prevents potential unexpected bigger issues you do not anticipate.
+
+Of course, proper error handling is always better, but not always necessary.
