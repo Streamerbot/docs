@@ -62,7 +62,7 @@ commonVariables:
 ---
 
 ## Notes
-The YouTube present viewer acts more like a chat activity tracker. There is no "Live-Update" option for Kick as the API does not provide the viewer list.
+The Kick present viewer acts more like a chat activity tracker. There is no "Live-Update" option for Kick as the API does not provide the viewer list.
 
 Under the `Platforms > Kick > Settings`, you will find the options for the Present Viewers Trigger.
 
