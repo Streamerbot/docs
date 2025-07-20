@@ -152,9 +152,9 @@ Read more about the `Execute C# Code` sub-action
 
   Since you have to do the entire request handling yourself, that includes handling the response.
   
-  If you don't need to know what the server responded, you can ignore it like in the examples above.
+  - If you don't need to know what the server responded, you can ignore it like in the examples above.
   
-  If you need to know if the request succeeded or are expecting data in return, follow the below example.
+  - If you need to know if the request succeeded or are expecting data in return, follow the below example.
 
   ```cs [Response handling]
   public bool Execute() {
