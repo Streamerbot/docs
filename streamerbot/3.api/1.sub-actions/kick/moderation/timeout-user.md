@@ -14,11 +14,11 @@ variables:
   - name: timedOutUser
     type: string
     description: display name of the timed out user
-    value: Amouranth
+    value: GenericUser
   - name: timedOutUserName
     type: string
     description: login name of the timed out user
-    value: Amouranth
+    value: genericuser
   - name: timedOutUserId
     type: string
     description: ID of the timed out user

@@ -10,11 +10,11 @@ variables:
   - name: unbannedUser
     type: string
     description: display name of the unbanned user
-    value: Amouranth
+    value: GenericUser
   - name: unbannedUserName
     type: string
     description: login name of the banned user
-    value: Amouranth
+    value: genericuser
   - name: unbannedUserId
     type: string
     description: ID of the banned user

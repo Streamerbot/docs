@@ -15,11 +15,11 @@ variables:
   - name: warnedUser
     type: string
     description: display name of the warned user
-    value: PewDiePie
+    value: GenericUser
   - name: warnedUserName
     type: string
     description: login name of the warned user
-    value: pewdiepie
+    value: genericuser
   - name: warnedUserId
     type: string
     description: ID of the warned user
