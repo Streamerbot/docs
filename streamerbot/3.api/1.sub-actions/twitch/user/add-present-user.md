@@ -14,11 +14,11 @@ variables:
   - name: presentUser
     type: string/bool
     description: the user's display name, if the user was found // if no user was found, it will default to `False`
-    value: PewDiePie
+    value: GenericUser
   - name: presentUserName
     type: string
     description: the user's login name (unpopulated, if not user was found)
-    value: pewdiepie
+    value: genericuser
   - name: presentUserId
     type: string
     description: the user's ID (unpopulated, if not user was found)

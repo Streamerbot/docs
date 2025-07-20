@@ -6,7 +6,7 @@ parameters:
     type: String
     required: true
     description: can be a user name or a variable like `%userName%`
-    value: Amouranth
+    value: GenericUser
   - name: Group Name
     type: String
     required: true
@@ -20,11 +20,11 @@ variables:
   - name: foundUser
     type: string
     description: the user's display name
-    value: Amouranth
+    value: GenericUser
   - name: foundUserName
     type: string
     description: the user's login name
-    value: Amouranth
+    value: genericuser
   - name: foundUserId
     type: string
     description: the user's ID

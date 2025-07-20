@@ -6,7 +6,7 @@ parameters:
     type: String
     required: true
     description: can be a user name or a variable like `%userName%`
-    value: Amouranth
+    value: genericuser
   - name: Group Name
     type: String
     required: true
