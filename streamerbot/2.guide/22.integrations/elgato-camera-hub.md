@@ -3,7 +3,6 @@ title: Elgato Camera Hub
 description: Integrate Streamer.bot with Elgato Camera Hub
 navigation.icon: null
 version: 0.2.3
-badge: New
 logo: /img/icons/elgato.png
 ---
 
