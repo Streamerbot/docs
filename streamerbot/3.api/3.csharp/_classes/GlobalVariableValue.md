@@ -1,4 +1,4 @@
-  ```cs
+```cs
 public class GlobalVariableValue
 {
     public string VariableName { get; set; }

@@ -10,11 +10,11 @@ variables:
   - name: unbannedUser
     type: string
     description: display name of the unbanned user
-    value: PewDiePie
+    value: GenericUser
   - name: unbannedUserName
     type: string
     description: login name of the unbanned user
-    value: pewdiepie
+    value: genericuser
   - name: unbannedUserId
     type: string
     description: ID of the unbanned user
