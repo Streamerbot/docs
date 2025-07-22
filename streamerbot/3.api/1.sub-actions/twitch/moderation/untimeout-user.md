@@ -11,11 +11,11 @@ variables:
   - name: unTimedOutUser
     type: string
     description: display name of the untimed-out user
-    value: PewDiePie
+    value: GenericUser
   - name: unTimedOutUserName
     type: string
     description: login name of the untimed-out user
-    value: pewdiepie
+    value: genericuser
   - name: unTimedOutUserId
     type: string
     description: ID of the untimed-out user

@@ -18,11 +18,11 @@ variables:
   - name: foundUser
     type: string
     description: the user's display name
-    value: PewDiePie
+    value: GenericUser
   - name: foundUserName
     type: string
     description: the user's login name
-    value: pewdiepie
+    value: genericuser
   - name: foundUserId
     type: string
     description: the user's ID

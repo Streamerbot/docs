@@ -22,7 +22,7 @@ variables:
   - name: warnedUser
     type: string
     description: display name of the warned user
-    value: PewDiePie
+    value: GenericUser
 csharpMethods:
   - VTubeStudioSendRawRequest
 ---

@@ -3,7 +3,6 @@ title: T.I.T.S.
 description: Integrate Streamer.bot with Twitch Integrated Throwing System
 navigation.icon: null
 version: 0.2.3
-badge: New
 logo: /img/icons/tits.png
 ---
 

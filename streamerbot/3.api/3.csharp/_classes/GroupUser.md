@@ -1,4 +1,4 @@
-```csharp
+```cs
 public class GroupUser
 {
   public string Id;
