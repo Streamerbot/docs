@@ -9,7 +9,7 @@ variables:
     description: The websocket client message
     value: '{"timeStamp":"2023-03-16T22:58:28.3298+01:00","event":{"source":"HotKey","type":"Press"},"data":{"_85lbxopeOGvkNXq7iRgrjS6tpjj":1,"_hdhxue62iGbvG5rnMWU0dxGe29p":96}}'
 commonVariables:
-- WebsocketClient
+  - WebsocketClient
 ---
 
 ## Parameters
