@@ -5,7 +5,7 @@ description: Trigger for when a Websocket Custom Server Connection is Opened
 version: 0.0.41
 variables: []
 commonVariables:
- - CustomWebsocketServer
+  - CustomWebsocketServer
 ---
 
 ## Parameters

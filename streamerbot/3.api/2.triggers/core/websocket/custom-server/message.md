@@ -9,7 +9,7 @@ variables:
     description: The received data from the client
     value: Some data
 commonVariables:
- - CustomWebsocketServer
+  - CustomWebsocketServer
 ---
 
 ## Parameters
