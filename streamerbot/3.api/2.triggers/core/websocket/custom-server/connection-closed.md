@@ -3,10 +3,9 @@ title: WebSocket Custom Server Connection Closed
 navigation.title: Connection Closed
 description: Trigger for when a Websocket Custom Server Connection is Closed
 version: 0.0.41
-variables:
-  - name: sessionId
-    type: string
-    description: The session id of the client
+variables: []
+commonVariables:
+  - CustomWebsocketServer
 ---
 
 ## Parameters
