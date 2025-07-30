@@ -44,6 +44,7 @@ variables:
     description: The amount of gift subs in the gift bomb
     value: 0
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
   - TwitchSharedChatSource

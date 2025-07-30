@@ -43,6 +43,7 @@ variables:
     type: string
     description: The old box art for the game
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---
 

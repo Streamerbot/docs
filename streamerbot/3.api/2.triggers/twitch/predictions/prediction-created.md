@@ -41,4 +41,6 @@ variables:
   - name: prediction._json
     type: string
     description: All the variables in a JSON Object
+commonVariables:
+  - TwitchBroadcaster
 ---

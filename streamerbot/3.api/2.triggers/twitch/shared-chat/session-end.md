@@ -29,6 +29,7 @@ variables:
     value: True
     description: Returns `False` if host is not VIP in the Twitch Broadcaster's channel
 commonVariables:
+  - TwitchBroadcaster
   - TwitchChat
   - TwitchUser
 ---

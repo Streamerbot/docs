@@ -29,6 +29,7 @@ variables:
     description: Returns the color of the Shared Announcement
     value: Green
 commonVariables:
+  - TwitchBroadcaster
   - TwitchChat
   - TwitchUser
   - TwitchSharedChatSource

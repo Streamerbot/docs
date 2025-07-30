@@ -19,6 +19,8 @@ variables:
     type: number
     description: The length of the upcoming ad run, in seconds
     value: 150
+commonVariables:
+  - TwitchBroadcaster
 ---
 
 ::tip

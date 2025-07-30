@@ -20,5 +20,6 @@ variables:
     description: display name of the user who did the unban
     value: 161545467
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

@@ -10,4 +10,6 @@ variables:
     type: number
     description: The new Twitch viewer count
     value: 187
+commonVariables:
+  - TwitchBroadcaster
 ---

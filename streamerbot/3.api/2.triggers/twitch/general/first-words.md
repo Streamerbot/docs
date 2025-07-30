@@ -9,6 +9,7 @@ variables:
     description: indicator whether the user's message was the first message **ever** in the channel
     value: True
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
 ---

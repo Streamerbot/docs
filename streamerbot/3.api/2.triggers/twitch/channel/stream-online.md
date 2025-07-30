@@ -29,4 +29,6 @@ variables:
   - name: tagsDelimited
     type: string
     description: A comma delimited string of the tags
+commonVariables:
+  - TwitchBroadcaster
 ---

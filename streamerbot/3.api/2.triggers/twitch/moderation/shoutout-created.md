@@ -32,6 +32,7 @@ variables:
     description: The timestamp the cooldown to send a shoutout to the same user ends at
     value: 8/4/2023 10:56:06 AM
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---
 

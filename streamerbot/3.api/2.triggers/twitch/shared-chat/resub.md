@@ -22,6 +22,7 @@ variables:
     description:  Returns whether or not the user shares their resub streak.
     value: true
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
   - TwitchSharedChatSource

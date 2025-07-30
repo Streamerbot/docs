@@ -4,4 +4,6 @@ description: Trigger for when the Chat Client is Disconnected for the Twitch Bro
 version: 0.2.3
 twitchService: Chat Client
 variables: []
+commonVariables:
+  - TwitchBroadcaster
 ---

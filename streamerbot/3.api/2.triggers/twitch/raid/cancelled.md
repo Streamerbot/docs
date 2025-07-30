@@ -22,4 +22,6 @@ variables:
   - name: raidUserProfileImageEscaped
     type: string
     description: The raider's profile image URL escaped
+commonVariables:
+  - TwitchBroadcaster
 ---

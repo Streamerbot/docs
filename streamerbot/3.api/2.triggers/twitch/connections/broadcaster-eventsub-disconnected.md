@@ -4,4 +4,6 @@ description: Trigger for when EventSub is Disconnected for the Twitch Broadcaste
 version: 0.2.3
 twitchService: EventSub
 variables: []
+commonVariables:
+  - TwitchBroadcaster
 ---

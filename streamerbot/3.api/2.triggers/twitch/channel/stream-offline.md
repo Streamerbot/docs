@@ -8,4 +8,6 @@ variables:
     type: DateTime
     description: The date and time that the stream was ended
     value: 8/4/2023 10:56:06 AM
+commonVariables:
+  - TwitchBroadcaster
 ---

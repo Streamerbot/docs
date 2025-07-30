@@ -78,5 +78,6 @@ variables:
     description:  A boolean value if the user gifting the sub(s) shares there total gift count.
     value: true
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

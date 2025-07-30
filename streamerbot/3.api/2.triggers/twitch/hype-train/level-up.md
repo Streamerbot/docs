@@ -93,5 +93,6 @@ variables:
     type: string
     description:  The unique identifier of the hype train
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

@@ -26,6 +26,7 @@ variables:
     description:  A boolean value if Twitch adds additional subs to the Gift Bomb.
     value: true
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
   - TwitchSharedChatSource

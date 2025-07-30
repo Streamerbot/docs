@@ -5,5 +5,6 @@ version: 0.2.3
 twitchService: EventSub
 variables: []
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser    
 ---

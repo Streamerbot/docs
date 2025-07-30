@@ -11,5 +11,6 @@ variables:
     description: The amount of viewers this raid received
     value: 183
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

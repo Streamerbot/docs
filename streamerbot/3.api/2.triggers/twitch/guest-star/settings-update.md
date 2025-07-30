@@ -19,4 +19,6 @@ variables:
     type: string
     description: layout of the guests within a browser source
     value: tiled, screenshare, horizontal, vertical
+commonVariables:
+  - TwitchBroadcaster
 ---

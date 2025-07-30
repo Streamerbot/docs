@@ -24,6 +24,7 @@ variables:
     description: ID of the watch streak
     value: c947cc8a-f458-499b-af5e-d439cc857235
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
 ---

@@ -45,6 +45,7 @@ variables:
     description: the image URL of the gigantified emote (not available for all reward types)
     value: https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_cfc898bcdd5d447bb3ca5ff8a3d62514/default/dark/3.0
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
 ---

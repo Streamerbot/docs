@@ -29,5 +29,6 @@ variables:
     description: The percentage that the goal has completed as a decimal
     value: 0.73
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

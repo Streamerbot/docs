@@ -8,4 +8,6 @@ variables:
     type: boolean
     description: The subscriber mode
     value: False
+commonVariables:
+  - TwitchBroadcaster
 ---

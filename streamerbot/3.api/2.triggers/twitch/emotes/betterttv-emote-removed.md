@@ -11,4 +11,6 @@ variables:
     type: string
     description: url of the emote image
     value: https://cdn.betterttv.net/emote/554da1a289d53f2d12781907/3x
+commonVariables:
+  - TwitchBroadcaster
 ---

@@ -28,5 +28,6 @@ variables:
     description: the rawInput string stripped by spaces, starting with input0 for the first word, input1 for the second etc.
     value: this
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

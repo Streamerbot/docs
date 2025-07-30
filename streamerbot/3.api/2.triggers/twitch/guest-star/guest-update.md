@@ -59,5 +59,6 @@ variables:
     description: video enabled status
     value: 100 (<null> if not joined)
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

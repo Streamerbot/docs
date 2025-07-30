@@ -25,4 +25,6 @@ variables:
     type: DateTime
     description: The timestamp that the channel goal started
     value: 8/4/2023 10:56:06 AM
+commonVariables:
+  - TwitchBroadcaster
 ---
