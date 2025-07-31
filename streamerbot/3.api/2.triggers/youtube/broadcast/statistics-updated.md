@@ -28,5 +28,6 @@ variables:
       The number of viewers currently watching this broadcast
     value: 42
 commonVariables:
+  - YouTubeBroadcaster
   - YouTubeBroadcast
 ---
