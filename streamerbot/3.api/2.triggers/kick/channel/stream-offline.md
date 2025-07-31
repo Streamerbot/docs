@@ -14,4 +14,6 @@ variables:
     type: String
     description: The title of the stream
     value: My Awesome Kick Stream
+commonVariables:
+  - KickBroadcaster
 ---
