@@ -11,5 +11,6 @@ variables:
     type: number
     description: The amount of users that participated in the raid
 commonVariables:
+  - TrovoBroadcaster
   - TrovoUser
 ---

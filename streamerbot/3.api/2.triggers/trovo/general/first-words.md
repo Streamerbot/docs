@@ -3,6 +3,7 @@ title: First Words
 description: Trigger for first words
 variables: []
 commonVariables:
+  - TrovoBroadcaster
   - TrovoChat
   - TrovoUser
 ---

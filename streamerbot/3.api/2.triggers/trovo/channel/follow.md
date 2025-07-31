@@ -6,5 +6,6 @@ variables:
     type: DateTime
     description: The timestamp of the follow
 commonVariables:
+  - TrovoBroadcaster
   - TrovoUser
 ---
