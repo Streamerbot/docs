@@ -36,4 +36,6 @@ variables:
     type: string
     description: The website of the charity campaign
     value: mycharitycampaign.com
+commonVariables:
+  - TwitchBroadcaster
 ---

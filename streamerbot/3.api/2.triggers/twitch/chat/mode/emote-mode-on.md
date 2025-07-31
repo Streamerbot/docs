@@ -8,4 +8,6 @@ variables:
     type: boolean
     description: The emote mode
     value: True
+commonVariables:
+  - TwitchBroadcaster
 ---

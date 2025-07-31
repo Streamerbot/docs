@@ -10,6 +10,7 @@ variables:
       Messages from Streamer.bot Chat are not considered as internal since `0.2.5`
     value: True / False
 commonVariables:
+  - KickBroadcaster
   - KickUser
   - KickChat
 ---

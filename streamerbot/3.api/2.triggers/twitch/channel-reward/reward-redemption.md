@@ -41,6 +41,7 @@ variables:
     description: The text entered by the user (if enabled)
     value: https://streamer\.bot/Test Escaped Text \$\$\$
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---
 

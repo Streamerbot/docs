@@ -12,6 +12,8 @@ variables:
     type: boolean
     description: Is the ad scheduled?
     value: true
+commonVariables:
+  - TwitchBroadcaster
 ---
 
 ## Details

@@ -25,4 +25,6 @@ variables:
   - name: viewers
     type: number
     description: Amount of viewers that joined in the raid
+commonVariables:
+  - TwitchBroadcaster
 ---

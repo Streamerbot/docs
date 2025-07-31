@@ -8,4 +8,6 @@ variables:
     type: boolean
     description: The unique mode
     value: True
+commonVariables:
+  - TwitchBroadcaster
 ---

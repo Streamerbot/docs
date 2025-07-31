@@ -89,4 +89,6 @@ variables:
     type: int
     description: The total number votes from the winning choice
     value: 30
+commonVariables:
+  - TwitchBroadcaster
 ---

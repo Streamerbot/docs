@@ -34,4 +34,6 @@ variables:
     type: string
     description: The reason for the ban
     value: My ban reason
+commonVariables:
+  - TwitchBroadcaster
 ---

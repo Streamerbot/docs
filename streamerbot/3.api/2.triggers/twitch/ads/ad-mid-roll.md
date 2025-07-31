@@ -13,6 +13,8 @@ variables:
   - name: ad.warmupTime
     type: number
     description: How long until the ad runs in milliseconds
+commonVariables:
+  - TwitchBroadcaster
 ---
 
 ::warning

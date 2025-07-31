@@ -38,4 +38,6 @@ variables:
     type: number
     description: The duration of the timeout
     value: 300
+commonVariables:
+  - TwitchBroadcaster
 ---

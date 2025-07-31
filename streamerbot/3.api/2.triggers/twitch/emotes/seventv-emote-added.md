@@ -11,4 +11,6 @@ variables:
     type: string
     description: url of the emote image
     value: https://cdn.7tv.app/emote/62eb2d7cf9181963f72015da/4x.webp
+commonVariables:
+  - TwitchBroadcaster
 ---

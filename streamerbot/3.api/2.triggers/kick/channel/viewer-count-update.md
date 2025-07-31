@@ -8,4 +8,6 @@ variables:
     type: number
     description: The new Kick viewer count
     value: 69
+commonVariables:
+  - KickBroadcaster
 ---

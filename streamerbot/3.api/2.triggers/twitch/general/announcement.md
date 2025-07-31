@@ -9,6 +9,7 @@ variables:
     description: The color of the announcement<br>`DEFAULT`, `BLUE`, `RED`, `ORANGE`, `PURPLE`
     value: BLUE
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
 ---

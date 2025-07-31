@@ -12,6 +12,7 @@ variables:
     description: The content of the chat message that has been deleted
     value: My chat message
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchSharedChatSource
 ---

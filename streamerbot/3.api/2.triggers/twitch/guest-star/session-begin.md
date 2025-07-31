@@ -11,4 +11,6 @@ variables:
     type: datetime
     description: datetime of when the session started
     value: 28.06.2024 23:47:00
+commonVariables:
+  - TwitchBroadcaster
 ---

@@ -7,6 +7,7 @@ parameters:
   - name: Range
 variables: []
 commonVariables:
+  - TwitchBroadcaster
   - TwitchChat
   - TwitchUser
 ---

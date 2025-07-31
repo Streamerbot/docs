@@ -31,4 +31,6 @@ variables:
     type: bool
     description: whether the term has been added from automod or not
     value: True/False
+commonVariables:
+  - TwitchBroadcaster
 ---

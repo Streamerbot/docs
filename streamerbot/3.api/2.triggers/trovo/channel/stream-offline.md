@@ -5,4 +5,6 @@ variables:
   - name: timestamp
     type: DateTime
     description: The timestamp the stream went offline
+commonVariables:
+  - TrovoBroadcaster
 ---

@@ -21,5 +21,6 @@ variables:
     description: the reason specified in the warning
     value: spam
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

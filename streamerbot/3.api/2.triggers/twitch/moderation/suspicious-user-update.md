@@ -21,5 +21,6 @@ variables:
     value: restricted, active_monitoring, no_treatment
   
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

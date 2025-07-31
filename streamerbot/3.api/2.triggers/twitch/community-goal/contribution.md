@@ -49,5 +49,6 @@ variables:
     description: The amount of days left for this community goal
     value: 3
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

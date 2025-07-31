@@ -16,5 +16,6 @@ variables:
     description: The emote that was used in the pyramid
     value: Kappa
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

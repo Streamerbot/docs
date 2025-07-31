@@ -18,6 +18,7 @@ variables:
     description: URL to the image for the selected category
     value: https://files.kick.com/images/subcategories/5787/banner/conversion/153f16f9-6a5a-4449-b7c2-0a8e14f18092-banner.webp
 commonVariables:
+  - KickBroadcaster
   - KickUser
 ---
 

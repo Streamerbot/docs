@@ -15,4 +15,6 @@ variables:
     type: number
     description: The number of times the configured rollover value has been reached
     value: 3
+commonVariables:
+  - TwitchBroadcaster
 ---

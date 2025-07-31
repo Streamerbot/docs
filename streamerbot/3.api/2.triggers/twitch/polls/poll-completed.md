@@ -90,4 +90,6 @@ variables:
   - name: poll._json
     type: string
     description: All the variables in a JSON Object
+commonVariables:
+  - TwitchBroadcaster
 ---

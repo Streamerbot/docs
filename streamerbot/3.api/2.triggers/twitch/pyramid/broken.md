@@ -27,6 +27,7 @@ variables:
     description: The display name of the person who initiated the pyramid
     value: TwitchUser123
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---
 

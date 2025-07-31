@@ -12,5 +12,6 @@ variables:
     description: datetime of when the unban request has been created
     value: 28.06.2024 20:43:28
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---

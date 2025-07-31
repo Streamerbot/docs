@@ -12,4 +12,6 @@ variables:
     type: number
     description: The slow mode duration
     value: 0
+commonVariables:
+  - TwitchBroadcaster
 ---

@@ -12,4 +12,6 @@ variables:
     type: number
     description: The follower mode duration
     value: 23
+commonVariables:
+  - TwitchBroadcaster
 ---

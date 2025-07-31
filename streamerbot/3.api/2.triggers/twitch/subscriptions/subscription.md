@@ -27,6 +27,7 @@ variables:
     description: How many months of the multi-month subscription have passed so far
     value: 1
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
   - TwitchChat
 ---

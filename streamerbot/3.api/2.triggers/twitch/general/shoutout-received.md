@@ -9,5 +9,6 @@ variables:
     description: The viewer count from the user that created the shoutout
     value: 200
 commonVariables:
+  - TwitchBroadcaster
   - TwitchUser
 ---
