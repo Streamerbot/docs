@@ -61,8 +61,8 @@ variables:
     value: 718933593
   - name: top.subscription.total
     type: number
-    description: The amount of giftsubs donated from the the top gift subber this hype train
-    value: 10
+    description: The amount of points donated from the the top gift giver this hype train. Tier 1 = 500 points | Tier 2 = 1000 points | Tier 3 = 2500 points
+    value: 500
   - name: top.other.user
     type: string
     description: The user display name of the user that have given the most amount of things that aren't bits/giftsubs this hype train
