@@ -6,7 +6,7 @@ twitchService: EventSub
 variables:
   - name: startedAt
     type: DateTime
-    description: The date and time that the stream was ended
+    description: The date and time that the stream started
     value: 8/4/2023 10:56:06 AM
   - name: game
     type: string
