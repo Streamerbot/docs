@@ -7,7 +7,7 @@ version: 0.1.8
 logo: /img/icons/pulsoid.png
 ---
 
-Receive heart rate events from [Pulsoid](https://pulsoid.com){target=_blank}
+Receive heart rate events from [Pulsoid](https://pulsoid.net){target=_blank}
 
 ## Configuration
 
