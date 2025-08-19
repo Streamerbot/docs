@@ -1,0 +1,23 @@
+---
+title: Switch
+description: Allows for multi-way branching based on the value of an expression
+version: 1.0.0
+parameters:
+  - name: Input
+    type: Text
+    required: true
+    description: |
+      Enter the value for the left hand side of the comparison, this input supports full variable parsing and inline functions
+  - name: Auto Type
+    type: Toggle
+    default: false
+    description: |
+      By default, values which have not already been typed are treated as text, or `string`{lang=cs} variables.
+
+      Enable `Auto Type` to automatically determine the type for the variable value.
+
+      For example:
+      - `0`{lang=cs} can be auto-typed to a numeric type such as `int`{lang=cs} or `long`{lang=cs}
+      - `true`{lang=cs} or `false`{lang=cs} can be auto-typed to a `bool`{lang=cs}
+---
+
