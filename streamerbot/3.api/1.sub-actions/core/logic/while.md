@@ -8,7 +8,7 @@ parameters:
     required: true
     description: |
       Enter the value for the left hand side of the comparison
-	  
+
       This can contain other `%variables%`{lang=cs} as well as inline functions
   - name: Operator
     type: Select
@@ -44,9 +44,8 @@ parameters:
     default: false
     description: |
       Whether or not the comparison will be performed without checking casing
-	  
+
       For example:
       - `yes`{lang=cs} would match `YES`{lang=cs} is it is checked
       - `yes`{lang=cs} would not match `YES`{lang=cs} if it is not checked
 ---
-

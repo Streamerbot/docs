@@ -20,4 +20,3 @@ parameters:
       - `0`{lang=cs} can be auto-typed to a numeric type such as `int`{lang=cs} or `long`{lang=cs}
       - `true`{lang=cs} or `false`{lang=cs} can be auto-typed to a `bool`{lang=cs}
 ---
-
