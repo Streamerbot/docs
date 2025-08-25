@@ -8,6 +8,10 @@ variables:
     type: number
     description: The length of the ad in seconds
     value: 90
+    - name: adLengthMs
+    type: number
+    description: The length of the ad in milliseconds
+    value: 90000
   - name: adScheduled
     type: boolean
     description: Is the ad scheduled?
