@@ -8,7 +8,7 @@ variables:
     type: number
     description: The length of the ad in seconds
     value: 90
-    - name: adLengthMs
+  - name: adLengthMs
     type: number
     description: The length of the ad in milliseconds
     value: 90000
