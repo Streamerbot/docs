@@ -2,13 +2,13 @@
 title: If / Else
 description: Perform conditional logic based on variable contents
 parameters:
-  - name: Variable
+  - name: Input
     type: Text
     required: true
     description: |
-      Enter the variable / argument name to test
+      The value to be tested. Performs full parsing of `%arguments%`{lang=cs}, `~persistedGlobals~`{lang=cs} and `$inlineFunctions()$`{lang=cs}
       ::warning
-      If the variable does not exist, the entire sub-action will be skipped unless you are using the `Does Not Exist` operator.
+      Unlike earlier version of Streamer.bot, arguments must be enclosed in `%...%` in order for their values to be tested. If using `Does Not Exist`, then just use the argument name, without the `%`.
       ::
   - name: Operator
     type: Select
@@ -34,11 +34,11 @@ parameters:
       ::
   - name: Auto Type
     type: Toggle
-    default: false
+    default: true
     description: |
-      By default, values which have not already been typed are treated as text, or `string`{lang=cs} variables.
+      Without Auto Type, values are treated as text, or `string`{lang=cs} variables, which may result in surprising results like "`15`" being `Less Than` "`2`"
 
-      Enable `Auto Type` to automatically determine the type for the variable value.
+      Enable `Auto Type` to automatically determine the type for the variable value. This is usually what you want, unless you are deliberately performing lexicographic (alphabetical) comparison on text which might happen to contain numbers.
 
       For example:
       - `0`{lang=cs} can be auto-typed to a numeric type such as `int`{lang=cs} or `long`{lang=cs}
@@ -49,49 +49,7 @@ parameters:
     description: |
       Enter the value you would like to use for comparison.
 
-      This can contain other `%variables%`{lang=cs}
-
-      ::warning
-      You cannot use `~globalVariables~`{lang=cs} directly. Use the [Global Get](/api/sub-actions/core/global/global-get) sub-action to first load it into a local argument.
-      ::
-  - name: Do Action
-    type: Select
-    default: None
-    description: Select an action to execute if the comparison is `true`{lang=cs}
-  - name: Run Action Immediately
-    type: Toggle
-    default: true
-    description: |
-      By default, the selected action will be executed outside of its normal queue and treated as a subroutine of the current action, waiting for completion before moving on to the next sub-action.
-
-      Disable this option to queue the action as normal and immediately move on to the next sub-action
-  - name: Then
-    type: Select
-    default: Continue
-    description: |
-      Choose whether or not the current action should continue if the comparison was `true`{lang=cs}
-
-      - `Continue`: Continue execution as normal, moving on to any subsequent sub-actions
-      - `Break`: Stop the current action, any subsequent sub-actions will not be executed.
-  - name: Else Condition -> Do Action
-    type: Select
-    default: None
-    description: Select an action to execute if the comparison is `false`{lang=cs}
-  - name: Else Condition -> Run Action Immediately
-    type: Toggle
-    default: true
-    description: |
-      By default, the selected action will be executed outside of its normal queue and treated as a subroutine of the current action, waiting for completion before moving on to the next sub-action.
-
-      Disable this option to queue the action as normal and immediately move on to the next sub-action
-  - name: Else Condition -> Then
-    type: Select
-    default: Continue
-    description: |
-      Choose whether or not the current action should continue if the comparison was `false`{lang=cs}
-
-      - `Continue`: Continue execution as normal, moving on to any subsequent sub-actions
-      - `Break`: Stop the current action, any subsequent sub-actions will not be executed.
+      This field is parsed, so may contain other `%arguments%`{lang=cs}, `~persistedGlobals~`{lang=cs} and `$inlineFunctions()$`
 ---
 
 ::collapsible{name="If/Else Flow Diagram by pwnyy"}
