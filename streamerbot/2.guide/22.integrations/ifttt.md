@@ -2,7 +2,7 @@
 title: IFTTT
 description: Bidirectional integration with IFTTT and Streamer.bot
 navigation.icon: null
-icon: arcticons:ifttt
+icon: simple-icons:ifttt
 version: 0.1.8
 logo: https://streamer.bot/img/integrations/ifttt.png
 ---

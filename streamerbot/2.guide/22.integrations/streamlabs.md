@@ -1,7 +1,7 @@
 ---
 title: Streamlabs
 description: Integrate Streamer.bot with your Streamlabs account
-icon: arcticons:streamlabs
+icon: simple-icons:streamlabs
 navigation.icon: null
 logo: /img/icons/streamlabs.png
 ---

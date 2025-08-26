@@ -44,7 +44,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    Running that code will send the request, but we still don't have a way to fetch the response information. By taking a look into the docs for the C# methods, we can see that the request also returns a **string**. So we simply declare a string and have the request as its value.
 
-   :read-more{to="/api/csharp/obs/raw#ObsSendRaw"}
+   :read-more{to="/api/csharp/obs-studio/raw#ObsSendRaw"}
 
    ```cs
    using System;
@@ -102,7 +102,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 4. Getting specific properties
 
    This now allows us to directly pick the info we want. As seen in the response, the object is called `inputSettings` and the properties `text` and `font` -> `size`.
-   
+
    To get the `text` property, we can just declare a string and parse that property:
 
    ```cs
