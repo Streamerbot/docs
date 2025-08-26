@@ -1,5 +1,5 @@
 ---
-description: Trigger custom events that are defined with the [Custom Event Trigger](api/triggers/custom/custom)
+description: Trigger custom events that are defined with the [Custom Event Trigger](/api/triggers/custom/custom)
 version: 0.2.0
 parameters:
   - name: eventName
