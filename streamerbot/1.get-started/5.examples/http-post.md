@@ -13,7 +13,7 @@ Sometimes, however, you will find a situation where you need to send data via `P
 
 In this case, you will need to implement your own request handling in a C# code module using the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0){target=_blank rel=noopener} class.
 
-::read-more{to="/api/core/csharp/execute-csharp-code"}
+::read-more{to="/api/sub-actions/core/csharp/execute-csharp-code"}
 Read more about the `Execute C# Code` sub-action
 ::
 
@@ -41,11 +41,11 @@ Read more about the `Execute C# Code` sub-action
     using System.Net.Http.Headers;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
-    
+
     public class CPHInline {
       // You can set the timeout to any length you need
       private static readonly HttpClient _httpClient = new HttpClient{Timeout = TimeSpan.FromSeconds(30)};
-    
+
       public void Init() {
         // Ensure we are working with a clean slate
         _httpClient.DefaultRequestHeaders.Clear();
@@ -55,7 +55,7 @@ Read more about the `Execute C# Code` sub-action
         // Free up allocations
         _httpClient.Dispose();
       }
-      
+
       public bool Execute() {
         // ...
         return true;
@@ -76,25 +76,25 @@ Read more about the `Execute C# Code` sub-action
       // Get the arguments - or abort if it does not exist
       if(!CPH.TryGetArg("userName", out string userName)) return false;
       if(!CPH.TryGetArg("userId", out string userId)) return false;
-    
+
       // Build a wrapper object as payload
       var data = new {
         id = userId,
         name = userName
       };
-    
+
       // Serialize JSON
       string json = JsonConvert.SerializeObject(data);
-    
+
       // Create web request payload
       var payload = new StringContent(json, Encoding.UTF8, "application/json");
-    
+
       // Finally, send request
       HttpResponseMessage response = _httpClient.PutAsync("https://my-logging-server.com", payload).GetAwaiter().GetResult();
-    
+
       // Do with the response what you need to.
       // ...
-    
+
       return true;
     }
     ```
@@ -120,7 +120,7 @@ Read more about the `Execute C# Code` sub-action
 4. Additional Headers
 
     If you need to additionally include specific headers - like submitting an authorization token for the Twitch API or Discord API - make sure to clear and set the headers on each call you make.
-  
+
     You can also send individual headers with each request itself, but that requires you to always use the `SendAsync` method and building your own `HttpRequestMessage`.
 
     If your code only does a static request whose headers never change, resetting the headers is **not strictly necessary**. But it's good practice to not forget later when you need it.
@@ -151,9 +151,9 @@ Read more about the `Execute C# Code` sub-action
 5. Handling the response
 
     Since you have to do the entire request handling yourself, that includes handling the response.
-  
+
     - If you don't need to know what the server responded, you can ignore it like in the examples above.
-  
+
     - If you need to know if the request succeeded or are expecting data in return, follow the below example.
 
     ```cs [Response handling]
