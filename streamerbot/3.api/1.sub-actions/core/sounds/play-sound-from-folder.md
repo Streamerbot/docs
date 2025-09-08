@@ -54,6 +54,14 @@ variables:
     type: string
     description: File name of the audio file that was randomly selected for playback
     value: 'chad.mp3'
+  - name: soundLength
+    type: number
+    description: Length of chosen sound in seconds.
+    version: 0.2.3
+  - name: soundLengthMs
+    type: number
+    description: Length of chosen sound in milliseconds.
+    version: 0.2.3
 csharpMethods:
   - PlaySoundFromFolder
 ---

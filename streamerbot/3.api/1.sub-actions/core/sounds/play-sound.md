@@ -41,7 +41,15 @@ parameters:
     type: boolean
     description: Enabling this will use the filename of the sound as the sound name
     version: 0.2.4
-variables: []
+variables:
+  - name: soundLength
+    type: number
+    description: Length of the sound in seconds.
+    version: 0.2.3
+  - name: soundLengthMs
+    type: number
+    description: Length of the sound in milliseconds.
+    version: 0.2.3
 csharpMethods:
   - PlaySound
 ---
