@@ -39,50 +39,42 @@ This utility action will take a JSON string as input, parse it, and store the re
 
 1. Prepare your action
 
-    Create a new action, or open an existing action where you would like to parse JSON data.
-
-    Populate an argument named `json` with the JSON string you wish to parse. This can be from a previous action, API response, or any other source.
-
-    The [Set Argument](/api/sub-actions/core/arguments/set-argument) sub-action may be useful for this.
+    - Create a new action, or open an existing action where you would like to parse JSON data.
+    - Populate an argument named `json` with the JSON string you wish to parse. This can be from a previous action, API response, or any other source.
+    - The [Set Argument](/api/sub-actions/core/arguments/set-argument) sub-action may be useful for this.
 
 2. Run the Parse JSON utility
 
-    Add the [Execute C# Method](/api/sub-actions/core/csharp/execute-csharp-method) sub-action to your action. Ensure it is *after* you have set the `json` argument.
-
-    Select the `[Utilities] Parse JSON` method, and click `OK` to confirm.
-
-
-    ![Sub-Action Example](assets/parse-json-utility-method-sub-action.png){caption="Sub-action configuration" width=400}
+    - Add the [Execute C# Method](/api/sub-actions/core/csharp/execute-csharp-method) sub-action to your action. Ensure it is *after* you have set the `json` argument.
+    - Select the `[Utilities] Parse JSON` code, and the `Execute` method.
+    - Click `OK` to confirm.
 
 3. Access the parsed data
 
-    After running the Parse JSON utility, the parsed data will be available in Streamer.bot variables.
+    - After running the Parse JSON utility, the parsed data will be available in Streamer.bot variables.
 
-    For example, if your JSON data looks like this:
+    - For example, if your JSON data looks like this:
 
-    ```json
-    {
-      "user": {
-        "name": "StreamerBot",
-        "age": 5,
-        "isActive": true
-      },
-      "stats": {
-        "followers": 1000,
-        "views": 50000
-      },
-      "status": "ok"
-    }
-    ```
+      ```json
+      {
+        "user": {
+          "name": "StreamerBot",
+          "age": 5,
+          "isActive": true
+        },
+        "stats": {
+          "followers": 1000,
+          "views": 50000
+        },
+        "status": "ok"
+      }
+      ```
 
-    You can access the data using the following variable names:
+    - You can access the data using the following variable names:
 
-    - `%user.name%`{lang=cs}
-    - `%user.age%`{lang=cs}
-    - `%user.isActive%`{lang=cs}
-    - `%stats.followers%`{lang=cs}
-    - `%stats.views%`{lang=cs}
-    - `%status%`{lang=cs}
-
-    ![Parse JSON Arguments](assets/parse-json-utility.png){caption="Example arguments populated after parsing JSON" width=400}
-
+      - `%json.user.name%`{lang=cs}
+      - `%json.user.age%`{lang=cs}
+      - `%json.user.isActive%`{lang=cs}
+      - `%json.stats.followers%`{lang=cs}
+      - `%json.stats.views%`{lang=cs}
+      - `%json.status%`{lang=cs}
