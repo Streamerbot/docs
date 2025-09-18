@@ -11,7 +11,7 @@ public class QuoteData
 
     // GameId was removed in 1.0.0+ to make GameName
     // more flexible
-    
+
     public string GameName { get; set; }
 
     public string Quote { get; set; }
