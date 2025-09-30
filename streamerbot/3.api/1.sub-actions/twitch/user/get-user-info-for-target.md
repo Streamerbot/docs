@@ -1,7 +1,11 @@
 ---
 title: Get User Info for Target
-description: Fetch Twitch user data and populate a set of variables
+description: Fetch Twitch user data from a given value and populate a set of variables
 variables:
+  - name: addTargetResult
+    type: bool
+    description: Whether or not a user was found with the value that was used
+    version: 1.0.0
   - name: targetUser
     description: Display name of the target user
   - name: targetUserName
@@ -55,14 +59,11 @@ variables:
 ---
 
 ## Parameters
-::field-group
-  ::field{name="Source Type" type=Select}
-  - `Broadcaster` - The currently logged in broadcaster account
-  - `User` - User that invoked the action e.g. a raid leader, subscriber, point redeemer etc.
-  - `From Input` - This will take the next word proceeding the trigger as the username to lookup. This user does not have to be present in the channel
-  - `Variable` - Use the current value of an existing variable as the target
-  ::
-  ::field{name="Variable" type=Text}
-  If you selected `Variable` as your `Source Type`, enter the name of the variable you would like to read in
-  ::
+::field{name="User Login" type=Text}
+The User Login field can contain either a literal username or a variable/argument.
+**Examples**
+- `%userName%` – The user who triggered the action
+- `genericuser` – A specific account with the name `genericuser`
+- `%input0%` – The first input provided (e.g., in a command or reward)
+- `%broadcastUserName` – The broadcaster’s account. If not used with a Twitch/Command trigger, be sure to add the [Add Broadcaster Information](/api/sub-actions/twitch/user/add-broadcaster-information) sub-action first
 ::
