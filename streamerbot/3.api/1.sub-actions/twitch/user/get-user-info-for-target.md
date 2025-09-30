@@ -61,6 +61,7 @@ variables:
 ## Parameters
 ::field{name="User Login" type=Text}
 The User Login field can contain either a literal username or a variable/argument.
+
 **Examples**
 - `%userName%` – The user who triggered the action
 - `genericuser` – A specific account with the name `genericuser`
