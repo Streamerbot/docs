@@ -1,7 +1,13 @@
 ---
 title: Twitch Chat Variables
 navigation.title: Twitch Chat
+icon: mdi:twitch
 variables:
+  - name: internal
+    type: boolean
+    description: |
+      If message was sent via Streamer.bot sub-action or C#
+    value: True / False
   - name: msgId
     type: string
     description: Twitch's message identifier
@@ -49,7 +55,7 @@ variables:
   - name: emotes
     type: List<Twitch.Common.Models.Emote>
     description: A C# accessible list of emotes used in the chat message
-    variables:
+    children:
       - name: Type
         type: string
         description: From which source the emote came from

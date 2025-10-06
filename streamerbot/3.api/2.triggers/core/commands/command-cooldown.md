@@ -1,6 +1,16 @@
 ---
 title: Command Cooldown
 description: Trigger for when a Command is on Cooldown
+parameters:
+  - name: Commands
+    type: Select
+    description: |
+      Select the command to monitor for cooldowns
+
+      ::tip
+      You can quickly register a new command by clicking the `Create Command` button!
+      ::
+    required: true
 variables:
   - name: command
     type: string
@@ -37,17 +47,6 @@ commonVariables:
   - TrovoUser
 ---
 
-::callout{icon=i-mdi-bookmark to=/guide/commands}
+::read-more{to=/guide/commands}
 Check out the [Commands Guide](/guide/commands) for details on configuring your Commands
-::
-
-## Parameters
-::field-group
-  ::field{name=Commands type=Select}
-    Select a command from the Commands tab.
-
-    ::tip{color=amber}
-    You can quickly register a new command by clicking the `Create Command` button!
-    ::
-  ::
 ::

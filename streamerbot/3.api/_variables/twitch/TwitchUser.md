@@ -22,7 +22,7 @@ variables:
     version: 0.2.5
     type: string
     description: Comma-delimited list of groups the user is in
-    value: Awesome Streamers,Discord Peeps,Top Contributors 
+    value: Awesome Streamers,Discord Peeps,Top Contributors
   - name: isSubscribed
     type: boolean
     description: Is this user subscribed?
@@ -50,7 +50,7 @@ variables:
   - name: badges
     type: List<Twitch.Common.Models.Badge>
     description: A C# accessible list of emotes used in the chat message
-    variables:
+    children:
       - name: Name
         type: string
         description: The name of the badge

@@ -10,7 +10,7 @@ parameters:
 
       ::warning
       Only `GET` requests are supported at this time.<br>
-      If you need support for additional methods such as `POST`, utilize C# sub-actions
+      If you need support for additional methods such as `POST`, utilize C# sub-actions. An example can be found [here](/get-started/examples/http-post).
       ::
   - name: Variable Name
     type: Text
@@ -24,7 +24,11 @@ parameters:
 
       Multiple variables will be populated, with the `Variable Name` you provided as the root key
 
-      For example, a request to `https://catfact.ninja/fact`, with variable name `jsonResult`, would populate the variables `jsonResult.fact` and `jsonResult.length`.
+      ::callout
+      **Parse JSON Example**
+      <br>
+      A request to `https://catfact.ninja/fact`{lang=bash}, with variable name `jsonResult`{lang=cs}, would populate the variables `%jsonResult.fact%`{lang=cs} and `%jsonResult.length%`{lang=cs}
+      ::
   - name: Headers
     type: Table
     description: Optionally add custom headers to modify the HTTP request

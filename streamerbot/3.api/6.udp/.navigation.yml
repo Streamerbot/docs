@@ -1,0 +1,4 @@
+title: UDP Server
+description: Interact with your Streamer.bot instance with the built in UDP Server
+icon: mdi:api
+navigation.icon: mdi:api

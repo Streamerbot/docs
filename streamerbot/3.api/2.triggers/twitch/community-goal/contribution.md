@@ -2,7 +2,7 @@
 navigation.title: Contribution
 title: Community Goal Contribution
 description: Trigger for a Twitch Community Goal Contribution
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: title
     type: string

@@ -1,18 +1,27 @@
 ---
 title: Log
 description: Send output to the Streamer.bot log files
+parameters:
+  - name: Log Level
+    description: The log level to use for this message
+    type: Select
+    required: true
+    default: Information
+    options:
+      - name: Information
+        description: General information that will always be shown in the log file
+      - name: Warning
+        description: Information when you want to warn about something
+      - name: Debug
+        description: Information specifically for debugging purposes
+      - name: Verbose
+        description: Verbose information that will only be logged if the user has their log level on verbose
+  - name: Message
+    description: The message to log
+    type: String
+    required: true
 ---
 
-![Streamer.bot Log Sub-Action](/sub-action-log-001.png)
-
-## Configuration
-### Log Level
-Name | Description
-----:|:------------
-`Information` | This is general information that will always be shown in the log file.
-`Warning` | This is information when you want to warn about something.
-`Debug` | This is for information specifically for debugging purposes.
-`Verbose` | This is verbose information that will only be logged if the user has their log level on verbose. This isn't extremely important data.
-
-### Message
-Enter the message you wish to add to the log file.
+::tip
+You can use this sub-action for debugging your actions and seeing what is happening when they run!
+::

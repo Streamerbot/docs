@@ -2,7 +2,7 @@
 navigation.title: Ended
 title: Community Goal Ended
 description: Trigger for when a Twitch Community Goal Ends
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: title
     type: string

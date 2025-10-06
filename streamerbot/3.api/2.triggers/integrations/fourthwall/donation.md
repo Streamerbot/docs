@@ -1,5 +1,6 @@
 ---
-title: Donation
+title: Fourthwall Donation
+navigation.title: Donation
 description: Trigger for a FourthWall Donation
 version: 0.2.3
 parameters:

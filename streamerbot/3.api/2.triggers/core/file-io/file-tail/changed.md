@@ -1,5 +1,6 @@
 ---
-title: Changed
+title: File Tail Changed
+navigation.title: Changed
 description: Trigger for a Change from a File Tail
 version: 0.2.3
 variables:
@@ -21,7 +22,7 @@ variables:
 
     - Select `Any` to trigger on **any file tail**
 
-    ::tip{color=amber}
+    ::tip
     You can quickly register a new file tail by clicking the `Create File Tail` button!
     ::
   ::

@@ -16,6 +16,7 @@ variables:
     description: Id of the marker
     value: 8d25fc8f611f8aa57ae1eac3ad4b9c99
   - name: streamMarkerCreatedAt
+    type: DateTime
     description: Time when the marker was set
     value: 01.01.0001 00:00:00
   - name: streamMarkerDescription
@@ -32,6 +33,6 @@ csharpMethods:
 
 You can use this to signify an important event, or as a reminder for a point in the stream you'd like to review in your VOD at a later time.
 
-::list{type=warning}
-- Stream Markers are only available if you have VODs enabled on your channel!
+::warning
+Stream Markers are only available if you have VODs enabled on your channel!
 ::

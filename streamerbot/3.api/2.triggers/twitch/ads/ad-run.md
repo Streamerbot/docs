@@ -2,7 +2,7 @@
 title: Ad Run
 description: Trigger for a Twitch Ad Run
 version: 0.1.10
-twitchService: PubSub
+twitchService: EventSub
 variables:
   - name: adLength
     type: number
@@ -20,7 +20,4 @@ commonVariables:
   - TwitchBroadcaster
 ---
 
-## Details
-This event triggers at the start of an ad.
-
-See the [Ad Mid-Roll](/api/triggers/twitch/ads/ad-mid-roll) trigger if you are looking for an 5 seconds prior to the ad event.
+This event triggers at the start of an ad break.

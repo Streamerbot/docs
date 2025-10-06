@@ -1,15 +1,16 @@
 ---
 title: Send Message to Channel
 description: Send a chat message to your YouTube channel
+parameters:
+  - name: Message
+    type: string
+    required: true
+    description: The message to send to your channel chat
 csharpMethods:
   - SendYouTubeMessage
   - SendYouTubeMessageToLatestMonitored
 ---
 
-## Parameters
-### `Message`
-Enter the message to be sent to your chat.
-
-::list{type=warning}
-- This field is currently limited to plain text - no variable support.
+::warning
+This field is currently limited to plain text - no variable support.
 ::
