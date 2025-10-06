@@ -3,15 +3,13 @@ title: Get Team Info For Target
 description: Twitch Sub-Actions Reference
 published: true
 date: 2022-11-04T15:33:18.272Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2022-11-03T19:34:41.017Z
 ---
 
 ## Overview
 Collects follow data from a Twitch user.
-
-![overview.png](/Sub-Actions/Twitch/get-team-info-for-target/overview.png =400x)
 
 ## Configuration
 ### Source Type
@@ -35,7 +33,3 @@ Name | Description
 `teamBannerUrl#` | The banner url of the target's team.
 `_jsonTeamData` | The json, used for coding in C#.
 
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}

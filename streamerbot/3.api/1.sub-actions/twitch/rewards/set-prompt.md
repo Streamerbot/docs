@@ -11,7 +11,6 @@ dateCreated: 2022-06-11T05:02:11.199Z
 ## Overview
 Change the prompt of a channel point reward.
 
-![overview.png](/Sub-Actions/Twitch/set-prompt/overview.png =400x)
 
 ## Configuration
 ### `Reward`
@@ -22,12 +21,7 @@ Select the reward.
 ### Prompt
 Enter the text to apply to your reward prompt.
 
-This input field can span multiple lines and will also accept [variables](/Variables)
+This input field can span multiple lines and will also accept [variables](/guide/variables)
 
 ### Reset to Original
 Reset the reward prompt to its original value.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}

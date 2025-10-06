@@ -1,9 +1,9 @@
 ---
 title: Version 0.0.41
-description: 
+description:
 published: true
 date: 2023-06-11T18:17:18.980Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2021-08-25T21:35:47.925Z
 ---
@@ -52,13 +52,13 @@ As this uses the built in Windows Speech Recognition engine, be sure you have tr
 You can also change which input device is used for speech recognition.
 
 ## Execute Code
-See [Execute Code](/Sub-Actions/Execute-Code) for full details and usage of this new sub-action
+See [Execute Code](/api/csharp/guide) for full details and usage of this new sub-action
 
 ## Websocket Server
-See [Websocket Server](/Servers-Clients/WebSocket-Server) for full details and usage of this new capability
+See [Websocket Server](/api/websocket) for full details and usage of this new capability
 
 ## Websocket Client
-See [Websocket Clients](/Servers-Clients/WebSocket-Clients) for full details and usage of this new capability
+See [Websocket Clients](/api/websocket) for full details and usage of this new capability
 
 ## UDP Listener
 Using a port of your choice, you can send a UDP packet to execute an action you have available.  The settings for this are available through the `Websockets` tab.

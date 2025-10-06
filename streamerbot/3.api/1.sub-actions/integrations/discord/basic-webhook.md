@@ -54,7 +54,7 @@ parameters:
     description: |
       Set a custom avatar for the author of the resulting Discord message
 
-      For example, you could set it to a chat user's profile picture by using the [Get User Info for Target](/Sub-Actions/Twitch/Get-User-Info-for-Target) Sub-Action and then using the `%targetUserProfileImageUrl%` variable.
+      For example, you could set it to a chat user's profile picture by using the [Get User Info for Target](/api/sub-actions/twitch/user/get-user-info-for-target) Sub-Action and then using the `%targetUserProfileImageUrl%` variable.
   - name: Text to Speech
     type: Toggle
     default: false

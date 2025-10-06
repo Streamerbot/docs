@@ -11,7 +11,6 @@ dateCreated: 2022-06-11T05:05:44.509Z
 ## Overview
 Modify the `Title`, `Prompt` and `Cost` of a channel point reward at once.
 
-![overview.png](/Sub-Actions/Twitch/update/overview.png =400x)
 
 ## Configuration
 ### `Reward`
@@ -39,8 +38,3 @@ Name | Description
 
 ### Reset to Original
 Revert all reward settings to their original values.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i>**Twitch Sub-Actions *Go Back***](/Sub-Actions/Twitch)
-{.btn-grid .my-5}

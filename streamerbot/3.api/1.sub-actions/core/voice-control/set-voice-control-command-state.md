@@ -16,9 +16,9 @@ Next in the Sub-Action's pane you will need to add this sub action so to do this
 
 ![set-vc-state.png](/voice-control/set-vc-state.png =400x)
 
-This dialog box has 2 drop-down menu's boxes one name **Command** and the second named **State**. 
+This dialog box has 2 drop-down menu's boxes one name **Command** and the second named **State**.
 
-In the **"Commands"** dropdown menu Streamer.bot will list all the commands you have created in the Voice Control tab. Select the one you wish to set the state of in the next drop-down. 
+In the **"Commands"** dropdown menu Streamer.bot will list all the commands you have created in the Voice Control tab. Select the one you wish to set the state of in the next drop-down.
 
 In the **"State"** dropdown you have 3 states to choose from.
 
@@ -27,8 +27,3 @@ Disabled - Disables the Voice Control Command
 Toggle - Toggles the Voice Control Command (Enabled/Disabled)
 
 Once you have selected the desired state you want click Ok to continue and that is it.
-
----
-
-- [<i class="mdi mdi-chevron-left"></i> **Voice Control Sub-Actions Reference *Go Back***](/Sub-Actions/Voice-Control)
-{.btn-grid .my-5}
