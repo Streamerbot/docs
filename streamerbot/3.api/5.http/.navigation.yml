@@ -2,3 +2,5 @@ title: HTTP Server
 description: Explore the HTTP API and/or serve local files with Streamer.bot
 icon: mdi:api
 navigation.icon: mdi:api
+ogImage:
+  headline: HTTP Server

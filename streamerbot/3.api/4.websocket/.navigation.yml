@@ -1,4 +1,5 @@
 icon: mdi:api
 navigation.icon: mdi:api
 title: WebSocket Server
-category.title: WebSocket Server
+ogImage:
+  headline: WebSocket Server
