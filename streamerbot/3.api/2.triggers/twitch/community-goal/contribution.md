@@ -1,8 +1,8 @@
 ---
-navigation.title: Contribution
 title: Community Goal Contribution
 description: Trigger for a Twitch Community Goal Contribution
-twitchService: EventSub
+twitchService: PubSub
+removed: 1.0.0
 variables:
   - name: title
     type: string
@@ -52,3 +52,11 @@ commonVariables:
   - TwitchBroadcaster
   - TwitchUser
 ---
+
+::caution
+**Removed in Streamer.bot v1.0.0**
+<br>
+Twitch has deprecated the PubSub API and all triggers relying on it have been removed.
+<br>
+These triggers will no longer function until Twitch re-implements them in the EventSub API.
+::
