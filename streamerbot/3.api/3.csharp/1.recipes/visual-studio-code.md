@@ -12,20 +12,14 @@ By following these instructions, you'll be able to write code with linting, whic
 
 ## Prerequisites
 
-::steps{level=3}
-  ### Download & Install Visual Studio Code
-  - [Download Visual Studio Code](https://code.visualstudio.com/download)
-  - Follow the installation instructions for your operating system
+::card-group
+  ::card{title="Visual Studio Code" icon="mdi:microsoft-visual-studio-code" to="https://code.visualstudio.com/download"}
+    Follow the installation instructions for your operating system
+  ::
 
-  ### Configure Extensions
-  - Launch Visual Studio Code if you haven't already
-  - Open the Extensions menu
-    - Keyboard Shortcut: :kbd{value=meta} :kbd{value=shift} :kbd{value=X}
-    - Menu Bar: `View > Extensions`
-  - Install `C#`
-    - This is the necessary extension for C# development and includes the `.NET Install Tool`
-
-      ![C# Extension in the extensions panel of Visual Studio Code](assets/vscode-csharp-extension.png)
+  ::card{title="VSCode C# Extension" icon="vscode-icons:file-type-csharp" to="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"}
+    This is the necessary extension for C# development and includes the .NET Install Tool
+  ::
 ::
 
 ## Setup Guide
