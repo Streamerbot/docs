@@ -51,6 +51,8 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
 
   ![A new file being named StreamerBot.csproj](assets/vscode-naming-new-csproj.png)
 
+  :br
+
 3. Paste the contents from the code block below into your new `.csproj` file:
 
   ::code-collapse
@@ -90,6 +92,8 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
   </Project>
   ```
   ::
+
+:br
 
 4. Replace the value of the `<StreamerBotPath>`{lang=xml} xml tag to point to your Streamer.bot directory and save the file.
 
