@@ -8,9 +8,9 @@ This tutorial provides a general step-by-step guide on setting up Visual Studio 
 
 By following these instructions, you'll be able to write code with linting, which will help you catch errors early and ensure your code compiles before copying into Streamer.bot
 
+::steps{level=2}
 ## Prerequisites
 
-::steps{level=3}
   ### Download & Install Visual Studio Code
   - [Download Visual Studio Code](https://code.visualstudio.com/download)
   - Follow the installation instructions for your operating system
@@ -20,147 +20,169 @@ By following these instructions, you'll be able to write code with linting, whic
   - Open the Extensions menu
     - Keyboard Shortcut: `Ctrl+Shift+X`
     - Menu Bar: `View > Extensions`
-  3. Install `IntelliCode for C# Dev Kit`
-    - This dev kit will install all necessary extensions for C# development, including `C#`, `C# Dev Kit`, and `.NET Install Tool`
+  - Install `C#`
+    - This is the necessary extension for C# development and includes the `.NET Install Tool`
 
-      ![image](https://gist.github.com/assets/8848167/80a7e6b0-86dd-4db0-87e2-801473a08d49)
+      ![C# Extension in the extensions panel of Visual Studio Code](assets/vscode-csharp-extension.png)
 
-  ### Sign in to Visual Studio Account
-  1. Open Command Palette with
-    - Keyboard Shortcut: `Ctrl+Shift+P`
-    - Menu Bar: `View > Command Palette`
-  2. Type `.NET: Sign into Visual Studio account` and select it
+## Create a new Streamer.bot Project Folder
 
-      ![image](https://gist.github.com/assets/8848167/b1ac3dde-177d-4576-babc-bd8635476dd4)
+1. Select `File > Open Folder` in the menu
 
-  3. Select `Allow` and it will open your web browser for you to log in with your Microsoft Account
+    ![The Open Folder option being selected in VS Code's File menu](assets/vscode-open-folder-menu.png)
 
-      ![image](https://gist.github.com/assets/8848167/2fbc020b-abe2-4b35-a94c-0313f5081a81)
+2. Select an empty folder, or create a new project folder, and then select it to open
 
-  4. Proceed to log in with Microsoft Account
-::
+    ![VS Code's Open Folder dialogue](assets/vscode-open-folder-dialogue.png)
 
-## Create new .NET Project
-
-1. Command Palette
-   - Keyboard Shortcut: `Ctrl+Shift+P`
-   - Menu Bar: `View > Command Palette`
-2. Type `.NET: New Project` and select it
-
-![image](https://gist.github.com/assets/8848167/56fd0378-3ba7-4dfd-a20d-9afeed9c0d68)
-
-3. Select `Console App`
-
-![image](https://gist.github.com/assets/8848167/8581a4ae-8a4b-41a4-ab9c-589805c51834)
-
-4. Select a folder to save the new project folder into
-
-5. Write a name for the project and hit enter
-
-![image](https://gist.github.com/assets/8848167/4790ce9d-6758-4c1b-ade9-6a8b68aefe15)
-
-6. Press enter or select `Create Project`
-
-![image](https://gist.github.com/assets/8848167/6bc86d91-da60-4fcd-acbe-6885dd75616d)
-
-7. Open the new project folder.
-   - Keyboard Shortcut: `Ctrl+K, Ctrl+O`
-   - Menu Bar: `File > Open Folder`
-
-This is what you should see when you open the Explorer
-![image](https://gist.github.com/user-attachments/assets/82d93eed-a5ac-4a39-8130-982aeb759181)
-
-## Configure new project
+## Create a `.csproj` File
 
 1. Open the Explorer
    - Keyboard Shortcut: `Ctrl+Shift+E`
    - Menu Bar: `View > Explorer`
-2. Navigate inside the open the `.csproj` file
-3. Replace with this template in the code block below
-4. Edit the Streamer.bot related dll filepaths to point to your Streamer.bot directory
-5. Save and close the `.csproj` file
+2. Create a New File
 
-```xml
+    ![New File option being selected in VS Code's Explorer Pane context menu](assets/vscode-new-file.png) 
+
+3. Name the file, ending with `.csproj`
+
+    ![A new file being named StreamerBot.csproj](assets/vscode-naming-new-csproj.png)
+
+4. Paste the `Streamer.bot Project File Template` from the code block below
+5. Replace the value of the `<StreamerBotPath>` xml tag to point to your Streamer.bot directory
+
+::warning
+Do not use quotes around your Streamer.bot directory path, even if it contains spaces.
+::
+
+6. Save and close the `.csproj` file
+
+```xml [Streamer.bot Project File Template]
 <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net481</TargetFramework>
+      <LangVersion>13.0</LangVersion>
+      <Nullable>enable</Nullable>
+      <UseWPF>true</UseWPF>
+      <DefineConstants>EXTERNAL_EDITOR</DefineConstants>
+      <NoWarn>CS0114</NoWarn>
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net472</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <LangVersion>latest</LangVersion>
-    <NoWarn>CS0114</NoWarn> <!-- Ignore CS0114 errors -->
-  </PropertyGroup>
+      <!-- Set the following directory with your Streamer.bot install location -->
+      <StreamerBotPath>C:/path/to/streamer.bot-directory</StreamerBotPath>
+   </PropertyGroup>
+   <ItemGroup>
+      <!-- Automatically include in every CS file -->
+      <Using Include="Streamer.bot.Plugin.Interface" />
+      <Using Include="Streamer.bot.Plugin.Interface.Model" />
+      <Using Include="Streamer.bot.Plugin.Interface.Enums" />
+      <Using Include="Streamer.bot.Common.Events" /> 
 
-  <ItemGroup>
-    <!-- Include all DLLs in a specific directory in the build output -->
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Core.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Net.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Net.Http.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\netstandard.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Windows.Forms.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Drawing.dll" />
-    <Reference Include="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.VisualBasic.dll" />
-    <!-- List of dlls included with Streamer.bot -->
-    <Reference Include="D:\overlays\streamerbot\Streamer.bot.Plugin.Interface.dll" />
-    <Reference Include="D:\overlays\streamerbot\Streamer.bot.Common.dll" />
-    <Reference Include="D:\overlays\streamerbot\Streamer.bot.Auth.dll" />
-    <Reference Include="D:\overlays\streamerbot\Streamer.bot.EmoteHandlers.dll" />
-    <Reference Include="D:\overlays\streamerbot\NAudio.dll" />
-    <Reference Include="D:\overlays\streamerbot\NAudio.Core.dll" />
-    <Reference Include="D:\overlays\streamerbot\Newtonsoft.Json.dll" />
-    <Reference Include="D:\overlays\streamerbot\Twitch.Common.dll" />
-    <Reference Include="D:\overlays\streamerbot\websocket-sharp.dll" />
-    <!-- Example of a dll in the Streamer.bot dlls folder -->
-    <!-- <Reference Include="D:\overlays\streamerbot\dlls\SharpOSC.dll" /> -->
-  </ItemGroup>
+      <!-- Use forward slashes for cross-platform compatibility -->
+      <Reference Include="$(StreamerBotPath)/Streamer.bot.Plugin.Interface.dll" />
+      <Reference Include="$(StreamerBotPath)/Streamer.bot.Common.dll" />
+      <Reference Include="$(StreamerBotPath)/Twitch.Common.dll" />
 
+      <Reference Include="$(StreamerBotPath)/NAudio*.dll" />
+      <Reference Include="$(StreamerBotPath)/Wpf*.dll" />
+      <Reference Include="$(StreamerBotPath)/Newtonsoft.Json.dll" />
+
+      <!-- Uncomment the following line to reference all dlls in the streamerbot directory -->
+      <!-- <Reference Include="$(StreamerBotPath)/**/*.dll" /> -->
+   </ItemGroup>
 </Project>
 ```
 
-### .csproj Notes
+### `.csproj` Notes
 
-- This file configures the project as a .NET Framework 4.7.2 project
-- I've added some basic assembly references that are used frequently
-- To point to your own Streamer.bot dlls, replace the directory with your own Streamer.bot directory and Streamer.bot `dlls` directory
+- This file includes the Streamer.bot using statements in every `.cs` file automatically
+- This file configures the project as a .NET Framework 4.8.1 project
+- To point to your own Streamer.bot dlls, replace the contents of `<StreamerBotPath>` with the path to your own Streamer.bot directory (containing `Streamer.bot.exe` and `.dll` files)
 
-## Template for the .cs file
+## Template for the `.cs` file
 
 1. Open the Explorer
    - Keyboard Shortcut: `Ctrl+Shift+E`
    - Menu Bar: `View > Explorer`
-2. Navigate inside the open the `Program.cs` file
-3. Replace your cs file with this template:
+2. Create a new file ending with the `.cs` extension
 
-```cs
-using Streamer.bot.Plugin.Interface;
-using Streamer.bot.Plugin.Interface.Enums;
-using Streamer.bot.Plugin.Interface.Model;
-using Streamer.bot.Common.Events;
+   ![A new file being named MyAction.cs](assets/vscode-naming-new-cs-file.png)
+
+3. Paste the `C# Code Example` below into your `.cs` file, replacing `UniqueClassName` with your FileName:
+4. You can also create a file template as a workplace snippet, to make inserting this into new files easier:
+    - Open the Command Palette with `Ctrl+Shift+P` and select `Snippets: Configure Snippets`
+      ![VS Code Command Palette with Snippets: Configure Snippets selected](assets/vscode-configure-snippets-command.png)
+    - Select the option to create a new snippets file for the current workspace, and enter a filename like `sbSnippets`
+      ![VS Code Configure Snippets Command with New Snippets file for workspace option selected](assets/vscode-snippets-new-workplace-file.png)
+    - Replace the contents of your new `.code-snippets` file with the `File Template Snippet` below
+    - After creating new .cs files, you can now fill them with the snippet by either typing `sbfile`, and selecting the `streamer.bot-file-template` from the dropdown, or by running `Snippets: Fill File with Snippet` from the Command Palette
+
+::code-group
+```cs [C# Code Example]
 using System;
 
-public class CPHInline : CPHInlineBase
+/*----- Class name should match FileName -----*/
+#if EXTERNAL_EDITOR
+public class UniqueClassName : CPHInlineBase
+#else
+public class CPHInline
+#endif
+/*--------------------------------------------*/
 {
     public bool Execute()
     {
+        // Add your code here
         return true;
     }
 }
 ```
+```json [File Template Snippet]
+{
+    "Execute C# Sub-Action Template" : {
+		"scope": "csharp",
+        "isFileTemplate": true,
+        "prefix": "streamer.bot-file-template",
+        "description": "New Execute C# Sub-Action for Streamer.bot",
+        "body": [
+            "using System;",
+            "",
+            "/*----- Class name should match FileName -----*/",
+            "#if EXTERNAL_EDITOR",
+            "public class ${TM_FILENAME_BASE} : CPHInlineBase",
+            "#else",
+            "public class CPHInline",
+            "#endif",
+            "/*--------------------------------------------*/",
+            "{",
+            "    public bool Execute()",
+            "    {",
+            "        ${0:// Add your code here}",
+            "        return true;",
+            "    }",
+            "}"
+        ]
+    }
+}
+```
+::
 
-### .cs Notes
+### `.cs` Notes
 
 - This is similar to the default code found in the `Execute C# Code` subaction
 - The first four lines are required in VS Code, but are used by default and not needed in Streamer.bot
-- Adding `: CPHInlineBase` after `public class CPHInline` seems to be the magic that gets VS Code to recognize the CPH methods (don't ask me why, I'm just a hobbyist programmer)
+- The `#if EXTERNAL_EDITOR` preprocessor directive is set to true by the `.csproj` we just created, but is not active in Streamer.bot's editor.
+  - In VS Code, each class name in a project must be unique, so changing `UniqueClassName` to the FileName avoids conflicts, while explicitly inheriting from `CPHInlineBase`, the class which provides the `CPH` instance all of our Streamer.bot methods belong to.
+  - In Streamer.bot, the class must be called `CPHInline`, which automatically inherits from `CPHInlineBase`.
 
-### You can now write code with assistance from IntelliCode
+::
 
-- You can type `CPH.` and it will automatically give you the available CPH methods
-  - This uses the `Streamer.bot.Plugin.Interface.dll` of your Streamer.bot folder
-  - The advantage of this is that you will have a current list of methods, classes, and enums available
+### You can now write code with assistance from IntelliSense
 
-![image](https://gist.github.com/assets/8848167/28c9fb4f-c368-487e-92f1-ff3e5eae95a1)
+- You can now type `CPH.` and it will automatically give you the available `CPH` methods
+  - This uses the `Streamer.bot.Plugin.Interface.dll` in your Streamer.bot folder
+  - The advantage of this is that you will have an up-to-date list of methods, classes, and enums available
+
+![Dropdown of autocomplete options following CPH. in VS Code](assets/vscode-example-autocomplete.png)
 
 - Open `Problems`
   - Keyboard Shortcut: `Ctrl+Shift+M`
@@ -168,30 +190,30 @@ public class CPHInline : CPHInlineBase
 - The `Problems` view will show you if there will be any compile errors
   - Look for any red error icons
 
-![image](https://gist.github.com/assets/8848167/53c1c7ae-824b-4210-a519-ba4cd3be1b00)
+  ![Example of missing semicolon error which will not compile](assets/vscode-example-error.png)
 
-    - These errors will be compiler errors
-
+::caution
+These errors will be compiler errors
+::
   - You may notice some yellow warning icons
 
-![image](https://gist.github.com/user-attachments/assets/17b86d3a-ab7d-4c32-84b5-21fa905f9f89)
+  ![Example of compiler warning for an unused variable which will not block compilation](assets/vscode-example-warning.png)
 
-    - These are only warnings and the code will still compile.
+::warning
+These are only warnings and the code will still compile.
+::
 
-## Copying code to Streamer.bot
-
-- Feel free to exclude the first four using statements from your code as they are automatically included in Streamer.bot's `Execute C# Code` subaction
-- After copying and pasting your code into the `Execute C# Code` subaction dialog, remember to remove:
-
-```text
-: CPHInlineBase
-```
-
-from
-
-```cs
-public class CPHInline : CPHInlineBase
-```
-
+## Copying Code to Streamer.bot
+- Create an `Execute C# Code` Sub-Action
+- You can copy the entirety of your `.cs` file into Streamer.bot's editor.
+    - The preprocessor directives will keep the sections which are only needed for VS Code from being active inside Streamer.bot.
 - Make sure the code compiles successfully by clicking `Compile`
 - Click `Save and Compile`
+
+::tip{color=primary}
+If you see any errors ending with `(are you missing an assembly reference?)`, click `Find Refs`
+::
+
+::success
+Your code has now been added inside an `Execute C# Code` Sub-Action and is ready to run in your Action!
+::
