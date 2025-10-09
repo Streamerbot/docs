@@ -59,7 +59,6 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
   ```xml [StreamerBot.csproj]
   <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-      <OutputType>Exe</OutputType>
       <TargetFramework>net481</TargetFramework>
       <LangVersion>13.0</LangVersion>
       <Nullable>enable</Nullable>
@@ -85,6 +84,10 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
       <Reference Include="$(StreamerBotPath)/NAudio*.dll" />
       <Reference Include="$(StreamerBotPath)/Wpf*.dll" />
       <Reference Include="$(StreamerBotPath)/Newtonsoft.Json.dll" />
+      <Reference Include="$(StreamerBotPath)/System.*.dll" />
+
+      <Reference Include="System.Web" />
+      <Reference Include="System.Net.Http" />
 
       <!-- Uncomment the following line to reference all dlls in the streamerbot directory -->
       <!-- <Reference Include="$(StreamerBotPath)/**/*.dll" /> -->
