@@ -14,5 +14,6 @@ parameters:
 variables:
   - name: fileExists
     type: bool
-    description: `True` if the file exists, `False` if it doesn't.
+    description: |
+      `True` if the file exists, `False` if it doesn't.
 ---

@@ -14,5 +14,6 @@ parameters:
 variables:
   - name: folderExists
     type: bool
-    description: `True` if the folder exists, `False` if it doesn't.
+    description: |
+      `True` if the folder exists, `False` if it doesn't.
 ---
