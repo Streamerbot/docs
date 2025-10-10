@@ -24,7 +24,7 @@ variables:
     value: TrackMonitoringStateChanged
     filter:
       - value: EffectEnabledStateChanged
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: EffectEnabledStateChanged
           - name: meldStudioEvent._json
@@ -42,7 +42,7 @@ variables:
             description: Whether the effect in Meld Studio is enabled or not
             value: true
       - value: LayerVisibilityChanged
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: LayerVisibilityChanged
           - name: meldStudioEvent._json
@@ -60,7 +60,7 @@ variables:
             description: Whether or not the layer is visible in Meld Studio
             value: true
       - value: ObjectAdded
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: ObjectAdded
           - name: meldStudioEvent._json
@@ -98,7 +98,7 @@ variables:
             description: The name of the object in Meld Studio
             value: Image 1
       - value: ObjectUpdated
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: ObjectUpdated
           - name: meldStudioEvent._json
@@ -136,7 +136,7 @@ variables:
             description: The name of the object in Meld Studio
             value: Image 20
       - value: TrackMonitoringStateChanged
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: TrackMonitoringStateChanged
           - name: meldStudioEvent._json
@@ -154,7 +154,7 @@ variables:
             description: Whether or not the Track is monitored in Meld Studio
             value: false
       - value: TrackMutedStateChanged
-        variables:
+        children:
           - name: meldStudioEvent.event
             value: TrackMutedStateChanged
           - name: meldStudioEvent._json

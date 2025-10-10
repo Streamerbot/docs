@@ -37,7 +37,7 @@ variables:
   - name: emotes
     type: List
     description: A C# accessible list of emotes used in the chat message
-    variables:
+    children:
       - name: emotes.#.text
         type: string
         description: Plain text name of the emote
@@ -57,7 +57,7 @@ variables:
   - name: badge
     type: List
     description: A C# accessible list of badges used in the chat message
-    variables:
+    children:
       - name: badge.#.id
         type: string
         description: Plain text name of the badge
@@ -67,9 +67,9 @@ variables:
         description: Unique identifier for the badge
         value: Broadcaster
       - name: badge.#.info
-        type: string 
+        type: string
         description: URL of the badge image
-        value: https://files.kick.com/badges/broadcaster   
+        value: https://files.kick.com/badges/broadcaster
   - name: rawInput
     type: string
     description: The message receieved in chat

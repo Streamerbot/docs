@@ -12,7 +12,7 @@ variables:
   - name: users
     type: List<Dictionary<string,object>>
     description: A C# accessible list of users present in chat
-    variables:
+    children:
       - name: id
         type: string
         description: The user id of the user
