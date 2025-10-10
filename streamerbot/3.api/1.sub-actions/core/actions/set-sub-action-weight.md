@@ -1,6 +1,7 @@
 ---
 title: Set Sub-Action Weight
 description: Changes the random weighting of specific sub-actions within an action
+version: 1.0.0
 parameters:
   - name: Action
     type: Select
