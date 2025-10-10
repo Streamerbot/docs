@@ -1,6 +1,7 @@
 ---
 title: Set Sub-Action State
 description: Enable or disable specific sub-actions within an action
+version: 1.0.0
 parameters:
   - name: Action
     type: Select
