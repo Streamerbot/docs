@@ -12,11 +12,16 @@ parameters:
     required: true
     description: Choose the specific sub-action you wish to modify
   - name: Weight
-    type: float
+    type: Number
     required: true
     description: |
-      Sets the new "weight" for the selected sub-action, which is the probability, relative to the other subactions' weights, that the subaction will be chosen. For example, if all subaction weights are the same, then they will all be equally likely. If one subaction's weight is double another's, then that subaction will be chosen twice as often.
+      Sets the new "weight" for the selected sub-action, which is the probability, relative to the other sub-actions' weights, that the sub-action will be chosen.
+
+      For example, if all sub-action weights are the same, then they will all be equally likely to execute.
+
+      If one sub-action's weight is double another's, then that sub-action will be chosen twice as often.
 ---
+
 ::tip
-Only applies to subactions of an Action or sub-action group that is set to Random.
+Only applies to sub-actions of an Action or sub-action group that is set to Random.
 ::
