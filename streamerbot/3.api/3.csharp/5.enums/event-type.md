@@ -8,14 +8,13 @@ Within any action, the value of the `%__source%`{lang=cs} variable indicates whi
 
 This variable is of type `EventType`{lang=cs}, which is an enumeration (enum) defined in C#.
 
-## Usage
+## Usage Example
 
 ::warning
 To use the `EventType` enum in your C# scripts, you must include the `Streamer.bot.Common.Events` namespace
 ::
 
 :read-more{to=/api/csharp/methods/core/events/get-event-type}
-
 
 ```csharp [Example.cs]
 using System;
@@ -44,11 +43,11 @@ public class CPHInline
 }
 ```
 
-## Event Types
+## Enum Values by Source
 
 ### Application
 
-| Event Type                            | Description                                     |
+| Value                                 | Description                                     |
 | ------------------------------------- | ----------------------------------------------- |
 | `EventType.ApplicationActionAdded`    | [No description provided]{.text-muted .text-xs} |
 | `EventType.ApplicationActionDeleted`  | [No description provided]{.text-muted .text-xs} |
@@ -60,20 +59,20 @@ public class CPHInline
 
 ### Chat Window
 
-| Event Type                   | Description                                     |
+| Value                        | Description                                     |
 | ---------------------------- | ----------------------------------------------- |
 | `EventType.ChatWindowAction` | [No description provided]{.text-muted .text-xs} |
 
 ### Command
 
-| Event Type                   | Description                                     |
+| Value                        | Description                                     |
 | ---------------------------- | ----------------------------------------------- |
 | `EventType.CommandCooldown`  | [No description provided]{.text-muted .text-xs} |
 | `EventType.CommandTriggered` | [No description provided]{.text-muted .text-xs} |
 
 ### CrowdControl
 
-| Event Type                                 | Description                                     |
+| Value                                      | Description                                     |
 | ------------------------------------------ | ----------------------------------------------- |
 | `EventType.CrowdControlCoinExchange`       | [No description provided]{.text-muted .text-xs} |
 | `EventType.CrowdControlEffectFailure`      | [No description provided]{.text-muted .text-xs} |
@@ -87,14 +86,14 @@ public class CPHInline
 
 ### Custom
 
-| Event Type                  | Description                                     |
+| Value                       | Description                                     |
 | --------------------------- | ----------------------------------------------- |
 | `EventType.CustomCodeEvent` | [No description provided]{.text-muted .text-xs} |
 | `EventType.CustomEvent`     | [No description provided]{.text-muted .text-xs} |
 
 ### DonorDrive
 
-| Event Type                           | Description                                     |
+| Value                                | Description                                     |
 | ------------------------------------ | ----------------------------------------------- |
 | `EventType.DonorDriveDonation`       | [No description provided]{.text-muted .text-xs} |
 | `EventType.DonorDriveIncentive`      | [No description provided]{.text-muted .text-xs} |
@@ -102,7 +101,7 @@ public class CPHInline
 
 ### Elgato Camera Hub
 
-| Event Type                                                   | Description                                     |
+| Value                                                        | Description                                     |
 | ------------------------------------------------------------ | ----------------------------------------------- |
 | `EventType.ElgatoCameraHubConnected`                         | [No description provided]{.text-muted .text-xs} |
 | `EventType.ElgatoCameraHubDisconnected`                      | [No description provided]{.text-muted .text-xs} |
@@ -177,7 +176,7 @@ public class CPHInline
 
 ### Elgato Stream Deck
 
-| Event Type                         | Description                                     |
+| Value                              | Description                                     |
 | ---------------------------------- | ----------------------------------------------- |
 | `EventType.StreamDeckAction`       | [No description provided]{.text-muted .text-xs} |
 | `EventType.StreamDeckConnected`    | [No description provided]{.text-muted .text-xs} |
@@ -186,7 +185,7 @@ public class CPHInline
 
 ### Elgato Wave Link
 
-| Event Type                                              | Description                                     |
+| Value                                                   | Description                                     |
 | ------------------------------------------------------- | ----------------------------------------------- |
 | `EventType.ElgatoWaveLinkConnected`                     | [No description provided]{.text-muted .text-xs} |
 | `EventType.ElgatoWaveLinkDisconnected`                  | [No description provided]{.text-muted .text-xs} |
@@ -211,7 +210,7 @@ public class CPHInline
 
 ### File
 
-| Event Type                     | Description                                     |
+| Value                          | Description                                     |
 | ------------------------------ | ----------------------------------------------- |
 | `EventType.FileTailChanged`    | [No description provided]{.text-muted .text-xs} |
 | `EventType.FileWatcherChanged` | [No description provided]{.text-muted .text-xs} |
@@ -221,7 +220,7 @@ public class CPHInline
 
 ### Fourthwall
 
-| Event Type                                  | Description                                     |
+| Value                                       | Description                                     |
 | ------------------------------------------- | ----------------------------------------------- |
 | `EventType.FourthwallDonation`              | [No description provided]{.text-muted .text-xs} |
 | `EventType.FourthwallGiftDrawEnded`         | [No description provided]{.text-muted .text-xs} |
@@ -239,7 +238,7 @@ public class CPHInline
 
 ### Global Variable
 
-| Event Type                        | Description                                     |
+| Value                             | Description                                     |
 | --------------------------------- | ----------------------------------------------- |
 | `EventType.GlobalVariableCreated` | [No description provided]{.text-muted .text-xs} |
 | `EventType.GlobalVariableDeleted` | [No description provided]{.text-muted .text-xs} |
@@ -247,7 +246,7 @@ public class CPHInline
 
 ### Group
 
-| Event Type                    | Description                                     |
+| Value                         | Description                                     |
 | ----------------------------- | ----------------------------------------------- |
 | `EventType.GroupAdded`        | [No description provided]{.text-muted .text-xs} |
 | `EventType.GroupCleared`      | [No description provided]{.text-muted .text-xs} |
@@ -257,7 +256,7 @@ public class CPHInline
 
 ### HypeRate.io
 
-| Event Type                            | Description                                     |
+| Value                                 | Description                                     |
 | ------------------------------------- | ----------------------------------------------- |
 | `EventType.HypeRateConnected`         | [No description provided]{.text-muted .text-xs} |
 | `EventType.HypeRateDisconnected`      | [No description provided]{.text-muted .text-xs} |
@@ -266,14 +265,14 @@ public class CPHInline
 
 ### Input
 
-| Event Type                  | Description                                     |
+| Value                       | Description                                     |
 | --------------------------- | ----------------------------------------------- |
 | `EventType.InputKeyPress`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.InputMouseClick` | [No description provided]{.text-muted .text-xs} |
 
 ### Kick
 
-| Event Type                                  | Description                                     |
+| Value                                       | Description                                     |
 | ------------------------------------------- | ----------------------------------------------- |
 | `EventType.KickBroadcasterAuthenticated`    | [No description provided]{.text-muted .text-xs} |
 | `EventType.KickBroadcasterChatConnected`    | [No description provided]{.text-muted .text-xs} |
@@ -297,7 +296,7 @@ public class CPHInline
 
 ### Ko-Fi
 
-| Event Type                     | Description                                     |
+| Value                          | Description                                     |
 | ------------------------------ | ----------------------------------------------- |
 | `EventType.KofiCommission`     | [No description provided]{.text-muted .text-xs} |
 | `EventType.KofiDonation`       | [No description provided]{.text-muted .text-xs} |
@@ -307,7 +306,7 @@ public class CPHInline
 
 ### Meld Studio
 
-| Event Type                                        | Description                                     |
+| Value                                             | Description                                     |
 | ------------------------------------------------- | ----------------------------------------------- |
 | `EventType.MeldStudioConnected`                   | [No description provided]{.text-muted .text-xs} |
 | `EventType.MeldStudioDisconnected`                | [No description provided]{.text-muted .text-xs} |
@@ -324,20 +323,20 @@ public class CPHInline
 
 ### MIDI
 
-| Event Type              | Description                                     |
+| Value                   | Description                                     |
 | ----------------------- | ----------------------------------------------- |
 | `EventType.MidiMessage` | [No description provided]{.text-muted .text-xs} |
 
 ### Misc
 
-| Event Type         | Description                                     |
+| Value              | Description                                     |
 | ------------------ | ----------------------------------------------- |
 | `EventType.Custom` | [No description provided]{.text-muted .text-xs} |
 | `EventType.Test`   | [No description provided]{.text-muted .text-xs} |
 
 ### OBS Studio
 
-| Event Type                      | Description                                     |
+| Value                           | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
 | `EventType.ObsConnected`        | [No description provided]{.text-muted .text-xs} |
 | `EventType.ObsDisconnected`     | [No description provided]{.text-muted .text-xs} |
@@ -351,7 +350,7 @@ public class CPHInline
 
 ### Pally.gg
 
-| Event Type                      | Description                                     |
+| Value                           | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
 | `EventType.PallyggCampaignTip`  | [No description provided]{.text-muted .text-xs} |
 | `EventType.PallyggConnected`    | [No description provided]{.text-muted .text-xs} |
@@ -359,7 +358,7 @@ public class CPHInline
 
 ### Patreon
 
-| Event Type                       | Description                                     |
+| Value                            | Description                                     |
 | -------------------------------- | ----------------------------------------------- |
 | `EventType.PatreonFollowCreated` | [No description provided]{.text-muted .text-xs} |
 | `EventType.PatreonFollowDeleted` | [No description provided]{.text-muted .text-xs} |
@@ -369,27 +368,27 @@ public class CPHInline
 
 ### Process
 
-| Event Type                 | Description                                     |
+| Value                      | Description                                     |
 | -------------------------- | ----------------------------------------------- |
 | `EventType.ProcessStarted` | [No description provided]{.text-muted .text-xs} |
 | `EventType.ProcessStopped` | [No description provided]{.text-muted .text-xs} |
 
 ### Pulsoid
 
-| Event Type                        | Description                                     |
+| Value                             | Description                                     |
 | --------------------------------- | ----------------------------------------------- |
 | `EventType.PulsoidHeartRatePulse` | [No description provided]{.text-muted .text-xs} |
 
 ### Quote
 
-| Event Type             | Description                                     |
+| Value                  | Description                                     |
 | ---------------------- | ----------------------------------------------- |
 | `EventType.QuoteAdded` | [No description provided]{.text-muted .text-xs} |
 | `EventType.QuoteShow`  | [No description provided]{.text-muted .text-xs} |
 
 ### Raw
 
-| Event Type                     | Description                                     |
+| Value                          | Description                                     |
 | ------------------------------ | ----------------------------------------------- |
 | `EventType.RawAction`          | [No description provided]{.text-muted .text-xs} |
 | `EventType.RawActionCompleted` | [No description provided]{.text-muted .text-xs} |
@@ -397,28 +396,28 @@ public class CPHInline
 
 ### Shopify
 
-| Event Type                      | Description                                     |
+| Value                           | Description                                     |
 | ------------------------------- | ----------------------------------------------- |
 | `EventType.ShopifyOrderCreated` | [No description provided]{.text-muted .text-xs} |
 | `EventType.ShopifyOrderPaid`    | [No description provided]{.text-muted .text-xs} |
 
 ### Speaker.bot
 
-| Event Type                         | Description                                     |
+| Value                              | Description                                     |
 | ---------------------------------- | ----------------------------------------------- |
 | `EventType.SpeakerBotConnected`    | [No description provided]{.text-muted .text-xs} |
 | `EventType.SpeakerBotDisconnected` | [No description provided]{.text-muted .text-xs} |
 
 ### Speech
 
-| Event Type                        | Description                                     |
+| Value                             | Description                                     |
 | --------------------------------- | ----------------------------------------------- |
 | `EventType.SpeechToTextCommand`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.SpeechToTextDictation` | [No description provided]{.text-muted .text-xs} |
 
 ### StreamElements
 
-| Event Type                              | Description                                     |
+| Value                                   | Description                                     |
 | --------------------------------------- | ----------------------------------------------- |
 | `EventType.StreamElementsAuthenticated` | [No description provided]{.text-muted .text-xs} |
 | `EventType.StreamElementsConnected`     | [No description provided]{.text-muted .text-xs} |
@@ -428,7 +427,7 @@ public class CPHInline
 
 ### Streamer.bot
 
-| Event Type                                        | Description                                     |
+| Value                                             | Description                                     |
 | ------------------------------------------------- | ----------------------------------------------- |
 | `EventType.StreamerBotCustomWebook`               | [No description provided]{.text-muted .text-xs} |
 | `EventType.StreamerBotRemoteInstanceConnected`    | [No description provided]{.text-muted .text-xs} |
@@ -440,7 +439,7 @@ public class CPHInline
 
 ### Streamlabs
 
-| Event Type                            | Description                                     |
+| Value                                 | Description                                     |
 | ------------------------------------- | ----------------------------------------------- |
 | `EventType.StreamlabsAuthenticated`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.StreamlabsCharityDonation` | [No description provided]{.text-muted .text-xs} |
@@ -451,7 +450,7 @@ public class CPHInline
 
 ### Streamlabs Desktop
 
-| Event Type                                    | Description                                     |
+| Value                                         | Description                                     |
 | --------------------------------------------- | ----------------------------------------------- |
 | `EventType.StreamlabsDesktopConnected`        | [No description provided]{.text-muted .text-xs} |
 | `EventType.StreamlabsDesktopDisconnected`     | [No description provided]{.text-muted .text-xs} |
@@ -463,13 +462,13 @@ public class CPHInline
 
 ### System
 
-| Event Type                         | Description                                     |
+| Value                              | Description                                     |
 | ---------------------------------- | ----------------------------------------------- |
 | `EventType.SystemClipboardChanged` | [No description provided]{.text-muted .text-xs} |
 
 ### T.I.T.S.
 
-| Event Type                                      | Description                                     |
+| Value                                           | Description                                     |
 | ----------------------------------------------- | ----------------------------------------------- |
 | `EventType.ThrowingSystemConnected`             | [No description provided]{.text-muted .text-xs} |
 | `EventType.ThrowingSystemEventsConnected`       | [No description provided]{.text-muted .text-xs} |
@@ -482,25 +481,25 @@ public class CPHInline
 
 ### Timed Actions
 
-| Event Type              | Description                                     |
+| Value                   | Description                                     |
 | ----------------------- | ----------------------------------------------- |
 | `EventType.TimedAction` | [No description provided]{.text-muted .text-xs} |
 
 ### TipeeeStream
 
-| Event Type                       | Description                                     |
+| Value                            | Description                                     |
 | -------------------------------- | ----------------------------------------------- |
 | `EventType.TipeeeStreamDonation` | [No description provided]{.text-muted .text-xs} |
 
 ### Toast
 
-| Event Type                  | Description                                     |
+| Value                       | Description                                     |
 | --------------------------- | ----------------------------------------------- |
 | `EventType.ToastActivation` | [No description provided]{.text-muted .text-xs} |
 
 ### TreatStream
 
-| Event Type                           | Description                                     |
+| Value                                | Description                                     |
 | ------------------------------------ | ----------------------------------------------- |
 | `EventType.TreatStreamAuthenticated` | [No description provided]{.text-muted .text-xs} |
 | `EventType.TreatStreamConnected`     | [No description provided]{.text-muted .text-xs} |
@@ -509,7 +508,7 @@ public class CPHInline
 
 ### Trovo
 
-| Event Type                                   | Description                                     |
+| Value                                        | Description                                     |
 | -------------------------------------------- | ----------------------------------------------- |
 | `EventType.TrovoBroadcasterAuthenticated`    | [No description provided]{.text-muted .text-xs} |
 | `EventType.TrovoBroadcasterChatConnected`    | [No description provided]{.text-muted .text-xs} |
@@ -530,7 +529,7 @@ public class CPHInline
 
 ### Twitch
 
-| Event Type                                        | Description                                     |
+| Value                                             | Description                                     |
 | ------------------------------------------------- | ----------------------------------------------- |
 | `EventType.TwitchAdRun`                           | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchAnnouncement`                    | [No description provided]{.text-muted .text-xs} |
@@ -672,13 +671,13 @@ public class CPHInline
 
 ### User Global Variable
 
-| Event Type                            | Description                                     |
+| Value                                 | Description                                     |
 | ------------------------------------- | ----------------------------------------------- |
 | `EventType.UserGlobalVariableUpdated` | [No description provided]{.text-muted .text-xs} |
 
 ### VoiceMod
 
-| Event Type                            | Description                                     |
+| Value                                 | Description                                     |
 | ------------------------------------- | ----------------------------------------------- |
 | `EventType.VoiceModConnected`         | [No description provided]{.text-muted .text-xs} |
 | `EventType.VoiceModDisconnected`      | [No description provided]{.text-muted .text-xs} |
@@ -687,7 +686,7 @@ public class CPHInline
 
 ### VTube Studio
 
-| Event Type                                   | Description                                     |
+| Value                                        | Description                                     |
 | -------------------------------------------- | ----------------------------------------------- |
 | `EventType.VTubeStudioBackgroundChanged`     | [No description provided]{.text-muted .text-xs} |
 | `EventType.VTubeStudioConnected`             | [No description provided]{.text-muted .text-xs} |
@@ -703,7 +702,7 @@ public class CPHInline
 
 ### Websocket Client
 
-| Event Type                         | Description                                     |
+| Value                              | Description                                     |
 | ---------------------------------- | ----------------------------------------------- |
 | `EventType.WebsocketClientClose`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.WebsocketClientMessage` | [No description provided]{.text-muted .text-xs} |
@@ -711,7 +710,7 @@ public class CPHInline
 
 ### Websocket Custom Server
 
-| Event Type                               | Description                                     |
+| Value                                    | Description                                     |
 | ---------------------------------------- | ----------------------------------------------- |
 | `EventType.WebsocketCustomServerClose`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.WebsocketCustomServerMessage` | [No description provided]{.text-muted .text-xs} |
@@ -719,7 +718,7 @@ public class CPHInline
 
 ### YouTube
 
-| Event Type                                    | Description                                     |
+| Value                                         | Description                                     |
 | --------------------------------------------- | ----------------------------------------------- |
 | `EventType.YouTubeBetterTTVEmoteAdded`        | [No description provided]{.text-muted .text-xs} |
 | `EventType.YouTubeBetterTTVEmoteRemoved`      | [No description provided]{.text-muted .text-xs} |
