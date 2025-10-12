@@ -1,6 +1,6 @@
 ---
 title: EventSource
-description: C# class definition for EventSource
+description: C# enum definition for EventSource
 name: EventSource
 ---
 
