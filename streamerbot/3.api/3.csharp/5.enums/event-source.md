@@ -10,15 +10,10 @@ This enum represents the source of the event that triggered the action.
 
 ## Usage Example
 
-::warning
-To use the `EventSource` enum in your C# scripts, you must include the `Streamer.bot.Common.Events` namespace
-::
-
 :read-more{to=/api/csharp/methods/core/events/get-source}
 
 ```csharp
 using System;
-using Streamer.bot.Common.Events; // Add Events namespace
 
 public class CPHInline
 {
