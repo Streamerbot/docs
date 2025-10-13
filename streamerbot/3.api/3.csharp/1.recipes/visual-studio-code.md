@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Code
-description: A guide to setting up Visual Studio Code for writing C# code for Streamer.bot with linting and autocomplete.
+description: Configure Visual Studio Code for writing C# code for Streamer.bot with linting and autocomplete.
 icon: mdi:microsoft-visual-studio-code
 ogImage:
   icon: mdi:microsoft-visual-studio-code
