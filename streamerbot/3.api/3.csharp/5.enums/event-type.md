@@ -10,15 +10,10 @@ This variable is of type `EventType`{lang=cs}, which is an enumeration (enum) de
 
 ## Usage Example
 
-::warning
-To use the `EventType` enum in your C# scripts, you must include the `Streamer.bot.Common.Events` namespace
-::
-
 :read-more{to=/api/csharp/methods/core/events/get-event-type}
 
 ```csharp [Example.cs]
 using System;
-using Streamer.bot.Common.Events; // Add Events namespace
 
 public class CPHInline
 {

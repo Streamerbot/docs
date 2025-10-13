@@ -4,7 +4,6 @@ title: GetSource
 description: Fetch the value of the `eventSource` variable
 example: |
   using System;
-  using Streamer.bot.Common.Events; // Add Events namespace
 
   public class CPHInline
   {

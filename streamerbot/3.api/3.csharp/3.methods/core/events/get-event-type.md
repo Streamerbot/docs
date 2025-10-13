@@ -4,7 +4,6 @@ title: GetEventType
 description: Fetch the value of the `__source` variable
 example: |
   using System;
-  using Streamer.bot.Common.Events; // Add Events namespace
 
   public class CPHInline
   {
