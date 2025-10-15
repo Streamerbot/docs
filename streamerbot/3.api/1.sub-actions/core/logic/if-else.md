@@ -8,7 +8,8 @@ parameters:
     description: |
       The value to be tested. Performs full parsing of `%arguments%`{lang=cs}, `~persistedGlobals~`{lang=cs} and `$inlineFunctions()$`{lang=cs}
       ::warning
-      Unlike earlier version of Streamer.bot, arguments must be enclosed in `%...%` in order for their values to be tested. If using `Does Not Exist`, then just use the argument name, without the `%`.
+      Unlike earlier version of Streamer.bot, arguments **must** be enclosed in `%...%` in order for their values to be tested<br/>
+      If using `Does Not Exist`, you **must** use *only* the argument name without the `%`.
       ::
   - name: Operator
     type: Select

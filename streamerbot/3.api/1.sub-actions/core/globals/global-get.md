@@ -2,17 +2,18 @@
 title: Get Global Variable
 description: Fetch the value of a global variable and populate a local argument
 parameters:
-  - name: GlobalVariableSource
-  - name: GlobalVariablePersisted
+  - name: Source
+  - name: Persisted
   - name: Variable Name
     type: Text
     required: true
     description: |
-      Enter the name of the variable you would like to fetch
+      Enter the name of the global variable you would like to fetch
 
       ::warning
-      `Variable Name` must be entered in `camelCase` (the first letter must be lowercase)
+      This is the **name** of the global variable, which means it should not be wrapped in `%` symbols unless you specifically want to use the **value** of a local variable in the **name** of your global variable
       ::
+
   - name: Destination Variable
     type: Text
     required: true
@@ -22,6 +23,11 @@ parameters:
       ::tip
       It is recommended to use a **different name** than the global variable name
       ::
+
+      ::warning
+      This is the **name** of the destination variable, which means it should not be wrapped in `%` symbols unless you specifically want to use the **value** of a local variable in the **name** of your destination variable
+      ::
+
   - name: Default Value
     type: Text
     description: |
@@ -36,8 +42,8 @@ csharpMethods:
 ---
 
 ::tip
-You can quickly access persisted globals without this sub-action by wrapping the name with `~`<br>
-:icon{name=i-mdi-chevron-right} `~myGlobalVariable~`{lang=cs}
+You can directly access the value of **persisted** non-user globals without this sub-action by wrapping the name with `~`<br>
+:icon{name=i-mdi-chevron-right} `~myPersistedGlobalVariable~`{lang=cs}
 ::
 
 :read-more{to=/guide/variables}
