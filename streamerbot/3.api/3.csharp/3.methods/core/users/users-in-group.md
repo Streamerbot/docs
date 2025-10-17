@@ -4,7 +4,8 @@ title: UsersInGroup
 description: Fetch a list of users in a group
 version: 0.2.3
 parameters:
-  - import: UserGroupName
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     using System.Collections.Generic;//due to List usage
@@ -14,7 +15,7 @@ example: |
         {
             //Define the groupname you want to add the user to
             string groupName = "Test Group";
-            
+
             //Get List of GroupUsers
             List<GroupUser> groupUsers = CPH.UsersInGroup(groupName);
 
@@ -25,7 +26,7 @@ example: |
                 string user = userInfo.Username;
                 //platform type of current user
                 string userType = userInfo.Type;
-                
+
                 CPH.LogInfo($"Username: {user}, Platform: {userType}");
             }
             return true;

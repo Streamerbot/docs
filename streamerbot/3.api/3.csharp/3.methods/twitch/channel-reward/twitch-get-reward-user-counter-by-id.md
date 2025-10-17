@@ -4,8 +4,10 @@ title: TwitchGetRewardUserCounterById
 description: Returns reward count of the given reward for a specified Twitch user, by id
 version: 0.2.4
 parameters:
-  - import: TwitchRewardId
-  - import: UserId
+  - name: rewardId
+    import: twitch/rewards/id
+  - name: userId
+    import: core/users/id
 example: |
     using System;
     public class CPHInline

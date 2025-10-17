@@ -4,9 +4,12 @@ title: RemoveUserIdFromGroup
 description: Remove a user, by ID, from a group
 version: 0.2.3
 parameters:
-  - import: UserId
-  - import: Platform
-  - import: UserGroupName
+  - name: userId
+    import: core/users/id
+  - name: platform
+    import: core/platform
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline

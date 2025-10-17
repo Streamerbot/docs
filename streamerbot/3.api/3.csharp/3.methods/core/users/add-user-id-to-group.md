@@ -4,9 +4,12 @@ title: AddUserIdToGroup
 description: Add a user, by ID, to a group
 version: 0.2.3
 parameters:
-  - import: UserId
-  - import: Platform
-  - import: UserGroupName
+  - name: userId
+    import: core/users/id
+  - name: platform
+    import: core/platform
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline
@@ -17,7 +20,7 @@ example: |
             string groupName = "Test Group";
             //Get UserId
             CPH.TryGetArg("userId",out string userId);
-            
+
             //Get user type and define the Platform Enum
             CPH.TryGetArg("userType",out string userType);
             Enum.TryParse(userType, out Platform platform);

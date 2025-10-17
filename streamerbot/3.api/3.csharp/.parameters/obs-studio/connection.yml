@@ -1,0 +1,8 @@
+name: connection
+description: |
+  Optional index of the OBS connection, defaults to the first connection.
+
+  Zero-indexed based on the order you see in `Stream Apps > OBS Studio`
+
+  e.g. The first client in the list is `0`, the second client in the list is `1`, and so on...
+default: 0

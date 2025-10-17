@@ -4,9 +4,12 @@ title: AddUserToGroup
 description: Add a user, by username (login name), to a group
 version: 0.2.3
 parameters:
-  - import: UserName
-  - import: Platform
-  - import: UserGroupName
+  - name: userName
+    import: core/username
+  - name: platform
+    import: core/platform
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline
@@ -17,7 +20,7 @@ example: |
             string groupName = "Test Group";
             //Get UserName
             CPH.TryGetArg("userName",out string userName);
-            
+
             //Get user type and define the Platform Enum
             CPH.TryGetArg("userType",out string userType);
             Enum.TryParse(userType, out Platform platform);

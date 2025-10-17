@@ -1,11 +1,16 @@
 ---
 name: ObsSetRandomFilterState
 title: ObsSetRandomFilterState
-description: Set the state of a random OBS filter within a scene and/or source<br>State => 0 = enable, 1 = disable, 2 = toggle
+description: Modify the state of a random filter within a scene or source
 parameters:
-  - import: ObsScene
-  - import: ObsSource
-  - import: ObsFilterName
-  - import: ObsFilterState
-  - import: ObsConnection
+  - name: scene
+    import: obs-studio/scene
+  - name: source
+    import: obs-studio/source
+  - name: filterName
+    import: obs-studio/filter-name
+  - name: state
+    import: obs-studio/filter-state
+  - name: connection
+    import: obs-studio/connection
 ---

@@ -4,7 +4,8 @@ title: GroupExists
 description: Returns bool verifying existence of a group, by name
 version: 0.2.4
 parameters:
-  - import: UserGroupName
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline

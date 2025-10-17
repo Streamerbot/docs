@@ -3,8 +3,10 @@ name: UnsetGlobalVar
 title: UnsetGlobalVar
 description: Remove a global variable by name
 parameters:
-  - import: GlobalVarName
-  - import: GlobalPersisted
+  - name: varName
+    import: core/globals/name
+  - name: persisted
+    import: core/globals/persisted
 example: |
     using System;
     public class CPHInline

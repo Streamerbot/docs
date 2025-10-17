@@ -4,7 +4,8 @@ title: ClearUsersFromGroup
 description: Remove all users from a group
 version: 0.2.3
 parameters:
-  - import: UserGroupName
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline

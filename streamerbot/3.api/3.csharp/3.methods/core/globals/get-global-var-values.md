@@ -3,7 +3,8 @@ name: GetGlobalVarValues
 title: GetGlobalVarValues
 description: Fetch a list of all global variable values
 parameters:
-  - import: GlobalPersisted
+  - name: persisted
+    import: core/globals/persisted
 example: |
     using System;
     using System.Collections.Generic;//due to List usage
@@ -13,7 +14,7 @@ example: |
       {
         //Get list of global variable values
         List<GlobalVariableValue> globalVarList = CPH.GetGlobalVarValues();
-        
+
         //Example writing variable names into logs
         foreach(GlobalVariableValue globalVar in globalVarList)
         {
@@ -21,7 +22,7 @@ example: |
           string varName = globalVar.VariableName;
           //Get last write DateTime of current globalVar
           DateTime lastWrite = globalVar.LastWrite;
-          
+
           CPH.LogInfo($"GlobalVarName : {varName}, LastWrite: {lastWrite}");
         }
         return true;

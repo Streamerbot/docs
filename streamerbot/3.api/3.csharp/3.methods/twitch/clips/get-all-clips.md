@@ -3,7 +3,8 @@ name: GetAllClips
 title: GetAllClips
 description: Fetch all clips for the connected Twitch Broadcaster. The list is in descending order by view count.
 parameters:
-  - import: TwitchClipIsFeatured
+  - name: isFeatured
+    import: twitch/clips/is-featured
 example: |
     using System;
     using System.Collections.Generic;//Needed for List
@@ -14,7 +15,7 @@ example: |
         {
             //Get List of featured clips
             List<ClipData> clipList = CPH.GetAllClips(true);
-            
+
             //Go through clips and write info to logs
             foreach(ClipData clip in clipList)
             {
@@ -26,7 +27,7 @@ example: |
                 string title = clip.Title;
                 //Get view count of current clip
                 int viewCount = clip.ViewCount;
-        
+
                 CPH.LogInfo($"ViewCount:{viewCount},Title:{title}, Id:{id}, Url:{url}");
             }
             return true;

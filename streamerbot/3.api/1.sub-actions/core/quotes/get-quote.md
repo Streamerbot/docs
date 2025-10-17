@@ -7,9 +7,9 @@ parameters:
     required: true
     default: Random
     options:
-      - name: Random
+      - value: Random
         description: Fetch a random quote from your stored quotes
-      - name: Specific
+      - value: Specific
         description: Fetch a specific quote by its ID
   - name: Quote Id
     type: Number
