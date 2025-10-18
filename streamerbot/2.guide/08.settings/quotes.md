@@ -3,6 +3,11 @@ title: Quotes
 description: Streamer.bot has a built in quote system. It allows to add, display and delete quotes. Adding a quote automatically assigns an ID and saves a timestamp, the quoting user, the platform as well as the current category (like "Just Chatting").
 ---
 
+::warning{to=examples/quotes-commands}
+This page documents the old quote system prior to Streamer.bot 1.0.0<br/>
+:icon{name=i-mdi-navigation} See `Quotes Commands for v1.0.0+` for guidance on using the new quote sub-actions
+::
+
 ## Setup
 In order to use the built in quote system, navigate to `Settings -> Quotes` and check `Enabled`.
 
