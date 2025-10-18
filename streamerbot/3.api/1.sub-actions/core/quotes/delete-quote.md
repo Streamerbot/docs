@@ -23,7 +23,7 @@ csharpMethods:
   - DeleteQuote
 ---
 
-![Get Quote Sub-Action](assets/get-quote.png)
+![Get Quote Sub-Action](assets/delete-quote.png)
 
 ::tip
 Deleting a quote does not change the Quote ID of following quotes<br/>

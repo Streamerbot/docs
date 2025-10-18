@@ -33,7 +33,7 @@ variables:
     value: twitch
   - name: quoteGame
     type: string
-    description: The category from when the quote was added
+    description: The category set on the channel when the quote was added
     value: Beat Saber
   - name: quote
     type: string
