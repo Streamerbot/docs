@@ -16,10 +16,14 @@ parameters:
     required: false
     description: The specific quote ID to fetch, only used if `Type` is set to `Specific`
 variables:
+  - name: quoteTimestamp
+    type: string
+    description: The date and time that the quote was made
+    value: 1/29/2022 12:00:00 AM
   - name: quoteTime
     type: string
-    description: The time that the quote was made
-    value: 2024-01-01T12:00:00Z
+    description: The date that the quote was made
+    value: 10/17/2025
   - name: quoteId
     type: string
     description: The numeric id of the quote
@@ -27,7 +31,7 @@ variables:
   - name: quoteUserId
     type: string
     description: The user id from the account that made the quote
-    value: 'streamerbot'
+    value: '12345678'
   - name: quoteUser
     type: string
     description: The user's display name from the account that made the quote
@@ -36,10 +40,6 @@ variables:
     type: string
     description: The platform from the account that made the quote
     value: twitch
-  - name: quoteGameId
-    type: string
-    description: The game id from the quote
-    value: '123942'
   - name: quoteGame
     type: string
     description: The game name from the quote
@@ -48,4 +48,10 @@ variables:
     type: string
     description: The quote itself
     value: This is a quote!
+csharpMethods:
+  - GetQuote
 ---
+
+![Get Quote Sub-Action](assets/get-quote.png)
+
+:read-more{to=examples/quotes-commands}
