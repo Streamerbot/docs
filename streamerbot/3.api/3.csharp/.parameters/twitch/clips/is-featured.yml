@@ -1,4 +1,3 @@
----
 name: isFeatured
 type: Boolean?
 default: true
@@ -10,4 +9,3 @@ description: |
   If `isFeatured`{lang=cs} is set to `true`{lang=cs}, then only clips that have `is_featured`{lang=json} set will be retrieved.
 
   If `isFeatured`{lang=cs} is set to `false`{lang=cs}, then only clips that do not have `is_featured`{lang=json} set will be retrieved.
----

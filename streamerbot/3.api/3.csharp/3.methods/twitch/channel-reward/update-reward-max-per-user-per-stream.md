@@ -4,7 +4,8 @@ title: UpdateRewardMaxPerUserPerStream
 description: Updates the total maximum amount of redemptions per stream, per user, for the specified reward
 version: 0.2.4
 parameters:
-  - import: TwitchRewardId
+  - name: rewardId
+    import: twitch/rewards/id
   - name: redeems
     type: number
     description: Amount of maximum redemptions per stream

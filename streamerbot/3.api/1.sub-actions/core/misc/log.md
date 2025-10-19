@@ -8,13 +8,13 @@ parameters:
     required: true
     default: Information
     options:
-      - name: Information
+      - value: Information
         description: General information that will always be shown in the log file
-      - name: Warning
+      - value: Warning
         description: Information when you want to warn about something
-      - name: Debug
+      - value: Debug
         description: Information specifically for debugging purposes
-      - name: Verbose
+      - value: Verbose
         description: Verbose information that will only be logged if the user has their log level on verbose
   - name: Message
     description: The message to log

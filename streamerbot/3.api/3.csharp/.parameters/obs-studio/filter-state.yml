@@ -1,0 +1,12 @@
+name: state
+description: |
+  The new filter state
+value: 2
+options:
+  - value: 0
+    description: Visible
+  - value: 1
+    description: Hidden
+  - value: 2
+    description: Toggle existing state
+

@@ -4,9 +4,12 @@ title: UserIdInGroup
 description: Check if a user, by ID, is a member of a group
 version: 0.2.3
 parameters:
-  - import: UserId
-  - import: Platform
-  - import: UserGroupName
+  - name: userId
+    import: core/users/id
+  - name: platform
+    import: core/platform
+  - name: groupName
+    import: core/users/group-name
 example: |
     using System;
     public class CPHInline

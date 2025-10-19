@@ -6,7 +6,8 @@ parameters:
   - name: data
     description: The data to send
     default: '"Hello, world!"'
-  - import: WebsocketClientConnection
+  - name: connection
+    import: core/websocket/custom-clients/connection
 example: |
     using System;
     public class CPHInline
@@ -16,7 +17,7 @@ example: |
             //Send "Hello, world!" over the custom Websocket Client with index 0
             //Index is from top to bottom of the clients list, starting at 0
             CPH.WebsocketSend("Hello, world!", 0);
-            
+
             return true;
         }
     }

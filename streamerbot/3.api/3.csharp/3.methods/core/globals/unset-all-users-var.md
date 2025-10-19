@@ -4,8 +4,10 @@ title: UnsetAllUsersVar
 description: Unset a user variable for **all** users
 version: 0.2.1
 parameters:
-  - import: GlobalVarName
-  - import: GlobalPersisted
+  - name: varName
+    import: core/globals/name
+  - name: persisted
+    import: core/globals/persisted
 example: |
     using System;
     public class CPHInline

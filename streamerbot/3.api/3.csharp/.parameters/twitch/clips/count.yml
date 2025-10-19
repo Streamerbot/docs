@@ -1,4 +1,3 @@
----
 name: count
 type: int
 description: |
@@ -7,6 +6,4 @@ description: |
   ::warning
   A maximum of `1,000` clips can be returned
   ::
-default: 10
----
-
+value: 10

@@ -1,11 +1,16 @@
 ---
 name: ObsSetFilterState
 title: ObsSetFilterState
-description: Set the state of an OBS filter.<br>State => 0 = enable, 1 = disable, 2 = toggle
+description: Modify the visibility state of a filter
 parameters:
-  - import: ObsScene
-  - import: ObsSource
-  - import: ObsFilterName
-  - import: ObsFilterState
-  - import: ObsConnection
+  - name: scene
+    import: obs-studio/scene
+  - name: source
+    import: obs-studio/source
+  - name: filterName
+    import: obs-studio/filter-name
+  - name: state
+    import: obs-studio/filter-state
+  - name: connection
+    import: obs-studio/connection
 ---

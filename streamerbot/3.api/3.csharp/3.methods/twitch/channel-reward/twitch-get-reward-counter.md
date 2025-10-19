@@ -3,7 +3,8 @@ name: TwitchGetRewardCounter
 title: TwitchGetRewardCounter
 description: Get the counter of a Twitch reward, by id
 parameters:
-  - import: TwitchRewardId
+  - name: rewardId
+    import: twitch/rewards/id
 example: |
     using System;
     public class CPHInline

@@ -3,7 +3,8 @@ name: TwitchGetRewards
 title: TwitchGetRewards
 description: Returns a list of Twitch Reward
 parameters:
-  - import: TwitchRewardId
+  - name: rewardId
+    import: twitch/rewards/id
 example: |
     using System;
     using System.Collections.Generic; //needed due to List usage
@@ -13,7 +14,7 @@ example: |
         {
             //Get list of rewards
             List<TwitchReward> rewardList = CPH.TwitchGetRewards();
-            
+
             //Example to go through list and write them to logfile
             foreach(TwitchReward reward in rewardList)
             {

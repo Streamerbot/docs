@@ -9,7 +9,8 @@ parameters:
 
       JSON must be stringified.
     default: '"Hello, world!"'
-  - import: WebsocketCustomServerConnection
+  - name: connection
+    import: core/websocket/custom-servers/connection
 example: |
     using System;
     public class CPHInline
@@ -20,11 +21,11 @@ example: |
             string data = "Kachow";
             //Define session Id
             string sessionId = "JdHd4aVd";
-            
+
             //Send data "Kachow" to specific session via specific websocket server
             //Index is from top to bottom of the clients list, starting at 0
             CPH.WebsocketCustomServerBroadcast(data, sessionId, 0);
-            
+
             return true;
         }
     }

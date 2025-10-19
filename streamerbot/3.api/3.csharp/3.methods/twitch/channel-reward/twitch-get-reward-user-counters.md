@@ -3,7 +3,8 @@ name: TwitchGetRewardUserCounters
 title: TwitchGetRewardUserCounters
 description: Returns a list of Twitch Reward Counters
 parameters:
-  - import: TwitchRewardId
+  - name: rewardId
+    import: twitch/rewards/id
   - name: persisted
     type: boolean
     default: true

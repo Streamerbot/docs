@@ -3,7 +3,10 @@ name: GetTwitchUserVar
 title: GetTwitchUserVar
 description: Get the value of a user global variable for a specific Twitch user, by username
 parameters:
-  - import: UserName
-  - import: GlobalVarName
-  - import: GlobalPersisted
+  - name: userName
+    import: core/username
+  - name: varName
+    import: core/globals/name
+  - name: persisted
+    import: core/globals/persisted
 ---

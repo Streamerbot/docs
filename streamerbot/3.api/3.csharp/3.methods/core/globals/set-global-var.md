@@ -3,8 +3,10 @@ name: SetGlobalVar
 title: SetGlobalVar
 description: Set the value for a global variable
 parameters:
-  - import: GlobalVarName
-  - import: GlobalPersisted
+  - name: varName
+    import: core/globals/name
+  - name: persisted
+    import: core/globals/persisted
 example: |
     using System;
     public class CPHInline

@@ -1,5 +1,3 @@
----
 name: userId
 description: The unique ID for this user
-default: '"123456789"'
----
+value: '"123456789"'
