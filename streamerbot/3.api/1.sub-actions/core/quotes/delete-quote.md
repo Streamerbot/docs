@@ -23,8 +23,6 @@ csharpMethods:
   - DeleteQuote
 ---
 
-![Get Quote Sub-Action](assets/delete-quote.png)
-
 ::tip
 Deleting a quote does not change the Quote ID of following quotes<br/>
 You can Re-Index quotes manually under `Services > Quotes` by right-clicking and choosing `Re-index` from the context menu.  **This operation can not be undone**

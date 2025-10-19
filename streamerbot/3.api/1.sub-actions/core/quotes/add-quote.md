@@ -3,7 +3,7 @@ title: Add Quote
 description: Add a quote which can be retrieved by the `Get Quote` Sub-Action
 parameters:
   - name: Variable
-    type: text
+    type: Text
     required: true
     description: The text of the quote to add.
 variables:
@@ -45,8 +45,6 @@ csharpMethods:
   - AddQuoteForKick
   - AddQuoteForTrovo
 ---
-
-![Add Quote Sub-Action](assets/add-quote.png)
 
 ::tip
 This Sub-Action will set the quote user to the user who called the action<br/>
