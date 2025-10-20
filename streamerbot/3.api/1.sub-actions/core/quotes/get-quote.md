@@ -52,4 +52,4 @@ csharpMethods:
   - GetQuote
 ---
 
-:read-more{to=examples/quotes-commands}
+:read-more{to=/examples/quotes-commands}

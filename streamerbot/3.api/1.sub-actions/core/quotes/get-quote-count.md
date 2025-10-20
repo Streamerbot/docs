@@ -14,4 +14,4 @@ csharpMethods:
 The Count returned by this Sub-Action is not necessarily the same as the last Quote ID, on account of deleted quotes.
 ::
 
-:read-more{to=examples/quotes-commands}
+:read-more{to=/examples/quotes-commands}
