@@ -44,7 +44,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
    Running that code will send the request, but we still don't have a way to fetch the response information. By taking a look into the docs for the C# methods, we can see that the request also returns a **string**. So we simply declare a string and have the request as its value.
 
-   :read-more{to="/api/csharp/obs-studio/raw#ObsSendRaw"}
+   :read-more{to="/api/csharp/methods/obs-studio/raw/obs-send-raw"}
 
    ```cs
    using System;

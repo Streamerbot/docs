@@ -33,10 +33,10 @@ variables:
     value: Twitch/Chat
   - name: __source
     type: EventType
-    description: The event which triggered the action. <br>_This will not always exist and requires C# to access, [read more](/api/csharp/core/events)_
+    description: The event which triggered the action. <br>_This will not always exist and requires C# to access, [read more](/api/csharp/enums/event-type)_
     value: TwitchChatMessage
   - name: eventSource
     type: EventSource
-    description: The service of the event which triggered the action. <br>_This will not always exist and requires C# to access, [read more](/api/csharp/core/events)_
+    description: The service of the event which triggered the action. <br>_This will not always exist and requires C# to access, [read more](/api/csharp/enums/event-source)_
     value: twitch
 ---

@@ -13,7 +13,7 @@ parameters:
     type: string
     required: true
     description: |
-      Define the name of the event for later use in [TriggerCodeEvent](/api/csharp/core/triggers#TriggerCodeEvent) method
+      Define the name of the event for later use in [TriggerCodeEvent](/api/csharp/methods/core/triggers/trigger-code-event) method
   - name: categories
     type: String[]
     required: true
