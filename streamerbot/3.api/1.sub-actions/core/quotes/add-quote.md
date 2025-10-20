@@ -51,4 +51,4 @@ This Sub-Action will set the quote user to the user who called the action<br/>
 Setting the quote user to a different user than the caller is only supported via the C# Method
 ::
 
-:read-more{to=examples/quotes-commands}
+:read-more{to=/examples/quotes-commands}
