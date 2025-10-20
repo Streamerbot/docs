@@ -9,7 +9,7 @@ logo: https://streamer.bot/img/integrations/shopify.svg
 
 Receive [Shopify](https://shopify.com){target=_blank} event triggers in Streamer.bot via webhooks
 
-::callout{color=amber icon=i-mdi-alert}
+::warning
 This integration requires the [Streamer.bot Website Integration](/guide/integrations/streamerbot)
 ::
 

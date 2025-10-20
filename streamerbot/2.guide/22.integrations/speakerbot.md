@@ -9,7 +9,7 @@ logo: /img/icons/speakerbot.png
 Give your bot a voice with [Speaker.bot](https://speaker.bot){target=_blank} TTS
 
 ## Configuration
-::callout{icon=i-mdi-navigation}
+::navigate
 Navigate to **Integrations > Speaker.bot**
 ::
 

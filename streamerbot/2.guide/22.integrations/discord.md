@@ -9,7 +9,7 @@ logo: https://streamer.bot/img/integrations/discord.png
 
 Webhooks allow you to send messages to your [Discord](https://discord.gg) servers with ease.
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 You must have the proper permissions to create webhooks on a given server/channel
 ::
 

@@ -17,7 +17,7 @@ In this menu nevagate to the `Web Services` tab, and install the Websockets plug
 
 ---
 
-::callout{icon=i-mdi-navigation}
+::navigate
 Navigate to **Stream Apps > PolyPop**
 ::
 

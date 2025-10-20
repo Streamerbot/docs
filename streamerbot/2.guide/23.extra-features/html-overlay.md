@@ -13,7 +13,7 @@ All you need to do is create a Channel Reward with the name ***SPLAT*** then rel
 
 It also comes preconfigured to rain emotes down over the content on screen.
 
-::callout{icon=i-mdi-warning color=amber}
+::warning
 This feature requires the **WebSocket Server** to be enabled in your Streamer.bot application
 ::
 
@@ -32,7 +32,7 @@ Download the HTML Overlay application from and unzip the contents to your desire
   ::
 ::
 
-::callout{icon=i-mdi-warning color=amber}
+::warning
 **Do not extract directly into your Streamer.bot folder.**<br>
 Any outside location or a subdirectory within your Streamer.bot folder is fine.
 ::
@@ -43,19 +43,19 @@ Open the extracted `HTML Overlay` directory and open `HTMLWindowsOverlay.exe` to
 
 You will see a quick dark flash and then your desktop will return to normal.
 
-::callout{icon=i-mdi-check color=green}
+::success
 The HTML Overlay application is now running!
 ::
 
 You should also now see an accompanying icon your system tray.
 
-::tip{color=amber}
+::tip
 You can close HTML Overlay by :shortcut{value=Double-Clicking} the tray icon at any time.
 ::
 
 ### Configuration
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Your **Streamer.bot WebSocket Server** must be **enabled** for the application to interact with your bot
 ::
 
@@ -71,7 +71,7 @@ The HTML Overlay `zip` above is preloaded with 3 overloay modules:
 - Show Image
 - Emote Rain
 
-::tip{color=amber}
+::tip
 You can customize the options for each module by modifying each respective `.js` file
 ::
 
@@ -122,13 +122,13 @@ const CONFIG = {
 ```
 
 ## Custom Overlays
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Custom overlays are an **advanced** use case and require **JavaScript** expertise
 ::
 
 To get started, create a new `js` file inside the `Content` directory.
 
-::tip{color=amber}
+::tip
 The configured [Streamer.bot Client](https://streamerbot.github.io/client) instance is available at `window.client` for interacting with Streamer.bot via WebSocket and subscribing to events
 ::
 
@@ -159,6 +159,6 @@ Import your new module at the bottom of `Content/index.html`, after any existing
 <script type="module" src="my-module.js"></script>
 ```
 
-::tip{color=amber}
+::tip
 Take a look at the existing modules in the `Content` directory for examples
 ::

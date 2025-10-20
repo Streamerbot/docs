@@ -36,6 +36,6 @@ variables:
     value: Hello!
 ---
 
-::callout{icon="i-mdi-lightbulb" color=primary}
+::tip
 Change the `#` in the variables above to a number starting from 0. So for example: `input0`, `input1`, etc.
 ::

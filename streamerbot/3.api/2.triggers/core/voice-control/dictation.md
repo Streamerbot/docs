@@ -36,7 +36,7 @@ variables:
 
     - Select `Any` to trigger on **any command**
 
-    ::tip{color=amber}
+    ::tip
     You can quickly register a voice command by clicking the `Create Voice Command` button!
     ::
   ::

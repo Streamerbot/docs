@@ -12,7 +12,7 @@ The amount of support, and shear number of folks using (and learning!) Streamer.
 
 I never thought it would gain this much traction, and so far, there are no signs of it slowing down.
 
-::callout{color=pink icon=i-mdi-heart}
+::callout{icon=i-mdi-heart}
 Streamer.bot will always and forever be dedicated to the loving memory of my mother.<br>
 May you rest in peace, you will be missed. 1954-2021
 ::

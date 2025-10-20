@@ -4,13 +4,13 @@ description: Install Streamer.bot on MacOS
 navigation: false
 icon: i-mdi-apple
 ---
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Whisky is now in [maintenance mode](https://docs.getwhisky.app/maintenance-notice.html) and no longer actively maintained. This guide may or may not work with 0.2.8 and below and will more than likely be deprecated with future releases of Streamer.bot.
 ::
 
 Streamer.bot can be installed on MacOS using [Whisky](https://getwhisky.app)
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Streamer.bot on MacOS is **experimental** and not officially supported.
 Whisky requires MacOS 14.0 or later.
 ::
@@ -96,7 +96,7 @@ All actions and commands are listed in the order they have been added.
 ### Viewer Context Menu
 The :shortcut{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
 
-::callout{icon=i-mdi-check color=green}
+::success
 This issue has been resolved in Wine 7 and later
 ::
 

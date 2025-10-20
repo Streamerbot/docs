@@ -98,7 +98,7 @@ Utilize IFTTT to trigger Streamer.bot actions from 3rd party services
 
 ## IFTTT Actions
 
-::callout{icon=i-mdi-bookmark color=green to=https://ifttt.com/streamerbot target=_blank rel=noopener}
+::read-more{to=https://ifttt.com/streamerbot target=_blank rel=noopener}
 Explore the [Streamer.bot Service](https://ifttt.com/streamerbot) on IFTTT
 ::
 

@@ -28,6 +28,6 @@ Name | Description
 `variableName.htmlalpha` | The html color code with alpha value
 `variableName.obs` | The color as an OBS ABGR value
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Replace `variableName` with the variable name you configured.
 ::

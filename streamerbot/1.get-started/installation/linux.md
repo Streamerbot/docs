@@ -5,7 +5,7 @@ navigation: false
 icon: i-mdi-linux
 ---
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 Streamer.bot on Linux is **experimental** and not officially supported.
 ::
 
@@ -50,7 +50,7 @@ View [Streamerbot/sb-linux-installer](https://github.com/Streamerbot/sb-linux-in
   ---
     1. Install `wine`
 
-    ::callout{icon=i-mdi-bookmark to="https://wiki.winehq.org/Ubuntu"}
+    ::read-more{to="https://wiki.winehq.org/Ubuntu"}
     Follow the instructions [here](https://wiki.winehq.org/Ubuntu) to install Wine on your version of Ubuntu
     ::
 
@@ -140,11 +140,11 @@ All actions and commands are listed in the order they have been added.
 ### Viewer Context Menu
 The :shortcut{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
 
-::callout{icon=i-mdi-check color=green}
+::success
 This issue has been resolved in Wine 7 and later
 ::
 
-::tip{color=amber}
+::tip
   The speed with which the context menu appears can be improved by redirecting `stdout` to `/dev/null`
 
   ```bash

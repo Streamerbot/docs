@@ -12,7 +12,7 @@ The [StreamElements](https://streamelements.com/){target=_blank} integration all
 ## Configuration
 
 1. Connect to StreamElements
-    ::callout{icon=i-mdi-navigation}
+    ::navigate
     Navigate to **Integrations > StreamElements** in Streamer.bot
     ::
 

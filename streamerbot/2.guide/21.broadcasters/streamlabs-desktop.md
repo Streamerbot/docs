@@ -4,7 +4,7 @@ description: Configure Streamlabs Desktop as a broadcaster in Streamer.bot
 logo: https://streamer.bot/img/integrations/streamlabs.png
 ---
 
-::callout{icon=i-mdi-navigation}
+::navigate
 Navigate to **Stream Apps > Streamlabs Desktop** in Streamer.bot
 ::
 

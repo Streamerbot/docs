@@ -32,7 +32,7 @@ The following actions and commands will be imported into your Streamer.bot insta
 
     You should then see the **Name** field populated with `Quick Start - Chatbot Example`, and numerous actions and commands to import should now show in the list.
 
-    ::callout{color=amber icon=i-mdi-alert}
+    ::warning
     For security reasons, all commands are disabled by default. **You must manually enable them before they will work.**
     ::
 

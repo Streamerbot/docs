@@ -51,7 +51,7 @@ variables:
 
     - Select `Any` to trigger on **any watcher**
 
-    ::tip{color=amber}
+    ::tip
     You can quickly register a new watcher by clicking the `Create File Watcher` button!
     ::
   ::

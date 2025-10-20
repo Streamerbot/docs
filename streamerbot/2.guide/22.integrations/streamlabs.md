@@ -18,7 +18,7 @@ The [Streamlabs](https://streamlabs.com){target=_blank} integration allows you t
     1. Next to `Your Socket API Token`, click `Copy` to obtain your API token
 
 2. Configure Streamer.bot
-    ::callout{icon=i-mdi-navigation}
+    ::navigate
     Navigate to **Integrations > Streamlabs** in Streamer.bot
     ::
 

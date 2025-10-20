@@ -4,11 +4,11 @@ description: Configure Streamer.bot to interact with your OBS Studio instances
 logo: https://streamer.bot/img/integrations/obs.svg
 ---
 
-::callout{icon=i-mdi-warning color=amber to=/get-started/setup#obs-studio}
+::warning{to=/get-started/setup#obs-studio}
 You must enable the **OBS WebSocket** connection. Check out the [Get Started Guide](/get-started/setup#obs-studio) for details.
 ::
 
-::callout{icon=i-mdi-navigation}
+::navigate
 Navigate to **Stream Apps > OBS** in Streamer.bot
 ::
 
@@ -29,7 +29,7 @@ Configuration options are outlined below:
   ::field{name=Version type=Select required}
     Select the version of `OBS WebSocket` to use for this connection.
 
-    ::callout{icon=i-mdi-alert color=amber}
+    ::warning
     As of `OBS Studio v28.0.0`, `OBS WebSocket v5` is included by default.
     - To continue using `OBS WebSocket v4.9+`, you must install the `obs-websocket-4.9.1-compat` plugin
     - **It is recommended to update to if you are currently using an older version.**
@@ -89,14 +89,14 @@ Quickly toggle the `Reconnect on Disconnect` configuration option for the select
 #### `Default`
 Set this connection as the default when importing actions
 
-::tip{color=amber}
+::tip
 If no default is set, imported actions will default to the first connection in the list
 ::
 
 #### `Force`
 Temporarily override **all** OBS Studio connections to use the selected connection.
 
-::callout{icon=i-mdi-alert color=amber}
+::warning
 This setting does **not** persist when you restart Streamer.bot
 ::
 

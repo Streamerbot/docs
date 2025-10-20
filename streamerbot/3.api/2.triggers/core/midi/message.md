@@ -65,7 +65,7 @@ variables:
     value: 0.6299215984252
 ---
 
-::callout{icon=i-mdi-bookmark to=/guide/midi}
+::read-more{to=/guide/midi}
 Check out the [MIDI Configuration Guide](/guide/midi) for details on configuring your MIDI devices
 ::
 
@@ -79,7 +79,7 @@ Check out the [MIDI Configuration Guide](/guide/midi) for details on configuring
     Select a configured MIDI input event
     - Select `Any` to trigger on **any event**
 
-    ::tip{color=amber}
+    ::tip
     You can quickly register new [MIDI event listeners](/guide/midi#configuration-1) by clicking the `Add New Event` button!
     ::
   ::

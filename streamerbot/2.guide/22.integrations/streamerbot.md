@@ -12,7 +12,7 @@ Enable additional Streamer.bot features by connecting your bot to the Streamer.b
 ## Configuration
 
 1. Connect to your Streamer.bot Website Account
-    ::callout{icon=i-mdi-navigation}
+    ::navigate
     Navigate to **Integrations > Streamer.bot Website** in the Streamer.bot application
     ::
 
