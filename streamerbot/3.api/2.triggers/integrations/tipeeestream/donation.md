@@ -4,6 +4,7 @@ description: Trigger for a TipeeeStream Donation
 version: 0.1.8
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: tipeeStreamId
     type: string

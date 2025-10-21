@@ -4,6 +4,7 @@ description: Trigger for when a tip has been received
 version: 0.2.4
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: tipId
     type: string

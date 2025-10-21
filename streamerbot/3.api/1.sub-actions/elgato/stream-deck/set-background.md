@@ -2,7 +2,8 @@
 title: Set Background
 description: Modify the background image of a Stream Deck key or dial
 parameters:
-  - name: ElgatoStreamDeckButtonId
+  - name: Button ID
+    import: elgato/stream-deck-button-id
   - name: Image
     type: Text
     description: |
@@ -27,8 +28,12 @@ parameters:
     type: Text
     description: |
       Set the background color of the given button.
-      - When used in addition to the image field, the image will be placed on top of the selected color.
-  - name: ElgatoStreamDeckButtonState
+
+      ::note
+      When color is configured in addition to the image field, the image will be placed on top of the selected background color.
+      ::
+  - name: State
+    import: elgato/stream-deck-button-state
 csharpMethods:
   - StreamDeckSetBackgroundColor
   - StreamDeckSetBackgroundUrl

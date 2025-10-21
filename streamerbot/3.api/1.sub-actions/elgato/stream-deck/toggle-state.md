@@ -2,7 +2,8 @@
 title: Toggle State
 description: Toggle the current state of a Stream Deck key or dial
 parameters:
-  - name: ElgatoStreamDeckButtonId
+  - name: Button ID
+    import: elgato/stream-deck-button-id
 csharpMethods:
   - StreamDeckToggleState
 ---

@@ -5,6 +5,7 @@ version: 0.0.33
 twitchService: Chat Client
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: viewers
     type: number

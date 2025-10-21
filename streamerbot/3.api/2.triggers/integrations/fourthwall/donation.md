@@ -5,6 +5,7 @@ description: Trigger for a FourthWall Donation
 version: 0.2.3
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: fw.createdAt
     type: DateTime

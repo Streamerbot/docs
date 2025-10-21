@@ -3,7 +3,8 @@ title: OBS Connected
 description: Trigger for when OBS is Connected
 version: 0.2.0
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
 variables:
   - name: obs.id
     type: string

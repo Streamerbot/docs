@@ -5,6 +5,7 @@ version: 0.2.0
 twitchService: EventSub
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: viewerCount
     type: number

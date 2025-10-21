@@ -3,6 +3,7 @@ title: Raid
 description: Trigger for a Trovo raid
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: raid.sentAt
     type: DateTime

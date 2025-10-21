@@ -2,19 +2,12 @@
 title: Rotate Source
 description: Rotate a source
 parameters:
-  - name: ObsConnection
-  - name: ObsScene
-    type: Select
-    required: true
-    description: |
-      Select a Scene from the drop-down
-      - Can also manually type the Scene name into the box
-  - name: ObsSource
-    type: Select
-    required: true
-    description: |
-      Select a Source from the drop-down
-      - Can also manually type the Source name into the box
+  - name: Connection
+    import: obs-studio/connection
+  - name: Scene
+    import: obs-studio/scene
+  - name: Source
+    import: obs-studio/source
   - name: Alignment
     type: Select
     required: true
@@ -33,5 +26,4 @@ parameters:
     description: |
       This option will make the rotation relative to its current transform rather than overwriting
 variables: []
-csharpMethods: []
 ---

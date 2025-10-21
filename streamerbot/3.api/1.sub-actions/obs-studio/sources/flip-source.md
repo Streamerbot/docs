@@ -2,28 +2,24 @@
 title: Flip Source
 description: Flip a source horizontally, vertically or both
 parameters:
-  - name: ObsConnection
-  - name: ObsScene
-    type: Select
-    required: true
-    description: |
-      Select a Scene from the drop-down
-      - Can also manually type the Scene name into the box
-  - name: ObsSource
-    type: Select
-    required: true
-    description: |
-      Select a Source from the drop-down
-      - Can also manually type the Source name into the box
+  - name: Connection
+    import: obs-studio/connection
+  - name: Scene
+    import: obs-studio/scene
+  - name: Source
+    import: obs-studio/source
   - name: Mode
     type: Select
     required: true
-    description: |
-      Select the direction to flip the source
-
-      - `Horizontal`: Flip the source horizontally
-      - `Vertical`: Flip the source vertically
-      - `Both`: Flip the source horizontally and vertically
+    description: Select the direction to flip the source
+    default: Horizontal
+    options:
+      - value: Horizontal
+        description: Flip the source horizontally
+      - value: Vertical
+        description: Flip the source vertically
+      - value: Both
+        description: Flip the source both horizontally and vertically
 variables: []
 csharpMethods: []
 ---

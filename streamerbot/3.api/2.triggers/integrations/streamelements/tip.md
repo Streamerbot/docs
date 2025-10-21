@@ -4,6 +4,7 @@ description: Trigger for a StreamElements Tip
 version: 0.2.1
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: tipUsername
     type: string

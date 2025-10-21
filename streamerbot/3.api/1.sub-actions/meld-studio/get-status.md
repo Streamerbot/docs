@@ -3,7 +3,8 @@ title: Get Status
 description: Get your Meld Studio output status
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
+  - name: Connection
+    import: meld-studio/connection
 variables:
   - name: meldStudio.isConnected
     type: boolean

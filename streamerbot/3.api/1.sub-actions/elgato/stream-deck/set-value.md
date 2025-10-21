@@ -2,7 +2,8 @@
 title: Set Value
 description: Modify the value of a Status Indicator key or dial
 parameters:
-  - name: ElgatoStreamDeckButtonId
+  - name: Button ID
+    import: elgato/stream-deck-button-id
   - name: Value
     type: Number | Text
     description: |
@@ -10,12 +11,19 @@ parameters:
 
       Supports text or numeric values, depending on your indicator configuration
 
-      #### Special Values
-      - **Reset Sparkline:** You can reset a `Sparkline` chart by sending an empty value
-      - **Increment:** You can increment a numeric value by passing `+=[value]`, e.g. `+=1`
-      - **Decrement:** You can decrement a numeric value by passing `-=[value]`, e.g. `-=1`
-      - **Multiply:** You can multiply a numeric value by passing `*=[value]`, e.g. `*=1`
-      - **Divide:** You can divide a numeric value by passing `/=[value]`, e.g. `/=1`
+      <br>
+
+      **Special Values**
+
+      You can also use the following special formats to modify existing numeric values:
+
+      | Operation | Format | Example |
+      | --- | --- | --- |
+      | Reset Sparkline | Empty value | ` ` |
+      | Increment | `+=[value]` | `+=1` |
+      | Decrement | `-=[value]` | `-=1` |
+      | Multiply | `*=[value]` | `*=1` |
+      | Divide | `/=[value]` | `/=1` |
 csharpMethods:
   - StreamDeckSetValue
 ---

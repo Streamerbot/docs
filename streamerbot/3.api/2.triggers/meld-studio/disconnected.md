@@ -3,7 +3,8 @@ title: Disconnected
 description: Trigger for when Meld is Disconnected
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
+  - name: Connection
+    import: meld-studio/connection
 variables:
   - name: meldStudio.id
     type: string

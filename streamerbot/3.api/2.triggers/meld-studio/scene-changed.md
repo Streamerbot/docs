@@ -3,8 +3,10 @@ title: Scene Changed
 description: Trigger for when the Scene is changed in Meld Studio
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
-  - name: MeldStudioScene
+  - name: Connection
+    import: meld-studio/connection
+  - name: Scene
+    import: meld-studio/scene
 variables:
   - name: meldStudio.id
     type: string

@@ -3,6 +3,7 @@ title: Donation
 description: Trigger for a Streamlabs Donation
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: donationFrom
     type: string

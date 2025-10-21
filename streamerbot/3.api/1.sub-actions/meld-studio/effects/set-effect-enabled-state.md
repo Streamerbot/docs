@@ -3,18 +3,15 @@ title: Set Effect Enabled State
 description: Sets the enabled state of the selected effect in Meld Studio
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
-  - name: MeldStudioScene
-  - name: MeldStudioLayer
-  - name: MeldStudioEffect
+  - name: Connection
+    import: meld-studio/connection
+  - name: Scene
+    import: meld-studio/scene
+  - name: Layer
+    import: meld-studio/layer
+  - name: Effect
+    import: meld-studio/effect
   - name: State
-    type: Select
-    required: true
-    description: |
-      Select which state you want to set
-
-      - `Visible`: Sets the effect state on your scene to Visible
-      - `Hidden`: Sets the effect state on your scene to Hidden
-      - `Toggle`: Toggles the effect state on your scene between Visible and Hidden
+    import: meld-studio/effect-state
 variables: []
 ---

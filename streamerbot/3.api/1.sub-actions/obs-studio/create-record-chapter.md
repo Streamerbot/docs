@@ -4,6 +4,7 @@ description: Creates a chapter marker in the OBS Recording
 version: 0.2.5
 parameters:
   - name: Connection
+    import: obs-studio/connection
   - name: Chapter Name
     type: String
     required: true
@@ -18,6 +19,11 @@ variables:
 csharpMethods:
   - ObsCreateRecordChapter
 ---
-::warning
-In order for this `Sub-Action` to work properly, you **MUST** select `Hybrid MP4 [BETA](.mp4)` for the recording format in OBS.  This can be found by going to `Settings -> Output -> Select the 'Recording' Tab -> Recording Format`
+
+::danger
+**Recording Format Requirement**
+<br>
+This sub-action requires the `Recording Format` setting be configured to `Hybrid MP4 [BETA](.mp4)` in OBS Studio.
+<br>
+This can be found by going to `Settings -> Output -> Select the 'Recording' Tab -> Recording Format`
 ::

@@ -2,11 +2,13 @@
 title: Set Title
 description: Modify the title of a Stream Deck key or dial
 parameters:
-  - name: ElgatoStreamDeckButtonId
+  - name: Button ID
+    import: elgato/stream-deck-button-id
   - name: Title
-    type: Text
     description: The new value to use as the button title
-  - name: ElgatoStreamDeckButtonState
+    type: Text
+  - name: State
+    import: elgato/stream-deck-button-state
 csharpMethods:
   - StreamDeckSetTitle
 ---

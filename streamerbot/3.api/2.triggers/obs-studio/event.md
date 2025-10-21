@@ -3,7 +3,8 @@ title: OBS Event
 description: Trigger for an OBS Event
 version: 0.2.0
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
   - name: Event
     type: Select
     required: true

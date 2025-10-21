@@ -3,8 +3,10 @@ title: Show Scene
 description: Shows the selected scene in Meld Studio
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
-  - name: MeldStudioScene
+  - name: Connection
+    import: meld-studio/connection
+  - name: Scene
+    import: meld-studio/scene
 variables: []
 csharpMethods:
   - MeldStudioShowScene

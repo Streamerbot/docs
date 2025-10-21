@@ -2,34 +2,16 @@
 title: Set Source Filter State
 description: Sets the visibility state of a source filter
 parameters:
-  - name: ObsConnection
-  - name: ObsScene
-    type: Select
-    required: true
-    description: |
-      Select a Scene from the drop-down
-      - Can also manually type the Scene name into the box
-  - name: ObsSource
-    type: Select
-    required: true
-    description: |
-      Select a Source from the drop-down
-      - Can also manually type the Source name into the box
-  - name: ObsFilter
-    type: Select
-    required: true
-    description: |
-      Select a Filter from the drop-down
-      - Can also manually type the Filter name into the box
+  - name: Connection
+    import: obs-studio/connection
+  - name: Scene
+    import: obs-studio/scene
+  - name: Source
+    import: obs-studio/source
+  - name: Filter
+    import: obs-studio/filter
   - name: State
-    type: Select
-    required: true
-    description: |
-      Select the state for the filter
-
-      - `Visible`: Set the filter state to visible
-      - `Hidden`: Set the filter state to hidden
-      - `Toggle`: Toggle the filter state between visible and hidden
+    import: obs-studio/filter-state
 variables: []
 csharpMethods:
   - ObsSetSourceFilterState

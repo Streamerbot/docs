@@ -2,7 +2,8 @@
 title: Show OK
 description: Flash a temporary checkmark on a Stream Deck key or dial
 parameters:
-  - name: ElgatoStreamDeckButtonId
+  - name: Button ID
+    import: elgato/stream-deck-button-id
 csharpMethods:
   - StreamDeckShowAlert
 ---

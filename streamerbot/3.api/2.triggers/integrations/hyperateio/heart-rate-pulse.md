@@ -4,6 +4,7 @@ description: Trigger for a HypeRate Heart Rate Pulse
 version: 0.1.5
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: heartRate
     type: number

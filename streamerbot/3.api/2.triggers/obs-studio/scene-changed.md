@@ -3,7 +3,8 @@ title: OBS Scene Changed
 description: Trigger for when an OBS Scene is Changed
 version: 0.2.0
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
   - name: Scene Name
     type: Select
     required: false

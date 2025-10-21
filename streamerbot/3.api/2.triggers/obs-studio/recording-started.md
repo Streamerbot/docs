@@ -3,7 +3,8 @@ title: OBS Recording Started
 description: Trigger for when an OBS Recording is Started
 version: 0.2.0
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
 variables:
   - name: obs.id
     type: string

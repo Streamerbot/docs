@@ -2,7 +2,8 @@
 title: Get Current Scene
 description: Get the current scene from Streamlabs Desktop
 parameters:
-  - name: SlobsConnection
+  - name: Connection
+    import: streamlabs-desktop/connection
 variables:
   - name: currentScene
     description: Name of the active scene

@@ -4,6 +4,7 @@ description: Trigger for a Twitch Hype Train Level Up
 twitchService: EventSub
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: prevLevel
     type: number

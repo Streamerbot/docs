@@ -2,7 +2,8 @@
 title: Get Current Scene
 description: Get the current scene
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
 variables:
   - name: currentScene
     type: string

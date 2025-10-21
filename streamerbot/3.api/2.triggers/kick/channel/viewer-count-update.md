@@ -3,6 +3,7 @@ title: Viewer Count Update
 description: Trigger for when your Kick viewer count updates
 parameters:
   - name: Range
+    import: common/range
 variables:
   - name: viewerCount
     type: number

@@ -2,7 +2,8 @@
 title: Get Status
 description: Get your OBS Studio output status
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
 variables:
   - name: obs.isConnected
     type: boolean

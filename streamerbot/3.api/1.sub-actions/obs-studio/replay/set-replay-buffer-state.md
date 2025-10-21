@@ -2,16 +2,19 @@
 title: Set Replay Buffer State
 description: Change your replay buffer status
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
   - name: State
     type: Select
     required: true
-    description: |
-      Choose the replay buffer state
-
-      - `Start`: Start your replay buffer
-      - `Stop`: Stop your replay buffer
-      - `Save`: Save your replay buffer
+    description: Choose the replay buffer state
+    options:
+      - value: Start
+        description: Start your replay buffer
+      - value: Stop
+        description: Stop your replay buffer
+      - value: Save
+        description: Save your replay buffer
 variables: []
 csharpMethods:
   - ObsReplayBufferStart

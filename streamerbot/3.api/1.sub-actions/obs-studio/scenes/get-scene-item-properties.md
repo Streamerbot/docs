@@ -92,19 +92,12 @@ variables:
     type: string
     description: Everything above in a json format
 parameters:
-  - name: ObsConnection
-  - name: ObsScene
-    type: Select
-    required: true
-    description: |
-      Select a Scene from the drop-down
-      - Can also manually type the Scene name into the box
-  - name: ObsSource
-    type: Select
-    required: true
-    description: |
-      Select a Source from the drop-down
-      - Can also manually type the Source name into the box
+  - name: Connection
+    import: obs-studio/connection
+  - name: Scene
+    import: obs-studio/scene
+  - name: Source
+    import: obs-studio/source
 csharpMethods:
   - ObsGetSceneItemProperties
 ---

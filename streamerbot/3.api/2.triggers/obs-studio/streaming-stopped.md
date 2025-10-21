@@ -3,7 +3,8 @@ title: OBS Streaming Stopped
 description: Trigger for when an OBS Streaming is Stopped
 version: 0.2.0
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
 variables:
   - name: obs.id
     type: string

@@ -3,7 +3,8 @@ title: Streaming Stopped
 description: Trigger for when Meld stops streaming
 version: 0.2.5
 parameters:
-  - name: MeldStudioConnection
+  - name: Connection
+    import: meld-studio/connection
 variables:
   - name: meldStudio.id
     type: string

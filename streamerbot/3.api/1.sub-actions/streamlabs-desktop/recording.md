@@ -2,16 +2,20 @@
 title: Recording
 description: Change your current recording status
 parameters:
-  - name: SlobsConnection
+  - name: Connection
+    import: streamlabs-desktop/connection
   - name: State
     type: Select
-    description: |
-      Select the desired recording state
-
-      - `Start`: Start recording
-      - `Stop`: Stop recording
-      - `Pause`: Pause recording
-      - `Resume`: Resume recording
+    description: Select the desired recording state
+    options:
+      - value: Start
+        description: Start recording
+      - value: Stop
+        description: Stop recording
+      - value: Pause
+        description: Pause recording
+      - value: Resume
+        description: Resume recording
 variables: []
 csharpMethods:
   - SlobsStopRecording

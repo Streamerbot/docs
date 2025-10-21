@@ -3,7 +3,9 @@ title: Get Global Variable
 description: Fetch the value of a global variable and populate a local argument
 parameters:
   - name: Source
+    import: core/global-variable-source
   - name: Persisted
+    import: core/global-variable-persisted
   - name: Variable Name
     type: Text
     required: true
@@ -24,7 +26,7 @@ parameters:
       It is recommended to use a **different name** than the global variable name
       ::
 
-      ::warning
+      ::warning{variant=link}
       This is the **name** of the destination variable, which means it should not be wrapped in `%` symbols unless you specifically want to use the **value** of a local variable in the **name** of your destination variable
       ::
 
@@ -42,8 +44,8 @@ csharpMethods:
 ---
 
 ::tip
-You can directly access the value of **persisted** non-user globals without this sub-action by wrapping the name with `~`<br>
-:icon{name=i-mdi-chevron-right} `~myPersistedGlobalVariable~`{lang=cs}
+You can access the value of **persisted** non-user globals without this sub-action by wrapping the name with `~`<br>
+:icon{name=i-mdi-chevron-right} For example, `~myPersistedGlobalVariable~`{lang=cs}
 ::
 
 :read-more{to=/guide/variables}

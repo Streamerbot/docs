@@ -3,7 +3,8 @@ title: Vendor Event
 description: Trigger for a when a vendor event is sent by a 3rd party plugin in OBS
 version: 0.2.4
 parameters:
-  - name: ObsConnection
+  - name: Connection
+    import: obs-studio/connection
   - name: Vendor
     type: String
     required: false
