@@ -3,7 +3,9 @@ title: Get Global Variable
 description: Fetch the value of a global variable and populate a local argument
 parameters:
   - name: Source
+    import: core/GlobalVariableSource
   - name: Persisted
+    import: core/GlobalVariablePersisted
   - name: Variable Name
     type: Text
     required: true

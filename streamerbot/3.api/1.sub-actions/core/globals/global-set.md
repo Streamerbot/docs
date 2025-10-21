@@ -3,7 +3,9 @@ title: Set Global Variable
 description: Create or update the value of a global variable
 parameters:
   - name: Destination
+    import: core/GlobalVariableDestination
   - name: Persisted
+    import: core/GlobalVariablePersisted
   - name: Variable Name
     type: Text
     required: true
