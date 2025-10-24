@@ -41,7 +41,7 @@ This CPH method uses the [SendKeys](https://learn.microsoft.com/en-us/dotnet/api
 
 The `keyPress` string argument needs to be enclosed in curly brackets `{}`.
 
-To use key combinations such as <kbd>SHIFT</kbd>, <kbd>CTRL</kbd> and <kbd>ALT</kbd>, you can use code modifiers listed in the link below.
+To use key combinations such as :kbd{value="Shift"}, :kbd{value="meta"} and :kbd{value="Alt"}, you can use code modifiers listed in the link below.
 
 ::read-more{to="https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys.send"}
 Full reference of all [SendKeys](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys.send) keystroke values and modifiers.

@@ -19,7 +19,7 @@ Integrate Streamer.bot with [DonorDrive](https://donordrive.com)
 
     ![DonorDrive Configuration](assets/donordrive.png)
 
-    - <kbd>Right-Click</kbd> anywhere in the panel and select `Add`
+    - :kbd{value="Right-Click"} anywhere in the panel and select `Add`
 
     ![DonorDrive Add Service](assets/donordrive-add-service.png)
 

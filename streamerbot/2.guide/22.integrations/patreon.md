@@ -29,7 +29,7 @@ This integration requires the [Streamer.bot Website Integration](/guide/integrat
     ::
 
     1. Paste your `Patreon Webhook URL` from Streamer.bot into the `Create a new webhook...` input
-    2. Click the <kbd>+</kbd> button
+    2. Click the `+` button
     3. Enable the events you would like to receive
         - _**Do not** enable any of the *deprecated* `pledges:*` events_
     4. Click on `Copy Secret` to obtain your verification token

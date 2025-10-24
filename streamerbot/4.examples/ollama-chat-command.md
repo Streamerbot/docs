@@ -64,7 +64,7 @@ A bug in previous versions of Streamer.bot prevented capturing of `stdout` from 
 
 3. Install the ollama python package
 
-    From our `scripts` directory in Windows Explorer, <kbd>Right-Click</kbd> and open the current location in terminal.
+    From our `scripts` directory in Windows Explorer, :kbd{value="Right-Click"} and open the current location in terminal.
 
     ```bash [Command Prompt]
     pip install ollama

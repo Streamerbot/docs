@@ -72,7 +72,7 @@ To **receive** events on another instance, we uitlize the **Remote Instance Trig
 
 3. Done!
 
-    Since we used the **Test** trigger on our sending action, we can <kbd>Right-Click</kbd> the trigger on **Instance #1**, and click `Test`. This will execute our action and then execute the action configured on **Instance #2**!
+    Since we used the **Test** trigger on our sending action, we can :kbd{value="Right-Click"} the trigger on **Instance #1**, and click `Test`. This will execute our action and then execute the action configured on **Instance #2**!
 
     ::success
     You have successfully enabled communications across multiple Streamer.bot instances!

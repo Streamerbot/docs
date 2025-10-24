@@ -19,7 +19,7 @@ Navigate to **Stream Apps > Meld Studio** in Streamer.bot
 ![Meld Studio Configuration](assets/meld-studio.png){caption-alt}
 
 ## Configuration
-To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
+To add a new connection, :kbd{value="Right-Click"} anyhere in the panel area and select `Add`:
 
 ![Meld Studio Connection Dialog](assets/meld-studio-add-connection.png){caption-alt}
 
@@ -52,7 +52,7 @@ Configuration options are outlined below:
 ::
 
 ## Context Menu
-<kbd>Right-Click</kbd> on a configured connection to reveal the context menu:
+:kbd{value="Right-Click"} on a configured connection to reveal the context menu:
 
 ::field-group
   ::field{name="Add" type=Action}

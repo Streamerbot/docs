@@ -12,7 +12,7 @@ Navigate to **Stream Apps > Streamlabs Desktop** in Streamer.bot
 
 
 ## Configuration
-To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
+To add a new connection, :kbd{value="Right-Click"} anyhere in the panel area and select `Add`:
 
 ::field-group
   ::field{name=Name type=Text required}

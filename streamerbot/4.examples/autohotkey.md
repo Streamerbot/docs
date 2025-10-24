@@ -50,7 +50,7 @@ You can use [AutoHotKey](https://www.autohotkey.com){target=_blank rel=noopener}
 4. Configure HotKeys
 
     - Setup Key Combinations
-        1. By default, the script is configured with hotkeys on <kbd>F12</kbd> and <kbd>F11</kbd>.
+        1. By default, the script is configured with hotkeys on :kbd{value="F12"} and :kbd{value="F11"}.
         2. You can add or modify any hotkeys as needed.
 
         ::read-more{to=https://www.autohotkey.com/docs/v2/Hotkeys.htm}
@@ -60,7 +60,7 @@ You can use [AutoHotKey](https://www.autohotkey.com){target=_blank rel=noopener}
     <br><br>
 
     - Update Action IDs
-      1. In Streamer.bot, <kbd>Right-Click</kbd> on the action you want to execute from AHK, and select `Copy Action ID`
+      1. In Streamer.bot, :kbd{value="Right-Click"} on the action you want to execute from AHK, and select `Copy Action ID`
       2. Update the `sb.DoAction("<action-id>")`{lang=cs} lines to use your selected action ID
 
 
@@ -79,7 +79,7 @@ You can use [AutoHotKey](https://www.autohotkey.com){target=_blank rel=noopener}
 
 
     ::success
-    <kbd>F12</kbd> and <kbd>F11</kbd> _(or your updated hotkey combinations)_ should now execute your selected actions!
+    :kbd{value="F12"} and :kbd{value="F11"} _(or your updated hotkey combinations)_ should now execute your selected actions!
     ::
 
 

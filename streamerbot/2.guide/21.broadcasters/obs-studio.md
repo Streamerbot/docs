@@ -15,7 +15,7 @@ Navigate to **Stream Apps > OBS** in Streamer.bot
 ![OBS Studio Configuration](assets/obs-studio.png)
 
 ## Configuration
-To add a new connection, <kbd>Right-Click</kbd> anyhere in the panel area and select `Add`:
+To add a new connection, :kbd{value="Right-Click"} anyhere in the panel area and select `Add`:
 
 ![OBS Studio Add Connection](assets/obs-studio-add-connection.png)
 
@@ -69,7 +69,7 @@ Configuration options are outlined below:
 ::
 
 ## Context Menu
-<kbd>Right-Click</kbd> on a configured connection to reveal the context menu:
+:kbd{value="Right-Click"} on a configured connection to reveal the context menu:
 
 #### `Add`
 Add a new OBS Studio connection
