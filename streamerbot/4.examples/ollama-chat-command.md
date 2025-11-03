@@ -3,7 +3,6 @@ title: AI Chat Command
 description: Create a basic AI chat command with Ollama and Python
 author: Whipstickgostop
 icon: i-simple-icons-ollama
-navigation: false
 difficulty: 3
 ---
 

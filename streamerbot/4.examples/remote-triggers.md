@@ -3,7 +3,6 @@ title: Remote Triggers
 description: Easily communicate between multiple Streamer.bot instances
 author: Whipstickgostop
 icon: IconStreamerbot
-navigation: false
 difficulty: 1
 ---
 

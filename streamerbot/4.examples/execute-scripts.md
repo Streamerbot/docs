@@ -3,7 +3,6 @@ title: Execute Scripts
 description: Integrate Python, Javascript, or other scripts into your Streamer.bot actions
 author: Whipstickgostop
 icon: i-heroicons-command-line-20-solid
-navigation: false
 difficulty: 3
 ---
 

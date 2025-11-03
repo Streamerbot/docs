@@ -3,7 +3,6 @@ title: Advanced "Fetch URL"
 description: Send web requests manually using HTTPClient.
 author: ErinaSugino
 icon: i-mdi-web-plus
-navigation: false
 difficulty: 2
 ---
 

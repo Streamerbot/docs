@@ -2,7 +2,6 @@
 title: Parse JSON Utility
 description: Example code for parsing arbitrary JSON data into Streamer.bot variables
 icon: vscode-icons:file-type-json
-navigation: false
 author: Whipstickgostop
 difficulty: 1
 ---

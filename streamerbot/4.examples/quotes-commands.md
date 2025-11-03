@@ -3,7 +3,6 @@ title: Quotes Commands for v1.0.0+
 description: An example how to get and add quotes using commands in Streamer.bot v1.0.0+
 author: pwnyy
 icon: i-mdi-format-quote-close
-navigation: false
 difficulty: 1
 version: 1.0.0
 ---

@@ -3,7 +3,6 @@ title: OBS Raw Requests in C#
 description: An example how to send OBS Raw requests and work with the responses in C#
 author: tawmae
 icon: i-mdi-raw
-navigation: false
 difficulty: 3
 ---
 

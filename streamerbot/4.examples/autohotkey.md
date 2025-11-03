@@ -3,7 +3,6 @@ title: AutoHotKey Actions
 description: Execute your Streamer.bot actions with AutoHotKey
 author: Whipstickgostop
 icon: i-simple-icons-autohotkey
-navigation: false
 difficulty: 2
 ---
 
