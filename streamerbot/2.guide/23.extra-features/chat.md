@@ -33,10 +33,10 @@ While on the combined chat view, you can toggle which chat(s) to send to:
 Keyboard shortcuts exist to easily direct your chat messages to/from different accounts:
 | Keybind | Action |
 |--------:| ------ |
-| :shortcut{value="Enter"} | Send to **selected** chat(s) |
-| :shortcut{value="Shift+Enter"} | Send to **all** chats |
-| :shortcut{value="Ctrl+Enter"} | Send to **selected** chat(s) with the **bot account** |
-| :shortcut{value="Ctrl+Shift+Enter"} | Send to **all** chats with the **bot account** |
+| :kbd{value="Enter"} | Send to **selected** chat(s) |
+| :kbd{value="Shift"} :kbd{value="Enter"} | Send to **all** chats |
+| :kbd{value="meta"} :kbd{value="Enter"} | Send to **selected** chat(s) with the **bot account** |
+| :kbd{value="meta"} :kbd{value="Shift"} :kbd{value="Enter"} | Send to **all** chats with the **bot account** |
 
 ### Command Menus
 Autocomplete menus exist for the following options:
@@ -49,7 +49,7 @@ Autocomplete menus exist for the following options:
 
 #### Slash Commands
 ::note
-You can open the slash command menu with :shortcut{value="/"}
+You can open the slash command menu with :kbd{value="/"}
 ::
 
 Slash commands contain a set of actions that are directly integrated with your Streamer.bot instance.
@@ -63,22 +63,22 @@ Some commands support **Multi-Platform** execution, such as `/title` which can s
 
 #### Streamer.bot Commands
 ::note
-You can open the command menu with the :shortcut{value="!"} prefix
+You can open the command menu with the :kbd{value="!"} prefix
 ::
 
 For commands to appear in the command menu they must be configured with:
 - Set `Location` to `Start`
 - Start with the `!` prefix
 
-When selecting a command, :shortcut{value=Enter} will submit the command immediately to chat.
+When selecting a command, :kbd{value=Enter} will submit the command immediately to chat.
 
-If you wish to add input for a command, use :shortcut{value=Tab} to select the command and continue typing.
+If you wish to add input for a command, use :kbd{value=Tab} to select the command and continue typing.
 
 ![Streamer.bot Commands Menu](assets/chat-commands.png){width="500" caption-alt}
 
 #### Emote Autocomplete
 ::note
-You can open the emote menu with :shortcut{value=":"}
+You can open the emote menu with :kbd{value=":"}
 ::
 
 Emote autocomplete can be triggered at any time and contains emotes from the following sources:
@@ -89,7 +89,7 @@ Emote autocomplete can be triggered at any time and contains emotes from the fol
 - FFZ (Twitch)
 - BTTV (Twitch & YouTube)
 
-To select an emote and continue typing, you can use either :shortcut{value="Enter / Tab"}
+To select an emote and continue typing, you can use either :kbd{value="Enter"} or :kbd{value="Tab"}
 
 ![Emotes Menu](assets/chat-emotes.png){width="500" caption-alt}
 

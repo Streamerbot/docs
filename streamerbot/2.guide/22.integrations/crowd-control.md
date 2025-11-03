@@ -16,7 +16,7 @@ Integrate Streamer.bot with [Crowd Control](https://crowdcontrol.live){target=_b
     Navigate to **Overlay > Assets** in the Crowd Control application
     ::
 
-    - Click the :shortcut{value=Copy} button next to your `Overlay URL`
+    - Click the :kbd{value=Copy} button next to your `Overlay URL`
 
     ![image](https://github.com/Streamerbot/docs/assets/8848167/d7b2db23-313a-40fa-b883-180d204ee7ce)
 

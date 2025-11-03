@@ -8,7 +8,7 @@ parameters:
     description: |
       The command or executable to run
 
-      This can contain anything you can normally execute via the :shortcut{value=Win+R} Windows Run dialog or `cmd`
+      This can contain anything you can normally execute via the :kbd{value=Win} :kbd{value="R"} Windows Run dialog or `cmd`
 
       Examples:
       - Executables

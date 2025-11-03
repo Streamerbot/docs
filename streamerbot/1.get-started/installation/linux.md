@@ -138,7 +138,7 @@ Download `lutris/streamerbot.yaml` from GitHub
 All actions and commands are listed in the order they have been added.
 
 ### Viewer Context Menu
-The :shortcut{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
+The :kbd{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
 
 ::success
 This issue has been resolved in Wine 7 and later

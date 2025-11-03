@@ -16,13 +16,13 @@ In this example, we are going to create a simple timer to send a chat message ev
 
 1. Create a new action
 
-    :shortcut{value=Right-Click} the Actions pane in Streamer.bot and select `Add` to create a new action.
+    :kbd{value=Right-Click} the Actions pane in Streamer.bot and select `Add` to create a new action.
 
     ![Create Action Dialog](assets/timer-create-action.png)
 
 2. Create a timer trigger
 
-    With your new action selected, :shortcut{value=Right-Click} in the Triggers pane and select `Core > Timed Actions` to add a timer trigger.
+    With your new action selected, :kbd{value=Right-Click} in the Triggers pane and select `Core > Timed Actions` to add a timer trigger.
 
     ![Create Trigger Dialog](assets/timer-create-trigger.png)
 
@@ -51,7 +51,7 @@ In this example, we are going to create a simple timer to send a chat message ev
     The [Send Message to Channel](/api/sub-actions/twitch/chat/send-message-to-channel) sub-action allows us to easily send text to our Twitch chat.
 
     ::navigate
-      :shortcut{value=Right-Click} in the sub-actions pane and select **Twitch > Chat > Send Message to Channel**
+      :kbd{value=Right-Click} in the sub-actions pane and select **Twitch > Chat > Send Message to Channel**
     ::
 
     You will then see the sub-action dialog:

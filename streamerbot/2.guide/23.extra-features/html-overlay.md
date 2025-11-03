@@ -50,7 +50,7 @@ The HTML Overlay application is now running!
 You should also now see an accompanying icon your system tray.
 
 ::tip
-You can close HTML Overlay by :shortcut{value=Double-Clicking} the tray icon at any time.
+You can close HTML Overlay by :kbd{value=Double-Click} the tray icon at any time.
 ::
 
 ### Configuration
