@@ -5,7 +5,7 @@ description: Add a user, by username (login name), to a group
 version: 0.2.3
 parameters:
   - name: userName
-    import: core/username
+    import: core/users/username
   - name: platform
     import: core/platform
   - name: groupName

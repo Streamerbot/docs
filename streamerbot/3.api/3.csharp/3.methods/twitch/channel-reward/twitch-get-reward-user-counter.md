@@ -7,7 +7,7 @@ parameters:
   - name: rewardId
     import: twitch/rewards/id
   - name: userName
-    import: core/username
+    import: core/users/username
 example: |
     using System;
     public class CPHInline
