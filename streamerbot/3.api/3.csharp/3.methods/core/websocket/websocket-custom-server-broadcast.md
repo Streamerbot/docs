@@ -10,7 +10,7 @@ parameters:
       JSON must be stringified.
     default: '"Hello, world!"'
   - name: connection
-    import: core/websocket/custom-servers/connection
+    import: websocket/custom-servers/connection
 example: |
     using System;
     public class CPHInline

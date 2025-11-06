@@ -26,7 +26,7 @@ parameters:
       It is recommended to use a **different name** than the global variable name
       ::
 
-      ::warning{variant=link}
+      ::warning
       This is the **name** of the destination variable, which means it should not be wrapped in `%` symbols unless you specifically want to use the **value** of a local variable in the **name** of your destination variable
       ::
 
