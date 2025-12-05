@@ -17,12 +17,16 @@ parameters:
     description: The specific quote ID to fetch, only used if `Type` is set to `Specific`
 variables:
   - name: quoteTimestamp
-    type: string
-    description: The date and time that the quote was made
+    type: DateTime
+    description: |
+      The date and time that the quote was made.  Can be formatted with `DateTime` format strings.
+      ::read-more{to=/guide/variables#date-and-time}
+        Read more about date and time format strings
+      ::
     value: 1/29/2022 12:00:00 AM
   - name: quoteTime
     type: string
-    description: The date that the quote was made
+    description: The date that the quote was made, formatted in accordance with your computer's "Short date" format setting
     value: 10/17/2025
   - name: quoteId
     type: string
