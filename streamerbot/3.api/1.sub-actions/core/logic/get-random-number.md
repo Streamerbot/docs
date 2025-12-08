@@ -6,7 +6,7 @@ parameters:
     type: Select
     default: Between
     description: |
-      - `Between`: Generate a random `int`{lang=cs} between configured min/max values
+      - `Between`: Generate a random `int`{lang=cs} between configured min/max values, inclusive
       - `Next Float`: Select a random `float`{lang=cs} value between `0` and `1`
   - name: Between
     type: Range
@@ -24,4 +24,7 @@ variables:
     type: int
     description: If `Next Float` is selected, the `randomFloat` value represented as a percentage
     value: 23
+csharpMethods:
+  - Between
+  - NextDouble
 ---

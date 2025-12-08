@@ -43,7 +43,7 @@ The Get Commands sub-action will not include commands that have their location s
 
 ### Handling Long Command Lists
 
-:streamerbot-import{code="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"}
+:streamerbot-import{code="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"}
 
 
 Since Twitch has a message character limit of 500 and on YouTube it's 200 you may find your commands overtake this amount therefore the code below can help with splitting the list into batches of commands that fit inside the messages.
@@ -56,21 +56,33 @@ public class CPHInline
 {
     public bool Execute()
     {
-        List<string> commands = (List<string>)args["commandsList"];//This is when the Variable Name in the Get Commands Sub-Action is `commands`
+        // This is when the Variable Name in the Get Commands Sub-Action is `commands`
+        CPH.TryGetArg("commandsList", out List<string> commands);
+        // Limit is 500 on Twitch, 200 on YouTube.. I took a few off as a safety measure.
+        const int maxMessageLength = 495;
         string message = "Commands Avaliable to you: ";
-        bool bot = false;
-        int messageMax = 495; //Limit is 500 on Twitch, 200 on YouTube.. I took a few off as a safety measure.
-        for (int i = 0; i < commands.Count; i++)
+        const string additionalCommandsMessage = "Addional Commands for you: ";
+        const string commandSeparator = ", ";
+        const bool sendFromBot = false;
+
+        int commandsSent = 0;
+        while (commandsSent < commands.Count)
         {
-            if ((commands[i].Length + message.Length) > messageMax)
+            int currentMessageLength = message.Length;
+            bool fitsInMessage(string text) => currentMessageLength + text.Length < maxMessageLength;
+            List<string> commandsForMessage = [];
+            for (int i = commandsSent; i < commands.Count && fitsInMessage(commands[i]); i++)
             {
-                CPH.SendAction(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
-                message = "Addional Commands for you: ";
+                commandsForMessage.Add(commands[i]);
+                currentMessageLength += commands[i].Length + commandSeparator.Length;
             }
 
-            message += commands[i] + ", ";
+            message += string.Join(commandSeparator, commandsForMessage);
+            // if you wish to send the message to Youtube, use CPH.SendYouTubeMessage(message, sendFromBot);
+            CPH.SendAction(message, sendFromBot);
+            commandsSent += commandsForMessage.Count;
+            message = additionalCommandsMessage;
         }
-        CPH.SendAction(message, bot); // This will need to be changed to CPH.SendYouTubeMessage(message, bot); if you wish to send the message to Youtube
         return true;
     }
 }
