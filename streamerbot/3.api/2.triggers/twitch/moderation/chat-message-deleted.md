@@ -7,6 +7,9 @@ variables:
   - name: targetMessageId
     type: string
     description: The unique identifier for the message that has been deleted
+  - name: message
+    type: string
+    description: Text content of the deleted message
 commonVariables:
   - TwitchBroadcaster
   - TwitchUser
