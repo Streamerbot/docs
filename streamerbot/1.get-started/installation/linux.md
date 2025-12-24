@@ -32,7 +32,7 @@ Select an installation method below:
   ::card{title="Lutris" to=#lutris icon=i-simple-icons-lutris}
   Install Streamer.bot with Lutris
   ::
-  ::card{title="Bottles" to=#bottles icon=i-carbon-bottles-01}
+  ::card{title="Bottles" to=#bottles icon=i-mdi-bottle-wine}
   Install Streamer.bot with Bottles
   ::
 ::
@@ -127,13 +127,13 @@ Download `lutris/streamerbot.yaml` from GitHub
 
 1. Click the `+` in Lutris and select `Install from a local install script`
 
-![Lutris Add Game Dialog](../assets/lutris-add-game.png){width=600}
+    ![Lutris Add Game Dialog](../assets/lutris-add-game.png){width=600}
 
 2. Select the `streamerbot.yaml` file (download link above)
 3. Follow the installer steps to install Streamer.bot to your location of choice.
 4. Launch Streamer.bot from Lutris!
 
-## Bottles
+### Bottles
 ::callout{icon=i-mdi-github to="https://github.com/bottlesdevs/programs/blob/main/Software/streamerbot.yml"}
 View `streamerbot.yml` on GitHub.
 ::
