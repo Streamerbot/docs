@@ -29,11 +29,11 @@ Select an installation method below:
   ::card{title="Install Script" to=#install-script icon=i-mdi-bash}
   Install Streamer.bot and its Wine dependencies using a `bash` script
   ::
-  ::card{title="Lutris" to=#lutris icon=i-simple-icons-lutris}
-  Install Streamer.bot with Lutris
-  ::
   ::card{title="Bottles" to=#bottles icon=i-mdi-bottle-wine}
   Install Streamer.bot with Bottles
+  ::
+  ::card{title="Lutris" to=#lutris icon=i-simple-icons-lutris}
+  Install Streamer.bot with Lutris
   ::
 ::
 
@@ -43,82 +43,121 @@ Select an installation method below:
 View [Streamerbot/sb-linux-installer](https://github.com/Streamerbot/sb-linux-installer) on GitHub
 ::
 
-#### Prerequisites
 
-::tabs
-  ::div
-  ---
-  label: Ubuntu
-  icon: i-simple-icons-ubuntu
-  ---
-    1. Install `wine`
+::steps{level=4}
+  #### Prerequisites
+  Install the required dependencies for your Linux distribution
 
-    ::read-more{to="https://wiki.winehq.org/Ubuntu"}
-    Follow the instructions [here](https://wiki.winehq.org/Ubuntu) to install Wine on your version of Ubuntu
+  ::tabs
+
+    ::tabs-item{label=Ubuntu icon=i-simple-icons-ubuntu}
+      1. Install `wine`
+          ::read-more{to="https://wiki.winehq.org/Ubuntu"}
+          Follow the instructions [here](https://wiki.winehq.org/Ubuntu) to install Wine on your version of Ubuntu
+          ::
+
+      2. Install `winetricks`
+          ```bash [Terminal]
+          sudo apt install winetricks
+          sudo winetricks --self-update
+          ```
+
+      3. Install remaining dependencies
+          ```bash [Terminal]
+          sudo apt install git curl
+          ```
     ::
 
-    2. Install `winetricks`
-    ```bash
-    sudo apt install winetricks
-    sudo winetricks --self-update
-    ```
+    ::tabs-item{label=Arch icon=i-simple-icons-archlinux}
 
-    3. Install remaining dependencies
-    ```bash
-    sudo apt install git curl
-    ```
+        ```bash [Terminal]
+        # Install wine
+        sudo pacman -S wine
+
+        # Install winetricks
+        sudo pacman -S winetricks
+
+        # Install remaining dependencies
+        sudo pacman -S git curl
+        ```
+    ::
+
   ::
 
-  ::div
-  ---
-  label: Arch
-  icon: i-simple-icons-archlinux
-  ---
-    1. Install `Wine`
-    ```bash
-    sudo pacman -S wine
-    ```
+  #### Install Streamer.bot
 
-    2. Install `winetricks`
-    ```bash
-    sudo pacman -S winetricks
-    ```
+  ```bash [Terminal]
+  # Clone the repository
+  git clone https://github.com/Streamerbot/sb-linux-installer
 
-    3. Install remaining dependencies
-    ```bash
-    sudo pacman -S git
-    ```
+  # Change directory
+  cd ./sb-linux-installer
+
+  # Execute the installer
+  ./install.sh
+  ```
+
+  #### Launch Streamer.bot
+
+  ::success
+  You can now launch **Streamer.bot** using the created desktop shortcut!
   ::
 ::
 
-#### Install
+### Bottles
 
-```bash [sb-linux-installer]
-# Clone the repository
-git clone https://github.com/Streamerbot/sb-linux-installer
+::callout{icon=i-mdi-github to="https://github.com/bottlesdevs/programs/blob/main/Software/streamerbot.yml"}
+View `streamerbot.yml` on GitHub.
+::
 
-# Change directory
-cd ./sb-linux-installer
+::steps{level=4}
 
-# Execute the installer
-./install.sh
-```
+  #### Install Bottles
 
-#### Update
-Streamer.bot [Automatic Updates](/get-started/installation#automatic-updates) should work as usual.
+  Install [Bottles](https://usebottles.com/){target=_blank rel=noopener} on your Linux distribution if you haven't already.
 
-You can manually update your Streamer.bot installation using the installation script with `UPDATE=1`{lang=bash}
+  #### Create a new Bottle
 
-```bash [sb-linux-installer]
-UPDATE=1 ./install.sh
-```
+  1. Click the `+` icon in the top left corner to create a new Bottle.
+  2. Enter a name for your Bottle, e.g. `"Streamer.bot"`{lang=cs}
+  3. Select `Custom` configuration
+  4. Ensure `soda` is selected as the runner
+  5. Click `Create` (leave everything else as-is)
 
-#### Uninstall
-You can remove the Streamer.bot installation by executing the script with `UNINSTALL=1`{lang=bash}
+      ![Create and configure a new Bottle for Streamer.bot](../assets/linux-bottles-new.png){width=500}
 
-```bash [sb-linux-installer]
-UNINSTALL=1 ./install.sh
-```
+  #### Install Streamer.bot
+
+  1. Select your newly created Bottle from the list
+  2. Click on `Install Programs...`
+
+      ![Install Programs in Bottles](../assets/linux-bottles-install-programs.png){width=500}
+
+  3. Select `"StreamerBot"`{lang=cs} from the list of available programs
+
+      ![Streamer.bot in the built-in Bottles installers listing](../assets/linux-bottles-installers.png){width=500}
+
+      It may take some time for the installation to complete.
+
+  #### Launch Streamer.bot
+
+  Click the :icon{name=i-mdi-play} `Run` button to launch Streamer.bot from your Bottle
+
+  ![Launch Streamer.bot](../assets/linux-bottles-launch.png){width=500}
+
+  ::success
+  You now have **Streamer.bot** installed on Linux via Bottles!
+  ::
+
+::
+
+#### Bottles Tips & Tricks
+
+::note
+**Improve WebView2 Performance in Bottles**
+- You can optionally change the runner to `Proton-GE` or `Proton-CachyOS` to improve the performance of the Streamer.bot Chat window, C# Code editor and any other WebView2 content.
+- *Note that this may cause some graphical glitches in Streamer.bot*
+::
 
 ### Lutris
 ::callout{icon=i-mdi-github to="https://raw.githubusercontent.com/Streamerbot/sb-linux-installer/main/lutris/streamerbot.yaml"}
@@ -132,18 +171,6 @@ Download `lutris/streamerbot.yaml` from GitHub
 2. Select the `streamerbot.yaml` file (download link above)
 3. Follow the installer steps to install Streamer.bot to your location of choice.
 4. Launch Streamer.bot from Lutris!
-
-### Bottles
-::callout{icon=i-mdi-github to="https://github.com/bottlesdevs/programs/blob/main/Software/streamerbot.yml"}
-View `streamerbot.yml` on GitHub.
-::
-
-1. Click the `+` in the top left corner.
-2. Select `Custom` configuration and `soda` as the runner, fill the name of your new bottle, leave everything else as it is.
-3. Click on the new bottle and on `Install Programs`.
-4. Select `StreamerBot` on the list of programs and start the installation.
-5. (Optional: might cause graphical glitches) Change the Runner to `Proton-GE` or `Proton-CachyOS` to fix the C# editor and `WebView2` performance.
-6. Launch Streamer.bot from the list of installed programs!
 
 ## Known Issues
 
