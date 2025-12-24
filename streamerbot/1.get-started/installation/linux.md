@@ -32,6 +32,9 @@ Select an installation method below:
   ::card{title="Lutris" to=#lutris icon=i-simple-icons-lutris}
   Install Streamer.bot with Lutris
   ::
+  ::card{title="Bottles" to=#bottles icon=i-mdi-bottle-wine}
+  Install Streamer.bot with Bottles
+  ::
 ::
 
 ### Install Script
@@ -124,11 +127,23 @@ Download `lutris/streamerbot.yaml` from GitHub
 
 1. Click the `+` in Lutris and select `Install from a local install script`
 
-![Lutris Add Game Dialog](../assets/lutris-add-game.png){width=600}
+    ![Lutris Add Game Dialog](../assets/lutris-add-game.png){width=600}
 
 2. Select the `streamerbot.yaml` file (download link above)
 3. Follow the installer steps to install Streamer.bot to your location of choice.
 4. Launch Streamer.bot from Lutris!
+
+### Bottles
+::callout{icon=i-mdi-github to="https://github.com/bottlesdevs/programs/blob/main/Software/streamerbot.yml"}
+View `streamerbot.yml` on GitHub.
+::
+
+1. Click the `+` in the top left corner.
+2. Select `Custom` configuration and `soda` as the runner, fill the name of your new bottle, leave everything else as it is.
+3. Click on the new bottle and on `Install Programs`.
+4. Select `StreamerBot` on the list of programs and start the installation.
+5. (Optional: might cause graphical glitches) Change the Runner to `Proton-GE` or `Proton-CachyOS` to fix the C# editor and `WebView2` performance.
+6. Launch Streamer.bot from the list of installed programs!
 
 ## Known Issues
 
@@ -153,4 +168,4 @@ This issue has been resolved in Wine 7 and later
 ::
 
 ### Streamer.bot Chat
-The built-in chat and event feed windows will not work due to missing `WebView2`.
+The built-in chat and event feed windows will not work due to missing `WebView2` when using the install script or the Lutris installer. However, they work when using Bottles's Streamer.bot installer.
