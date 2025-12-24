@@ -22,13 +22,14 @@ parameters:
 ---
 
 You can add any number of cases to a switch by right clicking on the `switch` Sub-Action and selecting "Add Case"
+
 ![Switch Sub-Action context menu showing "Add Case" option](assets/switch-add-case-context-menu.png)
 
-You can add one or more values to a case.  If any of the case's values match the `switch` input, that case will be run.
+You can add one or more values to a case.  If any of the case's values match the `switch` input, that case will be executed.
+
 ![Add Case Dialogue](assets/switch-add-case-dialogue.png)
 
 ::note
-Only the first matching case will be run
-
-If no cases match, the `default` case will be run
+Only the first matching case will be executed.
+- If no cases match, the `default` case will be executed.
 ::
