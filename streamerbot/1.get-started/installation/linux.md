@@ -168,4 +168,4 @@ This issue has been resolved in Wine 7 and later
 ::
 
 ### Streamer.bot Chat
-The built-in chat and event feed windows will not work due to missing `WebView2` when using the install script or the Lutris installer. However, the chat works when using Bottles's Streamer.bot installer.
+The built-in chat and event feed windows will not work due to missing `WebView2` when using the install script or the Lutris installer. However, they work when using Bottles's Streamer.bot installer.
