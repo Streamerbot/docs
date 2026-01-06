@@ -17,7 +17,7 @@ example: |
             CPH.TryGetArg("userType",out string userType);
             Enum.TryParse(userType, out Platform platform);
             
-            //Reset user's cooldown
+            //Remove user's cooldown
             CPH.CommandRemoveUserCooldown(commandId, userId, platform);
             
             return true;

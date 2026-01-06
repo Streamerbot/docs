@@ -13,7 +13,7 @@ example: |
             string commandId = "4fcc2d13-9bcf-4c18-9d91-821a15f4b6e5";
             
             //Set global cooldown back to start
-            CPH.CommandRemoveGlobalCooldown(commandId);
+            CPH.CommandResetGlobalCooldown(commandId);
             
             return true;
         }

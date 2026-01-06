@@ -12,7 +12,7 @@ example: |
             //Define string of commandId
             string commandId = "4fcc2d13-9bcf-4c18-9d91-821a15f4b6e5";
             
-            //Reset all user cooldowns
+            //Remove all user cooldowns
             CPH.CommandRemoveAllUserCooldowns(commandId);
             
             return true;
