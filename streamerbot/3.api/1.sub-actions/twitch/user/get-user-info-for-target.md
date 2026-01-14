@@ -66,5 +66,5 @@ The User Login field can contain either a literal username or a variable/argumen
 - `%userName%` – The user who triggered the action
 - `genericuser` – A specific account with the name `genericuser`
 - `%input0%` – The first input provided (e.g., in a command or reward)
-- `%broadcastUserName` – The broadcaster’s account. If not used with a Twitch/Command trigger, be sure to add the [Add Broadcaster Information](/api/sub-actions/twitch/user/add-broadcaster-information) sub-action first
+- `%broadcastUserName%` – The broadcaster’s account. If not used with a Twitch/Command trigger, be sure to add the [Add Broadcaster Information](/api/sub-actions/twitch/user/add-broadcaster-information) sub-action first
 ::
