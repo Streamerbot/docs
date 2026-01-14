@@ -2,8 +2,6 @@
 title: Privacy Policy
 description: Speaker.bot Privacy Policy
 navigation: false
-aside: false
-layout: page
 ---
 
 Speaker.bot and it's team take your privacy very seriously. Because this app uses the YouTube API any information you provide in the application during the Authorization process will be only used to generate your YouTube Live credentials.

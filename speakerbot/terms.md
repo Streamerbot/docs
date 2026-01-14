@@ -2,7 +2,6 @@
 title: Terms of Service
 description: Speaker.bot Terms of Service
 navigation: false
-layout: default
 ---
 
 By using the YouTube (“Service") integration created for and/by Speaker.bot ( "We", "Us", "Our" ), you are agreeing to be bound by the following terms and conditions ("Terms of Service").
