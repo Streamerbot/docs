@@ -4,12 +4,8 @@ title: CreateClip
 description: Create a Twitch Clip
 parameters:
   - name: title
-    type: string
-    default: null
     description: If `null`, will match the stream title at the time of creation.
   - name: duration
-    type: int
-    default: 30
     description: Clip duration in seconds (min. 5, max 60).
 example: |
   using System;
