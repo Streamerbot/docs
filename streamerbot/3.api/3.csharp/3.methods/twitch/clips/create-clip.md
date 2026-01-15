@@ -1,7 +1,16 @@
 ---
 name: CreateClip
 title: CreateClip
-description: Create a 30 second Twitch Clip
+description: Create a Twitch Clip
+parameters:
+  - name: title
+    type: string
+    default: null
+    description: If `null`, will match the stream title at the time of creation.
+  - name: duration
+    type: int
+    default: 30
+    description: Clip duration in seconds (min. 5, max 60).
 example: |
   using System;
   using Twitch.Common.Models.Api; //Needed for ClipData Type
@@ -9,8 +18,8 @@ example: |
   {
       public bool Execute()
       {
-          //Create Clip
-          ClipData clip = CPH.CreateClip();
+          //Create a 25 second clip titled "Example Title"
+          ClipData clip = CPH.CreateClip("Example Title", 25);
 
           //Access created clip data
           //Get clip creator name
@@ -24,12 +33,3 @@ example: |
       }
   }
 ---
-
-::warning
-**Twitch API restrictions**
-
-- The generated clip will always be 30 seconds in length
-- The clip title will match your stream title at the time of creation
-
-  To make your own changes to the clip duration and/or title, you can manually edit the clip later.
-::
