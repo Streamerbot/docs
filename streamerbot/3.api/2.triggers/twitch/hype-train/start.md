@@ -31,6 +31,34 @@ variables:
     type: boolean
     description: Whether or not this is a Golden Kappa Train
     value: True
+  - name: isTreasureTrain
+    type: boolean
+    description: Whether or not this is a Treasure Train
+    value: True
+  - name: trainType
+    type: string
+    value: |
+      Possible Values: 'regular', 'treasure', 'golden_kappa'
+  - name: isSharedTrain
+    type: boolean
+    description: Whether or not this is a Shared Chat Hype Train
+    version: 1.0.2
+  - name: isInSharedChat
+    type: boolean
+    description: Whether or not the broadcast is currently in a shared chat
+    version: 1.0.2
+  - name: isSharedChatHost
+    type: boolean
+    description: Whether or not the broadcaster is the host of the shared chat
+    version: 1.0.2
+  - name: allTimeHighLevel 
+    type: number
+    description: The all-time high level this type of Hype Train has reached for the broadcaster
+    version: 1.0.4
+  - name: allTimeHighTotal 
+    type: number
+    description: The all-time high total of points this type of Hype Train has reached for the broadcaster
+    version: 1.0.4
   - name: top.bits.user
     type: string
     description: The top cheerer of this hype train display name

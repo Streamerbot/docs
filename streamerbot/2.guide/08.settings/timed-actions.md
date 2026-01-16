@@ -4,7 +4,7 @@ description: Timed Actions can be used a an action trigger that will trigger aft
 ---
 
 ## Setup
-Navigate to `Settings -> Timed Actions`, rightclick the white area and click `Add`.
+Navigate to `Services -> Timed Actions`, rightclick the white area and click `Add`.
 
 ![Timed Actions Navigation](assets/timed-actions-2.png)
 

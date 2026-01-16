@@ -9,7 +9,7 @@ This page documents the old quote system prior to Streamer.bot 1.0.0<br/>
 ::
 
 ## Setup
-In order to use the built in quote system, navigate to `Settings -> Quotes` and check `Enabled`.
+In order to use the built in quote system, navigate to `Services -> Quotes` and check `Enabled`.
 
 ![Quote Settings](assets/quotes_6.png)
 

@@ -31,10 +31,26 @@ variables:
     type: boolean
     description: Whether or not this is a Golden Kappa Train
     value: True
-  - name: contributors
-    type: number
-    description: The amount of contributors of the hype train
-    value: 10
+  - name: isTreasureTrain
+    type: boolean
+    description: Whether or not this is a Treasure Train
+    value: True
+  - name: trainType
+    type: string
+    value: |
+      Possible Values: 'regular', 'treasure', 'golden_kappa'
+  - name: isSharedTrain
+    type: boolean
+    description: Whether or not this is a Shared Chat Hype Train
+    version: 1.0.2
+  - name: isInSharedChat
+    type: boolean
+    description: Whether or not the broadcast is currently in a shared chat
+    version: 1.0.2
+  - name: isSharedChatHost
+    type: boolean
+    description: Whether or not the broadcaster is the host of the shared chat
+    version: 1.0.2
   - name: top.bits.user
     type: string
     description: The top cheerer of this hype train display name
