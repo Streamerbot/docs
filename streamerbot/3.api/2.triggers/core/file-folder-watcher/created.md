@@ -27,7 +27,7 @@ variables:
 ## Parameters
 ::field-group
   ::field{name=Watcher type=Select}
-    Select a watcher from the Settings -> File/Folder Watcher tab.
+    Select a watcher from the Services -> File/Folder Watcher tab.
 
     - Select `Any` to trigger on **any watcher**
 

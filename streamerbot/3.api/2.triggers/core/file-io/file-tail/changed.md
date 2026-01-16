@@ -7,7 +7,7 @@ parameters:
   - name: Watcher
     type: Select
     description: |
-      Select a file tail from the Settings -> File Tails tab.
+      Select a file tail from the Services -> File Tails tab.
 
       - Select `Any` to trigger on **any file tail**
 

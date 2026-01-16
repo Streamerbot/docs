@@ -4,7 +4,7 @@ description: Streamer.bot has a built in 'Credits' system. It allows Broadcaster
 ---
 
 ## Setup
-In order to use the Credits, navigate to `Settings -> Credits` and from there, check the events you want included.
+In order to use the Credits, navigate to `Services -> Credits` and from there, check the events you want included.
 
 ![Credits Settings](assets/credits_1.png)
 
