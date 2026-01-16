@@ -45,6 +45,9 @@ commonVariables:
   - YouTubeUser
   - YouTubeBroadcaster
   - TrovoUser
+  - TrovoBroadcaster
+  - KickUser
+  - KickBroadcaster
 ---
 
 ::read-more{to=/guide/commands}
