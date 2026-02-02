@@ -51,6 +51,33 @@ parameters:
       Enter the value you would like to use for comparison.
 
       This field is parsed, so may contain other `%arguments%`{lang=cs}, `~persistedGlobals~`{lang=cs} and `$inlineFunctions()$`
+
+variables:
+  - name: match.count
+    type: int
+    description: |
+      Only when using "Regex Match" as the operator.
+
+      The number of match groups (named or unnamed) in the regex.
+
+      Note that this is always 1 more than the number of parentheses groups, as the entire match is implicitly group 0.
+    value: 3
+  - name: match[<index>]
+    type: string
+    description: |
+      Only when using "Regex Match" as the operator.
+
+      The text matching each indexed capture group.
+
+      Index 0 is the entire matching text, and the first parenthesized group is 1.
+    value: 'matching word'
+  - name: <groupName>
+    type: string
+    description: |
+      Only when using "Regex Match" as the operator.
+
+      When using named capture groups (e.g, `(?'points'\d+)` or `(?<points>\d+)` ), each named capture group becomes an argument containing the text of the match.
+    value: '123'
 ---
 
 ::collapsible{name="If/Else Flow Diagram by pwnyy"}
