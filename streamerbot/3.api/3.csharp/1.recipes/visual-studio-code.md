@@ -5,6 +5,21 @@ icon: mdi:microsoft-visual-studio-code
 ogImage:
   icon: mdi:microsoft-visual-studio-code
 ---
+# Streamer.Bot C# Extension
+
+This extension automates the process of setting up a project referencing Streamer.Bot's installation to provide IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
+
+::card-group
+  ::card{title="Visual Studio Code" icon=mdi:microsoft-visual-studio-code to="https://code.visualstudio.com/download"}
+    Follow the installation instructions for your operating system
+  ::
+
+  ::card{title="Streamer.Bot C# Extension" icon=mdi:language-csharp color=info to="https://marketplace.visualstudio.com/items?itemName=fajita-of-treason.streamer-bot-csharp"}
+    Write Streamer.bot C# code with IntelliSense and documentation
+  ::
+::
+
+# Manual Setup
 
 This tutorial provides a general step-by-step guide on setting up Visual Studio Code (VS Code) for writing C# code for Streamer.bot.
 
@@ -13,12 +28,12 @@ By following these instructions, you'll be able to write code with linting, whic
 ## Prerequisites
 
 ::card-group
-  ::card{title="Visual Studio Code" icon="mdi:microsoft-visual-studio-code" to="https://code.visualstudio.com/download"}
+  ::card{title="Visual Studio Code" icon=mdi:microsoft-visual-studio-code to="https://code.visualstudio.com/download"}
     Follow the installation instructions for your operating system
   ::
 
-  ::card{title="VSCode C# Extension" icon="vscode-icons:file-type-csharp" to="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"}
-    This is the necessary extension for C# development and includes the .NET Install Tool
+  ::card{title="VSCode C# Extension" icon=vscode-icons:file-type-csharp to="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"}
+    This is the base extension for C# development and includes the .NET Install Tool
   ::
 ::
 
@@ -89,7 +104,7 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
       <Reference Include="System.Web" />
       <Reference Include="System.Net.Http" />
 
-      <!-- Uncomment the following line to reference all dlls in the streamerbot directory -->
+      <!-- Uncomment the following line to reference all DLLs in the streamerbot directory -->
       <!-- <Reference Include="$(StreamerBotPath)/**/*.dll" /> -->
     </ItemGroup>
   </Project>
@@ -108,7 +123,7 @@ Do not use quotes around your Streamer.bot directory path, even if it contains s
 **Notes about `StreamerBot.csproj`**
 - This file includes the Streamer.bot using statements in every `.cs` file automatically
 - This file configures the project as a `.NET Framework 4.8.1` project
-- To point to your own Streamer.bot dlls, replace the contents of `<StreamerBotPath>` with the path to your own Streamer.bot directory (containing `Streamer.bot.exe` and `.dll` files)
+- To point to your own Streamer.bot DLLs, replace the contents of `<StreamerBotPath>` with the path to your own Streamer.bot directory (containing `Streamer.bot.exe` and `.dll` files)
 ::
 
 ### Create a .cs File
