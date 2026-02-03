@@ -81,8 +81,5 @@ variables:
 ---
 
 ::collapsible{name="If/Else Flow Diagram by pwnyy"}
-  ::small{.text-gray-400}
-  Right-Click -> Open in New Tab to view full size
-  ::
-  ![If-Else flowchart](/1.get-started/assets/if-else-flowchart.png)
+  ![If-Else Flow Chart by pwnyy (Right-Click to open full size in a new tab)](/assets/1.get-started/assets/if-else-flowchart.png)
 ::

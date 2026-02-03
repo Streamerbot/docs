@@ -5,21 +5,19 @@ icon: mdi:microsoft-visual-studio-code
 ogImage:
   icon: mdi:microsoft-visual-studio-code
 ---
-# Streamer.bot C# Extension
 
+::tip
+**VSCode Extension now available!** :br
 This extension automates the process of setting up a Streamer.bot C# project directory with IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
-
-::card-group
-  ::card{title="Visual Studio Code" icon=mdi:microsoft-visual-studio-code to="https://code.visualstudio.com/download"}
-    Follow the installation instructions for your operating system
-  ::
-
-  ::card{title="Streamer.bot C# Extension" icon=mdi:language-csharp color=info to="https://marketplace.visualstudio.com/items?itemName=fajita-of-treason.streamer-bot-csharp"}
-    Write Streamer.bot C# code with IntelliSense and documentation
-  ::
 ::
 
-# Manual Setup
+::card{title="Streamer.bot C# Extension for Visual Studio Code" icon=mdi:microsoft-visual-studio-code color=info to="https://marketplace.visualstudio.com/items?itemName=fajita-of-treason.streamer-bot-csharp"}
+  Write Streamer.bot C# code with IntelliSense and documentation
+
+  <small>by FajitaOfTreason</small>
+::
+
+<hr>
 
 This tutorial provides a general step-by-step guide on setting up Visual Studio Code (VS Code) for writing C# code for Streamer.bot.
 
@@ -66,7 +64,7 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
 
   ![A new file being named StreamerBot.csproj](assets/vscode-naming-new-csproj.png)
 
-  :br
+  <br>
 
 3. Paste the contents from the code block below into your new `.csproj` file:
 
@@ -111,7 +109,7 @@ Open the `Explorer` view by selecting `View > Explorer` from the menu bar, or us
   ```
   ::
 
-:br
+<br>
 
 4. Replace the value of the `<StreamerBotPath>`{lang=xml} xml tag to point to your Streamer.bot directory and save the file.
 
