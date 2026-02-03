@@ -7,7 +7,7 @@ ogImage:
 ---
 # Streamer.Bot C# Extension
 
-This extension automates the process of setting up a project referencing Streamer.Bot's installation to provide IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
+This extension automates the process of setting up a Streamer.Bot C# project directory with IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
 
 ::card-group
   ::card{title="Visual Studio Code" icon=mdi:microsoft-visual-studio-code to="https://code.visualstudio.com/download"}
