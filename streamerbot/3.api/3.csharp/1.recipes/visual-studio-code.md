@@ -5,16 +5,16 @@ icon: mdi:microsoft-visual-studio-code
 ogImage:
   icon: mdi:microsoft-visual-studio-code
 ---
-# Streamer.Bot C# Extension
+# Streamer.bot C# Extension
 
-This extension automates the process of setting up a Streamer.Bot C# project directory with IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
+This extension automates the process of setting up a Streamer.bot C# project directory with IntelliSense, while also providing hover documentation for CPH methods.  Installation includes the base C# extension dependency.
 
 ::card-group
   ::card{title="Visual Studio Code" icon=mdi:microsoft-visual-studio-code to="https://code.visualstudio.com/download"}
     Follow the installation instructions for your operating system
   ::
 
-  ::card{title="Streamer.Bot C# Extension" icon=mdi:language-csharp color=info to="https://marketplace.visualstudio.com/items?itemName=fajita-of-treason.streamer-bot-csharp"}
+  ::card{title="Streamer.bot C# Extension" icon=mdi:language-csharp color=info to="https://marketplace.visualstudio.com/items?itemName=fajita-of-treason.streamer-bot-csharp"}
     Write Streamer.bot C# code with IntelliSense and documentation
   ::
 ::
