@@ -138,7 +138,8 @@ Streamer.bot v0.2.5 or later is required to be able to **send messages** from do
 
 ### Setup
 
-1. Enable WebSocket Server
+::steps{level=4}
+#### Enable WebSocket Server
 
     ::navigate
     In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
@@ -148,7 +149,7 @@ Streamer.bot v0.2.5 or later is required to be able to **send messages** from do
     - Enable `Authentication` and set a `Password` to allow **sending** messages
     - Start the server if it is not already started
 
-2. Configure OBS Studio
+#### Configure OBS Studio
 
     ::navigate
     In OBS Studio, navigate to **Docks > Custom Browser Docks** from the menu bar
@@ -163,17 +164,18 @@ Streamer.bot v0.2.5 or later is required to be able to **send messages** from do
 
     ![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png)
 
-3. Configure Connection Details
+#### Configure Connection Details
 
     - Enter your Streamer.bot WebSocket Server details in the dialog:
 
     ![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png)
 
-4. Done!
+#### Done!
 
     ::success
     You've got **Streamer.bot Chat** fully functioning as a browser dock in OBS Studio!
     ::
+::
 
 ### Settings
 
@@ -201,15 +203,16 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
 
 ## Overlay
 
-![Chat Overlay Preview](./assets/chat-overlay.gif)
-
 ::warning
 **Overlay mode is currently experimental and is subject to active changes**
 ::
 
+![Chat Overlay Preview](./assets/chat-overlay.gif)
+
 ### Setup
 
-1. Enable WebSocket Server
+::steps{level=4}
+#### Enable WebSocket Server
 
     ::navigate
     In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
@@ -218,7 +221,7 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
     - Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
     - Start the server if it is not already started
 
-2. Configure Chat Overlay
+#### Configure Chat Overlay
 
     ::navigate
     Navigate to **Settings > Overlay** in the Streamer.bot Chat window
@@ -227,16 +230,17 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
     - Modify any overlay settings, which will then be persisted in the URL
     - Make sure that the `WebSocket Server Configuration` matches your Streamer.bot WebSocket Server settings
 
-3. Add to OBS Studio
+#### Add to OBS Studio
 
     - Click `Save & Copy Overlay URL` to save your settings and copy the URL to your clipboard
     - Add a new browser source in OBS Studio and paste the copied URL
 
-4. Done!
+#### Done!
 
     ::success
     You now have a Streamer.bot chat overlay source in OBS Studio!
     ::
+::
 
 ## Custom Styles
 
