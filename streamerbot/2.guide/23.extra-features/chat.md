@@ -52,7 +52,7 @@ For example, you can type `/action` to reveal a menu with all actions in your St
 
 Some commands support **Multi-Platform** execution, such as `/title` which can set the title of both Twitch and YouTube broadcasts simultaneously.
 
-![Slash Commands Menu](assets/chat-slash-commands.png){width="500" caption-alt}
+![Slash Commands Menu](assets/chat-slash-commands.png){width="500"}
 
 
 #### Streamer.bot Commands
@@ -68,7 +68,7 @@ When selecting a command, :kbd{value=Enter} will submit the command immediately 
 
 If you wish to add input for a command, use :kbd{value=Tab} to select the command and continue typing.
 
-![Streamer.bot Commands Menu](assets/chat-commands.png){width="500" caption-alt}
+![Streamer.bot Commands Menu](assets/chat-commands.png){width="500"}
 
 #### Emote Autocomplete
 ::note
@@ -85,7 +85,7 @@ Emote autocomplete can be triggered at any time and contains emotes from the fol
 
 To select an emote and continue typing, you can use either :kbd{value="Enter"} or :kbd{value="Tab"}
 
-![Emotes Menu](assets/chat-emotes.png){width="500" caption-alt}
+![Emotes Menu](assets/chat-emotes.png){width="500"}
 
 ### Quick Actions
 In settings, you can configure **Quick Actions** for 3 different sources.
@@ -95,21 +95,21 @@ Quick Actions allow you to immediately execute any of your Streamer.bot actions 
 #### Global
 Global Quick Actions are displayed in the bottom-left of the chat window and can be executed at any time.
 
-![Global Quick Actions](assets/chat-quick-actions-global.png){caption-alt width="400"}
+![Global Quick Actions](assets/chat-quick-actions-global.png){width="400"}
 
 #### User
 User Quick Actions are displayed in the `View User` popup windows that display when you click on a username in chat.
 
 Additional arguments are populated with the usual user args for the respective platform.
 
-![User Quick Actions](assets/chat-quick-actions-user.png){caption-alt width="400"}
+![User Quick Actions](assets/chat-quick-actions-user.png){width="400"}
 
 #### Message
 Per-message quick actions appear when you hover over a specific chat message.
 
 Additional arguments are populated with the usual message args for the respective platform.
 
-![Message Quick Actions](assets/chat-quick-actions-message.png){caption-alt width="400"}
+![Message Quick Actions](assets/chat-quick-actions-message.png){width="400"}
 
 #### Event
 Event quick actions appear when you hover any event message
@@ -117,58 +117,55 @@ Event quick actions appear when you hover any event message
 ### Highlights
 Message and event highlights can be customized for a variety of events.
 
-![Chat Highlight Settings](assets/chat-highlights.png){caption-alt width="500"}
+![Chat Highlight Settings](assets/chat-highlights.png){width="500"}
 
-![Chat Highlights](assets/chat-highlights-preview.png){caption-alt width="500"}
+![Chat Highlights](assets/chat-highlights-preview.png){width="500"}
 
 ## OBS Browser Dock
 
 You can dock the Streamer.bot chat in your OBS studio instance.
 
-::tip
-Streamer.bot v0.2.5 or later is required to be able to **send messages** from docked chat
-<br><span class="ml-6">Earlier versions will be limited to **read-only** mode</span>
-::
-
 ### Setup
 
 ::steps{level=4}
+
 #### Enable WebSocket Server
 
-    ::navigate
-    In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
-    ::
+::navigate
+In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
+::
 
-    - Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
-    - Enable `Authentication` and set a `Password` to allow **sending** messages
-    - Start the server if it is not already started
+- Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
+- Enable `Authentication` and set a `Password` to allow **sending** messages
+- Start the server if it is not already started
 
 #### Configure OBS Studio
 
-    ::navigate
-    In OBS Studio, navigate to **Docks > Custom Browser Docks** from the menu bar
-    ::
+::navigate
+In OBS Studio, navigate to **Docks > Custom Browser Docks** from the menu bar
+::
 
-    You can add any of the following URLs:
+You can add any of the following URLs:
 
-    | Name | URL |
-    | ---- | --- |
-    | Streamer.bot Chat | `https://chat.streamer.bot/feed/chat` |
-    | Streamer.bot Event Feed | `https://chat.streamer.bot/feed/events` |
+| Name | URL |
+| ---- | --- |
+| Streamer.bot Chat | `https://chat.streamer.bot/feed/chat` |
+| Streamer.bot Event Feed | `https://chat.streamer.bot/feed/events` |
 
-    ![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png)
+![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png)
 
 #### Configure Connection Details
 
-    - Enter your Streamer.bot WebSocket Server details in the dialog:
+- Enter your Streamer.bot WebSocket Server details in the dialog:
 
-    ![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png)
+![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png)
 
 #### Done!
 
-    ::success
-    You've got **Streamer.bot Chat** fully functioning as a browser dock in OBS Studio!
-    ::
+::success
+You've got **Streamer.bot Chat** fully functioning as a browser dock in OBS Studio!
+::
+
 ::
 
 ### Settings
@@ -203,37 +200,40 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
 
 ![Chat Overlay Preview](./assets/chat-overlay.gif)
 
+Chat overlay mode allows you to easily add chat as a browser source in OBS Studio or other streaming software.
+
 ### Setup
 
 ::steps{level=4}
 #### Enable WebSocket Server
 
-    ::navigate
-    In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
-    ::
+::navigate
+In Streamer.bot, navigate to **Servers / Clients > WebSocket Server**
+::
 
-    - Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
-    - Start the server if it is not already started
+- Enable `Auto-Start` to automatically start the server when Streamer.bot starts up
+- Start the server if it is not already started
 
 #### Configure Chat Overlay
 
-    ::navigate
-    Navigate to **Settings > Overlay** in the Streamer.bot Chat window
-    ::
+::navigate
+Navigate to **Settings > Overlay** in the Streamer.bot Chat window
+::
 
-    - Modify any overlay settings, which will then be persisted in the URL
-    - Make sure that the `WebSocket Server Configuration` matches your Streamer.bot WebSocket Server settings
+- Modify any overlay settings, which will then be persisted in the URL
+- Make sure that the `WebSocket Server Configuration` matches your Streamer.bot WebSocket Server settings
 
 #### Add to OBS Studio
 
-    - Click `Save & Copy Overlay URL` to save your settings and copy the URL to your clipboard
-    - Add a new browser source in OBS Studio and paste the copied URL
+- Click `Save & Copy Overlay URL` to save your settings and copy the URL to your clipboard
+- Add a new browser source in OBS Studio and paste the copied URL
 
 #### Done!
 
-    ::success
-    You now have a Streamer.bot chat overlay source in OBS Studio!
-    ::
+::success
+You now have a Streamer.bot chat overlay source in OBS Studio!
+::
+
 ::
 
 ## Custom Styles
@@ -250,23 +250,23 @@ Some `data-attributes` have been added to the DOM for easier targeting of specif
 These attributes are available specifically on chat message rows.
 
 ::field-group
-    ::field{name="data-platform" type="string"}
-    The platform name for a given chat message row.
-    :br
-    Values: `twitch`, `youtube`, `kick`, `trovo`
-    ::
+  ::field{name="data-platform" type="string"}
+  The platform name for a given chat message row.
+  :br
+  Values: `twitch`, `youtube`, `kick`, `trovo`
+  ::
 
-    ::field{name="data-user-id" type="string"}
-    The ID of the user who sent the chat message.
-    ::
+  ::field{name="data-user-id" type="string"}
+  The ID of the user who sent the chat message.
+  ::
 
-    ::field{name="data-username" type="string"}
-    The canonical login name of the user who sent the chat message.
-    ::
+  ::field{name="data-username" type="string"}
+  The canonical login name of the user who sent the chat message.
+  ::
 
-    ::field{name="data-display-name" type="string"}
-    The display name of the user who sent the chat message.
-    ::
+  ::field{name="data-display-name" type="string"}
+  The display name of the user who sent the chat message.
+  ::
 ::
 
 ### Events
@@ -275,24 +275,24 @@ These attributes are available specifically on chat message rows.
 You can use these event attributes to apply custom styles for any specific events, such as follows or subscriptions.
 ::
 
-::read-more{to=/api/websocket/events}
-For a full list of possible event source and types, refer to the **WebSocket Events** documentation.
-::
-
 These attributes are available on **all** rows visible in chat, *including chat messages*.
 
 ::field-group
-    ::field{name="data-event-source" type="string"}
-    The source of the event.
-    :br
-    Values: `Twitch`, `YouTube`, `Trovo`, etc...
-    ::
+  ::field{name="data-event-source" type="string"}
+  The source of the event.
+  :br
+  Values: `Twitch`, `YouTube`, `Trovo`, etc...
+  ::
 
-    ::field{name="data-event-type" type="string"}
-    The type of event.
-    :br
-    Values: `ChatMessage`, `Follow`, `Subscription`, etc...
-    ::
+  ::field{name="data-event-type" type="string"}
+  The type of event.
+  :br
+  Values: `ChatMessage`, `Follow`, `Subscription`, etc...
+  ::
+::
+
+::read-more{to=/api/websocket/events}
+For a full list of possible event source and types, refer to the **WebSocket Events** documentation.
 ::
 
 ### Examples
@@ -300,6 +300,8 @@ These attributes are available on **all** rows visible in chat, *including chat 
 ::tip
 If you are using the chat overlay in OBS Studio, you can add custom CSS directly in your browser source settings!
 ::
+
+Below are some example snippets showing how to target these attributes in your CSS:
 
 ```css [style.css]
 /* Hide all rows originating from Twitch */
