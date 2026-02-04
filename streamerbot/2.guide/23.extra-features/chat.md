@@ -12,15 +12,9 @@ Streamer.bot ships with a built-in chat client to provide you with direct integr
 ### Multi Stream Support
 
 ::tip
-  Chat can connect to all supported streaming platforms in Streamer.bot itself:
-
-  - :icon{name="i-mdi-twitch" class="text-violet-400 h-4 my-0 inline-block"} **Twitch**
-  - :icon{name="i-simple-icons-youtube" class="text-red-400 h-4 my-0 inline-block"} **YouTube**
-  - :icon{name="IconTrovo" class="text-emerald-400 h-4 my-0 inline-block"} **Trovo**
-
-  To suggest a new platform, visit [Streamer.bot Ideas & Suggestions](https://ideas.streamer.bot)
-  <br>
-  Note: Kick and TikTok currently do not provide a public API, which is required for support
+  Chat can connect to any platform supported by Streamer.bot, including Twitch, YouTube, Trovo, and Kick.
+  :br
+  To suggest a new platform to integrate with Streamer.bot, visit [Streamer.bot Ideas & Suggestions](https://ideas.streamer.bot)
 ::
 
 By default, the chat window will enable a tabbed view for all broadcaster accounts you have connected.
