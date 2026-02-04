@@ -4,7 +4,7 @@ description: Multi-stream chat client with deep Streamer.bot integration
 logo: https://streamer.bot/logo-transparent.svg
 ---
 
-![Streamer.bot Chat](assets/chat.png){caption-alt}
+![Streamer.bot Chat](assets/chat.png)
 
 ## Features
 Streamer.bot ships with a built-in chat client to provide you with direct integration between chat and your bot's actions.
@@ -27,7 +27,7 @@ By default, the chat window will enable a tabbed view for all broadcaster accoun
 
 While on the combined chat view, you can toggle which chat(s) to send to:
 
-![Multi-Chat Toggle](assets/chat-toggle.png){caption-salt}
+![Multi-Chat Toggle](assets/chat-toggle.png)
 
 #### Shortcuts
 Keyboard shortcuts exist to easily direct your chat messages to/from different accounts:
@@ -161,13 +161,13 @@ Streamer.bot v0.2.5 or later is required to be able to **send messages** from do
     | Streamer.bot Chat | `https://chat.streamer.bot/feed/chat` |
     | Streamer.bot Event Feed | `https://chat.streamer.bot/feed/events` |
 
-    ![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png){caption-alt}
+    ![OBS Browser Docks Dialog](assets/chat-obs-browser-docks.png)
 
 3. Configure Connection Details
 
     - Enter your Streamer.bot WebSocket Server details in the dialog:
 
-    ![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png){caption-alt}
+    ![Streamer.bot Chat WebSocket Config](assets/chat-obs-connection.png)
 
 4. Done!
 
@@ -201,7 +201,7 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
 
 ## Overlay
 
-![Chat Overlay Preview](./assets/chat-overlay.gif){caption-alt}
+![Chat Overlay Preview](./assets/chat-overlay.gif)
 
 ::warning
 **Overlay mode is currently experimental and is subject to active changes**
@@ -237,3 +237,94 @@ Docked chat is limited in some ways due to requiring the WebSocket Server to fun
     ::success
     You now have a Streamer.bot chat overlay source in OBS Studio!
     ::
+
+## Custom Styles
+
+::note
+Future Streamer.bot Chat updates will be focused on improving customization options
+::
+
+Currently, customization of chat and overlay requires custom CSS overrides.
+
+Some `data-attributes` have been added to the DOM for easier targeting of specific elements.
+
+### Chat Messages
+These attributes are available specifically on chat message rows.
+
+::field-group
+    ::field{name="data-platform" type="string"}
+    The platform name for a given chat message row.
+    :br
+    Values: `twitch`, `youtube`, `kick`, `trovo`
+    ::
+
+    ::field{name="data-user-id" type="string"}
+    The ID of the user who sent the chat message.
+    ::
+
+    ::field{name="data-username" type="string"}
+    The canonical login name of the user who sent the chat message.
+    ::
+
+    ::field{name="data-display-name" type="string"}
+    The display name of the user who sent the chat message.
+    ::
+::
+
+### Events
+
+::tip
+You can use these event attributes to apply custom styles for any specific events, such as follows or subscriptions.
+::
+
+::read-more{to=/api/websocket/events}
+For a full list of possible event source and types, refer to the **WebSocket Events** documentation.
+::
+
+These attributes are available on **all** rows visible in chat, *including chat messages*.
+
+::field-group
+    ::field{name="data-event-source" type="string"}
+    The source of the event.
+    :br
+    Values: `Twitch`, `YouTube`, `Trovo`, etc...
+    ::
+
+    ::field{name="data-event-type" type="string"}
+    The type of event.
+    :br
+    Values: `ChatMessage`, `Follow`, `Subscription`, etc...
+    ::
+::
+
+### Examples
+
+::tip
+If you are using the chat overlay in OBS Studio, you can add custom CSS directly in your browser source settings!
+::
+
+```css [style.css]
+/* Hide all rows originating from Twitch */
+[data-platform="twitch"] {
+  display: none !important;
+}
+
+/* Hide messages from a specific username */
+[data-username="someannoyinguser69"] {
+  display: none !important;
+}
+
+/* Highlight messages from a specific user */
+[data-username="bestmodever"] {
+  background-color: rgba(255, 215, 0, 0.2);
+  border: 1px solid gold;
+  border-radius: 4px;
+}
+
+/* Custom CSS for Twitch Follow events */
+[data-event-source="Twitch"][data-event-type="Follow"] {
+  background-color: rgba(100, 65, 165, 0.2);
+  border: 1px solid rebeccapurple;
+  border-radius: 4px;
+}
+```
