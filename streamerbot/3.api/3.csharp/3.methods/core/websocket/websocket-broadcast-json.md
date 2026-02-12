@@ -16,7 +16,7 @@ example: |
             string json = "{\"foo\":\"bar\"}";
 
             //Broadcast data to clients
-            CPH.WebsocketBroadcastJson(data);
+            CPH.WebsocketBroadcastJson(json);
 
             return true;
         }
