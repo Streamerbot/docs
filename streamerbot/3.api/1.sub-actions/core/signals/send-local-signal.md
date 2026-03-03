@@ -17,7 +17,7 @@ parameters:
     description: Sends the specified arguments over to the second instance. It's not affected by "Include Action's Arguments" and those arguments are always included.
   - name: Queue Signal
     type: boolean
-    descripton: Whether or not to queue the signal that can be picked up by a Wait for Local Signal that has yet to happen
+    description: Whether or not to queue the signal that can be picked up by a Wait for Local Signal that has yet to happen
 variables: []
 csharpMethods: []
 ---
