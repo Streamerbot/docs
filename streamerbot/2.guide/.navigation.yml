@@ -1,3 +1,4 @@
 title: Guide
-icon: i-mdi-book-open-page-variant-outline
-navigation.icon: i-mdi-book-open-page-variant-outline
+description: A comprehensive guide to configuring Streamer.bot, including Actions, Triggers, Variables, and more.
+icon: mdi:book-open-page-variant-outline
+navigation.icon: mdi:book-open-page-variant-outline
