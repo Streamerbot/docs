@@ -9,7 +9,7 @@ csharpMethods:
   - ObsSendRaw
 ---
 
-:read-more{to=/guide/broadcasters/obs-studio}
+:read-more{to=/guide/stream-apps/obs-studio}
 
 ::tip{to="https://obs-raw.streamer.bot"}
 You can use the [OBS Raw Generator](https://obs-raw.streamer.bot) to generate raw requests in Raw JSON or C# Code format

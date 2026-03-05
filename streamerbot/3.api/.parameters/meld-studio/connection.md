@@ -7,4 +7,4 @@ options:
     description: All configured Meld Studio connections
 ---
 
-Select the configured [Meld Studio Connection](/guide/broadcasters/meld-studio) to connect to
+Select the configured [Meld Studio Connection](/guide/stream-apps/meld-studio) to connect to
