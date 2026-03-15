@@ -79,4 +79,4 @@ commonVariables:
   - PatreonUser
   - PatreonUserAttributes
   - PatreonMemberAttributes
-  ---
+---
