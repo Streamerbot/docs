@@ -1,6 +1,6 @@
 ---
-title: Pledge Deleted
-description: This event triggers when a pledge is deleted in Patreon.
+title: Follow Deleted
+description: This event triggers when a follow gets deleted in Patreon.
 variables:
   - name: entitledTiers[#].Attributes.title
     type: string
@@ -79,4 +79,4 @@ commonVariables:
   - PatreonUser
   - PatreonUserAttributes
   - PatreonMemberAttributes
-  ---
+---

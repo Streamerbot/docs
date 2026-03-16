@@ -1,6 +1,6 @@
 ---
-title: Follow Deleted
-description: This event triggers when a follow gets deleted in Patreon.
+title: Follow Created
+description: This event triggers when you get a follow in Patreon.
 variables:
   - name: entitledTiers[#].Attributes.title
     type: string
@@ -79,4 +79,4 @@ commonVariables:
   - PatreonUser
   - PatreonUserAttributes
   - PatreonMemberAttributes
-  ---
+---
