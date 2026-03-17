@@ -1,6 +1,7 @@
 ---
 title: Kicks Gifted
 description: Trigger for a Kicks Gifted event
+version: 1.0.2
 variables:
   - name: kicks.amount
     description: The amount of Kicks gifted
