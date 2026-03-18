@@ -10,7 +10,7 @@ Sometimes you may want to parse JSON data from an API response or other source i
 
 This utility action will take a JSON string as input, parse it, and store the resulting data in Streamer.bot variables that you can use in subsequent actions.
 
-:streamerbot-import-card{name="[Utilities] Parse JSON" author="Whipstickgostop" expanded}
+:streamerbot-import-card{name="wsgs.utils.json.parse" author="whipstickgostop" expanded}
 
 ## Setup
 
@@ -24,9 +24,9 @@ This utility action will take a JSON string as input, parse it, and store the re
 
 ### Confirm the Import
 
-You should see the **Name** field populated with `[Utilities] Parse JSON` with a single action.
+You should see the **Name** field populated with `wsgs.utils.json.parse` with a single action.
 
-Click **Import** to add the Parse JSON Utility to your Streamer.bot instance.
+Click **Import** to add the `wsgs.utils.json.parse` action to your Streamer.bot instance.
 
 ::success
 All selected actions will be added to your Streamer.bot installation!
@@ -47,7 +47,7 @@ All selected actions will be added to your Streamer.bot installation!
 ### Run the Parse JSON utility
 
 - Add the [Execute C# Method](/api/sub-actions/core/csharp/execute-csharp-method) sub-action to your action. Ensure it is _after_ you have set the `json` argument.
-- Select the `[Utilities] Parse JSON` code, and the `Execute` method.
+- Select the `wsgs.utils.json.parse` code, and the `Execute` method.
 - Click `OK` to confirm.
 
 ### Access the parsed data
