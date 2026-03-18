@@ -10,16 +10,17 @@ Sometimes you may want to parse JSON data from an API response or other source i
 
 This utility action will take a JSON string as input, parse it, and store the resulting data in Streamer.bot variables that you can use in subsequent actions.
 
+:streamerbot-import-card{name="[Utilities] Parse JSON" author="Whipstickgostop" expanded}
+
 ## Setup
 
 ::steps{level=3}
 
 ### Load the import code
 
-- Click **Import** at the top of Streamer.bot to open the Import Dialog
-- Copy the import code below and paste it into the **Import String** field in Streamer.bot:
-
-:streamerbot-import-card{name="[Utilities] Parse JSON" author="Whipstickgostop"}
+1. Copy the import code above
+1. Click **Import** at the top of Streamer.bot to open the Import Dialog
+1. Paste the import code into the **Import String** field in Streamer.bot
 
 ### Confirm the Import
 
