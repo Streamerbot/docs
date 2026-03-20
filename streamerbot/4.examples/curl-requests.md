@@ -64,17 +64,47 @@ Optional data to include in the request body, for methods like `POST` or `PUT`.
 If passing JSON data, ensure it is properly stringified and escaped.
 For example, `{"key":"value"}`{lang=json} would need to be passed as `{\"key\":\"value\"}`{class="text-warning"}
 :::
+
+:::field{name="curl.headers.accept" type=string}
+Optional value for the `Accept` header to specify the expected response format.
+<br><br>
+For example, `application/json` to indicate that you expect a JSON response.
+:::
+
+:::field{name="curl.headers.authorization" type=string}
+Optional value for the `Authorization` header to include credentials or tokens for authentication.
+<br><br>
+For example, `Bearer your_token_here` for bearer token authentication.
+
+::::warning
+If you have debug logging enabled, you can disable the logging sub-action in the `wsgs.utils.curl` action to prevent sensitive data from being logged.
+::::
+:::
+
+:::field{name="curl.headers.contentType" type=string}
+Optional value for the `Content-Type` header to specify the format of the request body.
+<br><br>
+For example, `application/json` if you are sending JSON data in the request body.
+:::
+
+:::field{name="curl.headers.userAgent" type=string}
+Optional value for the `User-Agent` header to specify the client making the request.
+<br><br>
+For example, `MyStreamerBotClient/1.0` to identify your Streamer.bot instance in the request.
+:::
 ::
 
 ### Example
 
 For example, to make a `POST` request with a JSON body, you could set your arguments as follows:
 
-| Argument      | Value                                                       |
-| ------------- | ----------------------------------------------------------- |
-| `curl.method` | `POST`                                                      |
-| `curl.url`    | `https://webhook.site/f96fee22-c3f1-4aeb-84a0-3ee22ffc651c` |
-| `curl.data`   | `{\"id\": 1, \"name\": \"Test\"} `                          |
+| Argument                   | Value                                                       |
+| -------------------------- | ----------------------------------------------------------- |
+| `curl.method`              | `POST`                                                      |
+| `curl.url`                 | `https://webhook.site/f96fee22-c3f1-4aeb-84a0-3ee22ffc651c` |
+| `curl.data`                | `{\"id\": 1, \"name\": \"Test\"} `                          |
+| `curl.headers.accept`      | `application/json`                                          |
+| `curl.headers.contentType` | `application/json`                                          |
 
 Then simply run the `wsgs.utils.curl` action to send the request with the specified arguments:
 
