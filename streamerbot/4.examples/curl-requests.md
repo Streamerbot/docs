@@ -44,11 +44,11 @@ All selected actions will be added to your Streamer.bot installation!
 
 To send an HTTP request using the cURL utility action, you can use the [Set Argument](/api/sub-actions/core/arguments/set-argument) sub-action to set the necessary arguments for the request, and then execute the `wsgs.utils.curl` action by utilizing the [Run Action](/api/sub-actions/core/actions/run-action) sub-action.
 
-### Arguments
+### Input Arguments
 
 ::field-group
 
-:::field{name="curl.url" type=string required=true}
+:::field{name="curl.url" type=string required}
 The URL to send the request to.
 :::
 
@@ -94,7 +94,29 @@ For example, `MyStreamerBotClient/1.0` to identify your Streamer.bot instance in
 :::
 ::
 
-### Example
+### Output Variables
+
+After executing the `wsgs.utils.curl` action, you can access the following output variables to get information about the response:
+
+::field-group
+
+:::field{name="curl.responseCode" type=number}
+The HTTP status code returned by the server in response to the request.
+:::
+
+:::field{name="curl.responseBody" type=string}
+The raw body of the response returned by the server, if any.
+
+::::tip{to=/examples/parse-json-utility}
+If the response is in JSON format, you can use my JSON utility to extract nested values into separate variables!
+<br>
+:icon{name=mdi:chevron-right} [Read more about `wsgs.utils.json.parse`](/examples/parse-json-utility)
+::::
+:::
+
+::
+
+## Example
 
 For example, to make a `POST` request with a JSON body, you could set your arguments as follows:
 
