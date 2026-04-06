@@ -21,5 +21,3 @@ commonVariables:
   - KickBroadcaster
   - KickUser
 ---
-
-:wip

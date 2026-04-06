@@ -1,7 +1,7 @@
 ---
 title: Gift Subscription
 description: Trigger for a Kick Gift Subscription
-variables:  
+variables:
   - name: recipient.userName
     type: string
     description: The recipient user's display name
@@ -29,5 +29,3 @@ commonVariables:
   - KickBroadcaster
   - KickUser
 ---
-
-:wip

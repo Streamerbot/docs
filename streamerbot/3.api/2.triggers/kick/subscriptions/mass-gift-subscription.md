@@ -1,7 +1,7 @@
 ---
 title: Mass Gift Subscription
 description: Trigger for a Kick Mass Gift Subscription
-variables:  
+variables:
   - name: recipient.userName#
     type: string
     description: The recipient user's display name<br># is a number starting at 0
@@ -29,5 +29,3 @@ commonVariables:
   - KickBroadcaster
   - KickUser
 ---
-
-:wip
