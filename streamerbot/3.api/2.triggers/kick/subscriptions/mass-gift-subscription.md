@@ -2,21 +2,21 @@
 title: Mass Gift Subscription
 description: Trigger for a Kick Mass Gift Subscription
 variables:
-  - name: recipient.userName#
+  - name: recipient.#.userName
     type: string
     description: The recipient user's display name<br># is a number starting at 0
     value: KickUser123
-  - name: recipient.userLogin#
+  - name: recipient.#.userLogin
     type: string
     description: The recipient user's login name<br># is a number starting at 0
     value: kickuser123
-  - name: recipient.userId#
+  - name: recipient.#.userId
     type: string
     description: The recipient user's id<br># is a number starting at 0
-  - name: recipient.profilePicture#
+  - name: recipient.#.profilePicture
     type: string
     description: The recipient user's profile picture<br># is a number starting at 0
-  - name: recipient.platform#
+  - name: recipient.#.platform
     type: string
     description: The recipient user's platform<br># is a number starting at 0
   - name: subscribedAt
