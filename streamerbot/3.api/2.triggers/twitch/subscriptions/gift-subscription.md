@@ -1,6 +1,6 @@
 ---
 title: Gift Subscription
-description: Trigger for a Twitch Gift Subscription
+description: Trigger for a Single Twitch Gift Subscription
 twitchService: EventSub
 parameters:
   - name: Tier
@@ -21,7 +21,10 @@ parameters:
       Choose on how much months gifted to trigger the gift sub
 
       Options: `1`, `3`, `6`, `12`
-  - name: Range
+  - name: Milestone Range Min/Max
+    type: number
+    description: |
+      Limits the trigger to a range of total subscriptions gifted to the channel by this user. Leave blank to allow any minimum or maximum.
 variables:
   - name: recipientUser
     type: string
