@@ -5,6 +5,12 @@ parameters:
   - name: Title
     type: Text
     description: Enter the new title for your stream
+variables:
+  - name: titleSuccess
+    type: bool
+    description: Whether or not the channel title was successfully changed
+    value: true
+    
 csharpMethods:
   - SetChannelTitle
 ---
