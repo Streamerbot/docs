@@ -9,7 +9,7 @@ variables:
   - name: titleSuccess
     type: bool
     description: Whether or not the channel title was successfully changed
-    value: true/false
+    value: true
     
 csharpMethods:
   - SetChannelTitle
