@@ -5,6 +5,5 @@ description: |
   Possible values:
   - `Platform.Twitch`
   - `Platform.YouTube`
-  - `Platform.Trovo`
   - `Platform.Kick`
 value: Platform.Twitch

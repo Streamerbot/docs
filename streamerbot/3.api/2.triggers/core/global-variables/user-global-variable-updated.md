@@ -27,7 +27,6 @@ parameters:
     type: Select
     description: |
       - `Any` - Trigger on variable updates for **all** platforms
-      - `Trovo` - Only trigger on **Trovo** user variable updates
       - `Twitch` - Only trigger on **Twitch** user variable updates
       - `VStream` - Only trigger on **VStream** user variable updates
       - `YouTube` - Only trigger on **YouTube** user variable updates
@@ -55,13 +54,13 @@ variables:
   - name: global.userId
     type: string
     description: The unique platform ID of the user
-    value: '123456789'
+    value: "123456789"
   - name: global.userType
     type: string
     description: |
       The platform of the user: <br>
-      `twitch`, `youtube`, `trovo`, `vstream`
-    value: 'twitch'
+      `twitch`, `youtube`, `kick`
+    value: "twitch"
   - name: global.userLogin
     type: string
     description: The username of the user

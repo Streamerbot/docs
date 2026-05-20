@@ -5,13 +5,13 @@ variables:
   - name: command
     type: string
     description: The command that was used
-    value: '!shoutout'
+    value: "!shoutout"
   - name: commandId
     type: Guid
     description: The ID of the command
   - name: commandName
     type: string
-    description : The name of the command
+    description: The name of the command
   - name: commandSource
     type: string
     description: The command source
@@ -66,22 +66,20 @@ variables:
       The text matching each indexed capture group.
 
       Index 0 is the entire matching text, and the first parenthesized group is 1.
-    value: 'matching word'
+    value: "matching word"
   - name: <groupName>
     type: string
     description: |
       Only when the command mode = "Regex"
 
       When using named capture groups (e.g, `(?'points'\d+)` or `(?<points>\d+)` ), each named capture group becomes an argument containing the text of the match.
-    value: '123'
+    value: "123"
 commonVariables:
   - TwitchReply
   - TwitchUser
   - TwitchBroadcaster
   - YouTubeUser
   - YouTubeBroadcaster
-  - TrovoUser
-  - TrovoBroadcaster
   - KickUser
   - KickBroadcaster
 ---
@@ -91,12 +89,14 @@ Check out the [Commands Guide](/guide/commands) for details on configuring your 
 ::
 
 ## Parameters
+
 ::field-group
-  ::field{name=Commands type=Select}
-    Select a command from the Commands tab.
+::field{name=Commands type=Select}
+Select a command from the Commands tab.
 
     ::tip
     You can quickly register a new command by clicking the `Create Command` button!
     ::
-  ::
+
+::
 ::

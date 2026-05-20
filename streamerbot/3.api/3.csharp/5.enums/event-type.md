@@ -501,27 +501,6 @@ public class CPHInline
 | `EventType.TreatStreamDisconnected`  | [No description provided]{.text-muted .text-xs} |
 | `EventType.TreatStreamTreat`         | [No description provided]{.text-muted .text-xs} |
 
-### Trovo
-
-| Value                                        | Description                                     |
-| -------------------------------------------- | ----------------------------------------------- |
-| `EventType.TrovoBroadcasterAuthenticated`    | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoBroadcasterChatConnected`    | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoBroadcasterChatDisconnected` | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoChatMessage`                 | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoCustomSpellCast`             | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoFirstWords`                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoFollow`                      | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoGiftSubscription`            | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoMassGiftSubscription`        | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoPresentViewers`              | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoRaid`                        | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoResubscription`              | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoSpellCast`                   | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoStreamOffline`               | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoStreamOnline`                | [No description provided]{.text-muted .text-xs} |
-| `EventType.TrovoSubscription`                | [No description provided]{.text-muted .text-xs} |
-
 ### Twitch
 
 | Value                                             | Description                                     |
