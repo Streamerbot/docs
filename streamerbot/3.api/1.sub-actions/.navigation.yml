@@ -3,4 +3,5 @@ description: Reference of all available sub-actions in Streamer.bot
 icon: i-mdi-lightning-bolt-outline
 navigation.icon: i-mdi-lightning-bolt-outline
 ogImage:
-  headline: Sub-Actions
+  props:
+    headline: Sub-Actions

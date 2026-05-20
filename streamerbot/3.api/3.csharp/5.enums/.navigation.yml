@@ -5,4 +5,5 @@ navigation:
   title: Enums
   icon: mdi:code-braces-box
 ogImage:
-  headline: C# Enums
+  props:
+    headline: C# Enums
