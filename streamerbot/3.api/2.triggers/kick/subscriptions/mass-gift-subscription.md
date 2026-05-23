@@ -1,6 +1,9 @@
 ---
 title: Mass Gift Subscription
 description: Trigger for a Kick Mass Gift Subscription
+parameters:
+  - name: Range
+    import: common/range
 variables:
   - name: recipient.#.userName
     type: string
@@ -25,6 +28,10 @@ variables:
   - name: expiresAt
     type: DateTime
     description: Subcription expiration timestamp (subscribedAt + 1 month)
+  - name: count
+    type: number
+    version: 1.0.5
+    description: The number of subs that were gifted
 commonVariables:
   - KickBroadcaster
   - KickUser
