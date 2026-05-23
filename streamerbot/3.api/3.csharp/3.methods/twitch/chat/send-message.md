@@ -18,19 +18,19 @@ parameters:
       - `true`{lang=cs} - (If `bot` bool is set to `True`), this is the same behaviour as if you had Bot as your preferred account.
       - `false`{lang=cs} - (If `bot` bool is set to `True`), it will try to send using **only** the Bot account, and do **nothing** if it can't (i.e, not logged in).
 example: |
-    using System;
-    public class CPHInline
-    {
-        public bool Execute()
-        {
-            //Set message for chat
-            string message = "This is a test message.";
+  using System;
+  public class CPHInline
+  {
+      public bool Execute()
+      {
+          //Set message for chat
+          string message = "This is a test message.";
 
-            //Send message with bot account if bot account disconnect
-            //will use broadcaster account
-            CPH.SendMessage(message, true, true);
+          //Send message with bot account if bot account disconnect
+          //will use broadcaster account
+          CPH.SendMessage(message, true, true);
 
-            return true;
-        }
-    }
+          return true;
+      }
+  }
 ---

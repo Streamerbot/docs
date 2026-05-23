@@ -1,6 +1,6 @@
 ---
-name: TwitchChatPinChatMessage
-title: TwitchChatPinChatMessage
+name: TwitchPinChatMessage
+title: TwitchPinChatMessage
 description: Pins a chat message in Twitch
 version: 1.0.5
 parameters:

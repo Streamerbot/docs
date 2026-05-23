@@ -10,12 +10,12 @@ parameters:
     description: |
       Enter the ID of the message to pin
   - name: Duration
-    type: Text
+    type: Number
     required: false
     description: |
-        The duration to pin the chat message for.
-        - `null` for the pin to last till the end of the stream
-        - between `30` and `1800` - duration in seconds
+      The duration to pin the chat message for.
+      - `null` for the pin to last till the end of the stream
+      - between `30` and `1800` - duration in seconds
 csharpmethods:
-    - TwitchChatPinMessage
+  - TwitchChatPinMessage
 ---

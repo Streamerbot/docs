@@ -12,21 +12,21 @@ parameters:
       - `true`{lang=cs} - Delete the message with bot account
       - `false`{lang=cs} - Delete the message with broadcaster account
 example: |
-    using System;
-    public class CPHInline
-    {
-        public bool Execute()
-        {
-            //Set message for chat
-            CPH.TryGetArg("msgId",out string messageId);
+  using System;
+  public class CPHInline
+  {
+      public bool Execute()
+      {
+          //Set message for chat
+          CPH.TryGetArg("msgId",out string messageId);
 
-            //Delete the message that was just send by a command/message
-            bool gotDeleted = CPH.TwitchDeleteChatMessage(messageId, true);
-            
-            if(gotDeleted){
-                CPH.SendMessage("Message got deleted successfully!");
-            }
-            return true;
-        }
-    }
+          //Delete the message that was just send by a command/message
+          bool gotDeleted = CPH.TwitchDeleteChatMessage(messageId, true);
+
+          if(gotDeleted){
+              CPH.SendMessage("Message got deleted successfully!");
+          }
+          return true;
+      }
+  }
 ---
