@@ -63,6 +63,8 @@ You now have **Streamer.bot** installed on Linux via Bottles!
 
 ## Tips & Tricks
 
+#### Fix freezing UI and graphical glitches. 
+- In some runners or graphic cards, **DXVK** and **VKD3D** may cause the UI to glitch or freeze completely. You can set both to `Disabed` in the bottle setttings to fix this.
+
 #### Improve WebView2 Performance
 - You can optionally change the runner to `Proton-GE` or `Proton-CachyOS` to improve the performance of the **Streamer.bot Chat** window, **C# Code editor** and any other **WebView2** content.
-    - *Note that this may cause some graphical glitches in Streamer.bot*
