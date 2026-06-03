@@ -57,7 +57,7 @@ variables:
     value: 718933593
   - name: top.bits.total
     type: number
-    description: The amount of bits donated from the the top cheerer this hype train
+    description: The amount of bits donated from the top cheerer this hype train
     value: 1500
   - name: top.subscription.user
     type: string
@@ -73,7 +73,7 @@ variables:
     value: 718933593
   - name: top.subscription.total
     type: number
-    description: The amount of points donated from the the top gift giver this hype train. Tier 1 = 500 points | Tier 2 = 1000 points | Tier 3 = 2500 points
+    description: The amount of points donated from the top gift giver this hype train. Tier 1 = 500 points | Tier 2 = 1000 points | Tier 3 = 2500 points
     value: 500
   - name: top.other.user
     type: string

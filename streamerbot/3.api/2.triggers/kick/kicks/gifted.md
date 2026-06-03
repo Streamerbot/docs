@@ -29,7 +29,7 @@ variables:
     value: "1/1/0001 12:00:00 AM"
   - name: rawInput
     type: string
-    description: The message receieved in chat
+    description: The message received in chat
   - name: rawInputEscaped
     type: string
     description: The message escaped

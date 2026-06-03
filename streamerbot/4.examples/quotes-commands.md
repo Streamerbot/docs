@@ -111,7 +111,7 @@ Why do we not add % around `quote`? Because we don't want the value of the `quot
 ::
 
 ### Add Quote
-Adding a quote is fairly straightforward, we will create a new action that will be used to add a simple command input as the quote. The quote will be referenced to the streamer, and not the the user who added it via the command.
+Adding a quote is fairly straightforward, we will create a new action that will be used to add a simple command input as the quote. The quote will be referenced to the streamer, and not the user who added it via the command.
 Referencing a quote to a different user when you add it requires you to use the C# methods for adding quotes.
 
 :read-more{to="/api/csharp/methods/core/quotes"}

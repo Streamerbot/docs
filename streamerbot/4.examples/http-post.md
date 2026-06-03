@@ -63,7 +63,7 @@ Read more about the `Execute C# Code` sub-action
   ```
 
   ::tip
-  While people using the HTTPClient in a `using` statement or creating a new one within the executed function may be a common occurence, it is heavily discouraged to do so. [Read More](https://extensions.streamer.bot/t/httpclient-and-you/1369)
+  While people using the HTTPClient in a `using` statement or creating a new one within the executed function may be a common occurrence, it is heavily discouraged to do so. [Read More](https://extensions.streamer.bot/t/httpclient-and-you/1369)
   ::
 
 2. Setup the sending of your payload
