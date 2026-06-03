@@ -25,7 +25,7 @@ To **receive** events on another instance, we uitlize the **Remote Instance Trig
 
 2. Enable Streamer.bot Website Integration
 
-    All instances must have the [Streamer.bot Website Integration](/guide/integrations/streamerbot) configured and enabled in order to communicate with eachother
+    All instances must have the [Streamer.bot Website Integration](/guide/integrations/streamerbot) configured and enabled in order to communicate with each other
 
     ::read-more{to=/guide/integrations/streamerbot}
       Read more about setting up the [Streamer.bot Website Integration](/guide/integrations/streamerbot)

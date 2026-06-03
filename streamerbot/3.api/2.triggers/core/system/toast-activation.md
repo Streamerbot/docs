@@ -5,7 +5,7 @@ version: 0.2.0
 variables:
   - name: toast.id
     type: string
-    description: The indentifier for the toast
+    description: The identifier for the toast
     value: Toast-1
   - name: toast.title
     type: string
@@ -30,7 +30,7 @@ variables:
 ## Parameters
 ::field-group
   ::field{name="Toast Id" type=Text}
-    Filter on a specific ID to seperate multiple toast notifications from each other
+    Filter on a specific ID to separate multiple toast notifications from each other
 
     - Leaving this blank is considered a catch-all and will trigger on **any** id
   ::

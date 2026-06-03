@@ -133,14 +133,14 @@ If a message is found but no sound, then it will only send the message.
 If both is found then it play the sound and send the message.
 
 #### Configuration
-There is 4 variables you can change.
+There are 4 variables you can change.
 
 | Variable | Type | Description |
 | -------- | ---- | ----------- |
-| `enableSound`{lang=cs} | `bool`{lang=cs} | Controls globally if Walk-on Sound should play. If true it will play the sound (if found), and false wont play anything (even if the file exist). |
-| `enableMessage`{lang=cs} | `bool`{lang=cs} | Controls globally if Walk-on Message should be sent. If true it will send the message (if found), and false wont send anything (even if the file exist). |
+| `enableSound`{lang=cs} | `bool`{lang=cs} | Controls globally if Walk-on Sound should play. If true it will play the sound (if found), and false won't play anything (even if the file exist). |
+| `enableMessage`{lang=cs} | `bool`{lang=cs} | Controls globally if Walk-on Message should be sent. If true it will send the message (if found), and false won't send anything (even if the file exist). |
 | `rootPath`{lang=cs} | `string`{lang=cs} | The file system path where all the sounds and messages for each should be stored. <br> Example: `C:\users\<user>\Desktop\WalkOnSoundsAndMessages`{lang=cs} <br><br> Note: It will look for a folder, with the username as name, eg. `C:\users\<user>\Desktop\WalkOnSoundsAndMessages\ConfuzzedCat`{lang=cs}, it uses `%user%`{lang=cs} or the display name of the twitch user. <br><br> Note 2: To add a sound and/or message for a given user, got to you selected root path, create a folder with the given user's display name, and add the sound and message and rename them to `sound.mp3` and `message.txt`. |
-| `excludedUsers`{lang=cs} | `string`{lang=cs} | Comma separated list of all the users you want to exlcude from the Walk-on, e.g. bots and yourself. <br>Example: `ConfuzzedCat,Confuzzedbot`{lang=cs} |
+| `excludedUsers`{lang=cs} | `string`{lang=cs} | Comma separated list of all the users you want to exclude from the Walk-on, e.g. bots and yourself. <br>Example: `ConfuzzedCat,Confuzzedbot`{lang=cs} |
 
 > If you need more help, check first Streamer.bot's Discord, if someone doesn't already had the same issue, else create a post in support and @ me (@ConfuzzedCat).
 
@@ -193,7 +193,7 @@ Read more about the **Death Counter** extension
 > I added 3 different tools to the Streamer.bot raid train, a 'BRB Clip Player', 'Video Shoutouts', and a 'Chat Lockdown' function.
 
 #### BRB Clip Player
-Functions as the name implies, but has some customization options as well.  Can be set to play when a certain scene is active and/or with a a command `!brb` & `!brb stop`.  The 'Test' Trigger will automagically add the OBS Scene/Source for you and then you just have to nest it where you'd like to use it.
+Functions as the name implies, but has some customization options as well.  Can be set to play when a certain scene is active and/or with a command `!brb` & `!brb stop`.  The 'Test' Trigger will automagically add the OBS Scene/Source for you and then you just have to nest it where you'd like to use it.
 
 ::read-more{to="https://www.mustachedmaniac.com/twitch-extensions/brb-clip-player"}
 A full installation guide and walkthrough can be found here
