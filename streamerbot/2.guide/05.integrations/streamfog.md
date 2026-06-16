@@ -45,4 +45,4 @@ StreamFog is now connected to Streamer.bot!
 
 ## Usage
 
-:read-more{to="/api/sub-actions/integrations/streamfog"}
+:read-more{to="/api/sub-action/streamfog"}
