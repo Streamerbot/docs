@@ -40,6 +40,34 @@ variables:
     type: string
     description: The text entered by the user (if enabled)
     value: https://streamer\.bot/Test Escaped Text \$\$\$
+  - name: rawInputUrlEncoded
+    type: string
+    description: The raw user input for the reward redemption, URL encoded
+    value: "This%20is%20my%20reward%20input"
+  - name: skipsQueue
+    type: bool
+    description: Whether or not the Reward is auto completed when redeemed
+    value: false
+  - name: requiresUserInput
+    type: bool
+    description: Whether or not the Reward requires user input
+    value: true
+  - name: maxPerStream
+    type: number
+    description: How many total redemptions can be done per stream, 0 means no limit
+    value: 0
+  - name: maxPerUserPerStream
+    type: number
+    description: How many redemptions each user can make per stream, 0 means no limit
+    value: 0
+  - name: globalCooldown
+    type: number
+    description: The global cooldown of the Reward in seconds
+    value: 0
+  - name: backgroundColor
+    type: string
+    description: The background color of the reward that was redeemed, in hex format
+    value: "#FFFF00"
 commonVariables:
   - TwitchBroadcaster
   - TwitchUser
