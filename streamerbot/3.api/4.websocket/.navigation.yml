@@ -1,7 +1,7 @@
 icon: mdi:api
 navigation.icon: mdi:api
 title: WebSocket Server
-description: Reference for the Streamer.bot WebSocket Server API
+description: Real-time interaction with Streamer.bot via the built-in WebSocket server.
 ogImage:
   props:
-    headline: WebSocket Server
+    headline: API // WebSocket Server

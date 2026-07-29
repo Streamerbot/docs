@@ -1,6 +1,7 @@
 title: C# Code
-description: Guides and references for using C# code in Streamer.bot
+icon: mdi:code-braces
 navigation.icon: mdi:code-braces
+description: Extend Streamer.bot and take full control with custom code actions.
 ogImage:
   props:
     headline: C# Code
