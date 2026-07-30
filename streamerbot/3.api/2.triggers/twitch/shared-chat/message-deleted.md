@@ -2,7 +2,6 @@
 title: Shared Chat Message Deleted
 description: Trigger for When a Twitch Chat Message Is Deleted in a Shared Chat
 version: 0.2.5
-twitchService: EventSub
 variables:
   - name: targetMessageId
     type: string

@@ -2,7 +2,6 @@
 title: Poll Archived
 description: Trigger for when a Twitch Poll has been archived
 version: 0.2.4
-twitchService: EventSub
 variables:
   - name: poll.Title
     type: string

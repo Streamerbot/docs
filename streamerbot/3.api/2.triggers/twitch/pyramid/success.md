@@ -1,7 +1,6 @@
 ---
 title: Pyramid Success
 description: Trigger for when a Twitch Pyramid is Succesfully created
-twitchService: Chat Client
 variables:
   - name: totalPyramids
     type: number

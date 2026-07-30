@@ -2,7 +2,6 @@
 title: Reward Redemption
 description: Trigger for a Twitch Reward Redemption
 version: 0.0.30
-twitchService: EventSub
 variables:
   - name: redemptionId
     type: string
@@ -43,7 +42,7 @@ variables:
   - name: rawInputUrlEncoded
     type: string
     description: The raw user input for the reward redemption, URL encoded
-    value: "This%20is%20my%20reward%20input"
+    value: 'This%20is%20my%20reward%20input'
   - name: skipsQueue
     type: bool
     description: Whether or not the Reward is auto completed when redeemed
@@ -67,7 +66,7 @@ variables:
   - name: backgroundColor
     type: string
     description: The background color of the reward that was redeemed, in hex format
-    value: "#FFFF00"
+    value: '#FFFF00'
 commonVariables:
   - TwitchBroadcaster
   - TwitchUser
@@ -85,4 +84,3 @@ parameters:
       You can quickly register a new reward by clicking the `Create Reward` button!
       ::
 ---
-

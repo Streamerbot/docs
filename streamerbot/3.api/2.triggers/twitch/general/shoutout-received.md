@@ -2,7 +2,6 @@
 title: Shoutout Received
 description: Trigger for when a Twitch Shoutout is Received
 version: 0.1.17
-twitchService: Chat Client
 variables:
   - name: viewerCount
     type: number

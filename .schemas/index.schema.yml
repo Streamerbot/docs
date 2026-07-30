@@ -9,15 +9,6 @@ properties:
   version:
     type: [string, number]
 
-  # Twitch
-  twitchService:
-    type: string
-    enum:
-      - Chat Client
-      - PubSub
-      - EventSub
-      - All
-
   # Variables
   variables:
     type: array

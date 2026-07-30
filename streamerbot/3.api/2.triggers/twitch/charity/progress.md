@@ -2,7 +2,6 @@
 title: Charity Progress
 description: Trigger for the Twitch charity progress event
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: charity.currentAmount.value
     type: number

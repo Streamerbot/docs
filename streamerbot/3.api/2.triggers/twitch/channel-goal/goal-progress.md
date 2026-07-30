@@ -2,7 +2,6 @@
 title: Goal Progress
 description: Trigger for the progression of a Twitch goal
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: goal.id
     type: string

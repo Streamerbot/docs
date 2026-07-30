@@ -2,7 +2,6 @@
 title: Raid Start
 description: Trigger for when a Twitch Raid from your channel to another channel is Started
 version: 0.0.33
-twitchService: EventSub
 variables:
   - name: raidUser
     type: string

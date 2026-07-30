@@ -2,6 +2,13 @@
 title: Process Stopped
 description: Trigger for when a Process is Stopped
 version: 0.2.0
+parameters:
+  - name: Name
+    type: Text
+    description: |
+      The name of the process to watch for. This is the name of the process as it appears in Task Manager.
+      <br>
+      An empty value is considered a catch-all and will trigger on **any** process started on your machine.
 variables:
   - name: name
     type: string
@@ -23,14 +30,8 @@ variables:
     description: ID of the program that launched the process.
 ---
 
-## Details
-Using this trigger requires you to have the Process Watcher enabled. This can be done under `Services -> Process Watcher`
-
-## Parameters
-::field-group
-  ::field{name=Name type=Text}
-    Input the name of the process
-
-    - Leaving this blank is considered a catch-all and will trigger on **any** process started
-  ::
+::warning
+**This trigger relies on the Process Watcher service**
+<br>
+You can enable the **Process Watcher** in Streamer.bot by navigating to `Services -> Process Watcher`
 ::

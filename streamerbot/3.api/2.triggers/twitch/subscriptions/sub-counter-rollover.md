@@ -1,7 +1,6 @@
 ---
 title: Sub Counter Rollover
 description: Trigger for a Twitch Sub Counter Rollover
-twitchService: EventSub
 variables:
   - name: subCounter
     type: number

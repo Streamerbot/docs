@@ -2,7 +2,6 @@
 title: Charity Completed
 description: Trigger for the Twitch charity completed event
 version: 0.1.14
-twitchService: EventSub
 variables:
   - name: charity.stoppedAt
     type: DateTime

@@ -2,7 +2,6 @@
 title: Follower Mode Off
 description: Trigger for when the Twitch Follower Mode is turned Off
 version: 0.2.3
-twitchService: Chat Client
 variables:
   - name: followerMode
     type: boolean

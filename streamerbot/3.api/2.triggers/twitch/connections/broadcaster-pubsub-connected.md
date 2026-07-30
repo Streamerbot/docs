@@ -3,7 +3,6 @@ title: Broadcaster PubSub Connected
 description: Trigger for when PubSub is Connected for the Twitch Broadcaster
 version: 0.2.3
 removed: 1.0.0
-twitchService: PubSub
 variables: []
 commonVariables:
   - TwitchBroadcaster

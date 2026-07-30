@@ -1,7 +1,6 @@
 ---
 title: Subscription
 description: Trigger for a Twitch Subscription
-twitchService: EventSub
 parameters:
   - name: Tier
     type: Checkbox

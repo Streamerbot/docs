@@ -2,7 +2,6 @@
 title: Warned User
 description: Trigger for when a Twitch user is warned
 version: 0.2.4
-twitchService: EventSub
 variables:
   - name: moderator.userName
     type: string

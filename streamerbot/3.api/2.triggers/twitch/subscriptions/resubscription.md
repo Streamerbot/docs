@@ -1,7 +1,6 @@
 ---
 title: Resubscription
 description: Trigger for a Twitch Resubscription
-twitchService: EventSub
 parameters:
   - name: Tier
     type: Checkbox
@@ -41,7 +40,7 @@ variables:
   - name: streakShared
     type: boolean
     version: 0.2.5
-    description:  Returns whether or not the user shares their resub streak.
+    description: Returns whether or not the user shares their resub streak.
     value: true
 commonVariables:
   - TwitchBroadcaster

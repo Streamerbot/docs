@@ -1,7 +1,6 @@
 ---
 title: Hype Train Update
 description: Trigger for when a Twitch Hype Train Updates
-twitchService: EventSub
 variables:
   - name: level
     type: number
@@ -101,7 +100,7 @@ variables:
     value: 10
   - name: id
     type: string
-    description:  The unique identifier of the hype train
+    description: The unique identifier of the hype train
 commonVariables:
   - TwitchBroadcaster
   - TwitchUser

@@ -2,7 +2,6 @@
 title: Prediction Locked
 description: Trigger for when a Twitch Prediction is Locked
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: prediction.Id
     type: string

@@ -3,7 +3,6 @@ title: Ad Mid-Roll
 description: Trigger for a Twitch Ad Mid-Roll
 version: 0.1.15
 removed: 1.0.0
-twitchService: PubSub
 variables:
   - name: ad.commercialId
     type: string
@@ -26,8 +25,9 @@ Twitch has deprecated the PubSub API and all triggers relying on it have been re
 
 ::warning
 It is **not recommended** to rely on this trigger.
+
 - This trigger utilizes an **undocumented and unsupported** Twitch PubSub event which could be removed, without warning, in the future.
-::
+  ::
 
 This event triggers 5 seconds prior to the start of an ad.
 

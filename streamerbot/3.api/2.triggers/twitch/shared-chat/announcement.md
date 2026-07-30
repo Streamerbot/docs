@@ -1,7 +1,6 @@
 ---
 title: Shared Announcement
 description: Triggered When an Announcement Is Made in a Shared Chat
-twitchService: EventSub
 version: 0.2.5
 variables:
   - name: fromSharedChat
@@ -19,11 +18,11 @@ variables:
   - name: message
     type: string
     description: Returns the entire text of the announcement
-    value: "This is a super important announcement!!"    
+    value: 'This is a super important announcement!!'
   - name: messageStripped
     type: string
     description: Returns the text of the announcement, with emotes removed
-    value: "This is a super important announcement!!"  
+    value: 'This is a super important announcement!!'
   - name: announceColor
     type: string
     description: Returns the color of the Shared Announcement

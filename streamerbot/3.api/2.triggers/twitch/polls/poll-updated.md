@@ -2,12 +2,11 @@
 title: Poll Updated
 description: Trigger for when a Twitch Poll is Updated
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: poll.Title
     type: string
     description: The poll's title
-    value: "Do you like coffee or energy drinks more?"
+    value: 'Do you like coffee or energy drinks more?'
   - name: poll.Id
     type: string
     description: Twitch's internal id for the poll

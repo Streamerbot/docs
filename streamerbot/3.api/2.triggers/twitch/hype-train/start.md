@@ -1,7 +1,6 @@
 ---
 title: Hype Train Starts
 description: Trigger for when a Twitch Hype Train Starts
-twitchService: EventSub
 variables:
   - name: level
     type: number
@@ -51,11 +50,11 @@ variables:
     type: boolean
     description: Whether or not the broadcaster is the host of the shared chat
     version: 1.0.2
-  - name: allTimeHighLevel 
+  - name: allTimeHighLevel
     type: number
     description: The all-time high level this type of Hype Train has reached for the broadcaster
     version: 1.0.4
-  - name: allTimeHighTotal 
+  - name: allTimeHighTotal
     type: number
     description: The all-time high total of points this type of Hype Train has reached for the broadcaster
     version: 1.0.4
@@ -109,7 +108,7 @@ variables:
     value: 10
   - name: id
     type: string
-    description:  The unique identifier of the hype train
+    description: The unique identifier of the hype train
 commonVariables:
   - TwitchBroadcaster
 ---

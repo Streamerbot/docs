@@ -2,7 +2,6 @@
 title: Poll Created
 description: Trigger for when a Twitch Poll is Created
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: poll.Title
     type: string
