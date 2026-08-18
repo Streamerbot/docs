@@ -1,6 +1,6 @@
 ---
 title: Hype Train Level Up
-description: Trigger for a Twitch Hype Train Level Up
+description: Trigger for when a Twitch Hype Train levels up
 parameters:
   - name: Range
     import: common/range

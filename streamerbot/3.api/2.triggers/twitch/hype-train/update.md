@@ -1,6 +1,6 @@
 ---
 title: Hype Train Update
-description: Trigger for when a Twitch Hype Train Updates
+description: Trigger for when a Twitch Hype Train updates its progress
 variables:
   - name: level
     type: number
@@ -105,3 +105,9 @@ commonVariables:
   - TwitchBroadcaster
   - TwitchUser
 ---
+
+::important
+**Note:** This trigger is fired whenever a Twitch Hype Train updates its progress, **within the current level.**
+<br>
+When an update causes the Hype Train to level up, the [Hype Train Level Up](/api/triggers/twitch/hype-train/level-up) trigger will be fired instead.
+::
