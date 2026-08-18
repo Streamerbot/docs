@@ -6,7 +6,7 @@ description: Configure triggers to execute your actions at specific intervals
 ## Setup
 
 ::navigate
-In Streamer.bot, navigate to **Settings > Timers**
+In Streamer.bot, navigate to **Services > Timers**
 ::
 
 To create a new timer, :kbd{value="Right-Click"} anywhere in the list pane and select `Add` from the context menu.
