@@ -8,6 +8,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 #### ✨ What's New
 
 - Major UI refactor, underlying library updates
+- Initial **Twitch Shared Chat** support added, with broadcaster avatar displayed when active
 - New settings layout with sidebar navigation
 - Add new overlay `Message Layout` configuration option
   - `Inline`: Display messages inline with the username
@@ -30,11 +31,13 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 - Updated sub-navigation layout for monitored YouTube broadcast selection
 - Removed background from chat overlay, defaulting to transparent
   - No CSS overrides required in browser sources anymore
+- Normalized chat message DOM structure across Twitch, YouTube, and Kick message.
 
 #### 🐛 Fixes
 
 - Handle an error in Kick Gift Sub events when recipients are missing from the event payload
 - Prevent custom font from applying to quick action dropdowns
+- Added a graceful fallback when emote or badge image URL fails to load
 
 ---
 
