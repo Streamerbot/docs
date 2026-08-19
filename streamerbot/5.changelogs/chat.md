@@ -3,6 +3,25 @@ title: Streamer.bot Chat
 description: The latest updates and improvements for Streamer.bot Chat and Overlay
 ---
 
+## 📅 August 19, 2026
+
+#### ✨ What's New
+
+- **Local font family support**
+- Added optional ability to override font family via text entry
+- Overlay settings for toggling display of user avatars and pronouns
+
+#### 🛠️ Improvements & Updates
+
+- Added additional [data-attribute] properties for event row CSS targeting (to match previous chat row changes)
+- Improvements to user avatar sizing and alignment across Twitch, YouTube, and Kick chat messages
+
+#### 🐛 Fixes
+
+- <kbd>Tab</kbd> key now properly selects items when autocompleting `@username`, `:emote`, or `!command`
+- Collapsed global and user quick action items now properly execute their associated actions
+- Fixed an issue where username aliases were not being properly resolved on Twitch chat messages
+
 ## 📅 August 12, 2026
 
 #### ✨ What's New
