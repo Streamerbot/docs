@@ -28,5 +28,3 @@ commonVariables:
   - TwitchUser
   - TwitchChat
 ---
-
-

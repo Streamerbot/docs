@@ -28,4 +28,4 @@ variables:
     value: 5251
 ---
 
-:read-more{to="/guide/settings/timed-actions"}
+:read-more{to="/guide/core/timers"}

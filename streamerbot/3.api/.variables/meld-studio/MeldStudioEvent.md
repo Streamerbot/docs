@@ -71,7 +71,7 @@ variables:
             value: EC495E605169EF94FE380E10A57EBF82
           - name: meldStudioEvent.name
             type: string
-            description: The name of the event that occured in Meld Studio
+            description: The name of the event that occurred in Meld Studio
             value: Image 1
           - name: meldStudioEvent.objectType
             type: string
@@ -109,7 +109,7 @@ variables:
             value: EC495E605169EF94FE380E10A57EBF82
           - name: meldStudioEvent.name
             type: string
-            description: The name of the event that occured in Meld Studio
+            description: The name of the event that occurred in Meld Studio
             value: Image 20
           - name: meldStudioEvent.objectType
             type: string

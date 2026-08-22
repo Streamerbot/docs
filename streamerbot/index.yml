@@ -1,5 +1,8 @@
-title: Home
+title: Streamer.bot Documentation
 description: Official documentation for Streamer.bot
+ogImage:
+  props:
+    icon: mdi:book-open-outline
 navigation: false
 cta:
   title: Special Thanks ❤️

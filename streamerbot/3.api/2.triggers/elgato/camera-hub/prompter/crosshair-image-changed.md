@@ -4,7 +4,7 @@ description: When the image used for the crosshair is changed
 variables:
   - name: crosshairImageName
     type: string
-    description: The name of of the crosshair image that was set
+    description: The name of the crosshair image that was set
     value: Cross
   - name: crosshairImageFile
     type: string
@@ -15,7 +15,7 @@ variables:
     value: 1
   - name: oldCrosshairImageName
     type: string
-    description: The name of of the previous crosshair image that was set
+    description: The name of the previous crosshair image that was set
     value: Circle
   - name: oldCrosshairImageFile
     type: string

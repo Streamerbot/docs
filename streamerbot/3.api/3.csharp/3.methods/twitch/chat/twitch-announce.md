@@ -14,11 +14,11 @@ parameters:
   - name: color
     default: "Default"
     description: |
-      Select the color for the announcement. Valid values are:  
-      - `default` – Standard color  
-      - `blue`  
-      - `green`  
-      - `orange`  
+      Select the color for the announcement. Valid values are:
+      - `default` – Standard color
+      - `blue`
+      - `green`
+      - `orange`
       - `purple`
   - name: fallback
     version: 0.2.5
@@ -27,18 +27,18 @@ parameters:
       - `true`{lang=cs} - (If `bot` bool is set to `True`), this is the same behaviour as if you had Bot as your preferred account.
       - `false`{lang=cs} - (If `bot` bool is set to `True`), it will try to send using **only** the Bot account, and do **nothing** if it can't (i.e, not logged in).
 example: |
-    using System;
-    public class CPHInline
-    {
-        public bool Execute()
-        {
-            //Set message for chat
-            string message = "This is an announcement";
+  using System;
+  public class CPHInline
+  {
+      public bool Execute()
+      {
+          //Set message for chat
+          string message = "This is an announcement";
 
-            //Send announcement with bot account, or fallback to broadcaster
-            CPH.TwitchAnnounce(message, true, color, true);
+          //Send announcement with bot account, or fallback to broadcaster
+          CPH.TwitchAnnounce(message, true, color, true);
 
-            return true;
-        }
-    }
+          return true;
+      }
+  }
 ---

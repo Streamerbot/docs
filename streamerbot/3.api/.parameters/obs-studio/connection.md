@@ -10,4 +10,4 @@ options:
     description: All configured OBS Studio connections
 ---
 
-Select the configured [OBS Studio Connection](/guide/broadcasters/obs-studio) to connect to
+Select the configured [OBS Studio Connection](/guide/stream-apps/obs-studio) to connect to

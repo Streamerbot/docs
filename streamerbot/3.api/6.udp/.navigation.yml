@@ -3,4 +3,5 @@ description: Interact with your Streamer.bot instance with the built in UDP Serv
 icon: mdi:api
 navigation.icon: mdi:api
 ogImage:
-  headline: UDP Server
+  props:
+    headline: UDP Server

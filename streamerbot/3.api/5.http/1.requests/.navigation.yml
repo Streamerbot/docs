@@ -3,4 +3,5 @@ description: Explore the available HTTP requests for Streamer.bot.
 navigation.title: Requests
 navigation.icon: mdi:earth-arrow-right
 ogImage:
-  headline: HTTP Server Requests
+  props:
+    headline: HTTP Server Requests

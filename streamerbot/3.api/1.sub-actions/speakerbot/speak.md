@@ -7,7 +7,10 @@ variables:
     type: bool
     value: true
   - name: speechFile
-    description: The file containing the speech audio, or `null` if it doesn't exist
+    description: |
+      The file containing the speech audio, or `null` if it doesn't exist.
+    
+      **Note**: The "Save TTS audio to file" option must be enabled in the Speaker.bot settings, and either the "Silent" or "Delay" parameters.
     type: string
   - name: duration
     description: The duration of the speech, when the delay option is used

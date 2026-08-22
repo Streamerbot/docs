@@ -1,2 +1,5 @@
 navigation.title: Events
 description: Reference of all events emitted by the Streamer.bot WebSocket Server
+ogImage:
+  props:
+    headline: WebSocket Events

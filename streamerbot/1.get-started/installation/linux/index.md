@@ -126,28 +126,3 @@ Download `lutris/streamerbot.yaml` from GitHub
 2. Select the `streamerbot.yaml` file (download link above)
 3. Follow the installer steps to install Streamer.bot to your location of choice.
 4. Launch Streamer.bot from Lutris!
-
-## Known Issues
-
-### Groups
-[Action](/guide/actions) and [Command](/guide/commands) lists do not render any configured group names or groupings.
-
-All actions and commands are listed in the order they have been added.
-
-### Viewer Context Menu
-The :kbd{value="Right-Click"} context menu on users within the viewers tab may not render correctly. You need to move the mouse over the opening context menu to let it fully appear.
-
-::success
-This issue has been resolved in Wine 7 and later
-::
-
-::tip
-  The speed with which the context menu appears can be improved by redirecting `stdout` to `/dev/null`
-
-  ```bash
-  wine Streamer.bot.exe >/dev/null 2>&1
-  ```
-::
-
-### Streamer.bot Chat
-The built-in chat and event feed windows will not work due to missing `WebView2` when using the install script or the Lutris installer. However, they work when using Bottles's Streamer.bot installer.

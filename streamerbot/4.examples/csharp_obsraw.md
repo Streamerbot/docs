@@ -139,7 +139,7 @@ You are probably already familiar with sending OBS Raw requests with Streamer.bo
 
 5. Checking the response
 
-   To make sure we got that info correctly, we can output both of them into our logs aswell:
+   To make sure we got that info correctly, we can output both of them into our logs as well:
 
    ```cs
    CPH.LogInfo($"GDI Text: {gdiText} // Font Size: {fontSize}");

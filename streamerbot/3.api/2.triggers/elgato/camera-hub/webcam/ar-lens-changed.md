@@ -20,7 +20,7 @@ variables:
     value: 17
   - name: success
     type: boolean
-    description: Returns whether or not the AR lens was sucessfully changed
+    description: Returns whether or not the AR lens was successfully changed
     value: True
 support:
   - name: epoccam

@@ -14,7 +14,7 @@ parameters:
   - name: Timeout
     type: Int
     required: false
-    description: Time in milliseconds until the action times out. If left blank, it will default to 30000 ms. If no signal has been received in that time, the sub-action will abort.
+    description: Time in milliseconds until the action times out. If left blank, or set to higher than 30000ms, it will default to 30000 ms. If no signal has been received in that time, the sub-action will abort.
 variables:
   - name: signalTimeout
     type: boolean

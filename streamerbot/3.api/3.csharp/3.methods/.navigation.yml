@@ -5,4 +5,5 @@ navigation:
   title: C# Methods
   icon: mdi:code-braces-box
 ogImage:
-  headline: C# Methods
+  props:
+    headline: C# Methods

@@ -15,7 +15,6 @@ public enum Platform
 {
     Twitch,
     YouTube,
-    Trovo,
     Kick
 }
 ```
@@ -26,5 +25,4 @@ public enum Platform
 | ------------------ | -------------------------- |
 | `Platform.Twitch`  | Twitch streaming platform  |
 | `Platform.YouTube` | YouTube streaming platform |
-| `Platform.Trovo`   | Trovo streaming platform   |
 | `Platform.Kick`    | Kick streaming platform    |

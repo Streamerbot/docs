@@ -80,7 +80,6 @@ public class CPHInline
 | EventSource.ThrowingSystem        | [No description provied]{.text-muted .text-xs} |
 | EventSource.TipeeeStream          | [No description provied]{.text-muted .text-xs} |
 | EventSource.TreatStream           | [No description provied]{.text-muted .text-xs} |
-| EventSource.Trovo                 | [No description provied]{.text-muted .text-xs} |
 | EventSource.Twitch                | [No description provied]{.text-muted .text-xs} |
 | EventSource.VoiceMod              | [No description provied]{.text-muted .text-xs} |
 | EventSource.VTubeStudio           | [No description provied]{.text-muted .text-xs} |

@@ -21,25 +21,25 @@ parameters:
       - `true`{lang=cs} - Send the message using your **Twitch Bot** account
       - `false`{lang=cs} - Send the message using your **Twitch Broadcaster** account
 example: |
-    using System;
-    public class CPHInline
-    {
-        public bool Execute()
-        {
-            //Define user login you want to whisper
-            string userName = "streamerdotbot";
-            //Set message for chat
-            string message = "This is a test message.";
+  using System;
+  public class CPHInline
+  {
+      public bool Execute()
+      {
+          //Define user login you want to whisper
+          string userName = "streamerdotbot";
+          //Set message for chat
+          string message = "This is a test message.";
 
-            //Send message with bot account
-            bool wasSend = CPH.SendWhisper(userName, message, true);
-            
-            if(wasSend){
-                //This does not mean that is was received by the user.
-                //It may still be silently dropped by Twitch
-                CPH.LogInfo("Whisper was send!");
-            }
-            return true;
-        }
-    }
+          //Send message with bot account
+          bool wasSend = CPH.SendWhisper(userName, message, true);
+
+          if(wasSend){
+              //This does not mean that is was received by the user.
+              //It may still be silently dropped by Twitch
+              CPH.LogInfo("Whisper was send!");
+          }
+          return true;
+      }
+  }
 ---

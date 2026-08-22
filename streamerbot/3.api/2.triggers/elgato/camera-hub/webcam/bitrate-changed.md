@@ -20,7 +20,7 @@ variables:
     value: 0
   - name: success
     type: boolean
-    description: Returns whether or not the bitrate was sucessfully changed
+    description: Returns whether or not the bitrate was successfully changed
     value: True    
 support:
   - name: epoccam

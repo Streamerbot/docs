@@ -15,7 +15,7 @@ variables:
   - name: command
     type: string
     description: The command that was used
-    value: '!shoutout'
+    value: "!shoutout"
   - name: commandId
     type: Guid
     description: The id of the command
@@ -44,8 +44,6 @@ commonVariables:
   - TwitchBroadcaster
   - YouTubeUser
   - YouTubeBroadcaster
-  - TrovoUser
-  - TrovoBroadcaster
   - KickUser
   - KickBroadcaster
 ---

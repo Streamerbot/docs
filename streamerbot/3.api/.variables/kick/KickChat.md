@@ -72,7 +72,7 @@ variables:
         value: https://files.kick.com/badges/broadcaster
   - name: rawInput
     type: string
-    description: The message receieved in chat
+    description: The message received in chat
   - name: rawInputEscaped
     type: string
     description: The message escaped

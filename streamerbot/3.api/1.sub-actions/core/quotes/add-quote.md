@@ -18,11 +18,11 @@ variables:
   - name: quoteId
     type: string
     description: The numeric id of the quote which was just added
-    value: '4219'
+    value: "4219"
   - name: quoteUserId
     type: string
     description: The user id from the account that added the quote
-    value: '12345678'
+    value: "12345678"
   - name: quoteUser
     type: string
     description: The user's display name from the account that added the quote
@@ -43,7 +43,6 @@ csharpMethods:
   - AddQuoteForTwitch
   - AddQuoteForYouTube
   - AddQuoteForKick
-  - AddQuoteForTrovo
 ---
 
 ::tip

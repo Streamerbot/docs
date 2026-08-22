@@ -5,13 +5,13 @@ variables:
   - name: command
     type: string
     description: The command that was used
-    value: '!shoutout'
+    value: "!shoutout"
   - name: commandId
     type: Guid
     description: The ID of the command
   - name: commandName
     type: string
-    description : The name of the command
+    description: The name of the command
   - name: commandSource
     type: string
     description: The command source
@@ -49,14 +49,37 @@ variables:
     type: number
     description: A running total of how many times the command has been run by current user since application launch
     value: 17
+  - name: match.count
+    type: int
+    description: |
+      Only when the command mode = "Regex"
+
+      The number of match groups (named or unnamed) in the regex.
+
+      Note that this is always 1 more than the number of parentheses groups, as the entire match is implicitly group 0.
+    value: 3
+  - name: match[<index>]
+    type: string
+    description: |
+      Only when the command mode = "Regex"
+
+      The text matching each indexed capture group.
+
+      Index 0 is the entire matching text, and the first parenthesized group is 1.
+    value: "matching word"
+  - name: <groupName>
+    type: string
+    description: |
+      Only when the command mode = "Regex"
+
+      When using named capture groups (e.g, `(?'points'\d+)` or `(?<points>\d+)` ), each named capture group becomes an argument containing the text of the match.
+    value: "123"
 commonVariables:
   - TwitchReply
   - TwitchUser
   - TwitchBroadcaster
   - YouTubeUser
   - YouTubeBroadcaster
-  - TrovoUser
-  - TrovoBroadcaster
   - KickUser
   - KickBroadcaster
 ---
@@ -66,12 +89,14 @@ Check out the [Commands Guide](/guide/commands) for details on configuring your 
 ::
 
 ## Parameters
+
 ::field-group
-  ::field{name=Commands type=Select}
-    Select a command from the Commands tab.
+::field{name=Commands type=Select}
+Select a command from the Commands tab.
 
     ::tip
     You can quickly register a new command by clicking the `Create Command` button!
     ::
-  ::
+
+::
 ::
