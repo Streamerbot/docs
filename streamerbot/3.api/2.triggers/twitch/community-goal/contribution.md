@@ -1,7 +1,6 @@
 ---
 title: Community Goal Contribution
 description: Trigger for a Twitch Community Goal Contribution
-twitchService: PubSub
 removed: 1.0.0
 variables:
   - name: title

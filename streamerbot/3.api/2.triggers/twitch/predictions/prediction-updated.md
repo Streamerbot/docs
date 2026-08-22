@@ -2,7 +2,6 @@
 title: Prediction Updated
 description: Trigger for when a Twitch Prediction is Updated
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: prediction.Id
     type: string

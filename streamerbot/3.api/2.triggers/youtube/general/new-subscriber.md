@@ -7,7 +7,6 @@ commonVariables:
   - YouTubeBroadcaster
 ---
 
-::warning
-  **This trigger relies on event data from StreamElements** <br>
-  :icon{name="i-mdi-chevron-right"} For this trigger to work you must configure the StreamElements integration in Streamer.bot
+::note
+You will not receive a New Subscriber event for users that have their Subscriptions Private, and/or if the Google account does not have a YouTube Channel created.
 ::

@@ -2,7 +2,6 @@
 title: Stream Offline
 description: Trigger for when your stream on Twitch is ended
 version: 0.1.17
-twitchService: EventSub
 variables:
   - name: endedAt
     type: DateTime

@@ -24,7 +24,7 @@ variables:
     version: 0.2.4
   - name: counter
     type: int
-    description: A counter that tracks how many times the timer has fired (even if it’s not set to trigger any action, as long it's enabled)
+    description: A counter that tracks how many times the timer has fired (even if it's not set to trigger any action, as long it's enabled)
     value: 5251
 ---
 

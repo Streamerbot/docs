@@ -1,0 +1,8 @@
+title: Linux
+icon: i-mdi-linux
+navigation.title: Linux
+navigation.icon: mdi:linux
+navigation.badge: Experimental
+ogImage:
+  props:
+    headline: Linux Support

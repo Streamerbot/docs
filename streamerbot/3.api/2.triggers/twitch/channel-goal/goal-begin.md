@@ -2,7 +2,6 @@
 title: Goal Begin
 description: Trigger for the begin of a Twitch goal
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: goal.id
     type: string

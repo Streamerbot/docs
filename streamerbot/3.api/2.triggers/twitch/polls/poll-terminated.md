@@ -2,7 +2,6 @@
 title: Poll Terminated
 description: Trigger for when a Twitch Poll has been terminated
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: poll.Id
     type: string

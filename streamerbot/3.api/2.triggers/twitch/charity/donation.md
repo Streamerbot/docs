@@ -2,7 +2,6 @@
 title: Charity Donation
 description: Trigger for the Twitch charity donation event
 version: 0.1.14
-twitchService: EventSub
 parameters:
   - name: Range
     import: common/range

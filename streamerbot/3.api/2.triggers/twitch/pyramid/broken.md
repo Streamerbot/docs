@@ -1,7 +1,6 @@
 ---
 title: Pyramid Broken
 description: Trigger for when a Twitch Pyramid is Broken
-twitchService: Chat Client
 variables:
   - name: totalPyramidsBroken
     type: number

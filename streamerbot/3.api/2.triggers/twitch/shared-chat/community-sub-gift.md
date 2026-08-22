@@ -1,7 +1,6 @@
 ---
 title: Shared Community Sub Gift
 description: Triggered When a User Gifts Community Subscriptions in the Shared Chat
-twitchService: EventSub
 version: 0.2.5
 variables:
   - name: tier
@@ -23,7 +22,7 @@ variables:
   - name: bonusGifts
     type: boolean
     version: 0.2.5
-    description:  A boolean value if Twitch adds additional subs to the Gift Bomb.
+    description: A boolean value if Twitch adds additional subs to the Gift Bomb.
     value: true
 commonVariables:
   - TwitchBroadcaster

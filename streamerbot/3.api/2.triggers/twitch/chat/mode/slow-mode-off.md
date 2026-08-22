@@ -2,7 +2,6 @@
 title: Slow Mode Off
 description: Trigger for when the Twitch Slow Mode is turned Off
 version: 0.2.3
-twitchService: Chat Client
 variables:
   - name: slowMode
     type: boolean

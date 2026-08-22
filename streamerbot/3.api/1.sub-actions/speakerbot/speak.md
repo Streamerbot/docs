@@ -13,7 +13,7 @@ variables:
       **Note**: The "Save TTS audio to file" option must be enabled in the Speaker.bot settings, and either the "Silent" or "Delay" parameters.
     type: string
   - name: duration
-    description: The duration of the speech, when the delay option is used
+    description: The duration of the speech in milliseconds. Only available when the Delay or Silent options are used.
     type: number
 ---
 

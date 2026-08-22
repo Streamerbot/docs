@@ -2,7 +2,6 @@
 title: Shoutout Created
 description: Trigger for when a Twitch Shoutout is Created
 version: 0.1.14
-twitchService: Chat Client
 variables:
   - name: shoutoutId
     type: string

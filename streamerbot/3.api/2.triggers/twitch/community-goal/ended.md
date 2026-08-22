@@ -1,7 +1,6 @@
 ---
 title: Community Goal Ended
 description: Trigger for when a Twitch Community Goal Ends
-twitchService: PubSub
 removed: 1.0.0
 variables:
   - name: title

@@ -1,7 +1,6 @@
 ---
 title: Hype Train Level Up
-description: Trigger for a Twitch Hype Train Level Up
-twitchService: EventSub
+description: Trigger for when a Twitch Hype Train levels up
 parameters:
   - name: Range
     import: common/range
@@ -108,7 +107,7 @@ variables:
     value: 10
   - name: id
     type: string
-    description:  The unique identifier of the hype train
+    description: The unique identifier of the hype train
 commonVariables:
   - TwitchBroadcaster
   - TwitchUser

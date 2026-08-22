@@ -15,6 +15,11 @@ variables:
     type: Guid
     description: The unique ID of this running action instance within the queue
     value: c83dd939-9f86-4435-b07c-b6e7e3eef134
+  - name: queueName
+    type: string
+    description: The name of the queue the action is in
+    value: Alerts
+    version: 1.0.5
   - name: actionQueuedAt
     type: DateTime
     description: The timestamp of when action was queued

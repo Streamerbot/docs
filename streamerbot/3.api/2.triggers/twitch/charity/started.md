@@ -2,7 +2,6 @@
 title: Charity Started
 description: Trigger for the Twitch charity started event
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: charity.startedAt
     type: DateTime

@@ -2,7 +2,6 @@
 title: Goal End
 description: Trigger for the end of a Twitch goal
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: goal.id
     type: string

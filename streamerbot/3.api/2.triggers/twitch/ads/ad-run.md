@@ -2,7 +2,6 @@
 title: Ad Run
 description: Trigger for a Twitch Ad Run
 version: 0.1.10
-twitchService: EventSub
 variables:
   - name: adLength
     type: number

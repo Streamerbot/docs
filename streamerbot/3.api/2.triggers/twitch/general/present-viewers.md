@@ -2,7 +2,6 @@
 title: Present Viewers
 description: Trigger for the Twitch present viewers event
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: isTest
     type: boolean
@@ -41,15 +40,17 @@ commonVariables:
 ---
 
 ## Details
+
 This triggers every 1-10 minutes, default every 5 minutes.
 
 ## Notes
+
 The present viewer tick will always happen, but you have the ability to have it "live update" from Twitch, or artificially mark someone as present.
 
 Under the `Platforms > Twitch > Settings`, in the Present Viewers section, there are 2 settings, a `Live Update` check box, and a slider bar.
 
 When `Live Update` is checked, the slider beneath it is how often this update will occur, between 1 and 10 minutes, this will also execute the action at this interval.
 
-When Live Update is not checked, the slider next to it behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present.  The action will still be executed, but, it will occur every minute.
+When Live Update is not checked, the slider next to it behaves as a threshold. The timer runs every minute, and checks the current time minus the user's last active time, if this is less then the threshold, they are marked as present, otherwise they are marked as not present. The action will still be executed, but, it will occur every minute.
 
 The default setting is `Live Update` not checked, and the slider set to `5` minutes.

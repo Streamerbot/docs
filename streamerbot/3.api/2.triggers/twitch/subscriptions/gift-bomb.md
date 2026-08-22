@@ -1,7 +1,6 @@
 ---
 title: Gift Bomb
 description: Trigger for a Twitch Gift Bomb
-twitchService: EventSub
 parameters:
   - name: Tier
     type: Checkbox
@@ -53,12 +52,12 @@ variables:
   - name: totalGiftsShared
     type: boolean
     version: 0.2.5
-    description:  A boolean value if the user gifting the sub(s) shares there total gift count.
+    description: A boolean value if the user gifting the sub(s) shares there total gift count.
     value: true
   - name: bonusGifts
     type: boolean
     version: 0.2.5
-    description:  A boolean value if Twitch adds additional subs to the Gift Bomb.
+    description: A boolean value if Twitch adds additional subs to the Gift Bomb.
     value: true
 commonVariables:
   - TwitchBroadcaster

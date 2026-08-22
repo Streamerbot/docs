@@ -2,7 +2,6 @@
 title: Poll Completed
 description: Trigger for when a Twitch Poll is completed
 version: 0.0.50
-twitchService: EventSub
 variables:
   - name: poll.Title
     type: string

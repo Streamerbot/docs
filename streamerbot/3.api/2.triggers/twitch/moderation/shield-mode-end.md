@@ -2,7 +2,6 @@
 title: Shield Mode End
 description: Trigger for when a Twitch Shield Mode Ends
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: endedAt
     type: DateTime

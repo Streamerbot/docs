@@ -1,7 +1,6 @@
 ---
 title: Shared Resub
 description: Triggered When a User Resubscribes in the Shared Chat
-twitchService: EventSub
 version: 0.2.5
 variables:
   - name: tier
@@ -19,7 +18,7 @@ variables:
   - name: streakShared
     type: boolean
     version: 0.2.5
-    description:  Returns whether or not the user shares their resub streak.
+    description: Returns whether or not the user shares their resub streak.
     value: true
 commonVariables:
   - TwitchBroadcaster

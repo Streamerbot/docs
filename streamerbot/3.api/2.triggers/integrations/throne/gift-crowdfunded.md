@@ -1,5 +1,7 @@
 ---
 title: Gift Crowdfunded
-description: Trigger for when a gift is crowdfunded on Throne
-version: 1.0.7
+description: Triggered when a gift is crowdfunded through the Throne integration
+version: 1.0.5
 ---
+
+:wip

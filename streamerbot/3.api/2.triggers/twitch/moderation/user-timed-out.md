@@ -1,7 +1,6 @@
 ---
 title: User Timed Out
 description: Trigger for when a Twitch User is Timed Out
-twitchService: EventSub
 variables:
   - name: user
     type: string

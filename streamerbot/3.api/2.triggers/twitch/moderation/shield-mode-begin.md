@@ -2,7 +2,6 @@
 title: Shield Mode Begin
 description: Trigger for when a Twitch Shield Mode Begins
 version: 0.1.15
-twitchService: EventSub
 variables:
   - name: startedAt
     type: DateTime
