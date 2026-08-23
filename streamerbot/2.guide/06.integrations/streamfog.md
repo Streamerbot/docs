@@ -4,6 +4,7 @@ description: Integrate Streamer.bot with StreamFog
 navigation.icon: null
 version: 1.0.5
 logo: /img/icons/streamfog.png
+badge: New
 ---
 
 Integrate Streamer.bot with [StreamFog](https://streamfog.com){target=\_blank}
