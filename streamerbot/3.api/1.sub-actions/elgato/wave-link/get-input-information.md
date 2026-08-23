@@ -40,4 +40,8 @@ variables:
     type: bool
     description: Indicates if filters are bypassed in the stream mix
     value: False
+csharpMethods:
+  - WaveLinkGetInputIdentifier
+  - WaveLinkInputGetVolume
+  - WaveLinkMicrophoneGetVolume
 ---

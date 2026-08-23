@@ -14,4 +14,8 @@ parameters:
       Mute State
       Options: `Muted`, `Not Muted`, `Toggle`
     default: Muted
+csharpMethods:
+  - WaveLinkOutputMute
+  - WaveLinkOutputUnmute
+  - WaveLinkOutputToggleMute
 ---

@@ -7,4 +7,6 @@ parameters:
     type: Select
     required: true
     description: Microphone you want to get information about
+csharpMethods:
+  - WaveLinkGetMicrophoneIdentifier
 ---

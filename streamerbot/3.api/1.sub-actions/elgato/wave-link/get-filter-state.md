@@ -36,4 +36,8 @@ variables:
     type: string
     description: ID of the filter plugin
     value: e954837c
+csharpMethods:
+  - WaveLinkInputGetFilterState
+  - WaveLinkInputSetFilterBypassBypassed
+  - WaveLinkInputGetFilterIdentifier
 ---

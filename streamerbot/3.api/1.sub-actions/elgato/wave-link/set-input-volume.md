@@ -20,4 +20,6 @@ parameters:
     type: Toggle
     description: Will add/subtract from the current volume instead
     default: false
+csharpMethods:
+  - WaveLinkInputSetVolume
 ---

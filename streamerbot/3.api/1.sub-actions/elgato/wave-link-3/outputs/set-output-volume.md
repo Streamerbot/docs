@@ -15,4 +15,3 @@ parameters:
       Range: `0` to `100`
     default: 100
 ---
-:wip

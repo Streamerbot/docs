@@ -18,4 +18,8 @@ parameters:
       Filter State
       Options: `Enabled`, `Disabled`, `Toggle`
     default: Enabled
+csharpMethods:
+  - WaveLinkInputFilterEnable
+  - WaveLinkInputFilterDisable
+  - WaveLinkInputFilterToggle
 ---
