@@ -1,6 +1,6 @@
 ---
-title: Set Input Low Cut Filter
-description: Sets the low cut filter state of a specific audio input device
+title: Set Input Gain Lock State
+description: Sets the gain lock state of a specific audio input device
 version: 1.1.0
 parameters:
   - name: Input Device
@@ -15,3 +15,4 @@ parameters:
       Options: `Enabled`, `Disabled`, `Toggle`
     default: Enabled
 ---
+:wip

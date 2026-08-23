@@ -11,7 +11,7 @@ variables:
   - name: waveLinkInputDeviceId
     type: string
     description: Identifier of the input device
-    value: '{0.0.1.00000000}.{96e65e84-0aaf-4b18-8f69-3da2d478b3d4}'
+    value: "{0.0.1.00000000}.{96e65e84-0aaf-4b18-8f69-3da2d478b3d4}"
   - name: waveLinkInputDeviceName
     type: string
     description: Name of the input device
@@ -47,11 +47,11 @@ variables:
   - name: waveLinkInputChannelId
     type: string
     description: Identifier of the input channel
-    value:
+    value:   
   - name: waveLinkInputChannelName
     type: string
     description: Name of the input channel
-    value:
+    value:   
   - name: waveLinkInputChannelVolume
     type: number
     description: Current volume level of the channel
@@ -61,3 +61,4 @@ variables:
     description: Indicates if the input channel is muted
     value: false
 ---
+:wip

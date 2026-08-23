@@ -1,17 +1,17 @@
 ---
-title: Set Input Low Cut Filter
-description: Sets the low cut filter state of a specific audio input device
+title: Set Input Gain
+description: Sets the gain of a specific audio input device
 version: 1.1.0
 parameters:
   - name: Input Device
     type: Select
     required: true
     description: Audio input device you want to affect
-  - name: State
-    type: Select
+  - name: Gain
+    type: number
     required: true
     description: |
-      State
-      Options: `Enabled`, `Disabled`, `Toggle`
+      Gain
+      Range: `0` to `1` db
     default: Enabled
 ---

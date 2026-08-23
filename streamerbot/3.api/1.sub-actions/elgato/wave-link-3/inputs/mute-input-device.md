@@ -1,6 +1,6 @@
 ---
-title: Set Input Low Cut Filter
-description: Sets the low cut filter state of a specific audio input device
+title: Mute Input Device
+description: Mute a specific audio input device
 version: 1.1.0
 parameters:
   - name: Input Device
@@ -12,6 +12,7 @@ parameters:
     required: true
     description: |
       State
-      Options: `Enabled`, `Disabled`, `Toggle`
-    default: Enabled
+      Options: `Muted`, `Not Muted`, `Toggle`
+    default: Muted
 ---
+:wip
