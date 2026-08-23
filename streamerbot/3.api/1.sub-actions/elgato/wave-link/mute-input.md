@@ -18,4 +18,8 @@ parameters:
       Mute State
       Options: `Muted`, `Not Muted`, `Toggle`
     default: Muted
+csharpMethods:
+  - WaveLinkInputMute
+  - WaveLinkInputUnmute
+  - WaveLinkInputToggleMute
 ---

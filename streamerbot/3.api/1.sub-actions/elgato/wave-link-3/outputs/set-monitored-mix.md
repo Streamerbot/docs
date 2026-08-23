@@ -8,4 +8,3 @@ parameters:
     required: true
     description: Audio mix you want to affect
 ---
-:wip

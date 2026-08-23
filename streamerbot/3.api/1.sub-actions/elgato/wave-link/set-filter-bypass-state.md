@@ -18,4 +18,7 @@ parameters:
       Bypass State
       Options: `Bypass`, `Enabled`, `Toggle`
     default: Bypass
+csharpMethods:
+  - WaveLinkInputSetFilterBypassEnabled
+  - WaveLinkInputSetFilterBypassToggle
 ---
