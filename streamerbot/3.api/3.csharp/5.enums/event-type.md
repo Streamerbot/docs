@@ -547,6 +547,7 @@ public class CPHInline
 | `EventType.TwitchCoinCheer`                       | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchCommunityGoalContribution`       | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchCommunityGoalEnded`              | [No description provided]{.text-muted .text-xs} |
+| `EventType.TwitchCustomPowerUpRedemption`         | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchFirstWord`                       | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchFollow`                          | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchGiftBomb`                        | [No description provided]{.text-muted .text-xs} |
@@ -576,7 +577,6 @@ public class CPHInline
 | `EventType.TwitchPollCreated`                     | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchPollTerminated`                  | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchPollUpdated`                     | [No description provided]{.text-muted .text-xs} |
-| `EventType.TwitchPowerUp`                         | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchPredictionCanceled`              | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchPredictionCompleted`             | [No description provided]{.text-muted .text-xs} |
 | `EventType.TwitchPredictionCreated`               | [No description provided]{.text-muted .text-xs} |
