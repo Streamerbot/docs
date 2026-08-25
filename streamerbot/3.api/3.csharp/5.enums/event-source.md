@@ -76,7 +76,9 @@ public class CPHInline
 | EventSource.StreamerBotRemote     | [No description provied]{.text-muted .text-xs} |
 | EventSource.Streamlabs            | [No description provied]{.text-muted .text-xs} |
 | EventSource.StreamlabsDesktop     | [No description provied]{.text-muted .text-xs} |
+| EventSource.StreamLoots           | [No description provied]{.text-muted .text-xs} |
 | EventSource.System                | [No description provied]{.text-muted .text-xs} |
+| EventSource.Throne                | [No description provied]{.text-muted .text-xs} |
 | EventSource.ThrowingSystem        | [No description provied]{.text-muted .text-xs} |
 | EventSource.TipeeeStream          | [No description provied]{.text-muted .text-xs} |
 | EventSource.TreatStream           | [No description provied]{.text-muted .text-xs} |
