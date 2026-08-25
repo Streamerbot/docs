@@ -171,19 +171,19 @@ public class CPHInline
 
 ### Elgato Control Center
 
-| Value                                                   | Description                                     |
-| ------------------------------------------------------- | ----------------------------------------------- |
-| `EventType.ElgatoControlCenterConnected`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceAdded`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceBrightnessChanged`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceConfigurationChanged`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceOff`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceOn`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDevicePowerStateChanged`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceRemoved`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceRenamed`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDeviceTemperatureChanged`                                                           | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoControlCenterDisconnected`                                                           | [No description provided]{.text-muted .text-xs} |
+| Value                                                     | Description                                     |
+| --------------------------------------------------------- | ----------------------------------------------- |
+| `EventType.ElgatoControlCenterConnected`                  | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceAdded`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceBrightnessChanged`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceConfigurationChanged` | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceOff`                  | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceOn`                   | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDevicePowerStateChanged`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceRemoved`              | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceRenamed`              | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDeviceTemperatureChanged`   | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoControlCenterDisconnected`               | [No description provided]{.text-muted .text-xs} |
 
 ### Elgato Stream Deck
 
@@ -196,24 +196,24 @@ public class CPHInline
 
 ### Elgato Stream Deck MCP
 
-| Value                                     | Description                                     |
-| ----------------------------------------- | ----------------------------------------------- |
-| `EventType.ElgatoStreamDeckMcpConnected`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStreamDeckMcpDisconnected`                                             | [No description provided]{.text-muted .text-xs} |
+| Value                                       | Description                                     |
+| ------------------------------------------- | ----------------------------------------------- |
+| `EventType.ElgatoStreamDeckMcpConnected`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStreamDeckMcpDisconnected` | [No description provided]{.text-muted .text-xs} |
 
 ### Elgato Studio
 
-| Value                                          | Description                                     |
-| ---------------------------------------------- | ----------------------------------------------- |
-| `EventType.ElgatoStudioConnected`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioDisconnected`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioLevelChanged`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioPreviewFullscreenChanged`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioPreviewVolumeChanged`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioPreviewVolumeMuteChanged`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioRecordingChanged`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioRecordingFinished`                                                  | [No description provided]{.text-muted .text-xs} |
-| `EventType.ElgatoStudioSnapshotTaken`                                                  | [No description provided]{.text-muted .text-xs} |
+| Value                                            | Description                                     |
+| ------------------------------------------------ | ----------------------------------------------- |
+| `EventType.ElgatoStudioConnected`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioDisconnected`             | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioLevelChanged`             | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioPreviewFullscreenChanged` | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioPreviewVolumeChanged`     | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioPreviewVolumeMuteChanged` | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioRecordingChanged`         | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioRecordingFinished`        | [No description provided]{.text-muted .text-xs} |
+| `EventType.ElgatoStudioSnapshotTaken`            | [No description provided]{.text-muted .text-xs} |
 
 ### Elgato Wave Link
 
@@ -240,8 +240,8 @@ public class CPHInline
 | `EventType.ElgatoWaveLinkOutputVolumeChanged`           | [No description provided]{.text-muted .text-xs} |
 | `EventType.ElgatoWaveLinkSelectedOutputChanged`         | [No description provided]{.text-muted .text-xs} |
 
-| Value                                             | Description                                     |
-| ------------------------------------------------- | ----------------------------------------------- |
+| Value                                               | Description                                     |
+| --------------------------------------------------- | ----------------------------------------------- |
 | `EventType.ElgatoWaveLinkV3ChannelEffectsChanged`   | [No description provided]{.text-muted .text-xs} |
 | `EventType.ElgatoWaveLinkV3ChannelMuteChanged`      | [No description provided]{.text-muted .text-xs} |
 | `EventType.ElgatoWaveLinkV3ChannelsChanged`         | [No description provided]{.text-muted .text-xs} |
@@ -319,39 +319,39 @@ public class CPHInline
 
 ### Input
 
-| Value                           | Description                                     |
-| ------------------------------- | ----------------------------------------------- |
-| `EventType.InputControllerAxis`                                   | [No description provided]{.text-muted .text-xs} |
-| `EventType.InputControllerButton`                                   | [No description provided]{.text-muted .text-xs} |
-| `EventType.InputControllerHat`                                   | [No description provided]{.text-muted .text-xs} |
-| `EventType.InputKeyPress`                                   | [No description provided]{.text-muted .text-xs} |
-| `EventType.InputMouseClick`                                   | [No description provided]{.text-muted .text-xs} |
+| Value                             | Description                                     |
+| --------------------------------- | ----------------------------------------------- |
+| `EventType.InputControllerAxis`   | [No description provided]{.text-muted .text-xs} |
+| `EventType.InputControllerButton` | [No description provided]{.text-muted .text-xs} |
+| `EventType.InputControllerHat`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.InputKeyPress`         | [No description provided]{.text-muted .text-xs} |
+| `EventType.InputMouseClick`       | [No description provided]{.text-muted .text-xs} |
 
 ### Kick
 
-| Value                                     | Description                                     |
-| ----------------------------------------- | ----------------------------------------------- |
-| `EventType.KickBroadcasterAuthenticated`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickBroadcasterChatConnected`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickBroadcasterChatDisconnected`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickChannelUpdate`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickChatMessage`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickFirstWords`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickFollow`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickGiftSubscription`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickKicksGifted`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickMassGiftSubscription`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickPresentViewers`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickResubscription`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickRewardRedemption`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickSevenTVEmoteAdded`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickSevenTVEmoteRemoved`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickStreamOffline`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickStreamOnline`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickSubscription`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickUserBanned`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickUserTimedOut`                                             | [No description provided]{.text-muted .text-xs} |
-| `EventType.KickViewerCountUpdate`                                             | [No description provided]{.text-muted .text-xs} |
+| Value                                       | Description                                     |
+| ------------------------------------------- | ----------------------------------------------- |
+| `EventType.KickBroadcasterAuthenticated`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickBroadcasterChatConnected`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickBroadcasterChatDisconnected` | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickChannelUpdate`               | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickChatMessage`                 | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickFirstWords`                  | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickFollow`                      | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickGiftSubscription`            | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickKicksGifted`                 | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickMassGiftSubscription`        | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickPresentViewers`              | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickResubscription`              | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickRewardRedemption`            | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickSevenTVEmoteAdded`           | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickSevenTVEmoteRemoved`         | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickStreamOffline`               | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickStreamOnline`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickSubscription`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickUserBanned`                  | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickUserTimedOut`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.KickViewerCountUpdate`           | [No description provided]{.text-muted .text-xs} |
 
 ### Ko-Fi
 
@@ -469,10 +469,10 @@ public class CPHInline
 
 ### Speech
 
-| Value                         | Description                                     |
-| ----------------------------- | ----------------------------------------------- |
-| `EventType.SpeechToTextCommand`                                 | [No description provided]{.text-muted .text-xs} |
-| `EventType.SpeechToTextLog`                                 | [No description provided]{.text-muted .text-xs} | [No description provided]{.text-muted .text-xs} |
+| Value                           | Description                                     |
+| ------------------------------- | ----------------------------------------------- |
+| `EventType.SpeechToTextCommand` | [No description provided]{.text-muted .text-xs} |
+| `EventType.SpeechToTextLog`     | [No description provided]{.text-muted .text-xs} | [No description provided]{.text-muted .text-xs} |
 
 ### StreamElements
 
@@ -486,12 +486,12 @@ public class CPHInline
 
 ### StreamLoots
 
-| Value                              | Description                                     |
-| ---------------------------------- | ----------------------------------------------- |
-| `EventType.StreamLootsCardRedeemed`                                      | [No description provided]{.text-muted .text-xs} |
-| `EventType.StreamLootsPackGifted`                                      | [No description provided]{.text-muted .text-xs} |
-| `EventType.StreamLootsPackPurchased`                                      | [No description provided]{.text-muted .text-xs} |
-| `EventType.StreamLootsReaction`                                      | [No description provided]{.text-muted .text-xs} |
+| Value                                | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `EventType.StreamLootsCardRedeemed`  | [No description provided]{.text-muted .text-xs} |
+| `EventType.StreamLootsPackGifted`    | [No description provided]{.text-muted .text-xs} |
+| `EventType.StreamLootsPackPurchased` | [No description provided]{.text-muted .text-xs} |
+| `EventType.StreamLootsReaction`      | [No description provided]{.text-muted .text-xs} |
 
 ### Streamer.bot
 
@@ -530,18 +530,18 @@ public class CPHInline
 
 ### System
 
-| Value                            | Description                                     |
-| -------------------------------- | ----------------------------------------------- |
-| `EventType.SystemClipboardChanged`                                    | [No description provided]{.text-muted .text-xs} |
-| `EventType.SystemCron`                                    | [No description provided]{.text-muted .text-xs} |
+| Value                              | Description                                     |
+| ---------------------------------- | ----------------------------------------------- |
+| `EventType.SystemClipboardChanged` | [No description provided]{.text-muted .text-xs} |
+| `EventType.SystemCron`             | [No description provided]{.text-muted .text-xs} |
 
 ### Throne
 
-| Value                                 | Description                                     |
-| ------------------------------------- | ----------------------------------------------- |
-| `EventType.ThroneContributionPurchased`                                         | [No description provided]{.text-muted .text-xs} |
-| `EventType.ThroneGiftCrowdfunded`                                         | [No description provided]{.text-muted .text-xs} |
-| `EventType.ThroneGiftPurchased`                                         | [No description provided]{.text-muted .text-xs} |
+| Value                                   | Description                                     |
+| --------------------------------------- | ----------------------------------------------- |
+| `EventType.ThroneContributionPurchased` | [No description provided]{.text-muted .text-xs} |
+| `EventType.ThroneGiftCrowdfunded`       | [No description provided]{.text-muted .text-xs} |
+| `EventType.ThroneGiftPurchased`         | [No description provided]{.text-muted .text-xs} |
 
 ### T.I.T.S.
 
@@ -809,4 +809,4 @@ public class CPHInline
 | `EventType.YouTubeSuperChat`                  | [No description provided]{.text-muted .text-xs} |
 | `EventType.YouTubeSuperSticker`               | [No description provided]{.text-muted .text-xs} |
 | `EventType.YouTubeUserBanned`                 | [No description provided]{.text-muted .text-xs} |
-| `EventType.YouTubeUserTimedout`                | [No description provided]{.text-muted .text-xs} |
+| `EventType.YouTubeUserTimedout`               | [No description provided]{.text-muted .text-xs} |
