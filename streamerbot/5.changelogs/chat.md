@@ -3,13 +3,37 @@ title: Streamer.bot Chat
 description: The latest updates and improvements for Streamer.bot Chat and Overlay
 ---
 
+## 📅 August 26, 2026
+
+#### ✨ What's New
+
+- **7TV Overlay Emotes Support**
+- Added `Animate Emotes` toggle in settings for disabling animated emotes
+- Added `AVIF` and `WEBP` support for animated emotes when supported by browser and emote provider
+
+#### 🛠️ Improvements & Updates
+
+- Many performance related improvements behind the scenes
+- Updated event rows to prefer platform color highlight by default
+- Improved handling of emote spacing in chat messages
+- Updated YouTube Super Chat styles to match highlighted event styles
+- Improved default text shadow in `Chat Overlay` mode
+- Pronouns badge will now properly scale with the configured font size
+
+#### 🐛 Fixes
+
+- Miscellaneous payload fixes for `Streamer.bot v1.1.0-alpha`
+- Fixed quick action platform override not applying to `Kick`
+- Fixed an issue preventing pronouns from loading in certain scenarios
+- Twitch Announcement events in `Chat Overlay` will now properly wrap
+
 ## 📅 August 19, 2026
 
 #### ✨ What's New
 
 - **Local font family support**
 - Added optional ability to override font family via text entry
-- Overlay settings for toggling display of user avatars and pronouns
+- New `Chat Overlay` settings for toggling display of user avatars and pronouns
 
 #### 🛠️ Improvements & Updates
 
