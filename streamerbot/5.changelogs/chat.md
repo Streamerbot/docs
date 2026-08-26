@@ -19,6 +19,8 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 - Updated YouTube Super Chat styles to match highlighted event styles
 - Improved default text shadow in `Chat Overlay` mode
 - Pronouns badge will now properly scale with the configured font size
+- Improved sizing and alignment of user avatars
+- Moved default user avatar next to username. Preserved previous far-left avatar slot for Twitch Shared Chat source avatar
 
 #### 🐛 Fixes
 
