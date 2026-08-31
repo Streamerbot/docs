@@ -14,7 +14,7 @@ variables:
     type: int
     description: the watch streak count
     value: 5
-  - name: copoReward
+  - name: channelPointsAwarded
     type: int
     description: The rewarded channel points for the watch streak
     value: 450
