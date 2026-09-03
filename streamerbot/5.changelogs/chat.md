@@ -11,7 +11,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
   - By default, GIF's are shown in the chat feed and collapsed in overlay (configurable in settings)
 - Split platform settings into separate pages for Twitch, YouTube, and Kick exclusive settings
 - Added per-event style overrides for all chat events
-  - Default styles can be configurd per-platform, and then granularly overidden per-event
+  - Default styles can be configured per-platform, and then granularly overidden per-event
   - Support for this feature in the overlay is planned for a future update
 - Added ability to explicitly hide events from the chat feed and the event feed, respectively
 - Added randomized event previews for all events in settings
