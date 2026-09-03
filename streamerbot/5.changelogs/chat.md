@@ -3,6 +3,36 @@ title: Streamer.bot Chat
 description: The latest updates and improvements for Streamer.bot Chat and Overlay
 ---
 
+## 📅 September 2, 2026
+
+#### ✨ What's New
+
+- Added Twitch GIF support for chat and overlay
+  - By default, GIF's are shown in the chat feed and collapsed in overlay (configurable in settings)
+- Split platform settings into separate pages for Twitch, YouTube, and Kick exclusive settings
+- Added per-event style overrides for all chat events
+  - Default styles can be configurd per-platform, and then granularly overidden per-event
+  - Support for this feature in the overlay is planned for a future update
+- Added ability to explicitly hide events from the chat feed and the event feed, respectively
+- Added randomized event previews for all events in settings
+- YouTube event support added for:
+  - New Subscriber
+  - Jewels Gifted
+  - Membership Gifts
+- Added the ability to toggle display of chat badges in both the chat feed and the overlay
+
+#### 🛠️ Improvements & Updates
+
+- Updated YouTube events for payload changes in v1.1.0-alpha
+- YouTube ban and timeout events now properly remove associated messages from chat and overlay
+- Improved handling of input queries when completing slash commands
+
+#### 🐛 Fixes
+
+- Updated parsing of YouTube emojis in legacy and current versions of Streamer.bot
+- Fixed autocompletion when using the `/action` slash command
+- Fixed broken ban/unban links in Kick user details modal
+
 ## 📅 August 26, 2026
 
 #### ✨ What's New
