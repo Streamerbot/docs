@@ -20,6 +20,11 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
   - Jewels Gifted
   - Membership Gifts
 - Added the ability to toggle display of chat badges in both the chat feed and the overlay
+- Added additional highlighted types for chat messages:
+  - Subscribers
+  - Broadcaster Account
+  - Bot Account
+- Added ability to manually add users to the highlighted, ignore, and ignore highlights lists in settings
 
 #### 🛠️ Improvements & Updates
 
