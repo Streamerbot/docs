@@ -3,7 +3,31 @@ title: Streamer.bot Chat
 description: The latest updates and improvements for Streamer.bot Chat and Overlay
 ---
 
-## 📅 September 2, 2026
+## 📅 Sep 11, 2026
+
+#### ✨ What's New
+
+- Reached full parity with all YouTube events supported by Streamer.bot:
+  - Added support for Member Milestone events
+  - Added support for Member-Only mode started/ended events
+  - Added support for Polls
+- Added new `Developer Mode` setting
+  - In developer mode, a new quick action `Copy Event JSON` appears for all events
+  - More developer mode features will be coming in the future, including performance testing
+- Added `Clear On Reload` option for Chat Overlay, to automatically clear chat message history when the overlay is initially loaded or refreshed
+
+#### 🛠️ Improvements & Updates
+
+- Chat overlay text now defaults to `extrabold` to improve readability
+- Improved handling of YouTube Gift Membership events
+- Updated user modals to include moderation actions (e.g. ban, timeout) within the user chat history for all platforms
+- Added winning choice display to Twitch Poll Completed events
+
+#### 🐛 Fixes
+
+- Updated Kick timeout durations to properly reflect the actual timeout lengths, since Kick timeouts are in minutes, not seconds
+
+## 📅 Sep 2, 2026
 
 #### ✨ What's New
 
@@ -38,7 +62,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 - Fixed autocompletion when using the `/action` slash command
 - Fixed broken ban/unban links in Kick user details modal
 
-## 📅 August 26, 2026
+## 📅 Aug 26, 2026
 
 #### ✨ What's New
 
@@ -64,7 +88,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 - Fixed an issue preventing pronouns from loading in certain scenarios
 - Twitch Announcement events in `Chat Overlay` will now properly wrap
 
-## 📅 August 19, 2026
+## 📅 Aug 19, 2026
 
 #### ✨ What's New
 
@@ -83,7 +107,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 - Collapsed global and user quick action items now properly execute their associated actions
 - Fixed an issue where username aliases were not being properly resolved on Twitch chat messages
 
-## 📅 August 12, 2026
+## 📅 Aug 12, 2026
 
 #### ✨ What's New
 
@@ -121,7 +145,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 
 ---
 
-## 📅 August 5, 2026
+## 📅 Aug 5, 2026
 
 #### 🐛 Fixes
 
@@ -129,7 +153,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 
 ---
 
-## 📅 July 30, 2026
+## 📅 Jul 30, 2026
 
 #### 🐛 Fixes
 
