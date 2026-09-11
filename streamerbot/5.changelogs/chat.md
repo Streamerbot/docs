@@ -26,6 +26,7 @@ description: The latest updates and improvements for Streamer.bot Chat and Overl
 #### 🐛 Fixes
 
 - Updated Kick timeout durations to properly reflect the actual timeout lengths, since Kick timeouts are in minutes, not seconds
+- Fixed `View Channel` links within YouTube user details modal
 
 ## 📅 Sep 2, 2026
 
