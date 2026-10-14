@@ -60,7 +60,7 @@ Ko-Fi will now forward webhooks to Streamer.bot!
 
 ## Usage
 
-:read-more{to="/api/triggers/integrations/kofi"}
+:read-more{to="/api/triggers/integrations/ko-fi"}
 
 ## Troubleshooting
 
